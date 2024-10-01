@@ -315,11 +315,13 @@
             }
         </script>
         
-        <div class="pb-4 text-center max-w-screen-lg mx-auto w-1/2 leading-snug">
+        <div class="pb-4 text-center w-full max-w-2xl mx-auto px-5 leading-snug">
             Plus concrètement, <strong>YunoHost</strong> est un système qui s'installe sur un <strong>serveur</strong>
-            <br/>
+                <br class="hidden md:inline"/>
+            
             et permet d'installer et maintenir — <strong>sans trop de connaissances techniques</strong> —
-            <br/>
+                <br class="hidden md:inline"/>
+            
             des services numériques (<em>apps</em>) <strong>que <em>vous</em> contrôlez</strong>.
         </div>
 
@@ -336,9 +338,9 @@
     
       <h2 class="pb-10 text-4xl font-bold">Exemples d'utilisations</h2>
 
-      <div class="mx-auto max-w-screen-lg grid grid-cols-2 pb-10">
+      <div class="mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-2 pb-10">
 
-        <div class="mx-auto w-2/3">
+        <div class="mx-auto w-96 lg:w-4/5 mb-5 px-5">
           <h3 class="text-2xl font-bold">Pour vous et vos proches</h3>
           <ul class="pt-3 text-left leading-snug">
             <li class="pb-2">🔄  synchronisez vos agendas et contacts</li>
@@ -349,7 +351,7 @@
           </ul>
         </div>
 
-        <div class="mx-auto w-2/3">
+        <div class="mx-auto w-96 lg:w-4/5 px-5">
           <h3 class="text-2xl font-bold">Pour les petites organisations</h3>
           <ul class="pt-3 text-left leading-snug">
             <li class="pb-2">🌐  hébergez votre site web</li>
@@ -375,18 +377,21 @@
     
           <h2 class="pb-10 text-4xl font-bold">Comment se lancer</h2>
 
-          <div class="w-1/2 pb-5 mx-auto max-w-screen-lg">
-              Si vous n'êtes pas encore sur<span aria-hidden="true">⋅e</a>, nous vous invitons à
-                <a class="bg-sky-200 text-sky-800" href="https://yunohost.org/#/try">essayer la démo</a>,
-                <br/>
-                et à jeter un oeil <a class="bg-amber-200 text-amber-800" href="https://yunohost.org/selfhosting">aux avantages et inconvénients</a> de gérer un serveur soi-même.
-                <br/>
+          <div class="px-5 w-full max-w-2xl pb-5 mx-auto max-w-screen-lg">
+              <p>
+                Si vous n'êtes pas encore sur<span aria-hidden="true">⋅e</a>, nous vous invitons à
+                <a class="bg-sky-200 text-sky-800 whitespace-nowrap" href="https://yunohost.org/#/try">essayer la démo</a>,
+                <br class="hidden md:inline"/>
+                et à jeter un oeil <a class="bg-amber-200 text-amber-800 whitespace-nowrap" href="https://yunohost.org/selfhosting">aux avantages et inconvénients</a> de gérer un serveur soi-même.
+              </p>
+              <p>
                 Prenez le temps de réfléchir à quelles applications, quel type de matériel et quel nom de domaine vous souhaitez pour votre serveur.
+              </p>
           </div>
 
-          <div class="mx-auto max-w-screen-lg grid grid-cols-3 py-10">
+          <div class="mx-auto max-w-96 md:max-w-screen-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10">
               
-              <div class="relative mx-auto border-4 border-gray-300 rounded h-72 mx-5">
+              <div class="relative mx-auto border-4 border-gray-300 rounded h-72 mx-5 mb-10">
                 <h4 class="text-xl font-bold py-3 border-b-4">1. Choisir le support</h4>
                 <div class="py-10 px-5 leading-snug">
                     <ul>
@@ -398,7 +403,7 @@
                 </div>
               </div>
 
-              <div class="relative mx-auto border-4 border-gray-300 rounded h-80 mx-5">
+              <div class="relative mx-auto border-4 border-gray-300 rounded h-80 mx-5 mb-10">
                 <h4 class="text-xl font-bold py-3 border-b-4">2. Installer YunoHost</h4>
                 <div class="py-7 px-5 leading-snug">
                     <ul>
@@ -428,13 +433,13 @@
 
       <section id="community" class="py-10 bg-gray-50">
 
-        <div class="mx-auto max-w-screen-lg grid grid-cols-3">
+        <div class="mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-3">
         
-            <div class="mx-auto">
+            <div class="mx-auto hidden md:block">
               <img src="assets/fursona.png" alt="Claude, la mascotte de YunoHost" />
             </div>
 
-            <div class="col-span-2 mx-auto w-2/3">
+            <div class="col-span-2 mx-auto px-5 w-full sm:w-4/5 lg:w-2/3">
               
               <h2 class="py-5 text-4xl font-bold text-center">Communauté</h2>
               
@@ -451,19 +456,18 @@
                   </p>
                   </div>
 
-                  <p class="py-5">
-                    <a class="m-2 px-5 py-3 font-semibold bg-purple-100 text-purple-800 w-48" href="https://forum.yunohost.org">💬 Forum</a>
-                    <a class="m-2 px-5 py-3 font-semibold bg-green-100 text-green-800 w-48" href="https://yunohost.org/help">🛟 Chat d'entraide</a>
-                  </p>
-                  <p class="py-5">
-                    <a class="m-2 px-5 py-3 font-semibold bg-amber-100 text-amber-800 w-48" href="https://donate.yunohost.org">💰 Faire un don</a>
-                    <a class="m-2 px-5 py-3 font-semibold bg-orange-100 text-orange-800 w-48" href="https://yunohost.org/contribute">👷🏼 Contribuer</a>
-                  <p/>
-                  <p class="py-5">
-                    <a class="m-2 px-5 py-3 font-semibold bg-gray-100 text-gray-800 w-48" href="https://github.com/yunohost">💻 Dépôts de code</a>
+                  <p class="py-5 leading-[4rem]">
+                    <a class="m-2 px-5 py-3 font-semibold bg-purple-100 text-purple-800 w-48 whitespace-nowrap" href="https://forum.yunohost.org">💬 Forum</a>
+                    <a class="m-2 px-5 py-3 font-semibold bg-green-100 text-green-800 w-48 whitespace-nowrap" href="https://yunohost.org/help">🛟 Chat d'entraide</a>
+                    <a class="m-2 px-5 py-3 font-semibold bg-amber-100 text-amber-800 w-48 whitespace-nowrap" href="https://donate.yunohost.org">💰 Faire un don</a>
+                    <a class="m-2 px-5 py-3 font-semibold bg-orange-100 text-orange-800 w-48 whitespace-nowrap" href="https://yunohost.org/contribute">👷🏼 Contribuer</a>
+                    <a class="m-2 px-5 py-3 font-semibold bg-gray-100 text-gray-800 w-48 whitespace-nowrap" href="https://github.com/yunohost">💻 Dépôts de code</a>
                   </p>
               </div>
 
+            </div>
+            <div class="mx-auto md:hidden">
+              <img src="assets/fursona.png" alt="Claude, la mascotte de YunoHost" />
             </div>
 
       </div>

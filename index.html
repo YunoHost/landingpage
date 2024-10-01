@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
   <head>
     <title>YunoHost: jardinez votre bout d'Internet !</title>
     <meta charset="UTF-8" />
@@ -19,10 +20,36 @@
     </script>
     <style>
         strong { font-weight: 600 !important; }
+        #quick-access a:hover, #quick-access a:focus {
+            position: absolute;
+            width: auto;
+            height: auto;
+            color: #fff;
+            background-color:#000;
+            z-index: 999;
+            clip: auto;
+            margin: 10px;
+            padding:10px;
+        }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
     </style>
   </head>
   <body class="text-lg text-gray-900" style="font-family: 'Source Sans 3', sans-serif; font-optical-sizing: auto;">
-    
+    <nav id="quick-access" aria-label="Menu accessibilité">
+        <a href="#main-content" class="sr-only">Aller au contenu</a>
+        <a href="#main-nav" class="sr-only">Aller à la navigation</a>
+        <a href="https://yunohost.org/search" class="sr-only">Aller à la recherche</a>
+        <!--<a href="/sitemap" class="sr-only">Consulter le plan du site</a>-->
+    </nav>
     <!-- ############################################################################################################ -->
    <!-- 
     <nav class="w-full font-bold fixed top-0 left-0 py-3 pr-4 text-gray-200 flex justify-end z-50" style="background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);">
@@ -48,7 +75,7 @@
     <!-- ############################################################################################################ -->
 
     <section>
-    <nav class="w-full font-semibold py-2 pr-4 flex justify-center z-50 bg-amber-200 text-gray-800 ">
+    <nav id="main-nav" class="w-full font-semibold py-2 pr-4 flex justify-center z-50 bg-amber-200 text-gray-800 " aria-label="Menu principal">
       <ul class="flex flex-row space-x-10 py-2">
         <li>
           <a href="https://forum.yunohost.org/c/announcement/8/none">Dernières nouvelles</a>
@@ -203,7 +230,7 @@
     </style>
 
     <!-- <div style="background: #95aece21; padding: 1em"> -->
-    <section id="intro" class="text-center py-10">
+    <section id="main-content" class="text-center py-10">
 
         <h2 class="pb-10 text-3xl">
             Avec <span class="text-4xl font-bold">YunoHost</span>, gérez facilement

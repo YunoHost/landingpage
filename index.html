@@ -4,36 +4,31 @@
     <title>YunoHost: jardinez votre bout d'Internet !</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/fork-awesome.min.css" />
-    <link rel="stylesheet" href="assets/source-sans/source-sans-3.css" />
-
     <script src="assets/tailwinds.js"></script>
-    <!-- https://tailwindcss.com/docs/theme -->
     <script>
       // On page load or when changing themes, best to add inline in `head` to avoid FOUC
       function refreshColorMode() {
         document.documentElement.classList.toggle(
           "dark",
           localStorage.theme === "dark" ||
-            (!("theme" in localStorage) &&
-              window.matchMedia("(prefers-color-scheme: dark)").matches),
+            (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
         );
       }
 
       function toggleColorMode() {
         if (
           localStorage.theme === "dark" ||
-          (!("theme" in localStorage) &&
-            window.matchMedia("(prefers-color-scheme: dark)").matches)
+          (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
         ) {
           localStorage.theme = "light";
         } else {
           localStorage.theme = "dark";
         }
+        // Whenever the user explicitly chooses to respect the OS preference
+        //localStorage.removeItem("theme");
+
         refreshColorMode();
       }
-      // Whenever the user explicitly chooses to respect the OS preference
-      //localStorage.removeItem("theme");
 
       tailwind.config = {
         darkMode: "selector",
@@ -46,64 +41,24 @@
 
       refreshColorMode(); // refresh on load
     </script>
-    <style>
-      strong {
-        font-weight: 600 !important;
-      }
-      #quick-access a:hover,
-      #quick-access a:focus {
-        position: absolute;
-        width: auto;
-        height: auto;
-        color: #fff;
-        background-color: #000;
-        z-index: 999;
-        clip: auto;
-        margin: 10px;
-        padding: 10px;
-      }
-      .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        border: 0;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/main-style.css" />
+    <link rel="stylesheet" href="assets/fork-awesome.min.css" />
+    <link rel="stylesheet" href="assets/source-sans/source-sans-3.css" />
   </head>
   <body
     class="text-lg text-gray-900 dark:bg-neutral-900 dark:text-white"
-    style="
-      font-family: &quot;Source Sans 3&quot;, sans-serif;
-      font-optical-sizing: auto;
-    "
+    style="font-family: &quot;Source Sans 3&quot;, sans-serif; font-optical-sizing: auto"
   >
     <nav id="quick-access" aria-label="Menu accessibilité">
       <a href="#main-content" class="sr-only">Aller au contenu</a>
       <a href="#main-nav" class="sr-only">Aller à la navigation</a>
-      <a href="https://yunohost.org/search" class="sr-only"
-        >Aller à la recherche</a
-      >
+      <a href="https://yunohost.org/search" class="sr-only">Aller à la recherche</a>
       <!--<a href="/sitemap" class="sr-only">Consulter le plan du site</a>-->
     </nav>
-    <!-- ############################################################################################################ -->
-    <!-- 
-    <nav class="w-full font-bold fixed top-0 left-0 py-3 pr-4 text-gray-200 flex justify-end z-50" style="background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);">
-      <ul class="flex flex-row space-x-8 py-2">
-      </ul>
-    </nav>
-   -->
-    <!-- ############################################################################################################ -->
-    <button
-      type="button"
-      class="z-50 absolute top-3 right-3"
-      onclick="toggleColorMode();"
-    >
-      <span class="dark:hidden"
-        ><svg
+
+    <button type="button" class="z-50 absolute top-3 right-3" onclick="toggleColorMode();">
+      <span class="dark:hidden">
+        <svg
           viewBox="0 0 24 24"
           fill="none"
           stroke-width="2"
@@ -111,16 +66,15 @@
           stroke-linejoin="round"
           class="w-6 h-6"
         >
-          <path
-            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-            class="fill-sky-400/20 stroke-white"
-          ></path>
+          <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="fill-sky-400/20 stroke-white"></path>
           <path
             d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"
             class="stroke-white"
-          ></path></svg></span
-      ><span class="hidden dark:inline"
-        ><svg viewBox="0 0 24 24" fill="none" class="w-6 h-6">
+          ></path>
+        </svg>
+      </span>
+      <span class="hidden dark:inline">
+        <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6">
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -136,31 +90,27 @@
             clip-rule="evenodd"
             d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
             class="fill-white"
-          ></path></svg
-      ></span>
+          ></path>
+        </svg>
+      </span>
     </button>
+
     <section>
       <div
         class="flex flex-col justify-center text-white text-center relative h-[25rem] bg-top w-full bg-cover"
         style="
-          background-image: linear-gradient(#0000, #0005),
-            url(assets/garden.png);
+          background-image: linear-gradient(#0000, #0005), url(assets/garden.png);
           background-size: cover;
           background-position: bottom;
         "
       >
-        <img
-          class="self-center pt-5 w-32 mt-2 shadow-md"
-          src="assets/ynh_logo_roundcorner.png"
-        />
+        <img class="self-center pt-5 w-32 mt-2 shadow-md" src="assets/ynh_logo_roundcorner.png" />
         <div
           class="self-center w-fit p-5 flex align-center justify-center font-bold text-5xl sm:text-6xl backdrop-blur-[1px]"
           style="text-shadow: 5px 5px 5px #000"
         >
           <h1>Jardinez votre<br />bout d'Internet&nbsp;!</h1>
         </div>
-
-        <!-- <a class="self-center text-xl font-bold rounded-md px-4 py-2 transition bg-cyan-500 shadow" href="#">Quoi ?</a> -->
       </div>
     </section>
 
@@ -190,23 +140,13 @@
             >
           </li>
           <li>
-            <a class="py-3 block sm:inline-block hover:opacity-80" href="#start"
-              >Installer</a
-            >
+            <a class="py-3 block sm:inline-block hover:opacity-80" href="#start">Installer</a>
           </li>
           <li>
-            <a
-              class="py-3 block sm:inline-block hover:opacity-80"
-              href="https://apps.yunohost.org"
-              >Applications</a
-            >
+            <a class="py-3 block sm:inline-block hover:opacity-80" href="https://apps.yunohost.org">Applications</a>
           </li>
           <li>
-            <a
-              class="py-3 block sm:inline-block hover:opacity-80"
-              href="https://yunohost.org/docs"
-              >Documentation</a
-            >
+            <a class="py-3 block sm:inline-block hover:opacity-80" href="https://yunohost.org/docs">Documentation</a>
           </li>
           <li>
             <button
@@ -215,53 +155,28 @@
             >
               Communauté <i class="fa fa-caret-down"></i>
             </button>
-            <ul
-              id="community-menu-items"
-              class="hidden sm:absolute z-10 bg-amber-200 dark:bg-[#0F321E] p-2 sm:p-5"
-            >
+            <ul id="community-menu-items" class="hidden sm:absolute z-10 bg-amber-200 dark:bg-[#0F321E] p-2 sm:p-5">
               <li>
-                <a
-                  class="inline-block py-1 hover:opacity-80"
-                  href="https://forum.yunohost.org"
-                  >Forum</a
-                >
+                <a class="inline-block py-1 hover:opacity-80" href="https://forum.yunohost.org">Forum</a>
               </li>
               <li>
-                <a
-                  class="inline-block py-1 hover:opacity-80"
-                  href="https://yunohost.org/help"
-                  >Support</a
-                >
+                <a class="inline-block py-1 hover:opacity-80" href="https://yunohost.org/help">Support</a>
               </li>
               <li>
-                <a
-                  class="inline-block py-1 hover:opacity-80"
-                  href="https://yunohost.org/chat_rooms"
-                  >Chat rooms</a
-                >
+                <a class="inline-block py-1 hover:opacity-80" href="https://yunohost.org/chat_rooms">Chat rooms</a>
               </li>
               <li>
-                <a
-                  class="inline-block py-1 hover:opacity-80"
-                  href="https://donate.yunohost.org"
+                <a class="inline-block py-1 hover:opacity-80" href="https://donate.yunohost.org"
                   >Je soutiens financièrement</a
                 >
               </li>
               <li>
-                <a
-                  class="inline-block py-1 hover:opacity-80"
-                  href="https://toot.aquilenet.fr/@yunohost"
-                  >Mastodon</a
-                >
+                <a class="inline-block py-1 hover:opacity-80" href="https://toot.aquilenet.fr/@yunohost">Mastodon</a>
               </li>
             </ul>
           </li>
           <li>
-            <a
-              class="py-3 block sm:inline-block"
-              href="https://yunohost.org/#/whatsyunohost"
-              >À propos</a
-            >
+            <a class="py-3 block sm:inline-block" href="https://yunohost.org/#/whatsyunohost">À propos</a>
           </li>
         </ul>
       </nav>
@@ -269,185 +184,10 @@
 
     <!-- ############################################################################################################ -->
 
-    <style>
-      .cycling-words {
-        min-height: 1em;
-        min-width: 8em;
-      }
-
-      .cycling-words span {
-        padding-right: 0.3em;
-        padding-left: 0.3em;
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
-        margin-left: 0em;
-        position: absolute;
-        opacity: 0;
-        overflow: hidden;
-        -webkit-animation: rotateWord 42s linear infinite 0s;
-        -ms-animation: rotateWord 42s linear infinite 0s;
-        animation: rotateWord 42s linear infinite 0s;
-      }
-
-      .cycling-words span:nth-child(2) {
-        -webkit-animation-delay: calc(3s * 1);
-        -ms-animation-delay: calc(3s * 1);
-        animation-delay: calc(3s * 1);
-      }
-      .cycling-words span:nth-child(3) {
-        -webkit-animation-delay: calc(3s * 2);
-        -ms-animation-delay: calc(3s * 2);
-        animation-delay: calc(3s * 2);
-      }
-      .cycling-words span:nth-child(4) {
-        -webkit-animation-delay: calc(3s * 3);
-        -ms-animation-delay: calc(3s * 3);
-        animation-delay: calc(3s * 3);
-      }
-      .cycling-words span:nth-child(5) {
-        -webkit-animation-delay: calc(3s * 4);
-        -ms-animation-delay: calc(3s * 4);
-        animation-delay: calc(3s * 4);
-      }
-      .cycling-words span:nth-child(6) {
-        -webkit-animation-delay: calc(3s * 5);
-        -ms-animation-delay: calc(3s * 5);
-        animation-delay: calc(3s * 5);
-      }
-      .cycling-words span:nth-child(7) {
-        -webkit-animation-delay: calc(3s * 6);
-        -ms-animation-delay: calc(3s * 6);
-        animation-delay: calc(3s * 6);
-      }
-      .cycling-words span:nth-child(8) {
-        -webkit-animation-delay: calc(3s * 7);
-        -ms-animation-delay: calc(3s * 7);
-        animation-delay: calc(3s * 7);
-      }
-      .cycling-words span:nth-child(9) {
-        -webkit-animation-delay: calc(3s * 8);
-        -ms-animation-delay: calc(3s * 8);
-        animation-delay: calc(3s * 8);
-      }
-      .cycling-words span:nth-child(10) {
-        -webkit-animation-delay: calc(3s * 9);
-        -ms-animation-delay: calc(3s * 9);
-        animation-delay: calc(3s * 9);
-      }
-      .cycling-words span:nth-child(11) {
-        -webkit-animation-delay: calc(3s * 10);
-        -ms-animation-delay: calc(3s * 10);
-        opacity: 0;
-        animation-delay: calc(3s * 10);
-      }
-      .cycling-words span:nth-child(12) {
-        -webkit-animation-delay: calc(3s * 11);
-        -ms-animation-delay: calc(3s * 11);
-        animation-delay: calc(3s * 11);
-      }
-      .cycling-words span:nth-child(13) {
-        -webkit-animation-delay: calc(3s * 12);
-        -ms-animation-delay: calc(3s * 12);
-        animation-delay: calc(3s * 12);
-      }
-      .cycling-words span:nth-child(14) {
-        -webkit-animation-delay: calc(3s * 13);
-        -ms-animation-delay: calc(3s * 13);
-        animation-delay: calc(3s * 13);
-      }
-
-      @-webkit-keyframes rotateWord {
-        0% {
-          opacity: 0;
-        }
-        3% {
-          opacity: 0;
-          -webkit-transform: translateY(-10px);
-        }
-        4% {
-          opacity: 1;
-          -webkit-transform: translateY(0px);
-        }
-        9% {
-          opacity: 1;
-          -webkit-transform: translateY(0px);
-        }
-        10% {
-          opacity: 0;
-          -webkit-transform: translateY(10px);
-        }
-        80% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @-ms-keyframes rotateWord {
-        0% {
-          opacity: 0;
-        }
-        3% {
-          opacity: 0;
-          -ms-transform: translateY(-10px);
-        }
-        4% {
-          opacity: 1;
-          -ms-transform: translateY(0px);
-        }
-        9% {
-          opacity: 1;
-          -ms-transform: translateY(0px);
-        }
-        10% {
-          opacity: 0;
-          -ms-transform: translateY(10px);
-        }
-        80% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @keyframes rotateWord {
-        0% {
-          opacity: 0;
-        }
-        3% {
-          opacity: 0;
-          -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-        }
-        4% {
-          opacity: 1;
-          -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-        }
-        9% {
-          opacity: 1;
-          -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-        }
-        10% {
-          opacity: 0;
-          -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-        }
-        80% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-    </style>
-
     <!-- <div style="background: #95aece21; padding: 1em"> -->
     <section id="main-content" class="text-center py-10">
       <h2 class="pb-10 text-3xl">
-        <span class="px-3"></span>Avec
-        <span class="text-4xl font-bold">YunoHost</span>, gérez facilement
+        <span class="px-3"></span>Avec <span class="text-4xl font-bold">YunoHost</span>, gérez facilement
         <div class="cycling-words inline-block text-left whitespace-nowrap">
           <span class="bg-gray-100 dark:bg-[#2A2D2E]">un serveur</span>
           <span class="bg-gray-100 dark:bg-[#2A2D2E]">un cloud</span>
@@ -465,49 +205,18 @@
           <span class="bg-gray-100 dark:bg-[#2A2D2E]">un ERP</span>
         </div>
         <br />
-        pour vos ami<span aria-hidden="true">·e⋅</span>s, votre asso, votre
-        entreprise
+        pour vos ami<span aria-hidden="true">·e⋅</span>s, votre asso, votre entreprise
       </h2>
 
-      <style>
-        .screenshot-slide {
-          animation-name: fade;
-          animation-duration: 1s;
-        }
-        @keyframes fade {
-          from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
-        }
-        .slider-dot-active,
-        .slider-dot:hover {
-          background-color: #111;
-        }
-      </style>
-
-      <div
-        class="relative max-w-screen-lg mx-auto flex align-center justify-center"
-      >
+      <div class="relative max-w-screen-lg mx-auto flex align-center justify-center">
         <div class="screenshot-slide hidden">
-          <img
-            class="w-full h-96 object-contain"
-            src="assets/screenshot1.jpg"
-          />
+          <img class="w-full h-96 object-contain" src="assets/screenshot1.jpg" />
         </div>
         <div class="screenshot-slide hidden">
-          <img
-            class="w-full h-96 object-contain"
-            src="assets/screenshot2.png"
-          />
+          <img class="w-full h-96 object-contain" src="assets/screenshot2.png" />
         </div>
         <div class="screenshot-slide hidden">
-          <img
-            class="w-full h-96 object-contain"
-            src="assets/screenshot3.jpg"
-          />
+          <img class="w-full h-96 object-contain" src="assets/screenshot3.jpg" />
         </div>
         <a
           class="slider-prev transition-colors duration-500 absolute left-0 cursor-pointer rounded-full text-6xl text-gray-200 hover:text-gray-400"
@@ -564,10 +273,7 @@
             slides[i].style.display = "none";
           }
           for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(
-              " slider-dot-active",
-              "",
-            );
+            dots[i].className = dots[i].className.replace(" slider-dot-active", "");
           }
           slides[slideIndex - 1].style.display = "block";
           dots[slideIndex - 1].className += " slider-dot-active";
@@ -575,8 +281,7 @@
       </script>
 
       <div class="pb-4 text-center w-full max-w-2xl mx-auto px-5 leading-snug">
-        Plus concrètement, <strong>YunoHost</strong> est un système qui
-        s'installe sur un <strong>serveur</strong>
+        Plus concrètement, <strong>YunoHost</strong> est un système qui s'installe sur un <strong>serveur</strong>
         <br class="hidden md:inline" />
 
         et permet d'installer et maintenir —
@@ -591,14 +296,10 @@
         <a class="p-3 bg-gray-100 text-gray-800 font-semibold w-fit" href="#"
           >Hein, mais pourquoi <i class="fa fa-question"></i
         ></a>
-        <a
-          class="p-3 bg-sky-200 text-sky-800 font-semibold w-48"
-          href="https://yunohost.org/#/try"
+        <a class="p-3 bg-sky-200 text-sky-800 font-semibold w-48" href="https://yunohost.org/#/try"
           ><i class="fa fa-fw fa-flask"></i> Essayer</a
         >
-        <a
-          class="p-3 bg-lime-200 text-lime-800 font-semibold w-48"
-          href="#start"
+        <a class="p-3 bg-lime-200 text-lime-800 font-semibold w-48" href="#start"
           ><i class="fa fa-fw fa-download"></i> Installer</a
         >
       </div>
@@ -606,22 +307,15 @@
 
     <!-- ############################################################################################################ -->
 
-    <section
-      id="example"
-      class="text-center py-10 bg-gray-50 dark:bg-[#1A1D1E]"
-    >
+    <section id="example" class="text-center py-10 bg-gray-50 dark:bg-[#1A1D1E]">
       <h2 class="pb-10 text-4xl font-bold">Exemples d'utilisations</h2>
 
-      <div
-        class="mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-2 pb-10"
-      >
+      <div class="mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-2 pb-10">
         <div class="mx-auto w-96 lg:w-4/5 mb-5 px-5">
           <h3 class="text-2xl font-bold">Pour vous et vos proches</h3>
           <ul class="pt-3 text-left leading-snug">
             <li class="pb-2">🔄 synchronisez vos agendas et contacts</li>
-            <li class="pb-2">
-              🔐 gardez en sécurité vos mots de passe et notes
-            </li>
+            <li class="pb-2">🔐 gardez en sécurité vos mots de passe et notes</li>
             <li class="pb-2">📬 hébergez des boîte mail</li>
             <li class="pb-2">🎧 organisez vos photos, vidéos, musique</li>
             <li class="pb-2">🏘️ rejoignez des médias sociaux alternatifs</li>
@@ -632,12 +326,8 @@
           <h3 class="text-2xl font-bold">Pour les petites organisations</h3>
           <ul class="pt-3 text-left leading-snug">
             <li class="pb-2">🌐 hébergez votre site web</li>
-            <li class="pb-2">
-              🗂️ partagez des fichiers en commun (par ex. avec Nextcloud)
-            </li>
-            <li class="pb-2">
-              📝 éditez des documents à plusieurs en temps réel
-            </li>
+            <li class="pb-2">🗂️ partagez des fichiers en commun (par ex. avec Nextcloud)</li>
+            <li class="pb-2">📝 éditez des documents à plusieurs en temps réel</li>
             <li class="pb-2">💰 gérez votre compta</li>
             <li class="pb-2">💬 mettez en place un chat d'équipe</li>
           </ul>
@@ -645,9 +335,7 @@
       </div>
 
       <div class="flex flex-row space-x-4 justify-center">
-        <a
-          class="p-3 bg-purple-200 text-purple-800 font-semibold w-80"
-          href="https://apps.yunohost.org"
+        <a class="p-3 bg-purple-200 text-purple-800 font-semibold w-80" href="https://apps.yunohost.org"
           ><i class="fa fa-fw fa-search"></i> Explorer le catalogue d'apps</a
         >
       </div>
@@ -662,43 +350,28 @@
 
       <div class="px-5 w-full max-w-2xl pb-5 max-w-screen-lg">
         <p>
-          Si vous n'êtes pas encore sur<span aria-hidden="true">⋅e</span>, nous
-          vous invitons à
-          <a
-            class="bg-sky-200 text-sky-800 whitespace-nowrap"
-            href="https://yunohost.org/#/try"
-            >essayer la démo</a
-          >,
+          Si vous n'êtes pas encore sur<span aria-hidden="true">⋅e</span>, nous vous invitons à
+          <a class="bg-sky-200 text-sky-800 whitespace-nowrap" href="https://yunohost.org/#/try">essayer la démo</a>,
           <br class="hidden md:inline" />
           et à jeter un oeil
-          <a
-            class="bg-amber-200 text-amber-800 whitespace-nowrap"
-            href="https://yunohost.org/selfhosting"
+          <a class="bg-amber-200 text-amber-800 whitespace-nowrap" href="https://yunohost.org/selfhosting"
             >aux avantages et inconvénients</a
           >
           de gérer un serveur soi-même.
         </p>
         <p>
-          Prenez le temps de réfléchir à quelles applications, quel type de
-          matériel et quel nom de domaine vous souhaitez pour votre serveur.
+          Prenez le temps de réfléchir à quelles applications, quel type de matériel et quel nom de domaine vous
+          souhaitez pour votre serveur.
         </p>
       </div>
 
-      <div
-        class="mx-3 md:max-w-screen-lg flex flex-wrap justify-center gap-5 py-10"
-      >
-        <div
-          class="relative basis-80 border-4 border-gray-300 rounded h-72 mb-10"
-        >
-          <h4 class="text-xl font-bold py-3 border-b-4">
-            1. Choisir le support
-          </h4>
+      <div class="mx-3 md:max-w-screen-lg flex flex-wrap justify-center gap-5 py-10">
+        <div class="relative basis-80 border-4 border-gray-300 rounded h-72 mb-10">
+          <h4 class="text-xl font-bold py-3 border-b-4">1. Choisir le support</h4>
           <div class="py-10 px-5 leading-snug">
             <ul>
               <li class="pb-2">🪺 Carte ARM / Raspberry Pi</li>
-              <li class="pb-2">
-                🦕 Vieille tour ou portable (<em>ordinosaure</em>)
-              </li>
+              <li class="pb-2">🦕 Vieille tour ou portable (<em>ordinosaure</em>)</li>
               <li class="pb-2">☁️ Serveur en ligne (VPS)</li>
             </ul>
             <a
@@ -710,29 +383,21 @@
           </div>
         </div>
 
-        <div
-          class="relative basis-80 border-4 border-gray-300 rounded lg:h-80 h-72 mb-10"
-        >
-          <h4 class="text-xl font-bold py-3 border-b-4">
-            2. Installer YunoHost
-          </h4>
+        <div class="relative basis-80 border-4 border-gray-300 rounded lg:h-80 h-72 mb-10">
+          <h4 class="text-xl font-bold py-3 border-b-4">2. Installer YunoHost</h4>
           <div class="py-7 px-5 leading-snug">
             <ul>
+              <li class="pb-2">🚀 Vérifiez les prérequis<br />puis flashez ou installez le système</li>
               <li class="pb-2">
-                🚀 Vérifiez les prérequis<br />puis flashez ou installez le
-                système
-              </li>
-              <li class="pb-2">
-                🌐 YunoHost vous guidera pour configurer le premier admin, le
-                nom de domaine et, le cas échéant, votre box internet
+                🌐 YunoHost vous guidera pour configurer le premier admin, le nom de domaine et, le cas échéant, votre
+                box internet
               </li>
             </ul>
             <a
               class="absolute left-0 right-0 m-auto p-3 text-md bg-lime-200 text-lime-800 w-fit font-semibold"
               style="bottom: -1.5em"
               href="https://yunohost.org/install"
-              ><i class="fa fa-download fa-fw"></i> Instructions
-              d'installation</a
+              ><i class="fa fa-download fa-fw"></i> Instructions d'installation</a
             >
           </div>
         </div>
@@ -741,9 +406,7 @@
           <h4 class="text-xl font-bold py-3 border-b-4">3. Profiter !</h4>
           <div class="py-10 px-5 leading-snug">
             <ul>
-              <li class="pb-2">
-                📦 Installez des applications<br />en quelques clics
-              </li>
+              <li class="pb-2">📦 Installez des applications<br />en quelques clics</li>
               <li class="pb-2">🚑 Mettez en place des sauvegardes</li>
               <li class="pb-2">🌱 Prenez soin de votre serveur</li>
             </ul>
@@ -772,23 +435,18 @@
           <div class="text-center">
             <div class="pb-5 leading-snug">
               <p class="pb-2">
-                ✊ <strong>YunoHost</strong> est un projet
-                <strong>technocritique et à but non-lucratif</strong>, développé
-                et maintenu par des <strong>bénévoles</strong>.
+                ✊ <strong>YunoHost</strong> est un projet <strong>technocritique et à but non-lucratif</strong>,
+                développé et maintenu par des <strong>bénévoles</strong>.
               </p>
               <p class="pb-2">
-                🪽 Nous défendons un <strong>internet décentralisé</strong>, des
-                technologies <strong>ouvertes</strong>,
-                <strong>interopérables</strong>, qui
-                <strong>respectent la vie privée</strong> et qui donnent de
-                l'<strong>autonomie</strong> et du
-                <strong>pouvoir au plus grand nombre</strong>.
+                🪽 Nous défendons un <strong>internet décentralisé</strong>, des technologies <strong>ouvertes</strong>,
+                <strong>interopérables</strong>, qui <strong>respectent la vie privée</strong> et qui donnent de
+                l'<strong>autonomie</strong> et du <strong>pouvoir au plus grand nombre</strong>.
               </p>
 
               <p class="pb-2">
                 🌱 En outre, nous souhaitons
-                <strong>redonner de la matérialité au numérique</strong>,
-                encourager la <strong>sobriété</strong> et le
+                <strong>redonner de la matérialité au numérique</strong>, encourager la <strong>sobriété</strong> et le
                 <strong>réemploi</strong>.
               </p>
             </div>
@@ -829,8 +487,7 @@
     </section>
 
     <div class="text-center bg-amber-200 dark:bg-[#0F321E] p-3">
-      <span>Press kit</span> ⋅
-      <span><a href="https://yunohost.org/terms_of_services">CGU</a></span> ⋅
+      <span>Press kit</span> ⋅ <span><a href="https://yunohost.org/terms_of_services">CGU</a></span> ⋅
       <span>Mentions légales</span> ⋅ <span>Association</span> ⋅
       <span><a href="https://github.com/YunoHost">Code</a></span> ⋅
       <span><a href="https://toot.aquilenet.fr/@yunohost">Mastodon</a></span> ⋅

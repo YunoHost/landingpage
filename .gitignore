@@ -1,4 +1,5 @@
 dist/*
+venv
 assets/fonts/fork-awesome.min.css
 assets/fonts/forkawesome-webfont.ttf
 assets/fonts/forkawesome-webfont.woff

@@ -1,0 +1,145 @@
+# French translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-10-17 18:31+0200\n"
+"PO-Revision-Date: 2024-10-17 18:17+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: index.html:4
+msgid "YunoHost: garden your own piece of the Internet!"
+msgstr "YunoHost: jardinez votre bout d'Internet !"
+
+#: index.html:47
+msgid "Accessibility menu"
+msgstr "Menu accessibilité"
+
+#: index.html:48
+msgid "Go to content"
+msgstr "Aller au contenu"
+
+#: index.html:49
+msgid "Go to navigation"
+msgstr "Aller à la navigation"
+
+#: index.html:50
+msgid "Go to search"
+msgstr "Aller à la recherche"
+
+#: index.html:51
+msgid "View sitemap"
+msgstr "Consulter le plan du site"
+
+#: index.html:65
+msgid "Yunohost logo"
+msgstr "Logo de YunoHost"
+
+#: index.html:67
+msgid "Garden your own<br/>piece of the Internet!"
+msgstr "Jardinez votre<br/>bout d'Internet !"
+
+#: index.html:78
+msgid "Main menu"
+msgstr "Menu principal"
+
+#: index.html:82
+msgid "Last news"
+msgstr "Dernières nouvelles"
+
+#: index.html:85
+msgid "Install"
+msgstr "Installer"
+
+#: index.html:88
+msgid "Applications"
+msgstr "Applications"
+
+#: index.html:91
+msgid "Documentation"
+msgstr "Documentation"
+
+#: index.html:96
+msgid "Forum"
+msgstr "Forum"
+
+#: index.html:97
+msgid "Support"
+msgstr "Support"
+
+#: index.html:98
+msgid "Chat_rooms"
+msgstr "Chat rooms"
+
+#: index.html:99
+msgid "Donate"
+msgstr "Je soutiens financièrement"
+
+#: index.html:100
+msgid "Mastodon"
+msgstr "Mastodon"
+
+#: index.html:104
+msgid "About"
+msgstr "A propos"
+
+#: index.html:235
+msgid ""
+"<span class='px-3'></span>With <span class='text-4xl font-"
+"bold'>YunoHost</span>, easily manage\n"
+"            <div class='cycling-words inline-block text-left whitespace-"
+"nowrap'>\n"
+"                <span>a server</span>\n"
+"                <span>a cloud</span>\n"
+"                <span>a web site</span>\n"
+"                <span>mailboxes</span>\n"
+"                <span>a wiki</span>\n"
+"                <span>a social network</span>\n"
+"                <span>a video library</span>\n"
+"                <span>a blog</span>\n"
+"                <span>surveys</span>\n"
+"                <span>an accounting tool</span>\n"
+"                <span>a game server</span>\n"
+"                <span>a forum</span>\n"
+"                <span>a chat</span>\n"
+"                <span>an ERP</span>\n"
+"            </div>\n"
+"          <br />\n"
+"          for your friends, your association, your company"
+msgstr ""
+"<span class='px-3'></span>Avec <span class='text-"
+"4xl font-bold'>YunoHost</span>, gérez facilement"
+"\n"
+"            <div class='cycling-words "
+"inline-block text-left whitespace-nowrap'>"
+"\n"
+"                <span>un serveur</span>\n"
+"                <span>un cloud</span>\n"
+"                <span>un site web</span>\n"
+"                <span>des boîtes mail</span>\n"
+"                <span>un wiki</span>\n"
+"                <span>un réseau social</span>\n"
+"                <span>une vidéothèque</span>\n"
+"                <span>un blog</span>\n"
+"                <span>des sondages</span>\n"
+"                <span>un outil comptable</span>\n"
+"                <span>un serveur de jeux</span>\n"
+"                <span>un forum</span>\n"
+"                <span>un chat</span>\n"
+"                <span>un ERP</span>\n"
+"            </div>\n"
+"          <br />\n"
+"          pour vos proches, votre asso, votre entreprise"
+#~ msgstr ""
+

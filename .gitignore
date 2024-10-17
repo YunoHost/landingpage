@@ -1,1 +1,7 @@
 dist/*
+assets/fonts/fork-awesome.min.css
+assets/fonts/forkawesome-webfont.ttf
+assets/fonts/forkawesome-webfont.woff
+assets/fonts/forkawesome-webfont.woff2
+assets/fonts/source-sans/
+assets/js/tailwinds.js

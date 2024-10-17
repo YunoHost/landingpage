@@ -1,0 +1,25 @@
+# Production -> download standalone tailwind to compile only what we need
+#wget https://github.com/tailwindlabs/tailwindcss/releases/download/v3.4.3/tailwindcss-linux-x64
+#chmod +x tailwindcss-linux-x64 
+#./tailwindcss-linux-x64 --input tailwind-local.css --output tailwind.css --minify
+
+# Development -> we use the JS magic thingy
+curl -L https://cdn.tailwindcss.com?plugins=forms > assets/js/tailwinds.js
+
+# Dark theme stuff
+#git clone https://github.com/jjranalli/nightwind
+
+# Icons / Forkawesome
+curl https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css > assets/fonts/fork-awesome.min.css
+sed -i 's@../fonts/@@g' ./assets/fonts/fork-awesome.min.css
+curl https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.woff2?v=1.2.0 > assets/fonts/forkawesome-webfont.woff2
+curl https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.woff?v=1.2.0 > assets/fonts/forkawesome-webfont.woff
+curl https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.ttf?v=1.2.0 > assets/fonts/forkawesome-webfont.ttf
+
+# Logos
+#curl https://raw.githubusercontent.com/YunoHost/doc/master/images/logo_roundcorner.png > assets/img/ynh_logo_roundcorner.png
+#curl https://raw.githubusercontent.com/YunoHost/doc/master/images/ynh_logo_black.svg > assets/img/ynh_logo_black.svg
+
+git clone https://github.com/adobe-fonts/source-sans --depth 1 --single-branch assets/fonts/source-sans
+
+cp -Rf assets dist/

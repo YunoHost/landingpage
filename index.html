@@ -44,11 +44,11 @@
     </style>
   </head>
   <body class="text-lg text-gray-900" style="font-family: 'Source Sans 3', sans-serif; font-optical-sizing: auto;">
-    <nav id="quick-access" aria-label="Menu accessibilité">
-        <a href="#main-content" class="sr-only">Aller au contenu</a>
-        <a href="#main-nav" class="sr-only">Aller à la navigation</a>
-        <a href="https://yunohost.org/search" class="sr-only">Aller à la recherche</a>
-        <!--<a href="/sitemap" class="sr-only">Consulter le plan du site</a>-->
+      <nav id="quick-access" aria-label="{{ a11y_menu }}">
+          <a href="#main-content" class="sr-only">{{ go_to_conetnt }}</a>
+          <a href="#main-nav" class="sr-only">{{ go_to_navigation }}</a>
+          <a href="https://yunohost.org/search" class="sr-only">{{ go_to_search }}</a>
+          <!--<a href="/sitemap" class="sr-only">{{ view_sitemap }}</a>-->
     </nav>
     <!-- ############################################################################################################ -->
    <!-- 
@@ -62,7 +62,7 @@
     <section>
     <div class="flex flex-col justify-center text-white text-center relative h-[25rem] bg-top w-full bg-cover" style="background-image: linear-gradient(#0000, #0005), url(assets/img/garden.png); background-size: cover; background-position: bottom;">
 
-        <img class="self-center pt-5 w-32 mt-2 shadow-md" src="assets/img/ynh_logo_roundcorner.png" />
+        <img alt="{{ yunohost_logo }}" class="self-center pt-5 w-32 mt-2 shadow-md" src="assets/img/ynh_logo_roundcorner.png" />
         <div class="self-center w-fit p-5 flex align-center justify-center font-bold text-5xl sm:text-6xl backdrop-blur-[1px]" style="text-shadow: 5px 5px 5px #000">
             <h1>{{ title_h1 }}</h1>
         </div>
@@ -75,33 +75,33 @@
     <!-- ############################################################################################################ -->
 
     <section>
-    <nav id="main-nav" class="w-full font-semibold py-2 pr-4 flex flex-col sm:flex-row justify-center z-50 bg-amber-200 text-gray-800 text-2xl sm:text-lg" aria-label="Menu principal">
+        <nav id="main-nav" class="w-full font-semibold py-2 pr-4 flex flex-col sm:flex-row justify-center z-50 bg-amber-200 text-gray-800 text-2xl sm:text-lg" aria-label="{{ main_menu }}">
       <button class="block sm:hidden w-full py-3" onclick="document.getElementById('main-menu-items').classList.toggle('hidden')"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
       <ul id="main-menu-items" class="justify-center flex-wrap flex-row hidden text-center sm:text-left sm:flex sm:space-x-10 sm:py-2">
         <li>
-          <a class="py-3 block sm:inline-block hover:opacity-80" href="https://forum.yunohost.org/c/announcement/8/none">Dernières nouvelles</a>
+            <a class="py-3 block sm:inline-block hover:opacity-80" href="https://forum.yunohost.org/c/announcement/8/none">{{ last_news }}</a>
         </li>
         <li>
-          <a class="py-3 block sm:inline-block hover:opacity-80" href="#start">Installer</a>
+            <a class="py-3 block sm:inline-block hover:opacity-80" href="#start">{{ install }}</a>
         </li>
         <li>
-          <a class="py-3 block sm:inline-block hover:opacity-80" href="https://apps.yunohost.org">Applications</a>
+            <a class="py-3 block sm:inline-block hover:opacity-80" href="https://apps.yunohost.org">{{ applications }}</a>
         </li>
         <li>
-          <a class="py-3 block sm:inline-block hover:opacity-80" href="https://yunohost.org/docs">Documentation</a>
+            <a class="py-3 block sm:inline-block hover:opacity-80" href="https://yunohost.org/{{ lang }}/docs">{{ documentation }}</a>
         </li>
         <li>
-          <button class="w-full sm:w-auto py-3 block sm:inline-block sm:relative hover:opacity-80" onclick="document.getElementById('community-menu-items').classList.toggle('hidden')">Communauté <i class="fa fa-caret-down"></i></button>
+            <button class="w-full sm:w-auto py-3 block sm:inline-block sm:relative hover:opacity-80" onclick="document.getElementById('community-menu-items').classList.toggle('hidden')">{{ community }} <i class="fa fa-caret-down"></i></button>
           <ul id="community-menu-items" class="hidden sm:absolute z-10 bg-amber-200 p-2 sm:p-5">
-            <li><a class="inline-block py-1 hover:opacity-80" href="https://forum.yunohost.org">Forum</a></li>
-            <li><a class="inline-block py-1 hover:opacity-80" href="https://yunohost.org/help">Support</a></li>
-            <li><a class="inline-block py-1 hover:opacity-80" href="https://yunohost.org/chat_rooms">Chat rooms</a></li>
-            <li><a class="inline-block py-1 hover:opacity-80" href="https://donate.yunohost.org">Je soutiens financièrement</a></li>
-            <li><a class="inline-block py-1 hover:opacity-80" href="https://toot.aquilenet.fr/@yunohost">Mastodon</a></li>
+              <li><a class="inline-block py-1 hover:opacity-80" href="https://forum.yunohost.org">{{ forum }}</a></li>
+            <li><a class="inline-block py-1 hover:opacity-80" href="https://yunohost.org/{{ lang }}/help">{{ support }}</a></li>
+            <li><a class="inline-block py-1 hover:opacity-80" href="https://yunohost.org/{{ lang }}/chat_rooms">{{ chat_rooms }}</a></li>
+            <li><a class="inline-block py-1 hover:opacity-80" href="https://donate.yunohost.org">{{ donate }}</a></li>
+            <li><a class="inline-block py-1 hover:opacity-80" href="https://toot.aquilenet.fr/@yunohost">{{ mastodon }}</a></li>
           </ul>
         </li>
         <li>
-          <a class="py-3 block sm:inline-block" href="https://yunohost.org/#/whatsyunohost">À propos</a>
+            <a class="py-3 block sm:inline-block" href="https://yunohost.org/#/whatsyunohost">{{ about }}</a>
         </li>
       </ul>
     </nav>
@@ -232,25 +232,7 @@
     <section id="main-content" class="text-center py-10">
 
         <h2 class="pb-10 text-3xl">
-            <span class="px-3"></span>Avec <span class="text-4xl font-bold">YunoHost</span>, gérez facilement
-            <div class="cycling-words inline-block text-left whitespace-nowrap">
-                <span>un serveur</span>
-                <span>un cloud</span>
-                <span>un site web</span>
-                <span>des boîtes mail</span>
-                <span>un wiki</span>
-                <span>un réseau social</span>
-                <span>une vidéothèque</span>
-                <span>un blog</span>
-                <span>des sondages</span>
-                <span>un outil comptable</span>
-                <span>un serveur de jeux</span>
-                <span>un forum</span>
-                <span>un chat</span>
-                <span>un ERP</span>
-            </div>
-          <br />
-          pour vos ami<span aria-hidden="true">·e⋅</span>s, votre asso, votre entreprise
+            {{ punchline }}
         </h2>
 
         <style>

@@ -1,3 +1,39 @@
 lang: en
 title: "YunoHost: garden your own piece of the Internet!"
 title_h1: "Garden your own<br/>piece of the Internet!"
+a11y_menu: "Accessibility menu"
+go_to_content: "Go to content"
+go_to_search: "Go to search"
+view_sitemap: "View sitemap"
+yunohost_logo: "YunoHost logo"
+main_menu: "Main menu"
+menu_last_news: "Last news"
+install: "Install"
+applications: "Applications"
+documentation: "Documentation"
+community: "Community"
+forum: "Forum"
+support: "Support"
+chat_rooms: "Chat rooms"
+donate: "I support financially"
+mastodon: "Mastodon"
+about: "About"
+punchline: "<span class='px-3'></span>With <span class='text-4xl font-bold'>YunoHost</span>, easily manage
+            <div class='cycling-words inline-block text-left whitespace-nowrap'>
+                <span>a server</span>
+                <span>un cloud</span>
+                <span>un site web</span>
+                <span>des boîtes mail</span>
+                <span>un wiki</span>
+                <span>un réseau social</span>
+                <span>une vidéothèque</span>
+                <span>un blog</span>
+                <span>des sondages</span>
+                <span>un outil comptable</span>
+                <span>un serveur de jeux</span>
+                <span>un forum</span>
+                <span>un chat</span>
+                <span>un ERP</span>
+            </div>
+          <br />
+          for your friends, your association, your company"

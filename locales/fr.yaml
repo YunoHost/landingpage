@@ -1,2 +1,41 @@
 lang: fr
 title: "YunoHost: jardinez votre bout d'Internet !"
+title_h1: "Jardinez votre<br/>bout d'Internet !"
+a11y_menu: "Menu accessibilité"
+go_to_content: "Aller au contenu"
+go_to_navigation: "Aller à la navigation"
+go_to_search: "Aller à la recherche"
+view_sitemap: "Consulter le plan du site"
+yunohost_logo: "Logo de YunoHost"
+main_menu: "Menu principal"
+menu_last_news: "Dernières nouvelles"
+install: "Installer"
+applications: "Applications"
+documentation: "Documentation"
+community: "Communauté"
+forum: "Forum"
+support: "Support"
+chat_rooms: "Chat rooms"
+donate: "Je soutiens financièrement"
+mastodon: "Mastodon"
+about: "A propos"
+punchline: "<span class='px-3'></span>Avec <span class='text-4xl font-bold'>YunoHost</span>, gérez facilement
+            <div class='cycling-words inline-block text-left whitespace-nowrap'>
+                <span>un serveur</span>
+                <span>un cloud</span>
+                <span>un site web</span>
+                <span>des boîtes mail</span>
+                <span>un wiki</span>
+                <span>un réseau social</span>
+                <span>une vidéothèque</span>
+                <span>un blog</span>
+                <span>des sondages</span>
+                <span>un outil comptable</span>
+                <span>un serveur de jeux</span>
+                <span>un forum</span>
+                <span>un chat</span>
+                <span>un ERP</span>
+            </div>
+          <br />
+          pour vos ami<span aria-hidden='true'>·e⋅</span>s, votre asso, votre entreprise"
+

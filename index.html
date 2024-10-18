@@ -4,6 +4,7 @@
       <title>{{ _("YunoHost: garden your own piece of the Internet!") }}</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/yunohost.min.css" />
     <link rel="stylesheet" href="assets/fonts/fork-awesome.min.css" />
     <link rel="stylesheet" href="assets/fonts/source-sans/source-sans-3.css" />
 
@@ -18,30 +19,6 @@
         },
       };
     </script>
-    <style>
-        strong { font-weight: 600 !important; }
-        #quick-access a:hover, #quick-access a:focus {
-            position: absolute;
-            width: auto;
-            height: auto;
-            color: #fff;
-            background-color:#000;
-            z-index: 999;
-            clip: auto;
-            margin: 10px;
-            padding:10px;
-        }
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0,0,0,0);
-            border: 0;
-        }
-    </style>
   </head>
   <body class="text-lg text-gray-900" style="font-family: 'Source Sans 3', sans-serif; font-optical-sizing: auto;">
       <nav id="quick-access" aria-label="{{ _("Accessibility menu") }}">
@@ -109,144 +86,14 @@
 
     <!-- ############################################################################################################ -->
 
-    <style>
-
-    .cycling-words {
-        min-height: 1em;
-        min-width: 8em;
-    }
-
-    .cycling-words span{
-        background-color: #eeed;
-        padding-right: 0.3em;
-        padding-left: 0.3em;
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
-        margin-left: 0em;
-        position: absolute;
-        opacity: 0;
-        overflow: hidden;
-        -webkit-animation: rotateWord 42s linear infinite 0s;
-        -ms-animation: rotateWord 42s linear infinite 0s;
-        animation: rotateWord 42s linear infinite 0s;
-    }
-
-    .cycling-words span:nth-child(2) {
-        -webkit-animation-delay: calc(3s*1);
-        -ms-animation-delay: calc(3s*1);
-        animation-delay: calc(3s*1);
-    }
-    .cycling-words span:nth-child(3) {
-        -webkit-animation-delay: calc(3s*2);
-        -ms-animation-delay: calc(3s*2);
-        animation-delay: calc(3s*2);
-    }
-    .cycling-words span:nth-child(4) {
-        -webkit-animation-delay: calc(3s*3);
-        -ms-animation-delay: calc(3s*3);
-        animation-delay: calc(3s*3);
-    }
-    .cycling-words span:nth-child(5) {
-        -webkit-animation-delay: calc(3s*4);
-        -ms-animation-delay: calc(3s*4);
-        animation-delay: calc(3s*4);
-    }
-    .cycling-words span:nth-child(6) {
-        -webkit-animation-delay: calc(3s*5);
-        -ms-animation-delay: calc(3s*5);
-        animation-delay: calc(3s*5);
-    }
-    .cycling-words span:nth-child(7) {
-        -webkit-animation-delay: calc(3s*6);
-        -ms-animation-delay: calc(3s*6);
-        animation-delay: calc(3s*6);
-    }
-    .cycling-words span:nth-child(8) {
-        -webkit-animation-delay: calc(3s*7);
-        -ms-animation-delay: calc(3s*7);
-        animation-delay: calc(3s*7);
-    }
-    .cycling-words span:nth-child(9) {
-        -webkit-animation-delay: calc(3s*8);
-        -ms-animation-delay: calc(3s*8);
-        animation-delay: calc(3s*8);
-    }
-    .cycling-words span:nth-child(10) {
-        -webkit-animation-delay: calc(3s*9);
-        -ms-animation-delay: calc(3s*9);
-        animation-delay: calc(3s*9);
-    }
-    .cycling-words span:nth-child(11) {
-        -webkit-animation-delay: calc(3s*10);
-        -ms-animation-delay: calc(3s*10);
-        opacity: 0;
-        animation-delay: calc(3s*10);
-    }
-    .cycling-words span:nth-child(12) {
-        -webkit-animation-delay: calc(3s*11);
-        -ms-animation-delay: calc(3s*11);
-        animation-delay: calc(3s*11);
-    }
-    .cycling-words span:nth-child(13) {
-        -webkit-animation-delay: calc(3s*12);
-        -ms-animation-delay: calc(3s*12);
-        animation-delay: calc(3s*12);
-    }
-    .cycling-words span:nth-child(14) {
-        -webkit-animation-delay: calc(3s*13);
-        -ms-animation-delay: calc(3s*13);
-        animation-delay: calc(3s*13);
-    }
-
-    @-webkit-keyframes rotateWord {
-        0% { opacity: 0; }
-        3% { opacity: 0; -webkit-transform: translateY(-10px); }
-        4% { opacity: 1; -webkit-transform: translateY(0px);}
-        9% { opacity: 1; -webkit-transform: translateY(0px); }
-        10% { opacity: 0; -webkit-transform: translateY(10px); }
-        80% { opacity: 0; }
-        100% { opacity: 0; }
-    }
-    @-ms-keyframes rotateWord {
-        0% { opacity: 0; }
-        3% { opacity: 0; -ms-transform: translateY(-10px); }
-        4% { opacity: 1; -ms-transform: translateY(0px);}
-        9% { opacity: 1; -ms-transform: translateY(0px); }
-        10% { opacity: 0; -ms-transform: translateY(10px); }
-        80% { opacity: 0; }
-        100% { opacity: 0; }
-    }
-    @keyframes rotateWord {
-        0% { opacity: 0; }
-        3% { opacity: 0; -webkit-transform: translateY(-10px); transform: translateY(-10px); }
-        4% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
-        9% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
-        10% { opacity: 0; -webkit-transform: translateY(10px); transform: translateY(10px); }
-        80% { opacity: 0; }
-        100% { opacity: 0; }
-    }
-
-    </style>
-
     <!-- <div style="background: #95aece21; padding: 1em"> -->
     <section id="main-content" class="text-center py-10">
 
         <h2 class="pb-10 text-3xl">
             {{ _("<span class='px-3'></span>With **YunoHost**, easily manage %(a server|a cloud|a web site|mailboxes|a wiki|a social network|a video library|a blog|surveys| an accounting tools|a game server|a forum|a chat|an ERP)%  
-for your friends, your association, your company")|markdown|no_p|replace('%(', "<div class='cycling-words inline-block text-left whitespace-nowrap'><span>")|replace(')%','</div>')|replace("|", "</span><span>") }}
+for your friends, your association, your company")|markdown|no_p|cycling }}
         </h2>
 
-        <style>
-        .screenshot-slide {
-          animation-name: fade;
-          animation-duration: 1s;
-        }
-        @keyframes fade {
-          from {opacity: 0}
-          to {opacity: 1}
-        }
-        .slider-dot-active, .slider-dot:hover { background-color: #111; }
-        </style>
 
         <div class="relative max-w-screen-lg mx-auto flex align-center justify-center">
           <div class="screenshot-slide hidden">
@@ -300,7 +147,7 @@ for your friends, your association, your company")|markdown|no_p|replace('%(', "
         <div class="pb-4 text-center w-full max-w-2xl mx-auto px-5 leading-snug">
             {{ _("More concretely, **YunoHost** is a system that installs itself on a **server**.  
 and allows you to install and maintain - **with very little technical knowledge** -    
-digital services (apps) **that you control**.") | markdown | replace('<br />', '<br class="hidden md:inline">') }}
+digital services (apps) **that you control**.") | markdown | replace('br />', 'br class="hidden md:inline">') }}
         </div>
 
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
@@ -324,7 +171,7 @@ digital services (apps) **that you control**.") | markdown | replace('<br />', '
  - 🔐 keep your passwords and notes safe
  - 📬 host mailboxes
  - 🎧 organize your photos, videos and music
- - 🏘️ join alternative social media") | markdown | replace("<h3>", '<h3 class="text-2xl font-bold">') | replace('<ul>', '<ul class="pt-3 text-left leading-snug"') | replace('<li>', '<li class="pb-2">') }}
+ - 🏘️ join alternative social media") | markdown | replace("h3>", 'h3 class="text-2xl font-bold">') | replace('ul>', 'ul class="pt-3 text-left leading-snug">') | replace('li>', 'li class="pb-2">') }}
         </div>
 
         <div class="mx-auto w-96 lg:w-4/5 px-5">
@@ -333,7 +180,7 @@ digital services (apps) **that you control**.") | markdown | replace('<br />', '
  - 🗂️ share files in common (e.g. with Nextcloud)
  - 📝 edit multiple documents in real time
  - 💰 manage your accounting
- - 💬 set up a team chat") | markdown | replace("<h3>", '<h3 class="text-2xl font-bold">') | replace('<ul>', '<ul class="pt-3 text-left leading-snug"') | replace('<li>', '<li class="pb-2">') }}
+ - 💬 set up a team chat") | markdown | replace("h3>", 'h3 class="text-2xl font-bold">') | replace('ul>', 'ul class="pt-3 text-left leading-snug">') | replace('li>', 'li class="pb-2">') }}
         </div>
       </div>
 
@@ -356,7 +203,7 @@ digital services (apps) **that you control**.") | markdown | replace('<br />', '
                 {{ _("If you're not sure yet on, we invite you to [try the demo](https://yunohost.org/en/try),  
 and take a look at [the pros and cons](https://yunohost.org/en/selfhosting) of managing a server yourself.
 
-Take the time to think about what applications, what type of hardware and what domain name you want for your server.") | markdown |replace('<br />', '<br class="hidden md:inline">') | replace('⋅e', '<span aria-hidden="true">⋅e</span>') | replace("<a ", "<a class='bg-sky-200 text-sky-800 whitespace-nowrap'",1) | replace("<a href", "<a class='bg-amber-200 text-amber-800 whitespace-nowrap' href",1) }}
+Take the time to think about what applications, what type of hardware and what domain name you want for your server.") | markdown |replace('br />', 'br class="hidden md:inline">') | replace("a href", "a class='bg-sky-200 text-sky-800 whitespace-nowrap' href",1) | replace("a href", "a class='bg-amber-200 text-amber-800 whitespace-nowrap' href",1) }}
               </p>
           </div>
 
@@ -408,7 +255,7 @@ Take the time to think about what applications, what type of hardware and what d
         <div class="mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-3">
         
             <div class="mx-auto hidden md:block">
-              <img src="assets/img/fursona.png" title="{{ _("Claude, la mascotte de YunoHost") }}" alt="{{ _('Image de Claude, la mascotte de YunoHost. L\'oppossum humanoïde est debout, cheveux et foulard violets, lunettes rondes, pantalon beige à poches et crop top bleu avec le logo YunoHost.') }}" />
+              <img src="assets/img/fursona.png" title="{{ _("Claude, YunoHost's mascot") }}" alt="{{ _("Image of Claude, YunoHost's mascot. The humanoid oppossum stands with purple hair and scarf, round glasses, beige pants with pockets and a blue crop top with the YunoHost logo.") }}" />
             </div>
 
             <div class="col-span-2 mx-auto px-5 w-full sm:w-4/5 lg:w-2/3">
@@ -423,7 +270,7 @@ Take the time to think about what applications, what type of hardware and what d
 
 🪽 We advocate a **decentralized** Internet, with **open**, **interoperable** technologies that **respect privacy** and give **empowerment to as many people as possible**.
 
-🌱 What's more, we want to **give materiality back to the digital**, and encourage **sobriety** and **reuse**.") | markdown | replace("<p>", '<p class="pb-2">') }}
+🌱 What's more, we want to **give materiality back to the digital**, and encourage **sobriety** and **reuse**.") | markdown | replace("p>", 'p class="pb-2">') }}
                   </p>
                   </div>
 
@@ -438,7 +285,7 @@ Take the time to think about what applications, what type of hardware and what d
 
             </div>
             <div class="mx-auto md:hidden">
-                <img src="assets/img/fursona.png" title="{{ _("Claude, la mascotte de YunoHost") }}" alt="{{ _('Image de Claude, la mascotte de YunoHost. L\'oppossum humanoïde est debout, cheveux et foulard violets, lunettes rondes, pantalon beige à poches et crop top bleu avec le logo YunoHost.') }}" />
+                <img src="assets/img/fursona.png" title="{{ _("Claude, YunoHost's mascot") }}" alt="{{ _("Image of Claude, YunoHost's mascot. The humanoid oppossum stands with purple hair and scarf, round glasses, beige pants with pockets and a blue crop top with the YunoHost logo.") }}" />
             </div>
 
       </div>
@@ -446,90 +293,17 @@ Take the time to think about what applications, what type of hardware and what d
       </section>
 
       <div class="text-center bg-amber-200 p-3">
-          <span><a href="https://yunohost.org/terms_of_services">{{ _("Terms of service") }}</a></span> ⋅ <span><a href="https://github.com/YunoHost">{{ _("Code") }}</a></span> ⋅ <span><a href="https://toot.aquilenet.fr/@yunohost">{{ _("Mastodon") }}</a></span> ⋅ <span><a href="https://yunohost.org/docs">{{ _("Documentation") }}</a></span> ⋅ <span><a href="https://yunohost.org/security_team">{{ _("Security") }}</a></span> ⋅ <span><a href="https://status.yunohost.org">{{ _("Services status") }}</a></span> ⋅
+          <span><a href="https://yunohost.org/terms_of_services">{{ _("Terms of services") }}</a></span> ⋅ <span><a href="https://github.com/YunoHost">{{ _("Code") }}</a></span> ⋅ <span><a href="https://toot.aquilenet.fr/@yunohost">{{ _("Mastodon") }}</a></span> ⋅ <span><a href="https://yunohost.org/docs">{{ _("Documentation") }}</a></span> ⋅ <span><a href="https://yunohost.org/security_team">{{ _("Security") }}</a></span> ⋅ <span><a href="https://status.yunohost.org">{{ _("Services status") }}</a></span>
       </div>
 
+
 <!--
-      (page dans la doc ?)
-
-      <h3>Mais pourquoi?</h3>
-
-      <img src="https://md.yeswiki.net/uploads/6459b95d-3d29-41a2-beda-e15fa2945025.png" />
-
-
-      <footer class="relative bg-blueGray-200 pt-8 pb-6">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap text-left lg:text-left">
-            <div class="w-full lg:w-6/12 px-4">
-              <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
-              <h5 class="mt-0 mb-2 text-blueGray-600">
-                Find us on any of these platforms, we respond 1-2 business days.
-              </h5>
-              <div class="mt-6 lg:mb-0 mb-6">
-                <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                  <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                  <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                  <i class="fab fa-dribbble"></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                  <i class="fab fa-github"></i>
-                </button>
-              </div>
-            </div>
-            <div class="w-full lg:w-6/12 px-4">
-              <div class="flex flex-wrap items-top mb-6">
-                <div class="w-full lg:w-4/12 px-4 ml-auto">
-                  <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
-                    </li>
-                    <li>
-                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
-                    </li>
-                    <li>
-                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
-                    </li>
-                    <li>
-                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Free Products</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="w-full lg:w-4/12 px-4">
-                  <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">MIT License</a>
-                    </li>
-                    <li>
-                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
-                    </li>
-                    <li>
-                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
-                    </li>
-                    <li>
-                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr class="my-6 border-blueGray-300">
-          <div class="flex flex-wrap items-center md:justify-between justify-center">
-            <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-              <div class="text-sm text-blueGray-500 font-semibold py-1">
-                Copyright © <span id="get-current-year">2021</span><a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank"> Notus JS by
-                <a href="https://www.creative-tim.com?ref=njs-profile" class="text-blueGray-500 hover:text-blueGray-800">Creative Tim</a>.
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-
+{# Disable this on generated page
 -->
 <script>
     function walkText(node) {
   if (node.nodeType == 3) {
-      node.data = node.data.replace(/(\{\{ _\("|"\) \}\})/g, "");
+      node.data = node.data.replace(/(\{\{ _\(("|')|("|')\).* \}\})/g, "");
   }
   if (node.nodeType == 1 && node.nodeName != "SCRIPT") {
     for (var i = 0; i < node.childNodes.length; i++) {
@@ -539,5 +313,8 @@ Take the time to think about what applications, what type of hardware and what d
 }
 walkText(document.body);
 </script>
+<!--
+#}
+-->
   </body>
 </html>

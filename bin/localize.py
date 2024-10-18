@@ -22,8 +22,12 @@ def no_p(non_p_string) -> str:
         which markdown() forces, and which interfere with some jinja2 layout
     '''
     return re.sub("(^<P>|</P>$)", "", non_p_string, flags=re.IGNORECASE)
+def cycling(value) -> str:
+    return value.replace('%(', "<div class='cycling-words inline-block text-left whitespace-nowrap'><span>").replace(')%','</div>').replace("|", "</span><span>")
+
 env.filters['markdown'] = markdown.markdown
 env.filters['no_p'] = no_p
+env.filters['cycling'] = cycling
 template = env.get_template("index.html")
 
 

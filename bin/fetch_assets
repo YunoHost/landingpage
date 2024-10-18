@@ -1,26 +1,55 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+LANDINGPAGE_DIR="$(dirname "$SCRIPT_DIR")"
+
+cd "$LANDINGPAGE_DIR"
+
+download() {
+    # Tries to only download if remote is more recent
+    url="$1"
+    file="$2"
+    if [ -f "$file" ]; then
+        curl -L -s -o "$file" -z "$file" "$url"
+    else
+        curl -L -s -o "$file" "$url"
+    fi
+}
+
+git_download() {
+    repo="$1"
+    dir="$2"
+    shift; shift; clone_args=("$@")
+    if [ -d "$dir" ]; then
+        git -C "$dir" pull
+    else
+        git clone "$repo" "${clone_args[@]}" "$dir"
+    fi
+}
 
 # Development -> we use the JS magic thingy
-curl -L https://cdn.tailwindcss.com?plugins=forms > assets/js/tailwinds.js
+download https://cdn.tailwindcss.com?plugins=forms assets/js/tailwinds.js
 
 # Dark theme stuff
-#git clone https://github.com/jjranalli/nightwind
+# git_download https://github.com/jjranalli/nightwind
 
 # Icons / Forkawesome
-curl https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css > assets/fonts/fork-awesome.min.css
+download https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css assets/fonts/fork-awesome.min.css
 sed -i 's@../fonts/@@g' ./assets/fonts/fork-awesome.min.css
-curl https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.woff2?v=1.2.0 > assets/fonts/forkawesome-webfont.woff2
-curl https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.woff?v=1.2.0 > assets/fonts/forkawesome-webfont.woff
-curl https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.ttf?v=1.2.0 > assets/fonts/forkawesome-webfont.ttf
+download https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.woff2?v=1.2.0 assets/fonts/forkawesome-webfont.woff2
+download https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.woff?v=1.2.0 assets/fonts/forkawesome-webfont.woff
+download https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.ttf?v=1.2.0 assets/fonts/forkawesome-webfont.ttf
 
 # Logos
-#curl https://raw.githubusercontent.com/YunoHost/doc/master/images/logo_roundcorner.png > assets/img/ynh_logo_roundcorner.png
-#curl https://raw.githubusercontent.com/YunoHost/doc/master/images/ynh_logo_black.svg > assets/img/ynh_logo_black.svg
+# download https://raw.githubusercontent.com/YunoHost/doc/master/images/logo_roundcorner.png assets/img/ynh_logo_roundcorner.png
+# download https://raw.githubusercontent.com/YunoHost/doc/master/images/ynh_logo_black.svg assets/img/ynh_logo_black.svg
 
-git clone https://github.com/adobe-fonts/source-sans --depth 1 --single-branch assets/fonts/source-sans
+git_download https://github.com/adobe-fonts/source-sans assets/fonts/source-sans --depth 1 --single-branch
 
 cp -Rf assets dist/
 
 # Production -> download standalone tailwind to compile only what we need
-#wget https://github.com/tailwindlabs/tailwindcss/releases/download/v3.4.3/tailwindcss-linux-x64
-chmod u+x tailwindcss-linux-x64 
-./tailwindcss-linux-x64 --input assets/css/input.css w --output dist/assets/css/prod.min.css --content dist/index.en.html
+download https://github.com/tailwindlabs/tailwindcss/releases/download/v3.4.3/tailwindcss-linux-x64 assets/tailwindcss-linux-x64
+chmod u+x assets/tailwindcss-linux-x64
+./assets/tailwindcss-linux-x64 --input assets/css/input.css w --output dist/assets/css/prod.min.css --content dist/index.en.html

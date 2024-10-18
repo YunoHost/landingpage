@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-18 16:05+0200\n"
+"POT-Creation-Date: 2024-10-18 17:48+0200\n"
 "PO-Revision-Date: 2024-10-17 18:17+0200\n"
 "Last-Translator: ljf\n"
 "Language: fr\n"
@@ -99,7 +99,6 @@ msgid "About"
 msgstr "A propos"
 
 #: index.html:103
-#, fuzzy
 msgid ""
 "<span class='px-3'></span>With **YunoHost**, easily manage %(a server|a "
 "cloud|a web site|mailboxes|a wiki|a social network|a video library|a "
@@ -108,10 +107,9 @@ msgid ""
 "for your friends, your association, your company"
 msgstr ""
 "<span class='px-3'></span>Avec **YunoHost**, gérez facilement %(un "
-"serveur|un nuage|un site web|des boîtes aux lettres|un wiki|un réseau "
-"social|une vidéothèque|un cloud|un site web|des boîtes aux lettres|un "
-"wiki|un réseau social|une vidéothèque|un blog|sondages|outils de "
-"comptabilité|serveur de jeux|forum|chat|ERP)%  \n"
+"serveur|un nuage|un site web|des boîtes mail|un wiki|un réseau "
+"social|une vidéothèque|un blog|des sondages|un outil de "
+"comptabilité|un serveur de jeux|un forum|un chat|un ERP)%  \n"
 "pour vos proches, votre association, votre entreprise"
 
 #: index.html:158
@@ -195,8 +193,10 @@ msgstr ""
 "démo](https://yunohost.org/en/try),  \n"
 "et à jeter un oeil [aux avantages et "
 "inconvénients](https://yunohost.org/en/selfhosting) de gérer un serveur "
-"soi-même. Prenez le temps de réfléchir à quelles applications, quel type "
-"de matériel et quel nom de domaine vous souhaitez pour votre serveur."
+"soi-même.\n"
+"\n"
+"Prenez le temps de réfléchir à quelles applications, quel type de "
+"matériel et quel nom de domaine vous souhaitez pour votre serveur."
 
 #: index.html:223
 msgid "Choosing a support"
@@ -308,7 +308,6 @@ msgid "Code repositories"
 msgstr "Dépots de code"
 
 #: index.html:306
-#, fuzzy
 msgid "Terms of services"
 msgstr "CGS"
 

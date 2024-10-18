@@ -1,5 +1,7 @@
 import yaml
 import os
+import markdown
+import re
 from jinja2 import Environment, FileSystemLoader
 from babel.support import Translations
 
@@ -15,7 +17,15 @@ locales = [file for file in os.listdir(LOCALES_PATH)]
 env = Environment(
     extensions=['jinja2.ext.i18n'],
     loader=FileSystemLoader(TEMPLATES_PATH))
+def no_p(non_p_string) -> str:
+    ''' Strip enclosing paragraph marks, <p> ... </p>,
+        which markdown() forces, and which interfere with some jinja2 layout
+    '''
+    return re.sub("(^<P>|</P>$)", "", non_p_string, flags=re.IGNORECASE)
+env.filters['markdown'] = markdown.markdown
+env.filters['no_p'] = no_p
 template = env.get_template("index.html")
+
 
 # Generate translated html for each locales
 for locale in locales:

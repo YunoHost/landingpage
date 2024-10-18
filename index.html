@@ -91,7 +91,7 @@
             <a class="py-3 block sm:inline-block hover:opacity-80" href="https://yunohost.org/{{ lang }}/docs">{{ _("Documentation") }}</a>
         </li>
         <li>
-            <button class="w-full sm:w-auto py-3 block sm:inline-block sm:relative hover:opacity-80" onclick="document.getElementById('community-menu-items').classList.toggle('hidden')">{{ community }} <i class="fa fa-caret-down"></i></button>
+            <button class="w-full sm:w-auto py-3 block sm:inline-block sm:relative hover:opacity-80" onclick="document.getElementById('community-menu-items').classList.toggle('hidden')">{{ _("Community") }} <i class="fa fa-caret-down"></i></button>
           <ul id="community-menu-items" class="hidden sm:absolute z-10 bg-amber-200 p-2 sm:p-5">
               <li><a class="inline-block py-1 hover:opacity-80" href="https://forum.yunohost.org">{{ _("Forum") }}</a></li>
             <li><a class="inline-block py-1 hover:opacity-80" href="https://yunohost.org/{{ lang }}/help">{{ _("Support") }}</a></li>
@@ -232,25 +232,8 @@
     <section id="main-content" class="text-center py-10">
 
         <h2 class="pb-10 text-3xl">
-            {{ _("<span class='px-3'></span>With <span class='text-4xl font-bold'>YunoHost</span>, easily manage
-            <div class='cycling-words inline-block text-left whitespace-nowrap'>
-                <span>a server</span>
-                <span>a cloud</span>
-                <span>a web site</span>
-                <span>mailboxes</span>
-                <span>a wiki</span>
-                <span>a social network</span>
-                <span>a video library</span>
-                <span>a blog</span>
-                <span>surveys</span>
-                <span>an accounting tool</span>
-                <span>a game server</span>
-                <span>a forum</span>
-                <span>a chat</span>
-                <span>an ERP</span>
-            </div>
-          <br />
-          for your friends, your association, your company") }}
+            {{ _("<span class='px-3'></span>With **YunoHost**, easily manage %(a server|a cloud|a web site|mailboxes|a wiki|a social network|a video library|a blog|surveys| an accounting tools|a game server|a forum|a chat|an ERP)%  
+for your friends, your association, your company")|markdown|no_p|replace('%(', "<div class='cycling-words inline-block text-left whitespace-nowrap'><span>")|replace(')%','</div>')|replace("|", "</span><span>") }}
         </h2>
 
         <style>
@@ -315,19 +298,15 @@
         </script>
         
         <div class="pb-4 text-center w-full max-w-2xl mx-auto px-5 leading-snug">
-            Plus concrètement, <strong>YunoHost</strong> est un système qui s'installe sur un <strong>serveur</strong>
-                <br class="hidden md:inline"/>
-            
-            et permet d'installer et maintenir — <strong>sans trop de connaissances techniques</strong> —
-                <br class="hidden md:inline"/>
-            
-            des services numériques (<em>apps</em>) <strong>que <em>vous</em> contrôlez</strong>.
+            {{ _("More concretely, **YunoHost** is a system that installs itself on a **server**.  
+and allows you to install and maintain - **with very little technical knowledge** -    
+digital services (apps) **that you control**.") | markdown | replace('<br />', '<br class="hidden md:inline">') }}
         </div>
 
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <a class="p-3 bg-gray-100 text-gray-800 font-semibold w-fit" href="#">Hein, mais pourquoi <i class="fa fa-question"></i></a>
-          <a class="p-3 bg-sky-200  text-sky-800  font-semibold w-48" href="https://yunohost.org/#/try"><i class="fa fa-fw fa-flask"></i> Essayer</a>
-          <a class="p-3 bg-lime-200 text-lime-800 font-semibold w-48" href="#start"><i class="fa fa-fw fa-download"></i> Installer</a>
+            <a class="p-3 bg-gray-100 text-gray-800 font-semibold w-fit" href="#">{{ _("Huh, but why <i class='fa fa-question'></i>") }}</a>
+          <a class="p-3 bg-sky-200  text-sky-800  font-semibold w-48" href="https://yunohost.org/{{ lang }}/try"><i class="fa fa-fw fa-flask"></i> {{ _("Try") }}</a>
+          <a class="p-3 bg-lime-200 text-lime-800 font-semibold w-48" href="#start"><i class="fa fa-fw fa-download"></i> {{ _("Install") }}</a>
         </div>
     </section>
     
@@ -335,35 +314,31 @@
 
     <section id="example" class="text-center py-10 bg-gray-50">
     
-      <h2 class="pb-10 text-4xl font-bold">Exemples d'utilisations</h2>
+        <h2 class="pb-10 text-4xl font-bold">{{ _("Examples of uses") }}</h2>
 
       <div class="mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-2 pb-10">
 
         <div class="mx-auto w-96 lg:w-4/5 mb-5 px-5">
-          <h3 class="text-2xl font-bold">Pour vous et vos proches</h3>
-          <ul class="pt-3 text-left leading-snug">
-            <li class="pb-2">🔄  synchronisez vos agendas et contacts</li>
-            <li class="pb-2">🔐  gardez en sécurité vos mots de passe et notes</li>
-            <li class="pb-2">📬  hébergez des boîte mail</li>
-            <li class="pb-2">🎧  organisez vos photos, vidéos, musique</li>
-            <li class="pb-2">🏘️  rejoignez des médias sociaux alternatifs</li>
-          </ul>
+            {{ _("### For you and your friends
+ - 🔄 synchronize your calendars and contacts
+ - 🔐 keep your passwords and notes safe
+ - 📬 host mailboxes
+ - 🎧 organize your photos, videos and music
+ - 🏘️ join alternative social media") | markdown | replace("<h3>", '<h3 class="text-2xl font-bold">') | replace('<ul>', '<ul class="pt-3 text-left leading-snug"') | replace('<li>', '<li class="pb-2">') }}
         </div>
 
         <div class="mx-auto w-96 lg:w-4/5 px-5">
-          <h3 class="text-2xl font-bold">Pour les petites organisations</h3>
-          <ul class="pt-3 text-left leading-snug">
-            <li class="pb-2">🌐  hébergez votre site web</li>
-            <li class="pb-2">🗂️  partagez des fichiers en commun (par ex. avec Nextcloud)</li>
-            <li class="pb-2">📝  éditez des documents à plusieurs en temps réel</li>
-            <li class="pb-2">💰  gérez votre compta</li>
-            <li class="pb-2">💬  mettez en place un chat d'équipe</li>
-          </ul>
+            {{ _("### For small organizations
+ - 🌐 host your own website
+ - 🗂️ share files in common (e.g. with Nextcloud)
+ - 📝 edit multiple documents in real time
+ - 💰 manage your accounting
+ - 💬 set up a team chat") | markdown | replace("<h3>", '<h3 class="text-2xl font-bold">') | replace('<ul>', '<ul class="pt-3 text-left leading-snug"') | replace('<li>', '<li class="pb-2">') }}
         </div>
       </div>
 
       <div class="flex flex-row space-x-4 justify-center">
-          <a class="p-3 bg-purple-200 text-purple-800 font-semibold w-80" href="https://apps.yunohost.org"><i class="fa fa-fw fa-search"></i> Explorer le catalogue d'apps</a>
+          <a class="p-3 bg-purple-200 text-purple-800 font-semibold w-80" href="https://apps.yunohost.org"><i class="fa fa-fw fa-search"></i> {{ _("Explore the app catalog") }}</a>
       </div>
 
       </section>
@@ -374,54 +349,51 @@
 
       <section id="start" class="flex flex-col items-center py-10 text-center">
     
-          <h2 class="pb-10 text-4xl font-bold">Comment se lancer</h2>
+          <h2 class="pb-10 text-4xl font-bold">{{ _("How to get started") }}</h2>
 
           <div class="px-5 w-full max-w-2xl pb-5 max-w-screen-lg">
               <p>
-                Si vous n'êtes pas encore sur<span aria-hidden="true">⋅e</span>, nous vous invitons à
-                <a class="bg-sky-200 text-sky-800 whitespace-nowrap" href="https://yunohost.org/#/try">essayer la démo</a>,
-                <br class="hidden md:inline"/>
-                et à jeter un oeil <a class="bg-amber-200 text-amber-800 whitespace-nowrap" href="https://yunohost.org/selfhosting">aux avantages et inconvénients</a> de gérer un serveur soi-même.
-              </p>
-              <p>
-                Prenez le temps de réfléchir à quelles applications, quel type de matériel et quel nom de domaine vous souhaitez pour votre serveur.
+                {{ _("If you're not sure yet on, we invite you to [try the demo](https://yunohost.org/en/try),  
+and take a look at [the pros and cons](https://yunohost.org/en/selfhosting) of managing a server yourself.
+
+Take the time to think about what applications, what type of hardware and what domain name you want for your server.") | markdown |replace('<br />', '<br class="hidden md:inline">') | replace('⋅e', '<span aria-hidden="true">⋅e</span>') | replace("<a ", "<a class='bg-sky-200 text-sky-800 whitespace-nowrap'",1) | replace("<a href", "<a class='bg-amber-200 text-amber-800 whitespace-nowrap' href",1) }}
               </p>
           </div>
 
           <div class="mx-3 md:max-w-screen-lg flex flex-wrap justify-center gap-5 py-10">    
               
               <div class="relative basis-80 border-4 border-gray-300 rounded h-72 mb-10">
-                <h4 class="text-xl font-bold py-3 border-b-4">1. Choisir le support</h4>
+                  <h4 class="text-xl font-bold py-3 border-b-4">1. {{ _("Choosing a support") }}</h4>
                 <div class="py-10 px-5 leading-snug">
                     <ul>
-                      <li class="pb-2">🪺 Carte ARM / Raspberry Pi</li>
-                      <li class="pb-2">🦕 Vieille tour ou portable (<em>ordinosaure</em>)</li>
-                      <li class="pb-2">☁️  Serveur en ligne (VPS)</li>
+                        <li class="pb-2">🪺 {{ _("ARM board / Raspberry Pi") }}</li>
+                        <li class="pb-2">🦕 {{ _("Old tower or portable (*ordinosaur*)") | markdown | no_p }}</li>
+                      <li class="pb-2">☁️  {{ _("Online server (VPS)") }}</li>
                     </ul>
-                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-sky-200 text-sky-800 w-48 font-semibold" style="bottom: -1.5em" href="https://yunohost.org/howtohostyourself"><i class="fa fa-bar-chart fa-fw"></i> Voir le comparatif</a>
+                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-sky-200 text-sky-800 w-48 font-semibold" style="bottom: -1.5em" href="https://yunohost.org/howtohostyourself"><i class="fa fa-bar-chart fa-fw"></i> {{ _("See the comparison") }}</a>
                 </div>
               </div>
               
               <div class="relative basis-80 border-4 border-gray-300 rounded lg:h-80 h-72 mb-10">
-                <h4 class="text-xl font-bold py-3 border-b-4">2. Installer YunoHost</h4>
+                  <h4 class="text-xl font-bold py-3 border-b-4">2. {{ _("Install YunoHost") }}</h4>
                 <div class="py-7 px-5 leading-snug">
                     <ul>
-                        <li class="pb-2">🚀 Vérifiez les prérequis<br>puis flashez ou installez le système</li>
-                        <li class="pb-2">🌐 YunoHost vous guidera pour configurer le premier admin, le nom de domaine et, le cas échéant, votre box internet</li>
+                        <li class="pb-2">🚀 {{ _("Check the prerequisites<br>then flash or install the system") }}</li>
+                        <li class="pb-2">🌐 {{ _("YunoHost will guide you through setting up the first admin, the domain name and, if applicable, your Internet box.") }}</li>
                     </ul>
-                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-lime-200 text-lime-800 w-fit font-semibold" style="bottom: -1.5em" href="https://yunohost.org/install"><i class="fa fa-download fa-fw"></i> Instructions d'installation</a>
+                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-lime-200 text-lime-800 w-fit font-semibold" style="bottom: -1.5em" href="https://yunohost.org/install"><i class="fa fa-download fa-fw"></i> {{ _("Installation instructions") }}</a>
                 </div>
               </div>
               
               <div class="relative basis-80 border-4 border-gray-300 rounded h-72">
-                <h4 class="text-xl font-bold py-3 border-b-4">3. Profiter !</h4>
+                  <h4 class="text-xl font-bold py-3 border-b-4">3. {{ _("Enjoy!") }}</h4>
                 <div class="py-10 px-5 leading-snug">
                     <ul>
-                      <li class="pb-2">📦 Installez des applications<br>en quelques clics</li>
-                      <li class="pb-2">🚑 Mettez en place des sauvegardes</li>
-                      <li class="pb-2">🌱 Prenez soin de votre serveur</li>
+                      <li class="pb-2">📦 {{ _("Install applications<br>in just a few clicks") }}</li>
+                      <li class="pb-2">🚑 {{ _("Set up backups") }}</li>
+                      <li class="pb-2">🌱 {{ _("Take care of your server") }}</li>
                     </ul>
-                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-purple-200 text-purple-800 w-48 font-semibold" style="bottom: -1.5em" href="https://yunohost.org/admin_guide"><i class="fa fa-map-signs fa-fw"></i> Visite guidée</a>
+                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-purple-200 text-purple-800 w-48 font-semibold" style="bottom: -1.5em" href="https://yunohost.org/admin_guide"><i class="fa fa-map-signs fa-fw"></i> {{ _("Guided tour") }}</a>
                 </div>
               </div>
               
@@ -436,38 +408,37 @@
         <div class="mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-3">
         
             <div class="mx-auto hidden md:block">
-              <img src="assets/img/fursona.png" alt="Claude, la mascotte de YunoHost" />
+              <img src="assets/img/fursona.png" title="{{ _("Claude, la mascotte de YunoHost") }}" alt="{{ _('Image de Claude, la mascotte de YunoHost. L\'oppossum humanoïde est debout, cheveux et foulard violets, lunettes rondes, pantalon beige à poches et crop top bleu avec le logo YunoHost.') }}" />
             </div>
 
             <div class="col-span-2 mx-auto px-5 w-full sm:w-4/5 lg:w-2/3">
               
-              <h2 class="py-5 text-4xl font-bold text-center">Communauté</h2>
+                <h2 class="py-5 text-4xl font-bold text-center">{{ _("Community") }}</h2>
               
               <div class="text-center">
 
                   <div class="pb-5 leading-snug">
                   <p class="pb-2">
-                  ✊ <strong>YunoHost</strong> est un projet <strong>technocritique et à but non-lucratif</strong>, développé et maintenu par des <strong>bénévoles</strong>.
-                  </p>
-                  <p class="pb-2">
-                  🪽 Nous défendons un <strong>internet décentralisé</strong>, des technologies <strong>ouvertes</strong>, <strong>interopérables</strong>, qui <strong>respectent la vie privée</strong> et qui donnent de l'<strong>autonomie</strong> et du <strong>pouvoir au plus grand nombre</strong>.
-                  <p class="pb-2">
-                    🌱 En outre, nous souhaitons <strong>redonner de la matérialité au numérique</strong>, encourager la <strong>sobriété</strong> et le <strong>réemploi</strong>.
+                  {{ _("✊ **YunoHost** is a non-profit **technocritical** project, developed and maintained by **volunteers**.
+
+🪽 We advocate a **decentralized** Internet, with **open**, **interoperable** technologies that **respect privacy** and give **empowerment to as many people as possible**.
+
+🌱 What's more, we want to **give materiality back to the digital**, and encourage **sobriety** and **reuse**.") | markdown | replace("<p>", '<p class="pb-2">') }}
                   </p>
                   </div>
 
                   <p class="py-5 leading-[4rem]">
-                    <a class="m-2 px-5 py-3 font-semibold bg-purple-100 text-purple-800 w-48 whitespace-nowrap" href="https://forum.yunohost.org">💬 Forum</a>
-                    <a class="m-2 px-5 py-3 font-semibold bg-green-100 text-green-800 w-48 whitespace-nowrap" href="https://yunohost.org/help">🛟 Chat d'entraide</a>
-                    <a class="m-2 px-5 py-3 font-semibold bg-amber-100 text-amber-800 w-48 whitespace-nowrap" href="https://donate.yunohost.org">💰 Faire un don</a>
-                    <a class="m-2 px-5 py-3 font-semibold bg-orange-100 text-orange-800 w-48 whitespace-nowrap" href="https://yunohost.org/contribute">👷🏼 Contribuer</a>
-                    <a class="m-2 px-5 py-3 font-semibold bg-gray-100 text-gray-800 w-48 whitespace-nowrap" href="https://github.com/yunohost">💻 Dépôts de code</a>
+                  <a class="m-2 px-5 py-3 font-semibold bg-purple-100 text-purple-800 w-48 whitespace-nowrap" href="https://forum.yunohost.org">💬 {{ _("Forum") }}</a>
+                  <a class="m-2 px-5 py-3 font-semibold bg-green-100 text-green-800 w-48 whitespace-nowrap" href="https://yunohost.org/help">🛟 {{ _("Self-help chat") }}</a>
+                  <a class="m-2 px-5 py-3 font-semibold bg-amber-100 text-amber-800 w-48 whitespace-nowrap" href="https://donate.yunohost.org">💰 {{ _("Donate") }}</a>
+                  <a class="m-2 px-5 py-3 font-semibold bg-orange-100 text-orange-800 w-48 whitespace-nowrap" href="https://yunohost.org/contribute">👷🏼 {{ _("Contribute") }}</a>
+                    <a class="m-2 px-5 py-3 font-semibold bg-gray-100 text-gray-800 w-48 whitespace-nowrap" href="https://github.com/yunohost">💻 {{ _("Code repositories") }}</a>
                   </p>
               </div>
 
             </div>
             <div class="mx-auto md:hidden">
-              <img src="assets/img/fursona.png" alt="Claude, la mascotte de YunoHost" />
+                <img src="assets/img/fursona.png" title="{{ _("Claude, la mascotte de YunoHost") }}" alt="{{ _('Image de Claude, la mascotte de YunoHost. L\'oppossum humanoïde est debout, cheveux et foulard violets, lunettes rondes, pantalon beige à poches et crop top bleu avec le logo YunoHost.') }}" />
             </div>
 
       </div>
@@ -475,7 +446,7 @@
       </section>
 
       <div class="text-center bg-amber-200 p-3">
-          <span>Press kit</span> ⋅ <span><a href="https://yunohost.org/terms_of_services">CGU</a></span> ⋅ <span>Mentions légales</span> ⋅ <span>Association</span> ⋅ <span><a href="https://github.com/YunoHost">Code</a></span> ⋅ <span><a href="https://toot.aquilenet.fr/@yunohost">Mastodon</a></span> ⋅ <span><a href="https://yunohost.org/docs">Documentation</a></span> ⋅ <span><a href="https://yunohost.org/security_team">Security</a></span> ⋅ <span><a href="https://status.yunohost.org">Services status</a></span> ⋅
+          <span><a href="https://yunohost.org/terms_of_services">{{ _("Terms of service") }}</a></span> ⋅ <span><a href="https://github.com/YunoHost">{{ _("Code") }}</a></span> ⋅ <span><a href="https://toot.aquilenet.fr/@yunohost">{{ _("Mastodon") }}</a></span> ⋅ <span><a href="https://yunohost.org/docs">{{ _("Documentation") }}</a></span> ⋅ <span><a href="https://yunohost.org/security_team">{{ _("Security") }}</a></span> ⋅ <span><a href="https://status.yunohost.org">{{ _("Services status") }}</a></span> ⋅
       </div>
 
 <!--
@@ -555,5 +526,18 @@
       </footer>
 
 -->
+<script>
+    function walkText(node) {
+  if (node.nodeType == 3) {
+      node.data = node.data.replace(/(\{\{ _\("|"\) \}\})/g, "");
+  }
+  if (node.nodeType == 1 && node.nodeName != "SCRIPT") {
+    for (var i = 0; i < node.childNodes.length; i++) {
+      walkText(node.childNodes[i]);
+    }
+  }
+}
+walkText(document.body);
+</script>
   </body>
 </html>

@@ -52,4 +52,4 @@ cp -Rf assets dist/
 # Production -> download standalone tailwind to compile only what we need
 download https://github.com/tailwindlabs/tailwindcss/releases/download/v3.4.3/tailwindcss-linux-x64 assets/tailwindcss-linux-x64
 chmod u+x assets/tailwindcss-linux-x64
-./assets/tailwindcss-linux-x64 --input assets/css/input.css w --output dist/assets/css/prod.min.css --content dist/index.en.html
+./assets/tailwindcss-linux-x64 --input assets/css/input.css --output dist/assets/css/prod.min.css --content dist/index.en.html

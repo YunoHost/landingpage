@@ -1,9 +1,12 @@
-import yaml
+#!/usr/bin/env python3
+
 import os
-import markdown
 import re
-from jinja2 import Environment, FileSystemLoader
+
+import markdown
+import yaml
 from babel.support import Translations
+from jinja2 import Environment, FileSystemLoader
 
 LOCALES_PATH = "translations"
 TEMPLATES_PATH = "./"
@@ -39,4 +42,3 @@ for locale in locales:
 
     with open(f"{DIST_PATH}/index.{locale}.html", "w") as file:
         file.write(translated_html)
-

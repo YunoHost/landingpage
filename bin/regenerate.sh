@@ -8,18 +8,10 @@ cd "$LANDINGPAGE_DIR"
 venv=$LANDINGPAGE_DIR/venv
 dist=$LANDINGPAGE_DIR/dist
 
-if [ -d "$dist" ]; then
-    rm -rf "$dist"
-fi
-mkdir -p dist
-
 if [ -d "$venv" ]; then
     rm -rf "$venv"
 fi
-
-python3 -m venv "$LANDINGPAGE_DIR/venv"
-
-source "$venv/bin/activate"
+python3 -m venv "$venv"
 
 "$venv/bin/pip" install -r requirements.txt
 
@@ -27,7 +19,8 @@ source "$venv/bin/activate"
 "$venv/bin/pybabel" extract -F babel.cfg -o messages.pot index.html
 
 # If working on a new locale: initialize it (in this example: fr)
-"$venv/bin/pybabel" init -i messages.pot -d translations -l fr
+# "$venv/bin/pybabel" init -i messages.pot -d translations -l fr
+
 # Otherwise, update the existing .po:
 "$venv/bin/pybabel" update -i messages.pot -d translations
 
@@ -35,6 +28,12 @@ source "$venv/bin/activate"
 # re-run the 'update' command to let Babel properly format the text
 # then compile:
 "$venv/bin/pybabel" compile -d translations
+
+
+if [ -d "$dist" ]; then
+    rm -rf "$dist"
+fi
+mkdir -p "$dist"
 
 # Generate translated html
 "$venv/bin/python3" bin/localize.py

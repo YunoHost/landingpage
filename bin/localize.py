@@ -1,44 +1,51 @@
 #!/usr/bin/env python3
 
-import os
+import argparse
 import re
+from pathlib import Path
 
 import markdown
-import yaml
 from babel.support import Translations
 from jinja2 import Environment, FileSystemLoader
 
-LOCALES_PATH = "translations"
-TEMPLATES_PATH = "./"
-DIST_PATH = "dist"
-DEFAULT_LOCALE = "en"
 
-# Find supported locales
-locales = [file for file in os.listdir(LOCALES_PATH)]
-
-# Load template
-env = Environment(
-    extensions=['jinja2.ext.i18n'],
-    loader=FileSystemLoader(TEMPLATES_PATH))
-def no_p(non_p_string) -> str:
-    ''' Strip enclosing paragraph marks, <p> ... </p>,
-        which markdown() forces, and which interfere with some jinja2 layout
-    '''
-    return re.sub("(^<P>|</P>$)", "", non_p_string, flags=re.IGNORECASE)
-def cycling(value) -> str:
-    return value.replace('%(', "<div class='cycling-words inline-block text-left whitespace-nowrap'><span>").replace(')%','</div>').replace("|", "</span><span>")
-
-env.filters['markdown'] = markdown.markdown
-env.filters['no_p'] = no_p
-env.filters['cycling'] = cycling
-template = env.get_template("index.html")
+LANDINGPAGE_DIR = Path(__file__).resolve().parent.parent
+LOCALES_PATH = LANDINGPAGE_DIR / "translations"
+TEMPLATES_PATH = LANDINGPAGE_DIR
 
 
-# Generate translated html for each locales
-for locale in locales:
-    translations = Translations.load(LOCALES_PATH, [locale])
-    env.install_gettext_translations(translations)
-    translated_html = template.render({"lang": locale})
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("output", type=Path, nargs="?", default=LANDINGPAGE_DIR / "dist", help="Output directory of assets and generated HTMLs")
+    args = parser.parse_args()
 
-    with open(f"{DIST_PATH}/index.{locale}.html", "w") as file:
-        file.write(translated_html)
+    def no_p(non_p_string: str) -> str:
+        """ Strip enclosing paragraph marks, <p> ... </p>,
+            which markdown() forces, and which interfere with some jinja2 layout
+        """
+        return re.sub("(^<P>|</P>$)", "", non_p_string, flags=re.IGNORECASE)
+
+    def cycling(value: str) -> str:
+        return value.replace("%(", '<div class="cycling-words inline-block text-left whitespace-nowrap"><span>').replace(")%","</div>").replace("|", "</span><span>")
+
+    # Load template
+    jinja_env = Environment(loader=FileSystemLoader(TEMPLATES_PATH))
+    jinja_env.add_extension("jinja2.ext.i18n")
+    jinja_env.filters["markdown"] = markdown.markdown
+    jinja_env.filters["no_p"] = no_p
+    jinja_env.filters["cycling"] = cycling
+    template = jinja_env.get_template("index.html")
+
+    # Generate translated html for each locales
+    locales = [localedir.name for localedir in LOCALES_PATH.iterdir()]
+    for locale in locales:
+        translations = Translations.load(LOCALES_PATH, [locale])
+        jinja_env.install_gettext_translations(translations)  # type: ignore
+        translated_html = template.render({"lang": locale})
+
+        with open(f"{args.output}/index.{locale}.html", "w") as file:
+            file.write(translated_html)
+
+
+if __name__ == "__main__":
+    main()

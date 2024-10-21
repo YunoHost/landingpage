@@ -4,7 +4,7 @@ set -Eeuo pipefail
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 LANDINGPAGE_DIR="$(dirname "$SCRIPT_DIR")"
 
-cd "$LANDINGPAGE_DIR"
+cd "$LANDINGPAGE_DIR/assets"
 
 download() {
     # Tries to only download if remote is more recent
@@ -29,27 +29,28 @@ git_download() {
 }
 
 # Development -> we use the JS magic thingy
-download https://cdn.tailwindcss.com?plugins=forms assets/js/tailwinds.js
+download https://cdn.tailwindcss.com?plugins=forms js/tailwinds.js
 
 # Dark theme stuff
 # git_download https://github.com/jjranalli/nightwind
 
 # Icons / Forkawesome
-download https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css assets/fonts/fork-awesome.min.css
-sed -i 's@../fonts/@@g' ./assets/fonts/fork-awesome.min.css
-download https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.woff2?v=1.2.0 assets/fonts/forkawesome-webfont.woff2
-download https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.woff?v=1.2.0 assets/fonts/forkawesome-webfont.woff
-download https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.ttf?v=1.2.0 assets/fonts/forkawesome-webfont.ttf
+download https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css fonts/fork-awesome.min.css
+sed -i 's@../fonts/@@g' ./fonts/fork-awesome.min.css
+download https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.woff2?v=1.2.0 fonts/forkawesome-webfont.woff2
+download https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.woff?v=1.2.0 fonts/forkawesome-webfont.woff
+download https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.ttf?v=1.2.0 fonts/forkawesome-webfont.ttf
 
 # Logos
-# download https://raw.githubusercontent.com/YunoHost/doc/master/images/logo_roundcorner.png assets/img/ynh_logo_roundcorner.png
-# download https://raw.githubusercontent.com/YunoHost/doc/master/images/ynh_logo_black.svg assets/img/ynh_logo_black.svg
+download https://raw.githubusercontent.com/YunoHost/doc/master/images/logo_roundcorner.png img/ynh_logo_roundcorner.png
+download https://raw.githubusercontent.com/YunoHost/doc/master/images/ynh_logo_black.svg img/ynh_logo_black.svg
 
-git_download https://github.com/adobe-fonts/source-sans assets/fonts/source-sans --depth 1 --single-branch
-
-cp -Rf assets dist/
+git_download https://github.com/adobe-fonts/source-sans fonts/source-sans --depth 1 --single-branch
 
 # Production -> download standalone tailwind to compile only what we need
-download https://github.com/tailwindlabs/tailwindcss/releases/download/v3.4.3/tailwindcss-linux-x64 assets/tailwindcss-linux-x64
-chmod u+x assets/tailwindcss-linux-x64
-./assets/tailwindcss-linux-x64 --input assets/css/input.css --output dist/assets/css/prod.min.css --content dist/index.en.html
+download https://github.com/tailwindlabs/tailwindcss/releases/download/v3.4.3/tailwindcss-linux-x64 tailwindcss-linux-x64
+chmod u+x tailwindcss-linux-x64
+
+# Here's how you generate the dist directory:
+# cp -Rf assets dist/
+# ./assets/tailwindcss-linux-x64 --input assets/css/input.css --output dist/assets/css/prod.min.css --content dist/index.en.html

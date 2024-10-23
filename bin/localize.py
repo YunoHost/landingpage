@@ -28,7 +28,7 @@ def main() -> None:
     def cycling(value: str) -> str:
         div_start = "<div class=\"cycling-words inline-block text-left whitespace-nowrap\">"
         div_stop = "</div>"
-        span_start = "<span>"
+        span_start = "<span class=\"bg-gray-100 dark:bg-[#2A2D2E]\">"
         span_stop = "</span>"
         return (value
             .replace("%(", f"{div_start}{span_start}")

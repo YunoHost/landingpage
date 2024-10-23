@@ -26,7 +26,15 @@ def main() -> None:
         return re.sub("(^<P>|</P>$)", "", non_p_string, flags=re.IGNORECASE)
 
     def cycling(value: str) -> str:
-        return value.replace("%(", '<div class="cycling-words inline-block text-left whitespace-nowrap"><span>').replace(")%","</div>").replace("|", "</span><span>")
+        div_start = "<div class=\"cycling-words inline-block text-left whitespace-nowrap\">"
+        div_stop = "</div>"
+        span_start = "<span>"
+        span_stop = "</span>"
+        return (value
+            .replace("%(", f"{div_start}{span_start}")
+            .replace("|", f"{span_stop}{span_start}")
+            .replace(")%", f"{span_stop}{div_stop}")
+        )
 
     # Load template
     jinja_env = Environment(loader=FileSystemLoader(TEMPLATES_PATH))

@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/fonts/fork-awesome.min.css" />
     <link rel="stylesheet" href="assets/fonts/source-sans/source-sans-3.css" />
-    
+
     <!-- Enabled on generated pages {{ '--'+'>' }}
-    
+
         <link rel="stylesheet" href="assets/css/prod.min.css" />
-    
+
     {{ '<'+'!--' }}-->
 
     <!-- {# Disabled on generated page-->
@@ -38,7 +38,7 @@
           <!--<a href="/sitemap" class="sr-only">{{ _("View sitemap") }}</a>-->
     </nav>
     <!-- ############################################################################################################ -->
-   <!-- 
+   <!--
     <nav class="w-full font-bold fixed top-0 left-0 py-3 pr-4 text-gray-200 flex justify-end z-50" style="background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);">
       <ul class="flex flex-row space-x-8 py-2">
       </ul>
@@ -58,7 +58,7 @@
 
     </div>
     </section>
-    
+
     <!-- ############################################################################################################ -->
 
     <section>
@@ -100,8 +100,11 @@
     <section id="main-content" class="text-center py-10">
 
         <h2 class="pb-10 text-3xl">
-            {{ _("<span class='px-3'></span>With **YunoHost**, easily manage %(a server|a cloud|a web site|mailboxes|a wiki|a social network|a video library|a blog|surveys|an accounting tools|a game server|a forum|a chat|an ERP)%  
-for your friends, your association, your company")|markdown|no_p|cycling }}
+          <span class='px-3'></span>
+            {{
+              _("With **YunoHost**, easily manage %(a server|a cloud|a web site|mailboxes|a wiki|a social network|a video library|a blog|surveys|an accounting tools|a game server|a forum|a chat|an ERP)%  \nfor your friends, your association, your company")
+              | markdown | no_p | cycling
+            }}
         </h2>
 
 
@@ -116,13 +119,13 @@ for your friends, your association, your company")|markdown|no_p|cycling }}
             <img class="w-full h-96 object-contain" src="assets/img/screenshot3.jpg">
           </div>
           <a class="slider-prev transition-colors duration-500 absolute left-0 cursor-pointer rounded-full text-6xl text-gray-200 hover:text-gray-400" onclick="plusSlides(-1)" style="top: 50%; transform: translateY(-50%);"><i class="fa fa-chevron-circle-left"></i></a>
-    
+
           <a class="slider-next transition-colors duration-500 absolute right-0 cursor-pointer rounded-full text-6xl text-gray-200 hover:text-gray-400" onclick="plusSlides(1)" style="top: 50%; transform: translateY(-50%);"><i class="fa fa-chevron-circle-right"></i></a>
         </div>
         <div class="flex flex-row space-x-2 justify-center py-5">
-          <span class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(1)"></span> 
-          <span class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(2)"></span> 
-          <span class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(3)"></span> 
+          <span class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(1)"></span>
+          <span class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(2)"></span>
+          <span class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(3)"></span>
         </div>
 
         <script>
@@ -141,23 +144,22 @@ for your friends, your association, your company")|markdown|no_p|cycling }}
               var i;
               var slides = document.getElementsByClassName("screenshot-slide");
               var dots = document.getElementsByClassName("slider-dot");
-              if (n > slides.length) {slideIndex = 1}    
+              if (n > slides.length) {slideIndex = 1}
               if (n < 1) {slideIndex = slides.length}
               for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
+                slides[i].style.display = "none";
               }
               for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" slider-dot-active", "");
               }
-              slides[slideIndex-1].style.display = "block";  
+              slides[slideIndex-1].style.display = "block";
               dots[slideIndex-1].className += " slider-dot-active";
             }
         </script>
-        
+
         <div class="pb-4 text-center w-full max-w-2xl mx-auto px-5 leading-snug">
-            {{ _("More concretely, **YunoHost** is a system that installs itself on a **server**.  
-and allows you to install and maintain - **with very little technical knowledge** -    
-digital services (apps) **that you control**.") | markdown | replace('br />', 'br class="hidden md:inline">') }}
+            {{ _("More concretely, **YunoHost** is a system that installs itself on a **server**.  \nand allows you to install and maintain - **with very little technical knowledge** -  \ndigital services (apps) **that you control**.")
+              | markdown | replace('br />', 'br class="hidden md:inline">') }}
         </div>
 
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
@@ -166,31 +168,23 @@ digital services (apps) **that you control**.") | markdown | replace('br />', 'b
           <a class="p-3 bg-lime-200 text-lime-800 font-semibold w-48" href="#start"><i class="fa fa-fw fa-download"></i> {{ _("Install") }}</a>
         </div>
     </section>
-    
+
     <!-- ############################################################################################################ -->
 
     <section id="example" class="text-center py-10 bg-gray-50">
-    
+
         <h2 class="pb-10 text-4xl font-bold">{{ _("Examples of uses") }}</h2>
 
       <div class="mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-2 pb-10">
 
         <div class="mx-auto w-96 lg:w-4/5 mb-5 px-5">
-            {{ _("### For you and your friends
- - 🔄 synchronize your calendars and contacts
- - 🔐 keep your passwords and notes safe
- - 📬 host mailboxes
- - 🎧 organize your photos, videos and music
- - 🏘️ join alternative social media") | markdown | replace("h3>", 'h3 class="text-2xl font-bold">') | replace('ul>', 'ul class="pt-3 text-left leading-snug">') | replace('li>', 'li class="pb-2">') }}
+            {{ _("### For you and your friends\n - 🔄 synchronize your calendars and contacts\n - 🔐 keep your passwords and notes safe\n - 📬 host mailboxes\n - 🎧 organize your photos, videos and music\n - 🏘️ join alternative social media")
+            | markdown | replace("h3>", 'h3 class="text-2xl font-bold">') | replace('ul>', 'ul class="pt-3 text-left leading-snug">') | replace('li>', 'li class="pb-2">') }}
         </div>
 
         <div class="mx-auto w-96 lg:w-4/5 px-5">
-            {{ _("### For small organizations
- - 🌐 host your own website
- - 🗂️ share files in common (e.g. with Nextcloud)
- - 📝 edit multiple documents in real time
- - 💰 manage your accounting
- - 💬 set up a team chat") | markdown | replace("h3>", 'h3 class="text-2xl font-bold">') | replace('ul>', 'ul class="pt-3 text-left leading-snug">') | replace('li>', 'li class="pb-2">') }}
+            {{ _("### For small organizations\n - 🌐 host your own website\n - 🗂️ share files in common (e.g. with Nextcloud)\n - 📝 edit multiple documents in real time\n - 💰 manage your accounting\n - 💬 set up a team chat")
+            | markdown | replace("h3>", 'h3 class="text-2xl font-bold">') | replace('ul>', 'ul class="pt-3 text-left leading-snug">') | replace('li>', 'li class="pb-2">') }}
         </div>
       </div>
 
@@ -205,20 +199,18 @@ digital services (apps) **that you control**.") | markdown | replace('br />', 'b
       <!-- ############################################################################################################ -->
 
       <section id="start" class="flex flex-col items-center py-10 text-center">
-    
+
           <h2 class="pb-10 text-4xl font-bold">{{ _("How to get started") }}</h2>
 
           <div class="px-5 w-full max-w-2xl pb-5 max-w-screen-lg">
               <p>
-                {{ _("If you're not sure yet on, we invite you to [try the demo](https://yunohost.org/en/try),  
-and take a look at [the pros and cons](https://yunohost.org/en/selfhosting) of managing a server yourself.
-
-Take the time to think about what applications, what type of hardware and what domain name you want for your server.") | markdown |replace('br />', 'br class="hidden md:inline">') | replace("a href", "a class='bg-sky-200 text-sky-800 whitespace-nowrap' href",1) | replace("a href", "a class='bg-amber-200 text-amber-800 whitespace-nowrap' href",1) | replace('/en/', '/'+lang+'/') }}
+                {{ _("If you're not sure yet on, we invite you to [try the demo](https://yunohost.org/en/try),  \nand take a look at [the pros and cons](https://yunohost.org/en/selfhosting) of managing a server yourself.\n\nTake the time to think about what applications, what type of hardware and what domain name you want for your server.")
+                | markdown |replace('br />', 'br class="hidden md:inline">') | replace("a href", "a class='bg-sky-200 text-sky-800 whitespace-nowrap' href",1) | replace("a href", "a class='bg-amber-200 text-amber-800 whitespace-nowrap' href",1) | replace('/en/', '/'+lang+'/') }}
               </p>
           </div>
 
-          <div class="mx-3 md:max-w-screen-lg flex flex-wrap justify-center gap-5 py-10">    
-              
+          <div class="mx-3 md:max-w-screen-lg flex flex-wrap justify-center gap-5 py-10">
+
               <div class="relative basis-80 border-4 border-gray-300 rounded h-72 mb-10">
                   <h4 class="text-xl font-bold py-3 border-b-4">1. {{ _("Choosing a support") }}</h4>
                 <div class="py-10 px-5 leading-snug">
@@ -230,7 +222,7 @@ Take the time to think about what applications, what type of hardware and what d
                     <a class="absolute left-0 right-0 m-auto p-3 text-md bg-sky-200 text-sky-800 w-48 font-semibold" style="bottom: -1.5em" href="https://yunohost.org/{{lang }}/howtohostyourself"><i class="fa fa-bar-chart fa-fw"></i> {{ _("See the comparison") }}</a>
                 </div>
               </div>
-              
+
               <div class="relative basis-80 border-4 border-gray-300 rounded lg:h-80 h-72 mb-10">
                   <h4 class="text-xl font-bold py-3 border-b-4">2. {{ _("Install YunoHost") }}</h4>
                 <div class="py-7 px-5 leading-snug">
@@ -241,7 +233,7 @@ Take the time to think about what applications, what type of hardware and what d
                     <a class="absolute left-0 right-0 m-auto p-3 text-md bg-lime-200 text-lime-800 w-fit font-semibold" style="bottom: -1.5em" href="https://yunohost.org/{{ lang }}/install"><i class="fa fa-download fa-fw"></i> {{ _("Installation instructions") }}</a>
                 </div>
               </div>
-              
+
               <div class="relative basis-80 border-4 border-gray-300 rounded h-72">
                   <h4 class="text-xl font-bold py-3 border-b-4">3. {{ _("Enjoy!") }}</h4>
                 <div class="py-10 px-5 leading-snug">
@@ -253,34 +245,31 @@ Take the time to think about what applications, what type of hardware and what d
                     <a class="absolute left-0 right-0 m-auto p-3 text-md bg-purple-200 text-purple-800 w-48 font-semibold" style="bottom: -1.5em" href="https://yunohost.org/{{ lang }}/admin_guide"><i class="fa fa-map-signs fa-fw"></i> {{ _("Guided tour") }}</a>
                 </div>
               </div>
-              
+
           </div>
 
       </section>
-      
+
       <!-- ############################################################################################################ -->
 
       <section id="community" class="py-10 bg-gray-50">
 
         <div class="mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-3">
-        
+
             <div class="mx-auto hidden md:block">
               <img src="assets/img/fursona.png" title="{{ _("Claude, YunoHost's mascot") }}" alt="{{ _("Image of Claude, YunoHost's mascot. The humanoid oppossum stands with purple hair and scarf, round glasses, beige pants with pockets and a blue crop top with the YunoHost logo.") }}" />
             </div>
 
             <div class="col-span-2 mx-auto px-5 w-full sm:w-4/5 lg:w-2/3">
-              
+
                 <h2 class="py-5 text-4xl font-bold text-center">{{ _("Community") }}</h2>
-              
+
               <div class="text-center">
 
                   <div class="pb-5 leading-snug">
                   <p class="pb-2">
-                  {{ _("✊ **YunoHost** is a non-profit **technocritical** project, developed and maintained by **volunteers**.
-
-🪽 We advocate a **decentralized** Internet, with **open**, **interoperable** technologies that **respect privacy** and give **empowerment to as many people as possible**.
-
-🌱 What's more, we want to **give materiality back to the digital**, and encourage **sobriety** and **reuse**.") | markdown | replace("p>", 'p class="pb-2">') }}
+                  {{ _("✊ **YunoHost** is a non-profit **technocritical** project, developed and maintained by **volunteers**.\n\n🪽 We advocate a **decentralized** Internet, with **open**, **interoperable** technologies that **respect privacy** and give **empowerment to as many people as possible**.\n\n🌱 What's more, we want to **give materiality back to the digital**, and encourage **sobriety** and **reuse**.")
+                  | markdown | replace("p>", 'p class="pb-2">') }}
                   </p>
                   </div>
 
@@ -299,7 +288,7 @@ Take the time to think about what applications, what type of hardware and what d
             </div>
 
       </div>
-      
+
       </section>
 
       <div class="text-center bg-amber-200 p-3">

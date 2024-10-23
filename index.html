@@ -19,31 +19,6 @@
         <script src="assets/js/tailwinds.js"></script>
         <!-- https://tailwindcss.com/docs/theme -->
         <script>
-          // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-          function refreshColorMode() {
-            document.documentElement.classList.toggle(
-              "dark",
-              localStorage.theme === "dark" ||
-              (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
-            );
-          }
-
-          function toggleColorMode() {
-            if (
-              localStorage.theme === "dark" ||
-              (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-            ) {
-              localStorage.theme = "light";
-            } else {
-              localStorage.theme = "dark";
-            }
-            // Whenever the user explicitly chooses to respect the OS preference
-            //localStorage.removeItem("theme");
-
-            refreshColorMode();
-          }
-
-
         tailwind.config = {
           darkMode: "selector",
             theme: {
@@ -53,11 +28,42 @@
             },
         };
 
-        refreshColorMode(); // refresh on load
-
         </script>
 
     <!-- #}-->
+
+
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      function refreshColorMode() {
+        document.documentElement.classList.toggle(
+          "dark",
+          localStorage.theme === "dark" ||
+          (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
+        );
+      }
+
+      function toggleColorMode() {
+        if (
+          localStorage.theme === "dark" ||
+          (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          localStorage.theme = "light";
+        } else {
+          localStorage.theme = "dark";
+        }
+        // Whenever the user explicitly chooses to respect the OS preference
+        //localStorage.removeItem("theme");
+
+        refreshColorMode();
+      }
+
+      refreshColorMode(); // refresh on load
+
+    </script>
+
+
+
   </head>
   <body class="text-lg text-gray-900 dark:bg-neutral-900 dark:text-white" style="font-family: 'Source Sans 3', sans-serif; font-optical-sizing: auto;">
       <nav id="quick-access" aria-label="{{ _("Accessibility menu") }}">

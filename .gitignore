@@ -7,3 +7,5 @@ assets/fonts/forkawesome-webfont.woff2
 assets/fonts/source-sans/
 assets/js/tailwinds.js
 tailwindcss-linux-x64
+
+translations/*/*/*.mo

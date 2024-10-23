@@ -44,6 +44,7 @@ python3 bin/localize.py "$LANDINGPAGE_DIST_DIR"
 cp -Rf assets "$LANDINGPAGE_DIST_DIR"
 
 ./assets/tailwindcss-linux-x64 \
+    --config "$LANDINGPAGE_DIR/tailwind.config.js" \
     --content "$LANDINGPAGE_DIST_DIR/index.en.html" \
     --input "$LANDINGPAGE_DIR/assets/css/input.css" \
     --output "$LANDINGPAGE_DIST_DIR/assets/css/prod.min.css"

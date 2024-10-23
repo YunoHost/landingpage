@@ -202,7 +202,7 @@ msgid ""
 msgstr ""
 
 #: index.html:233
-msgid "Installation instructions"
+msgid "Installation guide"
 msgstr ""
 
 #: index.html:238
@@ -353,4 +353,3 @@ msgstr ""
 
 #~ msgid "Terms of service"
 #~ msgstr ""
-

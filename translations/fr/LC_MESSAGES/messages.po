@@ -234,8 +234,8 @@ msgstr ""
 " et, le cas échéant, votre box internet"
 
 #: index.html:233
-msgid "Installation instructions"
-msgstr "Instructions d'installation"
+msgid "Installation guide"
+msgstr "Guide d'installation"
 
 #: index.html:238
 msgid "Enjoy!"
@@ -320,4 +320,3 @@ msgstr "Sécurité"
 #: index.html:295
 msgid "Services status"
 msgstr "État des services"
-

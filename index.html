@@ -222,13 +222,29 @@
       <div class="mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-2 pb-10">
 
         <div class="mx-auto w-96 lg:w-4/5 mb-5 px-5">
-            {{ _("### For you and your friends\n - 🔄 synchronize your calendars and contacts\n - 🔐 keep your passwords and notes safe\n - 📬 host mailboxes\n - 🎧 organize your photos, videos and music\n - 🏘️ join alternative social media")
-            | markdown | replace("h3>", 'h3 class="text-2xl font-bold">') | replace('ul>', 'ul class="pt-3 text-left leading-snug">') | replace('li>', 'li class="pb-2">') }}
+            <h3 class="text-2xl font-bold">
+                {{ _("For you and your friends") }}
+            </h3>
+            <ul class="pt-3 text-left leading-snug">
+                <li class="pb-2">🔄 {{ _("synchronize your calendars and contacts") }}</li>
+                <li class="pb-2">🔐 {{ _("keep your passwords and notes safe") }}</li>
+                <li class="pb-2">📬 {{ _("host mailboxes") }}</li>
+                <li class="pb-2">🎧 {{ _("organize your photos, videos and music") }}</li>
+                <li class="pb-2">🏘️ {{ _("join alternative social media") }}</li>
+            </ul>
         </div>
 
         <div class="mx-auto w-96 lg:w-4/5 px-5">
-            {{ _("### For small organizations\n - 🌐 host your own website\n - 🗂️ share files in common (e.g. with Nextcloud)\n - 📝 edit multiple documents in real time\n - 💰 manage your accounting\n - 💬 set up a team chat")
-            | markdown | replace("h3>", 'h3 class="text-2xl font-bold">') | replace('ul>', 'ul class="pt-3 text-left leading-snug">') | replace('li>', 'li class="pb-2">') }}
+            <h3 class="text-2xl font-bold">
+                {{ _("For small organizations") }}
+            </h3>
+            <ul class="pt-3 text-left leading-snug">
+                <li class="pb-2">🌐 {{ _("host your own website") }}</li>
+                <li class="pb-2">🗂️ {{ _("share files in common (e.g. with Nextcloud)") }}</li>
+                <li class="pb-2">📝 {{ _("edit multiple documents in real time") }}</li>
+                <li class="pb-2">💰 {{ _("manage your accounting") }}</li>
+                <li class="pb-2">💬 {{ _("set up a team chat") }}</li>
+            </ul>
         </div>
       </div>
 
@@ -309,17 +325,16 @@
               <div class="text-center">
 
                   <div class="pb-5 leading-snug">
-                  <p class="pb-2">
-                  {{ _("✊ **YunoHost** is a non-profit **technocritical** project, developed and maintained by **volunteers**.\n\n🪽 We advocate a **decentralized** Internet, with **open**, **interoperable** technologies that **respect privacy** and give **empowerment to as many people as possible**.\n\n🌱 What's more, we want to **give materiality back to the digital**, and encourage **sobriety** and **reuse**.")
-                  | markdown | replace("p>", 'p class="pb-2">') }}
-                  </p>
+                    <p class="pb-2">✊ {{ _(" **YunoHost** is a non-profit **technocritical** project, developed and maintained by **volunteers**.") | markdown | no_p }}</p>
+                    <p class="pb-2">🪽 {{ _("We advocate a **decentralized** Internet, with **open**, **interoperable** technologies that **respect privacy** and **empowers people**.") | markdown | no_p }}</p>
+                    <p class="pb-2">🌱 {{ _("In addition, we aim to **give materiality back to the digital**, and encourage **sobriety** and **reuse**.") | markdown | no_p }}</p>
                   </div>
 
                   <p class="py-5 leading-[4rem]">
-                  <a class="m-2 px-5 py-3 font-semibold bg-purple-100 text-purple-800 w-48 whitespace-nowrap" href="https://forum.yunohost.org">💬 {{ _("Forum") }}</a>
-                  <a class="m-2 px-5 py-3 font-semibold bg-green-100 text-green-800 w-48 whitespace-nowrap" href="https://yunohost.org/help">🛟 {{ _("Self-help chat") }}</a>
-                  <a class="m-2 px-5 py-3 font-semibold bg-amber-100 text-amber-800 w-48 whitespace-nowrap" href="https://donate.yunohost.org">💰 {{ _("Donate") }}</a>
-                  <a class="m-2 px-5 py-3 font-semibold bg-orange-100 text-orange-800 w-48 whitespace-nowrap" href="https://yunohost.org/contribute">👷🏼 {{ _("Contribute") }}</a>
+                    <a class="m-2 px-5 py-3 font-semibold bg-purple-100 text-purple-800 w-48 whitespace-nowrap" href="https://forum.yunohost.org">💬 {{ _("Forum") }}</a>
+                    <a class="m-2 px-5 py-3 font-semibold bg-green-100 text-green-800 w-48 whitespace-nowrap" href="https://yunohost.org/help">🛟 {{ _("Self-help chat") }}</a>
+                    <a class="m-2 px-5 py-3 font-semibold bg-amber-100 text-amber-800 w-48 whitespace-nowrap" href="https://donate.yunohost.org">💰 {{ _("Donate") }}</a>
+                    <a class="m-2 px-5 py-3 font-semibold bg-orange-100 text-orange-800 w-48 whitespace-nowrap" href="https://yunohost.org/contribute">👷🏼 {{ _("Contribute") }}</a>
                     <a class="m-2 px-5 py-3 font-semibold bg-gray-100 text-gray-800 w-48 whitespace-nowrap" href="https://github.com/yunohost">💻 {{ _("Code repositories") }}</a>
                   </p>
               </div>

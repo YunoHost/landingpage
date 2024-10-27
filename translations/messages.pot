@@ -84,7 +84,7 @@ msgstr ""
 #: index.html:205
 msgid ""
 "More concretely, **YunoHost** is a system that installs itself on a "
-"**server**.  \n"
+"**server**  \n"
 "and allows you to install and maintain - **with very little technical "
 "knowledge** -  \n"
 "digital services (apps) **that you control**."
@@ -296,4 +296,3 @@ msgstr ""
 #: index.html:352
 msgid "Services status"
 msgstr ""
-

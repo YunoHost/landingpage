@@ -96,7 +96,7 @@ msgid ""
 "digital services (apps) **that you control**."
 msgstr ""
 "Plus concrètement, **YunoHost** est un système qui s'installe sur un "
-"**serveur**.  \n"
+"**serveur**  \n"
 "et vous permet d'installer et maintenir - **sans trop de connaissances "
 "techniques** -  \n"
 "des services numériques (apps) **que vous contrôlez**."
@@ -328,4 +328,3 @@ msgstr "Sécurité"
 #: index.html:352
 msgid "Services status"
 msgstr "État des services"
-

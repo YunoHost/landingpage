@@ -177,10 +177,11 @@
 
             <script>
                 var slideIndex = 1;
+                var slides = document.getElementsByClassName("screenshot-slide");
+                var dots = document.getElementsByClassName("slider-dot");
                 showSlides(slideIndex);
 
                 function arrow(event) {
-                    var dots = document.getElementsByClassName("slider-dot");
                     switch (event.key) {
                         case "Home":
                             event.preventDefault();
@@ -213,8 +214,6 @@
 
                 function showSlides(n) {
                 var i;
-                var slides = document.getElementsByClassName("screenshot-slide");
-                var dots = document.getElementsByClassName("slider-dot");
                 if (n > slides.length) {slideIndex = 1}
                 if (n < 1) {slideIndex = slides.length}
                 for (i = 0; i < slides.length; i++) {
@@ -226,6 +225,46 @@
                 slides[slideIndex-1].style.display = "block";
                 dots[slideIndex-1].setAttribute("aria-selected", "true");
                 }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].addEventListener('touchstart', handleTouchStart, false);
+                    slides[i].addEventListener('touchmove', handleTouchMove, false);
+                }
+                var xDown = null;
+                var yDown = null;
+
+                function getTouches(evt) {
+                return evt.touches ||             // browser API
+                        evt.originalEvent.touches; // jQuery
+                }
+
+                function handleTouchStart(evt) {
+                    const firstTouch = getTouches(evt)[0];
+                    xDown = firstTouch.clientX;
+                    yDown = firstTouch.clientY;
+                };
+
+                function handleTouchMove(evt) {
+                    if ( ! xDown || ! yDown ) {
+                        return;
+                    }
+
+                    var xUp = evt.touches[0].clientX;
+                    var yUp = evt.touches[0].clientY;
+
+                    var xDiff = xDown - xUp;
+                    var yDiff = yDown - yUp;
+
+                    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+                        if ( xDiff > 0 ) {
+                            plusSlides(1);
+                        } else {
+                            plusSlides(-1);
+                        }
+                    }
+                    /* reset values */
+                    xDown = null;
+                    yDown = null;
+                };
             </script>
         </div>
 

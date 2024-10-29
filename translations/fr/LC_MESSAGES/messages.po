@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-29 13:42+0100\n"
+"POT-Creation-Date: 2024-10-29 17:48+0100\n"
 "PO-Revision-Date: 2024-10-17 18:17+0200\n"
 "Last-Translator: ljf\n"
 "Language: fr\n"
@@ -22,59 +22,76 @@ msgstr ""
 msgid "YunoHost: garden your own piece of the Internet!"
 msgstr "YunoHost: jardinez votre bout d'Internet !"
 
-#: index.html:69
+#: index.html:70
 msgid "Accessibility menu"
 msgstr "Menu accessibilité"
 
-#: index.html:70
+#: index.html:71
 msgid "Go to content"
 msgstr "Aller au contenu"
 
-#: index.html:71
+#: index.html:72
 msgid "Go to navigation"
 msgstr "Aller à la navigation"
 
-#: index.html:72
+#: index.html:73
+#, fuzzy
+msgid "Go to page settings"
+msgstr "Aller à la navigation"
+
+#: index.html:74
 msgid "Go to search"
 msgstr "Aller à la recherche"
 
-#: index.html:106
+#: index.html:77
+msgid "Page settings"
+msgstr ""
+
+#: index.html:80
+msgid "Switch to dark mode"
+msgstr ""
+
+#: index.html:89
+msgid "Switch to light mode"
+msgstr ""
+
+#: index.html:109
 msgid "Yunohost logo"
 msgstr "Logo de YunoHost"
 
-#: index.html:108
+#: index.html:111
 msgid "Garden your own<br/>piece of the Internet!"
 msgstr "Jardinez votre<br/>bout d'Internet !"
 
-#: index.html:117
+#: index.html:118
 msgid "Main menu"
 msgstr "Menu principal"
 
-#: index.html:121
+#: index.html:122
 msgid "About"
 msgstr "À propos"
 
-#: index.html:124 index.html:212
+#: index.html:125 index.html:287
 msgid "Install"
 msgstr "Installer"
 
-#: index.html:127
+#: index.html:128
 msgid "Applications"
 msgstr "Applications"
 
-#: index.html:130 index.html:352
+#: index.html:131 index.html:428
 msgid "Documentation"
 msgstr "Documentation"
 
-#: index.html:133
+#: index.html:134
 msgid "Last news"
 msgstr "Dernières nouvelles"
 
-#: index.html:136 index.html:323
+#: index.html:137 index.html:398
 msgid "Community"
 msgstr "Communauté"
 
-#: index.html:149
+#: index.html:150 index.html:156
 msgid ""
 "With **YunoHost**, easily manage %(a server|a cloud|a web "
 "site|mailboxes|a wiki|a social network|a video library|a blog|surveys|an "
@@ -87,7 +104,35 @@ msgstr ""
 "ERP)%  \n"
 "pour vos proches, votre association, votre entreprise"
 
-#: index.html:205
+#: index.html:162
+msgid "Carousel"
+msgstr ""
+
+#: index.html:163
+msgid "Slide controls"
+msgstr ""
+
+#: index.html:164
+msgid "User portal"
+msgstr ""
+
+#: index.html:165
+msgid "Administration panel"
+msgstr ""
+
+#: index.html:166
+msgid "Roundcube, an app example"
+msgstr ""
+
+#: index.html:181
+msgid "Previous slide"
+msgstr ""
+
+#: index.html:183
+msgid "Next slide"
+msgstr ""
+
+#: index.html:280
 msgid ""
 "More concretely, **YunoHost** is a system that installs itself on a "
 "**server**  \n"
@@ -101,75 +146,75 @@ msgstr ""
 "techniques** -  \n"
 "des services numériques (apps) **que vous contrôlez**."
 
-#: index.html:210
+#: index.html:285
 msgid "Huh, but why <i class='fa fa-question'></i>"
 msgstr "Hein, mais pourquoi <i class='fa fa-question'></i>"
 
-#: index.html:211
+#: index.html:286
 msgid "Try"
 msgstr "Essayer"
 
-#: index.html:220
+#: index.html:295
 msgid "Examples of uses"
 msgstr "Exemples d'utilisations"
 
-#: index.html:226
+#: index.html:301
 msgid "For you and your friends"
 msgstr "Pour vous et vos amis"
 
-#: index.html:229
+#: index.html:304
 msgid "synchronize your calendars and contacts"
 msgstr "synchronisez vos calendriers et vos contacts"
 
-#: index.html:230
+#: index.html:305
 msgid "keep your passwords and notes safe"
 msgstr "garder vos mots de passe et vos notes en sécurité"
 
-#: index.html:231
+#: index.html:306
 msgid "host mailboxes"
 msgstr "hébergez des boîte mail"
 
-#: index.html:232
+#: index.html:307
 msgid "organize your photos, videos and music"
 msgstr "organisez vos photos, vos vidéos et votre musique"
 
-#: index.html:233
+#: index.html:308
 msgid "join alternative social media"
 msgstr "rejoindre des médias sociaux alternatifs"
 
-#: index.html:239
+#: index.html:314
 msgid "For small organizations"
 msgstr "Pour les petites organisations"
 
-#: index.html:242
+#: index.html:317
 msgid "host your own website"
 msgstr "hébergez votre site web"
 
-#: index.html:243
+#: index.html:318
 msgid "share files in common (e.g. with Nextcloud)"
 msgstr "partagez des fichiers en commun (par ex. avec Nextcloud)"
 
-#: index.html:244
+#: index.html:319
 msgid "edit multiple documents in real time"
 msgstr "éditez des documents à plusieurs en temps réel"
 
-#: index.html:245
+#: index.html:320
 msgid "manage your accounting"
 msgstr "gérez votre compta"
 
-#: index.html:246
+#: index.html:321
 msgid "set up a team chat"
 msgstr "mettez en place un chat d'équipe"
 
-#: index.html:252
+#: index.html:327
 msgid "Explore the app catalog"
 msgstr "Explorer le catalogue d'apps"
 
-#: index.html:261
+#: index.html:336
 msgid "How to get started"
 msgstr "Comment se lancer"
 
-#: index.html:265
+#: index.html:340
 msgid ""
 "If you're not sure yet on, we invite you to [try the "
 "demo](https://yunohost.org/try),  \n"
@@ -188,35 +233,35 @@ msgstr ""
 "Prenez le temps de réfléchir à quelles applications, quel type de "
 "matériel et quel nom de domaine vous souhaitez pour votre serveur."
 
-#: index.html:273
+#: index.html:348
 msgid "Choosing a support"
 msgstr "Choisir le support"
 
-#: index.html:276
+#: index.html:351
 msgid "ARM board / Raspberry Pi"
 msgstr "Carte ARM / Raspberry Pi"
 
-#: index.html:277
+#: index.html:352
 msgid "Old tower or portable (*ordinosaur*)"
 msgstr "Vieille tour ou portable (*ordinosaure*)"
 
-#: index.html:278
+#: index.html:353
 msgid "Online server (VPS)"
 msgstr "Serveur en ligne (VPS)"
 
-#: index.html:280
+#: index.html:355
 msgid "See the comparison"
 msgstr "Voir le comparatif"
 
-#: index.html:285
+#: index.html:360
 msgid "Install YunoHost"
 msgstr "Installer YunoHost"
 
-#: index.html:288
+#: index.html:363
 msgid "Check the prerequisites<br>then flash or install the system"
 msgstr "Vérifiez les prérequis<br>puis flashez ou installez le système"
 
-#: index.html:289
+#: index.html:364
 msgid ""
 "YunoHost will guide you through setting up the first admin, the domain "
 "name and, if applicable, your Internet box."
@@ -224,35 +269,35 @@ msgstr ""
 "YunoHost vous guidera pour configurer le premier admin, le nom de domaine"
 " et, le cas échéant, votre box internet"
 
-#: index.html:291
+#: index.html:366
 msgid "Installation guide"
 msgstr "Guide d'installation"
 
-#: index.html:296
+#: index.html:371
 msgid "Enjoy!"
 msgstr "Profiter !"
 
-#: index.html:299
+#: index.html:374
 msgid "Install applications<br>in just a few clicks"
 msgstr "Installez des applications<br>en quelques clics"
 
-#: index.html:300
+#: index.html:375
 msgid "Set up backups"
 msgstr "Mettez en place des sauvegardes"
 
-#: index.html:301
+#: index.html:376
 msgid "Take care of your server"
 msgstr "Prenez soin de votre serveur"
 
-#: index.html:303
+#: index.html:378
 msgid "Guided tour"
 msgstr "Visite guidée"
 
-#: index.html:318 index.html:344
+#: index.html:393 index.html:419
 msgid "Claude, YunoHost's mascot"
 msgstr "Claude, la mascote de YunoHost"
 
-#: index.html:318 index.html:344
+#: index.html:393 index.html:419
 msgid ""
 "Image of Claude, YunoHost's mascot. The humanoid oppossum stands with "
 "purple hair and scarf, round glasses, beige pants with pockets and a blue"
@@ -262,7 +307,7 @@ msgstr ""
 "debout, cheveux et foulard violets, lunettes rondes, pantalon beige à "
 "poches et crop top bleu avec le logo YunoHost."
 
-#: index.html:328
+#: index.html:403
 msgid ""
 " **YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
@@ -270,7 +315,7 @@ msgstr ""
 "**YunoHost** est un projet **technocritique et à but non-lucratif**, "
 "développé et maintenu par des **bénévoles**."
 
-#: index.html:329
+#: index.html:404
 msgid ""
 "We advocate a **decentralized** Internet, with **open**, "
 "**interoperable** technologies that **respect privacy** and **empowers "
@@ -280,7 +325,7 @@ msgstr ""
 "**ouvertes**, **interopérables**, qui **respectent la vie privée** et qui"
 " donnent de l'**autonomie** et du **pouvoir au plus grand nombre**."
 
-#: index.html:330
+#: index.html:405
 msgid ""
 "In addition, we aim to **give materiality back to the digital**, and "
 "encourage **sobriety** and **reuse**."
@@ -288,43 +333,43 @@ msgstr ""
 "En outre, nous souhaitons **redonner de la matérialité au numérique**, "
 "encourager la **sobriété** et le **réemploi**."
 
-#: index.html:334
+#: index.html:409
 msgid "Forum"
 msgstr "Forum"
 
-#: index.html:335
+#: index.html:410
 msgid "Self-help chat"
 msgstr "Chat d'entraide"
 
-#: index.html:336
+#: index.html:411
 msgid "Donate"
 msgstr "Je soutiens financièrement"
 
-#: index.html:337
+#: index.html:412
 msgid "Contribute"
 msgstr "Contribuer"
 
-#: index.html:338
+#: index.html:413
 msgid "Code repositories"
 msgstr "Dépots de code"
 
-#: index.html:352
+#: index.html:428
 msgid "Terms of services"
 msgstr "CGS"
 
-#: index.html:352
+#: index.html:428
 msgid "Code"
 msgstr "Code"
 
-#: index.html:352
+#: index.html:428
 msgid "Mastodon"
 msgstr "Mastodon"
 
-#: index.html:352
+#: index.html:428
 msgid "Security"
 msgstr "Sécurité"
 
-#: index.html:352
+#: index.html:428
 msgid "Services status"
 msgstr "État des services"
 

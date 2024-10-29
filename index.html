@@ -143,13 +143,21 @@
     <main>
     <section id="main-content" class="text-center py-10">
 
-        <h2 class="pb-10 text-3xl">
+        <p class="pb-10 text-3xl">
+          <span aria-hidden="true">
           <span class='px-3'></span>
             {{
               _("With **YunoHost**, easily manage %(a server|a cloud|a web site|mailboxes|a wiki|a social network|a video library|a blog|surveys|an accounting tools|a game server|a forum|a chat|an ERP)%  \nfor your friends, your association, your company")
               | markdown | no_p | cycling
             }}
-        </h2>
+          </span>
+          <span class="sr-only">
+            {{
+              _("With **YunoHost**, easily manage %(a server|a cloud|a web site|mailboxes|a wiki|a social network|a video library|a blog|surveys|an accounting tools|a game server|a forum|a chat|an ERP)%  \nfor your friends, your association, your company")
+              | replace('|',', ') | replace('%(','') | replace('%)', '') | markdown | no_p
+            }}
+          </span>
+        </p>
 
         <div role="region" aria-label="{{ _('Carousel') }}" class="flex flex-col-reverse">
             <div class="flex flex-row space-x-2 justify-center py-5" role="tablist" aria-label="{{ _('Slide controls') }}">

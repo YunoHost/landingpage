@@ -26,8 +26,8 @@ def main() -> None:
         return re.sub("(^<P>|</P>$)", "", non_p_string, flags=re.IGNORECASE)
 
     def cycling(value: str) -> str:
-        div_start = "<div class=\"cycling-words inline-block text-left whitespace-nowrap\">"
-        div_stop = "</div>"
+        div_start = "<span class=\"cycling-words inline-block text-left whitespace-nowrap\">"
+        div_stop = "</span>"
         span_start = "<span class=\"bg-gray-100 dark:bg-[#2A2D2E]\">"
         span_stop = "</span>"
         return (value

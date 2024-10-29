@@ -147,5 +147,5 @@ strong { font-weight: 600 !important; }
     from {opacity: 0}
     to {opacity: 1}
 }
-.slider-dot-active, .slider-dot:hover { background-color: #111; }
+.slider-dot:hover, .slider-dot[aria-selected="true"] { background-color: #111 !important; }
 

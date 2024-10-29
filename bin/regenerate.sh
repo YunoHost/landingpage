@@ -22,7 +22,12 @@ then
         python3 -m venv "$LANDINGPAGE_VENV_DIR"
         "$LANDINGPAGE_VENV_DIR/bin/pip" install -r requirements.txt
     fi
-    source "$LANDINGPAGE_VENV_DIR/bin/activate"
+fi
+
+source "$LANDINGPAGE_VENV_DIR/bin/activate"
+
+if [[ "${1:-}" == "" || "${1:-}" == "i18n"  ]]
+then
 
     # Extract the english sentences from the code, needed if you modified it
     pybabel extract -F babel.cfg -o translations/messages.pot index.html
@@ -37,16 +42,18 @@ then
     # re-run the 'update' command to let Babel properly format the text
     # then compile:
     pybabel compile -d translations
-
+fi
+if [[ "${1:-}" == "" || "${1:-}" == "html"  ]]
+then
     # Generate translated html
     python3 bin/localize.py "$LANDINGPAGE_DIST_DIR"
 
     # Generate CSS, fonts etc
     cp -Rf assets "$LANDINGPAGE_DIST_DIR"
-fi
 
-./assets/tailwindcss-linux-x64 \
-    --config "$LANDINGPAGE_DIR/tailwind.config.js" \
-    --content "$LANDINGPAGE_DIST_DIR/index.en.html" \
-    --input "$LANDINGPAGE_DIR/assets/css/input.css" \
-    --output "$LANDINGPAGE_DIST_DIR/assets/css/prod.min.css"
+    ./assets/tailwindcss-linux-x64 \
+        --config "$LANDINGPAGE_DIR/tailwind.config.js" \
+        --content "$LANDINGPAGE_DIST_DIR/index.en.html" \
+        --input "$LANDINGPAGE_DIR/assets/css/input.css" \
+        --output "$LANDINGPAGE_DIST_DIR/assets/css/prod.min.css"
+fi

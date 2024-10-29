@@ -151,7 +151,12 @@
             }}
         </h2>
 
-        <div role="region" aria-label="{{ _('Carousel') }}">
+        <div role="region" aria-label="{{ _('Carousel') }}" class="flex flex-col-reverse">
+            <div class="flex flex-row space-x-2 justify-center py-5" role="tablist" aria-label="{{ _('Slide controls') }}">
+                <button id="tab-1" role="tab" class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(1)" aria-selected="true" aria-controls="slide-1" aria-label="{{ _('User portal') }}" onkeydown="arrow(event)"></button>
+                <button id="tab-2" role="tab" class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(2)" aria-selected="false" aria-controls="slide-2" aria-label="{{ _('Administration panel') }}" onkeydown="arrow(event)"></button>
+                <button id="tab-3" role="tab" class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(3)" aria-selected="false" aria-controls="slide-3" aria-label="{{ _('Roundcube, an app example') }}" onkeydown="arrow(event)"></button>
+            </div>
             <div class="relative max-w-screen-lg mx-auto flex align-center justify-center">
                 <div id="slide-1" class="screenshot-slide hidden" role="tabpanel"
                     aria-labelledby="tab-1">
@@ -165,14 +170,9 @@
                     aria-labelledby="tab-3">
                     <img class="w-full h-96 object-contain" src="assets/img/screenshot3.jpg">
                 </div>
-                <button class="slider-prev transition-colors duration-500 absolute left-0 cursor-pointer rounded-full text-6xl text-gray-200 hover:text-gray-400 focus:text-gray-400" role="button" onclick="plusSlides(-1)" style="top: 50%; transform: translateY(-50%);" aria-label="{{ _('Previous') }}"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+                <button class="slider-prev transition-colors duration-500 absolute left-0 cursor-pointer rounded-full text-6xl text-gray-200 hover:text-gray-400 focus:text-gray-400" role="button" onclick="plusSlides(-1)" style="top: 50%; transform: translateY(-50%);" aria-label="{{ _('Previous slide') }}"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
 
-                <button class="slider-next transition-colors duration-500 absolute right-0 cursor-pointer rounded-full text-6xl text-gray-200 hover:text-gray-400 focus:text-gray-400" role="button" onclick="plusSlides(1)" style="top: 50%; transform: translateY(-50%);" aria-label="{{ _('Next') }}"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
-            </div>
-            <div class="flex flex-row space-x-2 justify-center py-5" role="tablist" aria-label="{{ _('Slide controls') }}">
-                <button id="tab-1" role="tab" class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(1)" aria-selected="true" aria-controls="slide-1" aria-label="{{ _('User portal') }}" onkeydown="arrow(event)"></button>
-                <button id="tab-2" role="tab" class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(2)" aria-selected="false" aria-controls="slide-2" aria-label="{{ _('Administration panel') }}" onkeydown="arrow(event)"></button>
-                <button id="tab-3" role="tab" class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(3)" aria-selected="false" aria-controls="slide-3" aria-label="{{ _('Roundcube, an app example') }}" onkeydown="arrow(event)"></button>
+                <button class="slider-next transition-colors duration-500 absolute right-0 cursor-pointer rounded-full text-6xl text-gray-200 hover:text-gray-400 focus:text-gray-400" role="button" onclick="plusSlides(1)" style="top: 50%; transform: translateY(-50%);" aria-label="{{ _('Next slide') }}"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
             </div>
 
             <script>

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-29 17:48+0100\n"
+"POT-Creation-Date: 2024-10-29 18:33+0100\n"
 "PO-Revision-Date: 2024-10-17 18:17+0200\n"
 "Last-Translator: ljf\n"
 "Language: fr\n"
@@ -79,7 +79,7 @@ msgstr "Installer"
 msgid "Applications"
 msgstr "Applications"
 
-#: index.html:131 index.html:428
+#: index.html:131 index.html:434
 msgid "Documentation"
 msgstr "Documentation"
 
@@ -122,6 +122,22 @@ msgstr ""
 
 #: index.html:166
 msgid "Roundcube, an app example"
+msgstr ""
+
+#: index.html:171
+msgid ""
+"Screenshot of the user portal from which users can access the apps "
+"installed on the server."
+msgstr ""
+
+#: index.html:175
+msgid ""
+"Screenshot of the web administration panel displaying the following "
+"categories: users, domains, apps, upgrade, services, tools and backup"
+msgstr ""
+
+#: index.html:179
+msgid "Screenshot of the roundcube app"
 msgstr ""
 
 #: index.html:181
@@ -357,19 +373,19 @@ msgstr "Dépots de code"
 msgid "Terms of services"
 msgstr "CGS"
 
-#: index.html:428
+#: index.html:430
 msgid "Code"
 msgstr "Code"
 
-#: index.html:428
+#: index.html:432
 msgid "Mastodon"
 msgstr "Mastodon"
 
-#: index.html:428
+#: index.html:436
 msgid "Security"
 msgstr "Sécurité"
 
-#: index.html:428
+#: index.html:438
 msgid "Services status"
 msgstr "État des services"
 

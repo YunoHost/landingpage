@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-30 22:16+0100\n"
+"POT-Creation-Date: 2024-10-30 23:13+0100\n"
 "PO-Revision-Date: 2024-10-17 18:17+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -54,7 +54,7 @@ msgstr ""
 msgid "Switch to light mode"
 msgstr ""
 
-#: index.html:109 index.html:439
+#: index.html:109 index.html:455
 msgid "Yunohost logo"
 msgstr ""
 
@@ -78,15 +78,15 @@ msgstr ""
 msgid "Applications"
 msgstr ""
 
-#: index.html:131 index.html:465
+#: index.html:131 index.html:481
 msgid "Documentation"
 msgstr ""
 
-#: index.html:134
+#: index.html:134 index.html:399
 msgid "Last news"
 msgstr ""
 
-#: index.html:137 index.html:408
+#: index.html:137 index.html:424
 msgid "Community"
 msgstr ""
 
@@ -107,11 +107,11 @@ msgid "Slide controls"
 msgstr ""
 
 #: index.html:164
-msgid "User portal: light mode"
+msgid "User portal: dark mode"
 msgstr ""
 
 #: index.html:165
-msgid "User portal: dark mode with app description"
+msgid "User portal: light mode with app description"
 msgstr ""
 
 #: index.html:166
@@ -147,8 +147,8 @@ msgstr ""
 #: index.html:185
 msgid ""
 "Screenshot of the web administration panel displaying the app catalog for"
-" the \"publication\" category, listing some apps available in the catalog"
-" such as Abantecart, BookStack, Digisteps, Docsify, ..."
+" the \"publication\" category, listing some apps available in the "
+"catalog."
 msgstr ""
 
 #: index.html:189
@@ -168,7 +168,7 @@ msgstr ""
 
 #: index.html:290
 msgid ""
-"More concretely, **YunoHost** is a system that installs itself on a "
+"More specifically, **YunoHost** is a system that installs itself on a "
 "**server**  \n"
 "and allows you to install and maintain - **with very little technical "
 "knowledge** -  \n"
@@ -312,145 +312,149 @@ msgstr ""
 msgid "Guided tour"
 msgstr ""
 
-#: index.html:403 index.html:429
+#: index.html:409
+msgid "Previous articles"
+msgstr ""
+
+#: index.html:419 index.html:445
 msgid "Claude, YunoHost's mascot"
 msgstr ""
 
-#: index.html:403 index.html:429
+#: index.html:419 index.html:445
 msgid ""
 "Image of Claude, YunoHost's mascot. The humanoid oppossum stands with "
 "purple hair and scarf, round glasses, beige pants with pockets and a blue"
 " crop top with the YunoHost logo."
 msgstr ""
 
-#: index.html:413
+#: index.html:429
 msgid ""
 " **YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
 msgstr ""
 
-#: index.html:414
+#: index.html:430
 msgid ""
 "We advocate a **decentralized** Internet, with **open**, "
 "**interoperable** technologies that **respect privacy** and **empowers "
 "people**."
 msgstr ""
 
-#: index.html:415
+#: index.html:431
 msgid ""
 "In addition, we aim to **give materiality back to the digital**, and "
 "encourage **sobriety** and **reuse**."
 msgstr ""
 
-#: index.html:419 index.html:467
+#: index.html:435 index.html:483
 msgid "Forum"
 msgstr ""
 
-#: index.html:420 index.html:468
+#: index.html:436 index.html:484
 msgid "Self-help chat"
 msgstr ""
 
-#: index.html:421 index.html:476
+#: index.html:437 index.html:492
 msgid "Donate"
 msgstr ""
 
-#: index.html:422 index.html:474
+#: index.html:438 index.html:490
 msgid "Contribute"
 msgstr ""
 
-#: index.html:423
+#: index.html:439
 msgid "Code repositories"
 msgstr ""
 
-#: index.html:442
+#: index.html:458
 msgid "Legal"
 msgstr ""
 
-#: index.html:444
+#: index.html:460
 msgid "Licenses"
 msgstr ""
 
-#: index.html:445
+#: index.html:461
 msgid "Terms of services"
 msgstr ""
 
-#: index.html:446
+#: index.html:462
 msgid "Legal mentions"
 msgstr ""
 
-#: index.html:447
+#: index.html:463
 msgid "Accessibility"
 msgstr ""
 
-#: index.html:448
+#: index.html:464
 msgid "Organization"
 msgstr ""
 
-#: index.html:449
+#: index.html:465
 msgid "Credits"
 msgstr ""
 
-#: index.html:453
+#: index.html:469
 msgid "Follow"
 msgstr ""
 
-#: index.html:455
+#: index.html:471
 msgid "Press kit"
 msgstr ""
 
-#: index.html:456
+#: index.html:472
 msgid "Blog"
 msgstr ""
 
-#: index.html:457
+#: index.html:473
 msgid "Mastodon"
 msgstr ""
 
-#: index.html:458
+#: index.html:474
 msgid "Peertube"
 msgstr ""
 
-#: index.html:459
+#: index.html:475
 msgid "RSS feed"
 msgstr ""
 
-#: index.html:463
+#: index.html:479
 msgid "Use"
 msgstr ""
 
-#: index.html:466
+#: index.html:482
 msgid "Apps store"
 msgstr ""
 
-#: index.html:469
+#: index.html:485
 msgid "Services status"
 msgstr ""
 
-#: index.html:470
+#: index.html:486
 msgid "Changelog"
 msgstr ""
 
-#: index.html:477
+#: index.html:493
 msgid "Chat"
 msgstr ""
 
-#: index.html:478
+#: index.html:494
 msgid "Issues tracker"
 msgstr ""
 
-#: index.html:479
+#: index.html:495
 msgid "Security"
 msgstr ""
 
-#: index.html:480
+#: index.html:496
 msgid "Code (core)"
 msgstr ""
 
-#: index.html:481
+#: index.html:497
 msgid "Code (apps)"
 msgstr ""
 
-#: index.html:482
+#: index.html:498
 msgid "Translation"
 msgstr ""
 
@@ -794,5 +798,20 @@ msgstr ""
 #~ "which users can access the apps "
 #~ "installed on the server, dark version"
 #~ " with description of each app."
+#~ msgstr ""
+
+#~ msgid "User portal: light mode"
+#~ msgstr ""
+
+#~ msgid "User portal: dark mode with app description"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Screenshot of the web administration "
+#~ "panel displaying the app catalog for "
+#~ "the \"publication\" category, listing some "
+#~ "apps available in the catalog such "
+#~ "as Abantecart, BookStack, Digisteps, Docsify,"
+#~ " ..."
 #~ msgstr ""
 

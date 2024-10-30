@@ -2,6 +2,7 @@
 
 import argparse
 import re
+import json
 from pathlib import Path
 
 import markdown
@@ -44,12 +45,22 @@ def main() -> None:
     jinja_env.filters["cycling"] = cycling
     template = jinja_env.get_template("index.html")
 
+    # Load blog data
+    with open('blog.json', 'r') as file:
+        data = json.load(file)
+    articles = [{
+        "title": article.get("unicode_title", article["title"]),
+        "link": f"https://forum.yunohost.org/t/{article['slug']}/{article['id']}",
+        "date": article["created_at"]
+    } for article in data["topic_list"]["topics"] if article["visible"] and not article["pinned"]]
+    articles.sort(key=lambda item:item['date'], reverse=True)
+    articles = articles[0:6]
     # Generate translated html for each locales
     locales = [localedir.name for localedir in LOCALES_PATH.iterdir()]
     for locale in locales:
         translations = Translations.load(LOCALES_PATH, [locale])
         jinja_env.install_gettext_translations(translations)  # type: ignore
-        translated_html = template.render({"lang": locale})
+        translated_html = template.render({"lang": locale, "articles": articles})
 
         with open(f"{args.output}/index.{locale}.html", "w") as file:
             file.write(translated_html)

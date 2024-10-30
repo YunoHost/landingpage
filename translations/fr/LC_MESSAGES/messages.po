@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-30 22:16+0100\n"
+"POT-Creation-Date: 2024-10-30 23:13+0100\n"
 "PO-Revision-Date: 2024-10-17 18:17+0200\n"
 "Last-Translator: ljf\n"
 "Language: fr\n"
@@ -54,7 +54,8 @@ msgstr "Passer au mode sombre"
 msgid "Switch to light mode"
 msgstr "Passer au mode clair"
 
-#: index.html:109 index.html:439
+
+#: index.html:109 index.html:455
 msgid "Yunohost logo"
 msgstr "Logo de YunoHost"
 
@@ -78,15 +79,15 @@ msgstr "Installer"
 msgid "Applications"
 msgstr "Applications"
 
-#: index.html:131 index.html:465
+#: index.html:131 index.html:481
 msgid "Documentation"
 msgstr "Documentation"
 
-#: index.html:134
+#: index.html:134 index.html:399
 msgid "Last news"
 msgstr "Dernières nouvelles"
 
-#: index.html:137 index.html:408
+#: index.html:137 index.html:424
 msgid "Community"
 msgstr "Communauté"
 
@@ -135,32 +136,48 @@ msgstr "Panneau d'administration : installation d'une app"
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, listing several applications installed."
-msgstr "Capture d'écran du portail utilisateur depuis lequel les personnes ayant un compte peuvent accéder aux apps installées sur le serveur, ici sur la vue listant plusieurs applications installées."
+msgstr ""
+"Capture d'écran du portail utilisateur depuis lequel les personnes ayant "
+"un compte peuvent accéder aux apps installées sur le serveur, ici sur la "
+"vue listant plusieurs applications installées."
 
 #: index.html:177
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, light version with description of each app."
-msgstr "Capture d'écran du portail utilisateur depuis lequel les personnes ayant un compte peuvent accéder aux apps installées sur le serveur, ici en version claire avec une description de chaque app."
+msgstr ""
+"Capture d'écran du portail utilisateur depuis lequel les personnes ayant "
+"un compte peuvent accéder aux apps installées sur le serveur, ici en "
+"version claire avec une description de chaque app."
 
 #: index.html:181
 msgid ""
 "Screenshot of the web administration panel displaying the following "
 "categories: users, domains, apps, upgrade, services, tools and backup"
-msgstr "Capture d'écran du panneau d'administration web montrant les différentes catégories : comptes, domaines, applications, mise à jour, outils, diagnostic et sauvegardes"
+msgstr ""
+"Capture d'écran du panneau d'administration web montrant les différentes "
+"catégories : comptes, domaines, applications, mise à jour, outils, "
+"diagnostic et sauvegardes"
 
 #: index.html:185
 msgid ""
 "Screenshot of the web administration panel displaying the app catalog for"
-" the \"publication\" category, listing some apps available in the catalog."
-msgstr "Capture d'écran du panneau d'administration web montrant le catalog d'application pour la catégorie 'publication', listant des apps disponibles dans le catalogue."
+" the \"publication\" category, listing some apps available in the "
+"catalog."
+msgstr ""
+"Capture d'écran du panneau d'administration web montrant le catalog "
+"d'application pour la catégorie 'publication', listant des apps "
+"disponibles dans le catalogue."
 
 #: index.html:189
 msgid ""
 "Screenshot of the web administration panel displaying the app install "
 "form when installing the Nextcloud application. The interface asks a few "
 "technical questions regarding settings for the installation."
-msgstr "Capture d'écran du panneau d'administration web montrant le formulaire d'installation lors de l'installation de Nextcloud. L'interface pose plusieurs questions techniques sur comment paramétrer l'installation."
+msgstr ""
+"Capture d'écran du panneau d'administration web montrant le formulaire "
+"d'installation lors de l'installation de Nextcloud. L'interface pose "
+"plusieurs questions techniques sur comment paramétrer l'installation."
 
 #: index.html:191
 msgid "Previous slide"
@@ -331,11 +348,17 @@ msgstr "Prenez soin de votre serveur"
 msgid "Guided tour"
 msgstr "Visite guidée"
 
-#: index.html:403 index.html:429
+#: index.html:409
+#, fuzzy
+msgid "Previous articles"
+msgstr "Image précédente"
+
+#: index.html:419 index.html:445
 msgid "Claude, YunoHost's mascot"
 msgstr "Claude, la mascote de YunoHost"
 
-#: index.html:403 index.html:429
+#: index.html:419 index.html:445
+
 msgid ""
 "Image of Claude, YunoHost's mascot. The humanoid oppossum stands with "
 "purple hair and scarf, round glasses, beige pants with pockets and a blue"
@@ -345,7 +368,8 @@ msgstr ""
 "debout, cheveux et foulard violets, lunettes rondes, pantalon beige à "
 "poches et crop top bleu avec le logo YunoHost."
 
-#: index.html:413
+
+#: index.html:429
 msgid ""
 " **YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
@@ -353,7 +377,7 @@ msgstr ""
 "**YunoHost** est un projet **technocritique à but non-lucratif**, "
 "développé et maintenu par des **bénévoles**."
 
-#: index.html:414
+#: index.html:430
 msgid ""
 "We advocate a **decentralized** Internet, with **open**, "
 "**interoperable** technologies that **respect privacy** and **empowers "
@@ -363,7 +387,7 @@ msgstr ""
 "**ouvertes**, **interopérables**, qui **respectent la vie privée** et qui"
 " donnent de l'**autonomie** et du **pouvoir au plus grand nombre**."
 
-#: index.html:415
+#: index.html:431
 msgid ""
 "In addition, we aim to **give materiality back to the digital**, and "
 "encourage **sobriety** and **reuse**."
@@ -371,114 +395,114 @@ msgstr ""
 "En outre, nous souhaitons **redonner de la matérialité au numérique**, "
 "encourager la **sobriété** et le **réemploi**."
 
-#: index.html:419 index.html:467
+#: index.html:435 index.html:483
 msgid "Forum"
 msgstr "Forum"
 
-#: index.html:420 index.html:468
+#: index.html:436 index.html:484
 msgid "Self-help chat"
 msgstr "Chat d'entraide"
 
-#: index.html:421 index.html:476
+#: index.html:437 index.html:492
 msgid "Donate"
 msgstr "Soutenir financièrement"
 
-#: index.html:422 index.html:474
+#: index.html:438 index.html:490
 msgid "Contribute"
 msgstr "Contribuer"
 
-#: index.html:423
+#: index.html:439
 msgid "Code repositories"
 msgstr "Dépôts de code"
 
-#: index.html:442
+#: index.html:458
 msgid "Legal"
 msgstr "Légal"
 
-#: index.html:444
+#: index.html:460
 msgid "Licenses"
 msgstr "Licences"
 
-#: index.html:445
+#: index.html:461
 msgid "Terms of services"
 msgstr "Conditions d'utilisation"
 
-#: index.html:446
+#: index.html:462
 msgid "Legal mentions"
 msgstr "Mentions légales"
 
-#: index.html:447
+#: index.html:463
 msgid "Accessibility"
 msgstr "Accessibilité"
 
-#: index.html:448
+#: index.html:464
 msgid "Organization"
 msgstr "Organisation"
 
-#: index.html:449
+#: index.html:465
 msgid "Credits"
 msgstr "Crédits"
 
-#: index.html:453
+#: index.html:469
 msgid "Follow"
 msgstr "Nous suivre"
 
-#: index.html:455
+#: index.html:471
 msgid "Press kit"
 msgstr "Kit de presse"
 
-#: index.html:456
+#: index.html:472
 msgid "Blog"
 msgstr "Blog"
 
-#: index.html:457
+#: index.html:473
 msgid "Mastodon"
 msgstr "Mastodon"
 
-#: index.html:458
+#: index.html:474
 msgid "Peertube"
 msgstr "Peertube"
 
-#: index.html:459
+#: index.html:475
 msgid "RSS feed"
 msgstr "Flux RSS"
 
-#: index.html:463
+#: index.html:479
 msgid "Use"
 msgstr "Utiliser"
 
-#: index.html:466
+#: index.html:482
 msgid "Apps store"
 msgstr "Catalogue d'apps"
 
-#: index.html:469
+#: index.html:485
 msgid "Services status"
 msgstr "État des services"
 
-#: index.html:470
+#: index.html:486
 msgid "Changelog"
 msgstr "Historique des changements"
 
-#: index.html:477
+#: index.html:493
 msgid "Chat"
 msgstr "Chat"
 
-#: index.html:478
+#: index.html:494
 msgid "Issues tracker"
 msgstr "Tickets"
 
-#: index.html:479
+#: index.html:495
 msgid "Security"
 msgstr "Sécurité"
 
-#: index.html:480
+#: index.html:496
 msgid "Code (core)"
 msgstr "Code (core)"
 
-#: index.html:481
+#: index.html:497
 msgid "Code (apps)"
 msgstr "Code (apps)"
 
-#: index.html:482
+#: index.html:498
 msgid "Translation"
 msgstr "Traduction"

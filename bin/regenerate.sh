@@ -43,11 +43,18 @@ then
     # then compile:
     pybabel compile -d translations
 fi
-if [[ "${1:-}" == "" || "${1:-}" == "html"  ]]
+if [[ "${1:-}" == "" || "${1:-}" == "blog"  ]]
+then
+    curl -L -s -o "blog.json" "https://forum.yunohost.org/c/announcement/8/none.json"
+fi
+if [[ "${1:-}" == "" || "${1:-}" == "html" || "${1:-}" == "blog"  ]]
 then
     # Generate translated html
     python3 bin/localize.py "$LANDINGPAGE_DIST_DIR"
 
+fi
+if [[ "${1:-}" == "" || "${1:-}" == "html"  ]]
+then
     # Generate CSS, fonts etc
     cp -Rf assets "$LANDINGPAGE_DIST_DIR"
 

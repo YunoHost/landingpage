@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-30 15:25+0100\n"
+"POT-Creation-Date: 2024-10-30 16:36+0100\n"
 "PO-Revision-Date: 2024-10-17 18:17+0200\n"
 "Last-Translator: ljf\n"
 "Language: fr\n"
@@ -175,7 +175,7 @@ msgstr "Exemples d'utilisations"
 
 #: index.html:301
 msgid "For you and your friends"
-msgstr "Pour vous et vos amis"
+msgstr "Pour vous et vos ami⋅e⋅s"
 
 #: index.html:304
 msgid "synchronize your calendars and contacts"
@@ -327,7 +327,7 @@ msgid ""
 " **YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
 msgstr ""
-"**YunoHost** est un projet **technocritique et à but non-lucratif**, "
+"**YunoHost** est un projet **technocritique à but non-lucratif**, "
 "développé et maintenu par des **bénévoles**."
 
 #: index.html:404

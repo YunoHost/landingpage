@@ -149,3 +149,6 @@ strong { font-weight: 600 !important; }
 }
 .slider-dot:hover, .slider-dot[aria-selected="true"] { background-color: #111 !important; }
 
+footer li > a[href=""] {
+    display: none;
+}

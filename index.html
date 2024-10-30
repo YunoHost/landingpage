@@ -442,50 +442,50 @@
 
 <footer class="bg-[#b6e39d] dark:bg-[#0F321E] transition-colors relative">
     <div class="mx-3 md:mx-auto max-w-screen-md flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-5">
-        <img alt="{{ _("Yunohost logo") }}" class="h-32 mt-8" src="assets/img/ynh_logo_roundcorner.png" />
-        <div class="grid grid-cols-2 md:grid-cols-4 justify-center gap-5 py-5">
+        <img alt="{{ _("Yunohost logo") }}" class="h-32 mt-8 mr-8" src="assets/img/ynh_logo_roundcorner.png" />
+        <div class="grid grid-cols-2 md:grid-cols-4 justify-center gap-5 py-5 leading-none">
             <div>
                 <h3 class="py-2 font-bold">{{ _('Legal') }}</h3>
                 <ul>
-                    <li><a href="https://github.com/YunoHost/yunohost/blob/dev/LICENSE">{{ _('Licenses') }}</a></li>
-                    <li><a href="https://yunohost.org/terms_of_services">{{ _('Terms of services') }}</a></li>
-                    <li><a href="">{{ _('Legal mentions') }}</a></li>
-                    <li><a href="">{{ _('Accessibility') }}</a></li>
-                    <li><a href="https://github.com/YunoHost/project-organization">{{ _('Organization') }}</a></li>
-                    <li><a href="">{{ _('Credits') }}</a></li>
+                    <li class="pb-2"><a href="https://github.com/YunoHost/yunohost/blob/dev/LICENSE">{{ _('Licenses') }}</a></li>
+                    <li class="pb-2"><a href="https://yunohost.org/terms_of_services">{{ _('Terms of services') }}</a></li>
+                    <!--<li class="pb-2"><a href="">{{ _('Legal mentions') }}</a></li>-->
+                    <!--<li class="pb-2"><a href="">{{ _('Accessibility') }}</a></li>-->
+                    <li class="pb-2"><a href="https://github.com/YunoHost/project-organization">{{ _('Organization') }}</a></li>
+                    <!--<li class="pb-2"><a href="">{{ _('Credits') }}</a></li>-->
                 </ul>
             </div>
             <div>
                 <h3 class="py-2 font-bold">{{ _('Follow') }}</h3>
                 <ul>
                     <!--<li><a href="">{{ _('Press kit') }}</a></li>-->
-                    <li><a href="https://forum.yunohost.org/c/announcement/8/none">{{ _('Blog') }}</a></li>
-                    <li><a href="https://toot.aquilenet.fr/@yunohost">{{ _('Mastodon') }}</a></li>
-                    <li><a href="https://videos.globenet.org/a/yunohost/videos?s=1">{{ _('Peertube') }}</a></li>
-                    <li><a href="">{{ _('RSS feed') }}</a></li>
+                    <li class="pb-2"><a href="https://forum.yunohost.org/c/announcement/8/none">{{ _('Blog') }}</a></li>
+                    <li class="pb-2"><a href="https://toot.aquilenet.fr/@yunohost">{{ _('Mastodon') }}</a></li>
+                    <li class="pb-2"><a href="https://videos.globenet.org/a/yunohost/videos?s=1">{{ _('Peertube') }}</a></li>
+                    <!--<li class="pb-2"><a href="">{{ _('RSS feed') }}</a></li>-->
                 </ul>
             </div>
             <div>
                 <h3 class="py-2 font-bold">{{ _('Use') }}</h3>
                 <ul>
-                    <li><a href="https://yunohost.org/docs">{{ _('Documentation') }}</a></li>
-                    <li><a href="https://apps.yunohost.org/">{{ _('Apps store') }}</a></li>
-                    <li><a href="https://forum.yunohost.org">{{ _('Forum') }}</a></li>
-                    <li><a href="https://yunohost.org/help">{{ _('Self-help chat') }}</a></li>
-                    <li><a href="https://status.yunohost.org">{{ _('Services status') }}</a></li>
-                    <li><a href="https://raw.githubusercontent.com/YunoHost/yunohost/refs/heads/dev/debian/changelog">{{ _('Changelog') }}</a></li>
+                    <li class="pb-2"><a href="https://yunohost.org/docs">{{ _('Documentation') }}</a></li>
+                    <li class="pb-2"><a href="https://apps.yunohost.org/">{{ _('Apps store') }}</a></li>
+                    <li class="pb-2"><a href="https://forum.yunohost.org">{{ _('Forum') }}</a></li>
+                    <li class="pb-2"><a href="https://yunohost.org/help">{{ _('Self-help chat') }}</a></li>
+                    <li class="pb-2"><a href="https://status.yunohost.org">{{ _('Services status') }}</a></li>
+                    <li class="pb-2"><a href="https://raw.githubusercontent.com/YunoHost/yunohost/refs/heads/dev/debian/changelog">{{ _('Changelog') }}</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="py-2 font-bold">{{ _('Contribute') }}</h3>
                 <ul>
-                    <li><a href="https://donate.yunohost.org">{{ _('Donate') }}</a></li>
-                    <li><a href="">{{ _('Chat') }}</a></li>
-                    <li><a href="https://github.com/YunoHost/issues/issues">{{ _('Issues tracker') }}</a></li>
-                    <li><a href="https://yunohost.org/security_team">{{ _('Security') }}</a></li>
-                    <li><a href="https://yunohost.org/yunohost">{{ _('Code (core)') }}</a></li>
-                    <li><a href="https://yunohost.org/yunohost-apps">{{ _('Code (apps)') }}</a></li>
-                    <li><a href="https://translate.yunohost.org/">{{ _('Translation') }}</a></li>
+                    <li class="pb-2"><a href="https://donate.yunohost.org">{{ _('Donate') }}</a></li>
+                    <!--<li class="pb-2"><a href="">{{ _('Chat') }}</a></li>-->
+                    <li class="pb-2"><a href="https://github.com/YunoHost/issues/issues">{{ _('Issues tracker') }}</a></li>
+                    <li class="pb-2"><a href="https://yunohost.org/security_team">{{ _('Security') }}</a></li>
+                    <li class="pb-2"><a href="https://yunohost.org/yunohost">{{ _('Code (core)') }}</a></li>
+                    <li class="pb-2"><a href="https://yunohost.org/yunohost-apps">{{ _('Code (apps)') }}</a></li>
+                    <li class="pb-2"><a href="https://translate.yunohost.org/">{{ _('Translation') }}</a></li>
                 </ul>
             </div>
         </div>

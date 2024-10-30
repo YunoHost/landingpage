@@ -326,11 +326,13 @@ msgid ""
 " crop top with the YunoHost logo."
 msgstr ""
 
+
 #: index.html:429
 msgid ""
 " **YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
 msgstr ""
+
 
 #: index.html:430
 msgid ""
@@ -338,6 +340,7 @@ msgid ""
 "**interoperable** technologies that **respect privacy** and **empowers "
 "people**."
 msgstr ""
+
 
 #: index.html:431
 msgid ""

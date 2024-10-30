@@ -800,6 +800,7 @@ msgstr ""
 #~ " with description of each app."
 #~ msgstr ""
 
+
 #~ msgid "User portal: light mode"
 #~ msgstr ""
 
@@ -814,4 +815,3 @@ msgstr ""
 #~ "as Abantecart, BookStack, Digisteps, Docsify,"
 #~ " ..."
 #~ msgstr ""
-

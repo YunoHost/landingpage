@@ -54,6 +54,7 @@ msgstr "Passer au mode sombre"
 msgid "Switch to light mode"
 msgstr "Passer au mode clair"
 
+
 #: index.html:109 index.html:455
 msgid "Yunohost logo"
 msgstr "Logo de YunoHost"
@@ -357,6 +358,7 @@ msgid "Claude, YunoHost's mascot"
 msgstr "Claude, la mascote de YunoHost"
 
 #: index.html:419 index.html:445
+
 msgid ""
 "Image of Claude, YunoHost's mascot. The humanoid oppossum stands with "
 "purple hair and scarf, round glasses, beige pants with pockets and a blue"
@@ -365,6 +367,7 @@ msgstr ""
 "Image de Claude, la mascotte de YunoHost. L'oppossum humanoïde est "
 "debout, cheveux et foulard violets, lunettes rondes, pantalon beige à "
 "poches et crop top bleu avec le logo YunoHost."
+
 
 #: index.html:429
 msgid ""
@@ -503,4 +506,3 @@ msgstr "Code (apps)"
 #: index.html:498
 msgid "Translation"
 msgstr "Traduction"
-

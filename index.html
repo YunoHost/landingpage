@@ -161,22 +161,32 @@
 
         <div role="region" aria-label="{{ _('Carousel') }}" class="flex flex-col-reverse">
             <div class="flex flex-row space-x-2 justify-center py-5" role="tablist" aria-label="{{ _('Slide controls') }}">
-                <button id="tab-1" role="tab" class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(1)" aria-selected="true" aria-controls="slide-1" aria-label="{{ _('User portal') }}" onkeydown="arrow(event)"></button>
-                <button id="tab-2" role="tab" class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(2)" aria-selected="false" aria-controls="slide-2" aria-label="{{ _('Administration panel') }}" onkeydown="arrow(event)"></button>
-                <button id="tab-3" role="tab" class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(3)" aria-selected="false" aria-controls="slide-3" aria-label="{{ _('Roundcube, an app example') }}" onkeydown="arrow(event)"></button>
+                <button id="tab-1" role="tab" class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(1)" aria-selected="true" aria-controls="slide-1" aria-label="{{ _('User portal: light mode') }}" onkeydown="arrow(event)"></button>
+                <button id="tab-2" role="tab" class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(2)" aria-selected="false" aria-controls="slide-2" aria-label="{{ _('User portal: dark mode with app description') }}" onkeydown="arrow(event)"></button>
+                <button id="tab-3" role="tab" class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(3)" aria-selected="false" aria-controls="slide-3" aria-label="{{ _('Administration panel: homepage') }}" onkeydown="arrow(event)"></button>
+                <button id="tab-4" role="tab" class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(4)" aria-selected="false" aria-controls="slide-4" aria-label="{{ _('Administration panel: app catalog') }}" onkeydown="arrow(event)"></button>
+                <button id="tab-5" role="tab" class="slider-dot transition-colors duration-500 cursor-pointer inline-block rounded-full w-[10px] h-[10px] bg-gray-300" onclick="currentSlide(5)" aria-selected="false" aria-controls="slide-5" aria-label="{{ _('Administration panel: app installation') }}" onkeydown="arrow(event)"></button>
             </div>
             <div class="relative w-full max-w-screen-lg mx-auto flex align-center justify-center">
                 <div id="slide-1" class="screenshot-slide hidden" role="tabpanel"
                     aria-labelledby="tab-1">
-                    <img class="w-full h-96 object-contain" src="assets/img/screenshot1.jpg" alt="{{ _('Screenshot of the user portal from which users can access the apps installed on the server.') }}">
+                    <img class="w-full h-96 object-contain" src="assets/img/portal_simple_dark.jpg" alt="{{ _('Screenshot of the user portal from which users can access the apps installed on the server, listing several applications installed.') }}">
                 </div>
                 <div id="slide-2" class="screenshot-slide hidden" role="tabpanel"
                     aria-labelledby="tab-2">
-                    <img class="w-full h-96 object-contain" src="assets/img/screenshot2.png" alt="{{ _('Screenshot of the web administration panel displaying the following categories: users, domains, apps, upgrade, services, tools and backup') }}">
+                    <img class="w-full h-96 object-contain" src="assets/img/portal_descriptive_light.jpg" alt="{{ _('Screenshot of the user portal from which users can access the apps installed on the server, light version with description of each app.') }}">
                 </div>
                 <div id="slide-3" class="screenshot-slide hidden" role="tabpanel"
                     aria-labelledby="tab-3">
-                    <img class="w-full h-96 object-contain" src="assets/img/screenshot3.jpg" alt="{{ _('Screenshot of the roundcube app') }}">
+                    <img class="w-full h-96 object-contain" src="assets/img/admin_home_light.jpg" alt="{{ _('Screenshot of the web administration panel displaying the following categories: users, domains, apps, upgrade, services, tools and backup') }}">
+                </div>
+                <div id="slide-4" class="screenshot-slide hidden" role="tabpanel"
+                    aria-labelledby="tab-4">
+                    <img class="w-full h-96 object-contain" src="assets/img/admin_catalog_light.jpg" alt="{{ _('Screenshot of the web administration panel displaying the app catalog for the "publication" category, listing some apps available in the catalog such as Abantecart, BookStack, Digisteps, Docsify, ...') }}">
+                </div>
+                <div id="slide-5" class="screenshot-slide hidden" role="tabpanel"
+                    aria-labelledby="tab-5">
+                    <img class="w-full h-96 object-contain" src="assets/img/admin_appinstall_light.jpg" alt="{{ _('Screenshot of the web administration panel displaying the app install form when installing the Nextcloud application. The interface asks a few technical questions regarding settings for the installation.') }}">
                 </div>
                 <button class="slider-prev transition-colors duration-500 absolute left-0 cursor-pointer rounded-full text-6xl text-gray-200 hover:text-gray-400 focus:text-gray-400" role="button" onclick="plusSlides(-1)" style="top: 50%; transform: translateY(-50%);" aria-label="{{ _('Previous slide') }}"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
 

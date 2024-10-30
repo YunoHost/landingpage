@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-29 18:33+0100\n"
+"POT-Creation-Date: 2024-10-30 15:08+0100\n"
 "PO-Revision-Date: 2024-10-17 18:17+0200\n"
 "Last-Translator: ljf\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: index.html:4
 msgid "YunoHost: garden your own piece of the Internet!"
@@ -35,7 +35,6 @@ msgid "Go to navigation"
 msgstr "Aller à la navigation"
 
 #: index.html:73
-#, fuzzy
 msgid "Go to page settings"
 msgstr "Aller à la navigation"
 
@@ -55,7 +54,7 @@ msgstr ""
 msgid "Switch to light mode"
 msgstr ""
 
-#: index.html:109
+#: index.html:109 index.html:429
 msgid "Yunohost logo"
 msgstr "Logo de YunoHost"
 
@@ -79,7 +78,7 @@ msgstr "Installer"
 msgid "Applications"
 msgstr "Applications"
 
-#: index.html:131 index.html:434
+#: index.html:131 index.html:455
 msgid "Documentation"
 msgstr "Documentation"
 
@@ -349,19 +348,19 @@ msgstr ""
 "En outre, nous souhaitons **redonner de la matérialité au numérique**, "
 "encourager la **sobriété** et le **réemploi**."
 
-#: index.html:409
+#: index.html:409 index.html:457
 msgid "Forum"
 msgstr "Forum"
 
-#: index.html:410
+#: index.html:410 index.html:458
 msgid "Self-help chat"
 msgstr "Chat d'entraide"
 
-#: index.html:411
+#: index.html:411 index.html:466
 msgid "Donate"
 msgstr "Je soutiens financièrement"
 
-#: index.html:412
+#: index.html:412 index.html:464
 msgid "Contribute"
 msgstr "Contribuer"
 
@@ -369,23 +368,94 @@ msgstr "Contribuer"
 msgid "Code repositories"
 msgstr "Dépots de code"
 
-#: index.html:428
+#: index.html:432
+msgid "Legal"
+msgstr ""
+
+#: index.html:434
+msgid "Licenses"
+msgstr ""
+
+#: index.html:435
 msgid "Terms of services"
 msgstr "CGS"
 
-#: index.html:430
-msgid "Code"
-msgstr "Code"
+#: index.html:436
+msgid "Legal mentions"
+msgstr "Légal"
 
-#: index.html:432
+#: index.html:437
+msgid "Accessibility"
+msgstr "Accessibilité"
+
+#: index.html:438
+msgid "Organization"
+msgstr "Pour les petites organisations"
+
+#: index.html:439
+msgid "Credits"
+msgstr "Crédits"
+
+#: index.html:443
+msgid "Follow"
+msgstr "Nous suivre"
+
+#: index.html:445
+msgid "Press kit"
+msgstr "Kit de presse"
+
+#: index.html:446
+msgid "Blog"
+msgstr "Blog"
+
+#: index.html:447
 msgid "Mastodon"
 msgstr "Mastodon"
 
-#: index.html:436
-msgid "Security"
-msgstr "Sécurité"
+#: index.html:448
+msgid "Peertube"
+msgstr "Peertube"
 
-#: index.html:438
+#: index.html:449
+msgid "RSS feed"
+msgstr "Flux RSS"
+
+#: index.html:453
+msgid "Use"
+msgstr "Utiliser"
+
+#: index.html:456
+msgid "Apps store"
+msgstr "Applications"
+
+#: index.html:459
 msgid "Services status"
 msgstr "État des services"
 
+#: index.html:460
+msgid "Changelog"
+msgstr "Historique des changements"
+
+#: index.html:467
+msgid "Chat"
+msgstr "Salons de discussion"
+
+#: index.html:468
+msgid "Issues tracker"
+msgstr "Bugs"
+
+#: index.html:469
+msgid "Security"
+msgstr "Sécurité"
+
+#: index.html:470
+msgid "Core code"
+msgstr "Code du core"
+
+#: index.html:471
+msgid "Packages code"
+msgstr "Code des paquets"
+
+#: index.html:472
+msgid "Translation"
+msgstr "Traductions"

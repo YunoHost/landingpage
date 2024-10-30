@@ -119,22 +119,22 @@
             <button class="block sm:hidden w-full py-3" onclick="document.getElementById('main-menu-items').classList.toggle('hidden')"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
             <ul id="main-menu-items" class="justify-center flex-wrap flex-row hidden text-center sm:text-left sm:flex sm:space-x-10 sm:py-2">
             <li>
-                <a class="py-3 block sm:inline-block hover:opacity-80" href="#main-content">{{ _("About") }}</a>
+                <a class="py-3 block sm:inline-block hover:opacity-75" href="#main-content">{{ _("About") }}</a>
             </li>
             <li>
-                <a class="py-3 block sm:inline-block hover:opacity-80" href="#start">{{ _("Install") }}</a>
+                <a class="py-3 block sm:inline-block hover:opacity-75" href="#start">{{ _("Install") }}</a>
             </li>
             <li>
-                <a class="py-3 block sm:inline-block hover:opacity-80" href="https://apps.yunohost.org">{{ _("Applications") }}</a>
+                <a class="py-3 block sm:inline-block hover:opacity-75" href="https://apps.yunohost.org">{{ _("Applications") }}</a>
             </li>
             <li>
-                <a class="py-3 block sm:inline-block hover:opacity-80" href="https://yunohost.org/docs">{{ _("Documentation") }}</a>
+                <a class="py-3 block sm:inline-block hover:opacity-75" href="https://yunohost.org/docs">{{ _("Documentation") }}</a>
             </li>
             <li>
-                <a class="py-3 block sm:inline-block hover:opacity-80" href="https://forum.yunohost.org/c/announcement/8/none">{{ _("Last news") }}</a>
+                <a class="py-3 block sm:inline-block hover:opacity-75" href="https://forum.yunohost.org/c/announcement/8/none">{{ _("Last news") }}</a>
             </li>
             <li>
-                <a class="py-3 block sm:inline-block hover:opacity-80" href="#community">{{ _("Community") }}</a>
+                <a class="py-3 block sm:inline-block hover:opacity-75" href="#community">{{ _("Community") }}</a>
             </li>
             </ul>
         </nav>
@@ -282,9 +282,9 @@
         </div>
 
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <a class="p-3 bg-gray-100 text-gray-800 font-semibold w-fit" href="https://yunohost.org/whatsyunohost">{{ _("Huh, but why <i class='fa fa-question'></i>") }}</a>
-          <a class="p-3 bg-sky-200  text-sky-800  font-semibold w-48" href="https://yunohost.org/try"><i class="fa fa-fw fa-flask"></i> {{ _("Try") }}</a>
-          <a class="p-3 bg-lime-200 text-lime-800 font-semibold w-48" href="#start"><i class="fa fa-fw fa-download"></i> {{ _("Install") }}</a>
+          <a class="p-3 bg-gray-100 text-gray-800 font-semibold w-fit hover:saturate-150" href="https://yunohost.org/whatsyunohost">{{ _("Huh, but why <i class='fa fa-question'></i>") }}</a>
+          <a class="p-3 bg-sky-200  text-sky-800  font-semibold w-48 hover:saturate-150" href="https://yunohost.org/try"><i class="fa fa-fw fa-flask"></i> {{ _("Try") }}</a>
+          <a class="p-3 bg-lime-200 text-lime-800 font-semibold w-48 hover:saturate-150" href="#start"><i class="fa fa-fw fa-download"></i> {{ _("Install") }}</a>
         </div>
     </section>
 
@@ -324,7 +324,7 @@
       </div>
 
       <div class="flex flex-row space-x-4 justify-center">
-          <a class="p-3 bg-purple-200 text-purple-800 font-semibold w-80" href="https://apps.yunohost.org"><i class="fa fa-fw fa-search"></i> {{ _("Explore the app catalog") }}</a>
+          <a class="p-3 bg-purple-200 text-purple-800 font-semibold w-80 hover:saturate-150" href="https://apps.yunohost.org"><i class="fa fa-fw fa-search"></i> {{ _("Explore the app catalog") }}</a>
       </div>
 
       </section>
@@ -352,7 +352,7 @@
                         <li class="pb-2"><span aria-hidden="true">🦕</span> {{ _("Old tower or portable (*ordinosaur*)") | markdown | no_p }}</li>
                         <li class="pb-2"><span aria-hidden="true">☁️ </span> {{ _("Online server (VPS)") }}</li>
                     </ul>
-                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-sky-200 text-sky-800 w-48 font-semibold" style="bottom: -1.5em" href="https://yunohost.org/howtohostyourself"><i class="fa fa-bar-chart fa-fw"></i> {{ _("See the comparison") }}</a>
+                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-sky-200 text-sky-800 w-48 font-semibold hover:saturate-150" style="bottom: -1.5em" href="https://yunohost.org/howtohostyourself"><i class="fa fa-bar-chart fa-fw"></i> {{ _("See the comparison") }}</a>
                 </div>
               </div>
 
@@ -363,7 +363,7 @@
                         <li class="pb-2"><span aria-hidden="true">🚀</span> {{ _("Check the prerequisites<br>then flash or install the system") }}</li>
                         <li class="pb-2"><span aria-hidden="true">🌐</span> {{ _("YunoHost will guide you through setting up the first admin, the domain name and, if applicable, your Internet box.") }}</li>
                     </ul>
-                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-lime-200 text-lime-800 w-fit font-semibold" style="bottom: -1.5em" href="https://yunohost.org/install"><i class="fa fa-download fa-fw"></i> {{ _("Installation guide") }}</a>
+                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-lime-200 text-lime-800 w-fit font-semibold hover:saturate-150" style="bottom: -1.5em" href="https://yunohost.org/install"><i class="fa fa-download fa-fw"></i> {{ _("Installation guide") }}</a>
                 </div>
               </div>
 
@@ -375,7 +375,7 @@
                       <li class="pb-2"><span aria-hidden="true">🚑</span> {{ _("Set up backups") }}</li>
                       <li class="pb-2"><span aria-hidden="true">🌱</span> {{ _("Take care of your server") }}</li>
                     </ul>
-                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-purple-200 text-purple-800 w-48 font-semibold" style="bottom: -1.5em" href="https://yunohost.org/admin_guide"><i class="fa fa-map-signs fa-fw"></i> {{ _("Guided tour") }}</a>
+                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-purple-200 text-purple-800 w-48 font-semibold hover:saturate-150" style="bottom: -1.5em" href="https://yunohost.org/admin_guide"><i class="fa fa-map-signs fa-fw"></i> {{ _("Guided tour") }}</a>
                 </div>
               </div>
 
@@ -422,11 +422,11 @@
                   </div>
 
                   <p class="py-5 leading-[4rem]">
-                  <a class="m-2 px-5 py-3 font-semibold bg-purple-100 text-purple-800 w-48 whitespace-nowrap" href="https://forum.yunohost.org"><i class="fa fa-comments-o" aria-hidden="true"></i> {{ _("Forum") }}</a>
-                    <a class="m-2 px-5 py-3 font-semibold bg-green-100 text-green-800 w-48 whitespace-nowrap" href="https://yunohost.org/help"><i class="fa fa-support" aria-hidden="true"></i> {{ _("Self-help chat") }}</a>
-                    <a class="m-2 px-5 py-3 font-semibold bg-amber-100 text-amber-800 w-48 whitespace-nowrap" href="https://donate.yunohost.org"><i class="fa fa-dollar" aria-hidden="true"></i> {{ _("Donate") }}</a>
-                    <a class="m-2 px-5 py-3 font-semibold bg-orange-100 text-orange-800 w-48 whitespace-nowrap" href="https://yunohost.org/contribute"><i class="fa fa-heart-o" aria-hidden="true"></i> {{ _("Contribute") }}</a>
-                    <a class="m-2 px-5 py-3 font-semibold bg-gray-100 text-gray-800 w-48 whitespace-nowrap" href="https://github.com/yunohost"><i class="fa fa-code" aria-hidden="true"></i> {{ _("Code repositories") }}</a>
+                  <a class="m-2 px-5 py-3 font-semibold bg-purple-100 text-purple-800 w-48 whitespace-nowrap hover:saturate-150" href="https://forum.yunohost.org"><i class="fa fa-comments-o" aria-hidden="true"></i> {{ _("Forum") }}</a>
+                    <a class="m-2 px-5 py-3 font-semibold bg-green-100 text-green-800 w-48 whitespace-nowrap hover:saturate-150" href="https://yunohost.org/help"><i class="fa fa-support" aria-hidden="true"></i> {{ _("Self-help chat") }}</a>
+                    <a class="m-2 px-5 py-3 font-semibold bg-amber-100 text-amber-800 w-48 whitespace-nowrap hover:saturate-150" href="https://donate.yunohost.org"><i class="fa fa-dollar" aria-hidden="true"></i> {{ _("Donate") }}</a>
+                    <a class="m-2 px-5 py-3 font-semibold bg-orange-100 text-orange-800 w-48 whitespace-nowrap hover:saturate-150" href="https://yunohost.org/contribute"><i class="fa fa-heart-o" aria-hidden="true"></i> {{ _("Contribute") }}</a>
+                    <a class="m-2 px-5 py-3 font-semibold bg-gray-100 text-gray-800 w-48 whitespace-nowrap hover:saturate-150" href="https://github.com/yunohost"><i class="fa fa-code" aria-hidden="true"></i> {{ _("Code repositories") }}</a>
                   </p>
               </div>
 
@@ -447,11 +447,11 @@
             <div>
                 <h3 class="py-2 font-bold">{{ _('Legal') }}</h3>
                 <ul>
-                    <li class="pb-2"><a href="https://github.com/YunoHost/yunohost/blob/dev/LICENSE">{{ _('Licenses') }}</a></li>
-                    <li class="pb-2"><a href="https://yunohost.org/terms_of_services">{{ _('Terms of services') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/YunoHost/yunohost/blob/dev/LICENSE">{{ _('Licenses') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://yunohost.org/terms_of_services">{{ _('Terms of services') }}</a></li>
                     <!--<li class="pb-2"><a href="">{{ _('Legal mentions') }}</a></li>-->
                     <!--<li class="pb-2"><a href="">{{ _('Accessibility') }}</a></li>-->
-                    <li class="pb-2"><a href="https://github.com/YunoHost/project-organization">{{ _('Organization') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/YunoHost/project-organization">{{ _('Organization') }}</a></li>
                     <!--<li class="pb-2"><a href="">{{ _('Credits') }}</a></li>-->
                 </ul>
             </div>
@@ -459,33 +459,33 @@
                 <h3 class="py-2 font-bold">{{ _('Follow') }}</h3>
                 <ul>
                     <!--<li><a href="">{{ _('Press kit') }}</a></li>-->
-                    <li class="pb-2"><a href="https://forum.yunohost.org/c/announcement/8/none">{{ _('Blog') }}</a></li>
-                    <li class="pb-2"><a href="https://toot.aquilenet.fr/@yunohost">{{ _('Mastodon') }}</a></li>
-                    <li class="pb-2"><a href="https://videos.globenet.org/a/yunohost/videos?s=1">{{ _('Peertube') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://forum.yunohost.org/c/announcement/8/none">{{ _('Blog') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://toot.aquilenet.fr/@yunohost">{{ _('Mastodon') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://videos.globenet.org/a/yunohost/videos?s=1">{{ _('Peertube') }}</a></li>
                     <!--<li class="pb-2"><a href="">{{ _('RSS feed') }}</a></li>-->
                 </ul>
             </div>
             <div>
                 <h3 class="py-2 font-bold">{{ _('Use') }}</h3>
                 <ul>
-                    <li class="pb-2"><a href="https://yunohost.org/docs">{{ _('Documentation') }}</a></li>
-                    <li class="pb-2"><a href="https://apps.yunohost.org/">{{ _('Apps store') }}</a></li>
-                    <li class="pb-2"><a href="https://forum.yunohost.org">{{ _('Forum') }}</a></li>
-                    <li class="pb-2"><a href="https://yunohost.org/help">{{ _('Self-help chat') }}</a></li>
-                    <li class="pb-2"><a href="https://status.yunohost.org">{{ _('Services status') }}</a></li>
-                    <li class="pb-2"><a href="https://raw.githubusercontent.com/YunoHost/yunohost/refs/heads/dev/debian/changelog">{{ _('Changelog') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://yunohost.org/docs">{{ _('Documentation') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://apps.yunohost.org/">{{ _('Apps store') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://forum.yunohost.org">{{ _('Forum') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://yunohost.org/help">{{ _('Self-help chat') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://status.yunohost.org">{{ _('Services status') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://raw.githubusercontent.com/YunoHost/yunohost/refs/heads/dev/debian/changelog">{{ _('Changelog') }}</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="py-2 font-bold">{{ _('Contribute') }}</h3>
                 <ul>
-                    <li class="pb-2"><a href="https://donate.yunohost.org">{{ _('Donate') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://donate.yunohost.org">{{ _('Donate') }}</a></li>
                     <!--<li class="pb-2"><a href="">{{ _('Chat') }}</a></li>-->
-                    <li class="pb-2"><a href="https://github.com/YunoHost/issues/issues">{{ _('Issues tracker') }}</a></li>
-                    <li class="pb-2"><a href="https://yunohost.org/security_team">{{ _('Security') }}</a></li>
-                    <li class="pb-2"><a href="https://yunohost.org/yunohost">{{ _('Code (core)') }}</a></li>
-                    <li class="pb-2"><a href="https://yunohost.org/yunohost-apps">{{ _('Code (apps)') }}</a></li>
-                    <li class="pb-2"><a href="https://translate.yunohost.org/">{{ _('Translation') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/YunoHost/issues/issues">{{ _('Issues tracker') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://yunohost.org/security_team">{{ _('Security') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://yunohost.org/yunohost">{{ _('Code (core)') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://yunohost.org/yunohost-apps">{{ _('Code (apps)') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://translate.yunohost.org/">{{ _('Translation') }}</a></li>
                 </ul>
             </div>
         </div>

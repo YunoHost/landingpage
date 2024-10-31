@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-31 17:07+0100\n"
+"POT-Creation-Date: 2024-10-31 22:08+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: index.html:4
 msgid "YunoHost: garden your own piece of the Internet!"
@@ -91,9 +91,9 @@ msgstr ""
 
 #: index.html:151 index.html:157
 msgid ""
-"With **YunoHost**, easily manage %(a server|a cloud|a web "
-"site|mailboxes|a wiki|a social network|a video library|a blog|surveys|an "
-"accounting tools|a game server|a forum|a chat|an ERP)%  \n"
+"With **YunoHost**, easily manage %(a server|a cloud|a website|mailboxes|a"
+" wiki|a social network|a video library|a blog|surveys|an accounting "
+"board|a game server|a forum|a chat|an ERP)%  \n"
 "for your friends, your association, your company"
 msgstr ""
 
@@ -386,28 +386,12 @@ msgstr ""
 msgid "Terms of services"
 msgstr ""
 
-#: index.html:473
-msgid "Legal mentions"
-msgstr ""
-
-#: index.html:474
-msgid "Accessibility"
-msgstr ""
-
 #: index.html:475
 msgid "Organization"
 msgstr ""
 
-#: index.html:476
-msgid "Credits"
-msgstr ""
-
 #: index.html:480
 msgid "Follow"
-msgstr ""
-
-#: index.html:482
-msgid "Press kit"
 msgstr ""
 
 #: index.html:483
@@ -420,10 +404,6 @@ msgstr ""
 
 #: index.html:485
 msgid "Peertube"
-msgstr ""
-
-#: index.html:486
-msgid "RSS feed"
 msgstr ""
 
 #: index.html:490
@@ -440,10 +420,6 @@ msgstr ""
 
 #: index.html:497
 msgid "Changelog"
-msgstr ""
-
-#: index.html:504
-msgid "Chat"
 msgstr ""
 
 #: index.html:505

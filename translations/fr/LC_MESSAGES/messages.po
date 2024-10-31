@@ -99,7 +99,7 @@ msgid ""
 msgstr ""
 "Avec **YunoHost**, gérez facilement %(un serveur|un nuage|un site web|des"
 " boîtes mail|un wiki|un réseau social|une vidéothèque|un blog|des "
-"sondages|un outil de comptabilité|un serveur de jeux|un forum|un chat|un "
+"sondages|un outil de compta|un serveur de jeux|un forum|un chat|un "
 "ERP)%  \n"
 "pour vos proches, votre association, votre entreprise"
 

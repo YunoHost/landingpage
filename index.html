@@ -450,6 +450,15 @@
       </div>
 
       </section>
+      <section id="supporters" class="text-center p-5 bg-amber-100 dark:bg-[#1A1D1E] transition-colors">
+          <h2 class="py-5 text-4xl font-bold text-center">{{ _("They support us <3") }}</h2>
+          <p class="mb-5">{{ _("We are thankful for our sponsors providing us with infrastructure and grants!") }}</p>
+          <div class="mb-5 flex flex-wrap gap-5 justify-center"> 
+                {% for supporter in ["nlnet", "ngi", "codelutin", "globenet", "gitoyen", "tetaneutral"] %}
+                <img src="assets/img/logo_{{ supporter }}.png" alt="{{ supporter }}" class="h-16" />
+                {% endfor %}
+          </div>
+      </section>
       </main>
 
 <footer class="bg-[#b6e39d] dark:bg-[#0F321E] transition-colors relative">

@@ -304,7 +304,7 @@ msgid "Online server (VPS)"
 msgstr "Serveur en ligne (VPS)"
 
 #: index.html:366
-msgid "See the comparison"
+msgid "Compare"
 msgstr "Voir le comparatif"
 
 #: index.html:371

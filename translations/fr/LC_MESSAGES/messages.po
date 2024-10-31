@@ -224,7 +224,7 @@ msgstr "garder vos mots de passe et vos notes en sécurité"
 
 #: index.html:317
 msgid "host mailboxes"
-msgstr "hébergez des boîte mail"
+msgstr "hébergez des boîtes mail"
 
 #: index.html:318
 msgid "organize your photos, videos and music"

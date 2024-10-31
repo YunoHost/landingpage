@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-10-31 22:08+0100\n"
-"PO-Revision-Date: 2024-10-31 21:41+0000\n"
+"PO-Revision-Date: 2024-10-31 21:44+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/fr/>\n"
@@ -119,7 +119,7 @@ msgstr "Portail utilisateur : mode sombre"
 
 #: index.html:166
 msgid "User portal: light mode with app description"
-msgstr "Portail utilisateur: mode clair avec des descriptions d'applications"
+msgstr "Portail utilisateur : mode clair avec des descriptions d'applications"
 
 #: index.html:167
 msgid "Administration panel: homepage"

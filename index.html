@@ -148,13 +148,13 @@
           <span aria-hidden="true">
           <span class='px-3'></span>
             {{
-              _("With **YunoHost**, easily manage %(a server|a cloud|a web site|mailboxes|a wiki|a social network|a video library|a blog|surveys|an accounting tools|a game server|a forum|a chat|an ERP)%  \nfor your friends, your association, your company")
+              _("With **YunoHost**, easily manage %(a server|a cloud|a website|mailboxes|a wiki|a social network|a video library|a blog|surveys|an accounting board|a game server|a forum|a chat|an ERP)%  \nfor your friends, your association, your company")
               | markdown | no_p | cycling
             }}
           </span>
           <span class="sr-only">
             {{
-              _("With **YunoHost**, easily manage %(a server|a cloud|a web site|mailboxes|a wiki|a social network|a video library|a blog|surveys|an accounting tools|a game server|a forum|a chat|an ERP)%  \nfor your friends, your association, your company")
+              _("With **YunoHost**, easily manage %(a server|a cloud|a website|mailboxes|a wiki|a social network|a video library|a blog|surveys|an accounting board|a game server|a forum|a chat|an ERP)%  \nfor your friends, your association, your company")
               | replace('|',', ') | replace('%(','') | replace('%)', '') | markdown | no_p
             }}
           </span>
@@ -398,7 +398,7 @@
 
       <section id="news" class="text-center py-10 bg-gray-50 dark:bg-[#1A1D1E] transition-colors">
             <h2 class="mt-5 py-5 pb-10 text-4xl font-bold text-center">{{ _("Last news") }}</h2>
-            <div class="mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-3 pb-10 gap-5">
+            <div class="px-5 mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-3 pb-10 gap-5">
                 {% for article in articles %}
                 <article class="p-2 border-4 border-gray-300 dark:border-gray-700 rounded flex flex-col items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-600">
                     <div>

@@ -372,7 +372,7 @@
                 <div class="py-7 px-5 leading-snug">
                     <ul>
                         <li class="pb-2"><span aria-hidden="true">🚀</span> {{ _("Check the prerequisites<br>then flash or install the system") }}</li>
-                        <li class="pb-2"><span aria-hidden="true">🌐</span> {{ _("YunoHost will guide you through setting up the first admin, the domain name and, if applicable, your Internet box.") }}</li>
+                        <li class="pb-2"><span aria-hidden="true">🌐</span> {{ _("YunoHost will guide you through setting up the first admin, the domain name and your Internet router.") }}</li>
                     </ul>
                     <a class="absolute left-0 right-0 m-auto p-3 text-md bg-lime-200 text-lime-800 w-fit font-semibold hover:saturate-150" style="bottom: -1.5em" href="https://yunohost.org/install"><i class="fa fa-download fa-fw"></i> {{ _("Installation guide") }}</a>
                 </div>
@@ -403,7 +403,7 @@
                 <article class="p-2 border-4 border-gray-300 dark:border-gray-700 rounded flex flex-col items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-600">
                     <div>
                         <a href="{{ article['link'] }}"><h3 class="font-bold">{{ article["title"] }}</h3></a>
-                        <time datetime="{{ article["date"] }}" class="italic">{{ article["date"][0:10] }}</time>
+                        <time class="opacity-75" datetime="{{ article["date"] }}" class="italic">{{ article["date"][8:10] + "/" + article["date"][5:7] + "/" + article["date"][0:4] }}</time>
                     </div>
                 </article>
                 {% endfor %}
@@ -450,12 +450,12 @@
       </div>
 
       </section>
-      <section id="supporters" class="text-center p-5 bg-amber-100 dark:bg-[#1A1D1E] transition-colors">
+      <section id="supporters" class="text-center p-5 bg-amber-100  dark:bg-[#2e1f44] transition-colors">
           <h2 class="py-5 text-4xl font-bold text-center">{{ _("They support us <3") }}</h2>
           <p class="mb-5">{{ _("We are thankful for our sponsors providing us with infrastructure and grants!") }}</p>
           <div class="mb-5 flex flex-wrap gap-5 justify-center"> 
                 {% for supporter in ["nlnet", "ngi", "codelutin", "globenet", "gitoyen", "tetaneutral"] %}
-                <img src="assets/img/logo_{{ supporter }}.png" alt="{{ supporter }}" class="h-16" />
+                <img src="assets/img/logo_{{ supporter }}.png" alt="{{ supporter }}" class="h-16"/>
                 {% endfor %}
           </div>
       </section>
@@ -463,12 +463,12 @@
 
 <footer class="bg-[#b6e39d] dark:bg-[#0F321E] transition-colors relative">
     <div class="mx-3 py-3 md:mx-auto max-w-screen-md flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-5">
-        <img alt="{{ _("Yunohost logo") }}" class="h-32 mt-8 mr-8" src="assets/img/ynh_logo_roundcorner.png" />
+        <img alt="{{ _("Yunohost logo") }}" class="h-32 mt-8 lg:mr-8" src="assets/img/ynh_logo_roundcorner.png" />
         <div class="grid grid-cols-2 md:grid-cols-4 justify-center gap-5 py-5 leading-none">
             <div>
                 <h3 class="py-2 font-bold">{{ _('Legal') }}</h3>
                 <ul>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/YunoHost/yunohost/blob/dev/LICENSE">{{ _('Licenses') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/YunoHost/yunohost/blob/dev/LICENSE">{{ _('License') }}</a></li>
                     <li class="pb-2"><a class="hover:opacity-75" href="https://yunohost.org/terms_of_services">{{ _('Terms of services') }}</a></li>
                     <!--<li class="pb-2"><a href="">{{ _('Legal mentions') }}</a></li>-->
                     <!--<li class="pb-2"><a href="">{{ _('Accessibility') }}</a></li>-->
@@ -504,8 +504,8 @@
                     <!--<li class="pb-2"><a href="">{{ _('Chat') }}</a></li>-->
                     <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/YunoHost/issues/issues">{{ _('Issues tracker') }}</a></li>
                     <li class="pb-2"><a class="hover:opacity-75" href="https://yunohost.org/security_team">{{ _('Security') }}</a></li>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://yunohost.org/yunohost">{{ _('Code (core)') }}</a></li>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://yunohost.org/yunohost-apps">{{ _('Code (apps)') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/yunohost">{{ _('Code (core)') }}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/yunohost-apps">{{ _('Code (apps)') }}</a></li>
                     <li class="pb-2"><a class="hover:opacity-75" href="https://translate.yunohost.org/">{{ _('Translation') }}</a></li>
                 </ul>
             </div>

@@ -8,86 +8,92 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-10-31 22:08+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-11-02 06:54+0000\n"
+"Last-Translator: xabirequejo <xabi.rn@gmail.com>\n"
+"Language-Team: Basque <https://translate.yunohost.org/projects/yunohost/"
+"landingpage/eu/>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: index.html:4
+#, fuzzy
 msgid "YunoHost: garden your own piece of the Internet!"
-msgstr ""
+msgstr "YunoHost: loratu zure Interneteko puska!"
 
 #: index.html:70
 msgid "Accessibility menu"
-msgstr ""
+msgstr "Irisgarritasun menua"
 
 #: index.html:71
 msgid "Go to content"
-msgstr ""
+msgstr "Joan edukira"
 
 #: index.html:72
 msgid "Go to navigation"
-msgstr ""
+msgstr "Joan nabigaziora"
 
 #: index.html:73
 msgid "Go to page settings"
-msgstr ""
+msgstr "Joan orriaren ezarpenetara"
 
 #: index.html:74
 msgid "Go to search"
-msgstr ""
+msgstr "Joan bilaketara"
 
 #: index.html:77
 msgid "Page settings"
-msgstr ""
+msgstr "Orriaren ezarpenak"
 
 #: index.html:80
 msgid "Switch to dark mode"
-msgstr ""
+msgstr "Aldatu itxura ilunera"
 
 #: index.html:89
 msgid "Switch to light mode"
-msgstr ""
+msgstr "Aldatu itxura argira"
 
 #: index.html:109 index.html:466
 msgid "Yunohost logo"
-msgstr ""
+msgstr "YunoHosten logoa"
 
 #: index.html:111
+#, fuzzy
 msgid "Garden your own<br/>piece of the Internet!"
-msgstr ""
+msgstr "Loratu zure<br/>Interneteko puska!"
 
 #: index.html:118
 msgid "Main menu"
-msgstr ""
+msgstr "Menu nagusia"
 
 #: index.html:122
+#, fuzzy
 msgid "Discover"
-msgstr ""
+msgstr "Arakatu"
 
 #: index.html:125
 msgid "Applications"
-msgstr ""
+msgstr "Aplikazioak"
 
 #: index.html:128 index.html:298
 msgid "Install"
-msgstr ""
+msgstr "Instalatu"
 
 #: index.html:132 index.html:492
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentazioa"
 
 #: index.html:135 index.html:400
 msgid "Last news"
-msgstr ""
+msgstr "Azken berriak"
 
 #: index.html:138 index.html:426
 msgid "Community"
-msgstr ""
+msgstr "Komunitatea"
 
 #: index.html:151 index.html:157
 msgid ""
@@ -96,52 +102,66 @@ msgid ""
 "board|a game server|a forum|a chat|an ERP)%  \n"
 "for your friends, your association, your company"
 msgstr ""
+"Kudeatu modu errazean zure %(zerbitzaria|hodeia|webgunea|posta "
+"elektronikoa|wikia|gizarte-sarea|bideo-liburutegia|bloga|inkestak"
+"|kontabilitate-arbela|joko-zerbitzaria|foroa|bat-bateko mezularitza|ERPa)% "
+"YunoHostekin  \n"
+"zure lagunentzat, elkartearentzat, enpresarentzat"
 
 #: index.html:163
 msgid "Carousel"
-msgstr ""
+msgstr "Karrusela"
 
 #: index.html:164
 msgid "Slide controls"
-msgstr ""
+msgstr "Diapositiben nabigazioa"
 
 #: index.html:165
 msgid "User portal: dark mode"
-msgstr ""
+msgstr "Erabiltzaile-ataria: itxura iluna"
 
 #: index.html:166
 msgid "User portal: light mode with app description"
-msgstr ""
+msgstr "Erabiltzaile-ataria: itxura argia eta aplikazioen deskribapena"
 
 #: index.html:167
 msgid "Administration panel: homepage"
-msgstr ""
+msgstr "Administrazio-ataria: hasierako orria"
 
 #: index.html:168
 msgid "Administration panel: app catalog"
-msgstr ""
+msgstr "Administrazio-ataria: aplikazioen katalogoa"
 
 #: index.html:169
 msgid "Administration panel: app installation"
-msgstr ""
+msgstr "Administrazio-ataria: aplikazioen instalazioa"
 
 #: index.html:174
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, listing several applications installed."
 msgstr ""
+"Erabiltzaile-atariaren pantaila-argazkia. Erabiltzaileak zerbitzarian "
+"instalatutako aplikazioetara sartzea ahalbidetzen dioen eremua da. Aplikazio "
+"ugari ageri dira instalatuta."
 
 #: index.html:178
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, light version with description of each app."
 msgstr ""
+"Erabiltzaile-atariaren pantaila-argazkia. Erabiltzaileak zerbitzarian "
+"instalatutako aplikazioetara sartzea ahalbidetzen dioen eremua da. Kolore "
+"argiak erakusten ditu. Aplikazio bakoitzaren deskribapena ageri da."
 
 #: index.html:182
 msgid ""
 "Screenshot of the web administration panel displaying the following "
 "categories: users, domains, apps, upgrade, services, tools and backup"
 msgstr ""
+"Administrazio-atariaren pantaila-argazkia. Ondorengo eremuak ikusten dira: "
+"erabiltzaileak, domeinuak, aplikazioak, sistemaren eguneraketak, zerbitzuak, "
+"tresnak eta babeskopiak"
 
 #: index.html:186
 msgid ""
@@ -149,6 +169,9 @@ msgid ""
 " the \"publication\" category, listing some apps available in the "
 "catalog."
 msgstr ""
+"Administrazio-atariaren pantaila-argazkia. Aplikazioen katalogoko "
+"\"argitalpenak\" kategoria erakusten du, katalogoan eskuragai dauden zenbait "
+"aplikazio zerrendatuz."
 
 #: index.html:190
 msgid ""
@@ -156,14 +179,17 @@ msgid ""
 "form when installing the Nextcloud application. The interface asks a few "
 "technical questions regarding settings for the installation."
 msgstr ""
+"Administrazio-atariaren pantaila-argazkia. Nextcloud aplikazioaren "
+"instalazio-pantaila ageri da. Interfazeak instalazioarekin zerikusia duten "
+"galdera tekniko batzuk erakusten ditu."
 
 #: index.html:192
 msgid "Previous slide"
-msgstr ""
+msgstr "Aurreko diapositiba"
 
 #: index.html:194
 msgid "Next slide"
-msgstr ""
+msgstr "Hurrengo diapositiba"
 
 #: index.html:291
 msgid ""
@@ -172,74 +198,78 @@ msgid ""
 "knowledge** -  \n"
 "digital services (apps) **that you control**."
 msgstr ""
+"**Zerbitzari** batean instalatzen den sistema da **YunoHost**  \n"
+"eta **zure kontrolpean** dauden zerbitzu digitalak (aplikazioak) instalatzea "
+"eta mantentzea ahalbidetzen du  \n"
+"**ezagutza tekniko oso urriarekin**."
 
 #: index.html:296
 msgid "Huh, but why <i class='fa fa-question'></i>"
-msgstr ""
+msgstr "E, baina zergatik <i class='fa fa-question'>"
 
 #: index.html:297
 msgid "Try"
-msgstr ""
+msgstr "Probatu"
 
 #: index.html:306
 msgid "Examples of uses"
-msgstr ""
+msgstr "Erabilera adibideak"
 
 #: index.html:312
 msgid "For you and your friends"
-msgstr ""
+msgstr "Zuretzat eta lagunentzat"
 
 #: index.html:315
 msgid "synchronize your calendars and contacts"
-msgstr ""
+msgstr "sinkronizatu egutegiak eta kontaktuak"
 
 #: index.html:316
 msgid "keep your passwords and notes safe"
-msgstr ""
+msgstr "mantendu pasahitzak eta oharrak toki seguruan"
 
 #: index.html:317
 msgid "host mailboxes"
-msgstr ""
+msgstr "ostatatu posta elektronikoa"
 
 #: index.html:318
 msgid "organize your photos, videos and music"
-msgstr ""
+msgstr "antolatu argazkiak, bideoak eta musika"
 
 #: index.html:319
 msgid "join alternative social media"
-msgstr ""
+msgstr "bat egin gizarte-sare alternatiboekin"
 
 #: index.html:325
 msgid "For small organizations"
-msgstr ""
+msgstr "Erakunde txikientzat"
 
 #: index.html:328
 msgid "host your own website"
-msgstr ""
+msgstr "ostatatu zure webgunea"
 
 #: index.html:329
 msgid "share files in common (e.g. with Nextcloud)"
-msgstr ""
+msgstr "partekatu fitxategiak (Nextcloudekin esaterako)"
 
 #: index.html:330
 msgid "edit multiple documents in real time"
-msgstr ""
+msgstr "editatu dokumentu bat baino gehiago aldi berean"
 
 #: index.html:331
 msgid "manage your accounting"
-msgstr ""
+msgstr "kudeatu kontabilitatea"
 
 #: index.html:332
 msgid "set up a team chat"
-msgstr ""
+msgstr "antolatu taldeko txata"
 
 #: index.html:338
 msgid "Explore the app catalog"
-msgstr ""
+msgstr "Arakatu aplikazioen katalogoa"
 
 #: index.html:347
 msgid "How to get started"
-msgstr ""
+msgstr "Nola hasi"
 
 #: index.html:351
 msgid ""
@@ -251,22 +281,31 @@ msgid ""
 "Take the time to think about what applications, what type of hardware and"
 " what domain name you want for your server."
 msgstr ""
+"Oraindik ziur ez bazaude, [demoa](https://yunohost.org/try) probatzera "
+"gonbidatzen zaitugu,   \n"
+"eta zerbitzari propioa kudeatzearen [abantailak eta desabantailak] "
+"aztertzera.\n"
+"\n"
+"Hartu denbora zerbitzarirako zein aplikazio, zein hardware mota eta zein "
+"domeinu nahi duzun pentsatzeko."
 
 #: index.html:359
 msgid "Choosing a support"
-msgstr ""
+msgstr "Aukeratu euskarria"
 
 #: index.html:362
 msgid "ARM board / Raspberry Pi"
-msgstr ""
+msgstr "ARM txartela / Raspberry Pi"
 
 #: index.html:363
+#, fuzzy
 msgid "Old tower or portable (*ordinosaur*)"
-msgstr ""
+msgstr "Dorre edo eramangarri zaharra"
 
 #: index.html:364
+#, fuzzy
 msgid "Online server (VPS)"
-msgstr ""
+msgstr "VPS zerbitzaria"
 
 #: index.html:366
 msgid "See the comparison"
@@ -274,170 +313,188 @@ msgstr ""
 
 #: index.html:371
 msgid "Install YunoHost"
-msgstr ""
+msgstr "Instalatu YunoHost"
 
 #: index.html:374
+#, fuzzy
 msgid "Check the prerequisites<br>then flash or install the system"
-msgstr ""
+msgstr "Egiaztatu betekizunak<br>eta grabatu edo instalatu sistema"
 
 #: index.html:375
 msgid ""
 "YunoHost will guide you through setting up the first admin, the domain "
 "name and your Internet router."
 msgstr ""
+"YunoHostek lehen administratzailea, domeinua eta Interneteko routerra "
+"konfiguratzen lagunduko dizu."
 
 #: index.html:377
 msgid "Installation guide"
-msgstr ""
+msgstr "Instalazio-gida"
 
 #: index.html:382
 msgid "Enjoy!"
-msgstr ""
+msgstr "Gozatu!"
 
 #: index.html:385
 msgid "Install applications<br>in just a few clicks"
-msgstr ""
+msgstr "Instalatu aplikazioak<br>klik apur batzuetan"
 
 #: index.html:386
 msgid "Set up backups"
-msgstr ""
+msgstr "Konfiguratu babeskopiak"
 
 #: index.html:387
 msgid "Take care of your server"
-msgstr ""
+msgstr "Zaindu zure zerbitzaria"
 
 #: index.html:389
 msgid "Guided tour"
-msgstr ""
+msgstr "Ibilbide gidatua"
 
 #: index.html:411
 msgid "Previous articles"
-msgstr ""
+msgstr "Artikulu zaharragoak"
 
 #: index.html:421 index.html:447
 msgid "Claude, YunoHost's mascot"
-msgstr ""
+msgstr "Claude, YunoHosten maskota"
 
 #: index.html:421 index.html:447
+#, fuzzy
 msgid ""
 "Image of Claude, YunoHost's mascot. The humanoid oppossum stands with "
 "purple hair and scarf, round glasses, beige pants with pockets and a blue"
 " crop top with the YunoHost logo."
 msgstr ""
+"Claude-ren irudia, YunoHosten maskota. Humanoide oppossum-a ile purpurarekin "
+"eta bufandarekin, betaurreko biribilekin, poltsikodun galtza beixekin eta "
+"labore urdineko goiko alde batekin dago"
 
 #: index.html:431
 msgid ""
 " **YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
 msgstr ""
+" **YunoHost** irabazi-asmorik gabeko proiektu **teknokritikoa** da, "
+"**boluntarioek** garatzen eta mantentzen dutena."
 
 #: index.html:432
+#, fuzzy
 msgid ""
 "We advocate a **decentralized** Internet, with **open**, "
 "**interoperable** technologies that **respect privacy** and **empowers "
 "people**."
 msgstr ""
+"Internet **dezentralizatu**aren alde egiten dugu, **pribatutasuna** "
+"errespetatzen eta pertsonak **ahalduntzen** dituen **teknologia "
+"elkarreragingarriak** dituena."
 
 #: index.html:433
+#, fuzzy
 msgid ""
 "In addition, we aim to **give materiality back to the digital**, and "
 "encourage **sobriety** and **reuse**."
 msgstr ""
+"Gainera, gure xedea **materialtasuna digitalera itzultzea**, eta "
+"**soiltasuna** eta **berrerabilpena** sustatzea da."
 
 #: index.html:437 index.html:494
 msgid "Forum"
-msgstr ""
+msgstr "Foroa"
 
 #: index.html:438 index.html:495
 msgid "Self-help chat"
-msgstr ""
+msgstr "Laguntza-txata"
 
 #: index.html:439 index.html:503
 msgid "Donate"
-msgstr ""
+msgstr "Egin dohaintza"
 
 #: index.html:440 index.html:501
 msgid "Contribute"
-msgstr ""
+msgstr "Eman laguntza"
 
 #: index.html:441
 msgid "Code repositories"
-msgstr ""
+msgstr "Kode gordailuak"
 
 #: index.html:454
 msgid "They support us <3"
-msgstr ""
+msgstr "Babesa ematen digute <3"
 
 #: index.html:455
 msgid ""
 "We are thankful for our sponsors providing us with infrastructure and "
 "grants!"
 msgstr ""
+"Eskertuta gaude gure babesleek azpiegitura eta diru laguntzak emateagatik!"
 
 #: index.html:469
 msgid "Legal"
-msgstr ""
+msgstr "Legala"
 
 #: index.html:471
 msgid "License"
-msgstr ""
+msgstr "Lizentzia"
 
 #: index.html:472
 msgid "Terms of services"
-msgstr ""
+msgstr "Zerbitzuen baldintzak"
 
 #: index.html:475
 msgid "Organization"
-msgstr ""
+msgstr "Erakundea"
 
 #: index.html:480
 msgid "Follow"
-msgstr ""
+msgstr "Jarraitu"
 
 #: index.html:483
 msgid "Blog"
-msgstr ""
+msgstr "Bloga"
 
 #: index.html:484
 msgid "Mastodon"
-msgstr ""
+msgstr "Mastodon"
 
 #: index.html:485
 msgid "Peertube"
-msgstr ""
+msgstr "Peertube"
 
 #: index.html:490
 msgid "Use"
-msgstr ""
+msgstr "Erabilera"
 
 #: index.html:493
 msgid "Apps store"
-msgstr ""
+msgstr "App denda"
 
 #: index.html:496
 msgid "Services status"
-msgstr ""
+msgstr "Zerbitzuen egoera"
 
 #: index.html:497
 msgid "Changelog"
-msgstr ""
+msgstr "Aldaketen erregistroa"
 
 #: index.html:505
 msgid "Issues tracker"
-msgstr ""
+msgstr "Arazoen jarraipena"
 
 #: index.html:506
 msgid "Security"
-msgstr ""
+msgstr "Segurtasuna"
 
 #: index.html:507
+#, fuzzy
 msgid "Code (core)"
-msgstr ""
+msgstr "Kodea (core)"
 
 #: index.html:508
 msgid "Code (apps)"
-msgstr ""
+msgstr "Kodea (aplikazioak)"
 
 #: index.html:509
 msgid "Translation"
-msgstr ""
+msgstr "Itzulpena"

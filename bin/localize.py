@@ -52,7 +52,7 @@ def main() -> None:
         "title": article.get("unicode_title", article["title"]),
         "link": f"https://forum.yunohost.org/t/{article['slug']}/{article['id']}",
         "date": article["created_at"]
-    } for article in data["topic_list"]["topics"] if article["visible"] and not article["pinned"]]
+    } for article in data["topic_list"]["topics"] if article["visible"]]
     articles.sort(key=lambda item:item['date'], reverse=True)
     articles = articles[0:6]
     # Generate translated html for each locales

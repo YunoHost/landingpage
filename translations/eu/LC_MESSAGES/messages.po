@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-10-31 22:08+0100\n"
-"PO-Revision-Date: 2024-11-03 06:24+0000\n"
+"PO-Revision-Date: 2024-11-05 19:51+0000\n"
 "Last-Translator: xabirequejo <xabi.rn@gmail.com>\n"
 "Language-Team: Basque <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/eu/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: index.html:4
 msgid "YunoHost: garden your own piece of the Internet!"
-msgstr "YunoHost: zaindu zure Interneteko txokotxoa!"
+msgstr "YunoHost: landatu eta zaindu zure Interneteko txokotxoa!"
 
 #: index.html:70
 msgid "Accessibility menu"
@@ -62,7 +62,7 @@ msgstr "YunoHosten logoa"
 
 #: index.html:111
 msgid "Garden your own<br/>piece of the Internet!"
-msgstr "zaindu zure<br/>Interneteko txokotxoa!"
+msgstr "Landatu eta zaindu zure<br/>Interneteko txokotxoa!"
 
 #: index.html:118
 msgid "Main menu"

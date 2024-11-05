@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-10-31 22:08+0100\n"
-"PO-Revision-Date: 2024-11-02 06:54+0000\n"
+"PO-Revision-Date: 2024-11-03 06:24+0000\n"
 "Last-Translator: xabirequejo <xabi.rn@gmail.com>\n"
 "Language-Team: Basque <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/eu/>\n"
@@ -21,9 +21,8 @@ msgstr ""
 "Generated-By: Babel 2.14.0\n"
 
 #: index.html:4
-#, fuzzy
 msgid "YunoHost: garden your own piece of the Internet!"
-msgstr "YunoHost: loratu zure Interneteko puska!"
+msgstr "YunoHost: zaindu zure Interneteko txokotxoa!"
 
 #: index.html:70
 msgid "Accessibility menu"
@@ -62,18 +61,16 @@ msgid "Yunohost logo"
 msgstr "YunoHosten logoa"
 
 #: index.html:111
-#, fuzzy
 msgid "Garden your own<br/>piece of the Internet!"
-msgstr "Loratu zure<br/>Interneteko puska!"
+msgstr "zaindu zure<br/>Interneteko txokotxoa!"
 
 #: index.html:118
 msgid "Main menu"
 msgstr "Menu nagusia"
 
 #: index.html:122
-#, fuzzy
 msgid "Discover"
-msgstr "Arakatu"
+msgstr "Ezagutu"
 
 #: index.html:125
 msgid "Applications"
@@ -298,12 +295,10 @@ msgid "ARM board / Raspberry Pi"
 msgstr "ARM txartela / Raspberry Pi"
 
 #: index.html:363
-#, fuzzy
 msgid "Old tower or portable (*ordinosaur*)"
-msgstr "Dorre edo eramangarri zaharra"
+msgstr "Dorre edo eramangarri zaharra (\"ordenasauroa\")"
 
 #: index.html:364
-#, fuzzy
 msgid "Online server (VPS)"
 msgstr "VPS zerbitzaria"
 
@@ -316,9 +311,8 @@ msgid "Install YunoHost"
 msgstr "Instalatu YunoHost"
 
 #: index.html:374
-#, fuzzy
 msgid "Check the prerequisites<br>then flash or install the system"
-msgstr "Egiaztatu betekizunak<br>eta grabatu edo instalatu sistema"
+msgstr "Egiaztatu betekizunak<br>eta instalatu sistema"
 
 #: index.html:375
 msgid ""
@@ -361,15 +355,15 @@ msgid "Claude, YunoHost's mascot"
 msgstr "Claude, YunoHosten maskota"
 
 #: index.html:421 index.html:447
-#, fuzzy
 msgid ""
 "Image of Claude, YunoHost's mascot. The humanoid oppossum stands with "
 "purple hair and scarf, round glasses, beige pants with pockets and a blue"
 " crop top with the YunoHost logo."
 msgstr ""
-"Claude-ren irudia, YunoHosten maskota. Humanoide oppossum-a ile purpurarekin "
-"eta bufandarekin, betaurreko biribilekin, poltsikodun galtza beixekin eta "
-"labore urdineko goiko alde batekin dago"
+"Claude-ren irudia, YunoHosten maskota. Ile morea daukan gizaki itxurako "
+"oppossum-a da. Betaurreko biribilak, lepoan zapi morea, sabela agerian uzten "
+"duen top urdina (YunoHosten logoarekin), eta poltsikodun galtza beixak ditu "
+"soinean."
 
 #: index.html:431
 msgid ""
@@ -386,18 +380,17 @@ msgid ""
 "**interoperable** technologies that **respect privacy** and **empowers "
 "people**."
 msgstr ""
-"Internet **dezentralizatu**aren alde egiten dugu, **pribatutasuna** "
-"errespetatzen eta pertsonak **ahalduntzen** dituen **teknologia "
-"elkarreragingarriak** dituena."
+"**Pribatutasuna** errespetatzen eta pertsonak **ahalduntzen** dituen **"
+"teknologia elkarreragingarriak** dituen Internet **deszentralizatu**aren "
+"alde egiten dugu."
 
 #: index.html:433
-#, fuzzy
 msgid ""
 "In addition, we aim to **give materiality back to the digital**, and "
 "encourage **sobriety** and **reuse**."
 msgstr ""
-"Gainera, gure xedea **materialtasuna digitalera itzultzea**, eta "
-"**soiltasuna** eta **berrerabilpena** sustatzea da."
+"Gainera, gure xedea **digitalak materialtasuna berreskuratzea** da, eta "
+"**soiltasuna** eta **berrerabilpena** sustatzea."
 
 #: index.html:437 index.html:494
 msgid "Forum"
@@ -487,7 +480,6 @@ msgid "Security"
 msgstr "Segurtasuna"
 
 #: index.html:507
-#, fuzzy
 msgid "Code (core)"
 msgstr "Kodea (core)"
 

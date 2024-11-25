@@ -85,7 +85,7 @@
                     {% for code, lang_native_name in langs.items() %}
                     <li><a class="hover:opacity-75" href="index.{{ code }}.html">{{ lang_native_name }}</a></li>
                     {% endfor %}
-                    <li><a class="max-w-24 p-1 text-sm inline-block hover:opacity-75" href="https://translate.yunohost.org/projects/yunohost/landingpage/"><i class="fa fa-external-link"></i> {{ _("Translate this page!") }}</a></li>
+                    <li><a class="max-w-24 p-1 text-sm inline-block hover:opacity-75" href="https://translate.yunohost.org/projects/yunohost/landingpage/"><i class="fa fa-external-link" aria-hidden="true"></i> {{ _("Translate this page!") }}</a></li>
                 </ul>
             </div>
 

@@ -75,6 +75,20 @@
         </nav>
 
         <nav id="page-settings" aria-label="{{ _("Page settings") }}">
+
+            <button type="button" class="z-50 absolute top-3 right-12 text-white" onclick='document.getElementById("lang-selector").classList.toggle("hidden");'>
+                <i class="fa fa-language" aria-label="{{ _('Switch to a different language') }}"></i>
+            </button>
+
+            <div id="lang-selector" class="text-center hidden align-right z-50 absolute top-12 right-12 p-2 text-gray-800 bg-white rounded-md border">
+                <ul>
+                    {% for code, lang_native_name in langs.items() %}
+                    <li><a class="hover:opacity-75" href="index.{{ code }}.html">{{ lang_native_name }}</a></li>
+                    {% endfor %}
+                    <li><a class="max-w-24 p-1 text-sm inline-block hover:opacity-75" href="https://translate.yunohost.org/projects/yunohost/landingpage/"><i class="fa fa-external-link"></i> {{ _("Translate this page!") }}</a></li>
+                </ul>
+            </div>
+
             <button type="button" class="z-50 absolute top-3 right-3" onclick="toggleColorMode();">
                 <!-- Dark/light mode icons -->
                 <span class="dark:hidden" aria-label="{{ _('Switch to dark mode') }}">

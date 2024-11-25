@@ -2,7 +2,9 @@
 
 import argparse
 import re
+import requests
 import json
+from langcodes import Language
 from pathlib import Path
 
 import markdown
@@ -53,14 +55,32 @@ def main() -> None:
         "link": f"https://forum.yunohost.org/t/{article['slug']}/{article['id']}",
         "date": article["created_at"]
     } for article in data["topic_list"]["topics"] if article["visible"]]
-    articles.sort(key=lambda item:item['date'], reverse=True)
+    articles.sort(key=lambda item: item['date'], reverse=True)
     articles = articles[0:6]
+
+    # Fetch weblate statistics to list locales translated abode a certain treshold
+    j = requests.get("https://translate.yunohost.org/api/components/yunohost/landingpage/statistics/").json()
+
+    def get_lang_native_name(code):
+        return Language.make(language=code).display_name(code).title()
+
+    relevant_langs = {lang["code"]: get_lang_native_name(lang["code"]) for lang in j["results"] if lang["translated_percent"] > 50}
+    relevant_langs = dict(sorted(relevant_langs.items()))
+
+    # Generate 'en'
+    locale = "en"
+    translated_html = template.render({"lang": locale, "articles": articles, "langs": relevant_langs, "_": lambda s: s})
+    with open(f"{args.output}/index.{locale}.html", "w") as file:
+        file.write(translated_html)
+
     # Generate translated html for each locales
     locales = [localedir.name for localedir in LOCALES_PATH.iterdir()]
     for locale in locales:
+        if locale not in relevant_langs:
+            continue
         translations = Translations.load(LOCALES_PATH, [locale])
         jinja_env.install_gettext_translations(translations)  # type: ignore
-        translated_html = template.render({"lang": locale, "articles": articles})
+        translated_html = template.render({"lang": locale, "articles": articles, "langs": relevant_langs})
 
         with open(f"{args.output}/index.{locale}.html", "w") as file:
             file.write(translated_html)

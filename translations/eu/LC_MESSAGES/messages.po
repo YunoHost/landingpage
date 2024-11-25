@@ -286,7 +286,7 @@ msgid ""
 "Take the time to think about what applications, what type of hardware and"
 " what domain name you want for your server."
 msgstr ""
-"Oraindik ziur ez bazaude, [demoa](https://yunohost.org/try) probatzera "
+"Oraindik ziur ez bazaude, [demoa](https://doc.yunohost.org/try) probatzera "
 "gonbidatzen zaitugu,   \n"
 "eta zerbitzari propioa kudeatzearen [abantailak eta desabantailak] "
 "aztertzera.\n"
@@ -500,4 +500,3 @@ msgstr "Itzulpena"
 
 #~ msgid "See the comparison"
 #~ msgstr ""
-

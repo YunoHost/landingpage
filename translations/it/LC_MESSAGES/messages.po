@@ -1,4 +1,4 @@
-# Translations template for PROJECT.
+# Italian translations for PROJECT.
 # Copyright (C) 2024 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
@@ -7,17 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-31 22:08+0100\n"
+"POT-Creation-Date: 2024-11-25 19:31+0100\n"
 "PO-Revision-Date: 2024-11-17 09:54+0000\n"
 "Last-Translator: Tommi <surfing@tommi.space>\n"
-"Language-Team: Italian <https://translate.yunohost.org/projects/yunohost/"
-"landingpage/it/>\n"
 "Language: it\n"
+"Language-Team: Italian "
+"<https://translate.yunohost.org/projects/yunohost/landingpage/it/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: index.html:4
@@ -85,7 +84,8 @@ msgid "Documentation"
 msgstr "Documentazione"
 
 #: index.html:135 index.html:400
-msgid "Last news"
+#, fuzzy
+msgid "Latest news"
 msgstr "Ultime novità"
 
 #: index.html:138 index.html:426
@@ -99,10 +99,10 @@ msgid ""
 "board|a game server|a forum|a chat|an ERP)%  \n"
 "for your friends, your association, your company"
 msgstr ""
-"Con **YunoHost**, puoi gestire facilmente %(un server|un cloud|un sito|"
-"caselle di posta elettronica|un wiki|un social network|una libreria video|un "
-"blog|questionari|una piattaforma di contabilità|un server di giochi|una chat|"
-"un ERP)%  \n"
+"Con **YunoHost**, puoi gestire facilmente %(un server|un cloud|un "
+"sito|caselle di posta elettronica|un wiki|un social network|una libreria "
+"video|un blog|questionari|una piattaforma di contabilità|un server di "
+"giochi|una chat|un ERP)%  \n"
 "per lз tuз amichз, la tua associazione, o la tua azienda"
 
 #: index.html:163
@@ -138,16 +138,18 @@ msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, listing several applications installed."
 msgstr ""
-"Screenshot del portale da cui le persone possono accedere alle applicazioni "
-"installate sul server, elencando tutte le applicazioni installate."
+"Screenshot del portale da cui le persone possono accedere alle "
+"applicazioni installate sul server, elencando tutte le applicazioni "
+"installate."
 
 #: index.html:178
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, light version with description of each app."
 msgstr ""
-"Screenshot del portale da cui le persone possono accedere alle applicazioni "
-"installate sul server, versione chiara con la descrizione di ciascun’app."
+"Screenshot del portale da cui le persone possono accedere alle "
+"applicazioni installate sul server, versione chiara con la descrizione di"
+" ciascun’app."
 
 #: index.html:182
 msgid ""
@@ -164,9 +166,9 @@ msgid ""
 " the \"publication\" category, listing some apps available in the "
 "catalog."
 msgstr ""
-"Screenshot del pannello di amministrazione web, che mostra il catalogo delle "
-"app nella categoria “publication”, elencando alcune delle app disponibili "
-"nel catalogo."
+"Screenshot del pannello di amministrazione web, che mostra il catalogo "
+"delle app nella categoria “publication”, elencando alcune delle app "
+"disponibili nel catalogo."
 
 #: index.html:190
 msgid ""
@@ -175,9 +177,9 @@ msgid ""
 "technical questions regarding settings for the installation."
 msgstr ""
 "Screenshot del pannello di amministrazione web che mostra il modulo di "
-"installazione di un’applicazione, mentre si sta installando l’applicazione "
-"di Nextcloud. L’interfaccia pone alcune domande per scegliere le "
-"impostazioni dell’installazione."
+"installazione di un’applicazione, mentre si sta installando "
+"l’applicazione di Nextcloud. L’interfaccia pone alcune domande per "
+"scegliere le impostazioni dell’installazione."
 
 #: index.html:192
 msgid "Previous slide"
@@ -277,13 +279,13 @@ msgid ""
 "Take the time to think about what applications, what type of hardware and"
 " what domain name you want for your server."
 msgstr ""
-"Se non sei ancora sicurə, ti invitiamo a [provare la demo](https://yunohost."
-"org/try)   \n"
-"e a dare un’occhiata ai [pro e contro](https://yunohost.org/selfhosting) di "
-"gestire autonomamente un server.\n"
+"Se non sei ancora sicurə, ti invitiamo a [provare la "
+"demo](https://yunohost.org/try)   \n"
+"e a dare un’occhiata ai [pro e contro](https://yunohost.org/selfhosting) "
+"di gestire autonomamente un server.\n"
 "\n"
-"Prendi il tuo tempo per pensare a quali applicazioni, quale tipo di hardware "
-"e quale dominio vuoi per il tuo server."
+"Prendi il tuo tempo per pensare a quali applicazioni, quale tipo di "
+"hardware e quale dominio vuoi per il tuo server."
 
 #: index.html:359
 msgid "Choosing a support"
@@ -302,7 +304,7 @@ msgid "Online server (VPS)"
 msgstr "Server online (VPS)"
 
 #: index.html:366
-msgid "See the comparison"
+msgid "Compare"
 msgstr ""
 
 #: index.html:371
@@ -320,8 +322,8 @@ msgid ""
 "YunoHost will guide you through setting up the first admin, the domain "
 "name and your Internet router."
 msgstr ""
-"YunoHost ti guiderà nella configurazione del primo profilo amministratore, "
-"del nome dominio e del tuo router Internet."
+"YunoHost ti guiderà nella configurazione del primo profilo "
+"amministratore, del nome dominio e del tuo router Internet."
 
 #: index.html:377
 msgid "Installation guide"
@@ -363,9 +365,9 @@ msgid ""
 "purple hair and scarf, round glasses, beige pants with pockets and a blue"
 " crop top with the YunoHost logo."
 msgstr ""
-"Immagine di Claude, la mascotte di YunoHost. L’opossum umanoide è in piedi, "
-"ha i capelli viola e indossa una sciarpa viola, occhiali tondi, pantaloni "
-"beige con tasche grosse e un crop top con il logo di YunoHost."
+"Immagine di Claude, la mascotte di YunoHost. L’opossum umanoide è in "
+"piedi, ha i capelli viola e indossa una sciarpa viola, occhiali tondi, "
+"pantaloni beige con tasche grosse e un crop top con il logo di YunoHost."
 
 #: index.html:431
 msgid ""
@@ -382,8 +384,8 @@ msgid ""
 "people**."
 msgstr ""
 "Promuoviamo un Internet **decentralizzato**, con tecnologie **aperte** e "
-"**interoperabili** che **rispettino la privacy** e diano il **potere alle "
-"persone**."
+"**interoperabili** che **rispettino la privacy** e diano il **potere alle"
+" persone**."
 
 #: index.html:433
 msgid ""
@@ -422,8 +424,8 @@ msgid ""
 "We are thankful for our sponsors providing us with infrastructure and "
 "grants!"
 msgstr ""
-"Siamo riconoscenti ai nostri sponsor che ci supportano con infrastrutture e "
-"finanziamenti!"
+"Siamo riconoscenti ai nostri sponsor che ci supportano con infrastrutture"
+" e finanziamenti!"
 
 #: index.html:469
 msgid "Legal"
@@ -492,3 +494,7 @@ msgstr "Codice (applicazioni)"
 #: index.html:509
 msgid "Translation"
 msgstr "Traduzione"
+
+#~ msgid "See the comparison"
+#~ msgstr ""
+

@@ -1,4 +1,4 @@
-# Translations template for PROJECT.
+# Galician translations for PROJECT.
 # Copyright (C) 2024 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
@@ -7,17 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-31 22:08+0100\n"
+"POT-Creation-Date: 2024-11-25 19:31+0100\n"
 "PO-Revision-Date: 2024-11-02 06:54+0000\n"
 "Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
-"Language-Team: Galician <https://translate.yunohost.org/projects/yunohost/"
-"landingpage/gl/>\n"
 "Language: gl\n"
+"Language-Team: Galician "
+"<https://translate.yunohost.org/projects/yunohost/landingpage/gl/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: index.html:4
@@ -85,7 +84,8 @@ msgid "Documentation"
 msgstr "Documentación"
 
 #: index.html:135 index.html:400
-msgid "Last news"
+#, fuzzy
+msgid "Latest news"
 msgstr "Últimas novas"
 
 #: index.html:138 index.html:426
@@ -138,24 +138,26 @@ msgid ""
 "installed on the server, listing several applications installed."
 msgstr ""
 "Captura de pantalla do portal de usuaria desde onde as usuarias poden "
-"acceder ás apps instaladas no servidor, mostra varias aplicacións instaladas."
+"acceder ás apps instaladas no servidor, mostra varias aplicacións "
+"instaladas."
 
 #: index.html:178
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, light version with description of each app."
 msgstr ""
-"Captura de pantalla do portal da usuaria desde onde as usuarias poden ver as "
-"apps instaladas no servidor, versión clara con descrición de cada app."
+"Captura de pantalla do portal da usuaria desde onde as usuarias poden ver"
+" as apps instaladas no servidor, versión clara con descrición de cada "
+"app."
 
 #: index.html:182
 msgid ""
 "Screenshot of the web administration panel displaying the following "
 "categories: users, domains, apps, upgrade, services, tools and backup"
 msgstr ""
-"Captura de pantalla do panel de administración web mostrando as seguintes "
-"categorías: usuarias, dominios, apps, actualizacións, servizos, ferramentas "
-"e copia de apoio"
+"Captura de pantalla do panel de administración web mostrando as seguintes"
+" categorías: usuarias, dominios, apps, actualizacións, servizos, "
+"ferramentas e copia de apoio"
 
 #: index.html:186
 msgid ""
@@ -163,9 +165,9 @@ msgid ""
 " the \"publication\" category, listing some apps available in the "
 "catalog."
 msgstr ""
-"Captura de pantalla do panel de administración web mostrando o catálogo de "
-"apps para a categoría \"publicación\", vense varias apps dispoñibles no "
-"catálogo."
+"Captura de pantalla do panel de administración web mostrando o catálogo "
+"de apps para a categoría \"publicación\", vense varias apps dispoñibles "
+"no catálogo."
 
 #: index.html:190
 msgid ""
@@ -173,9 +175,9 @@ msgid ""
 "form when installing the Nextcloud application. The interface asks a few "
 "technical questions regarding settings for the installation."
 msgstr ""
-"Captura de pantalla do panel de administración web mostrando o formulario de "
-"instalación cando se instala a aplicación Nextcloud. A interface pregunta "
-"cuestións técnicas respecto dos axustes para a instalación."
+"Captura de pantalla do panel de administración web mostrando o formulario"
+" de instalación cando se instala a aplicación Nextcloud. A interface "
+"pregunta cuestións técnicas respecto dos axustes para a instalación."
 
 #: index.html:192
 msgid "Previous slide"
@@ -193,7 +195,8 @@ msgid ""
 "digital services (apps) **that you control**."
 msgstr ""
 "**YunoHost** é un sistema que se instala a si mesmo nun **servidor**  \n"
-"e permíteche instalar e manter- **con moi poucos coñecementos técnicos**-  \n"
+"e permíteche instalar e manter- **con moi poucos coñecementos técnicos**-"
+"  \n"
 "servizos dixitais (apps) **baixo o teu control**."
 
 #: index.html:296
@@ -276,8 +279,9 @@ msgid ""
 msgstr ""
 "Se aínda non tes certeza, convidámoste a que [probes o servidor de "
 "mostra](https://yunohost.org/try),  \n"
-"e mires cales son as [vantaxes e inconvintes](https://yunohost.org/"
-"selfhosting) de xestionar o teu servidor.\n"
+"e mires cales son as [vantaxes e "
+"inconvintes](https://yunohost.org/selfhosting) de xestionar o teu "
+"servidor.\n"
 "\n"
 "Pensa con calma as aplicacións que precisarías no servidor, o tipo de "
 "hardware onde o instalarás e o nome de dominio para o servidor."
@@ -299,7 +303,7 @@ msgid "Online server (VPS)"
 msgstr "Servidor alleo (VPS)"
 
 #: index.html:366
-msgid "See the comparison"
+msgid "Compare"
 msgstr ""
 
 #: index.html:371
@@ -315,8 +319,8 @@ msgid ""
 "YunoHost will guide you through setting up the first admin, the domain "
 "name and your Internet router."
 msgstr ""
-"YunoHost vaite guiar para crear a conta de administración, o nome de dominio "
-"e configurar o rúter de Internet."
+"YunoHost vaite guiar para crear a conta de administración, o nome de "
+"dominio e configurar o rúter de Internet."
 
 #: index.html:377
 msgid "Installation guide"
@@ -356,17 +360,17 @@ msgid ""
 "purple hair and scarf, round glasses, beige pants with pockets and a blue"
 " crop top with the YunoHost logo."
 msgstr ""
-"Imaxe de Claude, a mascota de YunoHost. Unha sarigüeia humanoide de pé cun "
-"chapeu púrpura e bufanda, lentes redondas, pantalóns beis con petos e un "
-"xersei curto de cor azul co logo de YunoHost."
+"Imaxe de Claude, a mascota de YunoHost. Unha sarigüeia humanoide de pé "
+"cun chapeu púrpura e bufanda, lentes redondas, pantalóns beis con petos e"
+" un xersei curto de cor azul co logo de YunoHost."
 
 #: index.html:431
 msgid ""
 " **YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
 msgstr ""
-" **YunoHost** é proxeto **tecnocrítico** sen ánimo de lucro, desenvolto e "
-"mantido por persoas **voluntarias**."
+" **YunoHost** é proxeto **tecnocrítico** sen ánimo de lucro, desenvolto e"
+" mantido por persoas **voluntarias**."
 
 #: index.html:432
 msgid ""
@@ -374,17 +378,17 @@ msgid ""
 "**interoperable** technologies that **respect privacy** and **empowers "
 "people**."
 msgstr ""
-"Promocionamos unha internet **descentralizada**, con tecnoloxías **abertas**"
-", **interoperables** que **respectan a privacidade** e **empoderan ás "
-"persoas**."
+"Promocionamos unha internet **descentralizada**, con tecnoloxías "
+"**abertas**, **interoperables** que **respectan a privacidade** e "
+"**empoderan ás persoas**."
 
 #: index.html:433
 msgid ""
 "In addition, we aim to **give materiality back to the digital**, and "
 "encourage **sobriety** and **reuse**."
 msgstr ""
-"Amais, aspiramos a **devolverlle a materialidade ao dixital**, e promulgamos "
-"a **frugalidade** e **reutilización**."
+"Amais, aspiramos a **devolverlle a materialidade ao dixital**, e "
+"promulgamos a **frugalidade** e **reutilización**."
 
 #: index.html:437 index.html:494
 msgid "Forum"
@@ -485,3 +489,7 @@ msgstr "Código (apps)"
 #: index.html:509
 msgid "Translation"
 msgstr "Tradución"
+
+#~ msgid "See the comparison"
+#~ msgstr ""
+

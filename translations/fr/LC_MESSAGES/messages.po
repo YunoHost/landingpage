@@ -7,17 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-31 22:08+0100\n"
+"POT-Creation-Date: 2024-11-25 19:31+0100\n"
 "PO-Revision-Date: 2024-10-31 22:21+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost/"
-"landingpage/fr/>\n"
 "Language: fr\n"
+"Language-Team: French "
+"<https://translate.yunohost.org/projects/yunohost/landingpage/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.4.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: index.html:4
@@ -85,7 +84,7 @@ msgid "Documentation"
 msgstr "Documentation"
 
 #: index.html:135 index.html:400
-msgid "Last news"
+msgid "Latest news"
 msgstr "Dernières nouvelles"
 
 #: index.html:138 index.html:426
@@ -320,8 +319,8 @@ msgid ""
 "YunoHost will guide you through setting up the first admin, the domain "
 "name and your Internet router."
 msgstr ""
-"YunoHost vous guidera pour configurer le premier admin, le nom de domaine et "
-"votre box internet."
+"YunoHost vous guidera pour configurer le premier admin, le nom de domaine"
+" et votre box internet."
 
 #: index.html:377
 msgid "Installation guide"
@@ -370,8 +369,8 @@ msgid ""
 " **YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
 msgstr ""
-" **YunoHost** est un projet **technocritique à but non-lucratif**, développé "
-"et maintenu par des **bénévoles**."
+" **YunoHost** est un projet **technocritique à but non-lucratif**, "
+"développé et maintenu par des **bénévoles**."
 
 #: index.html:432
 msgid ""
@@ -490,3 +489,4 @@ msgstr "Code (apps)"
 #: index.html:509
 msgid "Translation"
 msgstr "Traduction"
+

@@ -202,7 +202,7 @@ msgstr ""
 
 #: index.html:296
 msgid "Huh, but why <i class='fa fa-question'></i>"
-msgstr "E, baina zergatik <i class='fa fa-question'>"
+msgstr "E, baina zergatik <i class='fa fa-question'></i>"
 
 #: index.html:297
 msgid "Try"

@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: 2024-11-02 06:54+0000\n"
+"PO-Revision-Date: 2024-11-27 05:54+0000\n"
 "Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
+"Language-Team: Galician <https://translate.yunohost.org/projects/yunohost/"
+"landingpage/gl/>\n"
 "Language: gl\n"
-"Language-Team: Galician "
-"<https://translate.yunohost.org/projects/yunohost/landingpage/gl/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: index.html:4
@@ -49,11 +50,11 @@ msgstr "Páxina de axustes"
 
 #: index.html:80
 msgid "Switch to a different language"
-msgstr ""
+msgstr "Cambiar de idioma"
 
 #: index.html:88
 msgid "Translate this page!"
-msgstr ""
+msgstr "Traduce esta páxina!"
 
 #: index.html:94
 msgid "Switch to dark mode"
@@ -92,7 +93,6 @@ msgid "Documentation"
 msgstr "Documentación"
 
 #: index.html:149 index.html:414
-#, fuzzy
 msgid "Latest news"
 msgstr "Últimas novas"
 
@@ -312,7 +312,7 @@ msgstr "Servidor alleo (VPS)"
 
 #: index.html:380
 msgid "Compare"
-msgstr ""
+msgstr "Comparar"
 
 #: index.html:385
 msgid "Install YunoHost"

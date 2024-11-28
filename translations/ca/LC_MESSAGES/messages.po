@@ -8,95 +8,97 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2024-11-29 03:50+0000\n"
+"Last-Translator: Francescc <francesc@mateu.cat>\n"
+"Language-Team: Catalan <https://translate.yunohost.org/projects/yunohost/"
+"landingpage/ca/>\n"
 "Language: ca\n"
-"Language-Team: none\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: index.html:4
 msgid "YunoHost: garden your own piece of the Internet!"
-msgstr ""
+msgstr "YunoHost: jardineu el vostre propi tros d'Internet!"
 
 #: index.html:70
 msgid "Accessibility menu"
-msgstr ""
+msgstr "Menú d'accessibilitat"
 
 #: index.html:71
 msgid "Go to content"
-msgstr ""
+msgstr "Vés al contingut"
 
 #: index.html:72
 msgid "Go to navigation"
-msgstr ""
+msgstr "Vés a la navegació"
 
 #: index.html:73
 msgid "Go to page settings"
-msgstr ""
+msgstr "Vés a la configuració de la pàgina"
 
 #: index.html:74
 msgid "Go to search"
-msgstr ""
+msgstr "Vés a cercar"
 
 #: index.html:77
 msgid "Page settings"
-msgstr ""
+msgstr "Configuració de la pàgina"
 
 #: index.html:80
 msgid "Switch to a different language"
-msgstr ""
+msgstr "Canvia a un idioma diferent"
 
 #: index.html:88
 msgid "Translate this page!"
-msgstr ""
+msgstr "Tradueix aquesta pàgina!"
 
 #: index.html:94
 msgid "Switch to dark mode"
-msgstr ""
+msgstr "Canvia al mode fosc"
 
 #: index.html:103
 msgid "Switch to light mode"
-msgstr ""
+msgstr "Canvia al mode clar"
 
 #: index.html:123 index.html:480
 msgid "Yunohost logo"
-msgstr ""
+msgstr "Logotip de Yunohost"
 
 #: index.html:125
 msgid "Garden your own<br/>piece of the Internet!"
-msgstr ""
+msgstr "Jardineu el vostre<br/>tros d'Internet!"
 
 #: index.html:132
 msgid "Main menu"
-msgstr ""
+msgstr "Menú principal"
 
 #: index.html:136
 msgid "Discover"
-msgstr ""
+msgstr "Descobreix"
 
 #: index.html:139
 msgid "Applications"
-msgstr ""
+msgstr "Aplicacions"
 
 #: index.html:142 index.html:312
 msgid "Install"
-msgstr ""
+msgstr "Instal·lar"
 
 #: index.html:146 index.html:506
 msgid "Documentation"
-msgstr ""
+msgstr "Documentació"
 
 #: index.html:149 index.html:414
 msgid "Latest news"
-msgstr ""
+msgstr "Últimes notícies"
 
 #: index.html:152 index.html:440
 msgid "Community"
-msgstr ""
+msgstr "Comunitat"
 
 #: index.html:165 index.html:171
 msgid ""
@@ -105,52 +107,65 @@ msgid ""
 "board|a game server|a forum|a chat|an ERP)%  \n"
 "for your friends, your association, your company"
 msgstr ""
+"Amb **YunoHost**, gestioneu fàcilment %(un servidor|un núvol|un lloc web|"
+"bústies de correu|una wiki|una xarxa social|una videoteca|un bloc|enquestes|"
+"un tauler de comptabilitat|un servidor de jocs|un fòrum|a xat|un ERP)% per "
+"als teus amics, la teva associació, la teva empresa"
 
 #: index.html:177
 msgid "Carousel"
-msgstr ""
+msgstr "Carrusel"
 
 #: index.html:178
 msgid "Slide controls"
-msgstr ""
+msgstr "Controls de llisca"
 
 #: index.html:179
 msgid "User portal: dark mode"
-msgstr ""
+msgstr "Portal d'usuari: mode fosc"
 
 #: index.html:180
 msgid "User portal: light mode with app description"
-msgstr ""
+msgstr "Portal d'usuari: mode clar amb descripció de l'aplicació"
 
 #: index.html:181
 msgid "Administration panel: homepage"
-msgstr ""
+msgstr "Tauler d'administració: pàgina d'inici"
 
 #: index.html:182
 msgid "Administration panel: app catalog"
-msgstr ""
+msgstr "Tauler d'administració: catàleg d'aplicacions"
 
 #: index.html:183
 msgid "Administration panel: app installation"
-msgstr ""
+msgstr "Tauler d'administració: instal·lació d'aplicacions"
 
 #: index.html:188
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, listing several applications installed."
 msgstr ""
+"Captura de pantalla del portal d'usuaris des del qual els usuaris poden "
+"accedir a les aplicacions instal·lades al servidor, amb una llista de "
+"diverses aplicacions instal·lades."
 
 #: index.html:192
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, light version with description of each app."
 msgstr ""
+"Captura de pantalla del portal d'usuaris des del qual els usuaris poden "
+"accedir a les apps instal·lades al servidor, versió clara amb descripció de "
+"cada app."
 
 #: index.html:196
 msgid ""
 "Screenshot of the web administration panel displaying the following "
 "categories: users, domains, apps, upgrade, services, tools and backup"
 msgstr ""
+"Captura de pantalla del tauler d'administració web que mostra les categories "
+"següents: usuaris, dominis, aplicacions, actualització, serveis, eines i "
+"còpia de seguretat"
 
 #: index.html:200
 msgid ""
@@ -158,6 +173,9 @@ msgid ""
 " the \"publication\" category, listing some apps available in the "
 "catalog."
 msgstr ""
+"Captura de pantalla del tauler d'administració web que mostra el catàleg "
+"d'aplicacions per a la categoria «publicació», amb una llista d'algunes "
+"aplicacions disponibles al catàleg."
 
 #: index.html:204
 msgid ""
@@ -165,14 +183,18 @@ msgid ""
 "form when installing the Nextcloud application. The interface asks a few "
 "technical questions regarding settings for the installation."
 msgstr ""
+"Captura de pantalla del tauler d'administració web que mostra el formulari "
+"d'instal·lació de l'aplicació quan instal·leu l'aplicació Nextcloud. La "
+"interfície fa algunes preguntes tècniques sobre la configuració de la "
+"instal·lació."
 
 #: index.html:206
 msgid "Previous slide"
-msgstr ""
+msgstr "Diapositiva anterior"
 
 #: index.html:208
 msgid "Next slide"
-msgstr ""
+msgstr "Diapositiva següent"
 
 #: index.html:305
 msgid ""
@@ -181,74 +203,78 @@ msgid ""
 "knowledge** -  \n"
 "digital services (apps) **that you control**."
 msgstr ""
+"**YunoHost** és un sistema que s'instal·la en un **servidor**\n"
+"i us permet instal·lar i mantenir - **amb molt pocs coneixements tècnics** -"
+"\n"
+"serveis digitals (aplicacions) **que controleu**."
 
 #: index.html:310
 msgid "Huh, but why <i class='fa fa-question'></i>"
-msgstr ""
+msgstr "Eh, però per què <i class='fa fa-question'></i>"
 
 #: index.html:311
 msgid "Try"
-msgstr ""
+msgstr "Prova"
 
 #: index.html:320
 msgid "Examples of uses"
-msgstr ""
+msgstr "Exemples d'usos"
 
 #: index.html:326
 msgid "For you and your friends"
-msgstr ""
+msgstr "Per a tu i els teus amics"
 
 #: index.html:329
 msgid "synchronize your calendars and contacts"
-msgstr ""
+msgstr "sincronitzar els vostres calendaris i contactes"
 
 #: index.html:330
 msgid "keep your passwords and notes safe"
-msgstr ""
+msgstr "mantingueu les vostres contrasenyes i notes segures"
 
 #: index.html:331
 msgid "host mailboxes"
-msgstr ""
+msgstr "allotja bústies"
 
 #: index.html:332
 msgid "organize your photos, videos and music"
-msgstr ""
+msgstr "organitza les teves fotos, vídeos i música"
 
 #: index.html:333
 msgid "join alternative social media"
-msgstr ""
+msgstr "uneix-te a les xarxes socials alternatives"
 
 #: index.html:339
 msgid "For small organizations"
-msgstr ""
+msgstr "Per a petites organitzacions"
 
 #: index.html:342
 msgid "host your own website"
-msgstr ""
+msgstr "allotja el teu propi lloc web"
 
 #: index.html:343
 msgid "share files in common (e.g. with Nextcloud)"
-msgstr ""
+msgstr "compartir fitxers en comú (per exemple, amb Nextcloud)"
 
 #: index.html:344
 msgid "edit multiple documents in real time"
-msgstr ""
+msgstr "editar diversos documents en temps real"
 
 #: index.html:345
 msgid "manage your accounting"
-msgstr ""
+msgstr "gestionar la seva comptabilitat"
 
 #: index.html:346
 msgid "set up a team chat"
-msgstr ""
+msgstr "configurar un xat en equip"
 
 #: index.html:352
 msgid "Explore the app catalog"
-msgstr ""
+msgstr "Exploreu el catàleg d'aplicacions"
 
 #: index.html:361
 msgid "How to get started"
-msgstr ""
+msgstr "Com començar"
 
 #: index.html:365
 msgid ""
@@ -260,72 +286,83 @@ msgid ""
 "Take the time to think about what applications, what type of hardware and"
 " what domain name you want for your server."
 msgstr ""
+"Si encara no n'estàs segur, et convidem a [provar la "
+"demostració](https://yunohost.org/try),\n"
+"i feu una ullada a [els avantatges i els contres] (https://yunohost.org/"
+"selfhosting) de gestionar un servidor vosaltres mateixos.\n"
+"\n"
+"Preneu-vos el temps per pensar quines aplicacions, quin tipus de maquinari i "
+"quin nom de domini voleu per al vostre servidor."
 
 #: index.html:373
 msgid "Choosing a support"
-msgstr ""
+msgstr "Escollir un suport"
 
 #: index.html:376
 msgid "ARM board / Raspberry Pi"
-msgstr ""
+msgstr "Placa ARM / Raspberry Pi"
 
 #: index.html:377
 msgid "Old tower or portable (*ordinosaur*)"
-msgstr ""
+msgstr "Torre antiga o portàtil (*ordinosaure*)"
 
 #: index.html:378
 msgid "Online server (VPS)"
-msgstr ""
+msgstr "Servidor en línia (VPS)"
 
 #: index.html:380
 msgid "Compare"
-msgstr ""
+msgstr "Compara"
 
 #: index.html:385
 msgid "Install YunoHost"
-msgstr ""
+msgstr "Instal·leu YunoHost"
 
 #: index.html:388
 msgid "Check the prerequisites<br>then flash or install the system"
 msgstr ""
+"Comproveu els requisits previs<br>a continuació flasheu o instal·leu el "
+"sistema"
 
 #: index.html:389
 msgid ""
 "YunoHost will guide you through setting up the first admin, the domain "
 "name and your Internet router."
 msgstr ""
+"YunoHost us guiarà a través de la configuració del primer administrador, el "
+"nom de domini i el vostre encaminador d'Internet."
 
 #: index.html:391
 msgid "Installation guide"
-msgstr ""
+msgstr "Guia d'instal·lació"
 
 #: index.html:396
 msgid "Enjoy!"
-msgstr ""
+msgstr "Gaudiu!"
 
 #: index.html:399
 msgid "Install applications<br>in just a few clicks"
-msgstr ""
+msgstr "Instal·leu aplicacions<br>en només uns quants clics"
 
 #: index.html:400
 msgid "Set up backups"
-msgstr ""
+msgstr "Configura còpies de seguretat"
 
 #: index.html:401
 msgid "Take care of your server"
-msgstr ""
+msgstr "Cuida el teu servidor"
 
 #: index.html:403
 msgid "Guided tour"
-msgstr ""
+msgstr "Visita guiada"
 
 #: index.html:425
 msgid "Previous articles"
-msgstr ""
+msgstr "Articles anteriors"
 
 #: index.html:435 index.html:461
 msgid "Claude, YunoHost's mascot"
-msgstr ""
+msgstr "Claude, la mascota de YunoHost"
 
 #: index.html:435 index.html:461
 msgid ""
@@ -333,12 +370,17 @@ msgid ""
 "purple hair and scarf, round glasses, beige pants with pockets and a blue"
 " crop top with the YunoHost logo."
 msgstr ""
+"Imatge de Claude, mascota de YunoHost. La zarigüeya humanoide té els cabells "
+"i la bufanda morades, ulleres rodones, pantalons beix amb butxaques i un top "
+"curt blau amb el logotip de YunoHost."
 
 #: index.html:445
 msgid ""
 " **YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
 msgstr ""
+" **YunoHost** és un projecte **tecnocrític** sense ànim de lucre, "
+"desenvolupat i mantingut per **voluntaris**."
 
 #: index.html:446
 msgid ""
@@ -346,114 +388,120 @@ msgid ""
 "**interoperable** technologies that **respect privacy** and **empowers "
 "people**."
 msgstr ""
+"Defensem una Internet **descentralitzada**, amb tecnologies **obertes** i "
+"**interoperables** que **respecten la privadesa** i **empodera les "
+"persones**."
 
 #: index.html:447
 msgid ""
 "In addition, we aim to **give materiality back to the digital**, and "
 "encourage **sobriety** and **reuse**."
 msgstr ""
+"A més, pretenem **retornar materialitat al digital** i fomentar la "
+"**sobrietat** i la **reutilització**."
 
 #: index.html:451 index.html:508
 msgid "Forum"
-msgstr ""
+msgstr "Fòrum"
 
 #: index.html:452 index.html:509
 msgid "Self-help chat"
-msgstr ""
+msgstr "Xat d'autoajuda"
 
 #: index.html:453 index.html:517
 msgid "Donate"
-msgstr ""
+msgstr "Donar"
 
 #: index.html:454 index.html:515
 msgid "Contribute"
-msgstr ""
+msgstr "Contribuir"
 
 #: index.html:455
 msgid "Code repositories"
-msgstr ""
+msgstr "Repositoris de codi"
 
 #: index.html:468
 msgid "They support us <3"
-msgstr ""
+msgstr "Ens donen suport <3"
 
 #: index.html:469
 msgid ""
 "We are thankful for our sponsors providing us with infrastructure and "
 "grants!"
 msgstr ""
+"Agraïm als nostres patrocinadors que ens proporcionen infraestructura i "
+"subvencions!"
 
 #: index.html:483
 msgid "Legal"
-msgstr ""
+msgstr "Legal"
 
 #: index.html:485
 msgid "License"
-msgstr ""
+msgstr "Llicència"
 
 #: index.html:486
 msgid "Terms of services"
-msgstr ""
+msgstr "Condicions dels serveis"
 
 #: index.html:489
 msgid "Organization"
-msgstr ""
+msgstr "Organització"
 
 #: index.html:494
 msgid "Follow"
-msgstr ""
+msgstr "Seguir"
 
 #: index.html:497
 msgid "Blog"
-msgstr ""
+msgstr "Bloc"
 
 #: index.html:498
 msgid "Mastodon"
-msgstr ""
+msgstr "Mastodon"
 
 #: index.html:499
 msgid "Peertube"
-msgstr ""
+msgstr "Peertube"
 
 #: index.html:504
 msgid "Use"
-msgstr ""
+msgstr "Empra"
 
 #: index.html:507
 msgid "Apps store"
-msgstr ""
+msgstr "Botiga d'aplicacions"
 
 #: index.html:510
 msgid "Services status"
-msgstr ""
+msgstr "Estat dels serveis"
 
 #: index.html:511
 msgid "Changelog"
-msgstr ""
+msgstr "Registre de canvis"
 
 #: index.html:519
 msgid "Issues tracker"
-msgstr ""
+msgstr "Seguidor de problemes"
 
 #: index.html:520
 msgid "Security"
-msgstr ""
+msgstr "Seguretat"
 
 #: index.html:521
 msgid "Code (core)"
-msgstr ""
+msgstr "Codi (nucli)"
 
 #: index.html:522
 msgid "Code (apps)"
-msgstr ""
+msgstr "Codi (aplicacions)"
 
 #: index.html:523
 msgid "Translation"
-msgstr ""
+msgstr "Traducció"
 
 #~ msgid "Last news"
 #~ msgstr ""
 
 #~ msgid "See the comparison"
 #~ msgstr ""
-

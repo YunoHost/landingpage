@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2024-12-06 12:35+0000\n"
+"Last-Translator: Zwiebel <zwiebel@users.noreply.translate.yunohost.org>\n"
+"Language-Team: German <https://translate.yunohost.org/projects/yunohost/"
+"landingpage/de/>\n"
 "Language: de\n"
-"Language-Team: none\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: index.html:4
@@ -24,47 +26,47 @@ msgstr ""
 
 #: index.html:70
 msgid "Accessibility menu"
-msgstr ""
+msgstr "Zugänglichkeits Menü"
 
 #: index.html:71
 msgid "Go to content"
-msgstr ""
+msgstr "Zum Inhalt"
 
 #: index.html:72
 msgid "Go to navigation"
-msgstr ""
+msgstr "Zur Navigation"
 
 #: index.html:73
 msgid "Go to page settings"
-msgstr ""
+msgstr "Zu den Seiteneinstellungen"
 
 #: index.html:74
 msgid "Go to search"
-msgstr ""
+msgstr "Zur Suchfunktion"
 
 #: index.html:77
 msgid "Page settings"
-msgstr ""
+msgstr "Seiteneinstellungen"
 
 #: index.html:80
 msgid "Switch to a different language"
-msgstr ""
+msgstr "Sprache wechseln"
 
 #: index.html:88
 msgid "Translate this page!"
-msgstr ""
+msgstr "Seite übersetzen!"
 
 #: index.html:94
 msgid "Switch to dark mode"
-msgstr ""
+msgstr "in die dunkle Darstellung wechseln"
 
 #: index.html:103
 msgid "Switch to light mode"
-msgstr ""
+msgstr "in die helle Darstellung wechseln"
 
 #: index.html:123 index.html:480
 msgid "Yunohost logo"
-msgstr ""
+msgstr "Yunohost Logo"
 
 #: index.html:125
 msgid "Garden your own<br/>piece of the Internet!"
@@ -76,27 +78,27 @@ msgstr ""
 
 #: index.html:136
 msgid "Discover"
-msgstr ""
+msgstr "Entdecke"
 
 #: index.html:139
 msgid "Applications"
-msgstr ""
+msgstr "Anwendungen"
 
 #: index.html:142 index.html:312
 msgid "Install"
-msgstr ""
+msgstr "Installieren"
 
 #: index.html:146 index.html:506
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentation"
 
 #: index.html:149 index.html:414
 msgid "Latest news"
-msgstr ""
+msgstr "Letzte Nachrichten"
 
 #: index.html:152 index.html:440
 msgid "Community"
-msgstr ""
+msgstr "Gemeinschaft"
 
 #: index.html:165 index.html:171
 msgid ""
@@ -108,11 +110,11 @@ msgstr ""
 
 #: index.html:177
 msgid "Carousel"
-msgstr ""
+msgstr "Karussell"
 
 #: index.html:178
 msgid "Slide controls"
-msgstr ""
+msgstr "Schieberegler"
 
 #: index.html:179
 msgid "User portal: dark mode"
@@ -124,15 +126,15 @@ msgstr ""
 
 #: index.html:181
 msgid "Administration panel: homepage"
-msgstr ""
+msgstr "Administrationstafel: Startseite"
 
 #: index.html:182
 msgid "Administration panel: app catalog"
-msgstr ""
+msgstr "Administrationstafel: Anwendungskatalog"
 
 #: index.html:183
 msgid "Administration panel: app installation"
-msgstr ""
+msgstr "Administrationstafel: Anwendungsinstallation"
 
 #: index.html:188
 msgid ""
@@ -456,4 +458,3 @@ msgstr ""
 
 #~ msgid "See the comparison"
 #~ msgstr ""
-

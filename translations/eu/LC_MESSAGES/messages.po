@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: 2024-12-11 21:52+0000\n"
+"PO-Revision-Date: 2024-12-14 14:09+0000\n"
 "Last-Translator: xabirequejo <xabi.rn@gmail.com>\n"
 "Language-Team: Basque <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/eu/>\n"
@@ -431,7 +431,7 @@ msgstr "Eskertuta gaude gure babesleek azpiegitura eta diru laguntzak emateagati
 
 #: index.html:483
 msgid "Legal"
-msgstr "Legala"
+msgstr "Lege-oharra"
 
 #: index.html:485
 msgid "License"
@@ -439,7 +439,7 @@ msgstr "Lizentzia"
 
 #: index.html:486
 msgid "Terms of services"
-msgstr "Zerbitzuen baldintzak"
+msgstr "Zerbitzu-baldintzak"
 
 #: index.html:489
 msgid "Organization"

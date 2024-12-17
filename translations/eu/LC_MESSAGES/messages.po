@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: 2024-12-03 21:54+0000\n"
+"PO-Revision-Date: 2024-12-14 14:09+0000\n"
 "Last-Translator: xabirequejo <xabi.rn@gmail.com>\n"
 "Language-Team: Basque <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/eu/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: index.html:4
 msgid "YunoHost: garden your own piece of the Internet!"
-msgstr "YunoHost: landatu eta zaindu zure Interneteko txokotxoa!"
+msgstr "YunoHost: erein eta zaindu zure Interneteko txokotxoa!"
 
 #: index.html:70
 msgid "Accessibility menu"
@@ -70,7 +70,7 @@ msgstr "YunoHosten logoa"
 
 #: index.html:125
 msgid "Garden your own<br/>piece of the Internet!"
-msgstr "Landatu eta zaindu zure<br/>Interneteko txokotxoa!"
+msgstr "Erein eta zaindu zure<br/>Interneteko txokotxoa!"
 
 #: index.html:132
 msgid "Main menu"
@@ -93,7 +93,6 @@ msgid "Documentation"
 msgstr "Dokumentazioa"
 
 #: index.html:149 index.html:414
-#, fuzzy
 msgid "Latest news"
 msgstr "Azken berriak"
 
@@ -383,15 +382,14 @@ msgstr ""
 "**boluntarioek** garatzen eta mantentzen dutena."
 
 #: index.html:446
-#, fuzzy
 msgid ""
 "We advocate a **decentralized** Internet, with **open**, "
 "**interoperable** technologies that **respect privacy** and **empowers "
 "people**."
 msgstr ""
-"**Pribatutasuna** errespetatzen eta pertsonak **ahalduntzen** dituen "
-"**teknologia elkarreragingarriak** dituen Internet "
-"**deszentralizatu**aren alde egiten dugu."
+"Internet **deszentralizatu**aren alde egiten dugu, **pribatutasuna "
+"errespetatzen** duten eta **pertsonak ahalduntzen** dituzten teknologia "
+"**ireki** eta **elkarreragingarri**ekin."
 
 #: index.html:447
 msgid ""
@@ -433,7 +431,7 @@ msgstr "Eskertuta gaude gure babesleek azpiegitura eta diru laguntzak emateagati
 
 #: index.html:483
 msgid "Legal"
-msgstr "Legala"
+msgstr "Lege-oharra"
 
 #: index.html:485
 msgid "License"
@@ -441,7 +439,7 @@ msgstr "Lizentzia"
 
 #: index.html:486
 msgid "Terms of services"
-msgstr "Zerbitzuen baldintzak"
+msgstr "Zerbitzu-baldintzak"
 
 #: index.html:489
 msgid "Organization"

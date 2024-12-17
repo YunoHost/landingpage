@@ -8,95 +8,97 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2024-12-17 17:03+0000\n"
+"Last-Translator: Quentí <quentinantonin@free.fr>\n"
+"Language-Team: Occitan <https://translate.yunohost.org/projects/yunohost/"
+"landingpage/oc/>\n"
 "Language: oc\n"
-"Language-Team: none\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 5.4.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: index.html:4
 msgid "YunoHost: garden your own piece of the Internet!"
-msgstr ""
+msgstr "YunoHost : jardinatz vòstre pròpi tròç d'Internet !"
 
 #: index.html:70
 msgid "Accessibility menu"
-msgstr ""
+msgstr "Menú d'accessibilitat"
 
 #: index.html:71
 msgid "Go to content"
-msgstr ""
+msgstr "Anar al contengut"
 
 #: index.html:72
 msgid "Go to navigation"
-msgstr ""
+msgstr "Anar a la navegacion"
 
 #: index.html:73
 msgid "Go to page settings"
-msgstr ""
+msgstr "Anar a la pagina de configuracion"
 
 #: index.html:74
 msgid "Go to search"
-msgstr ""
+msgstr "Anar a la recèrca"
 
 #: index.html:77
 msgid "Page settings"
-msgstr ""
+msgstr "Configuracion de la pagina"
 
 #: index.html:80
 msgid "Switch to a different language"
-msgstr ""
+msgstr "Cambiar la lenga"
 
 #: index.html:88
 msgid "Translate this page!"
-msgstr ""
+msgstr "Tradusètz la pagina !"
 
 #: index.html:94
 msgid "Switch to dark mode"
-msgstr ""
+msgstr "Passar al mòde fosc"
 
 #: index.html:103
 msgid "Switch to light mode"
-msgstr ""
+msgstr "Passar al mòde clar"
 
 #: index.html:123 index.html:480
 msgid "Yunohost logo"
-msgstr ""
+msgstr "Logotipe de Yunohost"
 
 #: index.html:125
 msgid "Garden your own<br/>piece of the Internet!"
-msgstr ""
+msgstr "Jardinatz vòstre<br/>tròç d’Internet !"
 
 #: index.html:132
 msgid "Main menu"
-msgstr ""
+msgstr "Menú principal"
 
 #: index.html:136
 msgid "Discover"
-msgstr ""
+msgstr "Descobrir"
 
 #: index.html:139
 msgid "Applications"
-msgstr ""
+msgstr "Aplicacions"
 
 #: index.html:142 index.html:312
 msgid "Install"
-msgstr ""
+msgstr "Installar"
 
 #: index.html:146 index.html:506
 msgid "Documentation"
-msgstr ""
+msgstr "Documentacion"
 
 #: index.html:149 index.html:414
 msgid "Latest news"
-msgstr ""
+msgstr "Darrièras novèlas"
 
 #: index.html:152 index.html:440
 msgid "Community"
-msgstr ""
+msgstr "Comunitat"
 
 #: index.html:165 index.html:171
 msgid ""
@@ -105,34 +107,39 @@ msgid ""
 "board|a game server|a forum|a chat|an ERP)%  \n"
 "for your friends, your association, your company"
 msgstr ""
+"Amb **YunoHost**, gerissètz facilament %(un servidor|un nívol|un site web|de "
+"bóstias de recepcion|un wiki|un malhum social|una videotèca|un blòg|de "
+"sondatges|un tabulador de comptabilitat|un servidor de jòc|un forum|un chat|"
+"un ERP)%   \n"
+"per vòstres amics, vòstra associacion, vòstra entrepresa"
 
 #: index.html:177
 msgid "Carousel"
-msgstr ""
+msgstr "Vira-vira"
 
 #: index.html:178
 msgid "Slide controls"
-msgstr ""
+msgstr "Contraròtles per lisar"
 
 #: index.html:179
 msgid "User portal: dark mode"
-msgstr ""
+msgstr "Portal utilizaire : mòde fosc"
 
 #: index.html:180
 msgid "User portal: light mode with app description"
-msgstr ""
+msgstr "Portal utilizaire : mòde clar amb descripcion de l’aplicacion"
 
 #: index.html:181
 msgid "Administration panel: homepage"
-msgstr ""
+msgstr "Panèl d’administracion : pagina d’acuèlh"
 
 #: index.html:182
 msgid "Administration panel: app catalog"
-msgstr ""
+msgstr "Panèl d’administracion : catalòg d’aplicacions"
 
 #: index.html:183
 msgid "Administration panel: app installation"
-msgstr ""
+msgstr "Panèl d’administracion : installacion d’una aplicacion"
 
 #: index.html:188
 msgid ""
@@ -168,11 +175,11 @@ msgstr ""
 
 #: index.html:206
 msgid "Previous slide"
-msgstr ""
+msgstr "Imatge precedent"
 
 #: index.html:208
 msgid "Next slide"
-msgstr ""
+msgstr "Imatge seguent"
 
 #: index.html:305
 msgid ""
@@ -184,35 +191,35 @@ msgstr ""
 
 #: index.html:310
 msgid "Huh, but why <i class='fa fa-question'></i>"
-msgstr ""
+msgstr "E, mas perqué <i class='fa fa-question'></i>"
 
 #: index.html:311
 msgid "Try"
-msgstr ""
+msgstr "Ensajar"
 
 #: index.html:320
 msgid "Examples of uses"
-msgstr ""
+msgstr "Exemples d’usatges"
 
 #: index.html:326
 msgid "For you and your friends"
-msgstr ""
+msgstr "Per vos e vòstres amics"
 
 #: index.html:329
 msgid "synchronize your calendars and contacts"
-msgstr ""
+msgstr "sincronizatz vòstres agendas e contactes"
 
 #: index.html:330
 msgid "keep your passwords and notes safe"
-msgstr ""
+msgstr "gardar vòstres senhals e vòstras nòtas en seguretat"
 
 #: index.html:331
 msgid "host mailboxes"
-msgstr ""
+msgstr "albergatz de bóstias"
 
 #: index.html:332
 msgid "organize your photos, videos and music"
-msgstr ""
+msgstr "organizatz vòstras fòtos, vidèos e musica"
 
 #: index.html:333
 msgid "join alternative social media"
@@ -248,7 +255,7 @@ msgstr ""
 
 #: index.html:361
 msgid "How to get started"
-msgstr ""
+msgstr "Per començar"
 
 #: index.html:365
 msgid ""
@@ -263,11 +270,11 @@ msgstr ""
 
 #: index.html:373
 msgid "Choosing a support"
-msgstr ""
+msgstr "Causir un supòrt"
 
 #: index.html:376
 msgid "ARM board / Raspberry Pi"
-msgstr ""
+msgstr "Carta ARM / Raspberry Pi"
 
 #: index.html:377
 msgid "Old tower or portable (*ordinosaur*)"
@@ -275,15 +282,15 @@ msgstr ""
 
 #: index.html:378
 msgid "Online server (VPS)"
-msgstr ""
+msgstr "Servidor en linha (VPS)"
 
 #: index.html:380
 msgid "Compare"
-msgstr ""
+msgstr "Comparatiu"
 
 #: index.html:385
 msgid "Install YunoHost"
-msgstr ""
+msgstr "Installar YunoHost"
 
 #: index.html:388
 msgid "Check the prerequisites<br>then flash or install the system"
@@ -297,11 +304,11 @@ msgstr ""
 
 #: index.html:391
 msgid "Installation guide"
-msgstr ""
+msgstr "Guida d’installacion"
 
 #: index.html:396
 msgid "Enjoy!"
-msgstr ""
+msgstr "Profechatz !"
 
 #: index.html:399
 msgid "Install applications<br>in just a few clicks"
@@ -309,7 +316,7 @@ msgstr ""
 
 #: index.html:400
 msgid "Set up backups"
-msgstr ""
+msgstr "Configurar las còpias de seguretat"
 
 #: index.html:401
 msgid "Take care of your server"
@@ -321,7 +328,7 @@ msgstr ""
 
 #: index.html:425
 msgid "Previous articles"
-msgstr ""
+msgstr "Articles ancians"
 
 #: index.html:435 index.html:461
 msgid "Claude, YunoHost's mascot"
@@ -355,27 +362,27 @@ msgstr ""
 
 #: index.html:451 index.html:508
 msgid "Forum"
-msgstr ""
+msgstr "forum"
 
 #: index.html:452 index.html:509
 msgid "Self-help chat"
-msgstr ""
+msgstr "Chat d’entreajuda"
 
 #: index.html:453 index.html:517
 msgid "Donate"
-msgstr ""
+msgstr "Donar"
 
 #: index.html:454 index.html:515
 msgid "Contribute"
-msgstr ""
+msgstr "Contribuir"
 
 #: index.html:455
 msgid "Code repositories"
-msgstr ""
+msgstr "Depaus de còdi"
 
 #: index.html:468
 msgid "They support us <3"
-msgstr ""
+msgstr "Nos sostenon <3"
 
 #: index.html:469
 msgid ""
@@ -385,75 +392,74 @@ msgstr ""
 
 #: index.html:483
 msgid "Legal"
-msgstr ""
+msgstr "Mencions legalas"
 
 #: index.html:485
 msgid "License"
-msgstr ""
+msgstr "Licéncia"
 
 #: index.html:486
 msgid "Terms of services"
-msgstr ""
+msgstr "Condicions d’utilizacion"
 
 #: index.html:489
 msgid "Organization"
-msgstr ""
+msgstr "Organizacion"
 
 #: index.html:494
 msgid "Follow"
-msgstr ""
+msgstr "Nos seguir"
 
 #: index.html:497
 msgid "Blog"
-msgstr ""
+msgstr "Blòg"
 
 #: index.html:498
 msgid "Mastodon"
-msgstr ""
+msgstr "Mastodon"
 
 #: index.html:499
 msgid "Peertube"
-msgstr ""
+msgstr "Peertube"
 
 #: index.html:504
 msgid "Use"
-msgstr ""
+msgstr "Utilizar"
 
 #: index.html:507
 msgid "Apps store"
-msgstr ""
+msgstr "Botiga d’aplicacions"
 
 #: index.html:510
 msgid "Services status"
-msgstr ""
+msgstr "Estat dels servicis"
 
 #: index.html:511
 msgid "Changelog"
-msgstr ""
+msgstr "Istoric de modificacions"
 
 #: index.html:519
 msgid "Issues tracker"
-msgstr ""
+msgstr "Traçador d’anomalias"
 
 #: index.html:520
 msgid "Security"
-msgstr ""
+msgstr "Seguretat"
 
 #: index.html:521
 msgid "Code (core)"
-msgstr ""
+msgstr "Còdi (core)"
 
 #: index.html:522
 msgid "Code (apps)"
-msgstr ""
+msgstr "Còdi (aplicacions)"
 
 #: index.html:523
 msgid "Translation"
-msgstr ""
+msgstr "Traduccion"
 
 #~ msgid "Last news"
 #~ msgstr ""
 
 #~ msgid "See the comparison"
 #~ msgstr ""
-

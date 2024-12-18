@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: 2024-12-17 17:03+0000\n"
+"PO-Revision-Date: 2024-12-18 15:31+0000\n"
 "Last-Translator: Quentí <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/oc/>\n"
@@ -146,18 +146,27 @@ msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, listing several applications installed."
 msgstr ""
+"Captura d'ecran del portal d’utilizaire dempuèi lo qual las personas que "
+"possedisson un compte pòdon accedir a las apps installadas sul servidor, "
+"aicí sus la vista que lista mantuna aplicacion installada."
 
 #: index.html:192
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, light version with description of each app."
 msgstr ""
+"Captura d'ecran del portal d’utilizaire dempuèi lo qual las personas que "
+"possedisson un compte pòdon accedir a las apps installadas sul servidor, "
+"aquí en version clar amb una descripcion de cada aplicacion."
 
 #: index.html:196
 msgid ""
 "Screenshot of the web administration panel displaying the following "
 "categories: users, domains, apps, upgrade, services, tools and backup"
 msgstr ""
+"Captura d'ecran del panèl d'administracion que mòstra las categorias "
+"seguentas : comptes, domenis, aplicacions, actualizacions, servicis, aisinas "
+"e salvagardas"
 
 #: index.html:200
 msgid ""
@@ -165,6 +174,9 @@ msgid ""
 " the \"publication\" category, listing some apps available in the "
 "catalog."
 msgstr ""
+"Captura d'ecran del panèl d'administracion web que mòstra lo catalòg "
+"d'aplicacions per la categoria « publicacion », amb una lista d'unas "
+"aplicacions disponiblas al catalòg."
 
 #: index.html:204
 msgid ""
@@ -172,6 +184,9 @@ msgid ""
 "form when installing the Nextcloud application. The interface asks a few "
 "technical questions regarding settings for the installation."
 msgstr ""
+"Captura d'ecran del panèl d'administracion web que mòstra lo formulari "
+"d'installacion pendent l'installacion de Nextcloud. L'interfàcia pausa "
+"mantun question tecnica a prepaus del parametratge de l'installacion."
 
 #: index.html:206
 msgid "Previous slide"
@@ -188,6 +203,10 @@ msgid ""
 "knowledge** -  \n"
 "digital services (apps) **that you control**."
 msgstr ""
+"**YunoHost** es un sistèma que s'installa sus un **servidor**\n"
+"e vos permet d'installar e manténer - **amb plan paucas coneissenças "
+"tecnicas** -\n"
+"de servicis numerics (aplicacions) **que contrarotlatz**."
 
 #: index.html:310
 msgid "Huh, but why <i class='fa fa-question'></i>"
@@ -223,35 +242,35 @@ msgstr "organizatz vòstras fòtos, vidèos e musica"
 
 #: index.html:333
 msgid "join alternative social media"
-msgstr ""
+msgstr "rejónher los malhums socials alternatius"
 
 #: index.html:339
 msgid "For small organizations"
-msgstr ""
+msgstr "Per las organizacions petitas"
 
 #: index.html:342
 msgid "host your own website"
-msgstr ""
+msgstr "albergar vòstre site web"
 
 #: index.html:343
 msgid "share files in common (e.g. with Nextcloud)"
-msgstr ""
+msgstr "partejar de fichièrs en comun (per exemple, amb Nextcloud)"
 
 #: index.html:344
 msgid "edit multiple documents in real time"
-msgstr ""
+msgstr "editar mantun document en temps real"
 
 #: index.html:345
 msgid "manage your accounting"
-msgstr ""
+msgstr "gerir vòstra comptabilitat"
 
 #: index.html:346
 msgid "set up a team chat"
-msgstr ""
+msgstr "configurar un chat en equipe"
 
 #: index.html:352
 msgid "Explore the app catalog"
-msgstr ""
+msgstr "Explorar lo catalòg d'aplicacions"
 
 #: index.html:361
 msgid "How to get started"
@@ -267,6 +286,13 @@ msgid ""
 "Take the time to think about what applications, what type of hardware and"
 " what domain name you want for your server."
 msgstr ""
+"Se esitatz encara, vos convidam a [ensajar la demontracion](https://yunohost."
+"org/try),  \n"
+"e a mirar [los avantatges e los contras](https://yunohost.org/selfhosting) "
+"de gerir un servidor vòstre.\n"
+"\n"
+"Prenètz lo temps de pensar a quinas aplicacions, quin tipe de material e "
+"quin nom de domeni volètz per vòstre servidor."
 
 #: index.html:373
 msgid "Choosing a support"
@@ -278,7 +304,7 @@ msgstr "Carta ARM / Raspberry Pi"
 
 #: index.html:377
 msgid "Old tower or portable (*ordinosaur*)"
-msgstr ""
+msgstr "Torre vièlha o portable (*ordinosaure*)"
 
 #: index.html:378
 msgid "Online server (VPS)"
@@ -294,13 +320,15 @@ msgstr "Installar YunoHost"
 
 #: index.html:388
 msgid "Check the prerequisites<br>then flash or install the system"
-msgstr ""
+msgstr "Verificatz los prerequesits<br>puèi flashatz o installatz lo sistèma"
 
 #: index.html:389
 msgid ""
 "YunoHost will guide you through setting up the first admin, the domain "
 "name and your Internet router."
 msgstr ""
+"YunoHost vos guidarà a travèrs de la configuracion del primièr admin, del "
+"nom de domeni e de vòstre rotador Internet."
 
 #: index.html:391
 msgid "Installation guide"
@@ -312,7 +340,7 @@ msgstr "Profechatz !"
 
 #: index.html:399
 msgid "Install applications<br>in just a few clicks"
-msgstr ""
+msgstr "Installatz d'aplicacions<br> en unes cliques"
 
 #: index.html:400
 msgid "Set up backups"
@@ -320,11 +348,11 @@ msgstr "Configurar las còpias de seguretat"
 
 #: index.html:401
 msgid "Take care of your server"
-msgstr ""
+msgstr "Prenètz suènh de vòstre servidor"
 
 #: index.html:403
 msgid "Guided tour"
-msgstr ""
+msgstr "Visita guidada"
 
 #: index.html:425
 msgid "Previous articles"
@@ -332,7 +360,7 @@ msgstr "Articles ancians"
 
 #: index.html:435 index.html:461
 msgid "Claude, YunoHost's mascot"
-msgstr ""
+msgstr "Claude, la mascòta de YunoHost"
 
 #: index.html:435 index.html:461
 msgid ""
@@ -340,12 +368,17 @@ msgid ""
 "purple hair and scarf, round glasses, beige pants with pockets and a blue"
 " crop top with the YunoHost logo."
 msgstr ""
+"Imatge de Claude, la mascòta de YunoHost. La sariga umanoïda es de pè, pel e "
+"mocador de còl violet, lunetas redondas, pantalons burèls amb pòchas e naut "
+"cort amb lo logotipe de YunoHost."
 
 #: index.html:445
 msgid ""
 " **YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
 msgstr ""
+" **YunoHost** es un projècte **tecnocritic sens tòca lucrativa**, desvolopat "
+"e mantengut per de **benevòles**."
 
 #: index.html:446
 msgid ""
@@ -353,12 +386,17 @@ msgid ""
 "**interoperable** technologies that **respect privacy** and **empowers "
 "people**."
 msgstr ""
+"Defendèm un **internet descentralizat**, de tecnologias **dobèrtas**, "
+"**interoperablas**, que **respèctan la vida privada** e que dònan de "
+"l'**autonomia** e de **poder al mai grand nombre**."
 
 #: index.html:447
 msgid ""
 "In addition, we aim to **give materiality back to the digital**, and "
 "encourage **sobriety** and **reuse**."
 msgstr ""
+"En mai, desiram **redonar de materialitat al numeric**, encoratjar la "
+"**sobrietat** e lo **reemplec**."
 
 #: index.html:451 index.html:508
 msgid "Forum"
@@ -389,6 +427,8 @@ msgid ""
 "We are thankful for our sponsors providing us with infrastructure and "
 "grants!"
 msgstr ""
+"Sèm reconeissents envers nòstres mecènas que nos sostenon financièrament o "
+"via de dons d'infraestructura !"
 
 #: index.html:483
 msgid "Legal"

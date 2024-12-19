@@ -59,9 +59,9 @@ then
     # Generate CSS, fonts etc
     cp -Rf assets "$LANDINGPAGE_DIST_DIR"
 
-    ./assets/tailwindcss-linux-x64 \
+    ./assets/tailwindcss-linux \
         --config "$LANDINGPAGE_DIR/tailwind.config.js" \
-        --content "$LANDINGPAGE_DIST_DIR/index.en.html" \
+        --content "$LANDINGPAGE_DIST_DIR/*.en.html" \
         --input "$LANDINGPAGE_DIR/assets/css/input.css" \
         --output "$LANDINGPAGE_DIST_DIR/assets/css/prod.min.css"
 fi

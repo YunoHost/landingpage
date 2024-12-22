@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: 2024-12-22 12:00+0000\n"
+"PO-Revision-Date: 2024-12-22 17:10+0000\n"
 "Last-Translator: rosbeef andino <ra@3cmr.fr>\n"
 "Language-Team: Spanish <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/es/>\n"
@@ -26,7 +26,7 @@ msgstr "Yunohost: Cultiva tu parcela de internet !"
 
 #: index.html:70
 msgid "Accessibility menu"
-msgstr "Menú de accesibilidad"
+msgstr "Menú accesibilidad"
 
 #: index.html:71
 msgid "Go to content"
@@ -174,9 +174,9 @@ msgid ""
 " the \"publication\" category, listing some apps available in the "
 "catalog."
 msgstr ""
-"Captura de pantalla del portal desde el cual los usuarios autorizados pueden "
-"ver las aplicaciones instaladas en el servidor, aquí una vista de varias "
-"aplicaciones instaladas."
+"Captura de pantalla del portal desde el cual los administradoress "
+"autorizados pueden ver las aplicaciones que se pueden instalar en el "
+"servidor, aquí una vista de varias aplicaciones del catalogo."
 
 #: index.html:204
 msgid ""
@@ -184,9 +184,9 @@ msgid ""
 "form when installing the Nextcloud application. The interface asks a few "
 "technical questions regarding settings for the installation."
 msgstr ""
-"Captura de pantalla del portal desde el cual los usuarios autorizados pueden "
-"ver las aplicaciones instaladas en el servidor, versión liviana con la "
-"descripción de cada aplicación."
+"Captura de pantalla del portal desde el cual los administradores instalan "
+"las aplicaciones en este caso Nextcloud. La interface pregunta por pocas "
+"configuraciones tecnicas."
 
 #: index.html:206
 msgid "Previous slide"
@@ -368,7 +368,7 @@ msgid ""
 msgstr ""
 "Imagen de Claude, mascota de YunoHost, El humanoide oppossum esta parado, "
 "cabello y pañoleta morada, gafas redondas, pantalón beige con bolsillos et "
-"crop top azul con  el logo YunoHost."
+"crop top azul con el logo YunoHost."
 
 #: index.html:445
 msgid ""
@@ -446,11 +446,11 @@ msgstr "Organizaciones"
 
 #: index.html:494
 msgid "Follow"
-msgstr "Sigenos"
+msgstr "Siguenos"
 
 #: index.html:497
 msgid "Blog"
-msgstr "Síguenos"
+msgstr "Blog"
 
 #: index.html:498
 msgid "Mastodon"

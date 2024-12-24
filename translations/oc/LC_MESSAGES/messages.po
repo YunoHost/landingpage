@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: 2024-12-18 15:31+0000\n"
+"PO-Revision-Date: 2024-12-24 09:06+0000\n"
 "Last-Translator: Quentí <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/oc/>\n"
@@ -226,7 +226,7 @@ msgstr "Per vos e vòstres amics"
 
 #: index.html:329
 msgid "synchronize your calendars and contacts"
-msgstr "sincronizatz vòstres agendas e contactes"
+msgstr "sincronizar vòstres agendas e contactes"
 
 #: index.html:330
 msgid "keep your passwords and notes safe"
@@ -234,11 +234,11 @@ msgstr "gardar vòstres senhals e vòstras nòtas en seguretat"
 
 #: index.html:331
 msgid "host mailboxes"
-msgstr "albergatz de bóstias"
+msgstr "albergar de bóstias"
 
 #: index.html:332
 msgid "organize your photos, videos and music"
-msgstr "organizatz vòstras fòtos, vidèos e musica"
+msgstr "organizar vòstras fòtos, vidèos e musica"
 
 #: index.html:333
 msgid "join alternative social media"

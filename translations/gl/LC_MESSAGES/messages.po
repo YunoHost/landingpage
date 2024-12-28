@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: 2024-11-27 05:54+0000\n"
+"PO-Revision-Date: 2024-12-28 15:35+0000\n"
 "Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
 "Language-Team: Galician <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/gl/>\n"
@@ -377,8 +377,8 @@ msgid ""
 " **YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
 msgstr ""
-" **YunoHost** é proxeto **tecnocrítico** sen ánimo de lucro, desenvolto e"
-" mantido por persoas **voluntarias**."
+" **YunoHost** é un proxecto **tecnocrítico** sen ánimo de lucro, desenvolto "
+"e mantido por persoas **voluntarias**."
 
 #: index.html:446
 msgid ""
@@ -386,9 +386,9 @@ msgid ""
 "**interoperable** technologies that **respect privacy** and **empowers "
 "people**."
 msgstr ""
-"Promocionamos unha internet **descentralizada**, con tecnoloxías "
-"**abertas**, **interoperables** que **respectan a privacidade** e "
-"**empoderan ás persoas**."
+"Promovemos unha internet **descentralizada**, con tecnoloxías **abertas**, "
+"**interoperables**, **respectuosas coa privacidade** e **empoderan ás "
+"persoas**."
 
 #: index.html:447
 msgid ""
@@ -427,8 +427,7 @@ msgid ""
 "We are thankful for our sponsors providing us with infrastructure and "
 "grants!"
 msgstr ""
-"Agradecemos o seu patrocinio que nos proporciona infraestrutura e "
-"financiamento!"
+"Agradecemos o seu patrocinio para dotarnos de infraestrutura e financiamento!"
 
 #: index.html:483
 msgid "Legal"
@@ -468,7 +467,7 @@ msgstr "Usar"
 
 #: index.html:507
 msgid "Apps store"
-msgstr "Almacén de apps"
+msgstr "Aplicacións"
 
 #: index.html:510
 msgid "Services status"
@@ -480,7 +479,7 @@ msgstr "Rexistro de cambios"
 
 #: index.html:519
 msgid "Issues tracker"
-msgstr "Seguimento de problemas"
+msgstr "Incidencias"
 
 #: index.html:520
 msgid "Security"

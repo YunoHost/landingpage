@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
 "PO-Revision-Date: 2024-12-30 18:09+0000\n"
-"Last-Translator: Nick <nick_name+weblate@mailbox.org>\n"
+"Last-Translator: Zwiebel <zwiebel@users.noreply.translate.yunohost.org>\n"
 "Language-Team: German <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/de/>\n"
 "Language: de\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: index.html:4
 msgid "YunoHost: garden your own piece of the Internet!"
-msgstr ""
+msgstr "YunoHost: ziehen Sie ihr eigenes kleines Stück Internet heran!"
 
 #: index.html:70
 msgid "Accessibility menu"
@@ -70,7 +70,7 @@ msgstr "Yunohost Logo"
 
 #: index.html:125
 msgid "Garden your own<br/>piece of the Internet!"
-msgstr ""
+msgstr "Ziehen Sie ihr eigenes<br/> kleines Stück Internet heran!"
 
 #: index.html:132
 msgid "Main menu"
@@ -107,6 +107,11 @@ msgid ""
 "board|a game server|a forum|a chat|an ERP)%  \n"
 "for your friends, your association, your company"
 msgstr ""
+"Mit **YunoHost** ist es einfach  %(einen Server|eine Cloud|eine Webseite|E"
+"-Mail-Postfächer|ein Soziales Netzwerk|eine Videothek|einen "
+"Blog|Umfragen|Buchhaltung|einen Spiele Server|ein Forum|einen Chatdienst|die "
+"Strukturen in deinem Unternehmen)%…\n"
+"für deine Freunde, deinen Verein oder deine Firma zu betreiben"
 
 #: index.html:177
 msgid "Carousel"

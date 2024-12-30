@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: 2024-12-07 12:54+0000\n"
-"Last-Translator: Martin Kistner <martin-kistner@gmx.de>\n"
+"PO-Revision-Date: 2024-12-30 18:09+0000\n"
+"Last-Translator: Zwiebel <zwiebel@users.noreply.translate.yunohost.org>\n"
 "Language-Team: German <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/de/>\n"
 "Language: de\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: index.html:4
 msgid "YunoHost: garden your own piece of the Internet!"
-msgstr ""
+msgstr "YunoHost: ziehen Sie ihr eigenes kleines Stück Internet heran!"
 
 #: index.html:70
 msgid "Accessibility menu"
@@ -70,7 +70,7 @@ msgstr "Yunohost Logo"
 
 #: index.html:125
 msgid "Garden your own<br/>piece of the Internet!"
-msgstr ""
+msgstr "Ziehen Sie ihr eigenes<br/> kleines Stück Internet heran!"
 
 #: index.html:132
 msgid "Main menu"
@@ -107,6 +107,11 @@ msgid ""
 "board|a game server|a forum|a chat|an ERP)%  \n"
 "for your friends, your association, your company"
 msgstr ""
+"Mit **YunoHost** ist es einfach  %(einen Server|eine Cloud|eine Webseite|E"
+"-Mail-Postfächer|ein Soziales Netzwerk|eine Videothek|einen "
+"Blog|Umfragen|Buchhaltung|einen Spiele Server|ein Forum|einen Chatdienst|die "
+"Strukturen in deinem Unternehmen)%…\n"
+"für deine Freunde, deinen Verein oder deine Firma zu betreiben"
 
 #: index.html:177
 msgid "Carousel"
@@ -118,7 +123,7 @@ msgstr "Schieberegler"
 
 #: index.html:179
 msgid "User portal: dark mode"
-msgstr ""
+msgstr "Nutzerportal: Nachtmodus"
 
 #: index.html:180
 msgid "User portal: light mode with app description"
@@ -170,11 +175,11 @@ msgstr ""
 
 #: index.html:206
 msgid "Previous slide"
-msgstr ""
+msgstr "Nächstes Bild"
 
 #: index.html:208
 msgid "Next slide"
-msgstr ""
+msgstr "Vorheriges Bild"
 
 #: index.html:305
 msgid ""
@@ -183,26 +188,31 @@ msgid ""
 "knowledge** -  \n"
 "digital services (apps) **that you control**."
 msgstr ""
+"**YunoHost** ist ein System welches sich selbst auf einem **Server** "
+"installiert  \n"
+"und es erlaubt - **mit sehr geringem technischen Wissen** -  \n"
+"digitale Dienste (Apps) zu installieren und zu warten **welche Sie "
+"Kontrollieren**."
 
 #: index.html:310
 msgid "Huh, but why <i class='fa fa-question'></i>"
-msgstr ""
+msgstr "Was, aber warum<i class='fa fa-question'></i>"
 
 #: index.html:311
 msgid "Try"
-msgstr ""
+msgstr "Ausprobieren"
 
 #: index.html:320
 msgid "Examples of uses"
-msgstr ""
+msgstr "Anwendungsbeispiele"
 
 #: index.html:326
 msgid "For you and your friends"
-msgstr ""
+msgstr "Für Sie und Ihre Freunde"
 
 #: index.html:329
 msgid "synchronize your calendars and contacts"
-msgstr ""
+msgstr "Synchronisieren Sie Ihre Kalender und Kontakte"
 
 #: index.html:330
 msgid "keep your passwords and notes safe"
@@ -218,7 +228,7 @@ msgstr ""
 
 #: index.html:333
 msgid "join alternative social media"
-msgstr ""
+msgstr "Trete alternativen sozialen Netzwerken bei"
 
 #: index.html:339
 msgid "For small organizations"
@@ -226,7 +236,7 @@ msgstr ""
 
 #: index.html:342
 msgid "host your own website"
-msgstr ""
+msgstr "Hosten Sie Ihre eigene Webseite"
 
 #: index.html:343
 msgid "share files in common (e.g. with Nextcloud)"
@@ -234,11 +244,11 @@ msgstr ""
 
 #: index.html:344
 msgid "edit multiple documents in real time"
-msgstr ""
+msgstr "Bearbeiten Sie mehrere Dokumente in Echtzeit"
 
 #: index.html:345
 msgid "manage your accounting"
-msgstr ""
+msgstr "Verwalten Sie Ihre Buchungen"
 
 #: index.html:346
 msgid "set up a team chat"
@@ -246,7 +256,7 @@ msgstr ""
 
 #: index.html:352
 msgid "Explore the app catalog"
-msgstr ""
+msgstr "Endecken Sie den App Katalog"
 
 #: index.html:361
 msgid "How to get started"
@@ -269,7 +279,7 @@ msgstr ""
 
 #: index.html:376
 msgid "ARM board / Raspberry Pi"
-msgstr ""
+msgstr "ARM Board / Raspberry Pi"
 
 #: index.html:377
 msgid "Old tower or portable (*ordinosaur*)"
@@ -281,11 +291,11 @@ msgstr ""
 
 #: index.html:380
 msgid "Compare"
-msgstr ""
+msgstr "Vergleichen"
 
 #: index.html:385
 msgid "Install YunoHost"
-msgstr ""
+msgstr "YunoHost installieren"
 
 #: index.html:388
 msgid "Check the prerequisites<br>then flash or install the system"

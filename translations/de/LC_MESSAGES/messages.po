@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: 2024-12-30 18:09+0000\n"
-"Last-Translator: Zwiebel <zwiebel@users.noreply.translate.yunohost.org>\n"
+"PO-Revision-Date: 2025-01-17 17:11+0000\n"
+"Last-Translator: Vinzenz Vietzke <vinz+2wiua4xn@vinzv.de>\n"
 "Language-Team: German <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/de/>\n"
 "Language: de\n"
@@ -127,7 +127,7 @@ msgstr "Nutzerportal: Nachtmodus"
 
 #: index.html:180
 msgid "User portal: light mode with app description"
-msgstr ""
+msgstr "Benutzerportal: Heller Modus mit Beschreibung der Applikation"
 
 #: index.html:181
 msgid "Administration panel: homepage"
@@ -146,18 +146,26 @@ msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, listing several applications installed."
 msgstr ""
+"Screenshot des Benutzerportals, über das die Benutzer auf die auf dem Server "
+"installierten Anwendungen zugreifen können, mit einer Auflistung "
+"verschiedener installierter Anwendungen."
 
 #: index.html:192
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, light version with description of each app."
 msgstr ""
+"Screenshot des Benutzerportals, über das die Benutzer auf die auf dem Server "
+"installierten Apps zugreifen können, helle Version mit Beschreibung der "
+"einzelnen Apps."
 
 #: index.html:196
 msgid ""
 "Screenshot of the web administration panel displaying the following "
 "categories: users, domains, apps, upgrade, services, tools and backup"
 msgstr ""
+"Screenshot des Webverwaltungspanels mit folgenden Kategorien: Konten, "
+"Domänen, Applikationen, System aktualisieren, Dienste, Werkzeuge und Backup"
 
 #: index.html:200
 msgid ""
@@ -165,6 +173,9 @@ msgid ""
 " the \"publication\" category, listing some apps available in the "
 "catalog."
 msgstr ""
+"Screenshot des Web-Administrationspanels, das den Katalog der Anwendungen "
+"für die Kategorie „Veröffentlichung“ anzeigt und einige im Katalog "
+"verfügbare Apps auflistet."
 
 #: index.html:204
 msgid ""
@@ -172,6 +183,10 @@ msgid ""
 "form when installing the Nextcloud application. The interface asks a few "
 "technical questions regarding settings for the installation."
 msgstr ""
+"Screenshot des Web-Administrationspanels, das bei der Installation der "
+"Nextcloud-Applikation das App-Installationsformular anzeigt. Die "
+"Schnittstelle stellt einige technische Fragen zu den Einstellungen für die "
+"Installation."
 
 #: index.html:206
 msgid "Previous slide"
@@ -216,15 +231,15 @@ msgstr "Synchronisieren Sie Ihre Kalender und Kontakte"
 
 #: index.html:330
 msgid "keep your passwords and notes safe"
-msgstr ""
+msgstr "Bewahren Sie Ihre Passwörter und Notizen sicher auf"
 
 #: index.html:331
 msgid "host mailboxes"
-msgstr ""
+msgstr "Mailboxen hosten"
 
 #: index.html:332
 msgid "organize your photos, videos and music"
-msgstr ""
+msgstr "Organisieren Sie Ihre Fotos, Videos und Musik"
 
 #: index.html:333
 msgid "join alternative social media"
@@ -232,7 +247,7 @@ msgstr "Trete alternativen sozialen Netzwerken bei"
 
 #: index.html:339
 msgid "For small organizations"
-msgstr ""
+msgstr "Für kleine Organisationen"
 
 #: index.html:342
 msgid "host your own website"
@@ -240,7 +255,7 @@ msgstr "Hosten Sie Ihre eigene Webseite"
 
 #: index.html:343
 msgid "share files in common (e.g. with Nextcloud)"
-msgstr ""
+msgstr "Gemeinsame Nutzung von Dateien (z. B. mit Nextcloud)"
 
 #: index.html:344
 msgid "edit multiple documents in real time"
@@ -252,7 +267,7 @@ msgstr "Verwalten Sie Ihre Buchungen"
 
 #: index.html:346
 msgid "set up a team chat"
-msgstr ""
+msgstr "Einen Team-Chat einrichten"
 
 #: index.html:352
 msgid "Explore the app catalog"
@@ -260,7 +275,7 @@ msgstr "Endecken Sie den App Katalog"
 
 #: index.html:361
 msgid "How to get started"
-msgstr ""
+msgstr "So legen Sie los"
 
 #: index.html:365
 msgid ""
@@ -272,10 +287,17 @@ msgid ""
 "Take the time to think about what applications, what type of hardware and"
 " what domain name you want for your server."
 msgstr ""
+"Wenn Sie sich noch nicht sicher sind, laden wir Sie ein, [die "
+"Demo](https://yunohost.org/try) auszuprobieren,  \n"
+"und werfen Sie einen Blick auf [die Vor- und Nachteile](https://yunohost.org/"
+"selfhosting) der Selbstverwaltung eines Servers.\n"
+"\n"
+"Nehmen Sie sich die Zeit, darüber nachzudenken, welche Anwendungen, welche "
+"Art von Hardware und welchen Domainnamen Sie für Ihren Server wünschen."
 
 #: index.html:373
 msgid "Choosing a support"
-msgstr ""
+msgstr "Auswahl der Unterstützung"
 
 #: index.html:376
 msgid "ARM board / Raspberry Pi"
@@ -283,11 +305,11 @@ msgstr "ARM Board / Raspberry Pi"
 
 #: index.html:377
 msgid "Old tower or portable (*ordinosaur*)"
-msgstr ""
+msgstr "Alter Tower oder tragbarer Computer (*Ordinosaurier*)"
 
 #: index.html:378
 msgid "Online server (VPS)"
-msgstr ""
+msgstr "Online-Server (VPS)"
 
 #: index.html:380
 msgid "Compare"
@@ -300,44 +322,48 @@ msgstr "YunoHost installieren"
 #: index.html:388
 msgid "Check the prerequisites<br>then flash or install the system"
 msgstr ""
+"Überprüfen Sie die Voraussetzungen<br>und flashen oder installieren dann das "
+"System"
 
 #: index.html:389
 msgid ""
 "YunoHost will guide you through setting up the first admin, the domain "
 "name and your Internet router."
 msgstr ""
+"YunoHost führt Sie durch die Einrichtung des ersten Administrators, des "
+"Domainnamens und Ihres Internet-Routers."
 
 #: index.html:391
 msgid "Installation guide"
-msgstr ""
+msgstr "Installationsanleitung"
 
 #: index.html:396
 msgid "Enjoy!"
-msgstr ""
+msgstr "Viel Spaß!"
 
 #: index.html:399
 msgid "Install applications<br>in just a few clicks"
-msgstr ""
+msgstr "Installieren Sie Anwendungen<br>mit nur ein paar Klicks"
 
 #: index.html:400
 msgid "Set up backups"
-msgstr ""
+msgstr "Richten Sie Backups ein"
 
 #: index.html:401
 msgid "Take care of your server"
-msgstr ""
+msgstr "Kümmern Sie sich um Ihren Server"
 
 #: index.html:403
 msgid "Guided tour"
-msgstr ""
+msgstr "Geführter Rundgang"
 
 #: index.html:425
 msgid "Previous articles"
-msgstr ""
+msgstr "Vorherige Artikel"
 
 #: index.html:435 index.html:461
 msgid "Claude, YunoHost's mascot"
-msgstr ""
+msgstr "Claude, YunoHosts Maskottchen"
 
 #: index.html:435 index.html:461
 msgid ""
@@ -345,12 +371,17 @@ msgid ""
 "purple hair and scarf, round glasses, beige pants with pockets and a blue"
 " crop top with the YunoHost logo."
 msgstr ""
+"Bild von Claude, dem Maskottchen von YunoHost. Das humanoide Oppossum trägt "
+"lila Haare und Schal, eine runde Brille, eine beigefarbene Hose mit Taschen "
+"und ein blaues Crop-Top mit dem YunoHost-Logo."
 
 #: index.html:445
 msgid ""
 " **YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
 msgstr ""
+" **YunoHost** ist ein gemeinnütziges **technikkritisches** Projekt, "
+"entwickelt und gepflegt von **Freiwilligen**."
 
 #: index.html:446
 msgid ""
@@ -358,82 +389,89 @@ msgid ""
 "**interoperable** technologies that **respect privacy** and **empowers "
 "people**."
 msgstr ""
+"Wir treten für ein **dezentralisiertes** Internet ein, mit **offenen**, "
+"**interoperablen** Technologien, welche **die Privatsphäre respektieren** "
+"und **die Menschen befähigen**."
 
 #: index.html:447
 msgid ""
 "In addition, we aim to **give materiality back to the digital**, and "
 "encourage **sobriety** and **reuse**."
 msgstr ""
+"Darüber hinaus wollen wir **dem Digitalen Materialität zurückgeben** und "
+"**Sparsamkeit** sowie **Wiederverwendung** fördern."
 
 #: index.html:451 index.html:508
 msgid "Forum"
-msgstr ""
+msgstr "Forum"
 
 #: index.html:452 index.html:509
 msgid "Self-help chat"
-msgstr ""
+msgstr "Selbsthilfe-Chat"
 
 #: index.html:453 index.html:517
 msgid "Donate"
-msgstr ""
+msgstr "Spenden"
 
 #: index.html:454 index.html:515
 msgid "Contribute"
-msgstr ""
+msgstr "Beitragen"
 
 #: index.html:455
 msgid "Code repositories"
-msgstr ""
+msgstr "Code-Repositories"
 
 #: index.html:468
 msgid "They support us <3"
-msgstr ""
+msgstr "Sie unterstützen uns <3"
 
 #: index.html:469
 msgid ""
 "We are thankful for our sponsors providing us with infrastructure and "
 "grants!"
 msgstr ""
+"Wir sind dankbar für unsere Sponsoren, die uns Infrastruktur und Mittel zur "
+"Verfügung stellen!"
 
 #: index.html:483
 msgid "Legal"
-msgstr ""
+msgstr "Rechtliches"
 
 #: index.html:485
 msgid "License"
-msgstr ""
+msgstr "Lizenz"
 
 #: index.html:486
 msgid "Terms of services"
-msgstr ""
+msgstr "Nutzungsbedingungen"
 
 #: index.html:489
 msgid "Organization"
-msgstr ""
+msgstr "Organisation"
 
 #: index.html:494
 msgid "Follow"
-msgstr ""
+msgstr "Folgen"
 
 #: index.html:497
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: index.html:498
 msgid "Mastodon"
-msgstr ""
+msgstr "Mastodon"
 
 #: index.html:499
 msgid "Peertube"
-msgstr ""
+msgstr "Peertube"
 
 #: index.html:504
 msgid "Use"
-msgstr ""
+msgstr "Nutzen"
 
 #: index.html:507
 msgid "Apps store"
-msgstr ""
+msgstr "Anwendungskatalog"
 
 #: index.html:510
 msgid "Services status"
@@ -461,7 +499,7 @@ msgstr ""
 
 #: index.html:523
 msgid "Translation"
-msgstr ""
+msgstr "Übersetung"
 
 #~ msgid "Last news"
 #~ msgstr ""

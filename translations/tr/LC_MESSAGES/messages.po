@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: 2025-01-22 17:00+0000\n"
+"PO-Revision-Date: 2025-02-07 07:54+0000\n"
 "Last-Translator: Furkan Samed Acet <f16bursafurkan@outlook.com>\n"
 "Language-Team: Turkish <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/tr/>\n"
@@ -116,50 +116,59 @@ msgstr ""
 "veya bir ERP'yi )% yönetin!"
 
 #: index.html:177
+#, fuzzy
 msgid "Carousel"
-msgstr ""
+msgstr "Kayar Menü"
 
 #: index.html:178
 msgid "Slide controls"
-msgstr ""
+msgstr "Kaydırma kontrolleri"
 
 #: index.html:179
 msgid "User portal: dark mode"
-msgstr ""
+msgstr "Kullanıcı portalı: karanlık tema"
 
 #: index.html:180
 msgid "User portal: light mode with app description"
-msgstr ""
+msgstr "Kullanıcı portalı: uygulama açıklamaları ile açık tema"
 
 #: index.html:181
 msgid "Administration panel: homepage"
-msgstr ""
+msgstr "Yönetici paneli: ana sayfa"
 
 #: index.html:182
 msgid "Administration panel: app catalog"
-msgstr ""
+msgstr "Yönetici paneli: uygulama kataloğu"
 
 #: index.html:183
 msgid "Administration panel: app installation"
-msgstr ""
+msgstr "Yönetici paneli: uygulama indirme"
 
 #: index.html:188
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, listing several applications installed."
 msgstr ""
+"Kullanıcıların sunucuya yüklenen uygulamalara erişebildiği kullanıcı "
+"portalının ekran görüntüsü, yüklü olan çeşitli uygulamaları listeliyor."
 
 #: index.html:192
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, light version with description of each app."
 msgstr ""
+"Kullanıcıların sunucuya yüklenen uygulamalara erişebileceği kullanıcı "
+"portalının ekran görüntüsü, her bir uygulamanın açıklamasıyla birlikte hafif "
+"versiyon."
 
 #: index.html:196
 msgid ""
 "Screenshot of the web administration panel displaying the following "
 "categories: users, domains, apps, upgrade, services, tools and backup"
 msgstr ""
+"Web yönetim panelinin ekran görüntüsü, şu kategorileri görüntülüyor: "
+"kullanıcılar, alan adları, uygulamalar, yükseltme, hizmetler, araçlar ve "
+"yedekleme"
 
 #: index.html:200
 msgid ""

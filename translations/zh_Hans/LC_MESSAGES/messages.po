@@ -8,95 +8,97 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-01-21 13:09+0000\n"
+"Last-Translator: Poesty Li <poesty7450@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.yunohost.org/projects/"
+"yunohost/landingpage/zh_Hans/>\n"
 "Language: zh_Hans\n"
-"Language-Team: none\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: index.html:4
 msgid "YunoHost: garden your own piece of the Internet!"
-msgstr ""
+msgstr "YunoHost：在互联网上开辟自己的一片天地！"
 
 #: index.html:70
 msgid "Accessibility menu"
-msgstr ""
+msgstr "无障碍菜单"
 
 #: index.html:71
 msgid "Go to content"
-msgstr ""
+msgstr "转到内容"
 
 #: index.html:72
 msgid "Go to navigation"
-msgstr ""
+msgstr "转到导航"
 
 #: index.html:73
 msgid "Go to page settings"
-msgstr ""
+msgstr "转到页面设置"
 
 #: index.html:74
 msgid "Go to search"
-msgstr ""
+msgstr "转到搜索"
 
 #: index.html:77
 msgid "Page settings"
-msgstr ""
+msgstr "页面设置"
 
 #: index.html:80
 msgid "Switch to a different language"
-msgstr ""
+msgstr "切换到其它语言"
 
 #: index.html:88
 msgid "Translate this page!"
-msgstr ""
+msgstr "翻译此页面！"
 
 #: index.html:94
 msgid "Switch to dark mode"
-msgstr ""
+msgstr "切换到深色模式"
 
 #: index.html:103
 msgid "Switch to light mode"
-msgstr ""
+msgstr "切换到浅色模式"
 
 #: index.html:123 index.html:480
 msgid "Yunohost logo"
-msgstr ""
+msgstr "Yunohost logo"
 
 #: index.html:125
 msgid "Garden your own<br/>piece of the Internet!"
-msgstr ""
+msgstr "在互联网上开辟<br/>自己的一片天地！"
 
 #: index.html:132
 msgid "Main menu"
-msgstr ""
+msgstr "主菜单"
 
 #: index.html:136
 msgid "Discover"
-msgstr ""
+msgstr "发现"
 
 #: index.html:139
 msgid "Applications"
-msgstr ""
+msgstr "应用"
 
 #: index.html:142 index.html:312
 msgid "Install"
-msgstr ""
+msgstr "安装"
 
 #: index.html:146 index.html:506
 msgid "Documentation"
-msgstr ""
+msgstr "文档"
 
 #: index.html:149 index.html:414
 msgid "Latest news"
-msgstr ""
+msgstr "最新消息"
 
 #: index.html:152 index.html:440
 msgid "Community"
-msgstr ""
+msgstr "社区"
 
 #: index.html:165 index.html:171
 msgid ""
@@ -105,74 +107,81 @@ msgid ""
 "board|a game server|a forum|a chat|an ERP)%  \n"
 "for your friends, your association, your company"
 msgstr ""
+"使用 **YunoHost**，轻松管理%(服务器|云端|网站|邮箱|wiki|社交网络|视频库|博客|"
+"调查|记账板|游戏服务器|论坛|聊天|ERP)%  \n"
+"为您的朋友、协会、公司"
 
 #: index.html:177
 msgid "Carousel"
-msgstr ""
+msgstr "轮播"
 
 #: index.html:178
 msgid "Slide controls"
-msgstr ""
+msgstr "幻灯片控件"
 
 #: index.html:179
 msgid "User portal: dark mode"
-msgstr ""
+msgstr "用户门户：深色模式"
 
 #: index.html:180
 msgid "User portal: light mode with app description"
-msgstr ""
+msgstr "用户门户：带应用描述的浅色模式"
 
 #: index.html:181
 msgid "Administration panel: homepage"
-msgstr ""
+msgstr "管理面板：主页"
 
 #: index.html:182
 msgid "Administration panel: app catalog"
-msgstr ""
+msgstr "管理面板：应用目录"
 
 #: index.html:183
 msgid "Administration panel: app installation"
-msgstr ""
+msgstr "管理面板：应用安装"
 
 #: index.html:188
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, listing several applications installed."
-msgstr ""
+msgstr "用户门户的屏幕截图，用户可以从中访问服务器上安装的应用，列出了几个已安装的应"
+"用。"
 
 #: index.html:192
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, light version with description of each app."
-msgstr ""
+msgstr "用户门户的屏幕截图，用户可以从中访问服务器上安装的应用，浅色版本并显示每个应"
+"用的描述。"
 
 #: index.html:196
 msgid ""
 "Screenshot of the web administration panel displaying the following "
 "categories: users, domains, apps, upgrade, services, tools and backup"
-msgstr ""
+msgstr "网络管理面板的屏幕截图，显示以下类别：用户、域、应用、升级、服务、工具和备份"
 
 #: index.html:200
 msgid ""
 "Screenshot of the web administration panel displaying the app catalog for"
 " the \"publication\" category, listing some apps available in the "
 "catalog."
-msgstr ""
+msgstr "网络管理面板的屏幕截图，显示“发布”类别的应用目录，列出了目录中的一些可用应用"
+"。"
 
 #: index.html:204
 msgid ""
 "Screenshot of the web administration panel displaying the app install "
 "form when installing the Nextcloud application. The interface asks a few "
 "technical questions regarding settings for the installation."
-msgstr ""
+msgstr "网络管理面板的屏幕截图，显示安装 Nextcloud "
+"应用时的应用安装表单。界面询问了一些关于安装设置的技术问题。"
 
 #: index.html:206
 msgid "Previous slide"
-msgstr ""
+msgstr "上一张幻灯片"
 
 #: index.html:208
 msgid "Next slide"
-msgstr ""
+msgstr "下一张幻灯片"
 
 #: index.html:305
 msgid ""
@@ -181,74 +190,77 @@ msgid ""
 "knowledge** -  \n"
 "digital services (apps) **that you control**."
 msgstr ""
+"**YunoHost** 是一个安装在**服务器**上的系统，  \n"
+"允许您安装和维护 - **只需很少的技术知识** -  \n"
+"您**可以控制**的数字服务（应用）。"
 
 #: index.html:310
 msgid "Huh, but why <i class='fa fa-question'></i>"
-msgstr ""
+msgstr "哦，为什么 <i class='fa fa-question'></i>"
 
 #: index.html:311
 msgid "Try"
-msgstr ""
+msgstr "尝试"
 
 #: index.html:320
 msgid "Examples of uses"
-msgstr ""
+msgstr "使用示例"
 
 #: index.html:326
 msgid "For you and your friends"
-msgstr ""
+msgstr "为您和您的朋友"
 
 #: index.html:329
 msgid "synchronize your calendars and contacts"
-msgstr ""
+msgstr "同步您的日历和联系人"
 
 #: index.html:330
 msgid "keep your passwords and notes safe"
-msgstr ""
+msgstr "安全保管您的密码和笔记"
 
 #: index.html:331
 msgid "host mailboxes"
-msgstr ""
+msgstr "托管邮箱"
 
 #: index.html:332
 msgid "organize your photos, videos and music"
-msgstr ""
+msgstr "组织您的照片、视频和音乐"
 
 #: index.html:333
 msgid "join alternative social media"
-msgstr ""
+msgstr "加入另类社交媒体"
 
 #: index.html:339
 msgid "For small organizations"
-msgstr ""
+msgstr "面向小型组织"
 
 #: index.html:342
 msgid "host your own website"
-msgstr ""
+msgstr "托管您自己的网站"
 
 #: index.html:343
 msgid "share files in common (e.g. with Nextcloud)"
-msgstr ""
+msgstr "共享公共文件（例如，使用 Nextcloud）"
 
 #: index.html:344
 msgid "edit multiple documents in real time"
-msgstr ""
+msgstr "实时编辑多个文档"
 
 #: index.html:345
 msgid "manage your accounting"
-msgstr ""
+msgstr "管理您的财务"
 
 #: index.html:346
 msgid "set up a team chat"
-msgstr ""
+msgstr "设置团队聊天"
 
 #: index.html:352
 msgid "Explore the app catalog"
-msgstr ""
+msgstr "浏览应用目录"
 
 #: index.html:361
 msgid "How to get started"
-msgstr ""
+msgstr "如何开始"
 
 #: index.html:365
 msgid ""
@@ -260,72 +272,75 @@ msgid ""
 "Take the time to think about what applications, what type of hardware and"
 " what domain name you want for your server."
 msgstr ""
+"如果您还不确定，我们邀请您[试用演示](https://yunohost.org/"
+"try)，并查看[自我管理服务器的利弊](https://yunohost.org/"
+"selfhosting)。花时间考虑您希望为服务器选择哪些应用程序、硬件类型和域名。"
 
 #: index.html:373
 msgid "Choosing a support"
-msgstr ""
+msgstr "选择支持"
 
 #: index.html:376
 msgid "ARM board / Raspberry Pi"
-msgstr ""
+msgstr "ARM 板 / Raspberry Pi"
 
 #: index.html:377
 msgid "Old tower or portable (*ordinosaur*)"
-msgstr ""
+msgstr "旧塔式或便携式（*古董*）"
 
 #: index.html:378
 msgid "Online server (VPS)"
-msgstr ""
+msgstr "在线服务器（VPS）"
 
 #: index.html:380
 msgid "Compare"
-msgstr ""
+msgstr "比较"
 
 #: index.html:385
 msgid "Install YunoHost"
-msgstr ""
+msgstr "安装 YunoHost"
 
 #: index.html:388
 msgid "Check the prerequisites<br>then flash or install the system"
-msgstr ""
+msgstr "检查先决条件<br>然后闪存或安装系统"
 
 #: index.html:389
 msgid ""
 "YunoHost will guide you through setting up the first admin, the domain "
 "name and your Internet router."
-msgstr ""
+msgstr "YunoHost 将指导您设置第一个管理员、域名和互联网路由器。"
 
 #: index.html:391
 msgid "Installation guide"
-msgstr ""
+msgstr "安装指南"
 
 #: index.html:396
 msgid "Enjoy!"
-msgstr ""
+msgstr "享受吧！"
 
 #: index.html:399
 msgid "Install applications<br>in just a few clicks"
-msgstr ""
+msgstr "只需几次点击即可安装应用程序<br>"
 
 #: index.html:400
 msgid "Set up backups"
-msgstr ""
+msgstr "设置备份"
 
 #: index.html:401
 msgid "Take care of your server"
-msgstr ""
+msgstr "照顾您的服务器"
 
 #: index.html:403
 msgid "Guided tour"
-msgstr ""
+msgstr "导览"
 
 #: index.html:425
 msgid "Previous articles"
-msgstr ""
+msgstr "上一篇文章"
 
 #: index.html:435 index.html:461
 msgid "Claude, YunoHost's mascot"
-msgstr ""
+msgstr "Claude，YunoHost 的吉祥物"
 
 #: index.html:435 index.html:461
 msgid ""
@@ -333,127 +348,130 @@ msgid ""
 "purple hair and scarf, round glasses, beige pants with pockets and a blue"
 " crop top with the YunoHost logo."
 msgstr ""
+"Claude 的图像，YunoHost "
+"的吉祥物。这个类人负鼠站着，紫色的头发和围巾，圆形眼镜，"
+"带口袋的米色裤子和带有 YunoHost 标志的蓝色短款上衣。"
 
 #: index.html:445
 msgid ""
 " **YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
-msgstr ""
+msgstr " **YunoHost** 是一个非营利的**技术批判**项目，由**志愿者**开发和维护。"
 
 #: index.html:446
 msgid ""
 "We advocate a **decentralized** Internet, with **open**, "
 "**interoperable** technologies that **respect privacy** and **empowers "
 "people**."
-msgstr ""
+msgstr "我们倡导一个**去中心化**的互联网，使用**开放**、**可互操作**的技术，**尊重隐"
+"私**并**赋权人们**。"
 
 #: index.html:447
 msgid ""
 "In addition, we aim to **give materiality back to the digital**, and "
 "encourage **sobriety** and **reuse**."
-msgstr ""
+msgstr "此外，我们旨在**将物质性带回数字世界**，并鼓励**节俭** 和**重复使用**。"
 
 #: index.html:451 index.html:508
 msgid "Forum"
-msgstr ""
+msgstr "论坛"
 
 #: index.html:452 index.html:509
 msgid "Self-help chat"
-msgstr ""
+msgstr "自助聊天"
 
 #: index.html:453 index.html:517
 msgid "Donate"
-msgstr ""
+msgstr "捐赠"
 
 #: index.html:454 index.html:515
 msgid "Contribute"
-msgstr ""
+msgstr "贡献"
 
 #: index.html:455
 msgid "Code repositories"
-msgstr ""
+msgstr "代码库"
 
 #: index.html:468
 msgid "They support us <3"
-msgstr ""
+msgstr "他们支持了我们 <3"
 
 #: index.html:469
 msgid ""
 "We are thankful for our sponsors providing us with infrastructure and "
 "grants!"
-msgstr ""
+msgstr "我们感谢我们的赞助商为我们提供基础设施和资助！"
 
 #: index.html:483
 msgid "Legal"
-msgstr ""
+msgstr "法律"
 
 #: index.html:485
 msgid "License"
-msgstr ""
+msgstr "许可证"
 
 #: index.html:486
 msgid "Terms of services"
-msgstr ""
+msgstr "服务条款"
 
 #: index.html:489
 msgid "Organization"
-msgstr ""
+msgstr "组织"
 
 #: index.html:494
 msgid "Follow"
-msgstr ""
+msgstr "关注"
 
 #: index.html:497
 msgid "Blog"
-msgstr ""
+msgstr "博客"
 
 #: index.html:498
 msgid "Mastodon"
-msgstr ""
+msgstr "Mastodon"
 
 #: index.html:499
 msgid "Peertube"
-msgstr ""
+msgstr "Peertube"
 
 #: index.html:504
 msgid "Use"
-msgstr ""
+msgstr "使用"
 
 #: index.html:507
 msgid "Apps store"
-msgstr ""
+msgstr "应用商店"
 
 #: index.html:510
 msgid "Services status"
-msgstr ""
+msgstr "服务状态"
 
 #: index.html:511
 msgid "Changelog"
-msgstr ""
+msgstr "更新日志"
 
 #: index.html:519
 msgid "Issues tracker"
-msgstr ""
+msgstr "问题跟踪器"
 
 #: index.html:520
 msgid "Security"
-msgstr ""
+msgstr "安全"
 
 #: index.html:521
 msgid "Code (core)"
-msgstr ""
+msgstr "代码（核心）"
 
 #: index.html:522
 msgid "Code (apps)"
-msgstr ""
+msgstr "代码（应用）"
 
 #: index.html:523
 msgid "Translation"
-msgstr ""
+msgstr "翻译"
 
 #~ msgid "Last news"
 #~ msgstr ""
 
 #~ msgid "See the comparison"
 #~ msgstr ""
-

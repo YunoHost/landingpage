@@ -8,149 +8,167 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-02-12 17:39+0000\n"
+"Last-Translator: OniriCorpe <oniricorpe@disroot.org>\n"
+"Language-Team: Turkish <https://translate.yunohost.org/projects/yunohost/"
+"landingpage/tr/>\n"
 "Language: tr\n"
-"Language-Team: none\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: index.html:4
 msgid "YunoHost: garden your own piece of the Internet!"
-msgstr ""
+msgstr "Yunohost: İnternette kendi köşeni yeşillendir!"
 
 #: index.html:70
 msgid "Accessibility menu"
-msgstr ""
+msgstr "Erişilebilirlik menüsü"
 
 #: index.html:71
 msgid "Go to content"
-msgstr ""
+msgstr "İçeriğe git"
 
 #: index.html:72
+#, fuzzy
 msgid "Go to navigation"
-msgstr ""
+msgstr "Yönlendirmeye git"
 
 #: index.html:73
 msgid "Go to page settings"
-msgstr ""
+msgstr "Sayfa ayarlarına git"
 
 #: index.html:74
 msgid "Go to search"
-msgstr ""
+msgstr "Aramaya git"
 
 #: index.html:77
 msgid "Page settings"
-msgstr ""
+msgstr "Sayfa ayarları"
 
 #: index.html:80
 msgid "Switch to a different language"
-msgstr ""
+msgstr "Farklı bir dile geç"
 
 #: index.html:88
 msgid "Translate this page!"
-msgstr ""
+msgstr "Bu sayfayı çevir!"
 
 #: index.html:94
 msgid "Switch to dark mode"
-msgstr ""
+msgstr "Karanlık moda geç"
 
 #: index.html:103
 msgid "Switch to light mode"
-msgstr ""
+msgstr "Aydınlık moda geç"
 
 #: index.html:123 index.html:480
 msgid "Yunohost logo"
-msgstr ""
+msgstr "Yunohost simgesi"
 
 #: index.html:125
 msgid "Garden your own<br/>piece of the Internet!"
-msgstr ""
+msgstr "İnternette kendi köşeni<br/>yeşillendir!"
 
 #: index.html:132
 msgid "Main menu"
-msgstr ""
+msgstr "Ana menü"
 
 #: index.html:136
 msgid "Discover"
-msgstr ""
+msgstr "Keşfet"
 
 #: index.html:139
 msgid "Applications"
-msgstr ""
+msgstr "Uygulamalar"
 
 #: index.html:142 index.html:312
 msgid "Install"
-msgstr ""
+msgstr "İndir"
 
 #: index.html:146 index.html:506
 msgid "Documentation"
-msgstr ""
+msgstr "Dökümantasyon"
 
 #: index.html:149 index.html:414
 msgid "Latest news"
-msgstr ""
+msgstr "En son haberler"
 
 #: index.html:152 index.html:440
 msgid "Community"
-msgstr ""
+msgstr "Topluluk"
 
 #: index.html:165 index.html:171
+#, fuzzy
 msgid ""
 "With **YunoHost**, easily manage %(a server|a cloud|a website|mailboxes|a"
 " wiki|a social network|a video library|a blog|surveys|an accounting "
 "board|a game server|a forum|a chat|an ERP)%  \n"
 "for your friends, your association, your company"
 msgstr ""
+"**YunoHost** ile arkadaşlarınız, derneğiniz ya da şirketiniz için kolayca %("
+"bir sunucuyu, bir bulut sistemini, bir web sitesini, posta kutularını, bir "
+"wikiyi, bir sosyal ağı, bir video kütüphanesini, bir blogu, anketleri, bir "
+"muhasebe panosunu, bir oyun sunucusunu, bir forumu, bir sohbet platformunu "
+"veya bir ERP'yi )% yönetin"
 
 #: index.html:177
+#, fuzzy
 msgid "Carousel"
-msgstr ""
+msgstr "Kayar Menü"
 
 #: index.html:178
 msgid "Slide controls"
-msgstr ""
+msgstr "Kaydırma kontrolleri"
 
 #: index.html:179
 msgid "User portal: dark mode"
-msgstr ""
+msgstr "Kullanıcı portalı: karanlık tema"
 
 #: index.html:180
 msgid "User portal: light mode with app description"
-msgstr ""
+msgstr "Kullanıcı portalı: uygulama açıklamaları ile açık tema"
 
 #: index.html:181
 msgid "Administration panel: homepage"
-msgstr ""
+msgstr "Yönetici paneli: ana sayfa"
 
 #: index.html:182
 msgid "Administration panel: app catalog"
-msgstr ""
+msgstr "Yönetici paneli: uygulama kataloğu"
 
 #: index.html:183
 msgid "Administration panel: app installation"
-msgstr ""
+msgstr "Yönetici paneli: uygulama indirme"
 
 #: index.html:188
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, listing several applications installed."
 msgstr ""
+"Kullanıcıların sunucuya yüklenen uygulamalara erişebildiği kullanıcı "
+"portalının ekran görüntüsü, yüklü olan çeşitli uygulamaları listeliyor."
 
 #: index.html:192
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, light version with description of each app."
 msgstr ""
+"Kullanıcıların sunucuya yüklenen uygulamalara erişebileceği kullanıcı "
+"portalının ekran görüntüsü, her bir uygulamanın açıklamasıyla birlikte hafif "
+"versiyon."
 
 #: index.html:196
 msgid ""
 "Screenshot of the web administration panel displaying the following "
 "categories: users, domains, apps, upgrade, services, tools and backup"
 msgstr ""
+"Web yönetim panelinin ekran görüntüsü, şu kategorileri görüntülüyor: "
+"kullanıcılar, alan adları, uygulamalar, yükseltme, hizmetler, araçlar ve "
+"yedekleme"
 
 #: index.html:200
 msgid ""
@@ -453,4 +471,3 @@ msgstr ""
 
 #~ msgid "Last news"
 #~ msgstr ""
-

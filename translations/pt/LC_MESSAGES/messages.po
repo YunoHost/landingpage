@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-02-12 17:39+0000\n"
+"Last-Translator: OniriCorpe <oniricorpe@disroot.org>\n"
+"Language-Team: Portuguese <https://translate.yunohost.org/projects/yunohost/"
+"landingpage/pt/>\n"
 "Language: pt\n"
-"Language-Team: none\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 5.4.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: index.html:4
@@ -24,47 +26,47 @@ msgstr ""
 
 #: index.html:70
 msgid "Accessibility menu"
-msgstr ""
+msgstr "Acessibilidade"
 
 #: index.html:71
 msgid "Go to content"
-msgstr ""
+msgstr "Ir para o conteúdo"
 
 #: index.html:72
 msgid "Go to navigation"
-msgstr ""
+msgstr "Ir para navegação"
 
 #: index.html:73
 msgid "Go to page settings"
-msgstr ""
+msgstr "Ir para definições da página"
 
 #: index.html:74
 msgid "Go to search"
-msgstr ""
+msgstr "Ir para pesquisa"
 
 #: index.html:77
 msgid "Page settings"
-msgstr ""
+msgstr "Definições da página"
 
 #: index.html:80
 msgid "Switch to a different language"
-msgstr ""
+msgstr "Mudar de idioma"
 
 #: index.html:88
 msgid "Translate this page!"
-msgstr ""
+msgstr "Traduzir esta página!"
 
 #: index.html:94
 msgid "Switch to dark mode"
-msgstr ""
+msgstr "Ativar modo noturno"
 
 #: index.html:103
 msgid "Switch to light mode"
-msgstr ""
+msgstr "Ativar modo diurno"
 
 #: index.html:123 index.html:480
 msgid "Yunohost logo"
-msgstr ""
+msgstr "Yunohost logo"
 
 #: index.html:125
 msgid "Garden your own<br/>piece of the Internet!"
@@ -72,73 +74,82 @@ msgstr ""
 
 #: index.html:132
 msgid "Main menu"
-msgstr ""
+msgstr "Menu principal"
 
 #: index.html:136
 msgid "Discover"
-msgstr ""
+msgstr "Descobrir"
 
 #: index.html:139
 msgid "Applications"
-msgstr ""
+msgstr "Aplicações"
 
 #: index.html:142 index.html:312
 msgid "Install"
-msgstr ""
+msgstr "Instalar"
 
 #: index.html:146 index.html:506
 msgid "Documentation"
-msgstr ""
+msgstr "Documentação"
 
 #: index.html:149 index.html:414
 msgid "Latest news"
-msgstr ""
+msgstr "Novidades"
 
 #: index.html:152 index.html:440
 msgid "Community"
-msgstr ""
+msgstr "Comunidade"
 
 #: index.html:165 index.html:171
+#, fuzzy
 msgid ""
 "With **YunoHost**, easily manage %(a server|a cloud|a website|mailboxes|a"
 " wiki|a social network|a video library|a blog|surveys|an accounting "
 "board|a game server|a forum|a chat|an ERP)%  \n"
 "for your friends, your association, your company"
 msgstr ""
+"Com o **YunoHost**, gere facilmente %(um servidor|uma cloud|um "
+"website|mailboxes|uma wiki|uma rede social|uma biblioteca multimédia|um "
+"blog|questionários|um dashboard de contabilidade|um servidor de jogos|um "
+"forúm|um chat|um ERP)%\n"
+"para os teus amigos, a tua associação, a tua empresa"
 
 #: index.html:177
 msgid "Carousel"
-msgstr ""
+msgstr "Carrossel"
 
 #: index.html:178
 msgid "Slide controls"
-msgstr ""
+msgstr "Controlos"
 
 #: index.html:179
 msgid "User portal: dark mode"
-msgstr ""
+msgstr "Portal do utilizador: modo noturno"
 
 #: index.html:180
 msgid "User portal: light mode with app description"
-msgstr ""
+msgstr "Portal do utilizador: modo diurno com descrição da app"
 
 #: index.html:181
 msgid "Administration panel: homepage"
-msgstr ""
+msgstr "Painel de administração: página principal"
 
 #: index.html:182
 msgid "Administration panel: app catalog"
-msgstr ""
+msgstr "Painel de administração: catálogo de aplicações"
 
 #: index.html:183
 msgid "Administration panel: app installation"
-msgstr ""
+msgstr "Painel de administração: instalar aplicações"
 
 #: index.html:188
 msgid ""
 "Screenshot of the user portal from which users can access the apps "
 "installed on the server, listing several applications installed."
 msgstr ""
+"Screenshot do portal do utilizador a partir de onde os utilizadores podem "
+"aceder às aplicações instaladas no servidor, ao listar as aplicações "
+"instaladas."
 
 #: index.html:192
 msgid ""
@@ -456,4 +467,3 @@ msgstr ""
 
 #~ msgid "See the comparison"
 #~ msgstr ""
-

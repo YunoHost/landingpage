@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: 2025-01-21 13:09+0000\n"
+"PO-Revision-Date: 2025-02-25 06:54+0000\n"
 "Last-Translator: Poesty Li <poesty7450@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.yunohost.org/projects/"
 "yunohost/landingpage/zh_Hans/>\n"
@@ -200,7 +200,7 @@ msgstr "哦，为什么 <i class='fa fa-question'></i>"
 
 #: index.html:311
 msgid "Try"
-msgstr "尝试"
+msgstr "试用"
 
 #: index.html:320
 msgid "Examples of uses"
@@ -228,7 +228,7 @@ msgstr "组织您的照片、视频和音乐"
 
 #: index.html:333
 msgid "join alternative social media"
-msgstr "加入另类社交媒体"
+msgstr "加入替代社交媒体"
 
 #: index.html:339
 msgid "For small organizations"
@@ -272,9 +272,10 @@ msgid ""
 "Take the time to think about what applications, what type of hardware and"
 " what domain name you want for your server."
 msgstr ""
-"如果您还不确定，我们邀请您[试用演示](https://yunohost.org/"
-"try)，并查看[自我管理服务器的利弊](https://yunohost.org/"
-"selfhosting)。花时间考虑您希望为服务器选择哪些应用程序、硬件类型和域名。"
+"如果您还不确定，我们邀请您[试用演示](https://yunohost.org/try)，  \n"
+"并查看[自行管理服务器的利弊](https://yunohost.org/selfhosting)。\n"
+"\n"
+"花时间考虑一下您希望为服务器选择哪些应用程序、硬件类型和域名。"
 
 #: index.html:373
 msgid "Choosing a support"
@@ -302,7 +303,7 @@ msgstr "安装 YunoHost"
 
 #: index.html:388
 msgid "Check the prerequisites<br>then flash or install the system"
-msgstr "检查先决条件<br>然后闪存或安装系统"
+msgstr "检查先决条件<br>然后刷入或安装系统"
 
 #: index.html:389
 msgid ""
@@ -316,11 +317,11 @@ msgstr "安装指南"
 
 #: index.html:396
 msgid "Enjoy!"
-msgstr "享受吧！"
+msgstr "开始享用！"
 
 #: index.html:399
 msgid "Install applications<br>in just a few clicks"
-msgstr "只需几次点击即可安装应用程序<br>"
+msgstr "只需几次点击<br>即可安装应用程序"
 
 #: index.html:400
 msgid "Set up backups"
@@ -400,7 +401,7 @@ msgstr "他们支持了我们 <3"
 msgid ""
 "We are thankful for our sponsors providing us with infrastructure and "
 "grants!"
-msgstr "我们感谢我们的赞助商为我们提供基础设施和资助！"
+msgstr "我们感谢赞助商为我们提供基础设施和资助！"
 
 #: index.html:483
 msgid "Legal"

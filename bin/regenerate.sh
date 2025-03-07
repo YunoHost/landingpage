@@ -36,7 +36,8 @@ then
     # pybabel init -i translations/messages.pot -d translations -l fr
 
     # Otherwise, update the existing .po:
-    pybabel update -i translations/messages.pot -d translations
+    # This is now done automatically via a weblate extension
+    #pybabel update -i translations/messages.pot -d translations
 
     # ... translate stuff in translations/<lang>/LC_MESSAGES/messages.po
     # re-run the 'update' command to let Babel properly format the text

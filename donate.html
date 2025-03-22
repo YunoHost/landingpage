@@ -1,7 +1,13 @@
 {% extends "base.html" %}
 
+{% block page_id %}donate{% endblock %}
+
 {% block title %}
 {{ _("Donate to YunoHost!") }}
+{% endblock %}
+
+{% block assets %}
+<script src="https://js.stripe.com/v3/"></script>
 {% endblock %}
 
 <!-- ############################################################################################################ -->
@@ -63,71 +69,310 @@
 
 {% block main %}
 
-  <section id="intro" class="max-w-screen-lg mx-auto py-10">
+<section>
+
     <p class="text-xl pb-10">
-      YunoHost est un projet développé et maintenu par une communauté
-      essentiellement bénévole. YunoHost rend service à un nombre assez
-      important de personnes et de collectifs. Pour fonctionner, YunoHost a
-      besoin d'un peu d'argent.<br />
-      Quelques chiffres pour tenter d'en mesurer l'utilité et vous permettre
-      de comprendre les besoins.
+    YunoHost has been around since 2012. The solution is developed mainly on a voluntary basis and outside the commercial sector. YunoHost is a modest project in terms of the resources it mobilizes - but it's an ambitious one, as much for its activism as for its technical and interface design, or for the perseverance required to package and maintain hundreds of applications.
+
+    If, like us, you'd like to see the project continue to function, improve to meet its promises, and allow us to take care of the community, this is where you can donate!
+
+    Here are a few points to clarify how we use your donations and what we dream for the future of YunoHost.
     </p>
-    <div class="flex flex-row gap-2 justify-between">
-      <div class="w-2/3">
-        <h3 class="text-center pb-10 text-2xl font-bold">
-          Pour atteindre nos objectifs, vos dons nous sont précieux.
-        </h3>
+
+    <div class="text-center mx-auto">
+
+
+      <div class="mb-3">
+          <!-- FIXME : template the public_key -->
+        <input type="hidden" id="public_key" value="pk_live_EZ0b0e5WyeOqicQXDxfaHnWP">
+
+        <h3>{{ _('I want to give to YunoHost:') }}</h3>
+
+        <input type="number" min="0" max="9999" id="quantity" value="10"
+          aria-label="{{ _('Amount') }}">
+
+        <select id="currency" style="width:40px" aria-label="{{ _('Currency') }}">
+          <option value="EUR">€ </option>
+          <option value="USD">$ </option>
+        </select>
+
+        <select id="frequency" aria-label="{{ _('Frequency') }}">
+          <option value="recuring"> {{ _('/ month') }} </option>
+          <option value="one_time"> {{ _('one time') }} </option>
+        </select>
       </div>
-      <div class="w-1/3">
-        <a
-          href="https://donate.yunohost.org"
-          class="p-3 bg-lime-200 text-lime-800 font-semibold w-48 hover:saturate-150"
-          >Je donne mon arjen</a
-        >
-      </div>
+
+      <img class="inline-block px-3" src="assets/img/nyancat.gif" style="transform: scaleX(-1);" />
+      <button id="submit" class="px-4 py-2 bg-sky-200 text-sky-800 font-semibold hover:saturate-150" >
+        {{ _("Donate") }}
+      </button>
+      <img class="inline-block px-3" src="assets/img/nyancat.gif" />
+
+      <div id="error-message"></div>
     </div>
-  </section>
 
-  <section id="budget-2024" class="max-w-screen-lg mx-auto py-10">
-    <h2 class="text-center pb-10 text-4xl font-bold">
-      À quoi servent vos dons ?
-    </h2>
-    <div class="text-center flex flex-row gap-2 justify-between">
-      <div class="w-1/2">
-        <img
-          src="https://mermaid.ink/img/pako:eNpVkc9KAzEQxl9lCCx76cFWC5KrRfDgSfAguUyb6RrJZuIkUUrpA_kcvpjZXXaxl_z5vt8kHzNndWBLSqumOZsA4ILLGsYjQJvfqadWQ7vHRO3qv_qK4nDvKbULXq3oaD3wLBi6pWIyNoMhZK_V20E9kff8fW3cDUYnRKGd5Muw1eXSNCaYUBHILnuC3e9PpJAogS0QhT8oTxVG7eiLPMdYA4dsFGhYb7az-RSOgqN4v2iPgi5N4PZmFh-EPwvlXH-IXATqg5xKP3NDGrVSPUmPztZejv0wauyTUboeLR2x-Jqgxq8olswvp3BQOkuhlRIu3bvSR_Sp3kq0mGnnsBPsZyRieGPuF4isyyzP0_DGGV7-AAfojmM?type=png)](https://mermaid.live/edit#pako:eNpVkc9KAzEQxl9lCCx76cFWC5KrRfDgSfAguUyb6RrJZuIkUUrpA_kcvpjZXXaxl_z5vt8kHzNndWBLSqumOZsA4ILLGsYjQJvfqadWQ7vHRO3qv_qK4nDvKbULXq3oaD3wLBi6pWIyNoMhZK_V20E9kff8fW3cDUYnRKGd5Muw1eXSNCaYUBHILnuC3e9PpJAogS0QhT8oTxVG7eiLPMdYA4dsFGhYb7az-RSOgqN4v2iPgi5N4PZmFh-EPwvlXH-IXATqg5xKP3NDGrVSPUmPztZejv0wauyTUboeLR2x-Jqgxq8olswvp3BQOkuhlRIu3bvSR_Sp3kq0mGnnsBPsZyRieGPuF4isyyzP0_DGGV7-AAfojmM"
-          alt="camembert des dépenses"
-          class=""
-        />
-      </div>
-      <div class="w-1/2">camembert</div>
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        window.stripe = Stripe(document.getElementById('public_key').value);
+
+        // When the form is submitted...
+        var submitBtn = document.querySelector('#submit');
+        submitBtn.addEventListener('click', function (evt) {
+            var quantity = parseInt(document.getElementById('quantity').value);
+            var currency = document.getElementById('currency').value;
+            var frequency = document.getElementById('frequency').value;
+            //var csrf = document.getElementById('csrf').value;
+
+            // Create the checkout session.
+            fetch('https://donate.yunohost.org/create-checkout-session', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    // csrf: csrf,
+                    quantity: quantity,
+                    currency: currency,
+                    frequency: frequency
+                }),
+            }).then(function (result) {
+                return result.json();
+            }).then(function (data) {
+                // Redirect to Checkout. with the ID of the
+                // CheckoutSession created on the server.
+                stripe.redirectToCheckout({
+                    sessionId: data.sessionId,
+                })
+                    .then(function(result) {
+                        // If redirection fails, display an error to the customer.
+                        if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                        }
+                    });
+            });
+        });
+    });
+    </script>
+
+</section>
+
+
+
+<section id="why">
+
+    <h2>Why support YunoHost in 2025?</h2>
+
+    <h3>0. Encapacitate as many as possible</h3>
+
+    <p class="py-3">
+    YunoHost is a non-profit project that advocates a decentralized Internet, with open, interoperable, sober technologies that respect privacy and (re-)empower the greatest number of people and collectives.
+    </p>
+
+    <h3>1. Preserve what's useful to you <span class="bg-green-200 text-green-800 rotate-[-3deg] inline-block px-1.5 py-0.5">5&nbsp;500€</span></h3>
+
+    <p class="py-3">
+    Donations are used primarily to maintain the existing system, in particular by paying infrastructure costs (YunoHost services and task automation) and enabling the team to meet at least once a year.
+    </p>
+
+    <h3>2. Perpetuating the facilitation position <span class="bg-purple-200 text-purple-800 rotate-[-3deg] inline-block px-1.5 py-0.5">12&nbsp;000€</span></h3>
+
+    <p class="py-3">
+    Since mid-2024, the team involved in the day-to-day development of YunoHost has been calling on a facilitator (a.k.a “touilleur”) to take care of the collective both humanly and administratively, as well as in its external relations. We need more donations to sustain this essential position.
+    </p>
+
+    <h3>3. Boosting development  <span class="bg-sky-200 text-sky-800 rotate-[-3deg] inline-block px-1.5 py-0.5">11&nbsp;000€</span></h3>
+
+    <p class="py-3">
+    The publication of new large-scale developments depends essentially on the availability of contributors. If the budget allows, the team would like to remunerate certain developments to enable contributors to free up professional time to carry them out.
+    </p>
+
+</section>
+
+
+<section>
+
+    <h2>YunoHost in 2024</h2>
+
+    <div class="flex flex-md md:flex-row !max-w-screen-lg">
+
+        <div class="mx-5 w-1/4">
+          <img src="assets/img/fursona.png" title="{{ _("Claude, YunoHost's mascot") }}" alt="{{ _("Image of Claude, YunoHost's mascot. The humanoid oppossum stands with purple hair and scarf, round glasses, beige pants with pockets and a blue crop top with the YunoHost logo.") }}" />
+        </div>
+
+        <div class="mx-5">
+            <h3>Project</h3>
+
+            <ul class="py-3">
+                <li>🎂 a 14 years old project</li>
+                <li>👷 about fifteen regularly active core-contributors</li>
+                <li>💰 volunteer work that could be valued at around €500,000 a year if remunerated</li>
+            </ul>
+
+            <h3>Community</h3>
+
+            <ul class="py-3">
+                <li>🌐 ~10&nbsp;000 instances in 77 countries</li>
+                <li>💸 130 regular or occasional donors in 2024</li>
+                <li>👥 8&nbsp;700+ accounts on the various project channels (forge, forum, chat)</li>
+                <li>🗣️ <a href="https://translate.yunohost.org/projects/yunohost/#languages">15+ languages supported</a></li>
+            </ul>
+
+
+            <h3>Software and ecosystem</h3>
+
+            <ul class="py-3">
+                <li>📦 <a href="https://apps.yunohost.org/catalog">540+ apps in the catalog</a> (<a href="https://apps.yunohost.org/charts">a brief history</a>)</li>
+                <li>🧑‍💻 760 Git code repositories (<a href="https://github.com/orgs/YunoHost/repositories">core</a> + <a href="https://github.com/orgs/YunoHost-Apps/repositories">apps</a>)</li>
+            </ul>
+        </div>
     </div>
-  </section>
 
-  <section id="previ-2025" class="max-w-screen-lg mx-auto py-10">
-    <h2 class="text-center pb-10 text-4xl font-bold">
-      Feuille de route et feuille de rêve
-    </h2>
-    <img
-      src="https://mermaid.ink/img/pako:eNqdVs1u20YQfpXB9uCL_kjqx-HFkKumNRolThikQKHLihxKC5O7xHJpmzZ8K3pM4iSXJi1aFGhRFHmAnvowfoH2ETok7ca0Vm1R6kBy-M1wvplvhjpnoYqQ-azb7S5kqGQsVv5CApg1pviMa8GXCea1CSBW0gTiDH3YcXoepjuNOQxCnuCArB_F4W7L-IAvMamfOI7TeuI08HgT7tjgbmXkaIG7NrhXGZFXv00P77ZHTdQHiYXRPFnIuhBGpJgIiY1rjqERSsJ-kSQ5ltfW6nCcnvPhrj58-PP7N5eww6NUyHwHVloVmQXz-mc45OERXwm5gmPXgnj-7o_fXsATjHlolIZVopY8oWSMIZd8w-Hq7TcN_kTpI4hUyoXs8yyDY4EnuS3-LzDjBK0r0OJky-bNS5iVcvYwAI2hOkZdQsbznF4W2di9h9nnB3NSjAbKIbcX4DNMMtQ5uNYqvvuh4vO4EAaBQ6IMqBioqBQS5bofi1PMW2l7mzV5_3UVYy5WmtctNAr2lTqirNM7vW1Z64BubwDbqnwghRHUjVBphLzIMqWNhcLbX2_6EQSPoA8VrBKZPehhGXGSXlhXrZnFjEtMtvb6C1zWMoMuPCvQ6z8tM8xDLTLTouGAPbXDOhvgedWiPUpvrji9uMiNSsUZX4pEmNLWuW-JzieE3yctogZFTWzKmxuNPK0UTUmdXGdn7_2nKMkroW0C63-Qwd7eXouLC1ffvf7XcfLsINJwgEn8t3BJyjROduzlTzW2q3EliFbNz4a827tj14Zq0dhC7eF_ku9TLU4Fbg92I-i7OMfrDf6fmsnTaccOVIoRL6---vEDaoPhrY2UJTxESFVR7VSSDJwIs4b7PDfTw4O7XiTNS5gWpEFe1VNjqshjSc0tss71mQYpEWG56frqdwhoWfIVvY5LOqUozSaMhODen24X6fWABE0pIJjOH_QfHcw-rieTRnkTTfqDKS3bZSGjpNpLrMNS1LSEI_q6nlcOC9ZsWubTZUSbd8EW8oJwnMgGpQyZb3SBHUZfjNWa-TGnr02HFVnEDc4EJxGkNxDaC18qdfuW-efslPldd7Tbuzee7HrD4cQdj8buqMNKsjuTnjOajMcjd-SOd0ej4eSiw87qGE5vOB46g4HrjdzJxHPvjTsMI0F1nDd_DppdxC7-AiGlfW0?type=png"
-      alt="roadmap"
-    />
-    Scenario 1 Dev : 11 000€ Personnel : 12 000€ Infra : 1 500€ Évenements :
-    3 500€ (YunoCamp + 1 ou 2 évenements) Frais : 250€ Dons : 300€ Total
-    dépenses: 28 550€ Bilan sur l’année si dons équivalent à 2023-2024 et
-    sans subventions : -14 250€ Selon les comptes actuels de l’association,
-    nous ne pourrions tenir qu’une seule année avec ce niveau de dépense.
+</section>
 
-    <hr />
-    Scenario 2 La même chose que précédemment mais sans la rémunération dev.
-    Total dépenses: 17 550€ Bilan sur l’année si dons équivalent à 2023-2024
-    : -3 250€ Selon les comptes actuels de l’association, nous pourrions
-    tenir 4 ou 5 ans avec ce niveau de dépense.
-  </section>
-  <section id="stats-yuno" class="max-w-screen-lg mx-auto py-10">
-    <h2 class="text-center pb-10 text-4xl font-bold">
-      YunoHost a besoin de vous
-    </h2>
-  </section>
+<section>
+
+    <h2>What are your donations used for?</h2>
+
+    <p class="py-3">
+    Your donations guarantee our independence: they constitute our entire income in 2024.
+    </p>
+
+    <h3>Revenues</h3>
+
+    <p class="py-3">
+    In recent years, donations have been in the region of €15,000 per year, mainly from individuals.
+    </p>
+
+    <p class="py-3">
+    Between 2021 and 2023, the project benefited from grants from the <a href="https://nlnet.nl/project/InternetCube/">NLnet</a>) foundation and the <a href="https://mastodon.libre-entreprise.com/@codelutin/105066492461041800">CodeLutin</a> company for a total of around €15,000 which were used to develop features for versions 4 and 11 of the project. The team is regularly applying for new grants.
+    </p>
+
+    <p class="py-3">
+    In addition, YunoHost receives significant in-kind donations in the form of servers from associations and independent web companies such as Globenet, Gitoyen, TetaNeutral and Octopuce.
+    These in-kind donations are not represented in the graph below.
+    </p>
+
+    <img src="https://mermaid.ink/img/pako:eNplUktqwzAQvcqgENyCDbKSmMSLbtJtobTQReMsxvYkEXWsIMslIWTTi2RXuuipeoIeoZJMPlAkRm-enmZGGu1ZoUpiKev391kNIGtpUvAQIDArWlOQQlCifgvCa_YFtcS8oiY4y-3WdjddoTaOgxMJkLFNpcxUVUo_YkXGUMYgtXRvURaUiLA3GmFBlr2cOXTQL9Yc-v2sdmO7K1yGKCeDncRIU5EN9kSFC93Aze_x-AmlqhsgA9b5gqbN36k20nK3pyzbCLeygZng8SQSXPAQnHUw9jB2UHgoHBx4OHBwGNqEds67ULsu1HUNPx_fNhNwiKI7EBPOeSftbI4aZoMkSUKIxSAZ22UsuK_AFxIPxWQ4_6cdeynE3GvjZHStZSFbk16jLG07fUsy5luVMffWJS2wrYy7_cFKsTXqeVcXLDW6pZBp1S5XLF1g1Viv3ZRo6F7iUuP6zG6wflXq4lMpjdIP3Qfy_-jwBxd8rGY?type=png" />
+
+    <!--
+    https://mermaid.live/edit#pako:eNplUktqwzAQvcqgENyCDbKSmMSLbtJtobTQReMsxvYkEXWsIMslIWTTi2RXuuipeoIeoZJMPlAkRm-enmZGGu1ZoUpiKev391kNIGtpUvAQIDArWlOQQlCifgvCa_YFtcS8oiY4y-3WdjddoTaOgxMJkLFNpcxUVUo_YkXGUMYgtXRvURaUiLA3GmFBlr2cOXTQL9Yc-v2sdmO7K1yGKCeDncRIU5EN9kSFC93Aze_x-AmlqhsgA9b5gqbN36k20nK3pyzbCLeygZng8SQSXPAQnHUw9jB2UHgoHBx4OHBwGNqEds67ULsu1HUNPx_fNhNwiKI7EBPOeSftbI4aZoMkSUKIxSAZ22UsuK_AFxIPxWQ4_6cdeynE3GvjZHStZSFbk16jLG07fUsy5luVMffWJS2wrYy7_cFKsTXqeVcXLDW6pZBp1S5XLF1g1Viv3ZRo6F7iUuP6zG6wflXq4lMpjdIP3Qfy_-jwBxd8rGY
+    -->
+
+    <h3>Expenses</h3>
+
+    <p class="py-3">
+    Between 2022 and 2024, the collective spent around €12,500 a year.
+    In 2025, the creation of the position of ‘stirrer’ for the collective will represent an additional expense of €12,000 per year. YunoHost would like to be able to continue its financial contributions to the development of important features for the project and its community. The projected budget for 2025 is therefore around €28,000.
+    </p>
+
+    <p class="py-3">
+    Project expenditure breaks down into the following categories:
+    <ul class="list-disc ps-5 py-3">
+        <li><strong>Development</strong>: one-off funding linked to the development and maintenance of the project, thanks to both grants and donations received. It should be noted, however, that this amount is anecdotal in relation to the voluntary work carried out by the team.</li>
+        <li><strong>Infrastructure</strong>: corresponds to the hosting of the tools used by the project, such as the website, documentation, forum, technical tools, etc. The amount of this expenditure should reduce in 2025 following a migration to a dedicated server with a friendly host.</li>
+        <li><strong>Events</strong>: expenses to enable the team to take part in events (e.g. <a href="https://jdll.org/)">JdLL</a>, and to meet in the same place once a year to work together on fundamental issues.</li>
+        <li><strong>Fees and other expenses</strong>: bank charges or donations made to other collectives that support the project in kind.</li>
+        <li><strong>Collective facilitation</strong>: financial compensation allocated to the tasks of administrative facilitation, facilitation and coordination of the collective. This is a new type of expense introduced in 2025, decided by the collective in view of the need to have a person dedicated to these aspects (a.k.a ‘touilleur’).</li>
+    </ul>
+    </p>
+
+    <img src="https://mermaid.ink/img/pako:eNqNks9q3DAQxl9l0LI4BRlk-c-ufQiEpIceCoVCD41z0K5ndwW2bGR5WRP20uco5FaakLfom-QJ-giVZJJtcgqG0aeZnz6NzNySdVshKch8flsqAKmkKcBLgMDssMGggEDhYLSoA_p_4ZvQUqxq7IOXE7Z0GC93QhuXg-ckQEm6ujWXbd3qL6JGY7AkUNj0TIglVhmdpalYI9LZplpjxulssVxFaU5rud2ZrcaxJCe34yT9YsNxPi-V-w7j2t0drtCICTHS1Givufpz36HqsYezv3d3D3ChZEPByl9gS3svf8MntdHC63v4uEdlegpPjz_hwr4e-w_PLRxCcZA9XHPGWWhDRMFFJ7mX3MnYy9jJhNoWzjqNe-txM5mMk8mr1p5-PFoAGIThOfCcMTaxU1wJDddpzBiFPI9tXKTcxmiRZHbhyzRlN-8ho-wNGfHUpT3Jc0dC4klI35BZ4rKwcM6R97THPJmw12Scn0iIPAmTJ0yehJIGdSNkZafPj09J_FiVxM1FhRsx1Mb98qNFxWDar6Nak8LoASnR7bDdkWIj6t7uhq4SBq-k2GrRvGQ7ob637WmPlTSt_jzNux_74z-6Ad0U?type=png" />
+
+    <!--
+    https://mermaid.live/edit#pako:eNqNks9q3DAQxl9l0LI4BRlk-c-ufQiEpIceCoVCD41z0K5ndwW2bGR5WRP20uco5FaakLfom-QJ-giVZJJtcgqG0aeZnz6NzNySdVshKch8flsqAKmkKcBLgMDssMGggEDhYLSoA_p_4ZvQUqxq7IOXE7Z0GC93QhuXg-ckQEm6ujWXbd3qL6JGY7AkUNj0TIglVhmdpalYI9LZplpjxulssVxFaU5rud2ZrcaxJCe34yT9YsNxPi-V-w7j2t0drtCICTHS1Givufpz36HqsYezv3d3D3ChZEPByl9gS3svf8MntdHC63v4uEdlegpPjz_hwr4e-w_PLRxCcZA9XHPGWWhDRMFFJ7mX3MnYy9jJhNoWzjqNe-txM5mMk8mr1p5-PFoAGIThOfCcMTaxU1wJDddpzBiFPI9tXKTcxmiRZHbhyzRlN-8ho-wNGfHUpT3Jc0dC4klI35BZ4rKwcM6R97THPJmw12Scn0iIPAmTJ0yehJIGdSNkZafPj09J_FiVxM1FhRsx1Mb98qNFxWDar6Nak8LoASnR7bDdkWIj6t7uhq4SBq-k2GrRvGQ7ob637WmPlTSt_jzNux_74z-6Ad0U
+    -->
+
+</section>
+
+
+
+
+
+
+<section>
+
+    <h2>Roadmap and dreammap</h2>
+
+    <p>
+    We're publishing a roadmap here to give a clearer idea of what we plan to develop. It in no way constitutes a commitment on the part of the team, and is dependent on the availability and energies of volunteers. It is therefore subject to change at any time.
+    </p>
+
+    <img src="https://mermaid.ink/img/pako:eNqlVs2OG0UQfpXScFiQ1usd-4J8WXkxCRbrxGGyASFf2jM1dmt7uofunnWcKBIHxBHYJBcSED8SP0I5wI0TD7MvAI9AdY-92bHbJBLeg701VdVV31df9TyMUpVh1ItardZEpkrmfNabSAA7xwLvMc3ZVKDxJoBcSZvwB9iDvfigi8VebU6TlAk8JOsbefp2w3jCpij8kziOG0_i2j3fdo9D7h1nZBhw74Tcu86IzP1tR3SvR_hGeyCxspqJifRAWF6g4BLrUIOp5UrCcSWEweXK6j5xfBC__M9_evDPd08vYI9lBZdmD2ZaVWXA58nPMGbpGZtxOYPzTsDji-d___klfIA5S63SMBNqygQVYy2FmK2Ay2df1_4Lpc8gUwXjss3KEs45Lkwo_68wYOTqEWj0FKrm6VcwWMrBrQQ0puoc9RJKZgwdloW6ewGD94cjmhgNVIMJA_AeihK1gU4Qxeffu37uVNwiMBDKgsqBQKWUKOftnN9H0yi7u43Ji89djhGfaeYptAqOlTqjqosNbhtWn7BzcAi7UB5KbjmxsQ4DU5Wl0jbQxrPf1pwkyW1og3NzgxZOPF5mjMYv9cjVeiyZRLGT7w9x6kcNWnCvwm777rJEk2pe2kYrMYRLG_tqgBlH0xGVN1KMDq6MVQV_wKZccLsMsfcNtfMu-R_TPKIGRUTWEBurkRVuqqmoxaq6QIZf_oBkwW06d6TI3PpF49vOucYFEyGMfoAx6hx4UWqawQKl9REng_6Y5vKTCo01jb47cPntk3DrxzRWdKY7fs7O0elgRQ5QG4wondYqCg_vTZTUsqB1SEJYCzk8yU2td4GJcs5CdR0dHTWq7-6onsR4agj1tQKpd9oL5AtvutVl3KqDDEuUmeuFpp-AatNSkJ4jQyke__5WIPHFT3VigyJvaZxxYtOH_O_cm63dei2x3tX8Pt9Yw9dtPln34PBVOq1jdqp0U3znnVfrr9lQd7Mhh-bjvyCh1c1mCAWT9OUGdotRP44X0K9IcsydrrFQtPOmNDJVub_6ptEUPF16Hl4T_TVgiSowY8vLz358eXCj-qsb4VO4qVlWEWCnw_bpR9d1ZnbLeTWRnRv9__YhzSU1AZD0Ryft28PBOx5nWozb3iSaPt1e00pmAs3m86vbrhQsJXhV5e5rWkVAO2UON5ix_fEw2o8K1KThjF5xHrock6i-7qIe_czobq2EnUQT-YhcGTGQLGUa9ayucD-im3s2j3o5o1t_P6rKjFkccEaYF2sXmo2PlSqunDDjRPiofqfyr1aP_gVsFPYI?type=png" />
+
+    <!--
+    https://mermaid.live/edit#pako:eNqlVs2OG0UQfpXScFiQ1usd-4J8WXkxCRbrxGGyASFf2jM1dmt7uofunnWcKBIHxBHYJBcSED8SP0I5wI0TD7MvAI9AdY-92bHbJBLeg701VdVV31df9TyMUpVh1ItardZEpkrmfNabSAA7xwLvMc3ZVKDxJoBcSZvwB9iDvfigi8VebU6TlAk8JOsbefp2w3jCpij8kziOG0_i2j3fdo9D7h1nZBhw74Tcu86IzP1tR3SvR_hGeyCxspqJifRAWF6g4BLrUIOp5UrCcSWEweXK6j5xfBC__M9_evDPd08vYI9lBZdmD2ZaVWXA58nPMGbpGZtxOYPzTsDji-d___klfIA5S63SMBNqygQVYy2FmK2Ay2df1_4Lpc8gUwXjss3KEs45Lkwo_68wYOTqEWj0FKrm6VcwWMrBrQQ0puoc9RJKZgwdloW6ewGD94cjmhgNVIMJA_AeihK1gU4Qxeffu37uVNwiMBDKgsqBQKWUKOftnN9H0yi7u43Ji89djhGfaeYptAqOlTqjqosNbhtWn7BzcAi7UB5KbjmxsQ4DU5Wl0jbQxrPf1pwkyW1og3NzgxZOPF5mjMYv9cjVeiyZRLGT7w9x6kcNWnCvwm777rJEk2pe2kYrMYRLG_tqgBlH0xGVN1KMDq6MVQV_wKZccLsMsfcNtfMu-R_TPKIGRUTWEBurkRVuqqmoxaq6QIZf_oBkwW06d6TI3PpF49vOucYFEyGMfoAx6hx4UWqawQKl9REng_6Y5vKTCo01jb47cPntk3DrxzRWdKY7fs7O0elgRQ5QG4wondYqCg_vTZTUsqB1SEJYCzk8yU2td4GJcs5CdR0dHTWq7-6onsR4agj1tQKpd9oL5AtvutVl3KqDDEuUmeuFpp-AatNSkJ4jQyke__5WIPHFT3VigyJvaZxxYtOH_O_cm63dei2x3tX8Pt9Yw9dtPln34PBVOq1jdqp0U3znnVfrr9lQd7Mhh-bjvyCh1c1mCAWT9OUGdotRP44X0K9IcsydrrFQtPOmNDJVub_6ptEUPF16Hl4T_TVgiSowY8vLz358eXCj-qsb4VO4qVlWEWCnw_bpR9d1ZnbLeTWRnRv9__YhzSU1AZD0Ryft28PBOx5nWozb3iSaPt1e00pmAs3m86vbrhQsJXhV5e5rWkVAO2UON5ix_fEw2o8K1KThjF5xHrock6i-7qIe_czobq2EnUQT-YhcGTGQLGUa9ayucD-im3s2j3o5o1t_P6rKjFkccEaYF2sXmo2PlSqunDDjRPiofqfyr1aP_gVsFPYI
+    -->
+
+    <details>
+        <summary>Légende</summary>
+
+        [FIXME / TODO : finish original french version and and translate ?
+
+    </details>
+</section>
+
+
+
+<section>
+
+    <h2>General questions about donations</h2>
+
+    <h3 class="text-lg">Will my donation be tax deductible?</h3>
+
+    <p class="py-3">
+    At this time, we do not provide tax-deductible donation receipts. We can, however, issue donation receipts for your accounting purposes.
+    </p>
+
+    <h3 class="text-lg">My donation is not sent to YunoHost but to the Support Self-Hosting association. Is this normal?</h3>
+
+    <p class="py-3">
+    Yes, that's expected, Support Self-Hosting is the association that enables the YunoHost project to collect donations and pay expenses.
+    </p>
+
+    <h3 class="text-lg">Can I become a member of the Support Self-Hosting association?</h3>
+
+    <p class="py-3">
+    No: this is an association whose members are chosen by co-option.
+    We don't think you need to be a member of Support Self-Hosting to contribute to the YunoHost project. Anyone can come and lend a hand on most of our projects, and we do our best to welcome goodwill.
+    </p>
+
+    <h3 class="text-lg">I can't make a recurring donation, but I'd like to support YunoHost. What can I do?</h3>
+
+    <p class="py-3">
+    Thank you for your support and commitment.
+    You can make a one-off donation directly from the <a href="https://donate.yunohost.org">https://donate.yunohost.org</a> page.
+    </p>
+
+    <h3 class="text-lg">I've made a monthly donation but I've made a mistake in the amount or I'd like to change it. How do I proceed?</h3>
+
+    <p class="py-3">
+    For recurring credit card donations, we cannot change the amount for future debits, but we can stop them.
+
+    To do so, please contact us at <a href="mailto:donate-5542@yunohost.org">this e-mail address</a>. We will then invite you, if you wish, to renew your donation the following month with the correct amount.
+    </p>
+
+    <h3 class="text-lg">I am currently making a recurring donation but my credit card has expired. What should I do?</h3>
+
+    <p class="py-3">
+    Normally, your recurring donation will be automatically stopped once your card has been deactivated.
+
+    To update your bank details with Support Self-Hosting, please complete the form on the <a href="https://donate.yunohost.org">https://donate.yunohost.org</a> page as if it were your first donation.
+    </p>
+
+    <h3 class="text-lg">My organization doesn't have a credit card, but would like to make a donation. How do I go about it?</h3>
+
+    <p class="py-3">
+    You can contact us so that we can provide you with a RIB to make a transfer.
+    </p>
+
+    <h3 class="text-lg">I'd like to stop a recurring donation. What can I do?</h3>
+
+    <p class="py-3">
+    This requires a manual operation on our part.
+    Please do not hesitate to contact us at the following this e-mail address <a href="mailto:donate-5542@yunohost.org">link</a>.
+    </p>
+
+</section>
 
 {% endblock %}

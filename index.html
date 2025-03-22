@@ -1,162 +1,56 @@
-<!DOCTYPE html>
-<html lang="{{ lang }}" class="scroll-smooth">
-  <head>
-    <title>{{ _("YunoHost: garden your own piece of the Internet!") }}</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/fonts/fork-awesome.min.css" />
-    <link rel="stylesheet" href="assets/fonts/source-sans/source-sans-3.css" />
+{% extends "base.html" %}
 
-    <!-- Enabled on generated pages {{ '--'+'>' }}
+{% block page_id %}index{% endblock %}
 
-        <link rel="stylesheet" href="assets/css/prod.min.css" />
+{% block title %}
+{{ _("YunoHost: garden your own piece of the Internet!") }}
+{% endblock %}
 
-    {{ '<'+'!--' }}-->
+<!-- ############################################################################################################ -->
 
-    <!-- {# Disabled on generated page-->
+{% block header %}
 
-        <link rel="stylesheet" href="assets/css/local.css" />
-        <script src="assets/js/tailwinds.js"></script>
-        <!-- https://tailwindcss.com/docs/theme -->
-        <script>
-        tailwind.config = {
-          darkMode: "selector",
-            theme: {
-            extend: {
-                colors: {},
-            },
-            },
-        };
+    <div class="flex flex-col justify-center text-white text-center relative h-[25rem] bg-top w-full bg-cover" style="background-image: linear-gradient(#0000, #0005), url(assets/img/garden.png); background-size: cover; background-position: bottom;">
 
-        </script>
-
-    <!-- #}-->
-
-
-    <script>
-      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-      function refreshColorMode() {
-        document.documentElement.classList.toggle(
-          "dark",
-          localStorage.theme === "dark" ||
-          (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
-        );
-      }
-
-      function toggleColorMode() {
-        if (
-          localStorage.theme === "dark" ||
-          (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-        ) {
-          localStorage.theme = "light";
-        } else {
-          localStorage.theme = "dark";
-        }
-        // Whenever the user explicitly chooses to respect the OS preference
-        //localStorage.removeItem("theme");
-
-        refreshColorMode();
-      }
-
-      refreshColorMode(); // refresh on load
-
-    </script>
-
-
-
-  </head>
-  <body class="text-lg text-gray-900 dark:bg-neutral-900 dark:text-white transition-colors" style="font-family: 'Source Sans 3', sans-serif; font-optical-sizing: auto;">
-    <header>
-        <nav id="quick-access" aria-label="{{ _("Accessibility menu") }}">
-            <a href="#main-content" class="sr-only">{{ _("Go to content") }}</a>
-            <a href="#main-nav" class="sr-only">{{ _("Go to navigation") }}</a>
-            <a href="#page-settings" class="sr-only">{{ _("Go to page settings") }}</a>
-            <a href="https://doc.yunohost.org/search" class="sr-only">{{ _("Go to search") }}</a>
-        </nav>
-
-        <nav id="page-settings" aria-label="{{ _("Page settings") }}">
-
-            <button type="button" class="z-50 absolute top-3 right-12 text-white" onclick='document.getElementById("lang-selector").classList.toggle("hidden");'>
-                <i class="fa fa-language" aria-label="{{ _('Switch to a different language') }}"></i>
-            </button>
-
-            <div id="lang-selector" class="text-center hidden align-right z-50 absolute top-12 right-12 p-2 text-gray-800 bg-white rounded-md border">
-                <ul>
-                    {% for code, lang_native_name in langs.items() %}
-                    <li><a class="hover:opacity-75" href="index.{{ code }}.html">{{ lang_native_name }}</a></li>
-                    {% endfor %}
-                    <li><a class="max-w-24 p-1 text-sm inline-block hover:opacity-75" href="https://translate.yunohost.org/projects/yunohost/landingpage/"><i class="fa fa-external-link" aria-hidden="true"></i> {{ _("Translate this page!") }}</a></li>
-                </ul>
-            </div>
-
-            <button type="button" class="z-50 absolute top-3 right-3" onclick="toggleColorMode();">
-                <!-- Dark/light mode icons -->
-                <span class="dark:hidden" aria-label="{{ _('Switch to dark mode') }}">
-                <svg alt="" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="w-6 h-6" aria-hidden="true">
-                    <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="fill-sky-400/20 stroke-white"></path>
-                    <path
-                    d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"
-                    class="stroke-white"></path>
-                </svg>
-                </span>
-                <span class="hidden dark:inline" aria-label="{{ _('Switch to light mode') }}">
-                <svg alt="" viewBox="0 0 24 24" fill="none" class="w-6 h-6" aria-hidden="true">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z"
-                    class="fill-white"></path>
-                    <path
-                    d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
-                    class="fill-white"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
-                    class="fill-white"></path>
-                </svg>
-                </span>
-            </button>
-        </nav>
-
-        <!-- ############################################################################################################ -->
-
-        <div class="flex flex-col justify-center text-white text-center relative h-[25rem] bg-top w-full bg-cover" style="background-image: linear-gradient(#0000, #0005), url(assets/img/garden.png); background-size: cover; background-position: bottom;">
-
-            <img alt="{{ _("Yunohost logo") }}" class="self-center pt-5 w-32 mt-2 shadow-md" src="assets/img/ynh_logo_roundcorner.png" />
-            <div class="self-center w-fit p-5 flex align-center justify-center font-bold text-5xl sm:text-6xl backdrop-blur-[1px]" style="text-shadow: 5px 5px 5px #000">
-                <h1>{{ _("Garden your own<br/>piece of the Internet!") }}</h1>
-            </div>
-
+        <img alt="{{ _("Yunohost logo") }}" class="self-center pt-5 w-32 mt-2 shadow-md" src="assets/img/ynh_logo_roundcorner.png" />
+        <div class="self-center w-fit p-5 flex align-center justify-center font-bold text-5xl sm:text-6xl backdrop-blur-[1px]" style="text-shadow: 5px 5px 5px #000">
+            <h1>{{ _("Garden your own<br/>piece of the Internet!") }}</h1>
         </div>
 
-        <!-- ############################################################################################################ -->
+    </div>
 
-        <nav id="main-nav" class="w-full font-semibold py-2 pr-4 flex flex-col sm:flex-row justify-center z-50 bg-[#b6e39d] text-gray-800 dark:bg-[#0F321E] dark:text-white transition-colors text-2xl sm:text-lg" aria-label="{{ _("Main menu") }}">
-            <button class="block sm:hidden w-full py-3" onclick="document.getElementById('main-menu-items').classList.toggle('hidden')"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
-            <ul id="main-menu-items" class="justify-center flex-wrap flex-row hidden text-center sm:text-left sm:flex sm:space-x-10 sm:py-2">
-            <li>
-                <a class="py-3 block sm:inline-block hover:opacity-75" href="#main-content">{{ _("Discover") }}</a>
-            </li>
-            <li>
-                <a class="py-3 block sm:inline-block hover:opacity-75" href="#apps">{{ _("Applications") }}</a>
-            </li>
-            <li>
-                <a class="py-3 block sm:inline-block hover:opacity-75" href="#start">{{ _("Install") }}</a>
-
-            </li>
-            <li>
-                <a class="py-3 block sm:inline-block hover:opacity-75" href="https://doc.yunohost.org">{{ _("Documentation") }}<span class="opacity-50">↗</span></a>
-            </li>
-            <li>
-                <a class="py-3 block sm:inline-block hover:opacity-75" href="#news">{{ _("Latest news") }}</a>
-            </li>
-            <li>
-                <a class="py-3 block sm:inline-block hover:opacity-75" href="#community">{{ _("Community") }}</a>
-            </li>
-            </ul>
-        </nav>
-    </header>
     <!-- ############################################################################################################ -->
-    <main>
-    <section id="main-content" class="text-center py-10">
+
+    <nav id="main-nav" class="w-full font-semibold py-2 pr-4 flex flex-col sm:flex-row justify-center z-50 bg-[#b6e39d] text-gray-800 dark:bg-[#0F321E] dark:text-white transition-colors text-2xl sm:text-lg" aria-label="{{ _("Main menu") }}">
+        <button class="block sm:hidden w-full py-3" onclick="document.getElementById('main-menu-items').classList.toggle('hidden')"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
+        <ul id="main-menu-items" class="justify-center flex-wrap flex-row hidden text-center sm:text-left sm:flex sm:space-x-10 sm:py-2">
+        <li>
+            <a class="py-3 block sm:inline-block hover:opacity-75" href="#main-content">{{ _("Discover") }}</a>
+        </li>
+        <li>
+            <a class="py-3 block sm:inline-block hover:opacity-75" href="#apps">{{ _("Applications") }}</a>
+        </li>
+        <li>
+            <a class="py-3 block sm:inline-block hover:opacity-75" href="#start">{{ _("Install") }}</a>
+
+        </li>
+        <li>
+            <a class="py-3 block sm:inline-block hover:opacity-75" href="https://doc.yunohost.org">{{ _("Documentation") }}<span class="opacity-50">↗</span></a>
+        </li>
+        <li>
+            <a class="py-3 block sm:inline-block hover:opacity-75" href="#news">{{ _("Latest news") }}</a>
+        </li>
+        <li>
+            <a class="py-3 block sm:inline-block hover:opacity-75" href="#community">{{ _("Community") }}</a>
+        </li>
+        </ul>
+    </nav>
+{% endblock %}
+
+<!-- ############################################################################################################ -->
+
+{% block main %}
+    <section id="main-content" class="text-center">
 
         <p class="pb-10 text-3xl">
           <span aria-hidden="true">
@@ -315,16 +209,14 @@
 
     <!-- ############################################################################################################ -->
 
-    <section id="apps" class="text-center py-10 bg-gray-50 dark:bg-[#1A1D1E] transition-colors">
+    <section id="apps" class="text-center">
 
-        <h2 class="pb-10 text-4xl font-bold">{{ _("Examples of uses") }}</h2>
+        <h2>{{ _("Examples of uses") }}</h2>
 
-      <div class="mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-2 pb-10">
+      <div class="mx-auto grid grid-cols-1 md:grid-cols-2 pb-10">
 
         <div class="mx-auto w-96 lg:w-4/5 mb-5 px-5">
-            <h3 class="text-2xl font-bold">
-                {{ _("For you and your friends") }}
-            </h3>
+            <h3>{{ _("For you and your friends") }}</h3>
             <ul class="pt-3 text-left leading-snug">
                 <li class="pb-2"><span aria-hidden="true">🔄</span> {{ _("synchronize your calendars and contacts") }}</li>
                 <li class="pb-2"><span aria-hidden="true">🔐</span> {{ _("keep your passwords and notes safe") }}</li>
@@ -335,9 +227,7 @@
         </div>
 
         <div class="mx-auto w-96 lg:w-4/5 px-5">
-            <h3 class="text-2xl font-bold">
-                {{ _("For small organizations") }}
-            </h3>
+            <h3>{{ _("For small organizations") }}</h3>
             <ul class="pt-3 text-left leading-snug">
                 <li class="pb-2"><span aria-hidden="true">🌐</span> {{ _("host your own website") }}</li>
                 <li class="pb-2"><span aria-hidden="true">🗂️</span> {{ _("share files in common (e.g. with Nextcloud)") }}</li>
@@ -356,21 +246,23 @@
 
       <!-- ############################################################################################################ -->
 
-      <section id="start" class="flex flex-col items-center py-10 text-center">
+      <section id="start" class="flex flex-col items-center text-center">
 
-          <h2 class="pb-10 text-4xl font-bold">{{ _("How to get started") }}</h2>
+          <h2>{{ _("How to get started") }}</h2>
 
-          <div class="px-5 w-full max-w-2xl pb-5 max-w-screen-lg">
+          <div class="px-5 w-full max-w-2xl pb-5">
               <p>
                 {{ _("If you're not sure yet on, we invite you to [try the demo](https://doc.yunohost.org/try),  \nand take a look at [the pros and cons](https://doc.yunohost.org/selfhosting) of managing a server yourself.\n\nTake the time to think about what applications, what type of hardware and what domain name you want for your server.")
-                | markdown |replace('br />', 'br class="hidden md:inline">') | replace("a href", "a class='bg-sky-200 text-sky-800 whitespace-nowrap' href",1) | replace("a href", "a class='bg-amber-200 text-amber-800 whitespace-nowrap' href",1) }}
+                | markdown |replace('br />', 'br class="hidden md:inline">')
+                | replace("a href", "a class='bg-sky-200 text-sky-800 whitespace-nowrap smol-rotate' href",1)
+                | replace("a href", "a class='bg-amber-200 text-amber-800 whitespace-nowrap smol-rotate' href",1) }}
               </p>
           </div>
 
-          <div class="mx-3 md:max-w-screen-lg flex flex-wrap justify-center gap-5 py-10">
+          <div class="mx-3 flex flex-wrap justify-center gap-5 py-10">
 
               <div class="relative basis-80 border-4 border-gray-300 dark:border-gray-700 rounded h-72 mb-10">
-                  <h4 class="text-xl font-bold py-3 border-b-4 border-gray-300 dark:border-gray-700">1. {{ _("Choosing a support") }}</h4>
+                  <h3 class="py-3 border-b-4 border-gray-300 dark:border-gray-700">1. {{ _("Choosing a support") }}</h3>
                 <div class="py-10 px-5 leading-snug">
                     <ul>
                         <li class="pb-2"><span aria-hidden="true">🪺</span> {{ _("ARM board / Raspberry Pi") }}</li>
@@ -382,7 +274,7 @@
               </div>
 
               <div class="relative basis-80 border-4 border-gray-300 dark:border-gray-700 rounded h-72 mb-10">
-                  <h4 class="text-xl font-bold py-3 border-b-4 border-gray-300 dark:border-gray-700">2. {{ _("Install YunoHost") }}</h4>
+                  <h3 class="py-3 border-b-4 border-gray-300 dark:border-gray-700">2. {{ _("Install YunoHost") }}</h3>
                 <div class="py-7 px-5 leading-snug">
                     <ul>
                         <li class="pb-2"><span aria-hidden="true">🚀</span> {{ _("Check the prerequisites<br>then flash or install the system") }}</li>
@@ -393,7 +285,7 @@
               </div>
 
               <div class="relative basis-80 border-4 border-gray-300 dark:border-gray-700 rounded h-72">
-                  <h4 class="text-xl font-bold py-3 border-b-4 border-gray-300 dark:border-gray-700">3. {{ _("Enjoy!") }}</h4>
+                  <h3 class="py-3 border-b-4 border-gray-300 dark:border-gray-700">3. {{ _("Enjoy!") }}</h3>
                 <div class="py-10 px-5 leading-snug">
                     <ul>
                       <li class="pb-2"><span aria-hidden="true">📦</span> {{ _("Install applications<br>in just a few clicks") }}</li>
@@ -410,13 +302,13 @@
 
       <!-- ############################################################################################################ -->
 
-      <section id="news" class="text-center py-10 bg-gray-50 dark:bg-[#1A1D1E] transition-colors">
-            <h2 class="mt-5 py-5 pb-10 text-4xl font-bold text-center">{{ _("Latest news") }}</h2>
+      <section id="news" class="text-center">
+            <h2>{{ _("Latest news") }}</h2>
             <div class="px-5 mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-3 pb-10 gap-5">
                 {% for article in articles %}
                 <article class="p-2 border-4 border-gray-300 dark:border-gray-700 rounded flex flex-col items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-600">
                     <div>
-                        <a href="{{ article['link'] }}"><h3 class="font-bold">{{ article["title"] }}</h3></a>
+                        <a href="{{ article['link'] }}"><h3 class="text-lg">{{ article["title"] }}</h3></a>
                         <time class="opacity-75" datetime="{{ article["date"] }}" class="italic">{{ article["date"][8:10] + "/" + article["date"][5:7] + "/" + article["date"][0:4] }}</time>
                     </div>
                 </article>
@@ -427,9 +319,9 @@
 
       <!-- ############################################################################################################ -->
 
-      <section id="community" class="py-10 transition-colors">
+      <section id="community">
 
-        <div class="mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-3">
+        <div class="grid grid-cols-1 md:grid-cols-3">
 
             <div class="mx-auto hidden md:block">
               <img src="assets/img/fursona.png" title="{{ _("Claude, YunoHost's mascot") }}" alt="{{ _("Image of Claude, YunoHost's mascot. The humanoid oppossum stands with purple hair and scarf, round glasses, beige pants with pockets and a blue crop top with the YunoHost logo.") }}" />
@@ -437,7 +329,7 @@
 
             <div class="col-span-2 mx-auto px-5 w-full sm:w-4/5 lg:w-2/3">
 
-                <h2 class="py-5 text-4xl font-bold text-center">{{ _("Community") }}</h2>
+                <h2>{{ _("Community") }}</h2>
 
               <div class="text-center">
 
@@ -462,90 +354,16 @@
             </div>
 
       </div>
-
       </section>
-      <section id="supporters" class="text-center p-5 bg-amber-100  dark:bg-[#2e1f44] transition-colors">
-          <h2 class="py-5 text-4xl font-bold text-center">{{ _("They support us <3") }}</h2> {# ">  Boring comment to fix syntax highlighting #}
+
+      <section id="supporters" class="text-center !bg-amber-100 !dark:bg-[#2e1f44]">
+          <h2>{{ _("They support us <3") }}</h2> {# ">  Boring comment to fix syntax highlighting #}
           <p class="mb-5">{{ _("We are thankful for our sponsors providing us with infrastructure and grants!") }}</p>
-          <div class="mb-5 flex flex-wrap gap-5 justify-center">
+          <div class="mb-5 flex flex-wrap gap-5 justify-center max-w-screen-md">
                 {% for supporter in ["nlnet", "ngi", "codelutin", "globenet", "gitoyen", "tetaneutral", "octopuce"] %}
                 <img src="assets/img/logo_{{ supporter }}.png" alt="{{ supporter }}" class="h-16"/>
                 {% endfor %}
           </div>
       </section>
-      </main>
 
-<footer class="bg-[#b6e39d] dark:bg-[#0F321E] transition-colors relative">
-    <div class="mx-3 py-3 md:mx-auto max-w-screen-md flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-5">
-        <img alt="{{ _("Yunohost logo") }}" class="h-32 mt-8 lg:mr-8" src="assets/img/ynh_logo_roundcorner.png" />
-        <div class="grid grid-cols-2 md:grid-cols-4 justify-center gap-5 py-5 leading-none">
-            <div>
-                <h3 class="py-2 font-bold">{{ _('Legal') }}</h3>
-                <ul>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/YunoHost/yunohost/blob/dev/LICENSE">{{ _('License') }}</a></li>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://doc.yunohost.org/terms_of_services">{{ _('Terms of services') }}</a></li>
-                    {# <li class="pb-2"><a href="">{{ _('Legal mentions') }}</a></li> #}
-                    {# <li class="pb-2"><a href="">{{ _('Accessibility') }}</a></li> #}
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/YunoHost/project-organization">{{ _('Organization') }}</a></li>
-                    {# <li class="pb-2"><a href="">{{ _('Credits') }}</a></li> #}
-                </ul>
-            </div>
-            <div>
-                <h3 class="py-2 font-bold">{{ _('Follow') }}</h3>
-                <ul>
-                    {# <li><a href="">{{ _('Press kit') }}</a></li> #}
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://forum.yunohost.org/c/announcement/8/none">{{ _('Blog') }}</a></li>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://toot.aquilenet.fr/@yunohost">{{ _('Mastodon') }}</a></li>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://videos.globenet.org/a/yunohost/videos?s=1">{{ _('Peertube') }}</a></li>
-                    {# <li class="pb-2"><a href="">{{ _('RSS feed') }}</a></li> #}
-                </ul>
-            </div>
-            <div>
-                <h3 class="py-2 font-bold">{{ _('Use') }}</h3>
-                <ul>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://doc.yunohost.org">{{ _('Documentation') }}</a></li>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://apps.yunohost.org/">{{ _('Apps store') }}</a></li>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://forum.yunohost.org">{{ _('Forum') }}</a></li>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://doc.yunohost.org/help">{{ _('Self-help chat') }}</a></li>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://status.yunohost.org">{{ _('Services status') }}</a></li>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/YunoHost/yunohost/blob/dev/debian/changelog">{{ _('Changelog') }}</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="py-2 font-bold">{{ _('Contribute') }}</h3>
-                <ul>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://donate.yunohost.org">{{ _('Donate') }}</a></li>
-                    {# <li class="pb-2"><a href="">{{ _('Chat') }}</a></li> #}
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/YunoHost/issues/issues">{{ _('Issues tracker') }}</a></li>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://doc.yunohost.org/security_team">{{ _('Security') }}</a></li>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/yunohost">{{ _('Code (core)') }}</a></li>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/yunohost-apps">{{ _('Code (apps)') }}</a></li>
-                    <li class="pb-2"><a class="hover:opacity-75" href="https://translate.yunohost.org/">{{ _('Translation') }}</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-<!--
-{# Disable this on generated page
--->
-<script>
-    function walkText(node) {
-  if (node.nodeType == 3) {
-      node.data = node.data.replace(/(\{\{ _\(("|')|("|')\).* \}\})/g, "");
-  }
-  if (node.nodeType == 1 && node.nodeName != "SCRIPT") {
-    for (var i = 0; i < node.childNodes.length; i++) {
-      walkText(node.childNodes[i]);
-    }
-  }
-}
-walkText(document.body);
-</script>
-<!--
-#}
--->
-  </body>
-</html>
+{% endblock %}

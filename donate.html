@@ -1,484 +1,133 @@
-<!doctype html>
-<html lang="{{ lang }}" class="scroll-smooth">
-  <head>
-    <title>{{ _("YunoHost: garden your own piece of the Internet!") }}</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/fonts/fork-awesome.min.css" />
-    <link rel="stylesheet" href="assets/fonts/source-sans/source-sans-3.css" />
+{% extends "base.html" %}
 
-    <!-- Enabled on generated pages {{ '--'+'>' }}
+{% block title %}
+{{ _("Donate to YunoHost!") }}
+{% endblock %}
 
-        <link rel="stylesheet" href="assets/css/prod.min.css" />
+<!-- ############################################################################################################ -->
 
-    {{ '<'+'!--' }}-->
+{% block header %}
 
-    <!-- {# Disabled on generated page-->
-
-    <link rel="stylesheet" href="assets/css/local.css" />
-    <script src="assets/js/tailwinds.js"></script>
-    <!-- https://tailwindcss.com/docs/theme -->
-    <script>
-      tailwind.config = {
-        darkMode: "selector",
-        theme: {
-          extend: {
-            colors: {},
-          },
-        },
-      };
-    </script>
-
-    <!-- #}-->
-
-    <script>
-      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-      function refreshColorMode() {
-        document.documentElement.classList.toggle(
-          "dark",
-          localStorage.theme === "dark" ||
-            (!("theme" in localStorage) &&
-              window.matchMedia("(prefers-color-scheme: dark)").matches),
-        );
-      }
-
-      function toggleColorMode() {
-        if (
-          localStorage.theme === "dark" ||
-          (!("theme" in localStorage) &&
-            window.matchMedia("(prefers-color-scheme: dark)").matches)
-        ) {
-          localStorage.theme = "light";
-        } else {
-          localStorage.theme = "dark";
-        }
-        // Whenever the user explicitly chooses to respect the OS preference
-        //localStorage.removeItem("theme");
-
-        refreshColorMode();
-      }
-
-      refreshColorMode(); // refresh on load
-    </script>
-  </head>
-  <body
-    class="text-lg text-gray-900 dark:bg-neutral-900 dark:text-white transition-colors"
+  <div
+    class="flex flex-col justify-center text-white text-center relative h-[25rem] bg-top w-full bg-cover"
     style="
-      font-family: &quot;Source Sans 3&quot;, sans-serif;
-      font-optical-sizing: auto;
+      background-image: linear-gradient(#0000, #0005),
+        url(assets/img/garden.png);
+      background-size: cover;
+      background-position: bottom;
     "
   >
-    <header>
-      <nav id="quick-access" aria-label="{{ _('Accessibility menu') }}">
-        <a href="#main-content" class="sr-only">{{ _("Go to content") }}</a>
-        <a href="#main-nav" class="sr-only">{{ _("Go to navigation") }}</a>
-        <a href="#page-settings" class="sr-only"
-          >{{ _("Go to page settings") }}</a
-        >
-        <a href="https://doc.yunohost.org/search" class="sr-only"
-          >{{ _("Go to search") }}</a
-        >
-      </nav>
+    <img
+      alt="{{ _('Yunohost logo') }}"
+      class="self-center pt-5 w-32 mt-2 shadow-md"
+      src="assets/img/ynh_logo_roundcorner.png"
+    />
+    <div
+      class="self-center w-fit p-5 flex align-center justify-center font-bold text-5xl sm:text-6xl backdrop-blur-[1px]"
+      style="text-shadow: 5px 5px 5px #000"
+    >
+      <h1>{{ _("Donate to YunoHost!") }}</h1>
+    </div>
+  </div>
 
-      <nav id="page-settings" aria-label="{{ _('Page settings') }}">
-        <button
-          type="button"
-          class="z-50 absolute top-3 right-12 text-white"
-          onclick='document.getElementById("lang-selector").classList.toggle("hidden");'
-        >
-          <i
-            class="fa fa-language"
-            aria-label="{{ _('Switch to a different language') }}"
-          ></i>
-        </button>
+  <!-- ############################################################################################################ -->
 
-        <div
-          id="lang-selector"
-          class="text-center hidden align-right z-50 absolute top-12 right-12 p-2 text-gray-800 bg-white rounded-md border"
+  <nav
+    id="main-nav"
+    class="w-full font-semibold py-2 pr-4 flex flex-col sm:flex-row justify-center z-50 bg-[#b6e39d] text-gray-800 dark:bg-[#0F321E] dark:text-white transition-colors text-2xl sm:text-lg"
+    aria-label="{{ _('Main menu') }}"
+  >
+    <button
+      class="block sm:hidden w-full py-3"
+      onclick="document.getElementById('main-menu-items').classList.toggle('hidden')"
+    >
+      <i class="fa fa-bars" aria-hidden="true"></i> Menu
+    </button>
+    <ul
+      id="main-menu-items"
+      class="justify-center flex-wrap flex-row hidden text-center sm:text-left sm:flex sm:space-x-10 sm:py-2"
+    >
+      <li>
+        <a
+          class="py-3 block sm:inline-block hover:opacity-75"
+          href="index.{{ lang }}.html"
+          >{{ _("👈 Back to homepage") }}</a
         >
-          <ul>
-            {% for code, lang_native_name in langs.items() %}
-            <li>
-              <a class="hover:opacity-75" href="index.{{ code }}.html"
-                >{{ lang_native_name }}</a
-              >
-            </li>
-            {% endfor %}
-            <li>
-              <a
-                class="max-w-24 p-1 text-sm inline-block hover:opacity-75"
-                href="https://translate.yunohost.org/projects/yunohost/landingpage/"
-                ><i class="fa fa-external-link" aria-hidden="true"></i> {{
-                _("Translate this page!") }}</a
-              >
-            </li>
-          </ul>
-        </div>
+      </li>
+    </ul>
+  </nav>
 
-        <button
-          type="button"
-          class="z-50 absolute top-3 right-3"
-          onclick="toggleColorMode();"
-        >
-          <!-- Dark/light mode icons -->
-          <span class="dark:hidden" aria-label="{{ _('Switch to dark mode') }}">
-            <svg
-              alt=""
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="w-6 h-6"
-              aria-hidden="true"
-            >
-              <path
-                d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                class="fill-sky-400/20 stroke-white"
-              ></path>
-              <path
-                d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"
-                class="stroke-white"
-              ></path>
-            </svg>
-          </span>
-          <span
-            class="hidden dark:inline"
-            aria-label="{{ _('Switch to light mode') }}"
-          >
-            <svg
-              alt=""
-              viewBox="0 0 24 24"
-              fill="none"
-              class="w-6 h-6"
-              aria-hidden="true"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z"
-                class="fill-white"
-              ></path>
-              <path
-                d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
-                class="fill-white"
-              ></path>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
-                class="fill-white"
-              ></path>
-            </svg>
-          </span>
-        </button>
-      </nav>
+{% endblock %}
 
-      <!-- ############################################################################################################ -->
+<!-- ############################################################################################################ -->
 
-      <div
-        class="flex flex-col justify-center text-white text-center relative h-[25rem] bg-top w-full bg-cover"
-        style="
-          background-image: linear-gradient(#0000, #0005),
-            url(assets/img/garden.png);
-          background-size: cover;
-          background-position: bottom;
-        "
-      >
-        <img
-          alt="{{ _('Yunohost logo') }}"
-          class="self-center pt-5 w-32 mt-2 shadow-md"
-          src="assets/img/ynh_logo_roundcorner.png"
-        />
-        <div
-          class="self-center w-fit p-5 flex align-center justify-center font-bold text-5xl sm:text-6xl backdrop-blur-[1px]"
-          style="text-shadow: 5px 5px 5px #000"
-        >
-          <h1>{{ _("Campagne de dons") }}</h1>
-        </div>
+{% block main %}
+
+  <section id="intro" class="max-w-screen-lg mx-auto py-10">
+    <p class="text-xl pb-10">
+      YunoHost est un projet développé et maintenu par une communauté
+      essentiellement bénévole. YunoHost rend service à un nombre assez
+      important de personnes et de collectifs. Pour fonctionner, YunoHost a
+      besoin d'un peu d'argent.<br />
+      Quelques chiffres pour tenter d'en mesurer l'utilité et vous permettre
+      de comprendre les besoins.
+    </p>
+    <div class="flex flex-row gap-2 justify-between">
+      <div class="w-2/3">
+        <h3 class="text-center pb-10 text-2xl font-bold">
+          Pour atteindre nos objectifs, vos dons nous sont précieux.
+        </h3>
       </div>
-
-      <!-- ############################################################################################################ -->
-
-      <nav
-        id="main-nav"
-        class="w-full font-semibold py-2 pr-4 flex flex-col sm:flex-row justify-center z-50 bg-[#b6e39d] text-gray-800 dark:bg-[#0F321E] dark:text-white transition-colors text-2xl sm:text-lg"
-        aria-label="{{ _('Main menu') }}"
-      >
-        <button
-          class="block sm:hidden w-full py-3"
-          onclick="document.getElementById('main-menu-items').classList.toggle('hidden')"
+      <div class="w-1/3">
+        <a
+          href="https://donate.yunohost.org"
+          class="p-3 bg-lime-200 text-lime-800 font-semibold w-48 hover:saturate-150"
+          >Je donne mon arjen</a
         >
-          <i class="fa fa-bars" aria-hidden="true"></i> Menu
-        </button>
-        <ul
-          id="main-menu-items"
-          class="justify-center flex-wrap flex-row hidden text-center sm:text-left sm:flex sm:space-x-10 sm:py-2"
-        >
-          <li>
-            <a
-              class="py-3 block sm:inline-block hover:opacity-75"
-              href="index.{{ lang }}.html"
-              >{{ _("👈 Retour a l'accueil") }}</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- ############################################################################################################ -->
-    <main>
-      <section id="intro" class="max-w-screen-lg mx-auto py-10">
-        <p class="text-xl pb-10">
-          YunoHost est un projet développé et maintenu par une communauté
-          essentiellement bénévole. YunoHost rend service à un nombre assez
-          important de personnes et de collectifs. Pour fonctionner, YunoHost a
-          besoin d'un peu d'argent.<br />
-          Quelques chiffres pour tenter d'en mesurer l'utilité et vous permettre
-          de comprendre les besoins.
-        </p>
-        <div class="flex flex-row gap-2 justify-between">
-          <div class="w-2/3">
-            <h3 class="text-center pb-10 text-2xl font-bold">
-              Pour atteindre nos objectifs, vos dons nous sont précieux.
-            </h3>
-          </div>
-          <div class="w-1/3">
-            <a
-              href="https://donate.yunohost.org"
-              class="p-3 bg-lime-200 text-lime-800 font-semibold w-48 hover:saturate-150"
-              >Je donne mon arjen</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <section id="budget-2024" class="max-w-screen-lg mx-auto py-10">
-        <h2 class="text-center pb-10 text-4xl font-bold">
-          À quoi servent vos dons ?
-        </h2>
-        <div class="text-center flex flex-row gap-2 justify-between">
-          <div class="w-1/2">
-            <img
-              src="https://mermaid.ink/img/pako:eNpVkc9KAzEQxl9lCCx76cFWC5KrRfDgSfAguUyb6RrJZuIkUUrpA_kcvpjZXXaxl_z5vt8kHzNndWBLSqumOZsA4ILLGsYjQJvfqadWQ7vHRO3qv_qK4nDvKbULXq3oaD3wLBi6pWIyNoMhZK_V20E9kff8fW3cDUYnRKGd5Muw1eXSNCaYUBHILnuC3e9PpJAogS0QhT8oTxVG7eiLPMdYA4dsFGhYb7az-RSOgqN4v2iPgi5N4PZmFh-EPwvlXH-IXATqg5xKP3NDGrVSPUmPztZejv0wauyTUboeLR2x-Jqgxq8olswvp3BQOkuhlRIu3bvSR_Sp3kq0mGnnsBPsZyRieGPuF4isyyzP0_DGGV7-AAfojmM?type=png)](https://mermaid.live/edit#pako:eNpVkc9KAzEQxl9lCCx76cFWC5KrRfDgSfAguUyb6RrJZuIkUUrpA_kcvpjZXXaxl_z5vt8kHzNndWBLSqumOZsA4ILLGsYjQJvfqadWQ7vHRO3qv_qK4nDvKbULXq3oaD3wLBi6pWIyNoMhZK_V20E9kff8fW3cDUYnRKGd5Muw1eXSNCaYUBHILnuC3e9PpJAogS0QhT8oTxVG7eiLPMdYA4dsFGhYb7az-RSOgqN4v2iPgi5N4PZmFh-EPwvlXH-IXATqg5xKP3NDGrVSPUmPztZejv0wauyTUboeLR2x-Jqgxq8olswvp3BQOkuhlRIu3bvSR_Sp3kq0mGnnsBPsZyRieGPuF4isyyzP0_DGGV7-AAfojmM"
-              alt="camembert des dépenses"
-              class=""
-            />
-          </div>
-          <div class="w-1/2">camembert</div>
-        </div>
-      </section>
-
-      <section id="previ-2025" class="max-w-screen-lg mx-auto py-10">
-        <h2 class="text-center pb-10 text-4xl font-bold">
-          Feuille de route et feuille de rêve
-        </h2>
-        <img
-          src="https://mermaid.ink/img/pako:eNqdVs1u20YQfpXB9uCL_kjqx-HFkKumNRolThikQKHLihxKC5O7xHJpmzZ8K3pM4iSXJi1aFGhRFHmAnvowfoH2ETok7ca0Vm1R6kBy-M1wvplvhjpnoYqQ-azb7S5kqGQsVv5CApg1pviMa8GXCea1CSBW0gTiDH3YcXoepjuNOQxCnuCArB_F4W7L-IAvMamfOI7TeuI08HgT7tjgbmXkaIG7NrhXGZFXv00P77ZHTdQHiYXRPFnIuhBGpJgIiY1rjqERSsJ-kSQ5ltfW6nCcnvPhrj58-PP7N5eww6NUyHwHVloVmQXz-mc45OERXwm5gmPXgnj-7o_fXsATjHlolIZVopY8oWSMIZd8w-Hq7TcN_kTpI4hUyoXs8yyDY4EnuS3-LzDjBK0r0OJky-bNS5iVcvYwAI2hOkZdQsbznF4W2di9h9nnB3NSjAbKIbcX4DNMMtQ5uNYqvvuh4vO4EAaBQ6IMqBioqBQS5bofi1PMW2l7mzV5_3UVYy5WmtctNAr2lTqirNM7vW1Z64BubwDbqnwghRHUjVBphLzIMqWNhcLbX2_6EQSPoA8VrBKZPehhGXGSXlhXrZnFjEtMtvb6C1zWMoMuPCvQ6z8tM8xDLTLTouGAPbXDOhvgedWiPUpvrji9uMiNSsUZX4pEmNLWuW-JzieE3yctogZFTWzKmxuNPK0UTUmdXGdn7_2nKMkroW0C63-Qwd7eXouLC1ffvf7XcfLsINJwgEn8t3BJyjROduzlTzW2q3EliFbNz4a827tj14Zq0dhC7eF_ku9TLU4Fbg92I-i7OMfrDf6fmsnTaccOVIoRL6---vEDaoPhrY2UJTxESFVR7VSSDJwIs4b7PDfTw4O7XiTNS5gWpEFe1VNjqshjSc0tss71mQYpEWG56frqdwhoWfIVvY5LOqUozSaMhODen24X6fWABE0pIJjOH_QfHcw-rieTRnkTTfqDKS3bZSGjpNpLrMNS1LSEI_q6nlcOC9ZsWubTZUSbd8EW8oJwnMgGpQyZb3SBHUZfjNWa-TGnr02HFVnEDc4EJxGkNxDaC18qdfuW-efslPldd7Tbuzee7HrD4cQdj8buqMNKsjuTnjOajMcjd-SOd0ej4eSiw87qGE5vOB46g4HrjdzJxHPvjTsMI0F1nDd_DppdxC7-AiGlfW0?type=png"
-          alt="roadmap"
-        />
-        Scenario 1 Dev : 11 000€ Personnel : 12 000€ Infra : 1 500€ Évenements :
-        3 500€ (YunoCamp + 1 ou 2 évenements) Frais : 250€ Dons : 300€ Total
-        dépenses: 28 550€ Bilan sur l’année si dons équivalent à 2023-2024 et
-        sans subventions : -14 250€ Selon les comptes actuels de l’association,
-        nous ne pourrions tenir qu’une seule année avec ce niveau de dépense.
-
-        <hr />
-        Scenario 2 La même chose que précédemment mais sans la rémunération dev.
-        Total dépenses: 17 550€ Bilan sur l’année si dons équivalent à 2023-2024
-        : -3 250€ Selon les comptes actuels de l’association, nous pourrions
-        tenir 4 ou 5 ans avec ce niveau de dépense.
-      </section>
-      <section id="stats-yuno" class="max-w-screen-lg mx-auto py-10">
-        <h2 class="text-center pb-10 text-4xl font-bold">
-          YunoHost a besoin de vous
-        </h2>
-      </section>
-    </main>
-    <!-- ############################################################################################################ -->
-
-    <footer class="bg-[#b6e39d] dark:bg-[#0F321E] transition-colors relative">
-      <div
-        class="mx-3 py-3 md:mx-auto max-w-screen-md flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-5"
-      >
-        <img
-          alt="{{ _('Yunohost logo') }}"
-          class="h-32 mt-8 lg:mr-8"
-          src="assets/img/ynh_logo_roundcorner.png"
-        />
-        <div
-          class="grid grid-cols-2 md:grid-cols-4 justify-center gap-5 py-5 leading-none"
-        >
-          <div>
-            <h3 class="py-2 font-bold">{{ _('Legal') }}</h3>
-            <ul>
-              <li class="pb-2">
-                <a
-                  class="hover:opacity-75"
-                  href="https://github.com/YunoHost/yunohost/blob/dev/LICENSE"
-                  >{{ _('License') }}</a
-                >
-              </li>
-              <li class="pb-2">
-                <a
-                  class="hover:opacity-75"
-                  href="https://doc.yunohost.org/terms_of_services"
-                  >{{ _('Terms of services') }}</a
-                >
-              </li>
-              {#
-              <li class="pb-2"><a href="">{{ _('Legal mentions') }}</a></li>
-              #} {#
-              <li class="pb-2"><a href="">{{ _('Accessibility') }}</a></li>
-              #}
-              <li class="pb-2">
-                <a
-                  class="hover:opacity-75"
-                  href="https://github.com/YunoHost/project-organization"
-                  >{{ _('Organization') }}</a
-                >
-              </li>
-              {#
-              <li class="pb-2"><a href="">{{ _('Credits') }}</a></li>
-              #}
-            </ul>
-          </div>
-          <div>
-            <h3 class="py-2 font-bold">{{ _('Follow') }}</h3>
-            <ul>
-              {#
-              <li><a href="">{{ _('Press kit') }}</a></li>
-              #}
-              <li class="pb-2">
-                <a
-                  class="hover:opacity-75"
-                  href="https://forum.yunohost.org/c/announcement/8/none"
-                  >{{ _('Blog') }}</a
-                >
-              </li>
-              <li class="pb-2">
-                <a
-                  class="hover:opacity-75"
-                  href="https://toot.aquilenet.fr/@yunohost"
-                  >{{ _('Mastodon') }}</a
-                >
-              </li>
-              <li class="pb-2">
-                <a
-                  class="hover:opacity-75"
-                  href="https://videos.globenet.org/a/yunohost/videos?s=1"
-                  >{{ _('Peertube') }}</a
-                >
-              </li>
-              {#
-              <li class="pb-2"><a href="">{{ _('RSS feed') }}</a></li>
-              #}
-            </ul>
-          </div>
-          <div>
-            <h3 class="py-2 font-bold">{{ _('Use') }}</h3>
-            <ul>
-              <li class="pb-2">
-                <a class="hover:opacity-75" href="https://doc.yunohost.org"
-                  >{{ _('Documentation') }}</a
-                >
-              </li>
-              <li class="pb-2">
-                <a class="hover:opacity-75" href="https://apps.yunohost.org/"
-                  >{{ _('Apps store') }}</a
-                >
-              </li>
-              <li class="pb-2">
-                <a class="hover:opacity-75" href="https://forum.yunohost.org"
-                  >{{ _('Forum') }}</a
-                >
-              </li>
-              <li class="pb-2">
-                <a class="hover:opacity-75" href="https://doc.yunohost.org/help"
-                  >{{ _('Self-help chat') }}</a
-                >
-              </li>
-              <li class="pb-2">
-                <a class="hover:opacity-75" href="https://status.yunohost.org"
-                  >{{ _('Services status') }}</a
-                >
-              </li>
-              <li class="pb-2">
-                <a
-                  class="hover:opacity-75"
-                  href="https://github.com/YunoHost/yunohost/blob/dev/debian/changelog"
-                  >{{ _('Changelog') }}</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="py-2 font-bold">{{ _('Contribute') }}</h3>
-            <ul>
-              <li class="pb-2">
-                <a class="hover:opacity-75" href="https://donate.yunohost.org"
-                  >{{ _('Donate') }}</a
-                >
-              </li>
-              {#
-              <li class="pb-2"><a href="">{{ _('Chat') }}</a></li>
-              #}
-              <li class="pb-2">
-                <a
-                  class="hover:opacity-75"
-                  href="https://github.com/YunoHost/issues/issues"
-                  >{{ _('Issues tracker') }}</a
-                >
-              </li>
-              <li class="pb-2">
-                <a
-                  class="hover:opacity-75"
-                  href="https://doc.yunohost.org/security_team"
-                  >{{ _('Security') }}</a
-                >
-              </li>
-              <li class="pb-2">
-                <a class="hover:opacity-75" href="https://github.com/yunohost"
-                  >{{ _('Code (core)') }}</a
-                >
-              </li>
-              <li class="pb-2">
-                <a
-                  class="hover:opacity-75"
-                  href="https://github.com/yunohost-apps"
-                  >{{ _('Code (apps)') }}</a
-                >
-              </li>
-              <li class="pb-2">
-                <a
-                  class="hover:opacity-75"
-                  href="https://translate.yunohost.org/"
-                  >{{ _('Translation') }}</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!--
-{# Disable this on generated page
--->
-    <script>
-      function walkText(node) {
-        if (node.nodeType == 3) {
-          node.data = node.data.replace(/(\{\{ _\(("|')|("|')\).* \}\})/g, "");
-        }
-        if (node.nodeType == 1 && node.nodeName != "SCRIPT") {
-          for (var i = 0; i < node.childNodes.length; i++) {
-            walkText(node.childNodes[i]);
-          }
-        }
-      }
-      walkText(document.body);
-    </script>
-    <!--
-#}
--->
-  </body>
-</html>
+  <section id="budget-2024" class="max-w-screen-lg mx-auto py-10">
+    <h2 class="text-center pb-10 text-4xl font-bold">
+      À quoi servent vos dons ?
+    </h2>
+    <div class="text-center flex flex-row gap-2 justify-between">
+      <div class="w-1/2">
+        <img
+          src="https://mermaid.ink/img/pako:eNpVkc9KAzEQxl9lCCx76cFWC5KrRfDgSfAguUyb6RrJZuIkUUrpA_kcvpjZXXaxl_z5vt8kHzNndWBLSqumOZsA4ILLGsYjQJvfqadWQ7vHRO3qv_qK4nDvKbULXq3oaD3wLBi6pWIyNoMhZK_V20E9kff8fW3cDUYnRKGd5Muw1eXSNCaYUBHILnuC3e9PpJAogS0QhT8oTxVG7eiLPMdYA4dsFGhYb7az-RSOgqN4v2iPgi5N4PZmFh-EPwvlXH-IXATqg5xKP3NDGrVSPUmPztZejv0wauyTUboeLR2x-Jqgxq8olswvp3BQOkuhlRIu3bvSR_Sp3kq0mGnnsBPsZyRieGPuF4isyyzP0_DGGV7-AAfojmM?type=png)](https://mermaid.live/edit#pako:eNpVkc9KAzEQxl9lCCx76cFWC5KrRfDgSfAguUyb6RrJZuIkUUrpA_kcvpjZXXaxl_z5vt8kHzNndWBLSqumOZsA4ILLGsYjQJvfqadWQ7vHRO3qv_qK4nDvKbULXq3oaD3wLBi6pWIyNoMhZK_V20E9kff8fW3cDUYnRKGd5Muw1eXSNCaYUBHILnuC3e9PpJAogS0QhT8oTxVG7eiLPMdYA4dsFGhYb7az-RSOgqN4v2iPgi5N4PZmFh-EPwvlXH-IXATqg5xKP3NDGrVSPUmPztZejv0wauyTUboeLR2x-Jqgxq8olswvp3BQOkuhlRIu3bvSR_Sp3kq0mGnnsBPsZyRieGPuF4isyyzP0_DGGV7-AAfojmM"
+          alt="camembert des dépenses"
+          class=""
+        />
+      </div>
+      <div class="w-1/2">camembert</div>
+    </div>
+  </section>
+
+  <section id="previ-2025" class="max-w-screen-lg mx-auto py-10">
+    <h2 class="text-center pb-10 text-4xl font-bold">
+      Feuille de route et feuille de rêve
+    </h2>
+    <img
+      src="https://mermaid.ink/img/pako:eNqdVs1u20YQfpXB9uCL_kjqx-HFkKumNRolThikQKHLihxKC5O7xHJpmzZ8K3pM4iSXJi1aFGhRFHmAnvowfoH2ETok7ca0Vm1R6kBy-M1wvplvhjpnoYqQ-azb7S5kqGQsVv5CApg1pviMa8GXCea1CSBW0gTiDH3YcXoepjuNOQxCnuCArB_F4W7L-IAvMamfOI7TeuI08HgT7tjgbmXkaIG7NrhXGZFXv00P77ZHTdQHiYXRPFnIuhBGpJgIiY1rjqERSsJ-kSQ5ltfW6nCcnvPhrj58-PP7N5eww6NUyHwHVloVmQXz-mc45OERXwm5gmPXgnj-7o_fXsATjHlolIZVopY8oWSMIZd8w-Hq7TcN_kTpI4hUyoXs8yyDY4EnuS3-LzDjBK0r0OJky-bNS5iVcvYwAI2hOkZdQsbznF4W2di9h9nnB3NSjAbKIbcX4DNMMtQ5uNYqvvuh4vO4EAaBQ6IMqBioqBQS5bofi1PMW2l7mzV5_3UVYy5WmtctNAr2lTqirNM7vW1Z64BubwDbqnwghRHUjVBphLzIMqWNhcLbX2_6EQSPoA8VrBKZPehhGXGSXlhXrZnFjEtMtvb6C1zWMoMuPCvQ6z8tM8xDLTLTouGAPbXDOhvgedWiPUpvrji9uMiNSsUZX4pEmNLWuW-JzieE3yctogZFTWzKmxuNPK0UTUmdXGdn7_2nKMkroW0C63-Qwd7eXouLC1ffvf7XcfLsINJwgEn8t3BJyjROduzlTzW2q3EliFbNz4a827tj14Zq0dhC7eF_ku9TLU4Fbg92I-i7OMfrDf6fmsnTaccOVIoRL6---vEDaoPhrY2UJTxESFVR7VSSDJwIs4b7PDfTw4O7XiTNS5gWpEFe1VNjqshjSc0tss71mQYpEWG56frqdwhoWfIVvY5LOqUozSaMhODen24X6fWABE0pIJjOH_QfHcw-rieTRnkTTfqDKS3bZSGjpNpLrMNS1LSEI_q6nlcOC9ZsWubTZUSbd8EW8oJwnMgGpQyZb3SBHUZfjNWa-TGnr02HFVnEDc4EJxGkNxDaC18qdfuW-efslPldd7Tbuzee7HrD4cQdj8buqMNKsjuTnjOajMcjd-SOd0ej4eSiw87qGE5vOB46g4HrjdzJxHPvjTsMI0F1nDd_DppdxC7-AiGlfW0?type=png"
+      alt="roadmap"
+    />
+    Scenario 1 Dev : 11 000€ Personnel : 12 000€ Infra : 1 500€ Évenements :
+    3 500€ (YunoCamp + 1 ou 2 évenements) Frais : 250€ Dons : 300€ Total
+    dépenses: 28 550€ Bilan sur l’année si dons équivalent à 2023-2024 et
+    sans subventions : -14 250€ Selon les comptes actuels de l’association,
+    nous ne pourrions tenir qu’une seule année avec ce niveau de dépense.
+
+    <hr />
+    Scenario 2 La même chose que précédemment mais sans la rémunération dev.
+    Total dépenses: 17 550€ Bilan sur l’année si dons équivalent à 2023-2024
+    : -3 250€ Selon les comptes actuels de l’association, nous pourrions
+    tenir 4 ou 5 ans avec ce niveau de dépense.
+  </section>
+  <section id="stats-yuno" class="max-w-screen-lg mx-auto py-10">
+    <h2 class="text-center pb-10 text-4xl font-bold">
+      YunoHost a besoin de vous
+    </h2>
+  </section>
+
+{% endblock %}

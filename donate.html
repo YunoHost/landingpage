@@ -8,6 +8,7 @@
 
 {% block assets %}
 <script src="https://js.stripe.com/v3/"></script>
+<script src="assets/js/chart.js"></script>
 {% endblock %}
 
 <!-- ############################################################################################################ -->
@@ -253,7 +254,9 @@
     These in-kind donations are not represented in the graph below.
     </p>
 
-    <img src="https://mermaid.ink/img/pako:eNplUktqwzAQvcqgENyCDbKSmMSLbtJtobTQReMsxvYkEXWsIMslIWTTi2RXuuipeoIeoZJMPlAkRm-enmZGGu1ZoUpiKev391kNIGtpUvAQIDArWlOQQlCifgvCa_YFtcS8oiY4y-3WdjddoTaOgxMJkLFNpcxUVUo_YkXGUMYgtXRvURaUiLA3GmFBlr2cOXTQL9Yc-v2sdmO7K1yGKCeDncRIU5EN9kSFC93Aze_x-AmlqhsgA9b5gqbN36k20nK3pyzbCLeygZng8SQSXPAQnHUw9jB2UHgoHBx4OHBwGNqEds67ULsu1HUNPx_fNhNwiKI7EBPOeSftbI4aZoMkSUKIxSAZ22UsuK_AFxIPxWQ4_6cdeynE3GvjZHStZSFbk16jLG07fUsy5luVMffWJS2wrYy7_cFKsTXqeVcXLDW6pZBp1S5XLF1g1Viv3ZRo6F7iUuP6zG6wflXq4lMpjdIP3Qfy_-jwBxd8rGY?type=png" />
+    <canvas id="recettes" class="w-full bg-white my-5 p-5 pt-2" aria-hidden="true"></canvas>
+
+    <dl id="recettes-text" class="sr-only"></dl>
 
     <!--
     https://mermaid.live/edit#pako:eNplUktqwzAQvcqgENyCDbKSmMSLbtJtobTQReMsxvYkEXWsIMslIWTTi2RXuuipeoIeoZJMPlAkRm-enmZGGu1ZoUpiKev391kNIGtpUvAQIDArWlOQQlCifgvCa_YFtcS8oiY4y-3WdjddoTaOgxMJkLFNpcxUVUo_YkXGUMYgtXRvURaUiLA3GmFBlr2cOXTQL9Yc-v2sdmO7K1yGKCeDncRIU5EN9kSFC93Aze_x-AmlqhsgA9b5gqbN36k20nK3pyzbCLeygZng8SQSXPAQnHUw9jB2UHgoHBx4OHBwGNqEds67ULsu1HUNPx_fNhNwiKI7EBPOeSftbI4aZoMkSUKIxSAZ22UsuK_AFxIPxWQ4_6cdeynE3GvjZHStZSFbk16jLG07fUsy5luVMffWJS2wrYy7_cFKsTXqeVcXLDW6pZBp1S5XLF1g1Viv3ZRo6F7iUuP6zG6wflXq4lMpjdIP3Qfy_-jwBxd8rGY
@@ -277,12 +280,173 @@
     </ul>
     </p>
 
-    <img src="https://mermaid.ink/img/pako:eNqNks9q3DAQxl9l0LI4BRlk-c-ufQiEpIceCoVCD41z0K5ndwW2bGR5WRP20uco5FaakLfom-QJ-giVZJJtcgqG0aeZnz6NzNySdVshKch8flsqAKmkKcBLgMDssMGggEDhYLSoA_p_4ZvQUqxq7IOXE7Z0GC93QhuXg-ckQEm6ujWXbd3qL6JGY7AkUNj0TIglVhmdpalYI9LZplpjxulssVxFaU5rud2ZrcaxJCe34yT9YsNxPi-V-w7j2t0drtCICTHS1Givufpz36HqsYezv3d3D3ChZEPByl9gS3svf8MntdHC63v4uEdlegpPjz_hwr4e-w_PLRxCcZA9XHPGWWhDRMFFJ7mX3MnYy9jJhNoWzjqNe-txM5mMk8mr1p5-PFoAGIThOfCcMTaxU1wJDddpzBiFPI9tXKTcxmiRZHbhyzRlN-8ho-wNGfHUpT3Jc0dC4klI35BZ4rKwcM6R97THPJmw12Scn0iIPAmTJ0yehJIGdSNkZafPj09J_FiVxM1FhRsx1Mb98qNFxWDar6Nak8LoASnR7bDdkWIj6t7uhq4SBq-k2GrRvGQ7ob637WmPlTSt_jzNux_74z-6Ad0U?type=png" />
+    <canvas id="depenses" class="w-full bg-white my-5 p-5 pt-2" aria-hidden="true"></canvas>
+
+    <dl id="depenses-text" class="sr-only"></dl>
 
     <!--
     https://mermaid.live/edit#pako:eNqNks9q3DAQxl9l0LI4BRlk-c-ufQiEpIceCoVCD41z0K5ndwW2bGR5WRP20uco5FaakLfom-QJ-giVZJJtcgqG0aeZnz6NzNySdVshKch8flsqAKmkKcBLgMDssMGggEDhYLSoA_p_4ZvQUqxq7IOXE7Z0GC93QhuXg-ckQEm6ujWXbd3qL6JGY7AkUNj0TIglVhmdpalYI9LZplpjxulssVxFaU5rud2ZrcaxJCe34yT9YsNxPi-V-w7j2t0drtCICTHS1Givufpz36HqsYezv3d3D3ChZEPByl9gS3svf8MntdHC63v4uEdlegpPjz_hwr4e-w_PLRxCcZA9XHPGWWhDRMFFJ7mX3MnYy9jJhNoWzjqNe-txM5mMk8mr1p5-PFoAGIThOfCcMTaxU1wJDddpzBiFPI9tXKTcxmiRZHbhyzRlN-8ho-wNGfHUpT3Jc0dC4klI35BZ4rKwcM6R97THPJmw12Scn0iIPAmTJ0yehJIGdSNkZafPj09J_FiVxM1FhRsx1Mb98qNFxWDar6Nak8LoASnR7bDdkWIj6t7uhq4SBq-k2GrRvGQ7ob637WmPlTSt_jzNux_74z-6Ad0U
     -->
 
+    <script type="text/javascript">
+      const recettesData = [
+        { label: "2019-2020", don: 3665.94, sub: 0 },
+        { label: "2020-2021", don: 8367.67, sub: 4000 },
+        { label: "2021-2022", don: 10200.33, sub: 8000 },
+        { label: "2022-2023", don: 16520.75, sub: 3500 },
+        { label: "2023-2024", don: 14294.64, sub: 0 },
+      ];
+      const recettesInfos = {
+        don: { label: "Dons", backgroundColor: "#96f" },
+        sub: { label: "Subventions", backgroundColor: "#ffcd56" },
+      };
+
+      new Chart(document.getElementById("recettes"), {
+        type: "bar",
+        data: {
+          labels: recettesData.map((d) => d.label),
+          datasets: Object.entries(recettesInfos).map(([k, v]) => ({
+            ...v,
+            data: recettesData.map((d) => d[k]),
+          })),
+        },
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: "YunoHost - Recettes",
+            },
+          },
+          responsive: true,
+          scales: {
+            x: {
+              stacked: true,
+            },
+            y: {
+              stacked: true,
+            },
+          },
+        },
+      });
+
+      const recettesDl = document.querySelector("#recettes-text");
+      recettesData.forEach((year) => {
+        const dt = document.createElement("DT");
+        dt.textContent = year.label;
+        const dd = document.createElement("DD");
+        dd.textContent = Object.entries(year)
+          .map(([k, v]) => {
+            if (k === "label" || v === 0) return;
+            return recettesInfos[k].label + ' : ' + v.toFixed(2);
+          })
+          .filter((v) => v)
+          .join(" ; ");
+        recettesDl.appendChild(dt);
+        recettesDl.appendChild(dd);
+      });
+
+      const depensesData = [
+        {
+          label: "2019-2020",
+          anim: 0,
+          dev: 0,
+          infra: 222.49,
+          events: 0,
+          other: 530 + 87.6,
+        },
+        {
+          label: "2020-2021",
+          anim: 0,
+          dev: 4000,
+          infra: 562.23 + 47.39 + 55.31,
+          events: 246,
+          other: 87.6 + 1 + 300,
+        },
+        {
+          label: "2021-2022",
+          anim: 0,
+          dev: 8000,
+          infra: 1216.72 + 11.98,
+          events: 0.4,
+          other: 87.6 + 21.67 + 600,
+        },
+        {
+          label: "2023-2024",
+          anim: 0,
+          dev: 4546,
+          infra: 1341.34 + 53.98 + 61.37,
+          events: 1427.02,
+          other: 122.12 + 22.27,
+        },
+        {
+          label: "2022-2023",
+          anim: 0,
+          dev: 12487,
+          infra: 2495.11 + 9.35 + 516.97,
+          events: 1484.28,
+          other: 115.08 + 350,
+        },
+        {
+          label: "Prévisionnel",
+          anim: 12000,
+          dev: 5000 + 6000,
+          infra: 1750,
+          events: 2000 + 1500,
+          other: 300,
+        },
+      ];
+      const depensesInfos = {
+        anim: { label: "Animation", backgroundColor: "#96f" },
+        dev: { label: "Développement", backgroundColor: "#36a2eb" },
+        infra: { label: "Infrastructure", backgroundColor: "#ffcd56" },
+        events: { label: "Évenements", backgroundColor: "#4bc0c0" },
+        other: { label: "Autre", backgroundColor: "#c9cbcf" },
+      };
+
+      new Chart(document.getElementById("depenses"), {
+        type: "bar",
+        data: {
+          labels: depensesData.map((d) => d.label),
+          datasets: Object.entries(depensesInfos).map(([k, v]) => ({
+            ...v,
+            data: depensesData.map((d) => d[k]),
+          })),
+        },
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: "YunoHost - Dépenses",
+            },
+          },
+          responsive: true,
+          scales: {
+            x: {
+              stacked: true,
+            },
+            y: {
+              stacked: true,
+            },
+          },
+        },
+      });
+
+      const depensesDl = document.querySelector("#depenses-text");
+      depensesData.forEach((year) => {
+        const dt = document.createElement("DT");
+        dt.textContent = year.label;
+        const dd = document.createElement("DD");
+        dd.textContent = Object.entries(year)
+          .map(([k, v]) => {
+            if (k === "label" || v === 0) return;
+            return depensesInfos[k].label + ' : ' + v.toFixed(2);
+          })
+          .filter((v) => v)
+          .join(" ; ");
+        depensesDl.appendChild(dt);
+        depensesDl.appendChild(dd);
+      });
+    </script>
 </section>
 
 

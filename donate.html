@@ -11,9 +11,10 @@
 <script src="assets/js/chart.js"></script>
 {% endblock %}
 
-{% block main %}
+{% block header_title %}{{ _("Donate to YunoHost!") }}{% endblock %}
 
-<section>
+{% block main %}
+<section class="px-5">
     <div class="text-xl pb-10">
       <p>{{ _("YunoHost has been around since 2012. The solution is developed mainly on a voluntary basis and outside the commercial sector. YunoHost is a modest project in terms of the resources it mobilizes - but it's an ambitious one, as much for its activism as for its technical and interface design, or for the perseverance required to package and maintain hundreds of applications.") }}</p>
       <p>{{ _("If, like us, you'd like to see the project continue to function, improve to meet its promises, and allow us to take care of the community, this is where you can donate!") }}</p>
@@ -25,12 +26,12 @@
           <!-- FIXME : template the public_key -->
         <input type="hidden" id="public_key" value="pk_live_EZ0b0e5WyeOqicQXDxfaHnWP">
 
-        <h3>{{ _('I want to give to YunoHost:') }}</h3>
+        <h3 class="mb-2">{{ _('I want to give to YunoHost:') }}</h3>
 
         <input type="number" min="0" max="9999" id="quantity" value="10"
           aria-label="{{ _('Amount') }}">
 
-        <select id="currency" style="width:40px" aria-label="{{ _('Currency') }}">
+        <select id="currency" aria-label="{{ _('Currency') }}">
           <option value="EUR">€ </option>
           <option value="USD">$ </option>
         </select>
@@ -41,11 +42,11 @@
         </select>
       </div>
 
-      <img class="inline-block px-3" src="assets/img/nyancat.gif" style="transform: scaleX(-1);" />
+      <img class="px-3 hidden md:inline-block" src="assets/img/nyancat.gif" style="transform: scaleX(-1);" />
       <button id="submit" class="px-4 py-2 bg-sky-200 text-sky-800 font-semibold hover:saturate-150" >
         {{ _("Donate") }}
       </button>
-      <img class="inline-block px-3" src="assets/img/nyancat.gif" />
+      <img class="inline-block ps-3" src="assets/img/nyancat.gif" />
 
       <div id="error-message"></div>
     </div>
@@ -97,7 +98,7 @@
 
 
 
-<section id="why">
+<section id="why" class="px-5">
     <h2>{{ _("Why support YunoHost in 2025?") }}</h2>
 
     <h3>{{ _("0. Encapacitate as many as possible") }}</h3>
@@ -126,18 +127,18 @@
 </section>
 
 
-<section>
+<section class="px-5">
     <h2>{{ _("YunoHost in 2024") }}</h2>
 
-    <div class="flex flex-md md:flex-row !max-w-screen-lg">
-        <div class="mx-5 w-1/4">
+    <div class="flex flex-col md:flex-row !max-w-screen-lg items-center">
+        <div class="mx-5 w-1/4 mb-5">
           <img src="assets/img/fursona.png" title="{{ _("Claude, YunoHost's mascot") }}" alt="{{ _("Image of Claude, YunoHost's mascot. The humanoid oppossum stands with purple hair and scarf, round glasses, beige pants with pockets and a blue crop top with the YunoHost logo.") }}" />
         </div>
 
         <div class="mx-5">
             <h3>{{ _("Project") }}</h3>
 
-            <ul class="py-3">
+            <ul class="py-3 ps-5">
                 <li>🎂 {{ _("a 14 years old project") }}</li>
                 <li>👷 {{ _("about fifteen regularly active core-contributors") }}</li>
                 <li>💰 {{ _("volunteer work that could be valued at around €500,000 a year if remunerated") }}</li>
@@ -145,7 +146,7 @@
 
             <h3>{{ _("Community") }}</h3>
 
-            <ul class="py-3">
+            <ul class="py-3 ps-5">
                 <li>🌐 {{ _("~10&nbsp;000 instances in 77 countries") }}</li>
                 <li>💸 {{ _("130 regular or occasional donors in 2024") }}</li>
                 <li>👥 {{ _("8&nbsp;700+ accounts on the various project channels (forge, forum, chat)") }}</li>
@@ -155,7 +156,7 @@
 
             <h3>{{ _("Software and ecosystem") }}</h3>
 
-            <ul class="py-3">
+            <ul class="py-3 ps-5">
                 <li>📦 {{ _("[540+ apps in the catalog](https://apps.yunohost.org/catalog) ([a brief history](https://apps.yunohost.org/charts))") | markdown | no_p }}</li>
                 <li>🧑‍💻 {{ _("760 Git code repositories ([core](https://github.com/orgs/YunoHost/repositories) + [apps](https://github.com/orgs/YunoHost-Apps/repositories))") | markdown | no_p }}</li>
             </ul>
@@ -163,7 +164,7 @@
     </div>
 </section>
 
-<section>
+<section class="px-5">
     <h2>{{ _("What are your donations used for?") }}</h2>
 
     <p class="py-3">
@@ -184,7 +185,9 @@
       {{ _("In addition, YunoHost receives significant in-kind donations in the form of servers from associations and independent web companies such as Globenet, Gitoyen, TetaNeutral and Octopuce.<br>These in-kind donations are not represented in the graph below.") }}
     </p>
 
-    <canvas id="recettes" class="w-full bg-white my-5 p-5 pt-2" aria-hidden="true"></canvas>
+    <div style="height: 60vh;" class="bg-white my-5 p-5 pt-2">
+        <canvas id="recettes" aria-hidden="true"></canvas>
+    </div>
 
     <dl id="recettes-text" class="sr-only"></dl>
 
@@ -198,18 +201,20 @@
       {{ _("Between 2022 and 2024, the collective spent around €12,500 a year.<br>In 2025, the creation of the position of ‘stirrer’ for the collective will represent an additional expense of €12,000 per year. YunoHost would like to be able to continue its financial contributions to the development of important features for the project and its community. The projected budget for 2025 is therefore around €28,000.") }}
     </p>
 
+    <p class="py-3">
+      {{ _("Project expenditure breaks down into the following categories:") }}
+    </p>
     <ul class="list-disc ps-5 py-3">
-        <span class="py-3">
-          {{ _("Project expenditure breaks down into the following categories:") }}
-        </span>
         <li>{{ _("**Development**: one-off funding linked to the development and maintenance of the project, thanks to both grants and donations received. It should be noted, however, that this amount is anecdotal in relation to the voluntary work carried out by the team.") | markdown | no_p }}</li>
         <li>{{ _("**Infrastructure**: corresponds to the hosting of the tools used by the project, such as the website, documentation, forum, technical tools, etc. The amount of this expenditure should reduce in 2025 following a migration to a dedicated server with a friendly host.") | markdown | no_p }}</li>
         <li>{{ _("**Events**: expenses to enable the team to take part in events (e.g. [JdLL](https://jdll.org/)), and to meet in the same place once a year to work together on fundamental issues.") | markdown | no_p }}</li>
         <li>{{ _("**Fees and other expenses**: bank charges or donations made to other collectives that support the project in kind.") | markdown | no_p }}</li>
         <li>{{ _("**Collective facilitation**: financial compensation allocated to the tasks of administrative facilitation, facilitation and coordination of the collective. This is a new type of expense introduced in 2025, decided by the collective in view of the need to have a person dedicated to these aspects (a.k.a ‘touilleur’).") | markdown | no_p }}</li>
     </ul>
-
-    <canvas id="depenses" class="w-full bg-white my-5 p-5 pt-2" aria-hidden="true"></canvas>
+    
+    <div style="height: 60vh;" class="bg-white my-5 p-5 pt-2">
+      <canvas id="depenses" aria-hidden="true"></canvas>
+    </div>
 
     <dl id="depenses-text" class="sr-only"></dl>
 
@@ -243,10 +248,11 @@
           plugins: {
             title: {
               display: true,
-              text: "{{ _('YunoHost - Recettes') }}",
+              text: "{{ _('Recettes') }}",
             },
           },
           responsive: true,
+          maintainAspectRatio: false,
           scales: {
             x: {
               stacked: true,
@@ -345,10 +351,11 @@
           plugins: {
             title: {
               display: true,
-              text: "{{ _('YunoHost - Dépenses') }}",
+              text: "{{ _('Dépenses') }}",
             },
           },
           responsive: true,
+          maintainAspectRatio: false,
           scales: {
             x: {
               stacked: true,
@@ -378,13 +385,7 @@
     </script>
 </section>
 
-
-
-
-
-
-<section>
-
+<section class="px-5">
     <h2>{{ _("Roadmap and dreammap") }}</h2>
 
     <p>
@@ -405,10 +406,7 @@
     </details>
 </section>
 
-
-
-<section>
-
+<section class="px-5">
     <h2>{{ _("General questions about donations") }}</h2>
 
     <h3 class="text-lg">{{ _("Will my donation be tax deductible?") }}</h3>
@@ -458,7 +456,6 @@
     <p class="py-3">
       {{ _("This requires a manual operation on our part.  Please do not hesitate to contact us at the following [this e-mail address link](mailto:donate-5542@yunohost.org).") | markdown | no_p }}
     </p>
-
 </section>
 
 {% endblock %}

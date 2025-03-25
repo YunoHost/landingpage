@@ -48,8 +48,8 @@ download https://raw.githubusercontent.com/YunoHost/doc/master/images/ynh_logo_b
 git_download https://github.com/adobe-fonts/source-sans fonts/source-sans --depth 1 --single-branch
 
 # Production -> download standalone tailwind to compile only what we need
-architecture=""
-case $(arch) in
+architecture="x64"
+case $(uname -m) in
     aarch64) architecture="arm64" ;;
     armv7)   architecture="armv7" ;;
     x86_64)  architecture="x64" ;;

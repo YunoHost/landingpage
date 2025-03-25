@@ -118,10 +118,43 @@
         </nav>
 
         {% block header %}
+            <div class="flex flex-col justify-center text-white text-center relative h-[25rem] bg-top w-full bg-cover" style="background-image: linear-gradient(#0000, #0005), url(assets/img/garden.png); background-size: cover; background-position: bottom;">
+
+                <img alt="{{ _("Yunohost logo") }}" class="self-center pt-5 w-32 mt-2 shadow-md" src="assets/img/ynh_logo_roundcorner.png" />
+                <div class="self-center w-fit p-5 flex align-center justify-center font-bold text-5xl sm:text-6xl backdrop-blur-[1px]" style="text-shadow: 5px 5px 5px #000">
+                    <h1>{{ _("Garden your own<br/>piece of the Internet!") }}</h1>
+                </div>
+
+            </div>
+
+            <!-- ############################################################################################################ -->
+
+            <nav id="main-nav" class="w-full font-semibold py-2 pr-4 flex flex-col sm:flex-row justify-center z-50 bg-[#b6e39d] text-gray-800 dark:bg-[#0F321E] dark:text-white transition-colors text-2xl sm:text-lg" aria-label="{{ _("Main menu") }}">
+                <button class="block sm:hidden w-full py-3" onclick="document.getElementById('main-menu-items').classList.toggle('hidden')"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
+                <ul id="main-menu-items" class="justify-center flex-wrap flex-row hidden text-center sm:text-left sm:flex sm:space-x-10 sm:py-2">
+                <li>
+                    <a class="py-3 block sm:inline-block hover:opacity-75" href="/#main-content">{{ _("Discover") }}</a>
+                </li>
+                <li>
+                    <a class="py-3 block sm:inline-block hover:opacity-75" href="/#apps">{{ _("Applications") }}</a>
+                </li>
+                <li>
+                    <a class="py-3 block sm:inline-block hover:opacity-75" href="/#start">{{ _("Install") }}</a>
+
+                </li>
+                <li>
+                    <a class="py-3 block sm:inline-block hover:opacity-75" href="https://doc.yunohost.org">{{ _("Documentation") }}<span class="opacity-50">↗</span></a>
+                </li>
+                <li>
+                    <a class="py-3 block sm:inline-block hover:opacity-75" href="/#news">{{ _("Latest news") }}</a>
+                </li>
+                <li>
+                    <a class="py-3 block sm:inline-block hover:opacity-75" href="/#community">{{ _("Community") }}</a>
+                </li>
+                </ul>
+            </nav>
         {% endblock %}
-
     </header>
-
 
     <main id="{%- block page_id -%}{%- endblock -%}">
     {% block main %}

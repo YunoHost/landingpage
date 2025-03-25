@@ -8,31 +8,18 @@
     <link rel="stylesheet" href="assets/fonts/source-sans/source-sans-3.css" />
     {% block assets %}{% endblock %}
 
-    <!-- Enabled on generated pages {{ '--'+'>' }}
-
-        <link rel="stylesheet" href="assets/css/prod.min.css" />
-
-    {{ '<'+'!--' }}-->
-
-    <!-- {# Disabled on generated page-->
-
+    {% if dev %}
         <link rel="stylesheet" href="assets/css/local.css" />
         <script src="assets/js/tailwinds.js"></script>
-        <!-- https://tailwindcss.com/docs/theme -->
+        <style type="text/tailwindcss">{{ tailwind_css }}</style>
         <script>
-        tailwind.config = {
-          darkMode: "selector",
-            theme: {
-            extend: {
-                colors: {},
-            },
-            },
-        };
-
+          tailwind.config = {
+                darkMode: 'class',
+          }
         </script>
-
-    <!-- #}-->
-
+    {% else %}
+        <link rel="stylesheet" href="assets/css/prod.min.css" />
+    {% endif %}
 
     <script>
       // On page load or when changing themes, best to add inline in `head` to avoid FOUC

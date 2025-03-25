@@ -6,6 +6,27 @@ LANDINGPAGE_DIR="$(dirname "$SCRIPT_DIR")"
 
 LANDINGPAGE_VENV_DIR=$(realpath "${LANDINGPAGE_VENV_DIR:-$LANDINGPAGE_DIR/venv}")
 LANDINGPAGE_DIST_DIR=$(realpath "${LANDINGPAGE_DIST_DIR:-$LANDINGPAGE_DIR/dist}")
+
+if [[ "${1:-}" == "dev" ]]
+then
+    command -v inotifywait &>/dev/null || { echo "You should first run: apt install inotify-tools"; exit; }
+
+    # Clear the dist directory
+    mkdir -p "$LANDINGPAGE_DIST_DIR"
+    rm -rf "${LANDINGPAGE_DIST_DIR:?}"/*
+
+    LANDINGPAGE_DEV=true python3 bin/localize.py "$LANDINGPAGE_DIST_DIR"
+    cp -Rf assets "$LANDINGPAGE_DIST_DIR"
+    echo "Now watching for changes in *.html and assets/css/*.css"
+    while { inotifywait --quiet -r -e modify *.html assets/css/*.css || true; }
+    do
+        echo "Regenerating..."
+        LANDINGPAGE_DEV=true python3 bin/localize.py "$LANDINGPAGE_DIST_DIR"
+        cp -Rf assets "$LANDINGPAGE_DIST_DIR"
+    done
+    exit
+fi
+
 if [[ "${1:-}" == "" ]]
 then
     # Clear the dist directory

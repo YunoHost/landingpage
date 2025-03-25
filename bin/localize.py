@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 import argparse
 import re
 import requests
@@ -15,7 +16,7 @@ from jinja2 import Environment, FileSystemLoader
 LANDINGPAGE_DIR = Path(__file__).resolve().parent.parent
 LOCALES_PATH = LANDINGPAGE_DIR / "translations"
 TEMPLATES_PATH = LANDINGPAGE_DIR
-
+DEV = bool(os.environ.get("LANDINGPAGE_DEV"))
 
 def main() -> None:
     parser = argparse.ArgumentParser()
@@ -86,22 +87,23 @@ def main() -> None:
     }
     relevant_langs = dict(sorted(relevant_langs.items()))
 
+    if DEV:
+        relevant_langs = {k:v for k, v in relevant_langs.items() if k in ["en", "fr"]}
+
     # Generate 'en'
     locale = "en"
-    translated_html = template.render(
-        {
-            "lang": locale,
-            "articles": articles,
-            "langs": relevant_langs,
-            "_": lambda s: s,
-        }
-    )
+    data_for_jinja = {
+        "articles": articles,
+        "langs": relevant_langs,
+        "_": lambda s: s,
+        "dev": DEV,
+        "tailwind_css": open("assets/css/input.css").read() if DEV else ""
+    }
+    translated_html = template.render({ "lang": locale, **data_for_jinja })
     with open(f"{args.output}/index.{locale}.html", "w") as file:
         file.write(translated_html)
 
-    translated_donate_html = template_donate.render(
-        {"lang": locale, "langs": relevant_langs, "_": lambda s: s}
-    )
+    translated_donate_html = template_donate.render({ "lang": locale, **data_for_jinja })
     with open(f"{args.output}/donate.{locale}.html", "w") as file:
         file.write(translated_donate_html)
 
@@ -112,17 +114,12 @@ def main() -> None:
             continue
         translations = Translations.load(LOCALES_PATH, [locale])
         jinja_env.install_gettext_translations(translations)  # type: ignore
-        translated_html = template.render(
-            {"lang": locale, "articles": articles, "langs": relevant_langs}
-        )
 
+        translated_html = template.render({ "lang": locale, **data_for_jinja })
         with open(f"{args.output}/index.{locale}.html", "w") as file:
             file.write(translated_html)
 
-        translated_donate_html = template_donate.render(
-            {"lang": locale, "langs": relevant_langs}
-        )
-
+        translated_donate_html = template_donate.render({ "lang": locale, **data_for_jinja })
         with open(f"{args.output}/donate.{locale}.html", "w") as file:
             file.write(translated_donate_html)
 

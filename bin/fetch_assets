@@ -54,7 +54,7 @@ case $(arch) in
     armv7)   architecture="armv7" ;;
     x86_64)  architecture="x64" ;;
 esac
-download https://github.com/tailwindlabs/tailwindcss/releases/download/v3.4.3/tailwindcss-linux-${architecture} tailwindcss-linux
+download https://github.com/tailwindlabs/tailwindcss/releases/download/v3.4.17/tailwindcss-linux-${architecture} tailwindcss-linux
 chmod u+x tailwindcss-linux
 
 # JS deps

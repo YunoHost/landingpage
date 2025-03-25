@@ -30,7 +30,7 @@ if [[ "${1:-}" == "" || "${1:-}" == "i18n"  ]]
 then
 
     # Extract the english sentences from the code, needed if you modified it
-    pybabel extract -F babel.cfg -o translations/messages.pot index.html
+    pybabel extract -F babel.cfg -o translations/messages.pot *.html --no-location --omit-header
 
     # If working on a new locale: initialize it (in this example: fr)
     # pybabel init -i translations/messages.pot -d translations -l fr
@@ -42,7 +42,16 @@ then
     # ... translate stuff in translations/<lang>/LC_MESSAGES/messages.po
     # re-run the 'update' command to let Babel properly format the text
     # then compile:
-    pybabel compile -d translations
+    locales=$(find translations/ -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | sort)
+    for locale in $locales
+    do
+        this_locale_file="translations/$locale/LC_MESSAGES/messages"
+        if ! [ -e $this_locale_file.mo ] || [ $this_locale_file.po -nt $this_locale_file.mo ]
+        then
+            pybabel compile -d translations -l $locale
+        fi
+    done
+
 fi
 if [[ "${1:-}" == "" || "${1:-}" == "blog"  ]]
 then

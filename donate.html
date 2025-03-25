@@ -7,7 +7,9 @@
 {% endblock %}
 
 {% block assets %}
+{% if not dev %}
 <script src="https://js.stripe.com/v3/"></script>
+{% endif %}
 <script src="assets/js/chart.js"></script>
 {% endblock %}
 

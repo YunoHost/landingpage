@@ -72,38 +72,38 @@ def main() -> None:
     articles.sort(key=lambda item: item["date"], reverse=True)
     articles = articles[0:6]
 
-    # Fetch weblate statistics to list locales translated abode a certain treshold
-    j = requests.get(
-        "https://translate.yunohost.org/api/components/yunohost/landingpage/statistics/"
-    ).json()
-
     def get_lang_native_name(code):
         return Language.make(language=code).display_name(code).title()
 
-    relevant_langs = {
-        lang["code"]: get_lang_native_name(lang["code"])
-        for lang in j["results"]
-        if lang["translated_percent"] > 50
-    }
-    relevant_langs = dict(sorted(relevant_langs.items()))
-
     if DEV:
-        relevant_langs = {k:v for k, v in relevant_langs.items() if k in ["en", "fr"]}
+        relevant_langs = {k:get_lang_native_name(k) for k in ["en", "fr"]}
+    else:
+        # Fetch weblate statistics to list locales translated abode a certain treshold
+        j = requests.get(
+            "https://translate.yunohost.org/api/components/yunohost/landingpage/statistics/"
+        ).json()
+
+        relevant_langs = {
+            lang["code"]: get_lang_native_name(lang["code"])
+            for lang in j["results"]
+            if lang["translated_percent"] > 50
+        }
+
+        relevant_langs = dict(sorted(relevant_langs.items()))
 
     # Generate 'en'
     locale = "en"
     data_for_jinja = {
         "articles": articles,
         "langs": relevant_langs,
-        "_": lambda s: s,
         "dev": DEV,
         "tailwind_css": open("assets/css/input.css").read() if DEV else ""
     }
-    translated_html = template.render({ "lang": locale, **data_for_jinja })
+    translated_html = template.render({ "lang": locale, "_": lambda s: s, **data_for_jinja })
     with open(f"{args.output}/index.{locale}.html", "w") as file:
         file.write(translated_html)
 
-    translated_donate_html = template_donate.render({ "lang": locale, **data_for_jinja })
+    translated_donate_html = template_donate.render({ "lang": locale, "_": lambda s: s, **data_for_jinja })
     with open(f"{args.output}/donate.{locale}.html", "w") as file:
         file.write(translated_donate_html)
 

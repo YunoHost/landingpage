@@ -14,18 +14,13 @@
 {% block main %}
 
 <section>
-
-    <p class="text-xl pb-10">
-    YunoHost has been around since 2012. The solution is developed mainly on a voluntary basis and outside the commercial sector. YunoHost is a modest project in terms of the resources it mobilizes - but it's an ambitious one, as much for its activism as for its technical and interface design, or for the perseverance required to package and maintain hundreds of applications.
-
-    If, like us, you'd like to see the project continue to function, improve to meet its promises, and allow us to take care of the community, this is where you can donate!
-
-    Here are a few points to clarify how we use your donations and what we dream for the future of YunoHost.
-    </p>
+    <div class="text-xl pb-10">
+      <p>{{ _("YunoHost has been around since 2012. The solution is developed mainly on a voluntary basis and outside the commercial sector. YunoHost is a modest project in terms of the resources it mobilizes - but it's an ambitious one, as much for its activism as for its technical and interface design, or for the perseverance required to package and maintain hundreds of applications.") }}</p>
+      <p>{{ _("If, like us, you'd like to see the project continue to function, improve to meet its promises, and allow us to take care of the community, this is where you can donate!") }}</p>
+      <p>{{ _("Here are a few points to clarify how we use your donations and what we dream for the future of YunoHost.") }}</p>
+    </div>
 
     <div class="text-center mx-auto">
-
-
       <div class="mb-3">
           <!-- FIXME : template the public_key -->
         <input type="hidden" id="public_key" value="pk_live_EZ0b0e5WyeOqicQXDxfaHnWP">
@@ -98,103 +93,95 @@
         });
     });
     </script>
-
 </section>
 
 
 
 <section id="why">
+    <h2>{{ _("Why support YunoHost in 2025?") }}</h2>
 
-    <h2>Why support YunoHost in 2025?</h2>
-
-    <h3>0. Encapacitate as many as possible</h3>
-
-    <p class="py-3">
-    YunoHost is a non-profit project that advocates a decentralized Internet, with open, interoperable, sober technologies that respect privacy and (re-)empower the greatest number of people and collectives.
-    </p>
-
-    <h3>1. Preserve what's useful to you <span class="bg-green-200 text-green-800 rotate-[-3deg] inline-block px-1.5 py-0.5">5&nbsp;500€</span></h3>
+    <h3>{{ _("0. Encapacitate as many as possible") }}</h3>
 
     <p class="py-3">
-    Donations are used primarily to maintain the existing system, in particular by paying infrastructure costs (YunoHost services and task automation) and enabling the team to meet at least once a year.
+      {{ _("YunoHost is a non-profit project that advocates a decentralized Internet, with open, interoperable, sober technologies that respect privacy and (re-)empower the greatest number of people and collectives.") }}
     </p>
 
-    <h3>2. Perpetuating the facilitation position <span class="bg-purple-200 text-purple-800 rotate-[-3deg] inline-block px-1.5 py-0.5">12&nbsp;000€</span></h3>
+    <h3>{{ _("1. Preserve what's useful to you") }} <span class="bg-green-200 text-green-800 rotate-[-3deg] inline-block px-1.5 py-0.5">5&nbsp;500€</span></h3>
 
     <p class="py-3">
-    Since mid-2024, the team involved in the day-to-day development of YunoHost has been calling on a facilitator (a.k.a “touilleur”) to take care of the collective both humanly and administratively, as well as in its external relations. We need more donations to sustain this essential position.
+      {{ _("Donations are used primarily to maintain the existing system, in particular by paying infrastructure costs (YunoHost services and task automation) and enabling the team to meet at least once a year.") }}
     </p>
 
-    <h3>3. Boosting development  <span class="bg-sky-200 text-sky-800 rotate-[-3deg] inline-block px-1.5 py-0.5">11&nbsp;000€</span></h3>
+    <h3>{{ _("2. Perpetuating the facilitation position") }} <span class="bg-purple-200 text-purple-800 rotate-[-3deg] inline-block px-1.5 py-0.5">12&nbsp;000€</span></h3>
 
     <p class="py-3">
-    The publication of new large-scale developments depends essentially on the availability of contributors. If the budget allows, the team would like to remunerate certain developments to enable contributors to free up professional time to carry them out.
+      {{ _("Since mid-2024, the team involved in the day-to-day development of YunoHost has been calling on a facilitator (a.k.a “touilleur”) to take care of the collective both humanly and administratively, as well as in its external relations. We need more donations to sustain this essential position.") }}
     </p>
 
+    <h3>{{ _("3. Boosting development") }} <span class="bg-sky-200 text-sky-800 rotate-[-3deg] inline-block px-1.5 py-0.5">11&nbsp;000€</span></h3>
+
+    <p class="py-3">
+      {{ _("The publication of new large-scale developments depends essentially on the availability of contributors. If the budget allows, the team would like to remunerate certain developments to enable contributors to free up professional time to carry them out.") }}
+    </p>
 </section>
 
 
 <section>
-
-    <h2>YunoHost in 2024</h2>
+    <h2>{{ _("YunoHost in 2024") }}</h2>
 
     <div class="flex flex-md md:flex-row !max-w-screen-lg">
-
         <div class="mx-5 w-1/4">
           <img src="assets/img/fursona.png" title="{{ _("Claude, YunoHost's mascot") }}" alt="{{ _("Image of Claude, YunoHost's mascot. The humanoid oppossum stands with purple hair and scarf, round glasses, beige pants with pockets and a blue crop top with the YunoHost logo.") }}" />
         </div>
 
         <div class="mx-5">
-            <h3>Project</h3>
+            <h3>{{ _("Project") }}</h3>
 
             <ul class="py-3">
-                <li>🎂 a 14 years old project</li>
-                <li>👷 about fifteen regularly active core-contributors</li>
-                <li>💰 volunteer work that could be valued at around €500,000 a year if remunerated</li>
+                <li>🎂 {{ _("a 14 years old project") }}</li>
+                <li>👷 {{ _("about fifteen regularly active core-contributors") }}</li>
+                <li>💰 {{ _("volunteer work that could be valued at around €500,000 a year if remunerated") }}</li>
             </ul>
 
-            <h3>Community</h3>
+            <h3>{{ _("Community") }}</h3>
 
             <ul class="py-3">
-                <li>🌐 ~10&nbsp;000 instances in 77 countries</li>
-                <li>💸 130 regular or occasional donors in 2024</li>
-                <li>👥 8&nbsp;700+ accounts on the various project channels (forge, forum, chat)</li>
-                <li>🗣️ <a href="https://translate.yunohost.org/projects/yunohost/#languages">15+ languages supported</a></li>
+                <li>🌐 {{ _("~10&nbsp;000 instances in 77 countries") }}</li>
+                <li>💸 {{ _("130 regular or occasional donors in 2024") }}</li>
+                <li>👥 {{ _("8&nbsp;700+ accounts on the various project channels (forge, forum, chat)") }}</li>
+                <li>🗣️ <a href="https://translate.yunohost.org/projects/yunohost/#languages">{{ _("15+ languages supported") }}</a></li>
             </ul>
 
 
-            <h3>Software and ecosystem</h3>
+            <h3>{{ _("Software and ecosystem") }}</h3>
 
             <ul class="py-3">
-                <li>📦 <a href="https://apps.yunohost.org/catalog">540+ apps in the catalog</a> (<a href="https://apps.yunohost.org/charts">a brief history</a>)</li>
-                <li>🧑‍💻 760 Git code repositories (<a href="https://github.com/orgs/YunoHost/repositories">core</a> + <a href="https://github.com/orgs/YunoHost-Apps/repositories">apps</a>)</li>
+                <li>📦 {{ _("[540+ apps in the catalog](https://apps.yunohost.org/catalog) ([a brief history](https://apps.yunohost.org/charts))") | markdown | no_p }}</li>
+                <li>🧑‍💻 {{ _("760 Git code repositories ([core](https://github.com/orgs/YunoHost/repositories) + [apps](https://github.com/orgs/YunoHost-Apps/repositories))") | markdown | no_p }}</li>
             </ul>
         </div>
     </div>
-
 </section>
 
 <section>
-
-    <h2>What are your donations used for?</h2>
+    <h2>{{ _("What are your donations used for?") }}</h2>
 
     <p class="py-3">
-    Your donations guarantee our independence: they constitute our entire income in 2024.
+      {{ _("Your donations guarantee our independence: they constitute our entire income in 2024.") }}
     </p>
 
-    <h3>Revenues</h3>
+    <h3>{{ _("Revenues") }}</h3>
 
     <p class="py-3">
-    In recent years, donations have been in the region of €15,000 per year, mainly from individuals.
-    </p>
-
-    <p class="py-3">
-    Between 2021 and 2023, the project benefited from grants from the <a href="https://nlnet.nl/project/InternetCube/">NLnet</a>) foundation and the <a href="https://mastodon.libre-entreprise.com/@codelutin/105066492461041800">CodeLutin</a> company for a total of around €15,000 which were used to develop features for versions 4 and 11 of the project. The team is regularly applying for new grants.
+      {{ _("In recent years, donations have been in the region of €15,000 per year, mainly from individuals.") }}
     </p>
 
     <p class="py-3">
-    In addition, YunoHost receives significant in-kind donations in the form of servers from associations and independent web companies such as Globenet, Gitoyen, TetaNeutral and Octopuce.
-    These in-kind donations are not represented in the graph below.
+      {{ _("Between 2021 and 2023, the project benefited from grants from the [NLnet](https://nlnet.nl/project/InternetCube/)) foundation and the [CodeLutin](https://mastodon.libre-entreprise.com/@codelutin/105066492461041800) company for a total of around €15,000 which were used to develop features for versions 4 and 11 of the project. The team is regularly applying for new grants.") | markdown | no_p }}
+    </p>
+
+    <p class="py-3">
+      {{ _("In addition, YunoHost receives significant in-kind donations in the form of servers from associations and independent web companies such as Globenet, Gitoyen, TetaNeutral and Octopuce.<br>These in-kind donations are not represented in the graph below.") }}
     </p>
 
     <canvas id="recettes" class="w-full bg-white my-5 p-5 pt-2" aria-hidden="true"></canvas>
@@ -205,23 +192,22 @@
     https://mermaid.live/edit#pako:eNplUktqwzAQvcqgENyCDbKSmMSLbtJtobTQReMsxvYkEXWsIMslIWTTi2RXuuipeoIeoZJMPlAkRm-enmZGGu1ZoUpiKev391kNIGtpUvAQIDArWlOQQlCifgvCa_YFtcS8oiY4y-3WdjddoTaOgxMJkLFNpcxUVUo_YkXGUMYgtXRvURaUiLA3GmFBlr2cOXTQL9Yc-v2sdmO7K1yGKCeDncRIU5EN9kSFC93Aze_x-AmlqhsgA9b5gqbN36k20nK3pyzbCLeygZng8SQSXPAQnHUw9jB2UHgoHBx4OHBwGNqEds67ULsu1HUNPx_fNhNwiKI7EBPOeSftbI4aZoMkSUKIxSAZ22UsuK_AFxIPxWQ4_6cdeynE3GvjZHStZSFbk16jLG07fUsy5luVMffWJS2wrYy7_cFKsTXqeVcXLDW6pZBp1S5XLF1g1Viv3ZRo6F7iUuP6zG6wflXq4lMpjdIP3Qfy_-jwBxd8rGY
     -->
 
-    <h3>Expenses</h3>
+    <h3>{{ _("Expenses") }}</h3>
 
     <p class="py-3">
-    Between 2022 and 2024, the collective spent around €12,500 a year.
-    In 2025, the creation of the position of ‘stirrer’ for the collective will represent an additional expense of €12,000 per year. YunoHost would like to be able to continue its financial contributions to the development of important features for the project and its community. The projected budget for 2025 is therefore around €28,000.
+      {{ _("Between 2022 and 2024, the collective spent around €12,500 a year.<br>In 2025, the creation of the position of ‘stirrer’ for the collective will represent an additional expense of €12,000 per year. YunoHost would like to be able to continue its financial contributions to the development of important features for the project and its community. The projected budget for 2025 is therefore around €28,000.") }}
     </p>
 
-    <p class="py-3">
-    Project expenditure breaks down into the following categories:
     <ul class="list-disc ps-5 py-3">
-        <li><strong>Development</strong>: one-off funding linked to the development and maintenance of the project, thanks to both grants and donations received. It should be noted, however, that this amount is anecdotal in relation to the voluntary work carried out by the team.</li>
-        <li><strong>Infrastructure</strong>: corresponds to the hosting of the tools used by the project, such as the website, documentation, forum, technical tools, etc. The amount of this expenditure should reduce in 2025 following a migration to a dedicated server with a friendly host.</li>
-        <li><strong>Events</strong>: expenses to enable the team to take part in events (e.g. <a href="https://jdll.org/)">JdLL</a>, and to meet in the same place once a year to work together on fundamental issues.</li>
-        <li><strong>Fees and other expenses</strong>: bank charges or donations made to other collectives that support the project in kind.</li>
-        <li><strong>Collective facilitation</strong>: financial compensation allocated to the tasks of administrative facilitation, facilitation and coordination of the collective. This is a new type of expense introduced in 2025, decided by the collective in view of the need to have a person dedicated to these aspects (a.k.a ‘touilleur’).</li>
+        <span class="py-3">
+          {{ _("Project expenditure breaks down into the following categories:") }}
+        </span>
+        <li>{{ _("**Development**: one-off funding linked to the development and maintenance of the project, thanks to both grants and donations received. It should be noted, however, that this amount is anecdotal in relation to the voluntary work carried out by the team.") | markdown | no_p }}</li>
+        <li>{{ _("**Infrastructure**: corresponds to the hosting of the tools used by the project, such as the website, documentation, forum, technical tools, etc. The amount of this expenditure should reduce in 2025 following a migration to a dedicated server with a friendly host.") | markdown | no_p }}</li>
+        <li>{{ _("**Events**: expenses to enable the team to take part in events (e.g. [JdLL](https://jdll.org/)), and to meet in the same place once a year to work together on fundamental issues.") | markdown | no_p }}</li>
+        <li>{{ _("**Fees and other expenses**: bank charges or donations made to other collectives that support the project in kind.") | markdown | no_p }}</li>
+        <li>{{ _("**Collective facilitation**: financial compensation allocated to the tasks of administrative facilitation, facilitation and coordination of the collective. This is a new type of expense introduced in 2025, decided by the collective in view of the need to have a person dedicated to these aspects (a.k.a ‘touilleur’).") | markdown | no_p }}</li>
     </ul>
-    </p>
 
     <canvas id="depenses" class="w-full bg-white my-5 p-5 pt-2" aria-hidden="true"></canvas>
 
@@ -240,8 +226,8 @@
         { label: "2023-2024", don: 14294.64, sub: 0 },
       ];
       const recettesInfos = {
-        don: { label: "Dons", backgroundColor: "#96f" },
-        sub: { label: "Subventions", backgroundColor: "#ffcd56" },
+        don: { label: "{{ _('Dons') }}", backgroundColor: "#96f" },
+        sub: { label: "{{ _('Subventions') }}", backgroundColor: "#ffcd56" },
       };
 
       new Chart(document.getElementById("recettes"), {
@@ -257,7 +243,7 @@
           plugins: {
             title: {
               display: true,
-              text: "YunoHost - Recettes",
+              text: "{{ _('YunoHost - Recettes') }}",
             },
           },
           responsive: true,
@@ -330,7 +316,7 @@
           other: 115.08 + 350,
         },
         {
-          label: "Prévisionnel",
+          label: "{{ _('Prévisionnel') }}",
           anim: 12000,
           dev: 5000 + 6000,
           infra: 1750,
@@ -339,11 +325,11 @@
         },
       ];
       const depensesInfos = {
-        anim: { label: "Animation", backgroundColor: "#96f" },
-        dev: { label: "Développement", backgroundColor: "#36a2eb" },
-        infra: { label: "Infrastructure", backgroundColor: "#ffcd56" },
-        events: { label: "Évenements", backgroundColor: "#4bc0c0" },
-        other: { label: "Autre", backgroundColor: "#c9cbcf" },
+        anim: { label: "{{ _('Animation') }}", backgroundColor: "#96f" },
+        dev: { label: "{{ _('Développement') }}", backgroundColor: "#36a2eb" },
+        infra: { label: "{{ _('Infrastructure') }}", backgroundColor: "#ffcd56" },
+        events: { label: "{{ _('Évenements') }}", backgroundColor: "#4bc0c0" },
+        other: { label: "{{ _('Autre') }}", backgroundColor: "#c9cbcf" },
       };
 
       new Chart(document.getElementById("depenses"), {
@@ -359,7 +345,7 @@
           plugins: {
             title: {
               display: true,
-              text: "YunoHost - Dépenses",
+              text: "{{ _('YunoHost - Dépenses') }}",
             },
           },
           responsive: true,
@@ -399,10 +385,10 @@
 
 <section>
 
-    <h2>Roadmap and dreammap</h2>
+    <h2>{{ _("Roadmap and dreammap") }}</h2>
 
     <p>
-    We're publishing a roadmap here to give a clearer idea of what we plan to develop. It in no way constitutes a commitment on the part of the team, and is dependent on the availability and energies of volunteers. It is therefore subject to change at any time.
+      {{ _("We're publishing a roadmap here to give a clearer idea of what we plan to develop. It in no way constitutes a commitment on the part of the team, and is dependent on the availability and energies of volunteers. It is therefore subject to change at any time.") }}
     </p>
 
     <img src="https://mermaid.ink/img/pako:eNqlVs2OG0UQfpXScFiQ1usd-4J8WXkxCRbrxGGyASFf2jM1dmt7uofunnWcKBIHxBHYJBcSED8SP0I5wI0TD7MvAI9AdY-92bHbJBLeg701VdVV31df9TyMUpVh1ItardZEpkrmfNabSAA7xwLvMc3ZVKDxJoBcSZvwB9iDvfigi8VebU6TlAk8JOsbefp2w3jCpij8kziOG0_i2j3fdo9D7h1nZBhw74Tcu86IzP1tR3SvR_hGeyCxspqJifRAWF6g4BLrUIOp5UrCcSWEweXK6j5xfBC__M9_evDPd08vYI9lBZdmD2ZaVWXA58nPMGbpGZtxOYPzTsDji-d___klfIA5S63SMBNqygQVYy2FmK2Ay2df1_4Lpc8gUwXjss3KEs45Lkwo_68wYOTqEWj0FKrm6VcwWMrBrQQ0puoc9RJKZgwdloW6ewGD94cjmhgNVIMJA_AeihK1gU4Qxeffu37uVNwiMBDKgsqBQKWUKOftnN9H0yi7u43Ji89djhGfaeYptAqOlTqjqosNbhtWn7BzcAi7UB5KbjmxsQ4DU5Wl0jbQxrPf1pwkyW1og3NzgxZOPF5mjMYv9cjVeiyZRLGT7w9x6kcNWnCvwm777rJEk2pe2kYrMYRLG_tqgBlH0xGVN1KMDq6MVQV_wKZccLsMsfcNtfMu-R_TPKIGRUTWEBurkRVuqqmoxaq6QIZf_oBkwW06d6TI3PpF49vOucYFEyGMfoAx6hx4UWqawQKl9REng_6Y5vKTCo01jb47cPntk3DrxzRWdKY7fs7O0elgRQ5QG4wondYqCg_vTZTUsqB1SEJYCzk8yU2td4GJcs5CdR0dHTWq7-6onsR4agj1tQKpd9oL5AtvutVl3KqDDEuUmeuFpp-AatNSkJ4jQyke__5WIPHFT3VigyJvaZxxYtOH_O_cm63dei2x3tX8Pt9Yw9dtPln34PBVOq1jdqp0U3znnVfrr9lQd7Mhh-bjvyCh1c1mCAWT9OUGdotRP44X0K9IcsydrrFQtPOmNDJVub_6ptEUPF16Hl4T_TVgiSowY8vLz358eXCj-qsb4VO4qVlWEWCnw_bpR9d1ZnbLeTWRnRv9__YhzSU1AZD0Ryft28PBOx5nWozb3iSaPt1e00pmAs3m86vbrhQsJXhV5e5rWkVAO2UON5ix_fEw2o8K1KThjF5xHrock6i-7qIe_czobq2EnUQT-YhcGTGQLGUa9ayucD-im3s2j3o5o1t_P6rKjFkccEaYF2sXmo2PlSqunDDjRPiofqfyr1aP_gVsFPYI?type=png" />
@@ -412,7 +398,7 @@
     -->
 
     <details>
-        <summary>Légende</summary>
+        <summary>{{ _("Légende") }}</summary>
 
         [FIXME / TODO : finish original french version and and translate ?
 
@@ -423,61 +409,54 @@
 
 <section>
 
-    <h2>General questions about donations</h2>
+    <h2>{{ _("General questions about donations") }}</h2>
 
-    <h3 class="text-lg">Will my donation be tax deductible?</h3>
+    <h3 class="text-lg">{{ _("Will my donation be tax deductible?") }}</h3>
 
     <p class="py-3">
-    At this time, we do not provide tax-deductible donation receipts. We can, however, issue donation receipts for your accounting purposes.
+      {{ _("At this time, we do not provide tax-deductible donation receipts. We can, however, issue donation receipts for your accounting purposes.") }}
     </p>
 
-    <h3 class="text-lg">My donation is not sent to YunoHost but to the Support Self-Hosting association. Is this normal?</h3>
+    <h3 class="text-lg">{{ _("My donation is not sent to YunoHost but to the Support Self-Hosting association. Is this normal?") }}</h3>
 
     <p class="py-3">
-    Yes, that's expected, Support Self-Hosting is the association that enables the YunoHost project to collect donations and pay expenses.
+      {{ _("Yes, that's expected, Support Self-Hosting is the association that enables the YunoHost project to collect donations and pay expenses.") }}
     </p>
 
-    <h3 class="text-lg">Can I become a member of the Support Self-Hosting association?</h3>
+    <h3 class="text-lg">{{ _("Can I become a member of the Support Self-Hosting association?") }}</h3>
 
     <p class="py-3">
-    No: this is an association whose members are chosen by co-option.
-    We don't think you need to be a member of Support Self-Hosting to contribute to the YunoHost project. Anyone can come and lend a hand on most of our projects, and we do our best to welcome goodwill.
+      {{ _("No: this is an association whose members are chosen by co-option.<br>We don't think you need to be a member of Support Self-Hosting to contribute to the YunoHost project. Anyone can come and lend a hand on most of our projects, and we do our best to welcome goodwill.") }}
     </p>
 
-    <h3 class="text-lg">I can't make a recurring donation, but I'd like to support YunoHost. What can I do?</h3>
+    <h3 class="text-lg">{{ _("I can't make a recurring donation, but I'd like to support YunoHost. What can I do?") }}</h3>
 
     <p class="py-3">
-    Thank you for your support and commitment.
-    You can make a one-off donation directly from the <a href="https://donate.yunohost.org">https://donate.yunohost.org</a> page.
+      {{ _("Thank you for your support and commitment.<br>You can make a one-off donation directly from the [donate.yunohost.org](https://donate.yunohost.org) page.") | markdown | no_p }}
     </p>
 
-    <h3 class="text-lg">I've made a monthly donation but I've made a mistake in the amount or I'd like to change it. How do I proceed?</h3>
+    <h3 class="text-lg">{{ _("I've made a monthly donation but I've made a mistake in the amount or I'd like to change it. How do I proceed?") }}</h3>
 
     <p class="py-3">
-    For recurring credit card donations, we cannot change the amount for future debits, but we can stop them.
-
-    To do so, please contact us at <a href="mailto:donate-5542@yunohost.org">this e-mail address</a>. We will then invite you, if you wish, to renew your donation the following month with the correct amount.
+      {{ _("For recurring credit card donations, we cannot change the amount for future debits, but we can stop them.<br>To do so, please contact us at [this e-mail address](mailto:donate-5542@yunohost.org). We will then invite you, if you wish, to renew your donation the following month with the correct amount.") | markdown | no_p }}
     </p>
 
-    <h3 class="text-lg">I am currently making a recurring donation but my credit card has expired. What should I do?</h3>
+    <h3 class="text-lg">{{ _("I am currently making a recurring donation but my credit card has expired. What should I do?") }}</h3>
 
     <p class="py-3">
-    Normally, your recurring donation will be automatically stopped once your card has been deactivated.
-
-    To update your bank details with Support Self-Hosting, please complete the form on the <a href="https://donate.yunohost.org">https://donate.yunohost.org</a> page as if it were your first donation.
+      {{ _("Normally, your recurring donation will be automatically stopped once your card has been deactivated.<br>To update your bank details with Support Self-Hosting, please complete the form on the [donate.yunohost.org](https://donate.yunohost.org) page as if it were your first donation.") | markdown | no_p }}
     </p>
 
-    <h3 class="text-lg">My organization doesn't have a credit card, but would like to make a donation. How do I go about it?</h3>
+    <h3 class="text-lg">{{ _("My organization doesn't have a credit card, but would like to make a donation. How do I go about it?") }}</h3>
 
     <p class="py-3">
-    You can contact us so that we can provide you with a RIB to make a transfer.
+      {{ _("You can contact us so that we can provide you with a IBAN to make a transfer.") }}
     </p>
 
-    <h3 class="text-lg">I'd like to stop a recurring donation. What can I do?</h3>
+    <h3 class="text-lg">{{ _("I'd like to stop a recurring donation. What can I do?") }}</h3>
 
     <p class="py-3">
-    This requires a manual operation on our part.
-    Please do not hesitate to contact us at the following this e-mail address <a href="mailto:donate-5542@yunohost.org">link</a>.
+      {{ _("This requires a manual operation on our part.  Please do not hesitate to contact us at the following [this e-mail address link](mailto:donate-5542@yunohost.org).") | markdown | no_p }}
     </p>
 
 </section>

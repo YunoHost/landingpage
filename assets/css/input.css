@@ -39,4 +39,15 @@
     input, textarea, select {
         @apply !rounded-md shadow-sm !border-gray-300 bg-neutral-50 dark:bg-gray-800 dark:!border-gray-700;
     }
+
+    .glow-light {
+        animation: glow-light 20s linear infinite 0s;
+        transition: filter;
+    }
+
+    .glow-dark {
+        animation: glow-dark 20s linear infinite 0s;
+        transition: filter;
+    }
+
 }

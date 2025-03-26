@@ -190,7 +190,7 @@
       {{ _("In addition, YunoHost receives significant in-kind donations in the form of servers from associations and independent web companies such as Globenet, Gitoyen, TetaNeutral and Octopuce.<br>These in-kind donations are not represented in the graph below.") }}
     </p>
 
-    <div style="height: 60vh;" class="bg-white my-5 p-5 pt-2">
+    <div style="height: 60vh;" class="my-5 p-5 pt-2">
         <canvas id="recettes" aria-hidden="true"></canvas>
     </div>
 
@@ -217,7 +217,7 @@
         <li>{{ _("**Collective facilitation**: financial compensation allocated to the tasks of administrative facilitation, animtion and coordination of the collective. This is a new type of expense introduced in 2025, decided by the collective in view of the need to have a person dedicated to these aspects (a.k.a ‘stirrer’).") | markdown | no_p }}</li>
     </ul>
     
-    <div style="height: 60vh;" class="bg-white my-5 p-5 pt-2">
+    <div style="height: 60vh;" class="my-5 p-5 pt-2">
       <canvas id="depenses" aria-hidden="true"></canvas>
     </div>
 
@@ -240,7 +240,7 @@
         sub: { label: "{{ _('Grants') }}", backgroundColor: "#ffcd56" },
       };
 
-      new Chart(document.getElementById("recettes"), {
+      const recettesChart = new Chart(document.getElementById("recettes"), {
         type: "bar",
         data: {
           labels: recettesData.map((d) => d.label),
@@ -343,7 +343,7 @@
         other: { label: "{{ _('Others') }}", backgroundColor: "#c9cbcf" },
       };
 
-      new Chart(document.getElementById("depenses"), {
+      const depensesChart = new Chart(document.getElementById("depenses"), {
         type: "bar",
         data: {
           labels: depensesData.map((d) => d.label),
@@ -387,6 +387,29 @@
         depensesDl.appendChild(dt);
         depensesDl.appendChild(dd);
       });
+
+      function updateChartColor(chart, color, gridColor) {
+        chart.options.plugins.title.color = color;
+        chart.options.scales.y.ticks.color = color;
+        chart.options.scales.y.grid.color = gridColor;
+        chart.options.scales.x.ticks.color = color;
+        chart.options.scales.x.grid.color = gridColor;
+        chart.options.color = color;
+        chart.update();
+      }
+
+      const htmlElem = document.querySelector("html");
+
+      function onThemeChanged() {
+        const isDark = htmlElem.classList.contains("dark");
+        const color = isDark ? "#e6e6e6" : "#666";
+        const gridColor = isDark ? "rgba(256, 256, 256, 0.1)" : "rgba(0, 0, 0, 0.1)";
+        updateChartColor(recettesChart, color, gridColor);
+        updateChartColor(depensesChart, color, gridColor);
+      }
+
+      htmlElem.addEventListener("theme-changed", onThemeChanged);
+      onThemeChanged();
     </script>
 </section>
 

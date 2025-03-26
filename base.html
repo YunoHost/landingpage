@@ -29,6 +29,8 @@
           localStorage.theme === "dark" ||
           (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
         );
+        // Emit event so other code can hook theme change
+        document.querySelector("html").dispatchEvent(new CustomEvent('theme-changed'))
       }
 
       function toggleColorMode() {

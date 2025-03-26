@@ -48,14 +48,31 @@ def main() -> None:
             .replace(")%", f"{span_stop}{div_stop}")
         )
 
+    def get_color_vars(c: list[int]):
+        factor = (100 - c[2]) / 3
+
+        def hsl(c: list[int], ld: float):
+            return f"hsl({c[0]}, {c[1]}%, {min(c[2] + ld, 100)}%)"
+
+        return " ".join(
+            [
+                f"--{s}: {hsl(c, i * factor)};"
+                for i, s in enumerate(
+                    ["color", "item-color", "wireframe-color", "wireframe-item-color"]
+                )
+            ]
+        )
+
     # Load template
     jinja_env = Environment(loader=FileSystemLoader(TEMPLATES_PATH))
     jinja_env.add_extension("jinja2.ext.i18n")
     jinja_env.filters["markdown"] = markdown.markdown
     jinja_env.filters["no_p"] = no_p
     jinja_env.filters["cycling"] = cycling
+    jinja_env.filters["get_color_vars"] = get_color_vars
     template = jinja_env.get_template("index.html")
     template_donate = jinja_env.get_template("donate.html")
+    template_roadmap = jinja_env.get_template("roadmap.html")
 
     # Load blog data
     with open("blog.json", "r") as file:
@@ -71,6 +88,9 @@ def main() -> None:
     ]
     articles.sort(key=lambda item: item["date"], reverse=True)
     articles = articles[0:6]
+
+    # Load roadmap data
+    roadmap_data = json.loads(Path("roadmap.json").read_bytes())
 
     def get_lang_native_name(code):
         return Language.make(language=code).display_name(code).title()
@@ -95,6 +115,7 @@ def main() -> None:
     locale = "en"
     data_for_jinja = {
         "articles": articles,
+        "roadmap": roadmap_data,
         "langs": relevant_langs,
         "dev": DEV,
         "tailwind_css": open("assets/css/input.css").read() if DEV else ""
@@ -106,6 +127,10 @@ def main() -> None:
     translated_donate_html = template_donate.render({ "lang": locale, "_": lambda s: s, **data_for_jinja })
     with open(f"{args.output}/donate.{locale}.html", "w") as file:
         file.write(translated_donate_html)
+
+    translated_roadmap_html = template_roadmap.render({ "lang": locale, "_": lambda s: s, **data_for_jinja })
+    with open(f"{args.output}/roadmap.{locale}.html", "w") as file:
+        file.write(translated_roadmap_html)
 
     # Generate translated html for each locales
     locales = [localedir.name for localedir in LOCALES_PATH.iterdir()]
@@ -122,6 +147,10 @@ def main() -> None:
         translated_donate_html = template_donate.render({ "lang": locale, **data_for_jinja })
         with open(f"{args.output}/donate.{locale}.html", "w") as file:
             file.write(translated_donate_html)
+
+        translated_roadmap_html = template_roadmap.render({ "lang": locale, **data_for_jinja })
+        with open(f"{args.output}/roadmap.{locale}.html", "w") as file:
+            file.write(translated_roadmap_html)
 
 
 if __name__ == "__main__":

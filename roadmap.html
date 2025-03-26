@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block page_id %}roadmap{% endblock %}
+
+{% block title %}
+{{ _("Roadmap") }}
+{% endblock %}
+
+{% block assets %}
+<link rel="stylesheet" href="assets/css/roadmap.css" />
+{% endblock %}
+
+{% block header_title %}{{ _("Roadmap") }}{% endblock %}
+
+{% block main %}
+{% for mav in roadmap.majorVersions %}
+{% set id = loop.index0|string %}
+{% set expanded = loop.index0 >= roadmap.currentVersionIndex %}
+<div
+  class="major-version"
+  style="{{ mav.color | get_color_vars }}"
+  data-current="{{ roadmap.currentVersionIndex }}"
+>
+  <div class="major-version-title">
+    <button
+      type="button"
+      aria-expanded="{{ "true" if expanded else "false" }}"
+      aria-controls="{{ id }}"
+      class="expand-button"
+    >
+      {{ mav.title }}
+    </button>
+  </div>
+  
+  <div id="{{ id }}" class="expand-content {{ "" if expanded else "hide" }}">
+    <div class="arrow arrow-left">
+      <button type="button" class="arrow-button" aria-label="Scroll to left"></button>
+    </div>
+    <div class="arrow arrow-right">
+      <button type="button" class="arrow-button" aria-label="Scroll to right"></button>
+    </div>
+
+    <div class="minor-versions">
+      {% for miv in mav.minorVersions %}
+      {% set id = id + '-' + loop.index0|string %}
+      <div class="minor-version{{ ' wireframe' if miv.draft else '' }}">
+        <div class="minor-version-title">{{ miv.title }}</div>
+        <div class="items">
+          {% for item in miv.features %}
+            {% set id = id + '-' + loop.index0|string %}
+            <div class="item">
+              {% if not item.description %}
+                <div class="item-title">{{ item.title }}</div>
+              {% else %}
+              <button
+                type="button"
+                aria-expanded="false"
+                aria-controls="{{ id }}"
+                class="item-title expand-button"
+              >{{ item.title }}</button>
+              <div id="{{ id }}" class="item-desc expand-content hide">{{ item.description }}</div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+        <div class="minor-version-line"></div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+<script type="text/javascript">
+  function setupExpandButton(elem) {
+    const btnElem = elem.querySelector(".expand-button");
+    const descElem = elem.querySelector(".expand-content");
+    const majorVersionExpand = elem.querySelector("& > .expand-content");
+
+    btnElem.onclick = () => {
+      const visible = btnElem.getAttribute("aria-expanded") === "true";
+      descElem.classList.toggle("hide");
+      btnElem.setAttribute("aria-expanded", !visible);
+
+      if (majorVersionExpand) updateArrows(majorVersionExpand);
+    };
+  }
+
+  function setupScrollButtons(elem) {
+    const containerElem = elem.querySelector(".minor-versions");
+    elem.querySelectorAll(".arrow button").forEach((arrow, i) => {
+      arrow.onclick = () => {
+        const width =
+          containerElem.firstElementChild.getBoundingClientRect().width;
+        containerElem.scrollBy({
+          left: (width + 16) * (i === 0 ? -1 : 1),
+          behavior: "smooth",
+        });
+      };
+    });
+  }
+
+  function updateArrows(elem) {
+    const minSize = 15 * 16;
+    const width = elem.getBoundingClientRect().width;
+    const n = elem.querySelectorAll(".minor-version").length;
+    const neededWidth = n * minSize + (n - 1) * 16;
+    if (width > neededWidth) {
+      elem.classList.add("hide-arrows");
+    } else {
+      elem.classList.remove("hide-arrows");
+    }
+  }
+
+  function onResize() {
+    document
+      .querySelectorAll(".major-version > .expand-content")
+      .forEach((elem) => updateArrows(elem));
+  }
+
+  window.addEventListener("resize", onResize);
+
+  document.querySelectorAll(".major-version").forEach((mav, mavi) => {
+    setupExpandButton(mav);
+    setupScrollButtons(mav.querySelector("& > .expand-content"));
+  });
+  Array.from(document.querySelectorAll(".item"))
+    .filter((item) => item.querySelector(".expand-content"))
+    .forEach((item) => setupExpandButton(item));
+
+  onResize();
+</script>
+{% endblock %}

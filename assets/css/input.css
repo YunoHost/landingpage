@@ -15,7 +15,7 @@
         @apply py-2 font-bold;
     }
     section {
-        @apply py-10;
+        @apply py-10 px-5;
     }
     #index section > * {
         @apply mx-auto max-w-screen-lg;
@@ -23,20 +23,20 @@
     #donate section > * {
         @apply mx-auto max-w-screen-md;
     }
-    
+
     section:nth-child(even) {
-        @apply bg-gray-50 dark:bg-[#1A1D1E] transition-colors;
+        @apply bg-[#F4F5F6] dark:bg-[#212223] transition-colors;
     }
 
     .smol-rotate {
         @apply rotate-[3deg];
     }
-    
+
     #donate a {
         @apply text-sky-700 dark:text-sky-300;
     }
 
     input, textarea, select {
-        @apply !rounded-md shadow-sm border-gray-200 bg-neutral-50 dark:bg-gray-800 dark:border-gray-800;
+        @apply !rounded-md shadow-sm !border-gray-300 bg-neutral-50 dark:bg-gray-800 dark:!border-gray-700;
     }
 }

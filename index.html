@@ -36,23 +36,23 @@
             <div class="relative w-full max-w-screen-lg mx-auto flex align-center justify-center">
                 <div id="slide-1" class="screenshot-slide hidden" role="tabpanel"
                     aria-labelledby="tab-1">
-                    <img class="w-full h-96 object-contain" src="assets/img/portal_simple_dark.jpg" alt="{{ _('Screenshot of the user portal from which users can access the apps installed on the server, listing several applications installed.') }}">
+                    <img class="w-full h-60 md:h-96 object-contain" src="assets/img/portal_simple_dark.jpg" alt="{{ _('Screenshot of the user portal from which users can access the apps installed on the server, listing several applications installed.') }}">
                 </div>
                 <div id="slide-2" class="screenshot-slide hidden" role="tabpanel"
                     aria-labelledby="tab-2">
-                    <img class="w-full h-96 object-contain" src="assets/img/portal_descriptive_light.jpg" alt="{{ _('Screenshot of the user portal from which users can access the apps installed on the server, light version with description of each app.') }}">
+                    <img class="w-full h-60 md:h-96 object-contain" src="assets/img/portal_descriptive_light.jpg" alt="{{ _('Screenshot of the user portal from which users can access the apps installed on the server, light version with description of each app.') }}">
                 </div>
                 <div id="slide-3" class="screenshot-slide hidden" role="tabpanel"
                     aria-labelledby="tab-3">
-                    <img class="w-full h-96 object-contain" src="assets/img/admin_home_light.jpg" alt="{{ _('Screenshot of the web administration panel displaying the following categories: users, domains, apps, upgrade, services, tools and backup') }}">
+                    <img class="w-full h-60 md:h-96 object-contain" src="assets/img/admin_home_light.jpg" alt="{{ _('Screenshot of the web administration panel displaying the following categories: users, domains, apps, upgrade, services, tools and backup') }}">
                 </div>
                 <div id="slide-4" class="screenshot-slide hidden" role="tabpanel"
                     aria-labelledby="tab-4">
-                    <img class="w-full h-96 object-contain" src="assets/img/admin_catalog_light.jpg" alt="{{ _('Screenshot of the web administration panel displaying the app catalog for the "publication" category, listing some apps available in the catalog.') }}">
+                    <img class="w-full h-60 md:h-96 object-contain" src="assets/img/admin_catalog_light.jpg" alt="{{ _('Screenshot of the web administration panel displaying the app catalog for the "publication" category, listing some apps available in the catalog.') }}">
                 </div>
                 <div id="slide-5" class="screenshot-slide hidden" role="tabpanel"
                     aria-labelledby="tab-5">
-                    <img class="w-full h-96 object-contain" src="assets/img/admin_appinstall_light.jpg" alt="{{ _('Screenshot of the web administration panel displaying the app install form when installing the Nextcloud application. The interface asks a few technical questions regarding settings for the installation.') }}">
+                    <img class="w-full h-60 md:h-96 object-contain" src="assets/img/admin_appinstall_light.jpg" alt="{{ _('Screenshot of the web administration panel displaying the app install form when installing the Nextcloud application. The interface asks a few technical questions regarding settings for the installation.') }}">
                 </div>
                 <button class="slider-prev transition-colors duration-500 absolute left-0 cursor-pointer rounded-full text-6xl text-gray-200 hover:text-gray-400 focus:text-gray-400" role="button" onclick="plusSlides(-1)" style="top: 50%; transform: translateY(-50%);" aria-label="{{ _('Previous slide') }}"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
 
@@ -172,7 +172,7 @@
 
       <div class="mx-auto grid grid-cols-1 md:grid-cols-2 pb-10">
 
-        <div class="mx-auto w-96 lg:w-4/5 mb-5 px-5">
+        <div class="mx-auto md:w-96 lg:w-4/5 mb-5 px-5">
             <h3>{{ _("For you and your friends") }}</h3>
             <ul class="pt-3 text-left leading-snug">
                 <li class="pb-2"><span aria-hidden="true">🔄</span> {{ _("synchronize your calendars and contacts") }}</li>
@@ -183,7 +183,7 @@
             </ul>
         </div>
 
-        <div class="mx-auto w-96 lg:w-4/5 px-5">
+        <div class="mx-auto md:w-96 lg:w-4/5 px-5">
             <h3>{{ _("For small organizations") }}</h3>
             <ul class="pt-3 text-left leading-snug">
                 <li class="pb-2"><span aria-hidden="true">🌐</span> {{ _("host your own website") }}</li>
@@ -261,12 +261,12 @@
 
       <section id="news" class="text-center">
             <h2>{{ _("Latest news") }}</h2>
-            <div class="px-5 mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-3 pb-10 gap-5">
+            <div class="px-5 mx-auto max-w-screen-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pb-10 gap-5">
                 {% for article in articles %}
-                <article class="p-2 border-4 border-gray-300 dark:border-gray-700 rounded flex flex-col items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-600">
+                <article class="p-4 border-4 border-gray-300 dark:border-gray-700 rounded flex flex-col items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-600">
                     <div>
                         <a href="{{ article['link'] }}"><h3 class="text-lg">{{ article["title"] }}</h3></a>
-                        <time class="opacity-75" datetime="{{ article["date"] }}" class="italic">{{ article["date"][8:10] + "/" + article["date"][5:7] + "/" + article["date"][0:4] }}</time>
+                        <time class="opacity-50 text-sm" datetime="{{ article["date"] }}" class="italic">{{ article["date"][8:10] + "/" + article["date"][5:7] + "/" + article["date"][0:4] }}</time>
                     </div>
                 </article>
                 {% endfor %}

@@ -16,12 +16,11 @@
 {% block header_title %}{{ _("Donate to YunoHost!") }}{% endblock %}
 
 {% block main %}
-<section class="px-5">
+<section>
     <div class="text-xl">
       <p class="pb-3">{{ _("YunoHost has been around **since 2012**. The solution is developed essentially **on a voluntary basis** and **outside the commercial sector**. YunoHost is a modest project in terms of the resources it mobilizes - yet an ambitious one, as much for its activism as for its technical and interface design, or for the perseverance required to package and maintain hundreds of applications.") | markdown | no_p }}</p>
       <p>{{ _("If, like us, you'd like to see the project **continue to function**, evolve to **meet its promises**, and allow us to **take care of the community**, this is where you can donate!") | markdown | no_p }}</p>
     </div>
-
 </section>
 <section class="!bg-yellow-200 dark:!bg-[#2e1f44]">
 
@@ -102,7 +101,7 @@
 
 
 
-<section id="why" class="px-5">
+<section>
     <h2>{{ _("Why support YunoHost in 2025?") }}</h2>
 
     <div class="text-center">
@@ -132,12 +131,12 @@
 </section>
 
 
-<section class="px-5">
+<section>
     <h2>{{ _("YunoHost in 2024") }}</h2>
 
     <div class="flex flex-col md:flex-row !max-w-screen-lg items-center">
-        <div class="mx-5 w-1/4 mb-5">
-          <img src="assets/img/fursona.png" title="{{ _("Claude, YunoHost's mascot") }}" alt="{{ _("Image of Claude, YunoHost's mascot. The humanoid oppossum stands with purple hair and scarf, round glasses, beige pants with pockets and a blue crop top with the YunoHost logo.") }}" />
+        <div class="mx-5 mb-5 md:w-1/4">
+          <img class="max-h-[50vh] md:max-h-full" src="assets/img/fursona.png" title="{{ _("Claude, YunoHost's mascot") }}" alt="{{ _("Image of Claude, YunoHost's mascot. The humanoid oppossum stands with purple hair and scarf, round glasses, beige pants with pockets and a blue crop top with the YunoHost logo.") }}" />
         </div>
 
         <div class="mx-5">
@@ -169,7 +168,7 @@
     </div>
 </section>
 
-<section class="px-5">
+<section>
     <h2>{{ _("What are your donations used for?") }}</h2>
 
     <p class="py-3">
@@ -413,7 +412,7 @@
     </script>
 </section>
 
-<section class="px-5">
+<section>
     <h2>{{ _("Roadmap and dreammap") }}</h2>
 
     <p>
@@ -434,7 +433,7 @@
     </details>
 </section>
 
-<section class="px-5">
+<section>
     <h2>{{ _("General questions about donations") }}</h2>
 
     <h3 class="text-lg">{{ _("Will my donation be tax deductible?") }}</h3>

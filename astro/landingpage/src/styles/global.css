@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@import './local.css';
+
+/*
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*/

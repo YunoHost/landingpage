@@ -49,7 +49,7 @@ def main() -> None:
         )
 
     def get_color_vars(c: list[int]):
-        factor = (100 - c[2]) / 3
+        factor = (100 - c[2]) / 1.5
 
         def hsl(c: list[int], ld: float):
             return f"hsl({c[0]}, {c[1]}%, {min(c[2] + ld, 100)}%)"

@@ -23,6 +23,9 @@
     #donate section > * {
         @apply mx-auto max-w-screen-md;
     }
+    #roadmap .major-version {
+        @apply mx-auto w-full max-w-screen-xl;
+    }
 
     section:nth-child(even) {
         @apply bg-[#F4F5F6] dark:bg-[#212223] transition-colors;

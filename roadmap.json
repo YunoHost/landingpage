@@ -3,7 +3,7 @@
   "majorVersions": [
     {
       "title": "Bullseye",
-      "color": [42.25, 100, 66.86],
+      "color": [40, 100, 80],
       "minorVersions": [
         {
           "title": "11.1",
@@ -41,7 +41,7 @@
     },
     {
       "title": "Bookworm",
-      "color": [347.31, 100, 69.41],
+      "color": [350, 100, 90],
       "itemColor": "#fff5ff",
       "minorVersions": [
         {
@@ -109,7 +109,7 @@
     },
     {
       "title": "Trixie",
-      "color": [204.2, 81.9, 56.67],
+      "color": [200, 80, 80],
       "minorVersions": [
         {
           "title": "13.0",
@@ -134,7 +134,7 @@
     },
     {
       "title": "Someday™",
-      "color": [220, 5.88, 80],
+      "color": [220, 5, 90],
       "minorVersions": [
         {
           "title": "Soon™",

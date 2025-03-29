@@ -11,6 +11,7 @@
 <script src="https://js.stripe.com/v3/"></script>
 {% endif %}
 <script src="assets/js/chart.js"></script>
+<link rel="stylesheet" href="assets/css/roadmap.css" />
 {% endblock %}
 
 {% block header_title %}{{ _("Donate to YunoHost!") }}{% endblock %}
@@ -417,22 +418,63 @@
 <section>
     <h2>{{ _("Roadmap and dreammap") }}</h2>
 
-    <p>
-      {{ _("We're publishing a roadmap here to give a clearer idea of what we plan to develop. It in no way constitutes a commitment on the part of the team, and is dependent on the availability and energies of volunteers. It is therefore subject to change at any time.") }}
+    <p class="mx-auto pb-10 text-xl">
+      {{ _("We're publishing a roadmap here to give a clearer idea of what we plan to develop. It does **NOT** constitutes a commitment on the part of the team, and is *dependent on the availability and energies of volunteers*. It is therefore subject to change at any time." | markdown | no_p) }}
     </p>
 
-    <img src="https://mermaid.ink/img/pako:eNqlVs2OG0UQfpXScFiQ1usd-4J8WXkxCRbrxGGyASFf2jM1dmt7uofunnWcKBIHxBHYJBcSED8SP0I5wI0TD7MvAI9AdY-92bHbJBLeg701VdVV31df9TyMUpVh1ItardZEpkrmfNabSAA7xwLvMc3ZVKDxJoBcSZvwB9iDvfigi8VebU6TlAk8JOsbefp2w3jCpij8kziOG0_i2j3fdo9D7h1nZBhw74Tcu86IzP1tR3SvR_hGeyCxspqJifRAWF6g4BLrUIOp5UrCcSWEweXK6j5xfBC__M9_evDPd08vYI9lBZdmD2ZaVWXA58nPMGbpGZtxOYPzTsDji-d___klfIA5S63SMBNqygQVYy2FmK2Ay2df1_4Lpc8gUwXjss3KEs45Lkwo_68wYOTqEWj0FKrm6VcwWMrBrQQ0puoc9RJKZgwdloW6ewGD94cjmhgNVIMJA_AeihK1gU4Qxeffu37uVNwiMBDKgsqBQKWUKOftnN9H0yi7u43Ji89djhGfaeYptAqOlTqjqosNbhtWn7BzcAi7UB5KbjmxsQ4DU5Wl0jbQxrPf1pwkyW1og3NzgxZOPF5mjMYv9cjVeiyZRLGT7w9x6kcNWnCvwm777rJEk2pe2kYrMYRLG_tqgBlH0xGVN1KMDq6MVQV_wKZccLsMsfcNtfMu-R_TPKIGRUTWEBurkRVuqqmoxaq6QIZf_oBkwW06d6TI3PpF49vOucYFEyGMfoAx6hx4UWqawQKl9REng_6Y5vKTCo01jb47cPntk3DrxzRWdKY7fs7O0elgRQ5QG4wondYqCg_vTZTUsqB1SEJYCzk8yU2td4GJcs5CdR0dHTWq7-6onsR4agj1tQKpd9oL5AtvutVl3KqDDEuUmeuFpp-AatNSkJ4jQyke__5WIPHFT3VigyJvaZxxYtOH_O_cm63dei2x3tX8Pt9Yw9dtPln34PBVOq1jdqp0U3znnVfrr9lQd7Mhh-bjvyCh1c1mCAWT9OUGdotRP44X0K9IcsydrrFQtPOmNDJVub_6ptEUPF16Hl4T_TVgiSowY8vLz358eXCj-qsb4VO4qVlWEWCnw_bpR9d1ZnbLeTWRnRv9__YhzSU1AZD0Ryft28PBOx5nWozb3iSaPt1e00pmAs3m86vbrhQsJXhV5e5rWkVAO2UON5ix_fEw2o8K1KThjF5xHrock6i-7qIe_czobq2EnUQT-YhcGTGQLGUa9ayucD-im3s2j3o5o1t_P6rKjFkccEaYF2sXmo2PlSqunDDjRPiofqfyr1aP_gVsFPYI?type=png" />
+    <div class="flex flex-col lg:flex-row text-center !max-w-screen-xl">
+        {% for mav in roadmap.majorVersions %}
+        {% set id = loop.index0|string %}
+        {% set expanded = loop.index0 >= roadmap.currentVersionIndex %}
+        <div
+          class="major-version !mt-0 px-2"
+          style="{{ mav.color | get_color_vars }}"
+          data-current="{{ roadmap.currentVersionIndex }}"
+        >
+          <div class="major-version-title">
+            <span
+              class="expand-button"
+            >
+              {{ mav.title }}
+            </span>
+          </div>
 
-    <!--
-    https://mermaid.live/edit#pako:eNqlVs2OG0UQfpXScFiQ1usd-4J8WXkxCRbrxGGyASFf2jM1dmt7uofunnWcKBIHxBHYJBcSED8SP0I5wI0TD7MvAI9AdY-92bHbJBLeg701VdVV31df9TyMUpVh1ItardZEpkrmfNabSAA7xwLvMc3ZVKDxJoBcSZvwB9iDvfigi8VebU6TlAk8JOsbefp2w3jCpij8kziOG0_i2j3fdo9D7h1nZBhw74Tcu86IzP1tR3SvR_hGeyCxspqJifRAWF6g4BLrUIOp5UrCcSWEweXK6j5xfBC__M9_evDPd08vYI9lBZdmD2ZaVWXA58nPMGbpGZtxOYPzTsDji-d___klfIA5S63SMBNqygQVYy2FmK2Ay2df1_4Lpc8gUwXjss3KEs45Lkwo_68wYOTqEWj0FKrm6VcwWMrBrQQ0puoc9RJKZgwdloW6ewGD94cjmhgNVIMJA_AeihK1gU4Qxeffu37uVNwiMBDKgsqBQKWUKOftnN9H0yi7u43Ji89djhGfaeYptAqOlTqjqosNbhtWn7BzcAi7UB5KbjmxsQ4DU5Wl0jbQxrPf1pwkyW1og3NzgxZOPF5mjMYv9cjVeiyZRLGT7w9x6kcNWnCvwm777rJEk2pe2kYrMYRLG_tqgBlH0xGVN1KMDq6MVQV_wKZccLsMsfcNtfMu-R_TPKIGRUTWEBurkRVuqqmoxaq6QIZf_oBkwW06d6TI3PpF49vOucYFEyGMfoAx6hx4UWqawQKl9REng_6Y5vKTCo01jb47cPntk3DrxzRWdKY7fs7O0elgRQ5QG4wondYqCg_vTZTUsqB1SEJYCzk8yU2td4GJcs5CdR0dHTWq7-6onsR4agj1tQKpd9oL5AtvutVl3KqDDEuUmeuFpp-AatNSkJ4jQyke__5WIPHFT3VigyJvaZxxYtOH_O_cm63dei2x3tX8Pt9Yw9dtPln34PBVOq1jdqp0U3znnVfrr9lQd7Mhh-bjvyCh1c1mCAWT9OUGdotRP44X0K9IcsydrrFQtPOmNDJVub_6ptEUPF16Hl4T_TVgiSowY8vLz358eXCj-qsb4VO4qVlWEWCnw_bpR9d1ZnbLeTWRnRv9__YhzSU1AZD0Ryft28PBOx5nWozb3iSaPt1e00pmAs3m86vbrhQsJXhV5e5rWkVAO2UON5ix_fEw2o8K1KThjF5xHrock6i-7qIe_czobq2EnUQT-YhcGTGQLGUa9ayucD-im3s2j3o5o1t_P6rKjFkccEaYF2sXmo2PlSqunDDjRPiofqfyr1aP_gVsFPYI
-    -->
+          <div id="{{ id }}" class="expand-content">
+            <div class="minor-versions">
+              {% for miv in mav.minorVersions %}
+              {% set id = id + '-' + loop.index0|string %}
+              <div class="minor-version{{ ' wireframe' if miv.draft else '' }}">
+                {% if miv.title != 'Soon™' %}
+                <div class="minor-version-title">{{ miv.title }}</div>
+                {% endif %}
+                <div class="items">
+                  {% for item in miv.features %}
+                    {% set id = id + '-' + loop.index0|string %}
+                    <div class="item">
+                      {% if not item.description %}
+                        <div class="item-title">{{ item.title }}</div>
+                      {% else %}
+                      <span
+                        class="item-title expand-button"
+                      >{{ item.title }}</span>
+                      <div id="{{ id }}" class="item-desc expand-content hide">{{ item.description }}</div>
+                      {% endif %}
+                    </div>
+                  {% endfor %}
+                </div>
+                <div class="minor-version-line"></div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
 
-    <details>
-        <summary>{{ _("Details") }}</summary>
+    <div class="text-center mx-auto">
+        <a class="text-xl inline-block py-4 px-5 bg-green-200 !text-green-800 font-semibold hover:saturate-150" href="/roadmap">{{ _("Checkout the dedicated roadmap page") }} <i class="fa fa-fw fa-arrow-right"></i></a>
+    </div>
 
-        [FIXME / TODO : finish original french version and and translate ?
-
-    </details>
 </section>
 
 <section>

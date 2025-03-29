@@ -18,7 +18,7 @@ then
     LANDINGPAGE_DEV=true python3 bin/localize.py "$LANDINGPAGE_DIST_DIR"
     cp -Rf assets "$LANDINGPAGE_DIST_DIR"
     echo "Now watching for changes in *.html and assets/css/*.css"
-    while { inotifywait --quiet -r -e modify *.html assets/css/*.css || true; }
+    while { inotifywait --quiet -r -e modify *.html assets/css/*.css *.json || true; }
     do
         echo "Regenerating..."
         LANDINGPAGE_DEV=true python3 bin/localize.py "$LANDINGPAGE_DIST_DIR"

@@ -76,6 +76,7 @@
         },
         {
           "title": "12.2",
+          "draft": true,
           "features": [
             {
               "title": "🚪 Be able to have the portal on a subdomain",
@@ -88,6 +89,7 @@
         },
         {
           "title": "12.3 ❓",
+          "draft": true,
           "features": [
             {
               "title": "🔐 User password reset❓ (timescale depend on grant / donations 💰)",

@@ -1,10 +1,3 @@
-main {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 1rem 2rem;
-}
-
 .expand-button {
   border: none;
   font-family: inherit;
@@ -30,7 +23,7 @@ main {
   top: 2px;
 }
 
-.major-version {
+.major-version:not(:first-child) {
   margin-top: 3rem;
 }
 .major-version > .expand-content {
@@ -65,6 +58,7 @@ main {
   min-width: 15rem;
   padding-bottom: 3rem;
 }
+
 .minor-version-line {
   position: absolute;
   height: 100%;
@@ -163,3 +157,29 @@ main {
     display: none;
   }
 }
+
+#donate .major-version {
+  font-size: 0.6em;
+  line-height: 1.3em;
+}
+#donate .minor-versions {
+  flex-direction: row !important;
+}
+#donate .minor-version {
+  max-width: 10em;
+  min-width: 2em;
+}
+#donate .item {
+  padding: 0.8em;
+  margin-top: 0.5em;
+}
+#donate .minor-version-title {
+  margin-top: 0;
+}
+#donate .minor-version, #donate .minor-versions {
+  margin-top: 0.5em;
+}
+#donate .minor-version:not(:last-child) {
+  margin-right: 0.5em;
+}
+

@@ -13,6 +13,12 @@
 {% block header_title %}{{ _("Roadmap") }}{% endblock %}
 
 {% block main %}
+
+<p class="mx-auto max-w-screen-md py-10 text-2xl">
+  {{ _("We're publishing a roadmap here to give a clearer idea of what we plan to develop. It does **NOT** constitutes a commitment on the part of the team, and is *dependent on the availability and energies of volunteers*. It is therefore subject to change at any time." | markdown | no_p) }}
+</p>
+
+<div class="flex flex-col text-center px-5">
 {% for mav in roadmap.majorVersions %}
 {% set id = loop.index0|string %}
 {% set expanded = loop.index0 >= roadmap.currentVersionIndex %}
@@ -44,7 +50,9 @@
       {% for miv in mav.minorVersions %}
       {% set id = id + '-' + loop.index0|string %}
       <div class="minor-version{{ ' wireframe' if miv.draft else '' }}">
+        {% if miv.title != 'Soon™' %}
         <div class="minor-version-title">{{ miv.title }}</div>
+        {% endif %}
         <div class="items">
           {% for item in miv.features %}
             {% set id = id + '-' + loop.index0|string %}
@@ -130,4 +138,5 @@
 
   onResize();
 </script>
+</div>
 {% endblock %}

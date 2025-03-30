@@ -4,3 +4,5 @@ pyyaml
 markdown
 langcodes[data]
 requests
+stripe
+python-dotenv

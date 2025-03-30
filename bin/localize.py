@@ -89,6 +89,9 @@ def main() -> None:
     articles.sort(key=lambda item: item["date"], reverse=True)
     articles = articles[0:6]
 
+    # Load donations data
+    donations_data = json.loads(Path("donate.json").read_bytes())
+
     # Load roadmap data
     roadmap_data = json.loads(Path("roadmap.json").read_bytes())
 
@@ -116,6 +119,7 @@ def main() -> None:
     data_for_jinja = {
         "articles": articles,
         "roadmap": roadmap_data,
+        "donations": donations_data,
         "langs": relevant_langs,
         "dev": DEV,
         "tailwind_css": open("assets/css/input.css").read() if DEV else ""

@@ -133,6 +133,90 @@
     </p>
 </section>
 
+<section>
+  <h2>{{ _("2025 Campaign progress") }}</h2>
+      
+  <div
+    id="progress-container"
+    aria-hidden="true"
+    data-recurring-amount="{{ donations.recurring_amount }}"
+    data-one-time-amount="{{ donations.one_time_amount }}"
+    class="relative"
+  >
+    <canvas id="progress-chart"></canvas>
+    <svg id="progress-bar" width="100%" height="100px">
+      <text x="50%" y="50%">0%</text>
+      <line id="recurring" x1="0" y1="100%" x2="0" y2="100%" />
+      <line id="one-time" x1="0" y1="100%" x2="0" y2="100%" />
+    </svg>
+  </div>
+
+  <div id="current-step" class="my-3">
+    <div class="sr-only">{{ _("The donation campaign is <span id='campaign-completion'></span>% complete, for needs estimated at €<span id='campaign-objective'></span>/month") }}</div>
+    
+    <div id="current-step-text" class="text-2xl font-bold mt-7 mb-5"></div>
+    <ul>
+      <li id="recurring-amount-text">
+        <span class="square"></span>{{ _("Recurring donations:") }}
+        <span class="amount"></span>
+      </li>
+      <li id="one-time-amount-text">
+        <span class="square"></span>{{ _("One-time donations:") }}
+        <span class="amount"></span>
+      </li>
+    </ul>
+  </div>
+
+  <style>
+    svg#progress-bar {
+      position: absolute;
+      top: var(--top);
+      left: var(--left);
+      right: var(--right);
+      bottom: var(--bottom);
+      pointer-events: none;
+    }
+    svg#progress-bar text {
+      text-anchor: middle;
+      dominant-baseline: middle;
+      font-size: 40px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: bold;
+      fill: white;
+      stroke: #96f;
+      stroke-width: 3px;
+      stroke-linejoin: round;
+      paint-order: stroke;
+    }
+    svg#progress-bar line {
+      stroke: #ff6384;
+      stroke-width: 40px;
+    }
+    svg#progress-bar line#one-time {
+      stroke: #ffb0c1;
+    }
+
+    @media screen and (max-width: 500px) {
+      svg#progress-bar text {
+        font-size: 25px;
+      }
+      svg#progress-bar line {
+        stroke-width: 20px;
+      }
+    }
+
+    #current-step .square {
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      background-color: #ff6384;
+      margin-right: 0.5rem;
+    }
+    #current-step #one-time-amount-text .square {
+      background-color: #ffb0c1;
+    }
+  </style>
+</section>
 
 <section>
     <h2>{{ _("YunoHost in 2024") }}</h2>
@@ -230,6 +314,131 @@
     -->
 
     <script type="text/javascript">
+      // PROGRESS
+
+      const steps = [
+        {
+          label: "1. {{ _('Base') }}",
+          value: (300 + 1750 + 2000 + 1500) / 12,
+          backgroundColor: "#4bc0c0",
+          text: "{{ _('Step 1 : We maintain the existing.') }}",
+        },
+        {
+          label: "2. {{ _('Animation') }}",
+          value: 12000 / 12,
+          backgroundColor: "#96f",
+          text: "{{ _('Step 2 : We will be able to take care of the collective!') }}",
+        },
+        {
+          label: "3. {{ _('Development') }}",
+          value: 11000 / 12,
+          backgroundColor: "#36a2eb",
+          text: "{{ _('Step 3 : A boost for development!') }}",
+        },
+      ].map((step, i, steps) => {
+        return {
+          ...step,
+          sum: steps.reduce((acc, s, i2) => acc + (i2 <= i ? s.value : 0), 0),
+        };
+      });
+
+
+      const container = document.querySelector("#progress-container");
+      const recAmount = parseFloat(container.dataset.recurringAmount);
+      const oneAmount = parseFloat(container.dataset.oneTimeAmount);
+      const objective = steps.reduce((acc, v) => acc + v.value, 0);
+
+      const progressChart = new Chart(document.getElementById("progress-chart"), {
+        type: "bar",
+        data: {
+          labels: [""],
+          datasets: steps.map((v) => ({
+            label: v.label,
+            backgroundColor: v.backgroundColor,
+            data: [v.value],
+            categoryPercentage: 1,
+            barPercentage: 1,
+          })),
+        },
+        options: {
+          plugins: {
+            tooltip: {
+              enabled: false,
+            }
+          },
+          maintainAspectRatio: false,
+          responsive: true,
+          scales: {
+            x: {
+              stacked: true,
+              max: objective,
+              ticks: {
+                padding: 0,
+                align: "inner",
+              },
+            },
+            y: {
+              stacked: true,
+              grid: {
+                display: false,
+                tickLength: 0,
+              },
+              ticks: {
+                display: false,
+              },
+            },
+          },
+          indexAxis: "y",
+        },
+      });
+
+      function updateProgressBar() {
+        // Update svg progress bar
+        const { chartArea } = progressChart;
+        const svg = document.querySelector("#progress-bar");
+        svg.setAttribute("width", chartArea.width);
+        svg.setAttribute("height", chartArea.height + "px");
+        const posAttr = ["top", "left", "right", "bottom"]
+          .map((p) => `--${p}: ${chartArea[p]}px`)
+          .join("; ");
+        svg.setAttribute("style", posAttr);
+
+        const recRatio = recAmount / objective;
+        const recPercent = recRatio * 100;
+        const allRatio = (recAmount + oneAmount / 12) / objective
+        const allPercent = allRatio * 100
+
+        const recLine = document.querySelector("svg line#recurring");
+        recLine.setAttribute("x2", `${recPercent}%`);
+        const oneLine = document.querySelector("svg line#one-time");
+        oneLine.setAttribute("x1", `${recPercent}%`);
+        oneLine.setAttribute("x2", `${allPercent}%`);
+
+        const text = document.querySelector("svg text");
+        text.setAttribute("x", (chartArea.width * allRatio) / 2);
+        text.setAttribute("y", chartArea.height / 2);
+        text.textContent = Math.ceil(allPercent) + "%";
+
+        // Update current step text
+        document.querySelector("#campaign-completion").textContent = Math.ceil(allPercent)
+        document.querySelector("#campaign-objective").textContent = objective.toFixed(2)
+        document.querySelector("#current-step-text").textContent = steps.findLast(
+          (p) => recAmount >= p.sum
+        )?.text;
+
+        document.querySelector(
+          "#recurring-amount-text .amount"
+        ).textContent = `${recAmount} €/{{ _('month') }}`;
+        document.querySelector(
+          "#one-time-amount-text .amount"
+        ).textContent = `${oneAmount} € (${oneAmount / 12} €/{{ _('month') }})`;
+      }
+
+      window.addEventListener("load", () => setTimeout(() => updateProgressBar(), 100))
+      window.addEventListener("resize", () => updateProgressBar());
+
+      // RECETTES
+
       const recettesData = [
         { label: "2019-2020", don: 3665.94, sub: 0 },
         { label: "2020-2021", don: 8367.67, sub: 4000 },
@@ -286,6 +495,8 @@
         recettesDl.appendChild(dt);
         recettesDl.appendChild(dd);
       });
+
+      // DEPENSES
 
       const depensesData = [
         {
@@ -408,6 +619,7 @@
         const gridColor = isDark ? "rgba(256, 256, 256, 0.1)" : "rgba(0, 0, 0, 0.1)";
         updateChartColor(recettesChart, color, gridColor);
         updateChartColor(depensesChart, color, gridColor);
+        updateChartColor(progressChart, color, gridColor);
       }
 
       htmlElem.addEventListener("theme-changed", onThemeChanged);

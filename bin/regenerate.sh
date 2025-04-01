@@ -6,6 +6,27 @@ LANDINGPAGE_DIR="$(dirname "$SCRIPT_DIR")"
 
 LANDINGPAGE_VENV_DIR=$(realpath "${LANDINGPAGE_VENV_DIR:-$LANDINGPAGE_DIR/venv}")
 LANDINGPAGE_DIST_DIR=$(realpath "${LANDINGPAGE_DIST_DIR:-$LANDINGPAGE_DIR/dist}")
+
+if [[ "${1:-}" == "dev" ]]
+then
+    command -v inotifywait &>/dev/null || { echo "You should first run: apt install inotify-tools"; exit; }
+
+    # Clear the dist directory
+    mkdir -p "$LANDINGPAGE_DIST_DIR"
+    rm -rf "${LANDINGPAGE_DIST_DIR:?}"/*
+
+    LANDINGPAGE_DEV=true python3 bin/localize.py "$LANDINGPAGE_DIST_DIR"
+    cp -Rf assets "$LANDINGPAGE_DIST_DIR"
+    echo "Now watching for changes in *.html and assets/css/*.css"
+    while { inotifywait --quiet -r -e modify *.html assets/css/*.css *.json || true; }
+    do
+        echo "Regenerating..."
+        LANDINGPAGE_DEV=true python3 bin/localize.py "$LANDINGPAGE_DIST_DIR"
+        cp -Rf assets "$LANDINGPAGE_DIST_DIR"
+    done
+    exit
+fi
+
 if [[ "${1:-}" == "" ]]
 then
     # Clear the dist directory
@@ -30,7 +51,7 @@ if [[ "${1:-}" == "" || "${1:-}" == "i18n"  ]]
 then
 
     # Extract the english sentences from the code, needed if you modified it
-    pybabel extract -F babel.cfg -o translations/messages.pot index.html
+    pybabel extract -F babel.cfg -o translations/messages.pot *.html --no-location --omit-header
 
     # If working on a new locale: initialize it (in this example: fr)
     # pybabel init -i translations/messages.pot -d translations -l fr
@@ -42,7 +63,16 @@ then
     # ... translate stuff in translations/<lang>/LC_MESSAGES/messages.po
     # re-run the 'update' command to let Babel properly format the text
     # then compile:
-    pybabel compile -d translations
+    locales=$(find translations/ -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | sort)
+    for locale in $locales
+    do
+        this_locale_file="translations/$locale/LC_MESSAGES/messages"
+        if ! [ -e $this_locale_file.mo ] || [ $this_locale_file.po -nt $this_locale_file.mo ]
+        then
+            pybabel compile -d translations -l $locale
+        fi
+    done
+
 fi
 if [[ "${1:-}" == "" || "${1:-}" == "blog"  ]]
 then
@@ -59,9 +89,9 @@ then
     # Generate CSS, fonts etc
     cp -Rf assets "$LANDINGPAGE_DIST_DIR"
 
-    ./assets/tailwindcss-linux-x64 \
+    ./assets/tailwindcss-linux \
         --config "$LANDINGPAGE_DIR/tailwind.config.js" \
-        --content "$LANDINGPAGE_DIST_DIR/index.en.html" \
+        --content "$LANDINGPAGE_DIST_DIR/*.en.html" \
         --input "$LANDINGPAGE_DIR/assets/css/input.css" \
         --output "$LANDINGPAGE_DIST_DIR/assets/css/prod.min.css"
 

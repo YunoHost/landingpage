@@ -48,9 +48,18 @@ download https://raw.githubusercontent.com/YunoHost/doc/master/images/ynh_logo_b
 git_download https://github.com/adobe-fonts/source-sans fonts/source-sans --depth 1 --single-branch
 
 # Production -> download standalone tailwind to compile only what we need
-download https://github.com/tailwindlabs/tailwindcss/releases/download/v3.4.3/tailwindcss-linux-x64 tailwindcss-linux-x64
-chmod u+x tailwindcss-linux-x64
+architecture="x64"
+case $(uname -m) in
+    aarch64) architecture="arm64" ;;
+    armv7)   architecture="armv7" ;;
+    x86_64)  architecture="x64" ;;
+esac
+download https://github.com/tailwindlabs/tailwindcss/releases/download/v3.4.17/tailwindcss-linux-${architecture} tailwindcss-linux
+chmod u+x tailwindcss-linux
+
+# JS deps
+download https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js js/chart.js
 
 # Here's how you generate the dist directory:
 # cp -Rf assets dist/
-# ./assets/tailwindcss-linux-x64 --input assets/css/input.css --output dist/assets/css/prod.min.css --content dist/index.en.html
+# ./assets/tailwindcss-linux --input assets/css/input.css --output dist/assets/css/prod.min.css --content dist/index.en.html

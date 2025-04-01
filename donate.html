@@ -1,0 +1,746 @@
+{% extends "base.html" %}
+
+{% block page_id %}donate{% endblock %}
+
+{% block title %}
+{{ _("Donate to YunoHost!") }}
+{% endblock %}
+
+{% block assets %}
+{% if not dev %}
+<script src="https://js.stripe.com/v3/"></script>
+{% endif %}
+<script src="assets/js/chart.js"></script>
+<link rel="stylesheet" href="assets/css/roadmap.css" />
+{% endblock %}
+
+{% block header_title %}{{ _("Donate to YunoHost!") }}{% endblock %}
+
+{% block main %}
+<section>
+    <div class="text-xl">
+      <p class="pb-3">{{ _("YunoHost has been around **since 2012**. The solution is developed essentially **on a voluntary basis** and **outside the commercial sector**. YunoHost is a modest project in terms of the resources it mobilizes - yet an ambitious one, as much for its activism as for its technical and interface design, or for the perseverance required to package and maintain hundreds of applications.") | markdown | no_p }}</p>
+      <p>{{ _("If, like us, you'd like to see the project **continue to function**, evolve to **meet its promises**, and allow us to **take care of the community**, this is where you can donate!") | markdown | no_p }}</p>
+    </div>
+</section>
+<section class="!bg-yellow-200 dark:!bg-[#2e1f44]">
+
+    <div class="text-center mx-auto py-5">
+      <h3 class="text-3xl">{{ _('I want to give to YunoHost:') }}</h3>
+      <div class="my-5">
+          <!-- FIXME : template the public_key -->
+        <input type="hidden" id="public_key" value="pk_live_EZ0b0e5WyeOqicQXDxfaHnWP">
+
+        <input type="number" min="0" max="9999" id="quantity" value="10" class="mx-2"
+          aria-label="{{ _('Amount') }}">
+
+        <select id="currency" aria-label="{{ _('Currency') }}" class="mx-2">
+          <option value="EUR">€ </option>
+          <option value="USD">$ </option>
+        </select>
+
+        <select id="frequency" aria-label="{{ _('Frequency') }}" class="mx-2">
+          <option value="recuring"> {{ _('/ month') }} </option>
+          <option value="one_time"> {{ _('one time') }} </option>
+        </select>
+      </div>
+
+      <div class="glow-light dark:glow-dark pt-3">
+         <img class="ps-3 hidden md:inline-block" src="assets/img/nyancat.gif" style="transform: scaleX(-1);" />
+         <button id="submit" class="text-xl font-bold px-4 py-2 bg-pink-500 text-white hover:saturate-150" >
+           {{ _("Donate") }}
+         </button>
+         <img class="inline-block ps-3" src="assets/img/nyancat.gif" />
+      </div>
+
+      <div id="error-message"></div>
+    </div>
+
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        window.stripe = Stripe(document.getElementById('public_key').value);
+
+        // When the form is submitted...
+        var submitBtn = document.querySelector('#submit');
+        submitBtn.addEventListener('click', function (evt) {
+            var quantity = parseInt(document.getElementById('quantity').value);
+            var currency = document.getElementById('currency').value;
+            var frequency = document.getElementById('frequency').value;
+            //var csrf = document.getElementById('csrf').value;
+
+            // Create the checkout session.
+            fetch('https://donate.yunohost.org/create-checkout-session', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    // csrf: csrf,
+                    quantity: quantity,
+                    currency: currency,
+                    frequency: frequency
+                }),
+            }).then(function (result) {
+                return result.json();
+            }).then(function (data) {
+                // Redirect to Checkout. with the ID of the
+                // CheckoutSession created on the server.
+                stripe.redirectToCheckout({
+                    sessionId: data.sessionId,
+                })
+                    .then(function(result) {
+                        // If redirection fails, display an error to the customer.
+                        if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                        }
+                    });
+            });
+        });
+    });
+    </script>
+      
+</section>
+
+
+
+<section>
+    <h2>{{ _("Why support YunoHost in 2025?") }}</h2>
+
+    <div class="text-center">
+      <div class="text-3xl mb-3" aria-hidden="true">✊🪽🌱</div>
+      <p class="pb-5 px-5">
+        {{ _("YunoHost is a non-profit project that advocates a decentralized Internet, with open, interoperable, sober technologies that respect privacy and (re-)empower the greatest number of people and collectives. To do so, we aim to collect 28.500€ this year, split between the following three objectives.") }}
+      </p>
+    </div>
+
+    <h3 class="pt-5">{{ _("1. Preserve what's useful to you") }} <span class="bg-green-200 text-green-800 rotate-[-3deg] inline-block px-1.5 py-0.5 ms-2">5&nbsp;500€</span></h3>
+
+    <p class="pt-3 pb-5">
+      {{ _("Donations are used primarily to maintain the existing system, in particular by paying infrastructure costs (YunoHost services and task automation) and enabling the team to meet at least once a year.") }}
+    </p>
+
+    <h3 class="pt-5">{{ _("2. Make the facilitator position permanent") }} <span class="bg-purple-200 text-purple-800 rotate-[-3deg] inline-block px-1.5 py-0.5 ms-2">12&nbsp;000€</span></h3>
+
+    <p class="pt-3 pb-5">
+      {{ _("Since mid-2024, the team involved in the day-to-day development of YunoHost has been calling on a facilitator (a.k.a “stirrer”) to take care of the collective both humanly and administratively, as well as in its external relations. We need more donations to sustain this essential position.") }}
+    </p>
+
+    <h3 class="pt-5">{{ _("3. Boosting development") }} <span class="bg-sky-200 text-sky-800 rotate-[-3deg] inline-block px-1.5 py-0.5 ms-2">11&nbsp;000€</span></h3>
+
+    <p class="pt-3 pb-5">
+      {{ _("The publication of new large-scale developments depends essentially on the availability of contributors. If the budget allows, the team would like to remunerate certain developments to enable contributors to free up professional time to carry them out.") }}
+    </p>
+</section>
+
+<section>
+  <h2>{{ _("2025 Campaign progress") }}</h2>
+      
+  <div
+    id="progress-container"
+    aria-hidden="true"
+    data-recurring-amount="{{ donations.recurring_amount }}"
+    data-one-time-amount="{{ donations.one_time_amount }}"
+    class="relative"
+  >
+    <canvas id="progress-chart"></canvas>
+    <svg id="progress-bar" width="100%" height="100px">
+      <text x="50%" y="50%">0%</text>
+      <line id="recurring" x1="0" y1="100%" x2="0" y2="100%" />
+      <line id="one-time" x1="0" y1="100%" x2="0" y2="100%" />
+    </svg>
+  </div>
+
+  <div id="current-step" class="my-3">
+    <div class="sr-only">{{ _("The donation campaign is <span id='campaign-completion'></span>% complete, for needs estimated at €<span id='campaign-objective'></span>/month") }}</div>
+    
+    <div id="current-step-text" class="text-2xl font-bold mt-7 mb-5"></div>
+    <ul>
+      <li id="recurring-amount-text">
+        <span class="square"></span>{{ _("Recurring donations:") }}
+        <span class="amount"></span>
+      </li>
+      <li id="one-time-amount-text">
+        <span class="square"></span>{{ _("One-time donations:") }}
+        <span class="amount"></span>
+      </li>
+    </ul>
+  </div>
+
+  <style>
+    svg#progress-bar {
+      position: absolute;
+      top: var(--top);
+      left: var(--left);
+      right: var(--right);
+      bottom: var(--bottom);
+      pointer-events: none;
+    }
+    svg#progress-bar text {
+      text-anchor: middle;
+      dominant-baseline: middle;
+      font-size: 40px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: bold;
+      fill: white;
+      stroke: #96f;
+      stroke-width: 3px;
+      stroke-linejoin: round;
+      paint-order: stroke;
+    }
+    svg#progress-bar line {
+      stroke: #ff6384;
+      stroke-width: 40px;
+    }
+    svg#progress-bar line#one-time {
+      stroke: #ffb0c1;
+    }
+
+    @media screen and (max-width: 500px) {
+      svg#progress-bar text {
+        font-size: 25px;
+      }
+      svg#progress-bar line {
+        stroke-width: 20px;
+      }
+    }
+
+    #current-step .square {
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      background-color: #ff6384;
+      margin-right: 0.5rem;
+    }
+    #current-step #one-time-amount-text .square {
+      background-color: #ffb0c1;
+    }
+  </style>
+</section>
+
+<section>
+    <h2>{{ _("YunoHost in 2024") }}</h2>
+
+    <div class="flex flex-col md:flex-row !max-w-screen-lg items-center">
+        <div class="mx-5 mb-5 md:w-1/4">
+          <img class="max-h-[50vh] md:max-h-full" src="assets/img/fursona.png" title="{{ _("Claude, YunoHost's mascot") }}" alt="{{ _("Image of Claude, YunoHost's mascot. The humanoid oppossum stands with purple hair and scarf, round glasses, beige pants with pockets and a blue crop top with the YunoHost logo.") }}" />
+        </div>
+
+        <div class="mx-5">
+            <h3>{{ _("Project") }}</h3>
+
+            <ul class="py-3 ps-5">
+                <li><span aria-hidden="true">🎂</span> {{ _("a 14 years old project") }}</li>
+                <li><span aria-hidden="true">👷</span> {{ _("about fifteen regularly active core-contributors") }}</li>
+                <li title='{{ _("Assuming a 4 person company full time,\neach with 3000€ net / month,\n so around ~5200€ charged / month,\n5200€ x 4 person x 12 months = 249600€ / year") }}'>
+                    <span aria-hidden="true">💰</span> {{ _("volunteer work that could be valued at least €250,000 a year if remunerated") }}
+                </li>
+            </ul>
+
+            <h3>{{ _("Community") }}</h3>
+
+            <ul class="py-3 ps-5">
+                <li><span aria-hidden="true">🌐</span> {{ _("~10&nbsp;000 instances in 77 countries") }}</li>
+                <li><span aria-hidden="true">💸</span> {{ _("130 regular or occasional donors in 2024") }}</li>
+                <li><span aria-hidden="true">👥</span> {{ _("8&nbsp;700+ accounts on the various project channels (forge, forum, chat)") }}</li>
+                <li><span aria-hidden="true">🗣️</span> <a href="https://translate.yunohost.org/projects/yunohost/#languages">{{ _("15+ languages supported") }}</a></li>
+            </ul>
+
+
+            <h3>{{ _("Software and ecosystem") }}</h3>
+
+            <ul class="py-3 ps-5">
+                <li><span aria-hidden="true">📦</span> {{ _("[540+ apps in the catalog](https://apps.yunohost.org/catalog) ([a brief history](https://apps.yunohost.org/charts))") | markdown | no_p }}</li>
+                <li><span aria-hidden="true">🧑‍💻</span> {{ _("760 Git code repositories ([core](https://github.com/orgs/YunoHost/repositories) + [apps](https://github.com/orgs/YunoHost-Apps/repositories))") | markdown | no_p }}</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>{{ _("What are your donations used for?") }}</h2>
+
+    <p class="py-3">
+      {{ _("Your donations guarantee our independence: they constitute our entire income in 2024.") }}
+    </p>
+
+    <h3>{{ _("Revenues") }}</h3>
+
+    <p class="py-3">
+      {{ _("In recent years, donations have been in the region of €15,000 per year, mainly from individuals.") }}
+    </p>
+
+    <p class="py-3">
+      {{ _("Between 2021 and 2023, the project benefited from grants from the [NLnet](https://nlnet.nl/project/InternetCube/)) foundation and the [CodeLutin](https://mastodon.libre-entreprise.com/@codelutin/105066492461041800) company for a total of around €15,000 which were used to develop features for versions 4 and 11 of the project. The team is regularly applying for new grants.") | markdown | no_p }}
+    </p>
+
+    <p class="py-3">
+      {{ _("In addition, YunoHost receives significant in-kind donations in the form of servers from associations and independent web companies such as Globenet, Gitoyen, TetaNeutral and Octopuce.<br>These in-kind donations are not represented in the graph below.") }}
+    </p>
+
+    <div style="height: 60vh;" class="my-5 p-5 pt-2">
+        <canvas id="recettes" aria-hidden="true"></canvas>
+    </div>
+
+    <dl id="recettes-text" class="sr-only"></dl>
+
+    <!--
+    https://mermaid.live/edit#pako:eNplUktqwzAQvcqgENyCDbKSmMSLbtJtobTQReMsxvYkEXWsIMslIWTTi2RXuuipeoIeoZJMPlAkRm-enmZGGu1ZoUpiKev391kNIGtpUvAQIDArWlOQQlCifgvCa_YFtcS8oiY4y-3WdjddoTaOgxMJkLFNpcxUVUo_YkXGUMYgtXRvURaUiLA3GmFBlr2cOXTQL9Yc-v2sdmO7K1yGKCeDncRIU5EN9kSFC93Aze_x-AmlqhsgA9b5gqbN36k20nK3pyzbCLeygZng8SQSXPAQnHUw9jB2UHgoHBx4OHBwGNqEds67ULsu1HUNPx_fNhNwiKI7EBPOeSftbI4aZoMkSUKIxSAZ22UsuK_AFxIPxWQ4_6cdeynE3GvjZHStZSFbk16jLG07fUsy5luVMffWJS2wrYy7_cFKsTXqeVcXLDW6pZBp1S5XLF1g1Viv3ZRo6F7iUuP6zG6wflXq4lMpjdIP3Qfy_-jwBxd8rGY
+    -->
+
+    <h3>{{ _("Expenses") }}</h3>
+
+    <p class="py-3">
+      {{ _("Between 2022 and 2024, the collective spent around €12,500 a year.<br>In 2025, the creation of the 'stirrer' position for the collective will represent an additional expense of €12,000 per year. YunoHost would like to be able to continue its financial contributions to the development of important features for the project and its community. The projected budget for 2025 is therefore around €28,000.") }}
+    </p>
+
+    <p class="py-3">
+      {{ _("Project expenditure breaks down into the following categories:") }}
+    </p>
+    <ul class="list-disc ps-5 py-3">
+        <li>{{ _("**Development**: one-off funding linked to the development and maintenance of the project, thanks to both grants and donations received. It should be noted, however, that this amount is anecdotal in relation to the voluntary work carried out by the team.") | markdown | no_p }}</li>
+        <li>{{ _("**Infrastructure**: corresponds to the hosting of the tools used by the project, such as the website, documentation, forum, technical tools, etc. The amount of this expenditure should reduce in 2025 following a migration to a dedicated server with a friendly host.") | markdown | no_p }}</li>
+        <li>{{ _("**Events**: expenses to enable the team to take part in events (e.g. [JdLL](https://jdll.org/)), and to meet in the same place once a year to work together on fundamental issues.") | markdown | no_p }}</li>
+        <li>{{ _("**Fees and other expenses**: bank charges or donations made to other collectives that support the project in kind.") | markdown | no_p }}</li>
+        <li>{{ _("**Collective facilitation**: financial compensation allocated to the tasks of administrative facilitation, animtion and coordination of the collective. This is a new type of expense introduced in 2025, decided by the collective in view of the need to have a person dedicated to these aspects (a.k.a ‘stirrer’).") | markdown | no_p }}</li>
+    </ul>
+    
+    <div style="height: 60vh;" class="my-5 p-5 pt-2">
+      <canvas id="depenses" aria-hidden="true"></canvas>
+    </div>
+
+    <dl id="depenses-text" class="sr-only"></dl>
+
+    <!--
+    https://mermaid.live/edit#pako:eNqNks9q3DAQxl9l0LI4BRlk-c-ufQiEpIceCoVCD41z0K5ndwW2bGR5WRP20uco5FaakLfom-QJ-giVZJJtcgqG0aeZnz6NzNySdVshKch8flsqAKmkKcBLgMDssMGggEDhYLSoA_p_4ZvQUqxq7IOXE7Z0GC93QhuXg-ckQEm6ujWXbd3qL6JGY7AkUNj0TIglVhmdpalYI9LZplpjxulssVxFaU5rud2ZrcaxJCe34yT9YsNxPi-V-w7j2t0drtCICTHS1Givufpz36HqsYezv3d3D3ChZEPByl9gS3svf8MntdHC63v4uEdlegpPjz_hwr4e-w_PLRxCcZA9XHPGWWhDRMFFJ7mX3MnYy9jJhNoWzjqNe-txM5mMk8mr1p5-PFoAGIThOfCcMTaxU1wJDddpzBiFPI9tXKTcxmiRZHbhyzRlN-8ho-wNGfHUpT3Jc0dC4klI35BZ4rKwcM6R97THPJmw12Scn0iIPAmTJ0yehJIGdSNkZafPj09J_FiVxM1FhRsx1Mb98qNFxWDar6Nak8LoASnR7bDdkWIj6t7uhq4SBq-k2GrRvGQ7ob637WmPlTSt_jzNux_74z-6Ad0U
+    -->
+
+    <script type="text/javascript">
+      // PROGRESS
+
+      const steps = [
+        {
+          label: "1. {{ _('Base') }}",
+          value: (300 + 1750 + 2000 + 1500) / 12,
+          backgroundColor: "#4bc0c0",
+          text: "{{ _('Step 1 : We maintain the existing.') }}",
+        },
+        {
+          label: "2. {{ _('Animation') }}",
+          value: 12000 / 12,
+          backgroundColor: "#96f",
+          text: "{{ _('Step 2 : We will be able to take care of the collective!') }}",
+        },
+        {
+          label: "3. {{ _('Development') }}",
+          value: 11000 / 12,
+          backgroundColor: "#36a2eb",
+          text: "{{ _('Step 3 : A boost for development!') }}",
+        },
+      ].map((step, i, steps) => {
+        return {
+          ...step,
+          sum: steps.reduce((acc, s, i2) => acc + (i2 <= i ? s.value : 0), 0),
+        };
+      });
+
+
+      const container = document.querySelector("#progress-container");
+      const recAmount = parseFloat(container.dataset.recurringAmount);
+      const oneAmount = parseFloat(container.dataset.oneTimeAmount);
+      const objective = steps.reduce((acc, v) => acc + v.value, 0);
+
+      const progressChart = new Chart(document.getElementById("progress-chart"), {
+        type: "bar",
+        data: {
+          labels: [""],
+          datasets: steps.map((v) => ({
+            label: v.label,
+            backgroundColor: v.backgroundColor,
+            data: [v.value],
+            categoryPercentage: 1,
+            barPercentage: 1,
+          })),
+        },
+        options: {
+          plugins: {
+            tooltip: {
+              enabled: false,
+            }
+          },
+          maintainAspectRatio: false,
+          responsive: true,
+          scales: {
+            x: {
+              stacked: true,
+              max: objective,
+              ticks: {
+                padding: 0,
+                align: "inner",
+              },
+            },
+            y: {
+              stacked: true,
+              grid: {
+                display: false,
+                tickLength: 0,
+              },
+              ticks: {
+                display: false,
+              },
+            },
+          },
+          indexAxis: "y",
+        },
+      });
+
+      function updateProgressBar() {
+        // Update svg progress bar
+        const { chartArea } = progressChart;
+        const svg = document.querySelector("#progress-bar");
+        svg.setAttribute("width", chartArea.width);
+        svg.setAttribute("height", chartArea.height + "px");
+        const posAttr = ["top", "left", "right", "bottom"]
+          .map((p) => `--${p}: ${chartArea[p]}px`)
+          .join("; ");
+        svg.setAttribute("style", posAttr);
+
+        const recRatio = recAmount / objective;
+        const recPercent = recRatio * 100;
+        const allRatio = (recAmount + oneAmount / 12) / objective
+        const allPercent = allRatio * 100
+
+        const recLine = document.querySelector("svg line#recurring");
+        recLine.setAttribute("x2", `${recPercent}%`);
+        const oneLine = document.querySelector("svg line#one-time");
+        oneLine.setAttribute("x1", `${recPercent}%`);
+        oneLine.setAttribute("x2", `${allPercent}%`);
+
+        const text = document.querySelector("svg text");
+        text.setAttribute("x", (chartArea.width * allRatio) / 2);
+        text.setAttribute("y", chartArea.height / 2);
+        text.textContent = Math.ceil(allPercent) + "%";
+
+        // Update current step text
+        document.querySelector("#campaign-completion").textContent = Math.ceil(allPercent)
+        document.querySelector("#campaign-objective").textContent = objective.toFixed(2)
+        document.querySelector("#current-step-text").textContent = steps.findLast(
+          (p) => recAmount >= p.sum
+        )?.text;
+
+        document.querySelector(
+          "#recurring-amount-text .amount"
+        ).textContent = `${recAmount.toFixed(2)} €/{{ _('month') }}`;
+        document.querySelector(
+          "#one-time-amount-text .amount"
+        ).textContent = `${oneAmount.toFixed(2)} € (${(oneAmount / 12).toFixed(2)} €/{{ _('month') }})`;
+      }
+
+      window.addEventListener("load", () => setTimeout(() => updateProgressBar(), 100))
+      window.addEventListener("resize", () => updateProgressBar());
+
+      // RECETTES
+
+      const recettesData = [
+        { label: "2019-2020", don: 3665.94, sub: 0 },
+        { label: "2020-2021", don: 8367.67, sub: 4000 },
+        { label: "2021-2022", don: 10200.33, sub: 8000 },
+        { label: "2022-2023", don: 16520.75, sub: 3500 },
+        { label: "2023-2024", don: 14294.64, sub: 0 },
+      ];
+      const recettesInfos = {
+        don: { label: "{{ _('Donations') }}", backgroundColor: "#96f" },
+        sub: { label: "{{ _('Grants') }}", backgroundColor: "#ffcd56" },
+      };
+
+      const recettesChart = new Chart(document.getElementById("recettes"), {
+        type: "bar",
+        data: {
+          labels: recettesData.map((d) => d.label),
+          datasets: Object.entries(recettesInfos).map(([k, v]) => ({
+            ...v,
+            data: recettesData.map((d) => d[k]),
+          })),
+        },
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: "{{ _('Revenues') }}",
+            },
+          },
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              stacked: true,
+            },
+            y: {
+              stacked: true,
+            },
+          },
+        },
+      });
+
+      const recettesDl = document.querySelector("#recettes-text");
+      recettesData.forEach((year) => {
+        const dt = document.createElement("DT");
+        dt.textContent = year.label;
+        const dd = document.createElement("DD");
+        dd.textContent = Object.entries(year)
+          .map(([k, v]) => {
+            if (k === "label" || v === 0) return;
+            return recettesInfos[k].label + ' : ' + v.toFixed(2);
+          })
+          .filter((v) => v)
+          .join(" ; ");
+        recettesDl.appendChild(dt);
+        recettesDl.appendChild(dd);
+      });
+
+      // DEPENSES
+
+      const depensesData = [
+        {
+          label: "2019-2020",
+          anim: 0,
+          dev: 0,
+          infra: 222.49,
+          events: 0,
+          other: 530 + 87.6,
+        },
+        {
+          label: "2020-2021",
+          anim: 0,
+          dev: 4000,
+          infra: 562.23 + 47.39 + 55.31,
+          events: 246,
+          other: 87.6 + 1 + 300,
+        },
+        {
+          label: "2021-2022",
+          anim: 0,
+          dev: 8000,
+          infra: 1216.72 + 11.98,
+          events: 0.4,
+          other: 87.6 + 21.67 + 600,
+        },
+        {
+          label: "2022-2023",
+          anim: 0,
+          dev: 4546,
+          infra: 1341.34 + 53.98 + 61.37,
+          events: 1427.02,
+          other: 122.12 + 22.27,
+        },
+        {
+          label: "2023-2024",
+          anim: 0,
+          dev: 12487,
+          infra: 2495.11 + 9.35 + 516.97,
+          events: 1484.28,
+          other: 115.08 + 350,
+        },
+        {
+          label: "{{ _('Previsional') }}",
+          anim: 12000,
+          dev: 5000 + 6000,
+          infra: 1750,
+          events: 2000 + 1500,
+          other: 300,
+        },
+      ];
+      const depensesInfos = {
+        anim: { label: "{{ _('Animation') }}", backgroundColor: "#96f" },
+        dev: { label: "{{ _('Development') }}", backgroundColor: "#36a2eb" },
+        infra: { label: "{{ _('Infrastructure') }}", backgroundColor: "#ffcd56" },
+        events: { label: "{{ _('Events') }}", backgroundColor: "#4bc0c0" },
+        other: { label: "{{ _('Others') }}", backgroundColor: "#c9cbcf" },
+      };
+
+      const depensesChart = new Chart(document.getElementById("depenses"), {
+        type: "bar",
+        data: {
+          labels: depensesData.map((d) => d.label),
+          datasets: Object.entries(depensesInfos).map(([k, v]) => ({
+            ...v,
+            data: depensesData.map((d) => d[k]),
+          })),
+        },
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: "{{ _('Expenses') }}",
+            },
+          },
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              stacked: true,
+            },
+            y: {
+              stacked: true,
+            },
+          },
+        },
+      });
+
+      const depensesDl = document.querySelector("#depenses-text");
+      depensesData.forEach((year) => {
+        const dt = document.createElement("DT");
+        dt.textContent = year.label;
+        const dd = document.createElement("DD");
+        dd.textContent = Object.entries(year)
+          .map(([k, v]) => {
+            if (k === "label" || v === 0) return;
+            return depensesInfos[k].label + ' : ' + v.toFixed(2);
+          })
+          .filter((v) => v)
+          .join(" ; ");
+        depensesDl.appendChild(dt);
+        depensesDl.appendChild(dd);
+      });
+
+      function updateChartColor(chart, color, gridColor) {
+        chart.options.plugins.title.color = color;
+        chart.options.scales.y.ticks.color = color;
+        chart.options.scales.y.grid.color = gridColor;
+        chart.options.scales.x.ticks.color = color;
+        chart.options.scales.x.grid.color = gridColor;
+        chart.options.color = color;
+        chart.update();
+      }
+
+      const htmlElem = document.querySelector("html");
+
+      function onThemeChanged() {
+        const isDark = htmlElem.classList.contains("dark");
+        const color = isDark ? "#e6e6e6" : "#666";
+        const gridColor = isDark ? "rgba(256, 256, 256, 0.1)" : "rgba(0, 0, 0, 0.1)";
+        updateChartColor(recettesChart, color, gridColor);
+        updateChartColor(depensesChart, color, gridColor);
+        updateChartColor(progressChart, color, gridColor);
+      }
+
+      htmlElem.addEventListener("theme-changed", onThemeChanged);
+      onThemeChanged();
+    </script>
+</section>
+
+<section>
+    <h2>{{ _("Roadmap and dreammap") }}</h2>
+
+    <p class="mx-auto pb-10 text-xl">
+      {{ _("We're publishing a roadmap here to give a clearer idea of what we plan to develop. It does **NOT** constitutes a commitment on the part of the team, and is *dependent on the availability and energies of volunteers*. It is therefore subject to change at any time." | markdown | no_p) }}
+    </p>
+
+    <div class="flex flex-col lg:flex-row text-center !max-w-screen-xl">
+        {% for mav in roadmap.majorVersions %}
+        {% set id = loop.index0|string %}
+        {% set expanded = loop.index0 >= roadmap.currentVersionIndex %}
+        <div
+          class="major-version !mt-0 px-2"
+          style="{{ mav.color | get_color_vars }}"
+          data-current="{{ roadmap.currentVersionIndex }}"
+        >
+          <div class="major-version-title">
+            <span
+              class="expand-button"
+            >
+              {{ mav.title }}
+            </span>
+          </div>
+
+          <div id="{{ id }}" class="expand-content">
+            <div class="minor-versions">
+              {% for miv in mav.minorVersions %}
+              {% set id = id + '-' + loop.index0|string %}
+              <div class="minor-version{{ ' wireframe' if miv.draft else '' }}">
+                {% if miv.title != 'Soon™' %}
+                <div class="minor-version-title">{{ miv.title }}</div>
+                {% endif %}
+                <div class="items">
+                  {% for item in miv.features %}
+                    {% set id = id + '-' + loop.index0|string %}
+                    <div class="item">
+                      {% if not item.description %}
+                        <div class="item-title">{{ item.title }}</div>
+                      {% else %}
+                      <span
+                        class="item-title expand-button"
+                      >{{ item.title }}</span>
+                      <div id="{{ id }}" class="item-desc expand-content hide">{{ item.description }}</div>
+                      {% endif %}
+                    </div>
+                  {% endfor %}
+                </div>
+                <div class="minor-version-line"></div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="text-center mx-auto">
+        <a class="text-xl inline-block py-4 px-5 bg-green-200 !text-green-800 font-semibold hover:saturate-150" href="/roadmap">{{ _("Checkout the dedicated roadmap page") }} <i class="fa fa-fw fa-arrow-right"></i></a>
+    </div>
+
+</section>
+
+<section>
+    <h2>{{ _("General questions about donations") }}</h2>
+
+    <h3 class="text-lg">{{ _("Will my donation be tax deductible?") }}</h3>
+
+    <p class="py-3">
+      {{ _("At this time, we do not provide tax-deductible donation receipts. We can, however, issue donation receipts for your accounting purposes.") }}
+    </p>
+
+    <h3 class="text-lg">{{ _("My donation is not sent to YunoHost but to the Support Self-Hosting association. Is this normal?") }}</h3>
+
+    <p class="py-3">
+      {{ _("Yes, that's expected, Support Self-Hosting is the association that enables the YunoHost project to collect donations and pay expenses.") }}
+    </p>
+
+    <h3 class="text-lg">{{ _("Can I become a member of the Support Self-Hosting association?") }}</h3>
+
+    <p class="py-3">
+      {{ _("No: this is an association whose members are chosen by co-option.<br>We don't think you need to be a member of Support Self-Hosting to contribute to the YunoHost project. Anyone can come and lend a hand on most of our projects, and we do our best to welcome goodwill.") }}
+    </p>
+
+    <h3 class="text-lg">{{ _("I can't make a recurring donation, but I'd like to support YunoHost. What can I do?") }}</h3>
+
+    <p class="py-3">
+      {{ _("Thank you for your support and commitment.<br>You can make a one-off donation directly from the <https://donate.yunohost.org> page.") | markdown | no_p }}
+    </p>
+
+    <h3 class="text-lg">{{ _("I've made a monthly donation but I've made a mistake in the amount or I'd like to change it. How do I proceed?") }}</h3>
+
+    <p class="py-3">
+      {{ _("For recurring credit card donations, we cannot change the amount for future debits, but we can stop them.<br>To do so, please contact us at [this e-mail address](mailto:donate-5542@yunohost.org). We will then invite you, if you wish, to renew your donation the following month with the correct amount.") | markdown | no_p }}
+    </p>
+
+    <h3 class="text-lg">{{ _("I am currently making a recurring donation but my credit card has expired. What should I do?") }}</h3>
+
+    <p class="py-3">
+      {{ _("Normally, your recurring donation will be automatically stopped once your card has been deactivated.<br>To update your bank details with Support Self-Hosting, please complete the form on the <https://donate.yunohost.org> page as if it were your first donation.") | markdown | no_p }}
+    </p>
+
+    <h3 class="text-lg">{{ _("My organization doesn't have a credit card, but would like to make a donation. How do I go about it?") }}</h3>
+
+    <p class="py-3">
+      {{ _("You can contact us so that we can provide you with a IBAN to make a transfer.") }}
+    </p>
+
+    <h3 class="text-lg">{{ _("I'd like to stop a recurring donation. What can I do?") }}</h3>
+
+    <p class="py-3">
+      {{ _("This requires a manual operation on our part.  Please do not hesitate to contact us at the following [this e-mail address link](mailto:donate-5542@yunohost.org).") | markdown | no_p }}
+    </p>
+</section>
+
+{% endblock %}

@@ -1,0 +1,157 @@
+{
+  "currentVersionIndex": 1,
+  "majorVersions": [
+    {
+      "title": "Bullseye",
+      "color": [40, 100, 80],
+      "minorVersions": [
+        {
+          "title": "11.1",
+          "features": [
+            {
+              "title": "🔑 'admins' group",
+              "description": "🦸 <strong>Replace the ‘<code>admin</code>’ user with a new ‘<code>admins</code>’ group</strong>. On the long-term, this should remove some confusion about the role of the admin user and allow to define several admin users! ⚠️ <em>Note that this impacts the login screen, as you’ll now have to enter the username in addition to the password!</em> The very first user you created in YunoHost will also be automatically added to the ‘admins’ group and will be able to connect to the webadmin using the same credentials as on the user portal."
+            },
+            {
+              "title": "📦 Packaging v2",
+              "description": "📦 <strong>Introduce a new “v2” app packaging format</strong>. This is a major change for app packagers as it should simplify the app packaging and maintenance, but will also bring many UI/UX improvements for the app install process. <small>On the long term, this is only an intermediate step towards an even-better “v3” format later 😜</small>"
+            },
+            { "title": "🎛️ Refactor global settings", "description": "" },
+            { "title": "⚙️ Rework domain/app views", "description": "" },
+            {
+              "title": "🎨 Dark theme",
+              "description": "🌙 <strong>A dark theme for the webadmin</strong>! You can enable it in the ‘Web-admin settings’ in the ‘Tools’ section of the webadmin."
+            }
+          ]
+        },
+        {
+          "title": "11.2",
+          "features": [
+            { "title": "🔐 DynDNS recovery password", "description": "" },
+            { "title": "📬 DKIM for apps", "description": "" },
+            { "title": "📦 Helpers 2.1", "description": "" },
+            { "title": "🛠️ Quite a lot of minor enh/fixes", "description": "" }
+          ]
+        },
+        {
+          "title": "11.3",
+          "features": [{ "title": "⬆️ Migration to Bookworm", "description": "" }]
+        }
+      ]
+    },
+    {
+      "title": "Bookworm",
+      "color": [350, 100, 90],
+      "itemColor": "#fff5ff",
+      "minorVersions": [
+        {
+          "title": "12.0",
+          "features": [
+            { "title": "⚙️ Initial Bookworm support", "description": "" },
+            { "title": "🚪 Rework SSO / portal", "description": "" },
+            { "title": "⚙️ Pydantic for configpanels", "description": "" },
+            { "title": "⚙️ Webadmin - Vue3/Typescript", "description": "" }
+          ]
+        },
+        {
+          "title": "12.1",
+          "features": [
+            {
+              "title": "🚪 Portal as app? / Moar customizability",
+              "description": ""
+            },
+            {
+              "title": "📜 SSE / Better operation streaming in webadmin",
+              "description": ""
+            },
+            {
+              "title": "🧱 Switch to nftables for firewall",
+              "description": ""
+            },
+            {
+              "title": "⚡ Perf improvement for LDAP requests",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "title": "12.2",
+          "draft": true,
+          "features": [
+            {
+              "title": "🚪 Be able to have the portal on a subdomain",
+              "description": ""
+            },
+            { "title": "📦 Generalize packaging 2.1", "description": "" },
+            { "title": "📦 Packaging v3 alpha❓", "description": "" },
+            { "title": "???", "description": "" }
+          ]
+        },
+        {
+          "title": "12.3 ❓",
+          "draft": true,
+          "features": [
+            {
+              "title": "🔐 User password reset❓ (timescale depend on grant / donations 💰)",
+              "description": ""
+            },
+            {
+              "title": "👥 User self-registration❓ (timescale depend on grant / donations 💰)",
+              "description": ""
+            },
+            { "title": "???", "description": "" }
+          ]
+        },
+        {
+          "title": "12.N",
+          "draft": true,
+          "features": [{ "title": "⬆️ Migration to Trixie", "description": "" }]
+        }
+      ]
+    },
+    {
+      "title": "Trixie",
+      "color": [200, 80, 80],
+      "minorVersions": [
+        {
+          "title": "13.0",
+          "features": [
+            { "title": "⚙️ Initial Trixie support", "description": "" },
+            { "title": "⚙️ Pydantic v2 for configpanels", "description": "" },
+            { "title": "???", "description": "" }
+          ]
+        },
+        {
+          "title": "13.N",
+          "draft": true,
+          "features": [
+            { "title": "💾 Storage management❓", "description": "" },
+            {
+              "title": "🚑 Automatic remote backup, backup policy❓ (depend on grant / donations 💰)",
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Someday™",
+      "color": [220, 5, 90],
+      "minorVersions": [
+        {
+          "title": "Soon™",
+          "features": [
+            {
+              "title": "🎀 Gradual UI/UX improvements in webadmin",
+              "description": ""
+            },
+            { "title": "🔐 2FA in webadmin", "description": "" },
+            { "title": "🚪 Support SAML/OIDC for SSO", "description": "" },
+            { "title": "📦 App bundles", "description": "" },
+            { "title": "⚙️ Replace moulinette with FastAPI", "description": "" }
+          ]
+        }
+      ]
+    }
+  ]
+}

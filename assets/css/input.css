@@ -1,5 +1,56 @@
-
 @import '/local.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+
+    h2 {
+        @apply text-center pb-10 text-4xl font-bold;
+    }
+    main h3 {
+        @apply text-2xl font-bold;
+    }
+    footer h3 {
+        @apply py-2 font-bold;
+    }
+    section {
+        @apply py-10 px-5;
+    }
+    #index section > * {
+        @apply mx-auto max-w-screen-lg;
+    }
+    #donate section > * {
+        @apply mx-auto max-w-screen-md;
+    }
+    #roadmap .major-version {
+        @apply mx-auto w-full max-w-screen-xl;
+    }
+
+    section:nth-child(even) {
+        @apply bg-[#F4F5F6] dark:bg-[#212223] transition-colors;
+    }
+
+    .smol-rotate {
+        @apply rotate-[3deg];
+    }
+
+    #donate a {
+        @apply text-sky-700 dark:text-sky-300;
+    }
+
+    input, textarea, select {
+        @apply !rounded-md shadow-sm !border-gray-300 bg-neutral-50 dark:bg-gray-800 dark:!border-gray-700;
+    }
+
+    .glow-light {
+        animation: glow-light 20s linear infinite 0s;
+        transition: filter;
+    }
+
+    .glow-dark {
+        animation: glow-dark 20s linear infinite 0s;
+        transition: filter;
+    }
+
+}

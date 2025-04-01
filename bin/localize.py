@@ -59,7 +59,14 @@ def main() -> None:
     articles = articles[0:6]
 
     # Fetch weblate statistics to list locales translated abode a certain treshold
-    j = requests.get("https://translate.yunohost.org/api/components/yunohost/landingpage/statistics/").json()
+    try:
+        r = requests.get("https://translate.yunohost.org/api/components/yunohost/landingpage/statistics/", timeout=5)
+        assert r.status_code == 200
+    except Exception as e:
+        j = json.loads(open("translate_stats.json").read())
+    else:
+        open("translate_stats.json", "w").write(r.text)
+        j = r.json()
 
     def get_lang_native_name(code):
         return Language.make(language=code).display_name(code).title()

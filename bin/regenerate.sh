@@ -94,4 +94,7 @@ then
         --content "$LANDINGPAGE_DIST_DIR/*.en.html" \
         --input "$LANDINGPAGE_DIR/assets/css/input.css" \
         --output "$LANDINGPAGE_DIST_DIR/assets/css/prod.min.css"
+
+    rm -rf "$LANDINGPAGE_DIST_DIR/assets/tailwindcss-linux-x64"
+    rm -rf "$LANDINGPAGE_DIST_DIR/assets/fonts/source-sans/.git"
 fi

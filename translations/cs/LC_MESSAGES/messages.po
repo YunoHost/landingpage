@@ -8,75 +8,77 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-25 23:14+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-01 01:46+0000\n"
+"Last-Translator: demodé <walter.klosse@protonmail.com>\n"
+"Language-Team: Czech <https://translate.yunohost.org/projects/yunohost/"
+"landingpage/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 5.4.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 msgid "YunoHost: garden your own piece of the Internet!"
-msgstr ""
+msgstr "YunoHost: vypěstujte si svůj vlastní kousek internetu!"
 
 msgid "Accessibility menu"
 msgstr ""
 
 msgid "Go to content"
-msgstr ""
+msgstr "Přejít na obsah"
 
 msgid "Go to navigation"
-msgstr ""
+msgstr "Přejít na navigaci"
 
 msgid "Go to page settings"
-msgstr ""
+msgstr "Přejít na nastavení stránky"
 
 msgid "Go to search"
-msgstr ""
+msgstr "Přejít na vyhledávání"
 
 msgid "Page settings"
-msgstr ""
+msgstr "Nastavení stránky"
 
 msgid "Switch to a different language"
-msgstr ""
+msgstr "Přepnout na jiný jazyk"
 
 msgid "Translate this page!"
-msgstr ""
+msgstr "Přeložte tuto stránku!"
 
 msgid "Switch to dark mode"
-msgstr ""
+msgstr "Přepnout na tmavý režim"
 
 msgid "Switch to light mode"
-msgstr ""
+msgstr "Přepnout na světlý režim"
 
 msgid "Yunohost logo"
-msgstr ""
+msgstr "Yunohost logo"
 
 msgid "Garden your own<br/>piece of the Internet!"
-msgstr ""
+msgstr "Vypěstujte si svůj vlastní <br/>kousek internetu!"
 
 msgid "Main menu"
-msgstr ""
+msgstr "Hlavní menu"
 
 msgid "Discover"
-msgstr ""
+msgstr "Objevit"
 
 msgid "Applications"
-msgstr ""
+msgstr "Aplikace"
 
 msgid "Install"
-msgstr ""
+msgstr "Instalovat"
 
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentace"
 
 msgid "Latest news"
-msgstr ""
+msgstr "Poslední zprávy"
 
 msgid "Community"
-msgstr ""
+msgstr "Komunita"
 
 msgid ""
 "With **YunoHost**, easily manage %(a server|a cloud|a website|mailboxes|a "
@@ -84,6 +86,10 @@ msgid ""
 "game server|a forum|a chat|an ERP)%  \n"
 "for your friends, your association, your company"
 msgstr ""
+"S **YunoHost**, snadno spravujte %(server|cloud|webovou "
+"stránku|mailboxy|wiki|sociální síť|video knihovnu|blog|dotazníky|účetnictví|"
+"herní server|fórum|chat|plánování podnikových zdrojů)%  \n"
+"pro vaše přátele, vaši asociaci, vaši společnost"
 
 msgid "Carousel"
 msgstr ""
@@ -133,10 +139,10 @@ msgid ""
 msgstr ""
 
 msgid "Previous slide"
-msgstr ""
+msgstr "Předchozí snímek"
 
 msgid "Next slide"
-msgstr ""
+msgstr "Další snímek"
 
 msgid ""
 "**YunoHost** is a system that installs itself on a **server**  \n"
@@ -144,36 +150,40 @@ msgid ""
 "knowledge** -  \n"
 "digital services (apps) **that you control**."
 msgstr ""
+"**YunoHost** je systém, který se nainstaluje na **server**  \n"
+"a umožňuje vám instalovat a spravovat - **s minimálními technickými "
+"znalostmi** -  \n"
+"digitální služby (aplikace), **které máte pod kontrolou**."
 
 msgid "Huh, but why <i class='fa fa-question'></i>"
-msgstr ""
+msgstr "Huh, ale proč <i class='fa fa-question'></i>"
 
 msgid "Try"
-msgstr ""
+msgstr "Vyzkoušejte"
 
 msgid "Examples of uses"
-msgstr ""
+msgstr "Příklady použití"
 
 msgid "For you and your friends"
-msgstr ""
+msgstr "Pro tebe a tvé kamarády"
 
 msgid "synchronize your calendars and contacts"
-msgstr ""
+msgstr "synchronizujte si váš kalendář a kontakty"
 
 msgid "keep your passwords and notes safe"
-msgstr ""
+msgstr "uchovávejte svá hesla a poznámky v bezpečí"
 
 msgid "host mailboxes"
 msgstr ""
 
 msgid "organize your photos, videos and music"
-msgstr ""
+msgstr "organizujte své fotky, videa a hudbu"
 
 msgid "join alternative social media"
-msgstr ""
+msgstr "připojte se k alternativním sociálním médiím"
 
 msgid "For small organizations"
-msgstr ""
+msgstr "Pro malé organizace"
 
 msgid "host your own website"
 msgstr ""
@@ -191,10 +201,10 @@ msgid "set up a team chat"
 msgstr ""
 
 msgid "Explore the app catalog"
-msgstr ""
+msgstr "Prozkoumejte katalog aplikací"
 
 msgid "How to get started"
-msgstr ""
+msgstr "Jak začít"
 
 msgid ""
 "If you're not sure yet on, we invite you to [try the demo](https://yunohost."
@@ -216,13 +226,13 @@ msgid "Old tower or portable (*ordinosaur*)"
 msgstr ""
 
 msgid "Online server (VPS)"
-msgstr ""
+msgstr "Online server (VPS)"
 
 msgid "Compare"
-msgstr ""
+msgstr "Srovnat"
 
 msgid "Install YunoHost"
-msgstr ""
+msgstr "Instalujte YunoHost"
 
 msgid "Check the prerequisites<br>then flash or install the system"
 msgstr ""
@@ -254,7 +264,7 @@ msgid "Previous articles"
 msgstr ""
 
 msgid "Claude, YunoHost's mascot"
-msgstr ""
+msgstr "Claude, maskot YunoHost"
 
 msgid ""
 "Image of Claude, YunoHost's mascot. The humanoid oppossum stands with purple "
@@ -293,7 +303,7 @@ msgid "Code repositories"
 msgstr ""
 
 msgid "They support us <3"
-msgstr ""
+msgstr "Podporují nás <3"
 
 msgid ""
 "We are thankful for our sponsors providing us with infrastructure and grants!"
@@ -315,13 +325,13 @@ msgid "Follow"
 msgstr ""
 
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 msgid "Mastodon"
-msgstr ""
+msgstr "Mastodon"
 
 msgid "Peertube"
-msgstr ""
+msgstr "Peertube"
 
 msgid "Use"
 msgstr ""
@@ -333,7 +343,7 @@ msgid "Services status"
 msgstr ""
 
 msgid "Changelog"
-msgstr ""
+msgstr "Seznam změn"
 
 msgid "Issues tracker"
 msgstr ""
@@ -348,4 +358,4 @@ msgid "Code (apps)"
 msgstr ""
 
 msgid "Translation"
-msgstr ""
+msgstr "Překlad"

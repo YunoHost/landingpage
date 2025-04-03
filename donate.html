@@ -28,7 +28,7 @@
     <div class="text-center mx-auto py-5">
       <h3 class="text-3xl">{{ _('I want to give to YunoHost:') }}</h3>
       <div class="my-5">
-          <!-- FIXME : template the public_key -->
+          <!-- FIXME: template the public_key -->
         <input type="hidden" id="public_key" value="pk_live_EZ0b0e5WyeOqicQXDxfaHnWP">
 
         <input type="number" min="0" max="9999" id="quantity" value="10" class="mx-2"
@@ -223,7 +223,7 @@
 
     <div class="flex flex-col md:flex-row !max-w-screen-lg items-center">
         <div class="mx-5 mb-5 md:w-1/4">
-          <img class="max-h-[50vh] md:max-h-full" src="assets/img/fursona.png" title="{{ _("Claude, YunoHost's mascot") }}" alt="{{ _("Image of Claude, YunoHost's mascot. The humanoid oppossum stands with purple hair and scarf, round glasses, beige pants with pockets and a blue crop top with the YunoHost logo.") }}" />
+          <img class="max-h-[50vh] md:max-h-full" src="assets/img/fursona.png" title="{{ _("Claude, the YunoHost's mascot") }}" alt="{{ _("Image of Claude, the YunoHost's mascot. The humanoid oppossum stands with purple hair and scarf, round glasses, beige pants with pockets and a blue crop top with the YunoHost logo.") }}" />
         </div>
 
         <div class="mx-5">
@@ -323,19 +323,19 @@
           label: "1. {{ _('Base') }}",
           value: (300 + 1750 + 2000 + 1500) / 12,
           backgroundColor: "#4bc0c0",
-          text: "{{ _('Step 1 : We maintain the existing.') }}",
+          text: "{{ _('Step 1: We maintain the existing.') }}",
         },
         {
           label: "2. {{ _('Animation') }}",
           value: 12000 / 12,
           backgroundColor: "#96f",
-          text: "{{ _('Step 2 : We will be able to take care of the collective!') }}",
+          text: "{{ _('Step 2: We will be able to take care of the collective!') }}",
         },
         {
           label: "3. {{ _('Development') }}",
           value: 11000 / 12,
           backgroundColor: "#36a2eb",
-          text: "{{ _('Step 3 : A boost for development!') }}",
+          text: "{{ _('Step 3: A boost for development!') }}",
         },
       ].map((step, i, steps) => {
         return {

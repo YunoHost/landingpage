@@ -224,13 +224,13 @@ msgstr ""
 msgid "YunoHost in 2024"
 msgstr ""
 
-msgid "Claude, YunoHost's mascot"
+msgid "Claude, the YunoHost's mascot"
 msgstr ""
 
 msgid ""
-"Image of Claude, YunoHost's mascot. The humanoid oppossum stands with "
-"purple hair and scarf, round glasses, beige pants with pockets and a blue"
-" crop top with the YunoHost logo."
+"Image of Claude, the YunoHost's mascot. The humanoid oppossum stands with"
+" purple hair and scarf, round glasses, beige pants with pockets and a "
+"blue crop top with the YunoHost logo."
 msgstr ""
 
 msgid "Project"
@@ -363,19 +363,19 @@ msgstr ""
 msgid "Base"
 msgstr ""
 
-msgid "Step 1 : We maintain the existing."
+msgid "Step 1: We maintain the existing."
 msgstr ""
 
 msgid "Animation"
 msgstr ""
 
-msgid "Step 2 : We will be able to take care of the collective!"
+msgid "Step 2: We will be able to take care of the collective!"
 msgstr ""
 
 msgid "Development"
 msgstr ""
 
-msgid "Step 3 : A boost for development!"
+msgid "Step 3: A boost for development!"
 msgstr ""
 
 msgid "month"

@@ -181,6 +181,9 @@ msgstr ""
 msgid "1. Preserve what's useful to you"
 msgstr ""
 
+msgid "€5,500"
+msgstr ""
+
 msgid ""
 "Donations are used primarily to maintain the existing system, in "
 "particular by paying infrastructure costs (YunoHost services and task "
@@ -188,6 +191,9 @@ msgid ""
 msgstr ""
 
 msgid "2. Make the facilitator position permanent"
+msgstr ""
+
+msgid "€12,000"
 msgstr ""
 
 msgid ""
@@ -199,6 +205,9 @@ msgid ""
 msgstr ""
 
 msgid "3. Boosting development"
+msgstr ""
+
+msgid "€11,000"
 msgstr ""
 
 msgid ""

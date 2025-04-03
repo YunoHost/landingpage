@@ -1,3 +1,13 @@
+msgid "YunoHost: garden your own piece of the Internet!"
+msgstr ""
+
+msgid ""
+"**YunoHost** is a system that installs itself on a **server**  \n"
+"and allows you to install and maintain - **with very little technical "
+"knowledge** -  \n"
+"digital services (apps) **that you control**."
+msgstr ""
+
 msgid "Accessibility menu"
 msgstr ""
 
@@ -160,7 +170,9 @@ msgstr ""
 msgid ""
 "YunoHost is a non-profit project that advocates a decentralized Internet,"
 " with open, interoperable, sober technologies that respect privacy and "
-"(re-)empower the greatest number of people and collectives."
+"(re-)empower the greatest number of people and collectives. To do so, we "
+"aim to collect 28.500€ this year, split between the following three "
+"objectives."
 msgstr ""
 
 msgid "1. Preserve what's useful to you"
@@ -193,6 +205,22 @@ msgid ""
 " professional time to carry them out."
 msgstr ""
 
+msgid "2025 Campaign progress"
+msgstr ""
+
+#, python-format
+msgid ""
+"The donation campaign is <span id='campaign-completion'></span>% "
+"complete, for needs estimated at €<span id='campaign-"
+"objective'></span>/month"
+msgstr ""
+
+msgid "Recurring donations:"
+msgstr ""
+
+msgid "One-time donations:"
+msgstr ""
+
 msgid "YunoHost in 2024"
 msgstr ""
 
@@ -215,7 +243,14 @@ msgid "about fifteen regularly active core-contributors"
 msgstr ""
 
 msgid ""
-"volunteer work that could be valued at around €500,000 a year if "
+"Assuming a 4 person company full time,\n"
+"each with 3000€ net / month,\n"
+" so around ~5200€ charged / month,\n"
+"5200€ x 4 person x 12 months = 249600€ / year"
+msgstr ""
+
+msgid ""
+"volunteer work that could be valued at least €250,000 a year if "
 "remunerated"
 msgstr ""
 
@@ -325,6 +360,27 @@ msgid ""
 "aspects (a.k.a ‘stirrer’)."
 msgstr ""
 
+msgid "Base"
+msgstr ""
+
+msgid "Step 1 : We maintain the existing."
+msgstr ""
+
+msgid "Animation"
+msgstr ""
+
+msgid "Step 2 : We will be able to take care of the collective!"
+msgstr ""
+
+msgid "Development"
+msgstr ""
+
+msgid "Step 3 : A boost for development!"
+msgstr ""
+
+msgid "month"
+msgstr ""
+
 msgid "Donations"
 msgstr ""
 
@@ -332,12 +388,6 @@ msgid "Grants"
 msgstr ""
 
 msgid "Previsional"
-msgstr ""
-
-msgid "Animation"
-msgstr ""
-
-msgid "Development"
 msgstr ""
 
 msgid "Infrastructure"
@@ -352,14 +402,7 @@ msgstr ""
 msgid "Roadmap and dreammap"
 msgstr ""
 
-msgid ""
-"We're publishing a roadmap here to give a clearer idea of what we plan to"
-" develop. It in no way constitutes a commitment on the part of the team, "
-"and is dependent on the availability and energies of volunteers. It is "
-"therefore subject to change at any time."
-msgstr ""
-
-msgid "Details"
+msgid "Checkout the dedicated roadmap page"
 msgstr ""
 
 msgid "General questions about donations"
@@ -447,9 +490,6 @@ msgid ""
 "link](mailto:donate-5542@yunohost.org)."
 msgstr ""
 
-msgid "YunoHost: garden your own piece of the Internet!"
-msgstr ""
-
 msgid ""
 "With **YunoHost**, easily manage %(a server|a cloud|a website|mailboxes|a"
 " wiki|a social network|a video library|a blog|surveys|an accounting "
@@ -509,13 +549,6 @@ msgid "Previous slide"
 msgstr ""
 
 msgid "Next slide"
-msgstr ""
-
-msgid ""
-"**YunoHost** is a system that installs itself on a **server**  \n"
-"and allows you to install and maintain - **with very little technical "
-"knowledge** -  \n"
-"digital services (apps) **that you control**."
 msgstr ""
 
 msgid "Huh, but why <i class='fa fa-question'></i>"

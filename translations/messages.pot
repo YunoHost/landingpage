@@ -220,9 +220,8 @@ msgstr ""
 msgid "2025 Campaign progress"
 msgstr ""
 
-#, python-format
 msgid ""
-"The donation campaign is <span id='campaign-completion'></span>% "
+"The donation campaign is <span id='campaign-completion'></span>％ "
 "complete, for needs estimated at €<span id='campaign-"
 "objective'></span>/month"
 msgstr ""
@@ -240,9 +239,9 @@ msgid "Claude, the YunoHost's mascot"
 msgstr ""
 
 msgid ""
-"Image of Claude, the YunoHost's mascot. The humanoid oppossum stands with"
-" purple hair and scarf, round glasses, beige pants with pockets and a "
-"blue crop top with the YunoHost logo."
+"Image of Claude, the YunoHost's mascot. An humanoid oppossum who stands "
+"with purple hair and scarf, round glasses, beige pants with pockets and a"
+" blue crop top with the YunoHost logo."
 msgstr ""
 
 msgid "The project"

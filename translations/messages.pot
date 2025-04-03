@@ -245,10 +245,10 @@ msgid ""
 "blue crop top with the YunoHost logo."
 msgstr ""
 
-msgid "Project"
+msgid "The project"
 msgstr ""
 
-msgid "a 14 years old project"
+msgid "14 years of existence"
 msgstr ""
 
 msgid "about fifteen regularly active core-contributors"
@@ -266,6 +266,9 @@ msgid ""
 "remunerated"
 msgstr ""
 
+msgid "The community"
+msgstr ""
+
 msgid "~10,000 instances in 77 countries"
 msgstr ""
 
@@ -278,7 +281,7 @@ msgstr ""
 msgid "15+ languages supported"
 msgstr ""
 
-msgid "Software and ecosystem"
+msgid "The software and its ecosystem"
 msgstr ""
 
 msgid ""

@@ -355,7 +355,7 @@ msgid ""
 "Your donations guarantee our independence: they constitute our entire "
 "income in 2024."
 msgstr ""
-"Vos dons garantissent notre indépendance : ils constituent l'intégralité "
+"Vos dons garantissent notre indépendance&nbsp;: ils constituent l'intégralité "
 "de nos revenus en 2024."
 
 msgid "Revenues"
@@ -519,7 +519,7 @@ msgid "General questions about donations"
 msgstr "Questions générales à propos des dons"
 
 msgid "Will my donation be tax deductible?"
-msgstr "Mon don sera-t-il déductible des impôts ?"
+msgstr "Mon don sera-t-il déductible des impôts&nbsp;?"
 
 msgid ""
 "At this time, we do not provide tax-deductible donation receipts. We can,"

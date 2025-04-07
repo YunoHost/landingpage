@@ -80,7 +80,7 @@
             <div id="lang-selector" class="text-center hidden align-right z-50 absolute top-12 right-12 p-2 text-gray-800 bg-white rounded-md border">
                 <ul>
                     {% for code, lang_native_name in langs.items() %}
-                    <li><a class="hover:opacity-75" href="index.{{ code }}.html">{{ lang_native_name }}</a></li>
+                    <li><a class="hover:opacity-75" href="{{ page_id }}.{{ code }}.html">{{ lang_native_name }}</a></li>
                     {% endfor %}
                     <li><a class="max-w-24 p-1 text-sm inline-block hover:opacity-75" href="https://translate.yunohost.org/projects/yunohost/landingpage/"><i class="fa fa-external-link" aria-hidden="true"></i> {{ _("Translate this page!") }}</a></li>
                 </ul>
@@ -152,7 +152,7 @@
         {% endblock %}
     </header>
 
-    <main id="{%- block page_id -%}{%- endblock -%}">
+    <main id="{{ page_id }}">
     {% block main %}
     {% endblock %}
     </main>

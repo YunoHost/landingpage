@@ -42,8 +42,8 @@ download https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfo
 download https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.ttf?v=1.2.0 fonts/forkawesome-webfont.ttf
 
 # Logos
-download https://raw.githubusercontent.com/YunoHost/doc/master/images/logo_roundcorner.png img/ynh_logo_roundcorner.png
-download https://raw.githubusercontent.com/YunoHost/doc/master/images/ynh_logo_black.svg img/ynh_logo_black.svg
+download https://raw.githubusercontent.com/YunoHost/yunohost-artwork/main/logos/png/yunohost-logo_roundcorners.png img/ynh_logo_roundcorner.png
+download https://raw.githubusercontent.com/YunoHost/yunohost-artwork/main/logos/svg/yunohost-logo_black.svg img/ynh_logo_black.svg
 
 git_download https://github.com/adobe-fonts/source-sans fonts/source-sans --depth 1 --single-branch
 

@@ -153,8 +153,7 @@
 
   <div id="current-step" class="my-3">
     <div class="sr-only">{{ _("The donation campaign is <span id='campaign-completion'></span>％ complete, for needs estimated at €<span id='campaign-objective'></span>/month") }}</div>
-    
-    <div id="current-step-text" class="text-2xl font-bold mt-7 mb-5"></div>
+
     <ul>
       <li id="recurring-amount-text">
         <span class="square"></span>{{ _("Recurring donations:") }}
@@ -320,22 +319,19 @@
 
       const steps = [
         {
-          label: "1. {{ _('Base') }}",
+          label: "1. {{ _('Preserve what\'s useful to you') }}",
           value: (300 + 1750 + 2000 + 1500) / 12,
           backgroundColor: "#4bc0c0",
-          text: "{{ _('Step 1: We maintain the existing.') }}",
         },
         {
-          label: "2. {{ _('Animation') }}",
+          label: "2. {{ _('Make the facilitator position permanent') }}",
           value: 12000 / 12,
           backgroundColor: "#96f",
-          text: "{{ _('Step 2: We will be able to take care of the collective!') }}",
         },
         {
-          label: "3. {{ _('Development') }}",
+          label: "3. {{ _('Boosting development') }}",
           value: 11000 / 12,
           backgroundColor: "#36a2eb",
-          text: "{{ _('Step 3: A boost for development!') }}",
         },
       ].map((step, i, steps) => {
         return {
@@ -424,9 +420,6 @@
         // Update current step text
         document.querySelector("#campaign-completion").textContent = Math.ceil(allPercent)
         document.querySelector("#campaign-objective").textContent = objective.toFixed(2)
-        document.querySelector("#current-step-text").textContent = steps.findLast(
-          (p) => recAmount >= p.sum
-        )?.text;
 
         document.querySelector(
           "#recurring-amount-text .amount"

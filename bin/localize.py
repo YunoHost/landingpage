@@ -5,6 +5,7 @@ import argparse
 import re
 import requests
 import json
+from datetime import datetime
 from langcodes import Language
 from pathlib import Path
 
@@ -17,6 +18,8 @@ LANDINGPAGE_DIR = Path(__file__).resolve().parent.parent
 LOCALES_PATH = LANDINGPAGE_DIR / "translations"
 TEMPLATES_PATH = LANDINGPAGE_DIR
 DEV = bool(os.environ.get("LANDINGPAGE_DEV"))
+ENABLE_DONATION_CTA = datetime.now() > datetime(2025, 5, 1, 5, 0, 0)
+
 
 def main() -> None:
     parser = argparse.ArgumentParser()
@@ -122,6 +125,7 @@ def main() -> None:
     # Generate 'en'
     locale = "en"
     data_for_jinja = {
+        "enable_donation_cta": ENABLE_DONATION_CTA,
         "articles": articles,
         "roadmap": roadmap_data,
         "donations": donations_data,

@@ -70,6 +70,11 @@ msgstr "Yunohost Logo"
 msgid "Garden your own<br/>piece of the Internet!"
 msgstr "Ziehen Sie ihr eigenes<br/> kleines Stück Internet heran!"
 
+msgid ""
+"Help us make YunoHost sustainable, discover our roadmap and how we use your "
+"donations! <em>→ Checkout our donation campaign page</em>"
+msgstr ""
+
 msgid "Main menu"
 msgstr "Hauptmenü"
 
@@ -140,6 +145,9 @@ msgid "Donate"
 msgstr "Spenden"
 
 msgid "Issues tracker"
+msgstr ""
+
+msgid "Roadmap"
 msgstr ""
 
 msgid "Security"
@@ -405,23 +413,13 @@ msgid ""
 "collectives that support the project in kind."
 msgstr ""
 
-msgid "Base"
+msgid "Preserve what's useful to you"
 msgstr ""
 
-msgid "Step 1: We maintain the existing."
+msgid "Make the facilitator position permanent"
 msgstr ""
 
-#, fuzzy
-msgid "Animation"
-msgstr "Organisation"
-
-msgid "Step 2: We will be able to take care of the collective!"
-msgstr ""
-
-msgid "Development"
-msgstr ""
-
-msgid "Step 3: A boost for development!"
+msgid "Boosting development"
 msgstr ""
 
 msgid "month"
@@ -435,6 +433,13 @@ msgid "Grants"
 msgstr ""
 
 msgid "Previsional"
+msgstr ""
+
+#, fuzzy
+msgid "Animation"
+msgstr "Organisation"
+
+msgid "Development"
 msgstr ""
 
 msgid "Infrastructure"
@@ -780,6 +785,3 @@ msgid ""
 msgstr ""
 "Wir sind dankbar für unsere Sponsoren, die uns Infrastruktur und Mittel zur "
 "Verfügung stellen!"
-
-msgid "Roadmap"
-msgstr ""

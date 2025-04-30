@@ -200,6 +200,10 @@ msgstr ""
 msgid "one time"
 msgstr ""
 
+msgid ""
+"If you are already donating, you can edit your donation by clicking here!"
+msgstr ""
+
 msgid "Why support YunoHost in 2025?"
 msgstr ""
 

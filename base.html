@@ -10,7 +10,7 @@
     <meta property="og:title" content="{{ _("YunoHost: garden your own piece of the Internet!") }}">
     <meta property="og:description" content="{{ _("**YunoHost** is a system that installs itself on a **server**  \nand allows you to install and maintain - **with very little technical knowledge** -  \ndigital services (apps) **that you control**.") | replace("\n", "") | replace("*", "") | replace("  ", " ")}}">
     <meta property="og:image" content="https://yunohost.org/assets/img/portal_simple_dark.jpg">
-    
+
     <link rel="stylesheet" href="assets/fonts/fork-awesome.min.css" />
     <link rel="stylesheet" href="assets/fonts/source-sans/source-sans-3.css" />
     {% block assets %}{% endblock %}
@@ -124,6 +124,15 @@
             </div>
 
             <!-- ############################################################################################################ -->
+
+            {% if page_id == "index" %}
+            <div id="cta-donation-campaign" class="text-center text-lg font-semibold py-5 w-full bg-amber-400 text-gray-800">
+                {{ _("Help us make YunoHost sustainable, discover our roadmap and how we use your donations! <em>→ Checkout our donation campaign page</em>")
+                  | replace('<em>', '<span class="px-2 bg-sky-200 text-sky-800 whitespace-nowrap"><a href="donate.' +  lang + '.html">')
+                  | replace('</em>', '</a></span>')
+                }}
+            </div>
+            {% endif %}
 
             <nav id="main-nav" class="w-full font-semibold py-2 pr-4 flex flex-col sm:flex-row justify-center z-50 bg-[#b6e39d] text-gray-800 dark:bg-[#0F321E] dark:text-white transition-colors text-2xl sm:text-lg" aria-label="{{ _("Main menu") }}">
                 <button class="block sm:hidden w-full py-3" onclick="document.getElementById('main-menu-items').classList.toggle('hidden')"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>

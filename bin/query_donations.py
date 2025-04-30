@@ -4,9 +4,6 @@ import datetime
 import subprocess
 import stripe
 from pathlib import Path
-from dotenv import load_dotenv
-
-load_dotenv()
 
 stripe.api_key = os.getenv("STRIPE_KEY")
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-03 12:45+0200\n"
+"POT-Creation-Date: 2025-04-30 21:40+0200\n"
 "PO-Revision-Date: 2025-03-29 16:41+0000\n"
 "Last-Translator: OniriCorpe <oniricorpe@disroot.org>\n"
 "Language: fr\n"
@@ -67,6 +67,12 @@ msgstr "Logo de YunoHost"
 
 msgid "Garden your own<br/>piece of the Internet!"
 msgstr "Jardinez votre<br/>bout d'Internet&nbsp;!"
+
+msgid ""
+"Help us make YunoHost sustainable, discover our roadmap and how we use "
+"your donations! <em>→ Checkout our donation campaign page</em>"
+msgstr ""
+"Aidez-nous à rendre YunoHost pérenne, découvrez notre feuille de route et comment nous utilisons vos dons ! <em>→ Faîtes un tour sur notre campagne de dons</em>"
 
 msgid "Main menu"
 msgstr "Menu principal"
@@ -139,6 +145,9 @@ msgstr "Faire un don"
 
 msgid "Issues tracker"
 msgstr "Tickets"
+
+msgid "Roadmap"
+msgstr "Feuille de route"
 
 msgid "Security"
 msgstr "Sécurité"
@@ -494,26 +503,17 @@ msgstr ""
 "**Frais et autre dépenses**&nbsp;: frais bancaires ou dons effectués à "
 "d'autres collectifs qui soutiennent le projet en nature."
 
-msgid "Base"
-msgstr "Base"
+msgid "Preserve what's useful to you"
+msgstr "Préserver ce qui vous est utile"
 
-msgid "Step 1: We maintain the existing."
-msgstr "1. Maintenir l'existant."
+msgid "Make the facilitator position permanent"
+msgstr "Péréniser le poste de facilitateur/touilleur"
 
-msgid "Animation"
-msgstr "Animation"
-
-msgid "Step 2: We will be able to take care of the collective!"
-msgstr "2. Être en mesure de prendre soin du collectif&nbsp;!"
-
-msgid "Development"
-msgstr "Développement"
-
-msgid "Step 3: A boost for development!"
-msgstr "3. Booster le développement&nbsp;!"
+msgid "Boosting development"
+msgstr "Booster le développement"
 
 msgid "month"
-msgstr "/ mois"
+msgstr "mois"
 
 msgid "Donations"
 msgstr "Dons"
@@ -523,6 +523,12 @@ msgstr "Subventions"
 
 msgid "Previsional"
 msgstr "Prévisionnel"
+
+msgid "Animation"
+msgstr "Animation"
+
+msgid "Development"
+msgstr "Développement"
 
 msgid "Infrastructure"
 msgstr "Infrastructure"
@@ -910,7 +916,3 @@ msgid ""
 msgstr ""
 "Nous exprimons notre gratitude envers nos mécènes pour leur soutien "
 "financier ou matériel&nbsp;!"
-
-msgid "Roadmap"
-msgstr "La feuille de route"
-

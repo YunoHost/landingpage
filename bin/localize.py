@@ -117,7 +117,7 @@ def main() -> None:
         relevant_langs = {
             lang["code"]: get_lang_native_name(lang["code"])
             for lang in j["results"]
-            if lang["translated_percent"] > 50
+            if lang["translated_percent"] > 40
         }
 
         relevant_langs = dict(sorted(relevant_langs.items()))

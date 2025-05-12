@@ -8,19 +8,21 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-05-13 04:45+0000\n"
+"Last-Translator: ButterflyOfFire <butterflyoffire@protonmail.com>\n"
+"Language-Team: Arabic <https://translate.yunohost.org/projects/yunohost/"
+"landingpage/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=0 && n%100<=2 ? 4 : 5);\n"
+"X-Generator: Weblate 5.4.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 msgid "YunoHost: garden your own piece of the Internet!"
-msgstr ""
+msgstr "قوموا ببستنة رقعتكم الخاصة من الإنترنت!"
 
 msgid ""
 "**YunoHost** is a system that installs itself on a **server**  \n"
@@ -45,7 +47,7 @@ msgid "Go to search"
 msgstr ""
 
 msgid "Page settings"
-msgstr ""
+msgstr "إعدادات الصفحة"
 
 msgid "Switch to a different language"
 msgstr ""
@@ -60,10 +62,10 @@ msgid "Switch to light mode"
 msgstr ""
 
 msgid "Yunohost logo"
-msgstr ""
+msgstr "شعار YunoHost"
 
 msgid "Garden your own<br/>piece of the Internet!"
-msgstr ""
+msgstr "قوموا ببستنة <br/>رقعتكم الخاصة من الإنترنت!"
 
 msgid ""
 "Help us make YunoHost sustainable, discover our roadmap and how we use your "
@@ -71,31 +73,31 @@ msgid ""
 msgstr ""
 
 msgid "Main menu"
-msgstr ""
+msgstr "القائمة الرئيسة"
 
 msgid "Discover"
-msgstr ""
+msgstr "اكتشف"
 
 msgid "Applications"
-msgstr ""
+msgstr "التطبيقات"
 
 msgid "Install"
-msgstr ""
+msgstr "تثبيت"
 
 msgid "Documentation"
-msgstr ""
+msgstr "الدليل"
 
 msgid "Latest news"
 msgstr ""
 
 msgid "Community"
-msgstr ""
+msgstr "المجتمع"
 
 msgid "Legal"
-msgstr ""
+msgstr "قانوني"
 
 msgid "License"
-msgstr ""
+msgstr "الرخصة"
 
 msgid "Terms of services"
 msgstr ""
@@ -104,25 +106,25 @@ msgid "Organization"
 msgstr ""
 
 msgid "Follow"
-msgstr ""
+msgstr "تابعنا"
 
 msgid "Blog"
-msgstr ""
+msgstr "المدونة"
 
 msgid "Mastodon"
-msgstr ""
+msgstr "ماستدون"
 
 msgid "Peertube"
-msgstr ""
+msgstr "بير تيوب"
 
 msgid "Use"
-msgstr ""
+msgstr "استخدم"
 
 msgid "Apps store"
 msgstr ""
 
 msgid "Forum"
-msgstr ""
+msgstr "المنتدى"
 
 msgid "Self-help chat"
 msgstr ""
@@ -131,22 +133,22 @@ msgid "Services status"
 msgstr ""
 
 msgid "Changelog"
-msgstr ""
+msgstr "سجل التعديلات"
 
 msgid "Contribute"
-msgstr ""
+msgstr "المساهمة"
 
 msgid "Donate"
-msgstr ""
+msgstr "تبرّع"
 
 msgid "Issues tracker"
 msgstr ""
 
 msgid "Roadmap"
-msgstr ""
+msgstr "خارطة الطريق"
 
 msgid "Security"
-msgstr ""
+msgstr "الأمان"
 
 msgid "Code (core)"
 msgstr ""
@@ -155,7 +157,7 @@ msgid "Code (apps)"
 msgstr ""
 
 msgid "Translation"
-msgstr ""
+msgstr "الترجمة"
 
 msgid "Donate to YunoHost!"
 msgstr ""
@@ -182,10 +184,10 @@ msgid "I want to give to YunoHost:"
 msgstr ""
 
 msgid "Amount"
-msgstr ""
+msgstr "المبلغ"
 
 msgid "Currency"
-msgstr ""
+msgstr "العملة"
 
 msgid "Frequency"
 msgstr ""
@@ -215,7 +217,7 @@ msgid "1. Preserve what's useful to you"
 msgstr ""
 
 msgid "€5,500"
-msgstr ""
+msgstr "5500 يورو"
 
 msgid ""
 "Donations are used primarily to maintain the existing system, in particular "
@@ -227,7 +229,7 @@ msgid "2. Make the facilitator position permanent"
 msgstr ""
 
 msgid "€12,000"
-msgstr ""
+msgstr "12000 يورو"
 
 msgid ""
 "Since mid-2024, the team involved in the day-to-day development of YunoHost "
@@ -241,7 +243,7 @@ msgid "3. Boosting development"
 msgstr ""
 
 msgid "€11,000"
-msgstr ""
+msgstr "11000 يورو"
 
 msgid ""
 "The publication of new large-scale developments depends essentially on the "
@@ -333,7 +335,7 @@ msgid ""
 msgstr ""
 
 msgid "Revenues"
-msgstr ""
+msgstr "المداخيل"
 
 msgid ""
 "In recent years, donations were around €15,000 per year, mainly from "
@@ -357,7 +359,7 @@ msgid ""
 msgstr ""
 
 msgid "Expenses"
-msgstr ""
+msgstr "النفقات"
 
 msgid ""
 "Between 2022 and 2024, the collective spent around €12,500 a year.<br>In "
@@ -414,13 +416,13 @@ msgid "Boosting development"
 msgstr ""
 
 msgid "month"
-msgstr ""
+msgstr "شهر"
 
 msgid "Donations"
-msgstr ""
+msgstr "التبرعات"
 
 msgid "Grants"
-msgstr ""
+msgstr "الاعتمادات المالية"
 
 msgid "Previsional"
 msgstr ""
@@ -429,16 +431,16 @@ msgid "Animation"
 msgstr ""
 
 msgid "Development"
-msgstr ""
+msgstr "التطوير"
 
 msgid "Infrastructure"
-msgstr ""
+msgstr "البنية التحتية"
 
 msgid "Events"
-msgstr ""
+msgstr "الفعاليات"
 
 msgid "Others"
-msgstr ""
+msgstr "أخرى"
 
 msgid "Roadmap and dreammap"
 msgstr ""
@@ -543,6 +545,8 @@ msgid ""
 "game server|a forum|a chat|an ERP)%  \n"
 "for your friends, your association, your company"
 msgstr ""
+"واي يونوهوست YunoHost نظام يُثبِّت ذاته على خادم ويسمح لك بتثبيت وصيانة - "
+"بأدنى قدر من المعرفة التقنية - خدمات رقمية (تطبيقات) تتحكم فيها أنت."
 
 msgid "Carousel"
 msgstr ""
@@ -601,13 +605,13 @@ msgid "Huh, but why <i class='fa fa-question'></i>"
 msgstr ""
 
 msgid "Try"
-msgstr ""
+msgstr "تجريب"
 
 msgid "Examples of uses"
-msgstr ""
+msgstr "أمثلة للاستخدامات"
 
 msgid "For you and your friends"
-msgstr ""
+msgstr "لك ولأصدقائك"
 
 msgid "synchronize your calendars and contacts"
 msgstr ""
@@ -688,7 +692,7 @@ msgid "Installation guide"
 msgstr ""
 
 msgid "Enjoy!"
-msgstr ""
+msgstr "استمتع!"
 
 msgid "Install applications<br>in just a few clicks"
 msgstr ""

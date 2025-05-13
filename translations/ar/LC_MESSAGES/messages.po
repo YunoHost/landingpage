@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2025-05-13 04:45+0000\n"
+"PO-Revision-Date: 2025-05-13 15:27+0000\n"
 "Last-Translator: ButterflyOfFire <butterflyoffire@protonmail.com>\n"
 "Language-Team: Arabic <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/ar/>\n"
@@ -30,36 +30,39 @@ msgid ""
 "knowledge** -  \n"
 "digital services (apps) **that you control**."
 msgstr ""
+"واي يونوهوست أو **YunoHost** هو نظام يتم تثبيته على **خادم**\n"
+"ويتيح لك تثبيت وصيانة - **دُونَ إلمام كبير بالمعرفة التقنية** - \n"
+"خدمات رقمية (تطبيقات) ** تتحكّم فيها أنت**."
 
 msgid "Accessibility menu"
-msgstr ""
+msgstr "قائمة إمكانية الوصول"
 
 msgid "Go to content"
-msgstr ""
+msgstr "الذهاب إلى المحتوى"
 
 msgid "Go to navigation"
-msgstr ""
+msgstr "الانتقال إلى التصفح"
 
 msgid "Go to page settings"
-msgstr ""
+msgstr "النفاذ إلى إعدادات الصفحة"
 
 msgid "Go to search"
-msgstr ""
+msgstr "الانتقال إلى البحث"
 
 msgid "Page settings"
 msgstr "إعدادات الصفحة"
 
 msgid "Switch to a different language"
-msgstr ""
+msgstr "تغيير اللغة"
 
 msgid "Translate this page!"
-msgstr ""
+msgstr "ترجم هذه الصفحة!"
 
 msgid "Switch to dark mode"
-msgstr ""
+msgstr "الانتقال إلى الوضع المظلم"
 
 msgid "Switch to light mode"
-msgstr ""
+msgstr "الانتقال إلى الوضع الفاتح"
 
 msgid "Yunohost logo"
 msgstr "شعار YunoHost"
@@ -88,7 +91,7 @@ msgid "Documentation"
 msgstr "الدليل"
 
 msgid "Latest news"
-msgstr ""
+msgstr "آخر المستجدات"
 
 msgid "Community"
 msgstr "المجتمع"
@@ -100,10 +103,10 @@ msgid "License"
 msgstr "الرخصة"
 
 msgid "Terms of services"
-msgstr ""
+msgstr "شروط الخدمة"
 
 msgid "Organization"
-msgstr ""
+msgstr "التنظيم"
 
 msgid "Follow"
 msgstr "تابعنا"
@@ -121,16 +124,16 @@ msgid "Use"
 msgstr "استخدم"
 
 msgid "Apps store"
-msgstr ""
+msgstr "فهرس التطبيقات"
 
 msgid "Forum"
 msgstr "المنتدى"
 
 msgid "Self-help chat"
-msgstr ""
+msgstr "دردشة للتعاون"
 
 msgid "Services status"
-msgstr ""
+msgstr "حالة الخدمات"
 
 msgid "Changelog"
 msgstr "سجل التعديلات"
@@ -151,21 +154,23 @@ msgid "Security"
 msgstr "الأمان"
 
 msgid "Code (core)"
-msgstr ""
+msgstr "الشيفرة (core)"
 
 msgid "Code (apps)"
-msgstr ""
+msgstr "الشيفرة (apps)"
 
 msgid "Translation"
 msgstr "الترجمة"
 
 msgid "Donate to YunoHost!"
-msgstr ""
+msgstr "تبرع إلى !YunoHost"
 
 msgid ""
 "YunoHost has been around **since 2012** and is essentially developed **on a "
 "voluntary basis** and **outside the commercial sector**."
 msgstr ""
+"تأسس YunoHost **منذ عام 2012** وتم تطويره بشكل أساسي **بشكل تطوعي** و **بعيدً"
+"ا عن القطاع التجاري**."
 
 msgid ""
 "YunoHost is a modest project in terms of the resources it mobilizes - yet an "
@@ -181,7 +186,7 @@ msgid ""
 msgstr ""
 
 msgid "I want to give to YunoHost:"
-msgstr ""
+msgstr "أريد التبرع إلى YunoHost:"
 
 msgid "Amount"
 msgstr "المبلغ"
@@ -193,17 +198,17 @@ msgid "Frequency"
 msgstr ""
 
 msgid "/ month"
-msgstr ""
+msgstr "/ شهريا"
 
 msgid "one time"
-msgstr ""
+msgstr "مرة واحدة"
 
 msgid ""
 "If you are already donating, you can edit your donation by clicking here!"
 msgstr ""
 
 msgid "Why support YunoHost in 2025?"
-msgstr ""
+msgstr "لما يجب دعم YunoHost في 2025؟"
 
 msgid ""
 "YunoHost is a non-profit project that advocates a decentralized Internet, "
@@ -253,7 +258,7 @@ msgid ""
 msgstr ""
 
 msgid "2025 Campaign progress"
-msgstr ""
+msgstr "التقدّم المُحرَز في حملة 2025"
 
 msgid ""
 "The donation campaign is <span id='campaign-completion'></span>％ complete, "
@@ -267,7 +272,7 @@ msgid "One-time donations:"
 msgstr ""
 
 msgid "YunoHost in 2024"
-msgstr ""
+msgstr "واي يونوهوست في 2024"
 
 msgid "Claude, the YunoHost's mascot"
 msgstr ""
@@ -279,10 +284,10 @@ msgid ""
 msgstr ""
 
 msgid "The project"
-msgstr ""
+msgstr "المشروع"
 
 msgid "14 years of existence"
-msgstr ""
+msgstr "14 عامًا من الوجود"
 
 msgid "about fifteen regularly active core-contributors"
 msgstr ""
@@ -296,13 +301,13 @@ msgstr ""
 
 msgid ""
 "volunteer work that could be valued at least €250,000 a year if remunerated"
-msgstr ""
+msgstr "عمل تطوعي تُقدر قيمته بما لا يقل عن 250,000 يورو سنويًا لو كان مأجورًا"
 
 msgid "The community"
-msgstr ""
+msgstr "المجتمع"
 
 msgid "~10,000 instances in 77 countries"
-msgstr ""
+msgstr "‮~حوالي 10000 مثيل خادم في 77 بلدًا"
 
 msgid "130 regular or occasional donors in 2024"
 msgstr ""
@@ -311,10 +316,10 @@ msgid "8,700+ accounts on the various project channels (forge, forum, chat)"
 msgstr ""
 
 msgid "15+ languages supported"
-msgstr ""
+msgstr "يدعم أكثر من 15 لغة"
 
 msgid "The software and its ecosystem"
-msgstr ""
+msgstr "البرمجية ومنظومتها"
 
 msgid ""
 "[540+ apps in the catalog](https://apps.yunohost.org/catalog) ([a brief "
@@ -327,12 +332,12 @@ msgid ""
 msgstr ""
 
 msgid "What are your donations used for?"
-msgstr ""
+msgstr "فيمَ تُستخدم تبرعاتك؟"
 
 msgid ""
 "Your donations guarantee our independence: they constitute our entire income "
 "in 2024."
-msgstr ""
+msgstr "تبرعاتكم تضمن استقلاليتنا: فهي تشكل كامل دخلنا في عام 2024."
 
 msgid "Revenues"
 msgstr "المداخيل"
@@ -443,7 +448,7 @@ msgid "Others"
 msgstr "أخرى"
 
 msgid "Roadmap and dreammap"
-msgstr ""
+msgstr "خارطة الطريق وخارطة الأحلام"
 
 msgid ""
 "We're publishing a roadmap here to give a clearer idea of what we plan to "
@@ -453,10 +458,10 @@ msgid ""
 msgstr ""
 
 msgid "Checkout the dedicated roadmap page"
-msgstr ""
+msgstr "اطلع على الصفحة المخصصة لخارطة الطريق"
 
 msgid "General questions about donations"
-msgstr ""
+msgstr "أسئلة عامة حول التبرعات"
 
 msgid "Will my donation be tax deductible?"
 msgstr ""
@@ -596,13 +601,13 @@ msgid ""
 msgstr ""
 
 msgid "Previous slide"
-msgstr ""
+msgstr "الصورة السابقة"
 
 msgid "Next slide"
-msgstr ""
+msgstr "الصورة التالية"
 
 msgid "Huh, but why <i class='fa fa-question'></i>"
-msgstr ""
+msgstr "إيه، ولكن لماذا <i class='fa fa-question'></i>"
 
 msgid "Try"
 msgstr "تجريب"
@@ -620,37 +625,37 @@ msgid "keep your passwords and notes safe"
 msgstr ""
 
 msgid "host mailboxes"
-msgstr ""
+msgstr "استضيفوا صناديق بريدية"
 
 msgid "organize your photos, videos and music"
 msgstr ""
 
 msgid "join alternative social media"
-msgstr ""
+msgstr "للانضمام إلى وسائل التواصل الاجتماعي البديلة"
 
 msgid "For small organizations"
-msgstr ""
+msgstr "للمنظمات الصغيرة"
 
 msgid "host your own website"
-msgstr ""
+msgstr "لاستضافة موقعكم على الويب"
 
 msgid "share files in common (e.g. with Nextcloud)"
-msgstr ""
+msgstr "مشاركة الملفات سويًا (على سبيل المثال مع Nextcloud)"
 
 msgid "edit multiple documents in real time"
-msgstr ""
+msgstr "تحرير المستندات فوريًا وبصفة تشاركية"
 
 msgid "manage your accounting"
-msgstr ""
+msgstr "إدارة محاسبتكم"
 
 msgid "set up a team chat"
 msgstr ""
 
 msgid "Explore the app catalog"
-msgstr ""
+msgstr "استكشف فهرس التطبيقات"
 
 msgid "How to get started"
-msgstr ""
+msgstr "كيف يمكنك الانطلاق"
 
 msgid ""
 "If you're not sure yet on, we invite you to [try the demo](https://doc."
@@ -678,7 +683,7 @@ msgid "Compare"
 msgstr ""
 
 msgid "Install YunoHost"
-msgstr ""
+msgstr "تنصيب YunoHost"
 
 msgid "Check the prerequisites<br>then flash or install the system"
 msgstr ""
@@ -689,35 +694,40 @@ msgid ""
 msgstr ""
 
 msgid "Installation guide"
-msgstr ""
+msgstr "دليل التنصيب"
 
 msgid "Enjoy!"
 msgstr "استمتع!"
 
 msgid "Install applications<br>in just a few clicks"
-msgstr ""
+msgstr "قوموا بتنصيب تطبيقات<br>ببضع نقرات فقط"
 
 msgid "Set up backups"
 msgstr ""
 
 msgid "Take care of your server"
-msgstr ""
+msgstr "تولَّوا العناية بخادمكم"
 
 msgid "Guided tour"
-msgstr ""
+msgstr "نزهة إرشادية"
 
 msgid "Previous articles"
-msgstr ""
+msgstr "المقالات السالفة"
 
 msgid ""
 "**YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
 msgstr ""
+"واي يونوهوست **YunoHost** هو **مشروع نقدي للتقنية ** وغير ربحي، تم تطويره "
+"وصيانته من قبل **متطوعين**."
 
 msgid ""
 "We advocate a **decentralized** Internet, with **open**, **interoperable** "
 "technologies that **respect privacy** and **empowers people**."
 msgstr ""
+"نحن ندافع عن **إنترنت لا مركزي**، **مفتوح**، **قابل للتشغيل البيني**، تقنيات "
+"**تحترم الخصوصية** وتمنح **الاستقلالية** و **التَّمكين لأكبر عدد ممكن من "
+"الناس**."
 
 msgid ""
 "In addition, we aim to **give materiality back to the digital**, and "
@@ -725,11 +735,11 @@ msgid ""
 msgstr ""
 
 msgid "Code repositories"
-msgstr ""
+msgstr "مستودعات الشيفرة"
 
 msgid "They support us <3"
-msgstr ""
+msgstr "هم يدعموننا <3"
 
 msgid ""
 "We are thankful for our sponsors providing us with infrastructure and grants!"
-msgstr ""
+msgstr "نحن ممتنون لرعاتنا الذين يدعموننا بالبنية التحتية والهبات!"

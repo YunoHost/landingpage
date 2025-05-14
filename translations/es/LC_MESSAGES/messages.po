@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2025-05-14 12:52+0000\n"
+"PO-Revision-Date: 2025-05-14 18:34+0000\n"
 "Last-Translator: rosbeef andino <ra@3cmr.fr>\n"
 "Language-Team: Spanish <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/es/>\n"
@@ -290,17 +290,14 @@ msgid "Recurring donations:"
 msgstr "Donaciones recurrentes :"
 
 msgid "One-time donations:"
-msgstr ""
+msgstr "Donaciones temporales :"
 
-#, fuzzy
 msgid "YunoHost in 2024"
-msgstr "Logo de Yunohost"
+msgstr "Yunohost en 2024"
 
-#, fuzzy
 msgid "Claude, the YunoHost's mascot"
 msgstr "Claude, Mascota de Yunohost"
 
-#, fuzzy
 msgid ""
 "Image of Claude, the YunoHost's mascot. An humanoid oppossum who stands with "
 "purple hair and scarf, round glasses, beige pants with pockets and a blue "
@@ -311,13 +308,13 @@ msgstr ""
 "crop top azul con el logo YunoHost."
 
 msgid "The project"
-msgstr ""
+msgstr "El Proyecto"
 
 msgid "14 years of existence"
-msgstr ""
+msgstr "14 años de existencia"
 
 msgid "about fifteen regularly active core-contributors"
-msgstr ""
+msgstr "una quincena de contribuidores activos de manera permanente"
 
 msgid ""
 "Assuming a company with 4 full-time persons,\n"
@@ -325,23 +322,28 @@ msgid ""
 "so around €5,200 charged / month,\n"
 "€5,200 x 4 person x 12 months = €249,600 / year"
 msgstr ""
+"Suponiendo una empresa de 4 personas a tiempo completo\n"
+"cada uno remunerado € 3.000 por mes\n"
+"entonces un gasto de € 5.200 por mes\n"
+"5.200 € x 4 personas  x 12 meses =   € 249.000 por año"
 
 msgid ""
 "volunteer work that could be valued at least €250,000 a year if remunerated"
 msgstr ""
+"Un trabajo benévola que podría ser valorado a € 250.000 por año si fuera "
+"remunerado"
 
-#, fuzzy
 msgid "The community"
-msgstr "Comunidad"
+msgstr "La comunidad"
 
 msgid "~10,000 instances in 77 countries"
-msgstr ""
+msgstr "~10.000 instancias en 77 países"
 
 msgid "130 regular or occasional donors in 2024"
-msgstr ""
+msgstr "130 donadores recurrentes y temporales en 2024"
 
 msgid "8,700+ accounts on the various project channels (forge, forum, chat)"
-msgstr ""
+msgstr "8.700 cuentas en diferentes canales del proyecto (forje, forum, chat)"
 
 msgid "15+ languages supported"
 msgstr ""

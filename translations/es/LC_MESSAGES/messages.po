@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2025-05-15 01:57+0000\n"
+"PO-Revision-Date: 2025-05-20 14:26+0000\n"
 "Last-Translator: rosbeef andino <ra@3cmr.fr>\n"
 "Language-Team: Spanish <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/es/>\n"
@@ -477,52 +477,56 @@ msgid ""
 "collective given the need to have a person dedicated to these aspects (a.k.a "
 "“stirrer”)."
 msgstr ""
+"**Mobilizaciones del colectivo** contra parte financiera asociada a las "
+"tareas de ayudas administrativas, animaciónes y coordinación del colectivo. "
+"Es un nuevo typo de gasto iniciado en 2025, decidido por el colectivo frente "
+"la necesidad de una persona dedicada a este tema."
 
 msgid ""
 "**Fees and other expenses**: bank charges or donations made to other "
 "collectives that support the project in kind."
 msgstr ""
+"**Cuotas y otros gastos** cuotas bancarias o donaciones hechas por el "
+"colectivo YunoHost a otros colectivos que apoyan el proyecto amigablemente."
 
 msgid "Preserve what's useful to you"
-msgstr ""
+msgstr "Conserva los que te es útil"
 
 msgid "Make the facilitator position permanent"
-msgstr ""
+msgstr "Perenniza el cargo de facilitador"
 
 msgid "Boosting development"
-msgstr ""
+msgstr "Fermentar el desarrollo"
 
 msgid "month"
-msgstr ""
+msgstr "mes"
 
-#, fuzzy
 msgid "Donations"
-msgstr "Documentación"
+msgstr "Donaciones"
 
 msgid "Grants"
-msgstr ""
+msgstr "Subvenciones"
 
 msgid "Previsional"
-msgstr ""
+msgstr "Previsiones"
 
-#, fuzzy
 msgid "Animation"
-msgstr "Organizaciones"
+msgstr "Movilizaciones"
 
 msgid "Development"
-msgstr ""
+msgstr "Desarrollo"
 
 msgid "Infrastructure"
-msgstr ""
+msgstr "Infraestructuras"
 
 msgid "Events"
-msgstr ""
+msgstr "Eventos"
 
 msgid "Others"
-msgstr ""
+msgstr "Otros"
 
 msgid "Roadmap and dreammap"
-msgstr ""
+msgstr "Guía de ruta y guía de sueños"
 
 msgid ""
 "We're publishing a roadmap here to give a clearer idea of what we plan to "
@@ -530,12 +534,16 @@ msgid ""
 "the availability and energies of volunteers*. It is therefore subject to "
 "change at any time."
 msgstr ""
+"Publicamos una guía de ruta con el objetivo se entregarles una mejor idea se "
+"lo que queremos desarrollar. **No** es una obligación de rendir porque "
+"depende de la disponibilidad y de la energía de los benévoles. Puede estar "
+"modificada en todo momento."
 
 msgid "Checkout the dedicated roadmap page"
-msgstr ""
+msgstr "Ver la pagina de la guía de ruta"
 
 msgid "General questions about donations"
-msgstr ""
+msgstr "Preguntas generales relacionadas a sus donaciones"
 
 msgid "Will my donation be tax deductible?"
 msgstr "¿ Mi donación sera deducida de mis impuestos ?"

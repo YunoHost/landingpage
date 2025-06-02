@@ -11,7 +11,7 @@ campaign_start_date = int(datetime.datetime(2025, 1, 1).timestamp())
 
 # Bank
 bank_amount = 52
-bank_onetime_amount = 1300
+bank_one_time_amount = 1293
 
 # Liberapay
 command = "curl -s https://liberapay.com/YunoHost | grep receives | awk '{print $3}' | tr '<>' '@' | awk -F@ '{print $3}' | tr -d '€'"
@@ -62,7 +62,7 @@ file.write_text(
             + liberapay_amount
             + stripe_recurring_amount),
             "one_time_amount": round(stripe_one_time_amount
-            + bank_onetime_amount),
+            + bank_one_time_amount),
         }
     )
 )

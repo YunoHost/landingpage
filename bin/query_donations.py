@@ -11,6 +11,7 @@ campaign_start_date = int(datetime.datetime(2025, 1, 1).timestamp())
 
 # Bank
 bank_amount = 52
+bank_onetime_amount = 1300
 
 # Liberapay
 command = "curl -s https://liberapay.com/YunoHost | grep receives | awk '{print $3}' | tr '<>' '@' | awk -F@ '{print $3}' | tr -d '€'"
@@ -57,10 +58,11 @@ file = Path(__file__).parent.parent / "donate.json"
 file.write_text(
     json.dumps(
         {
-            "recurring_amount": bank_amount
+            "recurring_amount": round(bank_amount
             + liberapay_amount
-            + stripe_recurring_amount,
-            "one_time_amount": stripe_one_time_amount,
+            + stripe_recurring_amount),
+            "one_time_amount": round(stripe_one_time_amount
+            + bank_onetime_amount),
         }
     )
 )

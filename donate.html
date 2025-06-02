@@ -427,10 +427,10 @@
 
         document.querySelector(
           "#recurring-amount-text .amount"
-        ).textContent = `${recAmount.toFixed(2)} €/{{ _('month') }}`;
+        ).textContent = `${recAmount.toFixed(0)} €/{{ _('month') }}`;
         document.querySelector(
           "#one-time-amount-text .amount"
-        ).textContent = `${oneAmount.toFixed(2)} € (${(oneAmount / 12).toFixed(2)} €/{{ _('month') }})`;
+        ).textContent = `${oneAmount.toFixed(0)} € (${(oneAmount / 12).toFixed(0)} €/{{ _('month') }})`;
       }
 
       window.addEventListener("load", () => setTimeout(() => updateProgressBar(), 100))

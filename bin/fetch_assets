@@ -44,8 +44,11 @@ download https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfo
 # Logos
 download https://raw.githubusercontent.com/YunoHost/yunohost-artwork/main/logos/png/yunohost-logo_roundcorners.png img/ynh_logo_roundcorner.png
 download https://raw.githubusercontent.com/YunoHost/yunohost-artwork/main/logos/svg/yunohost-logo_black.svg img/ynh_logo_black.svg
+sleep 0.5
 
+# Font
 git_download https://github.com/adobe-fonts/source-sans fonts/source-sans --depth 1 --single-branch
+sleep 0.5
 
 # Production -> download standalone tailwind to compile only what we need
 architecture="x64"

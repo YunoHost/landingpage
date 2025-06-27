@@ -8,9 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2025-05-13 15:27+0000\n"
-"Last-Translator: Matthias Roy <ImpyKid@users.noreply.translate.yunohost.org>"
-"\n"
+"PO-Revision-Date: 2025-06-27 19:37+0000\n"
+"Last-Translator: Leander Schlichting <email@leanderschlichting.org>\n"
 "Language-Team: German <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/de/>\n"
 "Language: de\n"
@@ -84,7 +83,7 @@ msgid "Main menu"
 msgstr "Hauptmenü"
 
 msgid "Discover"
-msgstr "Entdecke"
+msgstr "Entdecken"
 
 msgid "Applications"
 msgstr "Anwendungen"
@@ -150,22 +149,22 @@ msgid "Donate"
 msgstr "Spenden"
 
 msgid "Issues tracker"
-msgstr ""
+msgstr "Problemverfolgung"
 
 msgid "Roadmap"
-msgstr ""
+msgstr "Fahrplan"
 
 msgid "Security"
 msgstr "Sicherheit"
 
 msgid "Code (core)"
-msgstr ""
+msgstr "Quellcode (Kernsystem)"
 
 msgid "Code (apps)"
-msgstr ""
+msgstr "Quellcode (Apps)"
 
 msgid "Translation"
-msgstr "Übersetung"
+msgstr "Übersetzung"
 
 msgid "Donate to YunoHost!"
 msgstr "Spende an YunoHost!"
@@ -197,16 +196,16 @@ msgid "Amount"
 msgstr ""
 
 msgid "Currency"
-msgstr ""
+msgstr "Währung"
 
 msgid "Frequency"
 msgstr ""
 
 msgid "/ month"
-msgstr ""
+msgstr "/ Monat"
 
 msgid "one time"
-msgstr ""
+msgstr "einmalig"
 
 msgid ""
 "If you are already donating, you can edit your donation by clicking here!"

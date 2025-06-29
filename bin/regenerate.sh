@@ -9,7 +9,7 @@ LANDINGPAGE_DIST_DIR=$(realpath "${LANDINGPAGE_DIST_DIR:-$LANDINGPAGE_DIR/dist}"
 
 for file in blog donate translate_stats
 do
-   [ -f $file.json ] || echo '{}' > $file.json
+   [ -f $LANDINGPAGE_DIR/$file.json ] || echo '{}' > $LANDINGPAGE_DIR/$file.json
 done
 
 if [[ "${1:-}" == "dev" ]]

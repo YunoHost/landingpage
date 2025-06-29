@@ -7,6 +7,11 @@ LANDINGPAGE_DIR="$(dirname "$SCRIPT_DIR")"
 LANDINGPAGE_VENV_DIR=$(realpath "${LANDINGPAGE_VENV_DIR:-$LANDINGPAGE_DIR/venv}")
 LANDINGPAGE_DIST_DIR=$(realpath "${LANDINGPAGE_DIST_DIR:-$LANDINGPAGE_DIR/dist}")
 
+for file in blog donate translate_stats
+do
+   [ -f $LANDINGPAGE_DIR/$file.json ] || echo '{}' > $LANDINGPAGE_DIR/$file.json
+done
+
 if [[ "${1:-}" == "dev" ]]
 then
     command -v inotifywait &>/dev/null || { echo "You should first run: apt install inotify-tools"; exit; }

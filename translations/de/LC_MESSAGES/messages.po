@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2025-06-27 19:37+0000\n"
-"Last-Translator: Nick <nick_name+weblate@mailbox.org>\n"
+"PO-Revision-Date: 2025-06-30 10:34+0000\n"
+"Last-Translator: Leander Schlichting <email@leanderschlichting.org>\n"
 "Language-Team: German <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/de/>\n"
 "Language: de\n"
@@ -193,13 +193,13 @@ msgid "I want to give to YunoHost:"
 msgstr ""
 
 msgid "Amount"
-msgstr ""
+msgstr "Menge"
 
 msgid "Currency"
 msgstr "Währung"
 
 msgid "Frequency"
-msgstr ""
+msgstr "Frequenz"
 
 msgid "/ month"
 msgstr "/ Monat"
@@ -212,7 +212,7 @@ msgid ""
 msgstr ""
 
 msgid "Why support YunoHost in 2025?"
-msgstr ""
+msgstr "Warum YunoHost im Jahr 2025 unterstützen?"
 
 msgid ""
 "YunoHost is a non-profit project that advocates a decentralized Internet, "
@@ -226,7 +226,7 @@ msgid "1. Preserve what's useful to you"
 msgstr ""
 
 msgid "€5,500"
-msgstr ""
+msgstr "€5,500"
 
 msgid ""
 "Donations are used primarily to maintain the existing system, in particular "
@@ -238,7 +238,7 @@ msgid "2. Make the facilitator position permanent"
 msgstr ""
 
 msgid "€12,000"
-msgstr ""
+msgstr "€12,000"
 
 msgid ""
 "Since mid-2024, the team involved in the day-to-day development of YunoHost "
@@ -252,7 +252,7 @@ msgid "3. Boosting development"
 msgstr ""
 
 msgid "€11,000"
-msgstr ""
+msgstr "€11,000"
 
 msgid ""
 "The publication of new large-scale developments depends essentially on the "

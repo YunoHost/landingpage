@@ -8,9 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2025-05-13 15:27+0000\n"
-"Last-Translator: Matthias Roy <ImpyKid@users.noreply.translate.yunohost.org>"
-"\n"
+"PO-Revision-Date: 2025-06-30 10:34+0000\n"
+"Last-Translator: Leander Schlichting <email@leanderschlichting.org>\n"
 "Language-Team: German <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/de/>\n"
 "Language: de\n"
@@ -84,7 +83,7 @@ msgid "Main menu"
 msgstr "Hauptmenü"
 
 msgid "Discover"
-msgstr "Entdecke"
+msgstr "Entdecken"
 
 msgid "Applications"
 msgstr "Anwendungen"
@@ -150,22 +149,22 @@ msgid "Donate"
 msgstr "Spenden"
 
 msgid "Issues tracker"
-msgstr ""
+msgstr "Problemverfolgung"
 
 msgid "Roadmap"
-msgstr ""
+msgstr "Fahrplan"
 
 msgid "Security"
 msgstr "Sicherheit"
 
 msgid "Code (core)"
-msgstr ""
+msgstr "Quellcode (Kernsystem)"
 
 msgid "Code (apps)"
-msgstr ""
+msgstr "Quellcode (Apps)"
 
 msgid "Translation"
-msgstr "Übersetung"
+msgstr "Übersetzung"
 
 msgid "Donate to YunoHost!"
 msgstr "Spende an YunoHost!"
@@ -194,26 +193,26 @@ msgid "I want to give to YunoHost:"
 msgstr ""
 
 msgid "Amount"
-msgstr ""
+msgstr "Menge"
 
 msgid "Currency"
-msgstr ""
+msgstr "Währung"
 
 msgid "Frequency"
-msgstr ""
+msgstr "Frequenz"
 
 msgid "/ month"
-msgstr ""
+msgstr "/ Monat"
 
 msgid "one time"
-msgstr ""
+msgstr "einmalig"
 
 msgid ""
 "If you are already donating, you can edit your donation by clicking here!"
 msgstr ""
 
 msgid "Why support YunoHost in 2025?"
-msgstr ""
+msgstr "Warum YunoHost im Jahr 2025 unterstützen?"
 
 msgid ""
 "YunoHost is a non-profit project that advocates a decentralized Internet, "
@@ -227,7 +226,7 @@ msgid "1. Preserve what's useful to you"
 msgstr ""
 
 msgid "€5,500"
-msgstr ""
+msgstr "€5,500"
 
 msgid ""
 "Donations are used primarily to maintain the existing system, in particular "
@@ -239,7 +238,7 @@ msgid "2. Make the facilitator position permanent"
 msgstr ""
 
 msgid "€12,000"
-msgstr ""
+msgstr "€12,000"
 
 msgid ""
 "Since mid-2024, the team involved in the day-to-day development of YunoHost "
@@ -253,7 +252,7 @@ msgid "3. Boosting development"
 msgstr ""
 
 msgid "€11,000"
-msgstr ""
+msgstr "€11,000"
 
 msgid ""
 "The publication of new large-scale developments depends essentially on the "
@@ -564,11 +563,11 @@ msgid ""
 "game server|a forum|a chat|an ERP)%  \n"
 "for your friends, your association, your company"
 msgstr ""
-"Mit **YunoHost** ist es einfach  %(einen Server|eine Cloud|eine Webseite|E-"
-"Mail-Postfächer|ein Soziales Netzwerk|eine Videothek|einen Blog|Umfragen|"
-"Buchhaltung|einen Spiele Server|ein Forum|einen Chatdienst|die Strukturen in "
-"deinem Unternehmen)%…\n"
-"für deine Freunde, deinen Verein oder deine Firma zu betreiben"
+"Mit **YunoHost** einfach %(einen Server|eine Cloud|eine Webseite|E-Mail-"
+"Postfächer|ein Soziales Netzwerk|eine Videothek|einen "
+"Blog|Umfragen|Buchhaltung|einen Spiele Server|ein Forum|einen Chatdienst|die "
+"Strukturen in deinem Unternehmen)%…\n"
+"für deine Freunde, deinen Verein oder deine Firma betreiben"
 
 msgid "Carousel"
 msgstr "Karussell"
@@ -577,10 +576,10 @@ msgid "Slide controls"
 msgstr "Schieberegler"
 
 msgid "User portal: dark mode"
-msgstr "Nutzerportal: Nachtmodus"
+msgstr "Nutzerportal: Dunkler Modus"
 
 msgid "User portal: light mode with app description"
-msgstr "Benutzerportal: Heller Modus mit Beschreibung der Applikation"
+msgstr "Nutzerportal: Heller Modus für App Beschreibungen"
 
 msgid "Administration panel: homepage"
 msgstr "Administrationstafel: Startseite"
@@ -717,7 +716,7 @@ msgid "Old tower or portable (*ordinosaur*)"
 msgstr "Alter Tower oder tragbarer Computer (*Ordinosaurier*)"
 
 msgid "Online server (VPS)"
-msgstr "Online-Server (VPS)"
+msgstr "Online Server (VPS)"
 
 msgid "Compare"
 msgstr "Vergleichen"

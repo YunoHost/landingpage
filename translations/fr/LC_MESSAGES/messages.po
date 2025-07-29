@@ -71,12 +71,9 @@ msgid "Garden your own<br/>piece of the Internet!"
 msgstr "Jardinez votre<br/>bout d'Internet&nbsp;!"
 
 msgid ""
-"Help us make YunoHost sustainable, discover our roadmap and how we use your "
-"donations! <em>→ Checkout our donation campaign page</em>"
+"Thanks to all your support and donations, our 2025 donation campaign is a "
+"success! <em>→ Checkout the campaign page and our dream map</em>"
 msgstr ""
-"Aidez-nous à rendre YunoHost pérenne, découvrez notre feuille de route et "
-"comment nous utilisons vos dons ! <em>→ Faîtes un tour sur notre campagne de "
-"dons</em>"
 
 msgid "Main menu"
 msgstr "Menu principal"
@@ -195,7 +192,12 @@ msgstr ""
 "s'améliore pour **répondre à ses promesses** et que nous puissions **prendre "
 "soin de la communauté**, c'est ici que vous pouvez donner&nbsp;!"
 
-msgid "I want to give to YunoHost:"
+msgid "Thank you, the campaign for 2025 is a success!"
+msgstr ""
+
+#, fuzzy
+#| msgid "I want to give to YunoHost:"
+msgid "I still want to give to YunoHost:"
 msgstr "Je veux donner à YunoHost&nbsp;:"
 
 msgid "Amount"
@@ -903,6 +905,14 @@ msgid ""
 msgstr ""
 "Nous exprimons notre gratitude envers nos mécènes pour leur soutien "
 "financier ou matériel&nbsp;!"
+
+#~ msgid ""
+#~ "Help us make YunoHost sustainable, discover our roadmap and how we use "
+#~ "your donations! <em>→ Checkout our donation campaign page</em>"
+#~ msgstr ""
+#~ "Aidez-nous à rendre YunoHost pérenne, découvrez notre feuille de route et "
+#~ "comment nous utilisons vos dons ! <em>→ Faîtes un tour sur notre campagne "
+#~ "de dons</em>"
 
 #~ msgid "Base"
 #~ msgstr "Base"

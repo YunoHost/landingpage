@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-30 22:31+0200\n"
-"PO-Revision-Date: 2025-07-30 18:29+0000\n"
+"PO-Revision-Date: 2025-08-07 04:48+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/fr/>\n"
@@ -70,7 +70,6 @@ msgstr "Logo de YunoHost"
 msgid "Garden your own<br/>piece of the Internet!"
 msgstr "Jardinez votre<br/>bout d'Internet&nbsp;!"
 
-#, fuzzy
 msgid ""
 "Thanks to all your support and donations, our 2025 donation campaign is a "
 "success! <em>→ Checkout the campaign page and our dream map</em>"
@@ -195,12 +194,9 @@ msgstr ""
 "s'améliore pour **répondre à ses promesses** et que nous puissions **prendre "
 "soin de la communauté**, c'est ici que vous pouvez donner&nbsp;!"
 
-#, fuzzy
 msgid "Thank you, the campaign for 2025 is a success!"
-msgstr "Merci, la campagne pour 2025 est un succès !"
+msgstr "Merci, la campagne de dons pour 2025 est un succès !"
 
-#, fuzzy
-#| msgid "I want to give to YunoHost:"
 msgid "I still want to give to YunoHost:"
 msgstr "Je veux toujours faire un don à YunoHost :"
 

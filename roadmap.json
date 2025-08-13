@@ -94,7 +94,7 @@
             },
             {
               "title": "📦 Simplify nodejs / ruby / go / composer packaging",
-              "description": "New packaging 'resources' were introduced to handle declaratively the fact that an app depend on nodejs / ruby / go / composer, which should help to further simplify packaging."
+              "description": "New packaging 'resources' were introduced in helpers 2.1 to handle declaratively the fact that an app depend on nodejs / ruby / go / composer, which should help to further simplify packaging."
             },
             {
               "title": "👥 Email permissions for users",
@@ -106,34 +106,15 @@
           "title": "12.2",
           "draft": true,
           "features": [
-            {
-              "title": "🚪 Be able to have the portal on a subdomain",
-              "description": "A recurring issue since the rework of the portal in 12.0 is that some setup do not have the 'main parent domain' on the YunoHost server, preventing to use it as the domain for SSO and for the portal interface. It should be possible to address this by having the admin declare that a specific domain (such as portal.domain.tld) should be use as the portal and for authentication."
+            { 
+              "title": "⬆️ Migration to Trixie",
+              "description": "" 
             },
-            { "title": "📦 Generalize helpers 2.1 in existing apps", "description": "Moving forward with helpers 2.1 introduced in YunoHost 11.2, to help getting rid of legacy." },
-            { "title": "📦 Packaging v3 alpha❓", "description": "Packaging v3 should start becoming a reality somewhere in 2025 with even more declarativeness (in particular for the various configurations), replacing all the <code>scripts/</code> folder with a single <code>scripts.sh</code> file(?), among other things." },
-            { "title": "???", "description": "" }
+            { 
+                "title": "📦 Generalize helpers 2.1 in existing apps",
+                "description": "Moving forward with helpers 2.1 introduced in YunoHost 11.2, to help getting rid of legacy." 
+            }
           ]
-        },
-        {
-          "title": "12.3 ❓",
-          "draft": true,
-          "features": [
-            {
-              "title": "🔐 User password reset❓ (timescale depend on grant / donations 💰)",
-              "description": "Currently, passwords are set by the admin and users have no way to reset their password without asking an admin, which is confusing and encourages bad security practices. Implementing password reset is however less trivial than it seems, because it implies that sending email is working and can be trusted, and that users define an external email for password reset."
-            },
-            {
-              "title": "👥 User self-registration❓ (timescale depend on grant / donations 💰)",
-              "description": "In many scenarios, admins would like users to be able to autonomously register on the server, possibly using invite links or validation a posteriori."
-            },
-            { "title": "???", "description": "" }
-          ]
-        },
-        {
-          "title": "12.N",
-          "draft": true,
-          "features": [{ "title": "⬆️ Migration to Trixie", "description": "" }]
         }
       ]
     },
@@ -145,19 +126,44 @@
           "title": "13.0",
           "features": [
             { "title": "⚙️ Initial Trixie support", "description": "" },
-            { "title": "⚙️ Pydantic v2 for configpanels", "description": "" },
+            { "title": "⚙️ Migration to Pydantic v2", "description": "" },
             { "title": "???", "description": "" }
           ]
         },
         {
-          "title": "13.N",
+          "title": "13.1",
           "draft": true,
           "features": [
-            { "title": "💾 Storage management❓", "description": "" },
+            { "title": "🚪 Support OIDC / Replace SSOwat by Authelia (?)", "description": "" },
+            { "title": "📦 Packaging v3 alpha", "description": "Packaging v3 should start becoming a reality somewhere in 2025 with even more declarativeness (in particular for the various configurations), replacing all the <code>scripts/</code> folder with a single <code>scripts.sh</code> file(?), among other things." }
+          ]
+        },
+        {
+          "title": "13.?",
+          "draft": true,
+          "features": [
+            { "title": "🧱 Replace Fail2ban with Reaction (?)", "description": "" },
             {
-              "title": "🚑 Automatic remote backup, backup policy❓ (depend on grant / donations 💰)",
-              "description": ""
-            }
+              "title": "🚪 Be able to have the portal on a subdomain",
+              "description": "A recurring issue since the rework of the portal in 12.0 is that some setup do not have the 'main parent domain' on the YunoHost server, preventing to use it as the domain for SSO and for the portal interface. It should be possible to address this by having the admin declare that a specific domain (such as portal.domain.tld) should be use as the portal and for authentication."
+            },
+            { "title": "♿ Improve webadmin accessibility", "description": "" },
+            { "title": "???", "description": "" }
+          ]
+        },
+        {
+          "title": "13.??",
+          "draft": true,
+          "features": [
+            {
+              "title": "🔐 User password reset (timescale depend on grant / donations 💰)",
+              "description": "Currently, passwords are set by the admin and users have no way to reset their password without asking an admin, which is confusing and encourages bad security practices. Implementing password reset is however less trivial than it seems, because it implies that sending email is working and can be trusted, and that users define an external email for password reset."
+            },
+            {
+              "title": "👥 User self-registration (timescale depend on grant / donations 💰)",
+              "description": "In many scenarios, admins would like users to be able to autonomously register on the server, possibly using invite links or validation a posteriori."
+            },
+            { "title": "???", "description": "" }
           ]
         }
       ]
@@ -169,14 +175,13 @@
         {
           "title": "Soon™",
           "features": [
-            {
-              "title": "🎀 Gradual UI/UX improvements in webadmin",
-              "description": ""
-            },
+            { "title": "🚑 Automatic remote backup, backup policy (depend on grant / donations 💰)", "description": "" },
+            { "title": "💾 Storage management", "description": "" },
             { "title": "🔐 2FA in webadmin", "description": "" },
-            { "title": "🚪 Support SAML/OIDC for SSO", "description": "" },
             { "title": "📦 App bundles", "description": "" },
-            { "title": "⚙️ Replace moulinette with FastAPI", "description": "" }
+            { "title": "⚙️ Replace moulinette with FastAPI", "description": "" },
+            { "title": "🦸Limited admins?", "description": "" },
+            { "title": "⚙️ R&D on Yunohost \"clusters\" / \"extensions\" / KubertnHost?", "description": "" }
           ]
         }
       ]

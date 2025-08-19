@@ -75,7 +75,7 @@ msgid ""
 "success! <em>→ Checkout the campaign page and our dream map</em>"
 msgstr ""
 "Grâce à votre soutien et à vos dons, notre campagne de dons 2025 est un "
-"succès ! <em>→ Découvrez la page de la campagne et notre carte des rêves</em>"
+"succès ! <em>→ Découvrez la page de la campagne et notre feuille de rêves</em>"
 
 msgid "Main menu"
 msgstr "Menu principal"

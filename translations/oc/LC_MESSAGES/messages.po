@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2025-11-11 09:20+0000\n"
+"PO-Revision-Date: 2025-11-11 22:08+0000\n"
 "Last-Translator: Quentí <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/oc/>\n"
@@ -205,20 +205,20 @@ msgid "Currency"
 msgstr ""
 
 msgid "Frequency"
-msgstr ""
+msgstr "Frequéncia"
 
 msgid "/ month"
-msgstr ""
+msgstr "/ mes"
 
 msgid "one time"
-msgstr ""
+msgstr "un còp"
 
 msgid ""
 "If you are already donating, you can edit your donation by clicking here!"
 msgstr ""
 
 msgid "Why support YunoHost in 2025?"
-msgstr ""
+msgstr "Perqué donar a YunoHost en 2025&nbsp;?"
 
 msgid ""
 "YunoHost is a non-profit project that advocates a decentralized Internet, "
@@ -229,10 +229,10 @@ msgid ""
 msgstr ""
 
 msgid "1. Preserve what's useful to you"
-msgstr ""
+msgstr "1. Preservar çò que vos es util"
 
 msgid "€5,500"
-msgstr ""
+msgstr "5&nbsp;500&nbsp;€"
 
 msgid ""
 "Donations are used primarily to maintain the existing system, in particular "
@@ -244,7 +244,7 @@ msgid "2. Make the facilitator position permanent"
 msgstr ""
 
 msgid "€12,000"
-msgstr ""
+msgstr "12&nbsp;000&nbsp;€"
 
 msgid ""
 "Since mid-2024, the team involved in the day-to-day development of YunoHost "
@@ -255,10 +255,10 @@ msgid ""
 msgstr ""
 
 msgid "3. Boosting development"
-msgstr ""
+msgstr "3. Impulsar lo desvolopament"
 
 msgid "€11,000"
-msgstr ""
+msgstr "11&nbsp;000&nbsp;€"
 
 msgid ""
 "The publication of new large-scale developments depends essentially on the "
@@ -268,7 +268,7 @@ msgid ""
 msgstr ""
 
 msgid "2025 Campaign progress"
-msgstr ""
+msgstr "Progrès de la campanha 2025"
 
 msgid ""
 "The donation campaign is <span id='campaign-completion'></span>％ complete, "
@@ -276,20 +276,17 @@ msgid ""
 msgstr ""
 
 msgid "Recurring donations:"
-msgstr ""
+msgstr "Dons recurrents&nbsp;:"
 
 msgid "One-time donations:"
-msgstr ""
+msgstr "Dons pontuals&nbsp;:"
 
-#, fuzzy
 msgid "YunoHost in 2024"
-msgstr "Logotipe de Yunohost"
+msgstr "YunoHost en 2024"
 
-#, fuzzy
 msgid "Claude, the YunoHost's mascot"
 msgstr "Claude, la mascòta de YunoHost"
 
-#, fuzzy
 msgid ""
 "Image of Claude, the YunoHost's mascot. An humanoid oppossum who stands with "
 "purple hair and scarf, round glasses, beige pants with pockets and a blue "
@@ -300,13 +297,13 @@ msgstr ""
 "cort amb lo logotipe de YunoHost."
 
 msgid "The project"
-msgstr ""
+msgstr "Lo projècte"
 
 msgid "14 years of existence"
-msgstr ""
+msgstr "14 d’existéncia"
 
 msgid "about fifteen regularly active core-contributors"
-msgstr ""
+msgstr "un quinzenat de contributors màgers regularament actius"
 
 msgid ""
 "Assuming a company with 4 full-time persons,\n"
@@ -314,55 +311,70 @@ msgid ""
 "so around €5,200 charged / month,\n"
 "€5,200 x 4 person x 12 months = €249,600 / year"
 msgstr ""
+"Per una entrepresa amb 4 personas a temps complèt,\n"
+"caduna amb 3 000 € nets / mes,\n"
+"siá environ 5 200 € facturats / mes,\n"
+"5 200 € x 4 personas x 12 meses = 249 600 € / an"
 
 msgid ""
 "volunteer work that could be valued at least €250,000 a year if remunerated"
 msgstr ""
+"un trabalh benevòl que poiriá èsser avalorat a almens 250 000 € per an s'èra "
+"remunerat"
 
-#, fuzzy
 msgid "The community"
-msgstr "Comunitat"
+msgstr "La comunitat"
 
 msgid "~10,000 instances in 77 countries"
-msgstr ""
+msgstr "~10 000 instàncias dins 77 païses"
 
 msgid "130 regular or occasional donors in 2024"
-msgstr ""
+msgstr "130 donators regulars o pontuals en 2024"
 
 msgid "8,700+ accounts on the various project channels (forge, forum, chat)"
 msgstr ""
+"Mai de 8 700 comptes suls diferents canals del projècte (farga, fòrum, chat)"
 
 msgid "15+ languages supported"
-msgstr ""
+msgstr "Mai de 15 lengas presas en carga"
 
 msgid "The software and its ecosystem"
-msgstr ""
+msgstr "Lo logicial e son ecosistèma"
 
 msgid ""
 "[540+ apps in the catalog](https://apps.yunohost.org/catalog) ([a brief "
 "history](https://apps.yunohost.org/charts))"
 msgstr ""
+"[Mai de 540 aplicacions dins lo catalòg](https://apps.yunohost.org/catalog) "
+"([un brèu istoric](https://apps.yunohost.org/charts))"
 
 msgid ""
 "760 Git code repositories ([core](https://github.com/orgs/YunoHost/"
 "repositories) + [apps](https://github.com/orgs/YunoHost-Apps/repositories))"
 msgstr ""
+"760 depauses de còdi Git "
+"([còr](https://github.com/orgs/YunoHost/repositories) + [aplicacions]"
+"(https://github.com/orgs/YunoHost-Apps/repositories))"
 
 msgid "What are your donations used for?"
-msgstr ""
+msgstr "A qué servisson vòstres dons ?"
 
 msgid ""
 "Your donations guarantee our independence: they constitute our entire income "
 "in 2024."
 msgstr ""
+"Vòstras donacions garantisson nòstra independéncia : constituisson la "
+"totalitat de nòstres revenguts en 2024."
 
 msgid "Revenues"
-msgstr ""
+msgstr "Revengut"
 
 msgid ""
 "In recent years, donations were around €15,000 per year, mainly from "
 "individuals."
 msgstr ""
+"Aquestes darrièrs ans, los dons èran d'environ 15 000 € per an, "
+"principalament de particulars."
 
 msgid ""
 "Between 2021 and 2023, the project benefited from grants from the [NLnet]"
@@ -372,6 +384,12 @@ msgid ""
 "for versions 4 and 11 of the project. The team is regularly applying for new "
 "grants."
 msgstr ""
+"Entre 2021 e 2023, lo projècte a beneficiat de subvencions de la fondacion "
+"[NLnet](https://nlnet.nl/project/InternetCube/) e de l'entrepresa [CodeLutin]"
+"(https://mastodon.libre-entreprise.com/@codelutin/105066492461041800) per un "
+"total d'aperaquí 15 000 €, que serviguèron a desvolopar de foncionalitats "
+"per las versions 4 e 11 del projècte. L'equipa demanda regularament de "
+"novèlas subvencions."
 
 msgid ""
 "In addition, YunoHost receives significant in-kind donations in the form of "
@@ -379,9 +397,14 @@ msgid ""
 "independent web companies such as Globenet, Gitoyen, TetaNeutral and "
 "Octopuce.<br>These in-kind donations are not represented in the graph below."
 msgstr ""
+"De mai, YunoHost recep de dons en natura significatius jos fòrma de "
+"servidors o de benda passanta de la part d'autras organizacions de tòca non "
+"lucrativa e tanben d'entrepresas web independentas coma Globenet, Gitoyen, "
+"TetaNeutral e Octopuce.<br>Aquestes dons en natura son pas representats dins "
+"lo grafic çai-jos."
 
 msgid "Expenses"
-msgstr ""
+msgstr "Despensas"
 
 msgid ""
 "Between 2022 and 2024, the collective spent around €12,500 a year.<br>In "
@@ -391,6 +414,12 @@ msgid ""
 "important features for the project and its community. The projected budget "
 "for 2025 is therefore around €28,000."
 msgstr ""
+"Entre 2022 e 2024, lo collectiu despensèt aperaquí 12 500 € per an.<br>En "
+"2025, la creacion del pòste d'« animator/tritz » pel collectiu representarà "
+"una despensa suplementària de 12 000 € per an. YunoHost agradariá de poder "
+"contunhar sas contribucions financièras al desvolopament de foncionalitats "
+"importantas pel projècte e sa comunautat. Lo budget previsional per 2025 es "
+"doncas d'aperaquí 28 000 €."
 
 msgid "Project expenditure breaks down into the following categories:"
 msgstr ""
@@ -438,33 +467,31 @@ msgid "Boosting development"
 msgstr ""
 
 msgid "month"
-msgstr ""
+msgstr "mes"
 
-#, fuzzy
 msgid "Donations"
-msgstr "Documentacion"
+msgstr "Dons"
 
 msgid "Grants"
-msgstr ""
+msgstr "Subvencions"
 
 msgid "Previsional"
 msgstr ""
 
-#, fuzzy
 msgid "Animation"
-msgstr "Organizacion"
+msgstr "Animacion"
 
 msgid "Development"
-msgstr ""
+msgstr "Desvolopament"
 
 msgid "Infrastructure"
 msgstr ""
 
 msgid "Events"
-msgstr ""
+msgstr "Eveniment"
 
 msgid "Others"
-msgstr ""
+msgstr "Autre"
 
 msgid "Roadmap and dreammap"
 msgstr ""

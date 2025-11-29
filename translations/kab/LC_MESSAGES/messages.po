@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2025-05-13 04:45+0000\n"
-"Last-Translator: ButterflyOfFire <butterflyoffire@protonmail.com>\n"
+"PO-Revision-Date: 2025-11-29 16:10+0000\n"
+"Last-Translator: ButterflyOfFire "
+"<BoFFire@users.noreply.translate.yunohost.org>\n"
 "Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/kab/>\n"
 "Language: kab\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 5.4.3\n"
+"X-Generator: Weblate 5.14.2\n"
 "Generated-By: Babel 2.14.0\n"
 
 msgid "YunoHost: garden your own piece of the Internet!"
@@ -34,25 +35,25 @@ msgid "Accessibility menu"
 msgstr ""
 
 msgid "Go to content"
-msgstr ""
+msgstr "Ddu ar ugbur"
 
 msgid "Go to navigation"
-msgstr ""
+msgstr "Ddu ar tunigin"
 
 msgid "Go to page settings"
 msgstr ""
 
 msgid "Go to search"
-msgstr ""
+msgstr "Ddu ar unadi"
 
 msgid "Page settings"
-msgstr ""
+msgstr "Iɣewwaren n usebter"
 
 msgid "Switch to a different language"
-msgstr ""
+msgstr "Beddel tutlayt"
 
 msgid "Translate this page!"
-msgstr ""
+msgstr "Suqel asebter-a!"
 
 msgid "Switch to dark mode"
 msgstr ""
@@ -61,7 +62,7 @@ msgid "Switch to light mode"
 msgstr ""
 
 msgid "Yunohost logo"
-msgstr ""
+msgstr "Alugu n YunoHost"
 
 msgid "Garden your own<br/>piece of the Internet!"
 msgstr ""
@@ -72,7 +73,7 @@ msgid ""
 msgstr ""
 
 msgid "Main menu"
-msgstr ""
+msgstr "Umuɣ agejdan"
 
 msgid "Discover"
 msgstr ""
@@ -87,7 +88,7 @@ msgid "Documentation"
 msgstr "Tasemlit"
 
 msgid "Latest news"
-msgstr ""
+msgstr "Isallen ineggura"
 
 msgid "Community"
 msgstr "Tamɣiwant"
@@ -150,16 +151,16 @@ msgid "Security"
 msgstr "Taɣellist"
 
 msgid "Code (core)"
-msgstr ""
+msgstr "Tangalt (core)"
 
 msgid "Code (apps)"
-msgstr ""
+msgstr "Tangalt (isnasen)"
 
 msgid "Translation"
 msgstr "Tasuqilt"
 
 msgid "Donate to YunoHost!"
-msgstr ""
+msgstr "Mudd tawsa i YunoHost!"
 
 msgid ""
 "YunoHost has been around **since 2012** and is essentially developed **on a "
@@ -219,7 +220,7 @@ msgid "1. Preserve what's useful to you"
 msgstr ""
 
 msgid "€5,500"
-msgstr ""
+msgstr "€5,500"
 
 msgid ""
 "Donations are used primarily to maintain the existing system, in particular "
@@ -231,7 +232,7 @@ msgid "2. Make the facilitator position permanent"
 msgstr ""
 
 msgid "€12,000"
-msgstr ""
+msgstr "€12,000"
 
 msgid ""
 "Since mid-2024, the team involved in the day-to-day development of YunoHost "
@@ -242,10 +243,10 @@ msgid ""
 msgstr ""
 
 msgid "3. Boosting development"
-msgstr ""
+msgstr "3. Snerni taneflit"
 
 msgid "€11,000"
-msgstr ""
+msgstr "€11,000"
 
 msgid ""
 "The publication of new large-scale developments depends essentially on the "
@@ -269,7 +270,7 @@ msgid "One-time donations:"
 msgstr ""
 
 msgid "YunoHost in 2024"
-msgstr ""
+msgstr "YunoHost deg 2024"
 
 msgid "Claude, the YunoHost's mascot"
 msgstr ""
@@ -281,7 +282,7 @@ msgid ""
 msgstr ""
 
 msgid "The project"
-msgstr ""
+msgstr "Asenfar"
 
 msgid "14 years of existence"
 msgstr ""
@@ -301,7 +302,7 @@ msgid ""
 msgstr ""
 
 msgid "The community"
-msgstr ""
+msgstr "Tamɣiwant"
 
 msgid "~10,000 instances in 77 countries"
 msgstr ""
@@ -415,7 +416,7 @@ msgid "Make the facilitator position permanent"
 msgstr ""
 
 msgid "Boosting development"
-msgstr ""
+msgstr "Snerni taneflit"
 
 msgid "month"
 msgstr ""
@@ -611,7 +612,7 @@ msgid "Examples of uses"
 msgstr ""
 
 msgid "For you and your friends"
-msgstr ""
+msgstr "I kunwi·kunemti akk d yimeddukal-nwen·nkent"
 
 msgid "synchronize your calendars and contacts"
 msgstr ""
@@ -725,7 +726,7 @@ msgid ""
 msgstr ""
 
 msgid "Code repositories"
-msgstr ""
+msgstr "Ikufan n tengalt"
 
 msgid "They support us <3"
 msgstr ""

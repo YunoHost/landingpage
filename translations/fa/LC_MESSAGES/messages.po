@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-10-15 16:04+0000\n"
+"Last-Translator: نادکارو <nadkaro@riseup.net>\n"
+"Language-Team: Persian <https://translate.yunohost.org/projects/yunohost/"
+"landingpage/fa/>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 msgid "YunoHost: garden your own piece of the Internet!"
@@ -59,7 +61,7 @@ msgid "Switch to light mode"
 msgstr ""
 
 msgid "Yunohost logo"
-msgstr ""
+msgstr "نشان‌وارهٔ یونوهاست"
 
 msgid "Garden your own<br/>piece of the Internet!"
 msgstr ""
@@ -75,53 +77,54 @@ msgstr ""
 msgid "Discover"
 msgstr ""
 
+#, fuzzy
 msgid "Applications"
-msgstr ""
+msgstr "کاره‌ها"
 
 msgid "Install"
-msgstr ""
+msgstr "نصب"
 
 msgid "Documentation"
-msgstr ""
+msgstr "مستندات"
 
 msgid "Latest news"
-msgstr ""
+msgstr "آخرین خبر"
 
 msgid "Community"
-msgstr ""
+msgstr "جامعه"
 
 msgid "Legal"
-msgstr ""
+msgstr "قانونی"
 
 msgid "License"
-msgstr ""
+msgstr "پروانه"
 
 msgid "Terms of services"
 msgstr ""
 
 msgid "Organization"
-msgstr ""
+msgstr "سازمان"
 
 msgid "Follow"
-msgstr ""
+msgstr "پی گیری"
 
 msgid "Blog"
-msgstr ""
+msgstr "وبلاگ"
 
 msgid "Mastodon"
-msgstr ""
+msgstr "ماستودون"
 
 msgid "Peertube"
-msgstr ""
+msgstr "پیرتیوب"
 
 msgid "Use"
 msgstr ""
 
 msgid "Apps store"
-msgstr ""
+msgstr "کاره‌های فروشگاه"
 
 msgid "Forum"
-msgstr ""
+msgstr "انجمن"
 
 msgid "Self-help chat"
 msgstr ""
@@ -133,10 +136,10 @@ msgid "Changelog"
 msgstr ""
 
 msgid "Contribute"
-msgstr ""
+msgstr "مشارکت"
 
 msgid "Donate"
-msgstr ""
+msgstr "بخشش‏"
 
 msgid "Issues tracker"
 msgstr ""
@@ -145,7 +148,7 @@ msgid "Roadmap"
 msgstr ""
 
 msgid "Security"
-msgstr ""
+msgstr "امنیت"
 
 msgid "Code (core)"
 msgstr ""
@@ -154,10 +157,10 @@ msgid "Code (apps)"
 msgstr ""
 
 msgid "Translation"
-msgstr ""
+msgstr "ترجمه"
 
 msgid "Donate to YunoHost!"
-msgstr ""
+msgstr "به یونو‌هاست بخشش کنید!"
 
 msgid ""
 "YunoHost has been around **since 2012** and is essentially developed **on a "
@@ -184,16 +187,16 @@ msgid "I still want to give to YunoHost:"
 msgstr ""
 
 msgid "Amount"
-msgstr ""
+msgstr "میزان"
 
 msgid "Currency"
-msgstr ""
+msgstr "پول"
 
 msgid "Frequency"
-msgstr ""
+msgstr "بَسامد"
 
 msgid "/ month"
-msgstr ""
+msgstr "/ ماه"
 
 msgid "one time"
 msgstr ""

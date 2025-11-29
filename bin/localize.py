@@ -99,6 +99,8 @@ def main() -> None:
     roadmap_data = json.loads(Path("roadmap.json").read_bytes())
 
     def get_lang_native_name(code):
+        # For some reason for example for pt_BR we need to query it using pt-BR ...
+        code = code.replace("_", "-")
         return Language.make(language=code).display_name(code).title()
 
     if DEV:

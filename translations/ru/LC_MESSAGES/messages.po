@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2025-11-19 00:04+0000\n"
+"PO-Revision-Date: 2025-11-30 15:12+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/ru/>\n"
@@ -125,7 +125,7 @@ msgid "Peertube"
 msgstr "Peertube"
 
 msgid "Use"
-msgstr "Использовать"
+msgstr "Пользуйтесь"
 
 msgid "Apps store"
 msgstr "Магазин приложений"
@@ -143,7 +143,7 @@ msgid "Changelog"
 msgstr "Журнал изменений"
 
 msgid "Contribute"
-msgstr "Внести вклад"
+msgstr "Внесите вклад"
 
 msgid "Donate"
 msgstr "Пожертвовать"
@@ -767,7 +767,7 @@ msgid "For you and your friends"
 msgstr "Для вас и ваших друзей"
 
 msgid "synchronize your calendars and contacts"
-msgstr "синхронизировать календари и контакты"
+msgstr "синхронизируйте календари и контакты"
 
 msgid "keep your passwords and notes safe"
 msgstr "храните свои пароли и записи в безопасности"
@@ -823,13 +823,13 @@ msgstr ""
 "хотите для своего сервера."
 
 msgid "Choosing a support"
-msgstr "Выбор поддержки"
+msgstr "Выберите основу"
 
 msgid "ARM board / Raspberry Pi"
 msgstr "Плата ARM / Raspberry Pi"
 
 msgid "Old tower or portable (*ordinosaur*)"
-msgstr "Старый системный блок или портативный (*композавр*)"
+msgstr "Старый системный блок или ноутбук (*композавр*)"
 
 msgid "Online server (VPS)"
 msgstr "Онлайн-сервер (VPS)"
@@ -838,12 +838,12 @@ msgid "Compare"
 msgstr "Сравнить"
 
 msgid "Install YunoHost"
-msgstr "Установить YunoHost"
+msgstr "Установите YunoHost"
 
 msgid "Check the prerequisites<br>then flash or install the system"
 msgstr ""
-"Проверьте предварительные условия<br>затем выполните перепрошивку или "
-"установите систему"
+"Проверьте системные требования,<br>а затем обновите прошивку или установите "
+"систему"
 
 msgid ""
 "YunoHost will guide you through setting up the first admin, the domain name "
@@ -862,13 +862,13 @@ msgid "Install applications<br>in just a few clicks"
 msgstr "Установите приложения<br>всего за несколько щелчков мышью"
 
 msgid "Set up backups"
-msgstr "Настройка резервного копирования"
+msgstr "Настройте резервное копирование"
 
 msgid "Take care of your server"
 msgstr "Заботьтесь о своём сервере"
 
 msgid "Guided tour"
-msgstr "Обзорная экскурсия"
+msgstr "Путеводитель"
 
 msgid "Previous articles"
 msgstr "Предыдущие статьи"

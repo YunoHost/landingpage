@@ -127,10 +127,10 @@
 
             {% if page_id == "index" %}
             <div id="cta-donation-campaign" class="{% if not enable_donation_cta %}hidden{% endif %} text-center text-lg font-semibold p-5 w-full bg-white text-gray-800">
-                🧡 {{ _("Thanks to all your support and donations, our 2025 donation campaign is a success! <em>→ Checkout the campaign page and our dream map</em>")
+                🧡&nbsp;{{ _("Thanks to all your support and donations, our 2025 donation campaign is a success! <em>→ Checkout the campaign page and our dream map</em>")
                   | replace('<em>', '<span class="ms-2 px-2 bg-sky-200 text-sky-800 whitespace-nowrap"><a href="donate.' +  lang + '.html">')
                   | replace('</em>', '</a></span>')
-                }} 🧡
+                }}&nbsp;🧡
             </div>
             {% endif %}
 

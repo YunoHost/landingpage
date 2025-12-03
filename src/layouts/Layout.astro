@@ -1,0 +1,72 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const _ = useTranslations(lang);
+
+import "../styles/global.css";
+import '@fortawesome/fontawesome-svg-core/styles.css'
+
+const { title, headerTitle, donationBanner } = Astro.props;
+
+import Header from '../components/Header.astro';
+import HeaderNav from '../components/HeaderNav.astro';
+import DonationBanner from '../components/DonationBanner.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang={lang}>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+
+        <!-- Open Graph Tags -->
+        <meta property="og:url" content="https://yunohost.org/">
+        <meta property="og:title" content="YunoHost: garden your own piece of the Internet!">
+        <meta property="og:description" content="YunoHost is a system that installs itself on a server and allows you to install and maintain - with very little technical knowledge - digital services (apps) that you control.">
+        <meta property="og:image" content="https://yunohost.org/assets/img/portal_simple_dark.jpg">
+    </head>
+    <body>
+        <header>
+            <Header headerTitle={headerTitle}/>
+            {donationBanner && <DonationBanner/>}
+            <HeaderNav/>
+        </header>
+
+        <slot />
+
+        <Footer />
+    </body>
+</html>
+
+<style>
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<script>
+  // import the required functions and icons
+  import { library, config, dom} from '@fortawesome/fontawesome-svg-core'
+  import { faEnvelope, faGamepad, faLanguage } from "@fortawesome/free-solid-svg-icons";
+
+  // since we want astro to handle the css we should disable automatic css injection on the client
+  // this is similar to other ssr frameworks like next.js or nuxt
+  config.autoAddCss = false
+
+  // create a subset of icons that you are going to use so
+  // astro is able to tree shake and optimize the javascript bundle for best performance
+  library.add(
+    faLanguage
+  );
+
+  // replace the unprocessed icons with the svg and watch for additional icons
+  dom.watch();
+
+</script>

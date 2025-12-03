@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Carousel from '../components/Carousel.astro';
+
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const _ = useTranslations(lang);
+---
+
+<Layout title={_('title.home')} headerTitle={_('header.title.home')} donationBanner={true}>
+<!--
+    <Carousel items={3} pagination={{ type: 'dots' }}>
+        <li><img width="300" src="assets/img/portal_simple_dark.jpg" ><li/>
+        <li><img width="300" src="assets/img/portal_descriptive_light.jpg" ><li/>
+        <li><img width="300" src="assets/img/admin_home_light.jpg" ><li/>
+        <li><img width="300" src="assets/img/admin_catalog_light.jpg" ><li/>
+        <li><img width="300" src="assets/img/admin_appinstall_light.jpg" ><li/>
+
+    </Carousel> -->
+
+</Layout>

@@ -9,12 +9,16 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/check": "0.9.4",
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@tailwindcss/vite": "^4.1.17",
     "astro": "^5.5.5",
     "marked": "^17.0.1",
+    "sass": "1.90.0",
+    "sass-embedded": "^1.93.3",
     "source-sans": "^3.52.0",
-    "tailwindcss": "^4.1.17"
+    "tailwindcss": "^4.1.17",
+    "typescript": "5.9.2"
   }
 }

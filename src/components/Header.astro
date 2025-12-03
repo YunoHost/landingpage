@@ -1,0 +1,82 @@
+---
+import { languages } from '../i18n/ui';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const _ = useTranslations(lang);
+
+import { Image } from 'astro:assets';
+import headerBg from '../assets/garden.png';
+import ynhLogo from '../assets/ynh_logo_roundcorner.png';
+
+const { headerTitle } = Astro.props;
+---
+
+<nav id="quick-access" aria-label={_('header.a11y.menu')}>
+    <a href="#main-content" class="sr-only">{_('header.a11y.content')}</a>
+    <a href="#main-nav" class="sr-only">{_('header.a11y.navigation')}</a>
+    <a href="#page-settings" class="sr-only">{_('header.a11y.settings')}</a>
+    <a href="https://doc.yunohost.org/search" class="sr-only">{_('header.a11y.search')}</a>
+</nav>
+
+<nav id="page-settings" aria-label={_('header.a11y.settings')}>
+    <button type="button" class="z-50 absolute top-3 right-12 text-white" onclick='document.getElementById("lang-selector").classList.toggle("hidden");'>
+        <!-- <Fragment set:html={languageIcon.html} /> -->
+        <i class="fa fa-language" aria-label="{{ _('Switch to a different language') }}"></i>
+    </button>
+
+    <div id="lang-selector" class="text-center hidden align-right z-50 absolute top-12 right-12 p-2 text-gray-800 bg-white rounded-md border">
+        <ul>
+            {Object.entries(languages).map(([lang, label]) => (
+            <li>
+                <a class="hover:opacity-75" href=`{ page_id }.{ lang }.html`>{ label }</a>
+            </li>
+            ))}
+            <li>
+                <a class="max-w-24 p-1 text-sm inline-block hover:opacity-75" href="https://translate.yunohost.org/projects/yunohost/landingpage/">
+                    <i class="fa fa-external-link" aria-hidden="true"></i> {_('header.translateit')}
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <button type="button" class="z-50 absolute top-3 right-3" onclick="toggleColorMode();">
+        <!-- Dark/light mode icons -->
+        <span class="dark:hidden" aria-label="{{ _('Switch to dark mode') }}">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="w-6 h-6" aria-hidden="true">
+            <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="fill-sky-400/20 stroke-white"></path>
+            <path
+            d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"
+            class="stroke-white"></path>
+        </svg>
+        </span>
+        <span class="hidden dark:inline" aria-label="{{ _('Switch to light mode') }}">
+        <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z"
+            class="fill-white"></path>
+            <path
+            d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
+            class="fill-white"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
+            class="fill-white"></path>
+        </svg>
+        </span>
+    </button>
+</nav>
+
+<div
+    id="container"
+    class="flex flex-col justify-center text-white text-center relative h-[25rem] bg-top w-full bg-cover"
+    style=`background-image: linear-gradient(#0000, #0005), url(${headerBg.src}); background-size: cover; background-position: bottom;`
+>
+    <Image class="self-center pt-5 w-32 mt-2 shadow-md" src={ynhLogo} width="128" alt={_('header.logoAlt')} fetchpriority=high loading=eager />
+
+    <h1
+        class="self-center w-fit p-5 flex align-center justify-center font-bold text-5xl sm:text-6xl backdrop-blur-[1px]"
+        style="text-shadow: 5px 5px 5px #000"
+        set:html={headerTitle}
+    />
+
+</div>

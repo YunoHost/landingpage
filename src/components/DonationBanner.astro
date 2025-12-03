@@ -1,0 +1,21 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const _ = useTranslations(lang);
+
+import Highlight from './Highlight.astro';
+
+---
+
+<div
+    id="cta-donation-campaign"
+    class="{% if not enable_donation_cta %}hidden{% endif %} text-center text-lg font-semibold p-5 w-full bg-white text-gray-800"
+    >
+        🧡&nbsp;{_('donation.thankyou')}&nbsp;
+        <a href=`donate.${lang}.html`>
+            <Highlight color="oklch(44.3% 0.11 240.79)" bgColor="#b8e6fe">
+                {_('donation.goto_campaign')}
+            </Highlight>
+        </a>
+        &nbsp;🧡
+</div>

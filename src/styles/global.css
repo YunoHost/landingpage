@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@import 'source-sans/source-sans-3.css';
+
+@theme {
+  --font-sans: 'Source Sans 3', sans-serif;
+  --font-display: 'Source Sans 3', sans-serif;
+}
+
+/* a11y */
+strong { font-weight: 600 !important; }
+#quick-access a:hover, #quick-access a:focus {
+    position: absolute;
+    width: auto;
+    height: auto;
+    color: #fff;
+    background-color:#000;
+    z-index: 999;
+    clip: auto;
+    margin: 10px;
+    padding:10px;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}

@@ -1,0 +1,20 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+
+import { marked } from 'marked';
+
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const _ = useTranslations(lang);
+---
+
+<Layout title={_('title.donate')} headerTitle={_('header.title.donate')}>
+
+    <div class="text-xl">
+        <p class="pb-3" set:html={ marked.parse(_('donate.text1')) }></p>
+        <p class="pb-3" set:html={ marked.parse(_('donate.text2')) }></p>
+        <p class="pb-3" set:html={ marked.parse(_('donate.text3')) }></p>
+    </div>
+
+</Layout>

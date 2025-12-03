@@ -1,0 +1,61 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const _ = useTranslations(lang);
+
+import { Image } from 'astro:assets';
+import ynhLogo from '../assets/ynh_logo_roundcorner.png';
+---
+
+<footer class="bg-[#b6e39d] dark:bg-[#0F321E] transition-colors relative">
+    <div class="mx-3 py-3 md:mx-auto max-w-screen-md flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-5">
+        <Image src={ynhLogo} alt={_('header.logoAlt')} width="128"/>
+        <div class="grid grid-cols-2 md:grid-cols-4 justify-center gap-5 py-5 leading-none">
+            <div>
+                <h3>{_('footer.legal')}</h3>
+                <ul>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/YunoHost/yunohost/blob/dev/LICENSE">{_('footer.license')}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://doc.yunohost.org/terms_of_services">{_('footer.tos')}</a></li>
+                    <!-- {# <li class="pb-2"><a href="">{_('footer.legal mentions')}</a></li> #} -->
+                    <!-- {# <li class="pb-2"><a href="">{_('footer.accessibility')}</a></li> #} -->
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/YunoHost/project-organization">{_('footer.organization')}</a></li>
+                    <!-- {# <li class="pb-2"><a href="">{_('footer.credits')}</a></li> #} -->
+                </ul>
+            </div>
+            <div>
+                <h3>{_('footer.follow')}</h3>
+                <ul>
+                    <!-- {# <li><a href="">{_('footer.press kit')}</a></li> #} -->
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://forum.yunohost.org/c/announcement/8/none">{_('footer.blog')}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://toot.aquilenet.fr/@yunohost">{_('footer.mastodon')}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://videos.globenet.org/a/yunohost/videos?s=1">{_('footer.peertube')}</a></li>
+                    <!-- {# <li class="pb-2"><a href="">{_('footer.rss feed')}</a></li> #} -->
+                </ul>
+            </div>
+            <div>
+                <h3>{_('footer.use')}</h3>
+                <ul>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://doc.yunohost.org">{_('footer.documentation')}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://apps.yunohost.org/">{_('footer.appstore')}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://forum.yunohost.org">{_('footer.forum')}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://doc.yunohost.org/help">{_('footer.self_help_chat')}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://status.yunohost.org">{_('footer.services_status')}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/YunoHost/yunohost/blob/dev/debian/changelog">{_('footer.changelog')}</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>{_('footer.contribute')}</h3>
+                <ul>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://donate.yunohost.org">{_('footer.donate')}</a></li>
+                    <!-- {# <li class="pb-2"><a href="">{_('footer.chat')}</a></li> #} -->
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/YunoHost/issues/issues">{_('footer.issues_tracker')}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="roadmap.{{ lang }}.html">{_('footer.roadmap')}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://doc.yunohost.org/security_team">{_('footer.security')}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/yunohost">{_('footer.code_core')}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://github.com/yunohost-apps">{_('footer.code_apps')}</a></li>
+                    <li class="pb-2"><a class="hover:opacity-75" href="https://translate.yunohost.org/">{_('footer.translation')}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

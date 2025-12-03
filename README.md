@@ -1,14 +1,24 @@
-# YunoHost landingpage
+# Webcore Astro Starter Project
 
-## How to contribute
+- For more information on how to use Webcore, visit the [documentation](https://webcoreui.dev/).
+- For Astro integration steps, visit the [Astro docs](https://webcoreui.dev/docs/astro).
 
-The landingpage is built thanks to [Astro](https://astro.build).
+## Getting Started
 
-!! Please do not edit directly `dist/index.*.html` files
+Make sure that you have [Node.js](https://nodejs.org/en) installed. Run the following command to install all dependencies:
 
-1. `export LANDINGPAGE_DEV=true`
-2. Run `bash bin/regenerate.sh`
-3. Make your change inside `index.html` and others files (image, CSS, translations)
-4. Rerun `bash bin/regenerate.sh`
+```
+npm i
+```
 
-To speed up things, you can run `bash bin/regenerate.sh html` if you change HTML or CSS things, and `bash bin/regenerate.sh i18n` to recompile translations.
+After installing dependencies, run the following command to start your dev server:
+
+```
+npm run dev
+```
+
+To build the project, run the following command:
+
+```
+npm run build
+```

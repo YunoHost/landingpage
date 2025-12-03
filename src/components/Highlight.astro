@@ -1,0 +1,18 @@
+---
+
+const { color, bgColor } = Astro.props;
+---
+
+<span
+    class="inline-highlight"
+    style={{color: color, backgroundColor: bgColor}}
+><slot/></span>
+
+
+<style>
+    .inline-highlight {
+        border-radius: 3px;
+        padding-inline: 3px;
+        margin: 0px;
+    }
+</style>

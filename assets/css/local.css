@@ -22,6 +22,18 @@ strong { font-weight: 600 !important; }
     border: 0;
 }
 
+/* Rounded corners */
+
+.inline-highlight, p>a {
+    border-radius: 4px;
+    padding-inline: 4px;
+    margin-inline: 2px;
+}
+
+.div-highlight, a.p-3 {
+    border-radius: 4px;
+}
+
 /* cycling words */
 .cycling-words {
     min-height: 1em;
@@ -173,4 +185,3 @@ footer li > a[href=""] {
     90% {filter: drop-shadow(0 0 10px rgb(50 250 50));}
     100% {filter: drop-shadow(0 0 0px rgb(0 0 0));}
 }
-

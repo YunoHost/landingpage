@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2025-12-27 14:15+0000\n"
+"PO-Revision-Date: 2025-12-27 17:28+0000\n"
 "Last-Translator: Tekhne <tekhne@users.noreply.translate.yunohost.org>\n"
 "Language-Team: Turkish <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/tr/>\n"
@@ -75,6 +75,9 @@ msgid ""
 "Thanks to all your support and donations, our 2025 donation campaign is a "
 "success! <em>→ Checkout the campaign page and our dream map</em>"
 msgstr ""
+"Sizlerin destek ve bağışları sayesinde 2025 bağış kampanyamız büyük bir "
+"başarıyla tamamlandı! <em>→ Kampanya sayfasına ve hayal ettiğimiz şeylerin "
+"listesine bir bakın</em>"
 
 msgid "Main menu"
 msgstr "Ana menü"
@@ -89,7 +92,7 @@ msgid "Install"
 msgstr "İndir"
 
 msgid "Documentation"
-msgstr "Dökümantasyon"
+msgstr "Dokümantasyon"
 
 msgid "Latest news"
 msgstr "En son haberler"
@@ -98,73 +101,73 @@ msgid "Community"
 msgstr "Topluluk"
 
 msgid "Legal"
-msgstr ""
+msgstr "Yasal"
 
 msgid "License"
-msgstr ""
+msgstr "Lisans"
 
 msgid "Terms of services"
-msgstr ""
+msgstr "Hizmet şartları"
 
 msgid "Organization"
-msgstr ""
+msgstr "Organizasyon"
 
 msgid "Follow"
-msgstr ""
+msgstr "Takip et"
 
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 msgid "Mastodon"
-msgstr ""
+msgstr "Mastodon"
 
 msgid "Peertube"
-msgstr ""
+msgstr "Peertube"
 
 msgid "Use"
-msgstr ""
+msgstr "Kullan"
 
 msgid "Apps store"
-msgstr ""
+msgstr "Uygulama mağazası"
 
 msgid "Forum"
-msgstr ""
+msgstr "Forum"
 
 msgid "Self-help chat"
-msgstr ""
+msgstr "Kendi kendine çözüm sohbeti"
 
 msgid "Services status"
-msgstr ""
+msgstr "Hizmet durumu"
 
 msgid "Changelog"
-msgstr ""
+msgstr "Değişim günlüğü"
 
 msgid "Contribute"
-msgstr ""
+msgstr "Katkıda bulun"
 
 msgid "Donate"
-msgstr ""
+msgstr "Bağış yap"
 
 msgid "Issues tracker"
-msgstr ""
+msgstr "Sorun izleyicisi"
 
 msgid "Roadmap"
-msgstr ""
+msgstr "Yol haritası"
 
 msgid "Security"
-msgstr ""
+msgstr "Güvenlik"
 
 msgid "Code (core)"
-msgstr ""
+msgstr "Kod (ana)"
 
 msgid "Code (apps)"
-msgstr ""
+msgstr "Kod (uygulamalar)"
 
 msgid "Translation"
-msgstr ""
+msgstr "Çeviri"
 
 msgid "Donate to YunoHost!"
-msgstr ""
+msgstr "YunoHost'a bağış yap!"
 
 msgid ""
 "YunoHost has been around **since 2012** and is essentially developed **on a "

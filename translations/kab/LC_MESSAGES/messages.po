@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2025-12-27 03:21+0000\n"
+"PO-Revision-Date: 2026-01-02 04:12+0000\n"
 "Last-Translator: ButterflyOfFire "
 "<BoFFire@users.noreply.translate.yunohost.org>\n"
 "Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost/"
@@ -76,7 +76,7 @@ msgid "Main menu"
 msgstr "Umuɣ agejdan"
 
 msgid "Discover"
-msgstr ""
+msgstr "Snirem"
 
 msgid "Applications"
 msgstr "Isnasen"
@@ -196,10 +196,10 @@ msgid "Frequency"
 msgstr ""
 
 msgid "/ month"
-msgstr ""
+msgstr "/ ayyur"
 
 msgid "one time"
-msgstr ""
+msgstr "tikkelt"
 
 msgid ""
 "If you are already donating, you can edit your donation by clicking here!"
@@ -419,7 +419,7 @@ msgid "Boosting development"
 msgstr "Snerni taneflit"
 
 msgid "month"
-msgstr ""
+msgstr "ayyur"
 
 msgid "Donations"
 msgstr ""
@@ -609,7 +609,7 @@ msgid "Try"
 msgstr "Ɛreḍ"
 
 msgid "Examples of uses"
-msgstr ""
+msgstr "Imedyaten n useqdec"
 
 msgid "For you and your friends"
 msgstr "I kunwi·kunemti akk d yimeddukal-nwen·nkent"
@@ -630,7 +630,7 @@ msgid "join alternative social media"
 msgstr ""
 
 msgid "For small organizations"
-msgstr ""
+msgstr "I tuddsiwin timecṭaḥ"
 
 msgid "host your own website"
 msgstr ""
@@ -651,7 +651,7 @@ msgid "Explore the app catalog"
 msgstr ""
 
 msgid "How to get started"
-msgstr ""
+msgstr "Amek ara tebduḍ"
 
 msgid ""
 "If you're not sure yet on, we invite you to [try the demo](https://doc."

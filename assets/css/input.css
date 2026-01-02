@@ -53,4 +53,8 @@
         transition: filter;
     }
 
+    .icon-shadow {
+        @apply drop-shadow-[0_1px_1px_rgba(31,41,55,1)]
+    }
+
 }

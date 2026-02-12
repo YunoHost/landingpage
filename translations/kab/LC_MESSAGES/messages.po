@@ -8,9 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2025-11-29 16:10+0000\n"
-"Last-Translator: ButterflyOfFire "
-"<BoFFire@users.noreply.translate.yunohost.org>\n"
+"PO-Revision-Date: 2026-01-09 04:10+0000\n"
+"Last-Translator: ButterflyOfFire <butterflyoffire@protonmail.com>\n"
 "Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/kab/>\n"
 "Language: kab\n"
@@ -41,7 +40,7 @@ msgid "Go to navigation"
 msgstr "Ddu ar tunigin"
 
 msgid "Go to page settings"
-msgstr ""
+msgstr "Ddu ar usebter n iɣewwaren"
 
 msgid "Go to search"
 msgstr "Ddu ar unadi"
@@ -76,7 +75,7 @@ msgid "Main menu"
 msgstr "Umuɣ agejdan"
 
 msgid "Discover"
-msgstr ""
+msgstr "Snirem"
 
 msgid "Applications"
 msgstr "Isnasen"
@@ -100,7 +99,7 @@ msgid "License"
 msgstr "Turagt"
 
 msgid "Terms of services"
-msgstr ""
+msgstr "Tiwtilin n useqdec"
 
 msgid "Organization"
 msgstr ""
@@ -196,10 +195,10 @@ msgid "Frequency"
 msgstr ""
 
 msgid "/ month"
-msgstr ""
+msgstr "/ ayyur"
 
 msgid "one time"
-msgstr ""
+msgstr "tikkelt"
 
 msgid ""
 "If you are already donating, you can edit your donation by clicking here!"
@@ -314,7 +313,7 @@ msgid "8,700+ accounts on the various project channels (forge, forum, chat)"
 msgstr ""
 
 msgid "15+ languages supported"
-msgstr ""
+msgstr "15+ n tutlayin yettusefraken"
 
 msgid "The software and its ecosystem"
 msgstr ""
@@ -419,7 +418,7 @@ msgid "Boosting development"
 msgstr "Snerni taneflit"
 
 msgid "month"
-msgstr ""
+msgstr "ayyur"
 
 msgid "Donations"
 msgstr ""
@@ -434,7 +433,7 @@ msgid "Animation"
 msgstr ""
 
 msgid "Development"
-msgstr ""
+msgstr "Taneflit"
 
 msgid "Infrastructure"
 msgstr ""
@@ -443,7 +442,7 @@ msgid "Events"
 msgstr ""
 
 msgid "Others"
-msgstr ""
+msgstr "Ayen nniḍen"
 
 msgid "Roadmap and dreammap"
 msgstr ""
@@ -609,7 +608,7 @@ msgid "Try"
 msgstr "Ɛreḍ"
 
 msgid "Examples of uses"
-msgstr ""
+msgstr "Imedyaten n useqdec"
 
 msgid "For you and your friends"
 msgstr "I kunwi·kunemti akk d yimeddukal-nwen·nkent"
@@ -630,7 +629,7 @@ msgid "join alternative social media"
 msgstr ""
 
 msgid "For small organizations"
-msgstr ""
+msgstr "I tuddsiwin timecṭaḥ"
 
 msgid "host your own website"
 msgstr ""
@@ -651,7 +650,7 @@ msgid "Explore the app catalog"
 msgstr ""
 
 msgid "How to get started"
-msgstr ""
+msgstr "Amek ara tebduḍ"
 
 msgid ""
 "If you're not sure yet on, we invite you to [try the demo](https://doc."
@@ -679,7 +678,7 @@ msgid "Compare"
 msgstr ""
 
 msgid "Install YunoHost"
-msgstr ""
+msgstr "Asebded n YunoHost"
 
 msgid "Check the prerequisites<br>then flash or install the system"
 msgstr ""
@@ -690,7 +689,7 @@ msgid ""
 msgstr ""
 
 msgid "Installation guide"
-msgstr ""
+msgstr "Amnir n usebded"
 
 msgid "Enjoy!"
 msgstr "Faṛeṣ!"

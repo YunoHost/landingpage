@@ -35,23 +35,23 @@
             <div class="relative w-full max-w-screen-lg mx-auto flex align-center justify-center">
                 <div id="slide-1" class="screenshot-slide hidden" role="tabpanel"
                     aria-labelledby="tab-1">
-                    <img class="w-full h-60 md:h-96 object-contain" src="assets/img/portal_simple_dark.avif" alt="{{ _('Screenshot of the user portal from which users can access the apps installed on the server, listing several applications installed.') }}">
+                    <img class="w-full h-60 md:h-96 object-contain" src="assets/img/portal_simple_dark.avif" loading="lazy" alt="{{ _('Screenshot of the user portal from which users can access the apps installed on the server, listing several applications installed.') }}">
                 </div>
                 <div id="slide-2" class="screenshot-slide hidden" role="tabpanel"
                     aria-labelledby="tab-2">
-                    <img class="w-full h-60 md:h-96 object-contain" src="assets/img/portal_descriptive_light.avif" alt="{{ _('Screenshot of the user portal from which users can access the apps installed on the server, light version with description of each app.') }}">
+                    <img class="w-full h-60 md:h-96 object-contain" src="assets/img/portal_descriptive_light.avif" loading="lazy" alt="{{ _('Screenshot of the user portal from which users can access the apps installed on the server, light version with description of each app.') }}">
                 </div>
                 <div id="slide-3" class="screenshot-slide hidden" role="tabpanel"
                     aria-labelledby="tab-3">
-                    <img class="w-full h-60 md:h-96 object-contain" src="assets/img/admin_home_light.avif" alt="{{ _('Screenshot of the web administration panel displaying the following categories: users, domains, apps, upgrade, services, tools and backup') }}">
+                    <img class="w-full h-60 md:h-96 object-contain" src="assets/img/admin_home_light.avif" loading="lazy" alt="{{ _('Screenshot of the web administration panel displaying the following categories: users, domains, apps, upgrade, services, tools and backup') }}">
                 </div>
                 <div id="slide-4" class="screenshot-slide hidden" role="tabpanel"
                     aria-labelledby="tab-4">
-                    <img class="w-full h-60 md:h-96 object-contain" src="assets/img/admin_catalog_light.avif" alt="{{ _('Screenshot of the web administration panel displaying the app catalog for the "publication" category, listing some apps available in the catalog.') }}">
+                    <img class="w-full h-60 md:h-96 object-contain" src="assets/img/admin_catalog_light.avif" loading="lazy" alt="{{ _('Screenshot of the web administration panel displaying the app catalog for the "publication" category, listing some apps available in the catalog.') }}">
                 </div>
                 <div id="slide-5" class="screenshot-slide hidden" role="tabpanel"
                     aria-labelledby="tab-5">
-                    <img class="w-full h-60 md:h-96 object-contain" src="assets/img/admin_appinstall_light.avif" alt="{{ _('Screenshot of the web administration panel displaying the app install form when installing the Nextcloud application. The interface asks a few technical questions regarding settings for the installation.') }}">
+                    <img class="w-full h-60 md:h-96 object-contain" src="assets/img/admin_appinstall_light.avif" loading="lazy" alt="{{ _('Screenshot of the web administration panel displaying the app install form when installing the Nextcloud application. The interface asks a few technical questions regarding settings for the installation.') }}">
                 </div>
                 <button class="slider-prev transition-colors duration-500 absolute left-0 cursor-pointer rounded-full text-6xl text-gray-200 hover:text-gray-400 focus:text-gray-400" role="button" onclick="plusSlides(-1)" style="top: 50%; transform: translateY(-50%);" aria-label="{{ _('Previous slide') }}"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
 
@@ -280,7 +280,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3">
 
             <div class="mx-auto hidden md:block">
-              <img src="assets/img/fursona.avif" title="{{ _("Claude, the YunoHost's mascot") }}" alt="{{ _("Image of Claude, the YunoHost's mascot. An humanoid oppossum who stands with purple hair and scarf, round glasses, beige pants with pockets and a blue crop top with the YunoHost logo.") }}" />
+              <img src="assets/img/fursona.avif" loading="lazy" title="{{ _("Claude, the YunoHost's mascot") }}" alt="{{ _("Image of Claude, the YunoHost's mascot. An humanoid oppossum who stands with purple hair and scarf, round glasses, beige pants with pockets and a blue crop top with the YunoHost logo.") }}" />
             </div>
 
             <div class="col-span-2 mx-auto px-5 w-full sm:w-4/5 lg:w-2/3">
@@ -306,7 +306,7 @@
 
             </div>
             <div class="mx-auto w-6/12 md:hidden">
-                <img src="assets/img/fursona.avif" title="{{ _("Claude, the YunoHost's mascot") }}" alt="{{ _("Image of Claude, the YunoHost's mascot. An humanoid oppossum who stands with purple hair and scarf, round glasses, beige pants with pockets and a blue crop top with the YunoHost logo.") }}" />
+                <img src="assets/img/fursona.avif" loading="lazy" title="{{ _("Claude, the YunoHost's mascot") }}" alt="{{ _("Image of Claude, the YunoHost's mascot. An humanoid oppossum who stands with purple hair and scarf, round glasses, beige pants with pockets and a blue crop top with the YunoHost logo.") }}" />
             </div>
 
       </div>
@@ -317,7 +317,7 @@
           <p class="mb-5">{{ _("We are thankful for our sponsors providing us with infrastructure and grants!") }}</p>
           <div class="mb-5 flex flex-wrap gap-5 justify-center !max-w-screen-md">
                 {% for supporter in ["nlnet", "ngi", "codelutin", "globenet", "gitoyen", "tetaneutral", "octopuce"] %}
-                <img src="assets/img/logo_{{ supporter }}.png" alt="{{ supporter }}" class="h-16"/>
+                <img src="assets/img/logo_{{ supporter }}.png" alt="{{ supporter }}" loading="lazy" class="h-16"/>
                 {% endfor %}
           </div>
       </section>

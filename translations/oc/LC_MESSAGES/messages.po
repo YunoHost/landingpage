@@ -753,8 +753,8 @@ msgstr "Imatge precedent"
 msgid "Next slide"
 msgstr "Imatge seguent"
 
-msgid "Huh, but why <i class='fa fa-question'></i>"
-msgstr "E, mas perqué <i class='fa fa-question'></i>"
+msgid "Huh, but why <i class='fa fa-question fa-xs fa-width-auto'></i>"
+msgstr "E, mas perqué <i class='fa fa-question fa-xs fa-width-auto'></i>"
 
 msgid "Try"
 msgstr "Ensajar"

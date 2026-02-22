@@ -615,8 +615,8 @@ msgstr "Předchozí snímek"
 msgid "Next slide"
 msgstr "Další snímek"
 
-msgid "Huh, but why <i class='fa fa-question'></i>"
-msgstr "Huh, ale proč <i class='fa fa-question'></i>"
+msgid "Huh, but why <i class='fa fa-question fa-xs fa-width-auto'></i>"
+msgstr "Huh, ale proč <i class='fa fa-question fa-xs fa-width-auto'></i>"
 
 msgid "Try"
 msgstr "Vyzkoušejte"

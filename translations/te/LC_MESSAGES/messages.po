@@ -599,7 +599,7 @@ msgstr ""
 msgid "Next slide"
 msgstr ""
 
-msgid "Huh, but why <i class='fa fa-question'></i>"
+msgid "Huh, but why <i class='fa fa-question fa-xs fa-width-auto'></i>"
 msgstr ""
 
 msgid "Try"

@@ -1,11 +1,11 @@
-msgid "YunoHost: garden your own piece of the Internet!"
-msgstr ""
-
 msgid ""
 "**YunoHost** is a system that installs itself on a **server**  \n"
 "and allows you to install and maintain - **with very little technical "
 "knowledge** -  \n"
 "digital services (apps) **that you control**."
+msgstr ""
+
+msgid "YunoHost: garden your own piece of the Internet!"
 msgstr ""
 
 msgid "Accessibility menu"
@@ -584,7 +584,7 @@ msgstr ""
 msgid "Next slide"
 msgstr ""
 
-msgid "Huh, but why <i class='fa fa-question'></i>"
+msgid "Huh, but why <i class='fa fa-question fa-xs fa-width-auto'></i>"
 msgstr ""
 
 msgid "Try"

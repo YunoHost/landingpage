@@ -745,8 +745,8 @@ msgstr "Aurreko diapositiba"
 msgid "Next slide"
 msgstr "Hurrengo diapositiba"
 
-msgid "Huh, but why <i class='fa fa-question'></i>"
-msgstr "E, baina zergatik <i class='fa fa-question'></i>"
+msgid "Huh, but why <i class='fa fa-question fa-xs fa-width-auto'></i>"
+msgstr "E, baina zergatik <i class='fa fa-question fa-xs fa-width-auto'></i>"
 
 msgid "Try"
 msgstr "Probatu"

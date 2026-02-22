@@ -611,8 +611,8 @@ msgstr "الصورة السابقة"
 msgid "Next slide"
 msgstr "الصورة التالية"
 
-msgid "Huh, but why <i class='fa fa-question'></i>"
-msgstr "إيه، ولكن لماذا <i class='fa fa-question'></i>"
+msgid "Huh, but why <i class='fa fa-question fa-xs fa-width-auto'></i>"
+msgstr "إيه، ولكن لماذا <i class='fa fa-question fa-xs fa-width-auto'></i>"
 
 msgid "Try"
 msgstr "تجريب"

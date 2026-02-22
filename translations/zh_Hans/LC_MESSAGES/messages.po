@@ -624,8 +624,8 @@ msgstr "上一张幻灯片"
 msgid "Next slide"
 msgstr "下一张幻灯片"
 
-msgid "Huh, but why <i class='fa fa-question'></i>"
-msgstr "哦，为什么 <i class='fa fa-question'></i>"
+msgid "Huh, but why <i class='fa fa-question fa-xs fa-width-auto'></i>"
+msgstr "哦，为什么 <i class='fa fa-question fa-xs fa-width-auto'></i>"
 
 msgid "Try"
 msgstr "试用"

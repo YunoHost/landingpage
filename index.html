@@ -157,9 +157,9 @@
         </div>
 
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <a class="p-3 bg-gray-100 text-gray-800 font-semibold w-fit hover:saturate-150 rounded-bg" href="https://doc.yunohost.org/selfhosting">{{ _("Huh, but why <i class='fa fa-question'></i>") }}</a>
-          <a class="p-3 bg-sky-200  text-sky-800  font-semibold w-48 hover:saturate-150 rounded-bg" href="https://doc.yunohost.org/try"><i class="fa fa-fw fa-flask"></i> {{ _("Try") }}</a>
-          <a class="p-3 bg-lime-200 text-lime-800 font-semibold w-48 hover:saturate-150 rounded-bg" href="#start"><i class="fa fa-fw fa-download"></i> {{ _("Install") }}</a>
+          <a class="p-3 bg-gray-100 text-gray-800 font-semibold w-fit hover:saturate-150 rounded-bg" href="https://doc.yunohost.org/selfhosting">{{ _("Huh, but why <i class='fa fa-question fa-xs fa-width-auto'></i>") }}</a>
+          <a class="p-3 bg-sky-200  text-sky-800  font-semibold w-48 hover:saturate-150 rounded-bg" href="https://doc.yunohost.org/try"><i class="fa fa-flask"></i> {{ _("Try") }}</a>
+          <a class="p-3 bg-lime-200 text-lime-800 font-semibold w-48 hover:saturate-150 rounded-bg" href="#start"><i class="fa fa-download"></i> {{ _("Install") }}</a>
         </div>
     </section>
 
@@ -195,7 +195,7 @@
       </div>
 
       <div class="flex flex-row space-x-4 justify-center">
-          <a class="p-3 bg-purple-200 text-purple-800 font-semibold w-80 hover:saturate-150" href="https://apps.yunohost.org"><i class="fa fa-fw fa-search"></i> {{ _("Explore the app catalog") }}</a>
+          <a class="p-3 bg-purple-200 text-purple-800 font-semibold w-80 hover:saturate-150" href="https://apps.yunohost.org"><i class="fa fa-search"></i> {{ _("Explore the app catalog") }}</a>
       </div>
 
       </section>
@@ -225,7 +225,7 @@
                         <li class="pb-2"><span aria-hidden="true">🦕</span> {{ _("Old tower or portable (*ordinosaur*)") | markdown | no_p }}</li>
                         <li class="pb-2"><span aria-hidden="true">☁️ </span> {{ _("Online server (VPS)") }}</li>
                     </ul>
-                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-sky-200 text-sky-800 w-48 font-semibold hover:saturate-150" style="bottom: -1.5em" href="https://doc.yunohost.org/howtohostyourself"><i class="fa fa-bar-chart fa-fw"></i> {{ _("Compare") }}</a>
+                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-sky-200 text-sky-800 w-48 font-semibold hover:saturate-150" style="bottom: -1.5em" href="https://doc.yunohost.org/howtohostyourself"><i class="fa fa-chart-column"></i> {{ _("Compare") }}</a>
                 </div>
               </div>
 
@@ -236,7 +236,7 @@
                         <li class="pb-2"><span aria-hidden="true">🚀</span> {{ _("Check the prerequisites<br>then flash or install the system") }}</li>
                         <li class="pb-2"><span aria-hidden="true">🌐</span> {{ _("YunoHost will guide you through setting up the first admin, the domain name and your Internet router.") }}</li>
                     </ul>
-                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-lime-200 text-lime-800 w-fit font-semibold hover:saturate-150" style="bottom: -1.5em" href="https://doc.yunohost.org/install"><i class="fa fa-download fa-fw"></i> {{ _("Installation guide") }}</a>
+                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-lime-200 text-lime-800 w-fit font-semibold hover:saturate-150" style="bottom: -1.5em" href="https://doc.yunohost.org/install"><i class="fa fa-download"></i> {{ _("Installation guide") }}</a>
                 </div>
               </div>
 
@@ -248,7 +248,7 @@
                       <li class="pb-2"><span aria-hidden="true">🚑</span> {{ _("Set up backups") }}</li>
                       <li class="pb-2"><span aria-hidden="true">🌱</span> {{ _("Take care of your server") }}</li>
                     </ul>
-                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-purple-200 text-purple-800 w-48 font-semibold hover:saturate-150" style="bottom: -1.5em" href="https://doc.yunohost.org/admin_guide"><i class="fa fa-map-signs fa-fw"></i> {{ _("Guided tour") }}</a>
+                    <a class="absolute left-0 right-0 m-auto p-3 text-md bg-purple-200 text-purple-800 w-48 font-semibold hover:saturate-150" style="bottom: -1.5em" href="https://doc.yunohost.org/admin_guide"><i class="fa fa-map-signs"></i> {{ _("Guided tour") }}</a>
                 </div>
               </div>
 
@@ -296,10 +296,10 @@
                   </div>
 
                   <p class="py-5 leading-[4rem]">
-                  <a class="m-2 px-5 py-3 font-semibold bg-purple-100 text-purple-800 w-48 whitespace-nowrap hover:saturate-150" href="https://forum.yunohost.org"><i class="fa fa-comments-o" aria-hidden="true"></i> {{ _("Forum") }}</a>
-                    <a class="m-2 px-5 py-3 font-semibold bg-green-100 text-green-800 w-48 whitespace-nowrap hover:saturate-150" href="https://doc.yunohost.org/help"><i class="fa fa-support" aria-hidden="true"></i> {{ _("Self-help chat") }}</a>
-                    <a class="m-2 px-5 py-3 font-semibold bg-amber-100 text-amber-800 w-48 whitespace-nowrap hover:saturate-150" href="https://donate.yunohost.org"><i class="fa fa-dollar" aria-hidden="true"></i> {{ _("Donate") }}</a>
-                    <a class="m-2 px-5 py-3 font-semibold bg-orange-100 text-orange-800 w-48 whitespace-nowrap hover:saturate-150" href="https://doc.yunohost.org/contribute"><i class="fa fa-heart-o" aria-hidden="true"></i> {{ _("Contribute") }}</a>
+                  <a class="m-2 px-5 py-3 font-semibold bg-purple-100 text-purple-800 w-48 whitespace-nowrap hover:saturate-150" href="https://forum.yunohost.org"><i class="fa-regular fa-comments" aria-hidden="true"></i> {{ _("Forum") }}</a>
+                    <a class="m-2 px-5 py-3 font-semibold bg-green-100 text-green-800 w-48 whitespace-nowrap hover:saturate-150" href="https://doc.yunohost.org/help"><i class="fa fa-life-ring" aria-hidden="true"></i> {{ _("Self-help chat") }}</a>
+                    <a class="m-2 px-5 py-3 font-semibold bg-amber-100 text-amber-800 w-48 whitespace-nowrap hover:saturate-150" href="https://donate.yunohost.org"><i class="fa fa-dollar fa-width-auto" aria-hidden="true"></i> {{ _("Donate") }}</a>
+                    <a class="m-2 px-5 py-3 font-semibold bg-orange-100 text-orange-800 w-48 whitespace-nowrap hover:saturate-150" href="https://doc.yunohost.org/contribute"><i class="fa fa-code-pull-request" aria-hidden="true"></i> {{ _("Contribute") }}</a>
                     <a class="m-2 px-5 py-3 font-semibold bg-gray-100 text-gray-800 w-48 whitespace-nowrap hover:saturate-150" href="https://github.com/yunohost"><i class="fa fa-code" aria-hidden="true"></i> {{ _("Code repositories") }}</a>
                   </p>
               </div>

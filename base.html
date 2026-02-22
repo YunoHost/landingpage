@@ -12,8 +12,12 @@
     <meta property="og:description" content="{{ _("**YunoHost** is a system that installs itself on a **server**  \nand allows you to install and maintain - **with very little technical knowledge** -  \ndigital services (apps) **that you control**.") | replace("\n", "") | replace("*", "") | replace("  ", " ")}}">
     <meta property="og:image" content="https://yunohost.org/assets/img/portal_simple_dark.avif">
 
-    <link rel="stylesheet" href="assets/fonts/fork-awesome.min.css" />
-    <link rel="stylesheet" href="assets/css/source-sans-3.css" />
+    <link rel="preload" href="assets/fonts/fork-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/source-sans-3.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/fonts/fork-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/source-sans-3.css">
+    </noscript>
     {% block assets %}{% endblock %}
 
     {% if dev %}

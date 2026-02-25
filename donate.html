@@ -26,8 +26,7 @@
 <section class="!bg-yellow-200 dark:!bg-[#2e1f44]">
 
     <div class="text-center mx-auto py-5">
-      <h3 class="text-2xl">🧡&nbsp;{{ _('Thank you, the campaign for 2025 is a success!') }}&nbsp;🧡</h3>
-      <h3 class="text-xl">{{ _('I still want to give to YunoHost:') }}</h3>
+      <h3 class="text-3xl">{{ _('I want to give to YunoHost:') }}</h3>
       <div class="my-5">
           <!-- FIXME: template the public_key -->
         <input type="hidden" id="public_key" value="pk_live_EZ0b0e5WyeOqicQXDxfaHnWP">
@@ -110,7 +109,7 @@
 
 
 <section>
-    <h2>{{ _("Why support YunoHost in 2025?") }}</h2>
+    <h2>{{ _("Why support YunoHost for the 2025-2026 season?") }}</h2>
 
     <div class="text-center">
       <div class="text-3xl mb-3" aria-hidden="true">✊🪽🌱</div>
@@ -139,7 +138,7 @@
 </section>
 
 <section>
-  <h2>{{ _("2025 Campaign progress") }}</h2>
+  <h2>{{ _("2025-2026 Campaign progress") }}</h2>
 
   <div
     id="progress-container"
@@ -638,6 +637,7 @@
         {% for mav in roadmap.majorVersions %}
         {% set id = loop.index0|string %}
         {% set expanded = loop.index0 >= roadmap.currentVersionIndex %}
+        {% if expanded %}
         <div
           class="major-version !mt-0 px-2"
           style="{{ mav.color | get_color_vars }}"
@@ -657,12 +657,12 @@
               {% set id = id + '-' + loop.index0|string %}
               <div class="minor-version{{ ' wireframe' if miv.draft else '' }}">
                 {% if miv.title != 'Soon™' %}
-                <div class="minor-version-title">{{ miv.title }}</div>
+                <div class="minor-version-title status-{{ miv.status if miv.status else 'done' }}">{{ miv.title }}</div>
                 {% endif %}
                 <div class="items">
                   {% for item in miv.features %}
                     {% set id = id + '-' + loop.index0|string %}
-                    <div class="item">
+                    <div class="item status-{{ item.status }}">
                       {% if not item.description %}
                         <div class="item-title">{{ item.title }}</div>
                       {% else %}
@@ -680,7 +680,11 @@
             </div>
           </div>
         </div>
+        {% endif %}
         {% endfor %}
+    </div>
+    <div class="text-left text-xl  !max-w-screen-xl">
+        💰 {{ _("Timescale depend on grant / donations") }}
     </div>
 
     <div class="text-center mx-auto pt-10">

@@ -3,27 +3,32 @@
   "majorVersions": [
     {
       "title": "YunoHost 11 / Debian Bullseye",
-      "color": [40, 100, 80],
+      "color": [220, 5, 90],
       "minorVersions": [
         {
           "title": "11.1",
           "features": [
             {
+              "status": "done",
               "title": "🦸 Replace the '<code>admin</code>' user with an '<code>admins</code>' group",
               "description": "🦸 <strong>Replace the ‘<code>admin</code>’ user with a new ‘<code>admins</code>’ group</strong>. On the long-term, this should remove some confusion about the role of the admin user and allow to define several admin users!"
             },
             {
+              "status": "done",
               "title": "📦 New “v2” app packaging format",
               "description": "<strong>Introduce a new “v2” app packaging format</strong>. This is a major change for app packagers as it should simplify the app packaging and maintenance, but will also bring many UI/UX improvements for the app install process. <small>On the long term, this is only an intermediate step towards an even-better “v3” format later 😜</small>"
             },
             {
+              "status": "done",
               "title": "🎛️ Global settings in the webadmin",
               "description": "<strong>Refactor the “global” settings and make them available in the webadmin.</strong> So far, these were only available from the command line but they can now be found in the ‘Tools’ section of the webadmin. In particular, those settings allow to harden the security of the server, to configure email relay, and other technical aspects."
             },
             {
+              "status": "done",
               "title": "⚙️ Rework domain/app views",
               "description": "The <strong>app catalog</strong> now comes with logos, screenshots, better descriptions, admin notes directly in the webadmin, links to upstream website/doc/demo. This will even become even better as apps are progressively migrated to the v2 packaging format 🥳. <strong>Domains</strong> are now displayed as a tree, and the various panels have been merged into a single page, which should be easier to browse and understand." },
             {
+              "status": "done",
               "title": "🎨 Dark theme for the webadmin",
               "description": "<strong>A dark theme for the webadmin</strong>! You can enable it in the ‘Web-admin settings’ in the ‘Tools’ section of the webadmin."
             }
@@ -33,17 +38,21 @@
           "title": "11.2",
           "features": [
             {
+                "status": "done",
                 "title": "🔐 DynDNS recovery password",
                 "description": "<strong>Add support for recovery password for DynDNS domains</strong> (nohost.me / noho.st / ynh.fr) which should hopefully slowly improve the horrendous situation with people having to ask for the reset of their domain when reinstalling, which we then handle manually."
             },
             {
+                "status": "done",
                 "title": "📬 DKIM for apps",
                 "description": "<strong>Allow apps to send DKIM-signed emails</strong> which should reduce the spaminess of mails sent by apps. "
             },
             {
+                "status": "done",
                 "title": "📦 Helpers 2.1 for packaging",
                 "description": "Continuing to improve the packaging format. This new helper version is about trying to remove legacy helpers, underused options, simplifying syntax, and uniformizing helpers and variable names. <a href='https://forum.yunohost.org/t/new-experimental-2-1-helpers/'>More info</a>" },
             {
+                "status": "done",
                 "title": "🛠️ Quite a lot of minor enh/fixes",
                 "description": ""
             }
@@ -51,66 +60,81 @@
         },
         {
           "title": "11.3",
-          "features": [{ "title": "⬆️ Migration to Bookworm", "description": "" }]
+          "features": [{ "status": "done", "title": "⬆️ Migration to Bookworm", "description": "" }]
         }
       ]
     },
     {
       "title": "YunoHost 12 / Debian Bookworm",
-      "color": [350, 100, 90],
-      "itemColor": "#fff5ff",
+      "color": [40, 100, 80],
       "minorVersions": [
         {
           "title": "12.0",
           "features": [
             { "title": "⚙️ Initial Bookworm support", "description": "" },
             {
+                "status": "done",
                 "title": "🚀 Improved install script and initial setup",
                 "description": "The install script has been reworked with a simpler flow and UI. The base setup is also lighter, with Mysql/PHP not installed by default (but still automatically installed for apps that need it of course), and Rspamd and Metronome (XMPP server) not being part of the default setup but are now available as separate applications"
             },
-            { "title": "🚪 Rework SSO / portal with logos", "description": "The SSO has been split into three distinct pieces: 1) SSOwat now only handling the SSO/ACL logic (as a nginx Lua middleware), 2) <code>yunohost-portal-api</code>: A new “portal API” service delivering authentication cookies and allowing users to retrieve/update infos, 3) <code>yunohost-portal</code>: A new login and homepage web portal front-end, including app logos." },
-            { "title": "⚙️ Pydantic for configpanels", "description": "" },
-            { "title": "⚙️ Webadmin - Vue3/Typescript", "description": "Keeping the webadmin tech stack up-to-date." }
+            { 
+                "status": "done",
+                "title": "🚪 Rework SSO / portal with logos", "description": "The SSO has been split into three distinct pieces: 1) SSOwat now only handling the SSO/ACL logic (as a nginx Lua middleware), 2) <code>yunohost-portal-api</code>: A new “portal API” service delivering authentication cookies and allowing users to retrieve/update infos, 3) <code>yunohost-portal</code>: A new login and homepage web portal front-end, including app logos." },
+            { 
+                "status": "done",
+                "title": "⚙️ Pydantic for configpanels", "description": "" },
+            { 
+                "status": "done",
+                "title": "⚙️ Webadmin - Vue3/Typescript", "description": "Keeping the webadmin tech stack up-to-date." }
           ]
         },
         {
           "title": "12.1",
           "features": [
             {
+              "status": "done",
               "title": "🚪 Portal : more app tile customizability",
               "description": "The app’s logos are also now customizable, along with the label and description used in the portal. Accesses can now be edited directly from the app’s info page, as well as upgrading the app."
             },
             {
+              "status": "done",
               "title": "📜 SSE / Better log streaming UX in webadmin",
               "description": "A new mechanism (so-called 'SSE') to retrieve the status and stream logs of the current action ongoing on the server, whether it got started from another webadmin, the command line or a cron (automatic task). <small>In particular, this should improve situations where some actions are taking a long time, or you closed your browser tab for some reason, or another admin started an operation, or there’s a long automatic backup ongoing : previously it was pretty confusing and hard to know why the webadmin was kind of locked, but now it should automatically catch up and display what’s going on! 😉</small>"
             },
             {
+              "status": "done",
               "title": "🧱 Switch to nftables for firewall",
               "description": "A full <strong>rework of our firewall code</strong> which was pretty outdated and confusing. The new code is based on nftables which is the modern way of managing network rules."
             },
             {
+              "status": "done",
               "title": "⚡ Perf improvement for LDAP requests",
               "description": "<strong>Tweaks to improve the performance of LDAP operations</strong>, which should be pretty significant for instances handling more than ~100ish users. (Typically user creation could start to become extremely long)"
             },
             {
+              "status": "done",
               "title": "📦 Simplify nodejs / ruby / go / composer packaging",
               "description": "New packaging 'resources' were introduced in helpers 2.1 to handle declaratively the fact that an app depend on nodejs / ruby / go / composer, which should help to further simplify packaging."
             },
             {
+              "status": "done",
               "title": "👥 Email permissions for users",
               "description": "Decide wether or not users can add email aliases and forwards from their portal."
             }
           ]
         },
         {
-          "title": "12.2",
+          "title": "12.2 (beta)",
+          "status": "inprogress",
           "draft": true,
           "features": [
             { 
+              "status": "inprogress",
               "title": "⬆️ Migration to Trixie",
               "description": "" 
             },
             { 
+                "status": "inprogress", 
                 "title": "📦 Generalize helpers 2.1 in existing apps",
                 "description": "Moving forward with helpers 2.1 introduced in YunoHost 11.2, to help getting rid of legacy." 
             }
@@ -123,32 +147,48 @@
       "color": [200, 80, 80],
       "minorVersions": [
         {
-          "title": "13.0",
+          "title": "13.0 (beta)",
+          "status": "inprogress",
+          "draft": true,
           "features": [
-            { "title": "⚙️ Initial Trixie support", "description": "" },
-            { "title": "⚙️ Migration to Pydantic v2", "description": "" },
-            { "title": "???", "description": "" }
+            { 
+                "status": "inprogress",
+                "title": "⚙️ Initial Trixie support", "description": "" },
+            { 
+                "status": "inprogress", 
+                "title": "⚙️ Migration to Pydantic v2", "description": "" }
           ]
         },
         {
           "title": "13.1",
           "draft": true,
           "features": [
-            { "title": "🚪 Support OIDC / Replace SSOwat by Authelia (?)", "description": "" },
-            { "title": "📦 Packaging v3 alpha", "description": "Packaging v3 should start becoming a reality somewhere in 2025 with even more declarativeness (in particular for the various configurations), replacing all the <code>scripts/</code> folder with a single <code>scripts.sh</code> file(?), among other things." }
+            { 
+                "status": "inprogress",
+                "title": "🔐 Integrate vulnerabilities alerts in diagnosis", "description": "" },
+            { 
+                "status": "inprogress",
+                "title": "🚪 Support OIDC / Replace SSOwat by Authelia 💰", "description": "" },
+            { 
+                "status": "inprogress",
+                "title": "📦 Packaging v3 💰", "description": "Packaging v3 should start becoming a reality somewhere in 2025 with even more declarativeness (in particular for the various configurations), replacing all the <code>scripts/</code> folder with a single <code>scripts.sh</code> file(?), among other things." }
           ]
         },
         {
           "title": "13.?",
           "draft": true,
           "features": [
-            { "title": "🧱 Replace Fail2ban with Reaction (?)", "description": "" },
+            { 
+                "status": "inprogress",
+                "title": "🧱 Replace Fail2ban with Reaction", "description": "" },
             {
+              "status": "todo",
               "title": "🚪 Be able to have the portal on a subdomain",
               "description": "A recurring issue since the rework of the portal in 12.0 is that some setup do not have the 'main parent domain' on the YunoHost server, preventing to use it as the domain for SSO and for the portal interface. It should be possible to address this by having the admin declare that a specific domain (such as portal.domain.tld) should be use as the portal and for authentication."
             },
-            { "title": "♿ Improve webadmin accessibility", "description": "" },
-            { "title": "???", "description": "" }
+            { 
+              "status": "todo",
+                "title": "♿ Improve webadmin accessibility", "description": "" }
           ]
         },
         {
@@ -156,13 +196,18 @@
           "draft": true,
           "features": [
             {
-              "title": "🔐 User password reset (timescale depend on grant / donations 💰)",
+              "status": "todo",
+              "title": "🔐 User password reset 💰",
               "description": "Currently, passwords are set by the admin and users have no way to reset their password without asking an admin, which is confusing and encourages bad security practices. Implementing password reset is however less trivial than it seems, because it implies that sending email is working and can be trusted, and that users define an external email for password reset."
             },
             {
-              "title": "👥 User self-registration (timescale depend on grant / donations 💰)",
+              "status": "todo",
+              "title": "👥 User self-registration 💰",
               "description": "In many scenarios, admins would like users to be able to autonomously register on the server, possibly using invite links or validation a posteriori."
             },
+            { 
+              "status": "todo",
+              "title": "🚑 Automatic remote backup, backup policy 💰", "description": "" },
             { "title": "???", "description": "" }
           ]
         }
@@ -175,13 +220,27 @@
         {
           "title": "Soon™",
           "features": [
-            { "title": "🚑 Automatic remote backup, backup policy (depend on grant / donations 💰)", "description": "" },
-            { "title": "💾 Storage management", "description": "" },
-            { "title": "🔐 2FA in webadmin", "description": "" },
-            { "title": "📦 App bundles", "description": "" },
-            { "title": "⚙️ Replace moulinette with FastAPI", "description": "" },
-            { "title": "🦸Limited admins?", "description": "" },
-            { "title": "⚙️ R&D on Yunohost \"clusters\" / \"extensions\" / KubertnHost?", "description": "" }
+            { 
+              "status": "todo",
+                "title": "⚙️ Initial Forky support", "description": "" },
+            { 
+              "status": "todo",
+                "title": "📦 App bundles", "description": "" },
+            { 
+              "status": "todo",
+                "title": "💾 Storage management", "description": "" },
+            { 
+              "status": "todo",
+                "title": "🔐 2FA in webadmin", "description": "" },
+            { 
+              "status": "todo",
+                "title": "⚙️ Replace moulinette with FastAPI", "description": "" },
+            { 
+              "status": "todo",
+                "title": "🦸Limited admins?", "description": "" },
+            { 
+              "status": "todo",
+                "title": "⚙️ R&D on Yunohost \"clusters\" / \"extensions\" / KubertnHost?", "description": "" }
           ]
         }
       ]

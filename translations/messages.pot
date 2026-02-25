@@ -157,10 +157,7 @@ msgid ""
 "community**, this is where you can donate!"
 msgstr ""
 
-msgid "Thank you, the campaign for 2025 is a success!"
-msgstr ""
-
-msgid "I still want to give to YunoHost:"
+msgid "I want to give to YunoHost:"
 msgstr ""
 
 msgid "Amount"
@@ -181,7 +178,7 @@ msgstr ""
 msgid "If you are already donating, you can edit your donation by clicking here!"
 msgstr ""
 
-msgid "Why support YunoHost in 2025?"
+msgid "Why support YunoHost for the 2025-2026 season?"
 msgstr ""
 
 msgid ""
@@ -231,7 +228,7 @@ msgid ""
 " professional time to realize them."
 msgstr ""
 
-msgid "2025 Campaign progress"
+msgid "2025-2026 Campaign progress"
 msgstr ""
 
 msgid ""

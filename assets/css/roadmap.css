@@ -51,6 +51,15 @@
   border-radius: 5px;
   color: #2f2f2f;
 }
+.minor-version-title.status-inprogress {
+  background: repeating-linear-gradient(
+    135deg,
+    var(--color),
+    var(--color) 10px,
+    white 10px,
+    white 20px
+  );
+}
 .minor-version {
   width: 100%;
   position: relative;
@@ -70,6 +79,15 @@
 .item {
   margin-top: 1rem;
   background-color: var(--item-color);
+}
+.item.status-inprogress {
+  background: repeating-linear-gradient(
+    135deg,
+    var(--item-color),
+    var(--item-color) 10px,
+    white 10px,
+    white 20px
+  );
 }
 .item * {
   color: inherit;
@@ -162,18 +180,18 @@
 }
 
 #donate .major-version {
-  font-size: 0.6em;
+  font-size: 1em;
   line-height: 1.3em;
 }
 #donate .minor-versions {
   flex-direction: row !important;
 }
 #donate .minor-version {
-  max-width: 10em;
+  max-width: 14em;
   min-width: 2em;
 }
 #donate .item {
-  padding: 0.8em;
+  padding: 0.6em;
   margin-top: 0.5em;
 }
 #donate .minor-version-title {

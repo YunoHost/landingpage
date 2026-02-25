@@ -637,6 +637,7 @@
         {% for mav in roadmap.majorVersions %}
         {% set id = loop.index0|string %}
         {% set expanded = loop.index0 >= roadmap.currentVersionIndex %}
+        {% if expanded %}
         <div
           class="major-version !mt-0 px-2"
           style="{{ mav.color | get_color_vars }}"
@@ -656,12 +657,12 @@
               {% set id = id + '-' + loop.index0|string %}
               <div class="minor-version{{ ' wireframe' if miv.draft else '' }}">
                 {% if miv.title != 'Soon™' %}
-                <div class="minor-version-title">{{ miv.title }}</div>
+                <div class="minor-version-title status-{{ miv.status if miv.status else 'done' }}">{{ miv.title }}</div>
                 {% endif %}
                 <div class="items">
                   {% for item in miv.features %}
                     {% set id = id + '-' + loop.index0|string %}
-                    <div class="item">
+                    <div class="item status-{{ item.status }}">
                       {% if not item.description %}
                         <div class="item-title">{{ item.title }}</div>
                       {% else %}
@@ -679,7 +680,11 @@
             </div>
           </div>
         </div>
+        {% endif %}
         {% endfor %}
+    </div>
+    <div class="text-left text-xl  !max-w-screen-xl">
+        💰 {{ _("Timescale depend on grant / donations") }}
     </div>
 
     <div class="text-center mx-auto pt-10">

@@ -50,14 +50,14 @@
       {% set id = id + '-' + loop.index0|string %}
       <div class="minor-version{{ ' wireframe' if miv.draft else '' }}">
         {% if miv.title != 'Soon™' %}
-        <div class="minor-version-title">{{ miv.title }}</div>
+        <div class="minor-version-title status-{{ miv.status if miv.status else 'done' }}">{{ miv.title }}</div>
         {% endif %}
         <div class="items">
           {% for item in miv.features %}
             {% set id = id + '-' + loop.index0|string %}
-            <div class="item">
+            <div class="item status-{{ item.status }}">
               {% if not item.description %}
-                <div class="item-title">{{ item.title }}</div>
+              <div class="item-title">{{ item.title }}</div>
               {% else %}
               <button
                 type="button"

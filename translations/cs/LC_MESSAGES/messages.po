@@ -399,10 +399,8 @@ msgstr "Komunita"
 msgid "~10,000 instances in 77 countries"
 msgstr "~10,000 instancí v 77 zemích"
 
-#, fuzzy
-#| msgid "130 regular or occasional donors in 2024"
 msgid "~260 regular or occasional donors since January 1, 2026"
-msgstr "130 pravidelných nebo příležitostných dárců v roce 2024"
+msgstr ""
 
 msgid "8,700+ accounts on the various project channels (forge, forum, chat)"
 msgstr ""

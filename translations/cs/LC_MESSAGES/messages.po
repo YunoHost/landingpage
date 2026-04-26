@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2025-06-01 22:07+0000\n"
-"Last-Translator: demodé <walter.klosse@protonmail.com>\n"
+"PO-Revision-Date: 2026-04-26 23:59+0000\n"
+"Last-Translator: Jaroslav Nezbeda <jarda-oscloud@protonmail.com>\n"
 "Language-Team: Czech <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/cs/>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.4.3\n"
+"X-Generator: Weblate 5.14.2\n"
 "Generated-By: Babel 2.14.0\n"
 
 msgid "YunoHost: garden your own piece of the Internet!"
@@ -268,14 +268,13 @@ msgid ""
 msgstr ""
 
 msgid "Recurring donations:"
-msgstr ""
+msgstr "Pravidelné příspěvky:"
 
 msgid "One-time donations:"
-msgstr ""
+msgstr "Jednorázové příspěvky:"
 
-#, fuzzy
 msgid "YunoHost in 2024"
-msgstr "Yunohost logo"
+msgstr "YunoHost v roce 2024"
 
 #, fuzzy
 msgid "Claude, the YunoHost's mascot"
@@ -312,10 +311,10 @@ msgid "The community"
 msgstr "Komunita"
 
 msgid "~10,000 instances in 77 countries"
-msgstr ""
+msgstr "~10,000 instancí v 77 zemích"
 
 msgid "130 regular or occasional donors in 2024"
-msgstr ""
+msgstr "130 pravidelných nebo příležitostných dárců v roce 2024"
 
 msgid "8,700+ accounts on the various project channels (forge, forum, chat)"
 msgstr ""
@@ -369,7 +368,7 @@ msgid ""
 msgstr ""
 
 msgid "Expenses"
-msgstr ""
+msgstr "Výdaje"
 
 msgid ""
 "Between 2022 and 2024, the collective spent around €12,500 a year.<br>In "
@@ -417,45 +416,43 @@ msgid ""
 msgstr ""
 
 msgid "Preserve what's useful to you"
-msgstr ""
+msgstr "Zachovejte co je pro vás důležité"
 
 msgid "Make the facilitator position permanent"
 msgstr ""
 
 msgid "Boosting development"
-msgstr ""
+msgstr "Urychlující vývoj"
 
 msgid "month"
-msgstr ""
+msgstr "měsíc"
 
-#, fuzzy
 msgid "Donations"
-msgstr "Dokumentace"
+msgstr "Dary"
 
 msgid "Grants"
-msgstr ""
+msgstr "Granty"
 
 msgid "Previsional"
 msgstr ""
 
-#, fuzzy
 msgid "Animation"
-msgstr "Překlad"
+msgstr "Animace"
 
 msgid "Development"
-msgstr ""
+msgstr "Vývoj"
 
 msgid "Infrastructure"
-msgstr ""
+msgstr "Infrastruktura"
 
 msgid "Events"
-msgstr ""
+msgstr "Události"
 
 msgid "Others"
-msgstr ""
+msgstr "Jiné"
 
 msgid "Roadmap and dreammap"
-msgstr ""
+msgstr "Mapa cílů"
 
 msgid ""
 "We're publishing a roadmap here to give a clearer idea of what we plan to "
@@ -468,28 +465,34 @@ msgid "Checkout the dedicated roadmap page"
 msgstr ""
 
 msgid "General questions about donations"
-msgstr ""
+msgstr "Hlavní otázky o finančních příspěvcích"
 
 msgid "Will my donation be tax deductible?"
-msgstr ""
+msgstr "Bude můj dar daňově odečitatelný?"
 
 msgid ""
 "At this time, we do not provide tax-deductible donation receipts. We can, "
 "however, issue donation receipts for your accounting purposes."
 msgstr ""
+"V této době neumožňujeme daňově odečitatelné dary. Můžeme vám však vydat "
+"potvrzení do účetnictví."
 
 msgid ""
 "My donation is not sent to YunoHost but to the Support Self-Hosting "
 "association. Is this normal?"
 msgstr ""
+"Můj dar není poslán YunoHostu, ale sdružení podporující hosting na vlastním "
+"serveru. Je to normální?"
 
 msgid ""
 "Yes, that's expected, Support Self-Hosting is the association that enables "
 "the YunoHost project to collect donations and pay expenses."
 msgstr ""
+"Ano, je to v pořádku. Sdružení podporující hosting na vlastním serveru "
+"umožňuje projektu YunoHost sbírat dary a platit výdaje."
 
 msgid "Can I become a member of the Support Self-Hosting association?"
-msgstr ""
+msgstr "Mohu se stát členem sdružení podporující hosting na vlastním serveru?"
 
 msgid ""
 "No: this is an association whose members are chosen by co-option.<br>We "
@@ -569,19 +572,19 @@ msgid "Slide controls"
 msgstr ""
 
 msgid "User portal: dark mode"
-msgstr ""
+msgstr "Uživatelský portál: tmavý režim"
 
 msgid "User portal: light mode with app description"
-msgstr ""
+msgstr "Uživatelský portál: světlý režim s popisem aplikací"
 
 msgid "Administration panel: homepage"
-msgstr ""
+msgstr "Administrační portál: domovská stránka"
 
 msgid "Administration panel: app catalog"
-msgstr ""
+msgstr "Administrační portál: katalog aplikací"
 
 msgid "Administration panel: app installation"
-msgstr ""
+msgstr "Administrační portál: instalace aplikací"
 
 msgid ""
 "Screenshot of the user portal from which users can access the apps installed "
@@ -646,7 +649,7 @@ msgid "For small organizations"
 msgstr "Pro malé organizace"
 
 msgid "host your own website"
-msgstr ""
+msgstr "provozujte vlastní webové stránky"
 
 msgid "share files in common (e.g. with Nextcloud)"
 msgstr ""
@@ -703,10 +706,10 @@ msgid ""
 msgstr ""
 
 msgid "Installation guide"
-msgstr ""
+msgstr "Instalační příručka"
 
 msgid "Enjoy!"
-msgstr ""
+msgstr "Užívejte!"
 
 msgid "Install applications<br>in just a few clicks"
 msgstr ""

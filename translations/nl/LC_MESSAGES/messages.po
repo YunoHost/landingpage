@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2026-04-28 07:53+0000\n"
+"PO-Revision-Date: 2026-05-04 10:16+0000\n"
 "Last-Translator: bruno van den bosch <brunovandenbosch@proton.me>\n"
 "Language-Team: Dutch <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/nl/>\n"
@@ -742,63 +742,66 @@ msgid ""
 "when installing the Nextcloud application. The interface asks a few "
 "technical questions regarding settings for the installation."
 msgstr ""
+"Schermopname van het webadministratiescherm dat het formulier toont voor de "
+"app installatie om de Nextcloud applicatie te installeren. Het scherm vraagt "
+"een paar technische vragen over de instellingen voor de installatie."
 
 msgid "Previous slide"
-msgstr ""
+msgstr "Vorige slide"
 
 msgid "Next slide"
-msgstr ""
+msgstr "Volgende slide"
 
 msgid "Huh, but why <i class='fa fa-question fa-xs fa-width-auto'></i>"
-msgstr ""
+msgstr "Huh, maar waarom <i class='fa fa-question fa-xs fa-width-auto'></i>"
 
 msgid "Try"
-msgstr ""
+msgstr "Proberen"
 
 msgid "Examples of uses"
-msgstr ""
+msgstr "Voorbeeld van benutting"
 
 msgid "For you and your friends"
-msgstr ""
+msgstr "Voor jou en je vrienden"
 
 msgid "synchronize your calendars and contacts"
-msgstr ""
+msgstr "synchroniseer je kalender en contacten"
 
 msgid "keep your passwords and notes safe"
-msgstr ""
+msgstr "bewaar veilig je wachtwoorden en notities"
 
 msgid "host mailboxes"
-msgstr ""
+msgstr "host mailboxen"
 
 msgid "organize your photos, videos and music"
-msgstr ""
+msgstr "organiseer je foto's, video's en muziek"
 
 msgid "join alternative social media"
-msgstr ""
+msgstr "sluit aan bij alternatieve sociale media"
 
 msgid "For small organizations"
-msgstr ""
+msgstr "Voor kleine organisaties"
 
 msgid "host your own website"
-msgstr ""
+msgstr "host je eigen website"
 
 msgid "share files in common (e.g. with Nextcloud)"
-msgstr ""
+msgstr "deel gedeelde documenten (vb. met Nextcloud)"
 
 msgid "edit multiple documents in real time"
-msgstr ""
+msgstr "bewerk meerdere documenten tegelijk"
 
 msgid "manage your accounting"
-msgstr ""
+msgstr "beheer je boekhouding"
 
 msgid "set up a team chat"
-msgstr ""
+msgstr "zet een team chat op"
 
 msgid "Explore the app catalog"
-msgstr ""
+msgstr "Ontdek de app catalogus"
 
 msgid "How to get started"
-msgstr ""
+msgstr "Hoe te beginnen"
 
 msgid ""
 "If you're not sure yet on, we invite you to [try the demo](https://doc."
@@ -809,74 +812,90 @@ msgid ""
 "Take the time to think about what applications, what type of hardware and "
 "what domain name you want for your server."
 msgstr ""
+"Als je nog niet zeker bent, nodigen we je uit om [de demo te proberen]"
+"(https://doc.yunohost.org/try),  \n"
+"en een kijkje te nemen naar [de voor- en nadelen]"
+"(https://doc.yunohost.org/selfhosting) van zelf een server te beheren. \n"
+"\n"
+"Neem je tijd om na te denken over welke applicaties, welk type hardware en "
+"welke domeinnaam je wil voor je server."
 
 msgid "Choosing a support"
-msgstr ""
+msgstr "Kies een support"
 
 msgid "ARM board / Raspberry Pi"
-msgstr ""
+msgstr "ARM bord / Raspberry Pi"
 
 msgid "Old tower or portable (*ordinosaur*)"
-msgstr ""
+msgstr "Oude toren of draagbare (*computosaurus*)"
 
 msgid "Online server (VPS)"
-msgstr ""
+msgstr "Online server (VPS)"
 
 msgid "Compare"
-msgstr ""
+msgstr "Vergelijken"
 
 msgid "Install YunoHost"
-msgstr ""
+msgstr "Installeer YunoHost"
 
 msgid "Check the prerequisites<br>then flash or install the system"
-msgstr ""
+msgstr "Verifieer de voorwaarden<br>dan flash of installeer het systeem"
 
 msgid ""
 "YunoHost will guide you through setting up the first admin, the domain name "
 "and your Internet router."
 msgstr ""
+"YunoHost zal je gidsen voor het opzetten van de eerste admin, de domeinnaam "
+"en je internet router."
 
 msgid "Installation guide"
-msgstr ""
+msgstr "Installatiegids"
 
 msgid "Enjoy!"
-msgstr ""
+msgstr "Geniet ervan!"
 
 msgid "Install applications<br>in just a few clicks"
-msgstr ""
+msgstr "Installeer applicatie<br>met een paar kliks"
 
 msgid "Set up backups"
-msgstr ""
+msgstr "Zet backup op"
 
 msgid "Take care of your server"
-msgstr ""
+msgstr "Onderhoud je server"
 
 msgid "Guided tour"
-msgstr ""
+msgstr "Gegidste tour"
 
 msgid "Previous articles"
-msgstr ""
+msgstr "Vorig artikel"
 
 msgid ""
 "**YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
 msgstr ""
+"**YunoHost** is een **technokritisch** project **zonder winstoogmerk**, "
+"ontworpen en onderhouden door **vrijwilligers**."
 
 msgid ""
 "We advocate a **decentralized** Internet, with **open**, **interoperable** "
 "technologies that **respect privacy** and **empowers people**."
 msgstr ""
+"We pleiten voor een **gedecentraliseerd* internet, met **open**, "
+"**interopereerbare** technologieën die **privacy respecteren** en **mensen "
+"versterken**."
 
 msgid ""
 "In addition, we aim to **give materiality back to the digital**, and "
 "encourage **sobriety** and **reuse**."
 msgstr ""
+"Bovendien, willen wij **materialiteit terug geven aan het digitale**, en "
+"moedigen wij **soberheid** en **hergebruik** aan."
 
 msgid "Code repositories"
-msgstr ""
+msgstr "Archief van code"
 
 msgid "They support us <3"
-msgstr ""
+msgstr "Zij steunen ons <3"
 
 msgid ""
 "We are thankful for our sponsors providing us with infrastructure and grants!"

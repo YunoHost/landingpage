@@ -324,7 +324,7 @@
       const steps = [
         {
           label: "1. {{ _('Preserve what\'s useful to you') }}",
-          value: (300 + 1750 + 2000 + 1500) / 12,
+          value: 8000 / 12,
           backgroundColor: "#4bc0c0",
         },
         {
@@ -333,9 +333,14 @@
           backgroundColor: "#96f",
         },
         {
-          label: "3. {{ _('Boosting development') }}",
+          label: "3. {{ _('Maintain the solution') }}",
           value: 11000 / 12,
           backgroundColor: "#36a2eb",
+        },
+        {
+          label: "4. {{ _('Boosting development') }}",
+          value: 31000 / 12,
+          backgroundColor: "#ffcd56",
         },
       ].map((step, i, steps) => {
         return {
@@ -550,10 +555,10 @@
         {
           label: "{{ _('Previsional') }}",
           anim: 12000,
-          dev: 5000 + 6000,
-          infra: 1750,
-          events: 2000 + 1500,
-          other: 300,
+          dev: 31000 + 11000,
+          infra: 2500,
+          events: 5000,
+          other: 500,
         },
       ];
       const depensesInfos = {

@@ -7,11 +7,11 @@ from pathlib import Path
 
 stripe.api_key = os.getenv("STRIPE_KEY")
 
-campaign_start_date = int(datetime.datetime(2025, 1, 1).timestamp())
+campaign_start_date = int(datetime.datetime(2026, 1, 1).timestamp())
 
-# Bank
-bank_amount = 52
-bank_one_time_amount = 1293
+# Bank (last update with 04/2026 data since campaign_start_date)
+bank_amount = 82
+bank_one_time_amount = 52
 
 # Liberapay
 command = "curl -s https://liberapay.com/YunoHost | grep receives | awk '{print $3}' | tr '<>' '@' | awk -F@ '{print $3}' | tr -d '€'"
@@ -26,7 +26,7 @@ stripe_one_time_amount = 0
 recurring_donators_ids = set()
 currencies = {
     "eur": 1,
-    "usd": 0.908,
+    "usd": 0.8513,
 }
 
 

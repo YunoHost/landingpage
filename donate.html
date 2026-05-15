@@ -159,12 +159,12 @@
     <div class="sr-only">{{ _("The donation campaign is <span id='campaign-completion'></span>％ complete, for needs estimated at €<span id='campaign-objective'></span>/month") }}</div>
 
     <ul>
-      <li id="recurring-amount-text">
-        <span class="square"></span>{{ _("Recurring donations:") }}
+      <li id="one-time-amount-text">
+        <span class="square"></span>{{ _("Received donations:") }}
         <span class="amount"></span>
       </li>
-      <li id="one-time-amount-text">
-        <span class="square"></span>{{ _("One-time donations:") }}
+      <li id="recurring-amount-text">
+        <span class="square"></span>{{ _("Expected donations:") }}
         <span class="amount"></span>
       </li>
     </ul>
@@ -192,11 +192,11 @@
       paint-order: stroke;
     }
     svg#progress-bar line {
-      stroke: #ff6384;
+      stroke: #ffb0c1;
       stroke-width: 40px;
     }
     svg#progress-bar line#one-time {
-      stroke: #ffb0c1;
+      stroke: #ff6384;
     }
 
     @media screen and (max-width: 500px) {
@@ -215,7 +215,7 @@
       background-color: #ff6384;
       margin-right: 0.5rem;
     }
-    #current-step #one-time-amount-text .square {
+    #current-step #recurring-amount-text .square {
       background-color: #ffb0c1;
     }
   </style>
@@ -324,22 +324,22 @@
       const steps = [
         {
           label: "1. {{ _('Preserve what\'s useful to you') }}",
-          value: 8000 / 12,
+          value: 8000,
           backgroundColor: "#4bc0c0",
         },
         {
           label: "2. {{ _('Make the facilitator position permanent') }}",
-          value: 12000 / 12,
+          value: 12000,
           backgroundColor: "#96f",
         },
         {
           label: "3. {{ _('Maintain the solution') }}",
-          value: 11000 / 12,
+          value: 11000,
           backgroundColor: "#36a2eb",
         },
         {
           label: "4. {{ _('Boosting development') }}",
-          value: 31000 / 12,
+          value: 31000,
           backgroundColor: "#ffcd56",
         },
       ].map((step, i, steps) => {
@@ -410,16 +410,17 @@
           .join("; ");
         svg.setAttribute("style", posAttr);
 
-        const recRatio = recAmount / objective;
-        const recPercent = recRatio * 100;
-        const allRatio = (recAmount + oneAmount / 12) / objective
+        const monthsToCome = (new Date(2026, 11, 31)).getMonth() - (new Date(Date.now())).getMonth()
+        const oneRatio = oneAmount / objective;
+        const onePercent = oneRatio  * 100;
+        const allRatio = (oneAmount + recAmount * monthsToCome) / objective
         const allPercent = allRatio * 100
 
-        const recLine = document.querySelector("svg line#recurring");
-        recLine.setAttribute("x2", `${recPercent}%`);
         const oneLine = document.querySelector("svg line#one-time");
-        oneLine.setAttribute("x1", `${recPercent}%`);
-        oneLine.setAttribute("x2", `${allPercent}%`);
+        oneLine.setAttribute("x2", `${onePercent}%`);
+        const recLine = document.querySelector("svg line#recurring");
+        recLine.setAttribute("x1", `${onePercent}%`);
+        recLine.setAttribute("x2", `${allPercent}%`);
 
         const text = document.querySelector("svg text");
         text.setAttribute("x", (chartArea.width * allRatio) / 2);
@@ -431,11 +432,12 @@
         document.querySelector("#campaign-objective").textContent = objective.toFixed(2)
 
         document.querySelector(
-          "#recurring-amount-text .amount"
-        ).textContent = `${recAmount.toFixed(0)} €/{{ _('month') }}`;
-        document.querySelector(
           "#one-time-amount-text .amount"
         ).textContent = `${oneAmount.toFixed(0)} € (${(oneAmount / 12).toFixed(0)} €/{{ _('month') }})`;
+        // FIXME trad
+        document.querySelector(
+          "#recurring-amount-text .amount"
+        ).textContent = `${recAmount.toFixed(0)} €/{{ _('month') }} on the next ${monthsToCome} months (${recAmount * monthsToCome}€)`;
       }
 
       window.addEventListener("load", () => setTimeout(() => updateProgressBar(), 100))

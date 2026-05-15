@@ -37,7 +37,7 @@ def compute_amount(amount, currency):
 
 
 # Stripe: query recurring donations
-subscriptions = stripe.Subscription.list(limit=100)
+subscriptions = stripe.Subscription.list()
 for sub in subscriptions.auto_paging_iter():
     recurring_donators_ids.add(sub["customer"])
     stripe_recurring_amount += compute_amount(sub["quantity"], sub["currency"])
@@ -47,11 +47,11 @@ payments = stripe.PaymentIntent.search(
     query=f'created>{campaign_start_date} AND status:"succeeded"'
 )
 for payment in payments.auto_paging_iter():
-    if payment["customer"] in recurring_donators_ids:
-        # Ignore payments from recurring donators
-        continue
+    # if payment["customer"] in recurring_donators_ids:
+    #     # Ignore payments from recurring donators
+    #     continue
     # Have to /100 the amounts (item units have a value of 100 for whatever reason)
-    stripe_one_time_amount += compute_amount(payment["amount"] / 100, sub["currency"])
+    stripe_one_time_amount += compute_amount(payment["amount"] / 100, payment["currency"])
 
 
 file = Path(__file__).parent.parent / "donate.json"

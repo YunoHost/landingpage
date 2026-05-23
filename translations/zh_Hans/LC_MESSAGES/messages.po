@@ -216,7 +216,7 @@ msgstr "如果您已在捐赠，可点击此处修改您的捐赠！"
 #, fuzzy
 #| msgid "Why support YunoHost in 2025?"
 msgid "Why support YunoHost in 2026?"
-msgstr "为什么在2025年支持 YunoHost？"
+msgstr "为什么在2026年支持 YunoHost？"
 
 #, fuzzy
 #| msgid ""
@@ -236,6 +236,9 @@ msgstr ""
 
 msgid "Phase 1. Preserving the basics"
 msgstr ""
+"YunoHost 是一个非营利项目，倡导去中心化的互联网，采用开放、可互操作且简洁的技"
+"术，尊重隐私并（重新）赋权最多的个人和集体。<br>为此，我们今年目标筹集 "
+"€28,500，分配用于以下三个目标："
 
 msgid "1.1. Sustain its infrastructure and the team's work dynamics"
 msgstr ""
@@ -511,6 +514,9 @@ msgid ""
 "Our expected budget for 2026-2027 reaches 100 000 € and breaks down in 5 "
 "categories."
 msgstr ""
+"2022年至2024年间，该集体每年支出约 €12,500。<br>2025年，为该集体设立“推动者”"
+"职位将带来每年 €12,000 的额外支出。YunoHost 希望能够继续为其项目和社区重要功"
+"能的开发做出财务贡献。因此，2025年的预算预计约为 €28,000。"
 
 msgid "Project expenditure breaks down into the following categories:"
 msgstr "项目支出分为以下几类："

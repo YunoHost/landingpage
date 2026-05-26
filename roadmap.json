@@ -145,7 +145,7 @@
               "status": "inprogress",
               "title": "👥 User self-registration 💰",
               "description": "Make users able to autonomously register on the server through invite links or a public registering form with admin validation."
-            },
+            }
           ]
         }
       ]
@@ -164,7 +164,7 @@
               "title": "⚙️ Initial Trixie support", "description": "YunoHost on Debian 13, codename Trixie." },
             {
               "status": "inprogress",
-              "title": "⚙️ Migration to Pydantic v2", "description": "Migrate to v2 and use its new features to improve type coercing/validation." },
+              "title": "⚙️ Migration to Pydantic v2", "description": "Migrate to v2 and use its new features to improve type coercing/validation." }
           ]
         },
         {
@@ -201,9 +201,9 @@
             },
             {
               "status": "todo",
-              "title": "🚑 Automatic remote backup, backup policy 💰", "description": "Integrate automatic backup features to YunoHost's core, including remote and encrypted deduplication as well as easy selective restore." },
+              "title": "🚑 Automatic remote backup, backup policy 💰", "description": "Integrate automatic backup features to YunoHost's core, including remote and encrypted deduplication as well as easy selective restore." }
           ]
-        },
+        }
       ]
     },
     {

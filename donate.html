@@ -170,7 +170,7 @@
     <div class="sr-only">{{ _("The main donation campaign is <span class='campaign-completion'></span>％ complete, for needs estimated at €<span class='campaign-objective'></span>") }}</div>
   </div>
 
-  <div id="features-progress" class="mt-10">
+  <!-- <div id="features-progress" class="mt-10">
     <div class="relative" aria-hidden="true">
       <canvas class="progress-chart"></canvas>
       <svg class="progress-bar" width="100%" height="100px">
@@ -181,7 +181,7 @@
       </svg>
     </div>
     <div class="sr-only">{{ _("The features donation campaign is <span class='campaign-completion'></span>％ complete, for needs estimated at €<span class='campaign-objective'></span>") }}</div>
-  </div>
+  </div> -->
 
   <div class="current-step my-3">
     <ul>
@@ -193,10 +193,10 @@
         <span class="square"></span>{{ _("Expected donations:") }}
         <span class="amount"></span>
       </li>
-      <li class="grants-amount-text">
+      <!-- <li class="grants-amount-text">
         <span class="square"></span>{{ _("Ongoing grants:") }}
         <span class="amount"></span>
-      </li>
+      </li> -->
     </ul>
   </div>
 
@@ -494,45 +494,45 @@
         flatRec,
       ]);
 
-      const featureSteps = [
-        {
-          label: "1. {{ _('OpenID Connect') }}",
-          value: 5400 + 11400 + 3200,
-          backgroundColor: "#4bc0c0",
-        },
-        {
-          label: "2. {{ _('Packaging v3') }}",
-          value: 5600 + 9200 + 5200,
-          backgroundColor: "#96f",
-        },
-        {
-          label: "3. {{ _('Users self-registration') }}",
-          value: 10000,
-          backgroundColor: "#36a2eb",
-        },
-        {
-          label: "4. {{ _('Automatic backup and restore') }}",
-          value: 20000,
-          backgroundColor: "#ffcd56",
-        },
-      ];
-      const grants = featureSteps[0].value + featureSteps[1].value + 5000
-      const featuresProgress = buildProgress(featureSteps, "features-progress", [
-        grants,
-        amounts.one > mainProgress.objective
-          ? amounts.one - mainProgress.objective
-          : 0,
-        amounts.one > mainProgress.objective
-          ? flatRec
-          : amounts.one + flatRec > mainProgress.objective
-            ? mainProgress.objective - (amounts.one + flatRec)
-            : 0,
-      ]);
+      // const featureSteps = [
+      //   {
+      //     label: "1. {{ _('OpenID Connect') }}",
+      //     value: 20000,
+      //     backgroundColor: "#4bc0c0",
+      //   },
+      //   {
+      //     label: "2. {{ _('Packaging v3') }}",
+      //     value: 14400,
+      //     backgroundColor: "#96f",
+      //   },
+      //   {
+      //     label: "3. {{ _('Users self-registration') }}",
+      //     value: 10000,
+      //     backgroundColor: "#36a2eb",
+      //   },
+      //   {
+      //     label: "4. {{ _('Automatic backup and restore') }}",
+      //     value: 20000,
+      //     backgroundColor: "#ffcd56",
+      //   },
+      // ];
+      // const grants = featureSteps[0].value + featureSteps[1].value + 5000
+      // const featuresProgress = buildProgress(featureSteps, "features-progress", [
+      //   grants,
+      //   amounts.one > mainProgress.objective
+      //     ? amounts.one - mainProgress.objective
+      //     : 0,
+      //   amounts.one > mainProgress.objective
+      //     ? flatRec
+      //     : amounts.one + flatRec > mainProgress.objective
+      //       ? mainProgress.objective - (amounts.one + flatRec)
+      //       : 0,
+      // ]);
 
       window.addEventListener("load", () =>
         setTimeout(() => {
           mainProgress.init();
-          featuresProgress.init();
+          // featuresProgress.init();
 
           const container = document.querySelector(".current-step");
           container.querySelector(".one-time-amount-text .amount").textContent =
@@ -540,12 +540,12 @@
           // FIXME trad
           container.querySelector(".recurring-amount-text .amount").textContent =
             `${amounts.rec.toFixed(0)} €/{{ _('month') }} on the next ${monthsToCome} months (${flatRec}€)`;
-          container.querySelector(".grants-amount-text .amount").textContent = `${grants.toFixed(0)} € `;
+          // container.querySelector(".grants-amount-text .amount").textContent = `${grants.toFixed(0)} € `;
         }, 100),
       );
       window.addEventListener("resize", () => {
         mainProgress.update();
-        featuresProgress.update();
+        // featuresProgress.update();
       });
 
       // RECETTES
@@ -740,7 +740,7 @@
         updateChartColor(recettesChart, color, gridColor);
         updateChartColor(depensesChart, color, gridColor);
         updateChartColor(mainProgress.chart, color, gridColor);
-        updateChartColor(featuresProgress.chart, color, gridColor);
+        // updateChartColor(featuresProgress.chart, color, gridColor);
       }
 
       htmlElem.addEventListener("theme-changed", onThemeChanged);

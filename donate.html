@@ -572,10 +572,17 @@
         { label: "2022-2023", don: 16520.75, sub: 3500 },
         { label: "2023-2024", don: 14294.64, sub: 0 },
         { label: "2024-2025", don: 29845.94, sub: 0 },
+        { 
+          label: "{{ _('Previsional') }}", 
+          contrib: 20000 + 14400,
+          don: mainSteps.reduce((acc, step) => acc + step.value, 0), 
+          sub: 5000,
+        },
       ];
       const recettesInfos = {
         don: { label: "{{ _('Donations') }}", backgroundColor: "#96f" },
         sub: { label: "{{ _('Grants') }}", backgroundColor: "#ffcd56" },
+        contrib: { label: "{{ _('Direct contributor funding') }}", backgroundColor: "#4bc0c0" },
       };
 
       const recettesChart = new Chart(document.getElementById("recettes"), {

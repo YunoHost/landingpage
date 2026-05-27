@@ -178,27 +178,28 @@ msgstr ""
 msgid "If you are already donating, you can edit your donation by clicking here!"
 msgstr ""
 
-msgid "Why support YunoHost for the 2025-2026 season?"
+msgid "Why support YunoHost in 2026?"
 msgstr ""
 
 msgid ""
 "YunoHost is a non-profit project that advocates a decentralized Internet,"
 " with open, interoperable and sober technologies that respect privacy and"
 " (re-)empower the greatest number of people and collectives.<br>To do so,"
-" we aim to collect €28,500 this year, to split between the following "
+" we aim to collect €62,000 this year, to split between the following "
 "three objectives:"
 msgstr ""
 
 msgid "1. Preserve what's useful to you"
 msgstr ""
 
-msgid "€5,500"
+msgid "€8,000"
 msgstr ""
 
 msgid ""
 "Donations are used primarily to maintain the existing system, in "
 "particular by paying infrastructure costs (YunoHost services and task "
-"automation) and allowing the team to meet at least once a year."
+"automation) and allowing the team to meet at least twice a year "
+"(WinterIsCoding and YunoCamp) and to take part in community events."
 msgstr ""
 
 msgid "2. Make the facilitator position permanent"
@@ -215,20 +216,50 @@ msgid ""
 "then, so we need more donations to sustain this essential position."
 msgstr ""
 
-msgid "3. Boosting development"
+msgid "3. Maintain the solution"
 msgstr ""
 
 msgid "€11,000"
 msgstr ""
 
 msgid ""
-"The publication of new large-scale developments depends essentially on "
-"the availability of contributors. If the budget allows, the team would "
-"like to remunerate certain developments to enable contributors to free up"
-" professional time to realize them."
+"This budget will fund code and infrastructure maintenance, as well as "
+"time spent reviewing and integrating contributions from new volunteers."
 msgstr ""
 
-msgid "2025-2026 Campaign progress"
+msgid "4. Boosting development"
+msgstr ""
+
+msgid "€31,000"
+msgstr ""
+
+msgid ""
+"For the 2026–2027 season, we have secured funding to improve the package "
+"format and authentication (OIDC)."
+msgstr ""
+
+msgid "However, we are asking for your help to carry out the following projects:"
+msgstr ""
+
+msgid "User self-registration"
+msgstr ""
+
+msgid "€5,000"
+msgstr ""
+
+msgid "Improve backup and restore features"
+msgstr ""
+
+msgid "€20,000"
+msgstr ""
+
+msgid "Initial implementation of a self-hosted federation"
+msgstr ""
+
+msgid "€6,000"
+msgstr ""
+
+msgid "2026 Campaign progress"
 msgstr ""
 
 msgid ""
@@ -237,13 +268,13 @@ msgid ""
 "objective'></span>/month"
 msgstr ""
 
-msgid "Recurring donations:"
+msgid "Received donations:"
 msgstr ""
 
-msgid "One-time donations:"
+msgid "Expected donations:"
 msgstr ""
 
-msgid "YunoHost in 2024"
+msgid "YunoHost key metrics"
 msgstr ""
 
 msgid "Claude, the YunoHost's mascot"
@@ -261,7 +292,7 @@ msgstr ""
 msgid "14 years of existence"
 msgstr ""
 
-msgid "about fifteen regularly active core-contributors"
+msgid "about 30 regular contributors"
 msgstr ""
 
 msgid ""
@@ -282,25 +313,25 @@ msgstr ""
 msgid "~10,000 instances in 77 countries"
 msgstr ""
 
-msgid "130 regular or occasional donors in 2024"
+msgid "~260 regular or occasional donors since January 1, 2026"
 msgstr ""
 
 msgid "8,700+ accounts on the various project channels (forge, forum, chat)"
 msgstr ""
 
-msgid "15+ languages supported"
+msgid "19+ languages supported by the user portal"
 msgstr ""
 
 msgid "The software and its ecosystem"
 msgstr ""
 
 msgid ""
-"[540+ apps in the catalog](https://apps.yunohost.org/catalog) ([a brief "
+"[630+ apps in the catalog](https://apps.yunohost.org/catalog) ([a brief "
 "history](https://apps.yunohost.org/charts))"
 msgstr ""
 
 msgid ""
-"760 Git code repositories "
+"1100+ Git code repositories "
 "([core](https://github.com/orgs/YunoHost/repositories) + "
 "[apps](https://github.com/orgs/YunoHost-Apps/repositories))"
 msgstr ""
@@ -392,6 +423,9 @@ msgstr ""
 msgid "Make the facilitator position permanent"
 msgstr ""
 
+msgid "Maintain the solution"
+msgstr ""
+
 msgid "Boosting development"
 msgstr ""
 
@@ -430,6 +464,9 @@ msgid ""
 " develop. It does **NOT** constitutes a promise because it is *dependent "
 "on the availability and energies of volunteers*. It is therefore subject "
 "to change at any time."
+msgstr ""
+
+msgid "Timescale depend on grant / donations"
 msgstr ""
 
 msgid "Checkout the dedicated roadmap page"

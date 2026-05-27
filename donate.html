@@ -136,18 +136,18 @@
       {{ _("This budget will fund code and infrastructure maintenance, as well as time spent reviewing and integrating contributions from new volunteers.") }}
     </p>
     
-    <h3 class="pt-5">{{ _("4. Boosting development") }} <span class="bg-sky-200 text-sky-800 rotate-[-3deg] inline-block px-1.5 py-0.5 ms-2 inline-highlight">{{ _("€31,000") }}</span></h3>
+    <h3 class="pt-5">{{ _("4. Boosting development") }} <span class="bg-amber-200 text-amber-800 rotate-[-3deg] inline-block px-1.5 py-0.5 ms-2 inline-highlight">{{ _("€31,000") }}</span></h3>
 
     <p class="pt-3 pb-3">
       {{ _("For the 2026–2027 season, we have secured funding to improve the package format and authentication (OIDC).") }}
     </p>
-    <p class="pb-5">
+    <p class="pb-3">
       {{ _("However, we are asking for your help to carry out the following projects:") }}
     </p>
-    <ul class="list-disc ps-5 py-3">
-        <li> {{ _("User self-registration: €5,000") }}
-        <li> {{ _("Improve backup and restore features: €20,000") }}
-        <li> {{ _("Initial implementation of a self-hosted federation: €6,000") }}
+    <ul class="list-disc ps-8 py-3">
+        <li> {{ _("User self-registration") }} <span class="bg-amber-200 text-amber-800 rotate-[-3deg] inline-block px-1.5 py-0.5 ms-2 inline-highlight">{{ _("€5,000") }}</span>
+        <li> {{ _("Improve backup and restore features") }} <span class="bg-amber-200 text-amber-800 rotate-[-3deg] inline-block px-1.5 py-0.5 ms-2 inline-highlight">{{ _("€20,000") }}</span>
+        <li> {{ _("Initial implementation of a self-hosted federation") }} <span class="bg-amber-200 text-amber-800 rotate-[-3deg] inline-block px-1.5 py-0.5 ms-2 inline-highlight">{{ _("€6,000") }}</span>
     </ul>
 </section>
 
@@ -258,7 +258,8 @@
 </section>
 
 <section>
-    <h2>{{ _("YunoHost key metrics") }}</h2>
+    <h2 class="pb-0">{{ _("YunoHost key metrics") }}</h2>
+    <div class="text-center italic">Updated on May 2026</div>
 
     <div class="flex flex-col md:flex-row !max-w-screen-lg items-center">
         <div class="mx-5 mb-5 md:w-1/4">
@@ -270,7 +271,7 @@
 
             <ul class="py-3 ps-5">
                 <li><span aria-hidden="true">🎂</span> {{ _("14 years of existence") }}</li>
-                <li><span aria-hidden="true">👷</span> {{ _("about fifteen regularly active core-contributors") }}</li>
+                <li><span aria-hidden="true">👷</span> {{ _("about 30 regular contributors") }}</li>
                 <li title='{{ _("Assuming a company with 4 full-time persons,\neach with €3,000 net / month,\nso around €5,200 charged / month,\n€5,200 x 4 person x 12 months = €249,600 / year") }}'>
                     <span aria-hidden="true">💰</span> {{ _("volunteer work that could be valued at least €250,000 a year if remunerated") }}
                 </li>
@@ -280,17 +281,17 @@
 
             <ul class="py-3 ps-5">
                 <li><span aria-hidden="true">🌐</span> {{ _("~10,000 instances in 77 countries") }}</li>
-                <li><span aria-hidden="true">💸</span> {{ _("130 regular or occasional donors in 2024") }}</li>
+                <li><span aria-hidden="true">💸</span> {{ _("~260 regular or occasional donors since January 1, 2026") }}</li>
                 <li><span aria-hidden="true">👥</span> {{ _("8,700+ accounts on the various project channels (forge, forum, chat)") }}</li>
-                <li><span aria-hidden="true">🗣️</span> <a href="https://translate.yunohost.org/projects/yunohost/#languages">{{ _("15+ languages supported") }}</a></li>
+                <li><span aria-hidden="true">🗣️</span> <a href="https://translate.yunohost.org/projects/yunohost/#languages">{{ _("19+ languages supported by the user portal") }}</a></li>
             </ul>
 
 
             <h3>{{ _("The software and its ecosystem") }}</h3>
 
             <ul class="py-3 ps-5">
-                <li><span aria-hidden="true">📦</span> {{ _("[540+ apps in the catalog](https://apps.yunohost.org/catalog) ([a brief history](https://apps.yunohost.org/charts))") | markdown | no_p }}</li>
-                <li><span aria-hidden="true">🧑‍💻</span> {{ _("760 Git code repositories ([core](https://github.com/orgs/YunoHost/repositories) + [apps](https://github.com/orgs/YunoHost-Apps/repositories))") | markdown | no_p }}</li>
+                <li><span aria-hidden="true">📦</span> {{ _("[630+ apps in the catalog](https://apps.yunohost.org/catalog) ([a brief history](https://apps.yunohost.org/charts))") | markdown | no_p }}</li>
+                <li><span aria-hidden="true">🧑‍💻</span> {{ _("1100+ Git code repositories ([core](https://github.com/orgs/YunoHost/repositories) + [apps](https://github.com/orgs/YunoHost-Apps/repositories))") | markdown | no_p }}</li>
             </ul>
         </div>
     </div>

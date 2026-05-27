@@ -184,12 +184,15 @@ msgstr ""
 msgid ""
 "YunoHost is a non-profit project that advocates a decentralized Internet,"
 " with open, interoperable and sober technologies that respect privacy and"
-" (re-)empower the greatest number of people and collectives.<br>To do so,"
-" we aim to collect €62,000 this year, to split between the following "
-"three objectives:"
+" (re-)empower the greatest number of people and collectives."
 msgstr ""
 
-msgid "1. Preserve what's useful to you"
+msgid ""
+"Phase 1. Sustaining its infrastructure, its code and the team’s work "
+"dynamics's useful to you"
+msgstr ""
+
+msgid "1.1. Preserve what's useful to you"
 msgstr ""
 
 msgid "€8,000"
@@ -198,28 +201,22 @@ msgstr ""
 msgid ""
 "Donations are used primarily to maintain the existing system, in "
 "particular by paying infrastructure costs (YunoHost services and task "
-"automation) and allowing the team to meet at least twice a year "
-"(WinterIsCoding and YunoCamp) and to take part in community events."
+"automation) and allowing the team to meet at least twice a year."
 msgstr ""
 
-msgid "2. Make the facilitator position permanent"
+msgid "1.2. Stir the collective and its projects"
 msgstr ""
 
 msgid "€12,000"
 msgstr ""
 
 msgid ""
-"Since mid-2024, the team involved in the day-to-day development of "
 "YunoHost has been calling on a facilitator (a.k.a “stirrer”) to take care"
 " of the collective both humanly and administratively, as well as in its "
-"external relations. This new person has been a great help for us since "
-"then, so we need more donations to sustain this essential position."
+"external relations. "
 msgstr ""
 
-msgid "3. Maintain the solution"
-msgstr ""
-
-msgid "€11,000"
+msgid "1.3. Maintain the codebase and provide support to the community"
 msgstr ""
 
 msgid ""
@@ -227,33 +224,25 @@ msgid ""
 "time spent reviewing and integrating contributions from new volunteers."
 msgstr ""
 
-msgid "4. Boosting development"
+msgid "Phase 2. Boosting development"
 msgstr ""
 
-msgid "€31,000"
-msgstr ""
-
-msgid ""
-"For the 2026–2027 season, we have secured funding to improve the package "
-"format and authentication (OIDC)."
-msgstr ""
-
-msgid "However, we are asking for your help to carry out the following projects:"
-msgstr ""
-
-msgid "User self-registration"
+msgid "2.1. Complete the self-registration feature"
 msgstr ""
 
 msgid "€5,000"
 msgstr ""
 
-msgid "Improve backup and restore features"
+msgid " "
+msgstr ""
+
+msgid "2.2. Improve the backup and restore feature"
 msgstr ""
 
 msgid "€20,000"
 msgstr ""
 
-msgid "Initial implementation of a self-hosted federation"
+msgid "2.3. Initiate implementation of self-hosting federation"
 msgstr ""
 
 msgid "€6,000"
@@ -263,15 +252,24 @@ msgid "2026 Campaign progress"
 msgstr ""
 
 msgid ""
-"The donation campaign is <span id='campaign-completion'></span>％ "
-"complete, for needs estimated at €<span id='campaign-"
-"objective'></span>/month"
+"The main donation campaign is <span class='campaign-completion'></span>％ "
+"complete, for needs estimated at €<span class='campaign-"
+"objective'></span>"
+msgstr ""
+
+msgid ""
+"The features donation campaign is <span class='campaign-"
+"completion'></span>％ complete, for needs estimated at €<span class"
+"='campaign-objective'></span>"
 msgstr ""
 
 msgid "Received donations:"
 msgstr ""
 
 msgid "Expected donations:"
+msgstr ""
+
+msgid "Ongoing grants:"
 msgstr ""
 
 msgid "YunoHost key metrics"
@@ -426,7 +424,16 @@ msgstr ""
 msgid "Maintain the solution"
 msgstr ""
 
-msgid "Boosting development"
+msgid "OpenID Connect"
+msgstr ""
+
+msgid "Packaging v3"
+msgstr ""
+
+msgid "Users self-registration"
+msgstr ""
+
+msgid "Automatic backup and restore"
 msgstr ""
 
 msgid "month"

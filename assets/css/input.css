@@ -11,6 +11,9 @@
     main h3 {
         @apply text-2xl font-bold !leading-6;
     }
+    main h4 {
+        @apply text-xl font-bold !leading-6;
+    }
     footer h3 {
         @apply py-2 font-bold;
     }

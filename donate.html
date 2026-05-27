@@ -624,7 +624,8 @@
       });
 
       // DEPENSES
-
+      const INFRA = 200*12
+      const OTHER = 300
       const depensesData = [
         {
           label: "2019-2020",
@@ -676,11 +677,11 @@
         },
         {
           label: "{{ _('Previsional') }}",
-          anim: 12000,
-          dev: 31000 + 11000,
-          infra: 2500,
-          events: 5000,
-          other: 500,
+          anim: mainSteps[1].value,
+          dev: [2, 3, 4, 5].reduce((acc, i) => acc + mainSteps[i].value, 0),
+          infra: INFRA,
+          events: mainSteps[0].value - INFRA - OTHER,
+          other: OTHER,
         },
       ];
       const depensesInfos = {

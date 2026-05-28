@@ -211,9 +211,9 @@ msgid "€12,000"
 msgstr ""
 
 msgid ""
-"YunoHost has been calling on a facilitator (a.k.a “stirrer”) to take care"
-" of the collective both humanly and administratively, as well as in its "
-"external relations. "
+"The team involved in the day-to-day development of YunoHost has been "
+"calling on a facilitator (a.k.a “stirrer”) to take care of the collective"
+" both humanly and administratively, as well as in its external relations."
 msgstr ""
 
 msgid "1.3. Maintain the codebase and provide support to the community"
@@ -221,31 +221,74 @@ msgstr ""
 
 msgid ""
 "This budget will fund code and infrastructure maintenance, as well as "
-"time spent reviewing and integrating contributions from new volunteers."
+"time spent doing support or reviewing and integrating contributions from "
+"new volunteers."
 msgstr ""
 
 msgid "Phase 2. Boosting development"
 msgstr ""
 
-msgid "2.1. Complete the self-registration feature"
+msgid "2.1. Packaging v3"
+msgstr ""
+
+msgid "Funded by NLNet*"
+msgstr ""
+
+msgid ""
+"New iteration on the packaging features with more declarativeness, "
+"robustness and effectiveness."
+msgstr ""
+
+msgid "* This development is funded by NLNet through NGI0."
+msgstr ""
+
+msgid "2.2. Support OIDC"
+msgstr ""
+
+msgid ""
+"Replace SSOWat Single-Sign On solution with Authelia and support the more"
+" standard OpenID Connect authentication protocol, thus broadening the "
+"apps' SSO integration potential"
+msgstr ""
+
+msgid "2.3. Complete the self-registration feature"
 msgstr ""
 
 msgid "€5,000"
 msgstr ""
 
-msgid " "
+msgid "Partially funded by Code Lutin*"
 msgstr ""
 
-msgid "2.2. Improve the backup and restore feature"
+msgid ""
+"Make users able to autonomously register on the server through invite "
+"links or a public registering form with admin validation."
+msgstr ""
+
+msgid "* This development is funded by Code Lutin through Copie Publique."
+msgstr ""
+
+msgid "2.4. Improve the backup and restore feature"
 msgstr ""
 
 msgid "€20,000"
 msgstr ""
 
-msgid "2.3. Initiate implementation of self-hosting federation"
+msgid ""
+"Integrate automatic backup features to YunoHost's core, including remote "
+"and encrypted deduplication as well as easy selective restore."
+msgstr ""
+
+msgid "2.5. Initiate implementation of self-hosting federation"
 msgstr ""
 
 msgid "€6,000"
+msgstr ""
+
+msgid ""
+"With the self-hosting federation concept, we plan to make it easier to "
+"connect to a friend instance in order to provide remote services each "
+"other."
 msgstr ""
 
 msgid "2026 Campaign progress"
@@ -415,13 +458,22 @@ msgid ""
 "collectives that support the project in kind."
 msgstr ""
 
-msgid "Preserve what's useful to you"
+msgid "Preserve the basics"
 msgstr ""
 
-msgid "Make the facilitator position permanent"
+msgid "Permanent facilitator"
 msgstr ""
 
 msgid "Maintain the solution"
+msgstr ""
+
+msgid "Self-registration feature"
+msgstr ""
+
+msgid "Backup and restore feature"
+msgstr ""
+
+msgid "Self-hosting federation"
 msgstr ""
 
 msgid "OpenID Connect"
@@ -439,13 +491,16 @@ msgstr ""
 msgid "month"
 msgstr ""
 
+msgid "Previsional"
+msgstr ""
+
 msgid "Donations"
 msgstr ""
 
 msgid "Grants"
 msgstr ""
 
-msgid "Previsional"
+msgid "Direct contributor funding"
 msgstr ""
 
 msgid "Animation"

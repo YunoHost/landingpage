@@ -116,6 +116,9 @@
       <p class="pb-5 px-5">
         {{ _("YunoHost is a non-profit project that advocates a decentralized Internet, with open, interoperable and sober technologies that respect privacy and (re-)empower the greatest number of people and collectives.") }}
       </p>
+      <p class="pb-5 px-5">
+        {{ _("In a worrying context of concentration of power at work in the digital world, and to take concrete action in the face of the tech giants' fatal power over our lives and society, YunoHost aspires to enable collectives to regain power over their digital lives.") }}
+      </p>
     </div>
 
     <h3 class="pt-5">{{ _("Phase 1. Sustaining its infrastructure, its code and the team's work dynamics") }}</h3>
@@ -318,8 +321,31 @@
     <h2>{{ _("What are your donations used for?") }}</h2>
 
     <p class="py-3">
-      {{ _("Your donations guarantee our independence: they constitute our entire income in 2024.") }}
+      {{ _("Your donations guarantee our independence: they keep accounting for the biggest share of our income until now.") }}
     </p>
+
+    <h3>{{ _("Expenses") }}</h3>
+
+    <p class="py-3">
+      {{ _("Between 2022 and 2024, the collective spent around €12,500 a year.<br>In 2025, the creation of the “stirrer” position for the collective will represent an additional expense of €12,000 per year. YunoHost would like to be able to continue its financial contributions to the development of important features for the project and its community. The projected budget for 2025 is therefore around €28,000.") }}
+    </p>
+
+    <p class="py-3">
+      {{ _("Project expenditure breaks down into the following categories:") }}
+    </p>
+    <ul class="list-disc ps-5 py-3">
+        <li>{{ _("**Development**: one-off funding linked to the development and maintenance of the project, thanks to both grants and donations received. It should be noted, however, that this amount is negligible in relation to the voluntary work carried out by the team.") | markdown | no_p }}</li>
+        <li>{{ _("**Infrastructure**: corresponds to the hosting of the tools used by the project, such as the website, documentation, forum, technical tools, etc. The amount of this expenditure should reduce in 2025 following a migration to a dedicated server from a friendly host provider.") | markdown | no_p }}</li>
+        <li>{{ _("**Events**: expenses to enable the team to attend events (e.g. [JdLL](https://jdll.org/)) and to meet in the same place once a year to work together on fundamental issues.") | markdown | no_p }}</li>
+        <li>{{ _("**Collective facilitation**: financial compensation allocated to the tasks of administrative facilitation, animation and coordination of the collective. This is a new type of expense introduced in 2025, decided by the collective given the need to have a person dedicated to these aspects (a.k.a “stirrer”).") | markdown | no_p }}</li>
+        <li>{{ _("**Fees and other expenses**: bank charges or donations made to other collectives that support the project in kind.") | markdown | no_p }}</li>
+    </ul>
+
+    <div style="height: 60vh;" class="my-5 p-5 pt-2">
+      <canvas id="depenses" aria-hidden="true"></canvas>
+    </div>
+
+    <dl id="depenses-text" class="sr-only"></dl>
 
     <h3>{{ _("Revenues") }}</h3>
 
@@ -345,28 +371,6 @@
     https://mermaid.live/edit#pako:eNplUktqwzAQvcqgENyCDbKSmMSLbtJtobTQReMsxvYkEXWsIMslIWTTi2RXuuipeoIeoZJMPlAkRm-enmZGGu1ZoUpiKev391kNIGtpUvAQIDArWlOQQlCifgvCa_YFtcS8oiY4y-3WdjddoTaOgxMJkLFNpcxUVUo_YkXGUMYgtXRvURaUiLA3GmFBlr2cOXTQL9Yc-v2sdmO7K1yGKCeDncRIU5EN9kSFC93Aze_x-AmlqhsgA9b5gqbN36k20nK3pyzbCLeygZng8SQSXPAQnHUw9jB2UHgoHBx4OHBwGNqEds67ULsu1HUNPx_fNhNwiKI7EBPOeSftbI4aZoMkSUKIxSAZ22UsuK_AFxIPxWQ4_6cdeynE3GvjZHStZSFbk16jLG07fUsy5luVMffWJS2wrYy7_cFKsTXqeVcXLDW6pZBp1S5XLF1g1Viv3ZRo6F7iUuP6zG6wflXq4lMpjdIP3Qfy_-jwBxd8rGY
     -->
 
-    <h3>{{ _("Expenses") }}</h3>
-
-    <p class="py-3">
-      {{ _("Between 2022 and 2024, the collective spent around €12,500 a year.<br>In 2025, the creation of the “stirrer” position for the collective will represent an additional expense of €12,000 per year. YunoHost would like to be able to continue its financial contributions to the development of important features for the project and its community. The projected budget for 2025 is therefore around €28,000.") }}
-    </p>
-
-    <p class="py-3">
-      {{ _("Project expenditure breaks down into the following categories:") }}
-    </p>
-    <ul class="list-disc ps-5 py-3">
-        <li>{{ _("**Development**: one-off funding linked to the development and maintenance of the project, thanks to both grants and donations received. It should be noted, however, that this amount is negligible in relation to the voluntary work carried out by the team.") | markdown | no_p }}</li>
-        <li>{{ _("**Infrastructure**: corresponds to the hosting of the tools used by the project, such as the website, documentation, forum, technical tools, etc. The amount of this expenditure should reduce in 2025 following a migration to a dedicated server from a friendly host provider.") | markdown | no_p }}</li>
-        <li>{{ _("**Events**: expenses to enable the team to attend events (e.g. [JdLL](https://jdll.org/)) and to meet in the same place once a year to work together on fundamental issues.") | markdown | no_p }}</li>
-        <li>{{ _("**Collective facilitation**: financial compensation allocated to the tasks of administrative facilitation, animation and coordination of the collective. This is a new type of expense introduced in 2025, decided by the collective given the need to have a person dedicated to these aspects (a.k.a “stirrer”).") | markdown | no_p }}</li>
-        <li>{{ _("**Fees and other expenses**: bank charges or donations made to other collectives that support the project in kind.") | markdown | no_p }}</li>
-    </ul>
-
-    <div style="height: 60vh;" class="my-5 p-5 pt-2">
-      <canvas id="depenses" aria-hidden="true"></canvas>
-    </div>
-
-    <dl id="depenses-text" class="sr-only"></dl>
 
     <!--
     https://mermaid.live/edit#pako:eNqNks9q3DAQxl9l0LI4BRlk-c-ufQiEpIceCoVCD41z0K5ndwW2bGR5WRP20uco5FaakLfom-QJ-giVZJJtcgqG0aeZnz6NzNySdVshKch8flsqAKmkKcBLgMDssMGggEDhYLSoA_p_4ZvQUqxq7IOXE7Z0GC93QhuXg-ckQEm6ujWXbd3qL6JGY7AkUNj0TIglVhmdpalYI9LZplpjxulssVxFaU5rud2ZrcaxJCe34yT9YsNxPi-V-w7j2t0drtCICTHS1Givufpz36HqsYezv3d3D3ChZEPByl9gS3svf8MntdHC63v4uEdlegpPjz_hwr4e-w_PLRxCcZA9XHPGWWhDRMFFJ7mX3MnYy9jJhNoWzjqNe-txM5mMk8mr1p5-PFoAGIThOfCcMTaxU1wJDddpzBiFPI9tXKTcxmiRZHbhyzRlN-8ho-wNGfHUpT3Jc0dC4klI35BZ4rKwcM6R97THPJmw12Scn0iIPAmTJ0yehJIGdSNkZafPj09J_FiVxM1FhRsx1Mb98qNFxWDar6Nak8LoASnR7bDdkWIj6t7uhq4SBq-k2GrRvGQ7ob637WmPlTSt_jzNux_74z-6Ad0U

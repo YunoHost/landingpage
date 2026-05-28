@@ -187,33 +187,30 @@ msgid ""
 " (re-)empower the greatest number of people and collectives."
 msgstr ""
 
-msgid ""
-"Phase 1. Sustaining its infrastructure, its code and the team’s work "
-"dynamics's useful to you"
+msgid "Phase 1. Preserving the basics"
 msgstr ""
 
-msgid "1.1. Preserve what's useful to you"
+msgid "1.1. Sustain its infrastructure and the team's work dynamics"
 msgstr ""
 
-msgid "€8,000"
-msgstr ""
-
-msgid ""
-"Donations are used primarily to maintain the existing system, in "
-"particular by paying infrastructure costs (YunoHost services and task "
-"automation) and allowing the team to meet at least twice a year."
-msgstr ""
-
-msgid "1.2. Stir the collective and its projects"
-msgstr ""
-
-msgid "€12,000"
+msgid "8,000 €"
 msgstr ""
 
 msgid ""
-"The team involved in the day-to-day development of YunoHost has been "
-"calling on a facilitator (a.k.a “stirrer”) to take care of the collective"
-" both humanly and administratively, as well as in its external relations."
+"Donations are used to pay for the infrastructure costs (YunoHost services"
+" and task automation) and to allow the team to meet 2 to 3 times a year."
+msgstr ""
+
+msgid "1.2. Facilitate the collective and its projects"
+msgstr ""
+
+msgid "12,000 €"
+msgstr ""
+
+msgid ""
+"Since 2024, a facilitator (known as “stirring officer”) is in charge to "
+"take care of the collective both humanly and administratively, as well as"
+" in its external relations."
 msgstr ""
 
 msgid "1.3. Maintain the codebase and provide support to the community"
@@ -226,6 +223,14 @@ msgid ""
 msgstr ""
 
 msgid "Phase 2. Boosting development"
+msgstr ""
+
+msgid "31,000 €"
+msgstr ""
+
+msgid ""
+"Know more on the main features we plan to develop this year and for which"
+" we are seeking funding"
 msgstr ""
 
 msgid "2.1. Packaging v3"
@@ -248,16 +253,20 @@ msgstr ""
 msgid ""
 "Replace SSOWat Single-Sign On solution with Authelia and support the more"
 " standard OpenID Connect authentication protocol, thus broadening the "
-"apps' SSO integration potential"
+"apps' SSO integration potentiali."
 msgstr ""
 
-msgid "2.3. Complete the self-registration feature"
+msgid "2.3. Self-registration feature"
 msgstr ""
 
-msgid "€5,000"
+msgid "10,000 €"
 msgstr ""
 
-msgid "Partially funded by Code Lutin*"
+msgid "5,000 €"
+msgstr ""
+
+#, python-format
+msgid "50% funded by Code Lutin<br/> through Copie Publique"
 msgstr ""
 
 msgid ""
@@ -265,13 +274,10 @@ msgid ""
 "links or a public registering form with admin validation."
 msgstr ""
 
-msgid "* This development is funded by Code Lutin through Copie Publique."
-msgstr ""
-
 msgid "2.4. Improve the backup and restore feature"
 msgstr ""
 
-msgid "€20,000"
+msgid "20,000 €"
 msgstr ""
 
 msgid ""
@@ -282,7 +288,7 @@ msgstr ""
 msgid "2.5. Initiate implementation of self-hosting federation"
 msgstr ""
 
-msgid "€6,000"
+msgid "6,000 €"
 msgstr ""
 
 msgid ""
@@ -338,13 +344,13 @@ msgstr ""
 
 msgid ""
 "Assuming a company with 4 full-time persons,\n"
-"each with €3,000 net / month,\n"
-"so around €5,200 charged / month,\n"
-"€5,200 x 4 person x 12 months = €249,600 / year"
+"each with 3,000 € net / month,\n"
+"so around 5,200 € charged / month,\n"
+"5,200 € x 4 person x 12 months = 249,600 € / year"
 msgstr ""
 
 msgid ""
-"volunteer work that could be valued at least €250,000 a year if "
+"volunteer work that could be valued at least 250,000 € a year if "
 "remunerated"
 msgstr ""
 
@@ -381,55 +387,28 @@ msgid "What are your donations used for?"
 msgstr ""
 
 msgid ""
-"Your donations guarantee our independence: they constitute our entire "
-"income in 2024."
-msgstr ""
-
-msgid "Revenues"
-msgstr ""
-
-msgid ""
-"In recent years, donations were around €15,000 per year, mainly from "
-"individuals."
-msgstr ""
-
-msgid ""
-"Between 2021 and 2023, the project benefited from grants from the "
-"[NLnet](https://nlnet.nl/project/InternetCube/) foundation and the "
-"[CodeLutin](https://mastodon.libre-"
-"entreprise.com/@codelutin/105066492461041800) company for a total of "
-"around €15,000 which were used to develop features for versions 4 and 11 "
-"of the project. The team is regularly applying for new grants."
-msgstr ""
-
-msgid ""
-"In addition, YunoHost receives significant in-kind donations in the form "
-"of servers or bandwidth from other non-profit organizations as well as "
-"from independent web companies such as Globenet, Gitoyen, TetaNeutral and"
-" Octopuce.<br>These in-kind donations are not represented in the graph "
-"below."
+"Your donations guarantee our independence: they keep accounting for the "
+"biggest share of our income until now."
 msgstr ""
 
 msgid "Expenses"
 msgstr ""
 
 msgid ""
-"Between 2022 and 2024, the collective spent around €12,500 a year.<br>In "
-"2025, the creation of the “stirrer” position for the collective will "
-"represent an additional expense of €12,000 per year. YunoHost would like "
-"to be able to continue its financial contributions to the development of "
-"important features for the project and its community. The projected "
-"budget for 2025 is therefore around €28,000."
+"Our expected budget for 2026-2027 reaches 100 000 € and breaks down in 5 "
+"categories."
 msgstr ""
 
 msgid "Project expenditure breaks down into the following categories:"
 msgstr ""
 
 msgid ""
-"**Development**: one-off funding linked to the development and "
-"maintenance of the project, thanks to both grants and donations received."
-" It should be noted, however, that this amount is negligible in relation "
-"to the voluntary work carried out by the team."
+"**Development**: one-off funding awarded to some of the most work-"
+"intensive features of [the roadmap](#roadmap) which require to ensure "
+"dedication over the long-term of experienced contributors. It should be "
+"noted, however, that this amount is negligible in relation to the "
+"voluntary work carried out by the contributors overall - YunoHost remains"
+" primarily a volunteer-based project."
 msgstr ""
 
 msgid ""
@@ -440,22 +419,80 @@ msgid ""
 msgstr ""
 
 msgid ""
-"**Events**: expenses to enable the team to attend events (e.g. "
-"[JdLL](https://jdll.org/)) and to meet in the same place once a year to "
-"work together on fundamental issues."
+"**Events**: expenses to enable the team to attend public events (e.g. "
+"JdLL) and to meet in the same place at least twice a year to work "
+"together on feature design and development strategy."
 msgstr ""
 
 msgid ""
-"**Collective facilitation**: financial compensation allocated to the "
-"tasks of administrative facilitation, animation and coordination of the "
-"collective. This is a new type of expense introduced in 2025, decided by "
-"the collective given the need to have a person dedicated to these aspects"
-" (a.k.a “stirrer”)."
+"**Facilitation**: financial compensation allocated to administrative "
+"tasks, animation and coordination of the collective. This is a new type "
+"of expense introduced in 2025, decided by the collective given the need "
+"to have a person dedicated to these aspects (a.k.a “stirrer”)."
 msgstr ""
 
 msgid ""
 "**Fees and other expenses**: bank charges or donations made to other "
 "collectives that support the project in kind."
+msgstr ""
+
+msgid "Revenues"
+msgstr ""
+
+msgid ""
+"YunoHost has been always able to rely on donations to fund its activity, "
+"together with occasional grants. Given the increased funding needs for "
+"this new season, the team has been looking for ways to lower the "
+"financial burden on the community by:"
+msgstr ""
+
+msgid "Applying for grants (with some success this year),"
+msgstr ""
+
+msgid ""
+"Trying to partner with civil society organizations through a dedicated "
+"project (with a lot of sweat but no financial success for now)."
+msgstr ""
+
+msgid ""
+"Starting to develop [a professional activity](https://yunohost.pro) which"
+" aims at allowing some core contributors of the project's team to spend "
+"more time on the project (some of it being paid by customers)."
+msgstr ""
+
+msgid "Here are our expected source of revenues:"
+msgstr ""
+
+msgid "**Recurring donations:** 2,500 €/month"
+msgstr ""
+
+msgid ""
+"**One-time donations:** ~72,000 € (~6,000 €/month) (grants included: "
+"~42,000 € (3,500 €/month))"
+msgstr ""
+
+msgid "NLNet through NGI0 (OIDC, Packaging v3): ~34,500 €"
+msgstr ""
+
+msgid ""
+"Code Lutin through Copie Publique (half of users self-registration): "
+"5,000 €"
+msgstr ""
+
+msgid "Civil Society (in progress) : (~2,500 €)"
+msgstr ""
+
+msgid "Yunohost.pro (in progress): ~ 500 €"
+msgstr ""
+
+msgid "**Total budget in 2026:** ~100,000 € (~8,500 €/month)"
+msgstr ""
+
+msgid ""
+"To this budget must also be added the also donations in-kind, in "
+"particular donations in the form of servers or bandwidth from other non-"
+"profit organizations (Globenet, Gitoyen and tetaneutral) as well as "
+"independent web companies (Octopuce)."
 msgstr ""
 
 msgid "Preserve the basics"

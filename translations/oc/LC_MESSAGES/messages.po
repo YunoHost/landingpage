@@ -1090,14 +1090,6 @@ msgstr ""
 "Sèm reconeissents envers nòstres mecènas que nos sostenon financièrament o "
 "via de dons d'infraestructura !"
 
-#~ msgid ""
-#~ "Thanks to all your support and donations, our 2025 donation campaign is a "
-#~ "success! <em>→ Checkout the campaign page and our dream map</em>"
-#~ msgstr ""
-#~ "Gràcias a vòstre sosten e a vòstres dons, nòstra campanha de dons de 2025 "
-#~ "es una capitada ! <em>→ Anatz veire la pagina de la campanha e nòstra "
-#~ "mapa dels sòmis</em>"
-
 #~ msgid "Thank you, the campaign for 2025 is a success!"
 #~ msgstr "Mercés, la campanha per 2025 es una capitada !"
 

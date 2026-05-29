@@ -218,7 +218,7 @@ msgid ""
 msgstr "Si vous donnez déjà, vous pouvez modifier votre don en cliquant ici !"
 
 msgid "Why support YunoHost in 2026?"
-msgstr "Pourquoi soutenir YunoHost en 2026&nbsp;?"
+msgstr "Pourquoi soutenir YunoHost en 2026 ?"
 
 msgid ""
 "YunoHost is a non-profit project that advocates a decentralized Internet, "
@@ -231,13 +231,13 @@ msgstr ""
 "plus grand nombre."
 
 msgid "Phase 1. Preserving the basics"
-msgstr "Préserver l'essentiel"
+msgstr "Phase 1. Préserver l'essentiel"
 
 msgid "1.1. Sustain its infrastructure and the team's work dynamics"
 msgstr "1.1 Maintenir l'infrastructure et la dynamique de travail de l'équipe"
 
 msgid "8,000 €"
-msgstr "8&nbsp;000&nbsp;€"
+msgstr "8.000 €"
 
 msgid ""
 "Donations are used to pay for the infrastructure costs (YunoHost services "
@@ -251,7 +251,7 @@ msgid "1.2. Facilitate the collective and its projects"
 msgstr "1.2. Faciliter l'animation et les projets du collectifs"
 
 msgid "12,000 €"
-msgstr "12&nbsp;000&nbsp;€"
+msgstr "12.000 €"
 
 msgid ""
 "Since 2024, a facilitator (known as “stirring officer”) is in charge to take "
@@ -263,11 +263,16 @@ msgstr ""
 msgid "1.3. Maintain the codebase and provide support to the community"
 msgstr "1.3. Maintenir la base de code et apporter du soutien à la communauté"
 
+#, fuzzy
 msgid ""
 "This budget will fund code and infrastructure maintenance, as well as time "
 "spent doing support or reviewing and integrating contributions from new "
 "volunteers."
 msgstr ""
+"Cette somme contribue symboliquement à soutenir les efforts produits pour "
+"assurer la maintenance de l'infrastructure et du code, ainsi que le temps "
+"requis pour les revues de code entre pair·es et leur intégration au code du "
+"projet."
 
 #, fuzzy
 #| msgid "3. Boosting development"
@@ -275,23 +280,28 @@ msgid "Phase 2. Boosting development"
 msgstr "3. Booster le développement"
 
 msgid "31,000 €"
-msgstr ""
+msgstr "31.000 €"
 
 msgid ""
 "Know more on the main features we plan to develop this year and for which we "
 "are seeking funding"
 msgstr ""
+"En apprendre davantage concernant les principales fonctionnalités que nous "
+"envisageons de développer si nous parvenons à trouver les moyens de les "
+"financer"
 
 msgid "2.1. Packaging v3"
-msgstr ""
+msgstr "2.1. Packaging v3"
 
 msgid "Funded by NLNet*"
-msgstr ""
+msgstr "Financé par NLNet*"
 
 msgid ""
 "New iteration on the packaging features with more declarativeness, "
 "robustness and effectiveness."
 msgstr ""
+"Une nouvelle version du format des packages d'apps de YunoHost, afin de les "
+"rendre plus déclaratifs, robustes et efficaces."
 
 msgid "* This development is funded by NLNet through NGI0."
 msgstr ""

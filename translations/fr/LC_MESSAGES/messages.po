@@ -597,9 +597,13 @@ msgid ""
 "aims at allowing some core contributors of the project's team to spend more "
 "time on the project (some of it being paid by customers)."
 msgstr ""
+"Démarrer [une activité de service à destination de professionnel·es]"
+"(https://yunohost.pro) dans le but de permettre à des contributeurices "
+"régulières de YunoHost de pouvoir consacrer davantage de temps au projet et "
+"de développer de nouvelles fonctionnalités tout en étant rémunéré·es."
 
 msgid "Here are our expected source of revenues:"
-msgstr ""
+msgstr "Voici les sources de revenues attendues :"
 
 #, fuzzy
 #| msgid "Recurring donations:"

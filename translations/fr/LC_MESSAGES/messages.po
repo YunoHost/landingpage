@@ -704,7 +704,6 @@ msgstr "Maintenir la solution"
 msgid "Self-registration feature"
 msgstr "Formulaire d'inscription"
 
-#, fuzzy
 msgid "Backup and restore feature"
 msgstr "Sauvegarde et restauration"
 

@@ -268,6 +268,14 @@ msgstr "1.2. Faciliter l'animation et les projets du collectifs"
 msgid "12,000 €"
 msgstr "12.000 €"
 
+msgid "8,000 €"
+msgstr ""
+
+#, fuzzy
+#| msgid ""
+#| "Donations are used primarily to maintain the existing system, in "
+#| "particular by paying infrastructure costs (YunoHost services and task "
+#| "automation) and allowing the team to meet at least once a year."
 msgid ""
 "Since 2024, a facilitator (known as “stirring officer”) is in charge to take "
 "care of the collective both humanly and administratively, as well as in its "
@@ -327,6 +335,11 @@ msgstr "* Ce développement est financé par NLNet au travers du dispositif NGI0
 msgid "2.2. Support OIDC"
 msgstr "2.2. Prise en charge de l'OIDC"
 
+#, fuzzy
+#| msgid ""
+#| "The donation campaign is <span id='campaign-completion'></span>％ "
+#| "complete, for needs estimated at €<span id='campaign-objective'></span>/"
+#| "month"
 msgid ""
 "Replace SSOWat Single-Sign On solution with Authelia and support the more "
 "standard OpenID Connect authentication protocol, thus broadening the apps' "

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-30 22:31+0200\n"
-"PO-Revision-Date: 2026-05-29 14:15+0000\n"
+"PO-Revision-Date: 2026-05-29 14:20+0000\n"
 "Last-Translator: ljf <ljf+ynh-trasnlate@grimaud.me>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/fr/>\n"
@@ -237,7 +237,7 @@ msgid "1.1. Sustain its infrastructure and the team's work dynamics"
 msgstr "1.1 Maintenir l'infrastructure et la dynamique de travail de l'équipe"
 
 msgid "8,000 €"
-msgstr "8 000€"
+msgstr "8&nbsp;000&nbsp;€"
 
 msgid ""
 "Donations are used to pay for the infrastructure costs (YunoHost services "
@@ -248,10 +248,8 @@ msgstr ""
 "l'équipage de se rencontrer 2 à 3 fois par an."
 
 msgid "1.2. Facilitate the collective and its projects"
-msgstr ""
+msgstr "1.2. Faciliter l'animation et les projets du collectifs"
 
-#, fuzzy
-#| msgid "€12,000"
 msgid "12,000 €"
 msgstr "12&nbsp;000&nbsp;€"
 

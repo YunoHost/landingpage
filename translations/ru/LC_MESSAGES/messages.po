@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2025-11-30 15:12+0000\n"
+"PO-Revision-Date: 2026-05-29 13:59+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/ru/>\n"
@@ -245,13 +245,13 @@ msgstr ""
 "будут распределены между следующими тремя целями:"
 
 msgid "Phase 1. Preserving the basics"
-msgstr ""
+msgstr "Этап 1. Сохранение основ"
 
 msgid "1.1. Sustain its infrastructure and the team's work dynamics"
-msgstr ""
+msgstr "1.1. Поддержка инфраструктуры и динамики работы команды"
 
 msgid "8,000 €"
-msgstr ""
+msgstr "8000 евро"
 
 #, fuzzy
 #| msgid ""
@@ -268,7 +268,7 @@ msgstr ""
 "год."
 
 msgid "1.2. Facilitate the collective and its projects"
-msgstr ""
+msgstr "1.2. Содействовие деятельности коллектива и его проектам"
 
 #, fuzzy
 #| msgid "€12,000"
@@ -280,15 +280,21 @@ msgid ""
 "care of the collective both humanly and administratively, as well as in its "
 "external relations."
 msgstr ""
+"Начиная с 2024 года, координатор (известный как «массовик-затейник») "
+"отвечает за обеспечение благополучия коллектива как в гуманитарном, так и в "
+"административном плане, а также в его внешних связях."
 
 msgid "1.3. Maintain the codebase and provide support to the community"
-msgstr ""
+msgstr "1.3. Поддержка кодовой базы и оказание поддержки сообществу"
 
 msgid ""
 "This budget will fund code and infrastructure maintenance, as well as time "
 "spent doing support or reviewing and integrating contributions from new "
 "volunteers."
 msgstr ""
+"Этот бюджет будет направлен на финансирование обслуживания кода и "
+"инфраструктуры, а также на оплату времени, затраченного на поддержку, "
+"проверку и интеграцию вклада новых волонтёров."
 
 #, fuzzy
 #| msgid "3. Boosting development"
@@ -296,29 +302,33 @@ msgid "Phase 2. Boosting development"
 msgstr "3. Стимулирование развития"
 
 msgid "31,000 €"
-msgstr ""
+msgstr "31000 евро"
 
 msgid ""
 "Know more on the main features we plan to develop this year and for which we "
 "are seeking funding"
 msgstr ""
+"Узнать больше об основных функциях, которые мы планируем разработать в этом "
+"году и для которых мы ищем финансирование"
 
 msgid "2.1. Packaging v3"
-msgstr ""
+msgstr "2.1. Пакетирование v3"
 
 msgid "Funded by NLNet*"
-msgstr ""
+msgstr "Финансируется NLNet*"
 
 msgid ""
 "New iteration on the packaging features with more declarativeness, "
 "robustness and effectiveness."
 msgstr ""
+"Новая версия особенностей пакетов, отличающаяся большей наглядностью, "
+"надежностью и эффективностью."
 
 msgid "* This development is funded by NLNet through NGI0."
-msgstr ""
+msgstr "* Данный проект финансируется компанией NLNet через NGI0."
 
 msgid "2.2. Support OIDC"
-msgstr ""
+msgstr "2.2. Поддержка OIDC"
 
 msgid ""
 "Replace SSOWat Single-Sign On solution with Authelia and support the more "

@@ -265,8 +265,7 @@ msgstr ""
 msgid "5,000 €"
 msgstr ""
 
-#, python-format
-msgid "50% funded by Code Lutin<br/> through Copie Publique"
+msgid "50&percnt; funded by Code Lutin<br/> through Copie Publique"
 msgstr ""
 
 msgid ""

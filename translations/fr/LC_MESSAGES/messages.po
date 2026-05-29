@@ -327,8 +327,8 @@ msgid "5,000 €"
 msgstr "5.000 €"
 
 #, python-format
-msgid "50% funded by Code Lutin<br/> through Copie Publique"
-msgstr "Financée à 50% par Code Lutin<br/> à travers Copie Publique"
+msgid "50&percnt; funded by Code Lutin<br/> through Copie Publique"
+msgstr "Financée à 50&percnt; par Code Lutin<br/> à travers Copie Publique"
 
 msgid ""
 "Make users able to autonomously register on the server through invite links "

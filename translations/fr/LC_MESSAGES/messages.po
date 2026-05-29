@@ -304,10 +304,10 @@ msgstr ""
 "rendre plus déclaratifs, robustes et efficaces."
 
 msgid "* This development is funded by NLNet through NGI0."
-msgstr ""
+msgstr "* Ce développement est financé par NLNet au travers le dispositif NGI0."
 
 msgid "2.2. Support OIDC"
-msgstr ""
+msgstr "2.2. Prise en charge de l'OIDC"
 
 msgid ""
 "Replace SSOWat Single-Sign On solution with Authelia and support the more "

@@ -7,11 +7,11 @@ from pathlib import Path
 
 stripe.api_key = os.getenv("STRIPE_KEY")
 
-campaign_start_date = int(datetime.datetime(2025, 1, 1).timestamp())
+campaign_start_date = int(datetime.datetime(2026, 1, 1).timestamp())
 
-# Bank
-bank_amount = 52
-bank_one_time_amount = 1293
+# Bank (last update with 04/2026 data since campaign_start_date)
+bank_amount = 82
+bank_one_time_amount = 52
 
 # Liberapay
 command = "curl -s https://liberapay.com/YunoHost | grep receives | awk '{print $3}' | tr '<>' '@' | awk -F@ '{print $3}' | tr -d '€'"
@@ -26,7 +26,7 @@ stripe_one_time_amount = 0
 recurring_donators_ids = set()
 currencies = {
     "eur": 1,
-    "usd": 0.908,
+    "usd": 0.8513,
 }
 
 
@@ -37,7 +37,7 @@ def compute_amount(amount, currency):
 
 
 # Stripe: query recurring donations
-subscriptions = stripe.Subscription.list(limit=100)
+subscriptions = stripe.Subscription.list()
 for sub in subscriptions.auto_paging_iter():
     recurring_donators_ids.add(sub["customer"])
     stripe_recurring_amount += compute_amount(sub["quantity"], sub["currency"])
@@ -47,11 +47,11 @@ payments = stripe.PaymentIntent.search(
     query=f'created>{campaign_start_date} AND status:"succeeded"'
 )
 for payment in payments.auto_paging_iter():
-    if payment["customer"] in recurring_donators_ids:
-        # Ignore payments from recurring donators
-        continue
+    # if payment["customer"] in recurring_donators_ids:
+    #     # Ignore payments from recurring donators
+    #     continue
     # Have to /100 the amounts (item units have a value of 100 for whatever reason)
-    stripe_one_time_amount += compute_amount(payment["amount"] / 100, sub["currency"])
+    stripe_one_time_amount += compute_amount(payment["amount"] / 100, payment["currency"])
 
 
 file = Path(__file__).parent.parent / "donate.json"

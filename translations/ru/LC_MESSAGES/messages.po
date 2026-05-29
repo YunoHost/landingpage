@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2026-05-29 14:15+0000\n"
+"PO-Revision-Date: 2026-05-29 14:20+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/ru/>\n"
@@ -700,36 +700,40 @@ msgid ""
 "organizations (Globenet, Gitoyen and tetaneutral) as well as independent web "
 "companies (Octopuce)."
 msgstr ""
+"К этому бюджету необходимо также добавить пожертвования в натуральной форме, "
+"в частности, пожертвования в виде серверов или пропускной способности от "
+"других некоммерческих организаций (Globenet, Gitoyen и tetaneutral), а также "
+"от независимых веб-компаний (Octopuce)."
 
 msgid "Preserve the basics"
-msgstr ""
+msgstr "Сохранение основ"
 
 msgid "Permanent facilitator"
-msgstr ""
+msgstr "Постоянный координатор"
 
 msgid "Maintain the solution"
-msgstr ""
+msgstr "Поддержка решения"
 
 msgid "Self-registration feature"
-msgstr ""
+msgstr "Функция саморегистрации"
 
 msgid "Backup and restore feature"
-msgstr ""
+msgstr "Функция резервного копирования и восстановления"
 
 msgid "Self-hosting federation"
-msgstr ""
+msgstr "Федерация саморазмещения"
 
 msgid "OpenID Connect"
-msgstr ""
+msgstr "Поддержка OpenID Connect"
 
 msgid "Packaging v3"
-msgstr ""
+msgstr "Пакетирование v3"
 
 msgid "Users self-registration"
-msgstr ""
+msgstr "Саморегистрация пользователей"
 
 msgid "Automatic backup and restore"
-msgstr ""
+msgstr "Автоматическое резервное копирование и восстановление"
 
 msgid "month"
 msgstr "месяц"
@@ -744,7 +748,7 @@ msgid "Grants"
 msgstr "Гранты"
 
 msgid "Direct contributor funding"
-msgstr ""
+msgstr "Прямое финансирование от спонсоров"
 
 msgid "Animation"
 msgstr "Координация"
@@ -776,7 +780,7 @@ msgstr ""
 "быть изменён в любое время."
 
 msgid "Timescale depend on grant / donations"
-msgstr ""
+msgstr "Сроки зависят от грантов/пожертвований"
 
 msgid "Checkout the dedicated roadmap page"
 msgstr "Ознакомьтесь со специальной страницей с планом действий"

@@ -914,6 +914,13 @@ msgid ""
 "We are thankful for our sponsors providing us with infrastructure and grants!"
 msgstr "نحن ممتنون لرعاتنا الذين يدعموننا بالبنية التحتية والهبات!"
 
+#~ msgid ""
+#~ "Thanks to all your support and donations, our 2025 donation campaign is a "
+#~ "success! <em>→ Checkout the campaign page and our dream map</em>"
+#~ msgstr ""
+#~ "بفضل دعمكم وتبرعاتكم، حققت حملة التبرعات لعام 2025 نجاحًا كبيرًا! <em>→ "
+#~ "اطلع على صفحة الحملة وخطتنا المستقبلية</em>"
+
 #~ msgid "€5,500"
 #~ msgstr "5500 يورو"
 

@@ -1083,6 +1083,14 @@ msgstr ""
 "Somos gratos por nossos patrocinadores nos fornecerem infraestrutura e "
 "subsídios!"
 
+#~ msgid ""
+#~ "Thanks to all your support and donations, our 2025 donation campaign is a "
+#~ "success! <em>→ Checkout the campaign page and our dream map</em>"
+#~ msgstr ""
+#~ "Graças a todo o seu apoio e às doações, nossa campanha de arrecadação de "
+#~ "fundos de 2025 foi um sucesso! <em>→ Confira a página da campanha e nosso "
+#~ "mapa dos sonhos</em>"
+
 #~ msgid "Thank you, the campaign for 2025 is a success!"
 #~ msgstr "Obrigado, a campanha para 2025 é um sucesso!"
 

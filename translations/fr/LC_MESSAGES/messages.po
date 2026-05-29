@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-30 22:31+0200\n"
 "PO-Revision-Date: 2026-05-29 15:53+0000\n"
-"Last-Translator: tituspijean <tituspijean@yunohost.org>\n"
+"Last-Translator: ljf <ljf+ynh-trasnlate@grimaud.me>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/fr/>\n"
 "Language: fr\n"
@@ -262,7 +262,6 @@ msgstr ""
 "soin du collectif à la fois humainement et administrativement, ainsi que de "
 "ses relations externes."
 
-#, fuzzy
 msgid "1.3. Maintain the codebase and provide support to the community"
 msgstr "1.3. Maintenir la base de code et apporter du soutien à la communauté"
 
@@ -626,22 +625,23 @@ msgid ""
 msgstr ""
 
 msgid "Preserve the basics"
-msgstr ""
+msgstr "Préserver l'essentiel"
 
 msgid "Permanent facilitator"
 msgstr ""
 
 msgid "Maintain the solution"
-msgstr ""
+msgstr "Maintenir la solution"
 
 msgid "Self-registration feature"
-msgstr ""
+msgstr "Formulaire d'inscription"
 
+#, fuzzy
 msgid "Backup and restore feature"
-msgstr ""
+msgstr "Sauvegarde et restauration"
 
 msgid "Self-hosting federation"
-msgstr ""
+msgstr "Protocole de fédération pour les serveurs auto-hébergés"
 
 msgid "OpenID Connect"
 msgstr ""
@@ -668,7 +668,7 @@ msgid "Grants"
 msgstr "Subventions"
 
 msgid "Direct contributor funding"
-msgstr ""
+msgstr "Financement direct de contributeurices"
 
 msgid "Animation"
 msgstr "Animation"
@@ -700,7 +700,7 @@ msgstr ""
 "est donc susceptible d'être modifiée à tout moment."
 
 msgid "Timescale depend on grant / donations"
-msgstr ""
+msgstr "Le calendrier dépend des subventions et des dons"
 
 msgid "Checkout the dedicated roadmap page"
 msgstr "Voir la page dédiée à la feuille de route"

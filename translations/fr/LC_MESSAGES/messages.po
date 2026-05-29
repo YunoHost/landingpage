@@ -273,6 +273,7 @@ msgstr ""
 "soin du collectif à la fois humainement et administrativement, ainsi que de "
 "ses relations externes."
 
+#, fuzzy
 msgid "1.3. Maintain the codebase and provide support to the community"
 msgstr "1.3. Maintenir la base de code et apporter du soutien à la communauté"
 

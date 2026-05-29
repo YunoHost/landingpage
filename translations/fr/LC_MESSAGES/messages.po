@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-30 22:31+0200\n"
 "PO-Revision-Date: 2026-05-29 15:53+0000\n"
-"Last-Translator: \"Mathieu W.\" <mathieuw@globenet.org>\n"
+"Last-Translator: tituspijean <tituspijean@yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/fr/>\n"
 "Language: fr\n"
@@ -609,10 +609,10 @@ msgid "Civil Society (in progress) : (~2,500 €)"
 msgstr "Société civile (en cours)&nbsp;: (~2.500&nbsp;€)"
 
 msgid "Yunohost.pro (in progress): ~ 500 €"
-msgstr ""
+msgstr "YunoHost.pro (en cours)&nbsp; ~500&nbsp;€"
 
 msgid "**Total budget in 2026:** ~100,000 € (~8,500 €/month)"
-msgstr ""
+msgstr "**Budget total en 2026&nbsp;:** ~100.000&nbsp;€ (~8.500&nbsp;€/mois)"
 
 msgid ""
 "To this budget must also be added the also donations in-kind, in particular "
@@ -620,12 +620,17 @@ msgid ""
 "organizations (Globenet, Gitoyen and tetaneutral) as well as independent web "
 "companies (Octopuce)."
 msgstr ""
+"À ce budget doivent s'ajouter des dons en nature, en particulier des dons "
+"sous la forme de serveurs ou bande passante venant d'autres organisations "
+"sans but lucratif (Globenet, Gitoyen, et tetaneutral), ainsi que des "
+"entreprises indépendantes du web (Octopuce)."
 
 msgid "Preserve the basics"
 msgstr "Préserver l'essentiel"
 
+#, fuzzy
 msgid "Permanent facilitator"
-msgstr ""
+msgstr "Animateur permanent"
 
 msgid "Maintain the solution"
 msgstr "Maintenir la solution"
@@ -633,7 +638,6 @@ msgstr "Maintenir la solution"
 msgid "Self-registration feature"
 msgstr "Formulaire d'inscription"
 
-#, fuzzy
 msgid "Backup and restore feature"
 msgstr "Sauvegarde et restauration"
 
@@ -641,16 +645,16 @@ msgid "Self-hosting federation"
 msgstr "Protocole de fédération pour les serveurs auto-hébergés"
 
 msgid "OpenID Connect"
-msgstr ""
+msgstr "OpenID Connect"
 
 msgid "Packaging v3"
-msgstr ""
+msgstr "Packaging v3"
 
 msgid "Users self-registration"
-msgstr ""
+msgstr "Auto-enregistrement des utilisateurices"
 
 msgid "Automatic backup and restore"
-msgstr ""
+msgstr "Sauvegarde et restauration automatiques"
 
 msgid "month"
 msgstr "mois"

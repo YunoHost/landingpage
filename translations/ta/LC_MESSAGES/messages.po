@@ -1,23 +1,17 @@
-# Portuguese translations for PROJECT.
-# Copyright (C) 2024 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2025-02-12 17:39+0000\n"
-"Last-Translator: OniriCorpe <oniricorpe@disroot.org>\n"
-"Language-Team: Portuguese <https://translate.yunohost.org/projects/yunohost/"
-"landingpage/pt/>\n"
-"Language: pt\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-22 14:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Generated-By: Babel 2.14.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Translate Toolkit 3.16.3\n"
 
 msgid ""
 "**YunoHost** is a system that installs itself on a **server**  \n"
@@ -30,37 +24,37 @@ msgid "YunoHost: garden your own piece of the Internet!"
 msgstr ""
 
 msgid "Accessibility menu"
-msgstr "Acessibilidade"
+msgstr ""
 
 msgid "Go to content"
-msgstr "Ir para o conteúdo"
+msgstr ""
 
 msgid "Go to navigation"
-msgstr "Ir para navegação"
+msgstr ""
 
 msgid "Go to page settings"
-msgstr "Ir para definições da página"
+msgstr ""
 
 msgid "Go to search"
-msgstr "Ir para pesquisa"
+msgstr ""
 
 msgid "Page settings"
-msgstr "Definições da página"
+msgstr ""
 
 msgid "Switch to a different language"
-msgstr "Mudar de idioma"
+msgstr ""
 
 msgid "Translate this page!"
-msgstr "Traduzir esta página!"
+msgstr ""
 
 msgid "Switch to dark mode"
-msgstr "Ativar modo noturno"
+msgstr ""
 
 msgid "Switch to light mode"
-msgstr "Ativar modo diurno"
+msgstr ""
 
 msgid "Yunohost logo"
-msgstr "Yunohost logo"
+msgstr ""
 
 msgid "Garden your own<br/>piece of the Internet!"
 msgstr ""
@@ -71,25 +65,25 @@ msgid ""
 msgstr ""
 
 msgid "Main menu"
-msgstr "Menu principal"
+msgstr ""
 
 msgid "Discover"
-msgstr "Descobrir"
+msgstr ""
 
 msgid "Applications"
-msgstr "Aplicações"
+msgstr ""
 
 msgid "Install"
-msgstr "Instalar"
+msgstr ""
 
 msgid "Documentation"
-msgstr "Documentação"
+msgstr ""
 
 msgid "Latest news"
-msgstr "Novidades"
+msgstr ""
 
 msgid "Community"
-msgstr "Comunidade"
+msgstr ""
 
 msgid "Legal"
 msgstr ""
@@ -200,9 +194,8 @@ msgid ""
 "If you are already donating, you can edit your donation by clicking here!"
 msgstr ""
 
-#, fuzzy
 msgid "Why support YunoHost in 2026?"
-msgstr "Yunohost logo"
+msgstr ""
 
 msgid ""
 "YunoHost is a non-profit project that advocates a decentralized Internet, "
@@ -374,9 +367,8 @@ msgid ""
 "volunteer work that could be valued at least 250,000 € a year if remunerated"
 msgstr ""
 
-#, fuzzy
 msgid "The community"
-msgstr "Comunidade"
+msgstr ""
 
 msgid "~10,000 instances in 77 countries"
 msgstr ""
@@ -550,9 +542,8 @@ msgstr ""
 msgid "Previsional"
 msgstr ""
 
-#, fuzzy
 msgid "Donations"
-msgstr "Documentação"
+msgstr ""
 
 msgid "Grants"
 msgstr ""
@@ -560,9 +551,8 @@ msgstr ""
 msgid "Direct contributor funding"
 msgstr ""
 
-#, fuzzy
 msgid "Animation"
-msgstr "Aplicações"
+msgstr ""
 
 msgid "Development"
 msgstr ""
@@ -676,47 +666,38 @@ msgid ""
 "link on our [donate.yunohost.org](https://donate.yunohost.org) page."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "With **YunoHost**, easily manage %(a server|a cloud|a website|mailboxes|a "
 "wiki|a social network|a video library|a blog|surveys|an accounting board|a "
 "game server|a forum|a chat|an ERP)%  \n"
 "for your friends, your association, your company"
 msgstr ""
-"Com o **YunoHost**, gere facilmente %(um servidor|uma cloud|um website|"
-"mailboxes|uma wiki|uma rede social|uma biblioteca multimédia|um blog|"
-"questionários|um dashboard de contabilidade|um servidor de jogos|um forúm|um "
-"chat|um ERP)%\n"
-"para os teus amigos, a tua associação, a tua empresa"
 
 msgid "Carousel"
-msgstr "Carrossel"
+msgstr ""
 
 msgid "Slide controls"
-msgstr "Controlos"
+msgstr ""
 
 msgid "User portal: dark mode"
-msgstr "Portal do utilizador: modo noturno"
+msgstr ""
 
 msgid "User portal: light mode with app description"
-msgstr "Portal do utilizador: modo diurno com descrição da app"
+msgstr ""
 
 msgid "Administration panel: homepage"
-msgstr "Painel de administração: página principal"
+msgstr ""
 
 msgid "Administration panel: app catalog"
-msgstr "Painel de administração: catálogo de aplicações"
+msgstr ""
 
 msgid "Administration panel: app installation"
-msgstr "Painel de administração: instalar aplicações"
+msgstr ""
 
 msgid ""
 "Screenshot of the user portal from which users can access the apps installed "
 "on the server, listing several applications installed."
 msgstr ""
-"Screenshot do portal do utilizador a partir de onde os utilizadores podem "
-"aceder às aplicações instaladas no servidor, ao listar as aplicações "
-"instaladas."
 
 msgid ""
 "Screenshot of the user portal from which users can access the apps installed "

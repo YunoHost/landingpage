@@ -476,6 +476,10 @@ msgstr "19+ langues supportées par le portail de connexion"
 msgid "The software and its ecosystem"
 msgstr "Le logiciel et son écosystème"
 
+#, fuzzy
+#| msgid ""
+#| "[540+ apps in the catalog](https://apps.yunohost.org/catalog) ([a brief "
+#| "history](https://apps.yunohost.org/charts))"
 msgid ""
 "[630+ apps in the catalog](https://apps.yunohost.org/catalog) ([a brief "
 "history](https://apps.yunohost.org/charts))"

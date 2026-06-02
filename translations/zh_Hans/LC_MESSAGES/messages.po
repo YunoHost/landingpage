@@ -242,9 +242,6 @@ msgstr ""
 
 msgid "1.1. Sustain its infrastructure and the team's work dynamics"
 msgstr ""
-"YunoHost 是一个非营利项目，倡导去中心化的互联网，采用开放、可互操作且简洁的技"
-"术，尊重隐私并（重新）赋权最多的个人和集体。<br>为此，我们今年目标筹集 "
-"€28,500，分配用于以下三个目标："
 
 msgid "8,000 €"
 msgstr ""

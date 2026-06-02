@@ -1087,14 +1087,6 @@ msgid ""
 msgstr ""
 "Eskertuta gaude gure babesleek azpiegitura eta dirulaguntzak emateagatik!"
 
-#~ msgid ""
-#~ "Thanks to all your support and donations, our 2025 donation campaign is a "
-#~ "success! <em>→ Checkout the campaign page and our dream map</em>"
-#~ msgstr ""
-#~ "Zuen babesari eta dohaintzei esker, 2025eko finantza-kanpaina "
-#~ "arrakastatsua izan da! <em>→ Begiratu kanpainaren orria eta gure ametsen "
-#~ "bideorria</em>"
-
 #~ msgid "Thank you, the campaign for 2025 is a success!"
 #~ msgstr "Eskerrik asko! 2025eko kanpainia arrakastatsua izan da!"
 

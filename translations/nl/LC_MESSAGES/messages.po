@@ -1090,14 +1090,6 @@ msgstr ""
 "We zijn dankbaar aan onze sponsors om ons met infrastructuur en financiële "
 "steun te voorzien!"
 
-#~ msgid ""
-#~ "Thanks to all your support and donations, our 2025 donation campaign is a "
-#~ "success! <em>→ Checkout the campaign page and our dream map</em>"
-#~ msgstr ""
-#~ "Bedankt voor al jullie steun en donaties, onze donatiecampagne van 2025 "
-#~ "was een succes!<em>→ Ontdek de campagnepagina en onze kaart van dromen </"
-#~ "em>"
-
 #~ msgid "Thank you, the campaign for 2025 is a success!"
 #~ msgstr "Bedankt, de campagne voor 2025 was een succes!"
 

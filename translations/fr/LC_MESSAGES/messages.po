@@ -220,6 +220,13 @@ msgstr "Si vous donnez déjà, vous pouvez modifier votre don en cliquant ici !"
 msgid "Why support YunoHost in 2026?"
 msgstr "Pourquoi soutenir YunoHost en 2026 ?"
 
+#, fuzzy
+#| msgid ""
+#| "YunoHost is a non-profit project that advocates a decentralized Internet, "
+#| "with open, interoperable and sober technologies that respect privacy and "
+#| "(re-)empower the greatest number of people and collectives.<br>To do so, "
+#| "we aim to collect €28,500 this year, to split between the following three "
+#| "objectives:"
 msgid ""
 "YunoHost is a non-profit project that advocates a decentralized Internet, "
 "with open, interoperable and sober technologies that respect privacy and "
@@ -240,8 +247,13 @@ msgid "8,000 €"
 msgstr "8.000 €"
 
 msgid "8,000 €"
-msgstr "8 000€"
+msgstr ""
 
+#, fuzzy
+#| msgid ""
+#| "Donations are used primarily to maintain the existing system, in "
+#| "particular by paying infrastructure costs (YunoHost services and task "
+#| "automation) and allowing the team to meet at least once a year."
 msgid ""
 "Donations are used to pay for the infrastructure costs (YunoHost services "
 "and task automation) and to allow the team to meet 2 to 3 times a year."

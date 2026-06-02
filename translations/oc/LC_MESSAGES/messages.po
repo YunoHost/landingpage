@@ -20,9 +20,6 @@ msgstr ""
 "X-Generator: Weblate 5.14.2\n"
 "Generated-By: Babel 2.14.0\n"
 
-msgid "YunoHost: garden your own piece of the Internet!"
-msgstr "YunoHost : jardinatz vòstre pròpri tròç d'Internet !"
-
 msgid ""
 "**YunoHost** is a system that installs itself on a **server**  \n"
 "and allows you to install and maintain - **with very little technical "

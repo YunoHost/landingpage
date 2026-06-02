@@ -985,18 +985,6 @@ msgstr ""
 "Wir sind dankbar für unsere Sponsoren, die uns Infrastruktur und Mittel zur "
 "Verfügung stellen!"
 
-#~ msgid "Thank you, the campaign for 2025 is a success!"
-#~ msgstr "Dank euch ist die Kampagne für 2025 ein Erfolg!"
-
-#~ msgid "€5,500"
-#~ msgstr "€5,500"
-
-#~ msgid "€11,000"
-#~ msgstr "€11,000"
-
-#~ msgid "YunoHost in 2024"
-#~ msgstr "YunoHost im Jahr 2024"
-
 #~ msgid ""
 #~ "Thanks to all your support and donations, our 2025 donation campaign is a "
 #~ "success! <em>→ Checkout the campaign page and our dream map</em>"

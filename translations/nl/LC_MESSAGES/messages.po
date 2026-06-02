@@ -194,8 +194,10 @@ msgstr ""
 "**haar beloftes na te komen**, en ons toelaat om **zorg te dragen voor de "
 "gemeenschap**, dit is waar je kan doneren!"
 
+#, fuzzy
+#| msgid "I still want to give to YunoHost:"
 msgid "I want to give to YunoHost:"
-msgstr "Ik wil geven aan YunoHost:"
+msgstr "Ik wil nog geven aan YunoHost:"
 
 msgid "Amount"
 msgstr "Bedrag"
@@ -218,8 +220,10 @@ msgstr ""
 "Als je al aan het doneren bent, kan je jouw donatie aanpassen door hier te "
 "klikken!"
 
+#, fuzzy
+#| msgid "Why support YunoHost in 2025?"
 msgid "Why support YunoHost in 2026?"
-msgstr "Waarom YunoHost steunen in 2026?"
+msgstr "Waarom YunoHost steunen in 2025?"
 
 #, fuzzy
 #| msgid ""

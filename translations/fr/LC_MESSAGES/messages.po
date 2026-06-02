@@ -441,6 +441,12 @@ msgstr "14 ans d'existence"
 msgid "about 30 regular contributors"
 msgstr "une trentaine de contributeurices actives régulièrement"
 
+#, fuzzy
+#| msgid ""
+#| "Assuming a company with 4 full-time persons,\n"
+#| "each with €3,000 net / month,\n"
+#| "so around €5,200 charged / month,\n"
+#| "€5,200 x 4 person x 12 months = €249,600 / year"
 msgid ""
 "Assuming a company with 4 full-time persons,\n"
 "each with 3,000 € net / month,\n"
@@ -452,6 +458,10 @@ msgstr ""
 "soit une dépense d'environ 5.200 € bruts par mois\n"
 "5.200 € x 4 personnes x 12 mois = 249.600 € par an"
 
+#, fuzzy
+#| msgid ""
+#| "volunteer work that could be valued at least €250,000 a year if "
+#| "remunerated"
 msgid ""
 "volunteer work that could be valued at least 250,000 € a year if remunerated"
 msgstr ""

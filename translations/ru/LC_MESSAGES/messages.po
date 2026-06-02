@@ -249,7 +249,7 @@ msgid "8,000 €"
 msgstr "8000 евро"
 
 msgid "8,000 €"
-msgstr "8000 евро"
+msgstr ""
 
 #, fuzzy
 #| msgid ""

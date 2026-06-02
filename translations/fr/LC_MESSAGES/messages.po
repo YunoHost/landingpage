@@ -649,7 +649,6 @@ msgstr ""
 msgid "Preserve the basics"
 msgstr "Préserver l'essentiel"
 
-#, fuzzy
 msgid "Permanent facilitator"
 msgstr "Animateur permanent"
 
@@ -659,6 +658,7 @@ msgstr "Maintenir la solution"
 msgid "Self-registration feature"
 msgstr "Formulaire d'inscription"
 
+#, fuzzy
 msgid "Backup and restore feature"
 msgstr "Sauvegarde et restauration"
 

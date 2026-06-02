@@ -483,6 +483,11 @@ msgstr ""
 "[630+ apps dans le catalogue](https://apps.yunohost.org/catalog) "
 "(un [petit historique](https://apps.yunohost.org/charts))"
 
+#, fuzzy
+#| msgid ""
+#| "760 Git code repositories ([core](https://github.com/orgs/YunoHost/"
+#| "repositories) + [apps](https://github.com/orgs/YunoHost-Apps/"
+#| "repositories))"
 msgid ""
 "1100+ Git code repositories ([core](https://github.com/orgs/YunoHost/"
 "repositories) + [apps](https://github.com/orgs/YunoHost-Apps/repositories))"
@@ -494,6 +499,10 @@ msgstr ""
 msgid "What are your donations used for?"
 msgstr "À quoi servent vos dons&nbsp;?"
 
+#, fuzzy
+#| msgid ""
+#| "Your donations guarantee our independence: they constitute our entire "
+#| "income in 2024."
 msgid ""
 "Your donations guarantee our independence: they keep accounting for the "
 "biggest share of our income until now."
@@ -515,6 +524,12 @@ msgid "Project expenditure breaks down into the following categories:"
 msgstr ""
 "Les dépenses du projet se répartissent selon les catégories suivantes&nbsp;:"
 
+#, fuzzy
+#| msgid ""
+#| "**Development**: one-off funding linked to the development and "
+#| "maintenance of the project, thanks to both grants and donations received. "
+#| "It should be noted, however, that this amount is negligible in relation "
+#| "to the voluntary work carried out by the team."
 msgid ""
 "**Development**: one-off funding awarded to some of the most work-intensive "
 "features of [the roadmap](#roadmap) which require to ensure dedication over "
@@ -540,6 +555,11 @@ msgstr ""
 "techniques, etc… Le montant de ces dépenses devrait réduire en 2025 suite à "
 "une migration sur un serveur dédié chez un hébergeur ami."
 
+#, fuzzy
+#| msgid ""
+#| "**Events**: expenses to enable the team to attend events (e.g. [JdLL]"
+#| "(https://jdll.org/)) and to meet in the same place once a year to work "
+#| "together on fundamental issues."
 msgid ""
 "**Events**: expenses to enable the team to attend public events (e.g. JdLL) "
 "and to meet in the same place at least twice a year to work together on "
@@ -549,6 +569,13 @@ msgstr ""
 "des événements (ex. [JdLL](https://jdll.org/)) et à se retrouver au même "
 "endroit deux fois par an pour faire avancer ensemble les sujets de fond."
 
+#, fuzzy
+#| msgid ""
+#| "**Collective facilitation**: financial compensation allocated to the "
+#| "tasks of administrative facilitation, animation and coordination of the "
+#| "collective. This is a new type of expense introduced in 2025, decided by "
+#| "the collective given the need to have a person dedicated to these aspects "
+#| "(a.k.a “stirrer”)."
 msgid ""
 "**Facilitation**: financial compensation allocated to administrative tasks, "
 "animation and coordination of the collective. This is a new type of expense "
@@ -571,7 +598,6 @@ msgstr ""
 msgid "Revenues"
 msgstr "Recettes"
 
-#, fuzzy
 msgid ""
 "YunoHost has been always able to rely on donations to fund its activity, "
 "together with occasional grants. Given the increased funding needs for this "
@@ -583,13 +609,11 @@ msgstr ""
 "augmentation pour cette nouvelle saison, l'équipe a cherché des moyens de "
 "diminuer la charge financière sur la communauté en&nbsp;:"
 
-#, fuzzy
 msgid "Applying for grants (with some success this year),"
 msgstr ""
 "Répondre à des appels à projets de fondations "
 "(avec un certain succès, cette année),"
 
-#, fuzzy
 msgid ""
 "Trying to partner with civil society organizations through a dedicated "
 "project (with a lot of sweat but no financial success for now)."

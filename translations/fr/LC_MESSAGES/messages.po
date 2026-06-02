@@ -582,11 +582,13 @@ msgstr ""
 "augmentation pour cette nouvelle saison, l'équipe a cherché des moyens de "
 "diminuer la charge financière sur la communauté en&nbsp;:"
 
+#, fuzzy
 msgid "Applying for grants (with some success this year),"
 msgstr ""
 "Répondre à des appels à projets de fondations "
 "(avec un certain succès, cette année),"
 
+#, fuzzy
 msgid ""
 "Trying to partner with civil society organizations through a dedicated "
 "project (with a lot of sweat but no financial success for now)."

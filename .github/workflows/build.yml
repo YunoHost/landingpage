@@ -49,7 +49,7 @@ jobs:
     - name: Ping Landingpage server
       uses: distributhor/workflow-webhook@v3
       with:
-        webhook_url: http://yunohost.org/github
+        webhook_url: https://yunohost.org/github
         webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
         webhook_type: json-extended
         data: '{"artifact_url": "${{ steps.set-artifact-url.outputs.artifact_url }}"}'

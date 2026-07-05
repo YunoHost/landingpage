@@ -91,15 +91,20 @@ then
 fi
 if [[ "${1:-}" == "" || "${1:-}" == "html"  ]]
 then
-    # Generate CSS, fonts etc
-    cp -Rf assets "$LANDINGPAGE_DIST_DIR"
+    mkdir "$LANDINGPAGE_DIST_DIR/assets"
+    cp -Rf assets/{css,img,js} "$LANDINGPAGE_DIST_DIR/assets"
+    rm -rf "$LANDINGPAGE_DIST_DIR/assets/img/fursona_orig.png"
 
+    mkdir -p "$LANDINGPAGE_DIST_DIR/assets/fonts/fontawesome"
+    cp -Rf "assets/fonts/fontawesome"/{css,webfonts} "$LANDINGPAGE_DIST_DIR/assets/fonts/fontawesome"
+
+    mkdir -p "$LANDINGPAGE_DIST_DIR/assets/fonts/source-sans/WOFF2"
+    cp -Rf "assets/fonts/source-sans/WOFF2/VF" "$LANDINGPAGE_DIST_DIR/assets/fonts/source-sans/WOFF2"
+
+    # Generate CSS, fonts etc
     ./assets/tailwindcss-linux \
         --config "$LANDINGPAGE_DIR/tailwind.config.js" \
         --content "$LANDINGPAGE_DIST_DIR/*.en.html" \
         --input "$LANDINGPAGE_DIR/assets/css/input.css" \
         --output "$LANDINGPAGE_DIST_DIR/assets/css/prod.min.css"
-
-    rm -rf "$LANDINGPAGE_DIST_DIR/assets/tailwindcss-linux-x64"
-    rm -rf "$LANDINGPAGE_DIST_DIR/assets/fonts/source-sans/.git"
 fi

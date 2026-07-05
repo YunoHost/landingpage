@@ -37,7 +37,20 @@ jobs:
         bin/regenerate.sh
 
     - name: Push the artifact
+      id: artifact-upload-step
       uses: actions/upload-artifact@v7.0.1
       with:
         name: Built landingpage
         path: dist
+
+    - name: Set artifact url
+      id: set-artifact-url
+      run: echo artifact_url=${{github.api_url}}/repos/${{github.repository}}/actions/artifacts/${{steps.artifact-upload-step.outputs.artifact-id}}/zip >> $GITHUB_OUTPUT
+
+    - name: Ping Landingpage server
+      uses: distributhor/workflow-webhook@v3
+      with:
+        webhook_url: http://yunohost.org:9000/hooks/github
+        webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
+        webhook_type: json-extended
+        data: '{"artifact_url": "${{ steps.set-artifact-url.outputs.artifact_url }}"}'

@@ -39,6 +39,8 @@ jobs:
 
     - name: Build
       run: |
+        STRIPE_KEY=${{secrets.STRIPE_KEY}} \
+          venv/bin/python3 bin/query_donations.py
         bin/regenerate.sh
 
     - name: Push the artifact

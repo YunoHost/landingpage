@@ -19,20 +19,23 @@ jobs:
       uses: actions/setup-python@v6.3.0
       with:
         python-version: 3.12
-        # regenerate.sh uses a venv, so this is useless
-        # cache: pip
-        # pip-install: -r requirements.txt
 
     - name: Cache
       uses: actions/cache@v5.1.0
       with:
         key: ${{ hashFiles('bin/*') }}
         path: |
+          venv
           assets/js/tailwinds.js
           assets/fonts/fontawesome.zip
           assets/fonts/source-sans
           assets/tailwindcss-linux
           assets/js/chart.js
+
+    - name: Setup venv
+      run: |
+        python -m venv venv
+        venv/bin/pip install -r requirements.txt
 
     - name: Build
       run: |

@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2026-01-19 17:27+0000\n"
-"Last-Translator: Vri <vrifox@vrifox.eu>\n"
+"PO-Revision-Date: 2026-09-01 13:30+0000\n"
+"Last-Translator: g-rppl <tech.g_r@mailbox.org>\n"
 "Language-Team: German <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/de/>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 msgid ""
@@ -197,10 +197,8 @@ msgstr ""
 "bleibt**, sich entwickelt, um **seine Ziele erreicht** und wir unsere "
 "**Gemeinschaft weiterhin stärken können**, dann kannst du hier spenden!"
 
-#, fuzzy
-#| msgid "I still want to give to YunoHost:"
 msgid "I want to give to YunoHost:"
-msgstr "Ich möchte YunoHost noch immer spenden:"
+msgstr "Ich möchte an YunoHost spenden:"
 
 msgid "Amount"
 msgstr "Menge"
@@ -221,10 +219,8 @@ msgid ""
 "If you are already donating, you can edit your donation by clicking here!"
 msgstr "Wenn du bereits spendest, kannst du deine Spende hier ändern!"
 
-#, fuzzy
-#| msgid "Why support YunoHost in 2025?"
 msgid "Why support YunoHost in 2026?"
-msgstr "Warum YunoHost im Jahr 2025 unterstützen?"
+msgstr "Warum YunoHost im Jahr 2026 unterstützen?"
 
 #, fuzzy
 #| msgid ""

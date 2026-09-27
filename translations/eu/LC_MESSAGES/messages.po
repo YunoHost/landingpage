@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2025-11-14 19:53+0000\n"
+"PO-Revision-Date: 2026-09-27 20:12+0000\n"
 "Last-Translator: xabirequejo <xabi.rn@gmail.com>\n"
 "Language-Team: Basque <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/eu/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 msgid ""
@@ -195,10 +195,8 @@ msgstr ""
 "betetzeko** eboluzionatu dezala nahi baduzu, eta **komunitatea zaintzeko** "
 "aukera eman nahi badiguzu, hemen eman dezakezu dohaintza!"
 
-#, fuzzy
-#| msgid "I still want to give to YunoHost:"
 msgid "I want to give to YunoHost:"
-msgstr "Hala ere, Yunohost-i eman nahi diot:"
+msgstr "Yunohost-i eman nahi diot:"
 
 msgid "Amount"
 msgstr "Kopurua"
@@ -221,18 +219,9 @@ msgstr ""
 "Dagoeneko dohaintza egiten ari bazara, zure dohaintza edita dezakezu hemen "
 "klik eginez!"
 
-#, fuzzy
-#| msgid "Why support YunoHost in 2025?"
 msgid "Why support YunoHost in 2026?"
-msgstr "Zergatik babestu YunoHost 2025ean?"
+msgstr "Zergatik babestu YunoHost 2026an?"
 
-#, fuzzy
-#| msgid ""
-#| "YunoHost is a non-profit project that advocates a decentralized Internet, "
-#| "with open, interoperable and sober technologies that respect privacy and "
-#| "(re-)empower the greatest number of people and collectives.<br>To do so, "
-#| "we aim to collect €28,500 this year, to split between the following three "
-#| "objectives:"
 msgid ""
 "YunoHost is a non-profit project that advocates a decentralized Internet, "
 "with open, interoperable and sober technologies that respect privacy and "
@@ -241,8 +230,7 @@ msgstr ""
 "YunoHost irabazi asmorik gabeko proiektua da, Internet deszentralizatuaren "
 "alde egiten duena, pribatutasuna errespetatzen duten eta ahalik eta pertsona "
 "eta kolektibo gehien (ber-)ahalduntzen dituzten teknologia ireki, "
-"elkarreragile eta soilekin.<br>Horretarako, 28.500€ bildu nahi ditugu "
-"aurten, honako hiru helburuen artean banatzeko:"
+"elkarreragile eta soilekin."
 
 msgid "Phase 1. Preserving the basics"
 msgstr ""
@@ -251,26 +239,19 @@ msgid "1.1. Sustain its infrastructure and the team's work dynamics"
 msgstr ""
 
 msgid "8,000 €"
-msgstr ""
+msgstr "8.000 €"
 
-#, fuzzy
-#| msgid ""
-#| "Donations are used primarily to maintain the existing system, in "
-#| "particular by paying infrastructure costs (YunoHost services and task "
-#| "automation) and allowing the team to meet at least once a year."
 msgid ""
 "Donations are used to pay for the infrastructure costs (YunoHost services "
 "and task automation) and to allow the team to meet 2 to 3 times a year."
 msgstr ""
-"Dohaintzak batez ere gaur egungo sistema mantentzeko erabiltzen dira, "
-"bereziki azpiegitura kostuak ordaintzeko (YunoHost zerbitzuak eta zereginen "
-"automatizazioa) eta taldeari gutxienez urtean behin biltzeko aukera emateko."
+"Dohaintzak azpiegitura kostuak ordaintzeko "
+"(YunoHost zerbitzuak eta zereginen automatizazioa) eta taldeari biltzeko "
+"aukera emateko."
 
 msgid "1.2. Facilitate the collective and its projects"
 msgstr ""
 
-#, fuzzy
-#| msgid "€12,000"
 msgid "12,000 €"
 msgstr "12.000 €"
 
@@ -295,7 +276,7 @@ msgid "Phase 2. Boosting development"
 msgstr "3. Bultzatu garapena"
 
 msgid "31,000 €"
-msgstr ""
+msgstr "31.000 €"
 
 msgid ""
 "Know more on the main features we plan to develop this year and for which we "
@@ -329,10 +310,10 @@ msgid "2.3. Self-registration feature"
 msgstr ""
 
 msgid "10,000 €"
-msgstr ""
+msgstr "10.000 €"
 
 msgid "5,000 €"
-msgstr ""
+msgstr "5.000 €"
 
 #, python-format
 msgid "50% funded by Code Lutin<br/> through Copie Publique"
@@ -347,7 +328,7 @@ msgid "2.4. Improve the backup and restore feature"
 msgstr ""
 
 msgid "20,000 €"
-msgstr ""
+msgstr "20.000 €"
 
 msgid ""
 "Integrate automatic backup features to YunoHost's core, including remote and "
@@ -358,17 +339,15 @@ msgid "2.5. Initiate implementation of self-hosting federation"
 msgstr ""
 
 msgid "6,000 €"
-msgstr ""
+msgstr "6.000 €"
 
 msgid ""
 "With the self-hosting federation concept, we plan to make it easier to "
 "connect to a friend instance in order to provide remote services each other."
 msgstr ""
 
-#, fuzzy
-#| msgid "2025 Campaign progress"
 msgid "2026 Campaign progress"
-msgstr "2025eko kanpainaren egoera"
+msgstr "2026ko kanpainaren egoera"
 
 #, fuzzy
 #| msgid ""
@@ -395,15 +374,11 @@ msgstr ""
 "Kanpaina amaiera <span id='campaign-completion'></span> burutu da, <span "
 "id='campaign-objective'></span> € hileko beharretarako"
 
-#, fuzzy
-#| msgid "Recurring donations:"
 msgid "Received donations:"
-msgstr "Dohaintza errepikakorrak:"
+msgstr "Jasotako dohaintzak:"
 
-#, fuzzy
-#| msgid "One-time donations:"
 msgid "Expected donations:"
-msgstr "Aldi baterako dohaintzak:"
+msgstr "Esperotako dohaintzak:"
 
 msgid "Ongoing grants:"
 msgstr ""
@@ -433,29 +408,19 @@ msgstr "14 urte Interneten"
 #, fuzzy
 #| msgid "about fifteen regularly active core-contributors"
 msgid "about 30 regular contributors"
-msgstr "aldiro aktiboak diren hamabost garapen-kolaboratzaile inguru"
+msgstr "aldiro aktiboak diren 30 garapen-kolaboratzaile inguru"
 
-#, fuzzy
-#| msgid ""
-#| "Assuming a company with 4 full-time persons,\n"
-#| "each with €3,000 net / month,\n"
-#| "so around €5,200 charged / month,\n"
-#| "€5,200 x 4 person x 12 months = €249,600 / year"
 msgid ""
 "Assuming a company with 4 full-time persons,\n"
 "each with 3,000 € net / month,\n"
 "so around 5,200 € charged / month,\n"
 "5,200 € x 4 person x 12 months = 249,600 € / year"
 msgstr ""
-"Baldin eta 4 pertsonako enpresa balitz, lanaldi osoan,\n"
+"Lau pertsonako enpresa balitz, lanaldi osoan,\n"
 "bakoitza 3.000 € garbi / hileko,\n"
 "beraz, hilean 5.200 € inguru kobratuta,\n"
 "5.200 € x 4 pertsona x 12 hilabete = 249.600 € / urteko"
 
-#, fuzzy
-#| msgid ""
-#| "volunteer work that could be valued at least €250,000 a year if "
-#| "remunerated"
 msgid ""
 "volunteer work that could be valued at least 250,000 € a year if remunerated"
 msgstr ""
@@ -468,32 +433,24 @@ msgstr "Komunitatea"
 msgid "~10,000 instances in 77 countries"
 msgstr "~10.000 instantzia 77 herrialdetan"
 
-#, fuzzy
-#| msgid "130 regular or occasional donors in 2024"
 msgid "~260 regular or occasional donors since January 1, 2026"
-msgstr "130 ohizko edo noizbehinkako emaile"
+msgstr "260 bat ohizko edo noizbehinkako emaile 2026ko urtarrilaren 1etik"
 
 msgid "8,700+ accounts on the various project channels (forge, forum, chat)"
 msgstr "8.700 kontu baino gehiago proiektuaren kanaletan (git, foroa, txata)"
 
-#, fuzzy
-#| msgid "15+ languages supported"
 msgid "19+ languages supported by the user portal"
-msgstr "15 hizkuntza baino gehiagotan"
+msgstr "Erabiltzaileen ataria 19 hizkuntza baino gehiagotan"
 
 msgid "The software and its ecosystem"
 msgstr "Softwarea eta ekosistema"
 
-#, fuzzy
-#| msgid ""
-#| "[540+ apps in the catalog](https://apps.yunohost.org/catalog) ([a brief "
-#| "history](https://apps.yunohost.org/charts))"
 msgid ""
 "[630+ apps in the catalog](https://apps.yunohost.org/catalog) ([a brief "
 "history](https://apps.yunohost.org/charts))"
 msgstr ""
-"[540+ app katalogoan](https://apps.yunohost.org/catalog) ([historia labur "
-"bat](https://apps.yunohost.org/charts))"
+"[630+ app katalogoan](https://apps.yunohost.org/catalog) "
+"([historia labur bat](https://apps.yunohost.org/charts))"
 
 #, fuzzy
 #| msgid ""
@@ -504,22 +461,18 @@ msgid ""
 "1100+ Git code repositories ([core](https://github.com/orgs/YunoHost/"
 "repositories) + [apps](https://github.com/orgs/YunoHost-Apps/repositories))"
 msgstr ""
-"760 Git kode-biltegi ([core](https://github.com/orgs/YunoHost/repositories) "
+"1100 Git kode-biltegi ([core](https://github.com/orgs/YunoHost/repositories) "
 "+ [aplikazioak](https://github.com/orgs/YunoHost-Apps/repositories))"
 
 msgid "What are your donations used for?"
 msgstr "Zertara bideratzen dira dohaintzak?"
 
-#, fuzzy
-#| msgid ""
-#| "Your donations guarantee our independence: they constitute our entire "
-#| "income in 2024."
 msgid ""
 "Your donations guarantee our independence: they keep accounting for the "
 "biggest share of our income until now."
 msgstr ""
-"Zuen dohaintzek gure independentzia bermatzen dute: 2024an gure diru-sarrera "
-"osoa osatzen dute."
+"Zuen dohaintzek gure independentzia bermatzen dute: gure diru-sarreren "
+"zatirik handiena izaten jarraitzen dute."
 
 msgid "Expenses"
 msgstr "Gastuak"
@@ -626,12 +579,10 @@ msgid ""
 msgstr ""
 
 msgid "Here are our expected source of revenues:"
-msgstr ""
+msgstr "Hona hemen espero ditugun diru-iturriak:"
 
-#, fuzzy
-#| msgid "Recurring donations:"
 msgid "**Recurring donations:** 2,500 €/month"
-msgstr "Dohaintza errepikakorrak:"
+msgstr "**Dohaintza errepikakorrak:** 2.500 €/hileko"
 
 msgid ""
 "**One-time donations:** ~72,000 € (~6,000 €/month) (grants included: ~42,000 "
@@ -683,7 +634,7 @@ msgid "OpenID Connect"
 msgstr ""
 
 msgid "Packaging v3"
-msgstr ""
+msgstr "v3 paketatzea"
 
 msgid "Users self-registration"
 msgstr ""

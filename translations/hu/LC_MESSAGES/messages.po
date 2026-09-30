@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2026-09-30 08:57+0000\n"
+"PO-Revision-Date: 2026-09-30 13:23+0000\n"
 "Last-Translator: Simon F <dauphindart@sans-nuage.fr>\n"
 "Language-Team: Hungarian <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/hu/>\n"
@@ -43,34 +43,34 @@ msgid "Go to content"
 msgstr "Tovább a tartalomhoz"
 
 msgid "Go to navigation"
-msgstr ""
+msgstr "Lépés a főmenühoz"
 
 msgid "Go to page settings"
-msgstr ""
+msgstr "Lépés az oldal beállításaihoz"
 
 msgid "Go to search"
-msgstr ""
+msgstr "Lépés a kereséshez"
 
 msgid "Page settings"
-msgstr ""
+msgstr "Oldalbeállítások"
 
 msgid "Switch to a different language"
-msgstr ""
+msgstr "Váltás egy másik nyelvre"
 
 msgid "Translate this page!"
-msgstr ""
+msgstr "Fordítsd le ezt az oldalt!"
 
 msgid "Switch to dark mode"
-msgstr ""
+msgstr "Váltás a sötét témára"
 
 msgid "Switch to light mode"
-msgstr ""
+msgstr "Váltás a világos témára"
 
 msgid "Yunohost logo"
-msgstr ""
+msgstr "YunoHost logó"
 
 msgid "Garden your own<br/>piece of the Internet!"
-msgstr ""
+msgstr "Gondozd a saját<br/>Internet-kerted!"
 
 msgid ""
 "Help us make YunoHost sustainable, discover our roadmap and how we use your "
@@ -78,25 +78,26 @@ msgid ""
 msgstr ""
 
 msgid "Main menu"
-msgstr ""
+msgstr "Főmenü"
 
+#, fuzzy
 msgid "Discover"
-msgstr ""
+msgstr "Felfedezés"
 
 msgid "Applications"
-msgstr ""
+msgstr "Alkalmazások"
 
 msgid "Install"
-msgstr ""
+msgstr "Telepítés"
 
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentáció"
 
 msgid "Latest news"
-msgstr ""
+msgstr "Legfrissebb hírek"
 
 msgid "Community"
-msgstr ""
+msgstr "Közösség"
 
 msgid "Legal"
 msgstr ""

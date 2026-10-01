@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2026-04-28 07:53+0000\n"
+"PO-Revision-Date: 2026-10-01 23:12+0000\n"
 "Last-Translator: Jaroslav Nezbeda <jarda-oscloud@protonmail.com>\n"
 "Language-Team: Czech <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 msgid ""
@@ -296,10 +296,10 @@ msgid "2.3. Self-registration feature"
 msgstr ""
 
 msgid "10,000 €"
-msgstr ""
+msgstr "10.000 €"
 
 msgid "5,000 €"
-msgstr ""
+msgstr "5.000 €"
 
 #, python-format
 msgid "50% funded by Code Lutin<br/> through Copie Publique"
@@ -325,7 +325,7 @@ msgid "2.5. Initiate implementation of self-hosting federation"
 msgstr ""
 
 msgid "6,000 €"
-msgstr ""
+msgstr "6.000 €"
 
 msgid ""
 "With the self-hosting federation concept, we plan to make it easier to "
@@ -376,7 +376,7 @@ msgid "The project"
 msgstr ""
 
 msgid "14 years of existence"
-msgstr ""
+msgstr "14 let existence"
 
 msgid "about 30 regular contributors"
 msgstr ""
@@ -422,7 +422,7 @@ msgid ""
 msgstr ""
 
 msgid "What are your donations used for?"
-msgstr ""
+msgstr "Na co používáme vaše příspěvky?"
 
 msgid ""
 "Your donations guarantee our independence: they keep accounting for the "
@@ -501,10 +501,8 @@ msgstr ""
 msgid "Here are our expected source of revenues:"
 msgstr ""
 
-#, fuzzy
-#| msgid "Recurring donations:"
 msgid "**Recurring donations:** 2,500 €/month"
-msgstr "Pravidelné příspěvky:"
+msgstr "**Pravidelné příspěvky:** 2.500 €/měsíc"
 
 msgid ""
 "**One-time donations:** ~72,000 € (~6,000 €/month) (grants included: ~42,000 "
@@ -547,13 +545,13 @@ msgid "Self-registration feature"
 msgstr ""
 
 msgid "Backup and restore feature"
-msgstr ""
+msgstr "Zálohy a obnovy"
 
 msgid "Self-hosting federation"
 msgstr ""
 
 msgid "OpenID Connect"
-msgstr ""
+msgstr "Připojit OpenID"
 
 msgid "Packaging v3"
 msgstr ""
@@ -861,21 +859,23 @@ msgid "Install applications<br>in just a few clicks"
 msgstr ""
 
 msgid "Set up backups"
-msgstr ""
+msgstr "Nastavit zálohy"
 
 msgid "Take care of your server"
-msgstr ""
+msgstr "Postarat se o sever"
 
 msgid "Guided tour"
-msgstr ""
+msgstr "Průvodce nastavením"
 
 msgid "Previous articles"
-msgstr ""
+msgstr "Předchozí články"
 
 msgid ""
 "**YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
 msgstr ""
+"**YunoHost** je nezisková **techno-kritický** projekt, vyvíjen a udržován "
+"**dobrovolníky**."
 
 msgid ""
 "We advocate a **decentralized** Internet, with **open**, **interoperable** "
@@ -888,7 +888,7 @@ msgid ""
 msgstr ""
 
 msgid "Code repositories"
-msgstr ""
+msgstr "Repozitáře s kódem"
 
 msgid "They support us <3"
 msgstr "Podporují nás <3"

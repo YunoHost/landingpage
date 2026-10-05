@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2026-01-09 04:10+0000\n"
+"PO-Revision-Date: 2026-10-05 15:37+0000\n"
 "Last-Translator: ButterflyOfFire <butterflyoffire@protonmail.com>\n"
 "Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/kab/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 msgid ""
@@ -179,10 +179,8 @@ msgid ""
 "this is where you can donate!"
 msgstr ""
 
-#, fuzzy
-#| msgid "Donate to YunoHost!"
 msgid "I want to give to YunoHost:"
-msgstr "Mudd tawsa i YunoHost!"
+msgstr "Bɣiɣ ad muddeɣ tawsa i YunoHost:"
 
 msgid "Amount"
 msgstr ""
@@ -203,10 +201,8 @@ msgid ""
 "If you are already donating, you can edit your donation by clicking here!"
 msgstr ""
 
-#, fuzzy
-#| msgid "YunoHost in 2024"
 msgid "Why support YunoHost in 2026?"
-msgstr "YunoHost deg 2024"
+msgstr "Acuɣer ara nɛawen YunoHost deg 2026?"
 
 msgid ""
 "YunoHost is a non-profit project that advocates a decentralized Internet, "
@@ -221,7 +217,7 @@ msgid "1.1. Sustain its infrastructure and the team's work dynamics"
 msgstr ""
 
 msgid "8,000 €"
-msgstr ""
+msgstr "8,000 €"
 
 msgid ""
 "Donations are used to pay for the infrastructure costs (YunoHost services "
@@ -231,10 +227,8 @@ msgstr ""
 msgid "1.2. Facilitate the collective and its projects"
 msgstr ""
 
-#, fuzzy
-#| msgid "€12,000"
 msgid "12,000 €"
-msgstr "€12,000"
+msgstr "12.000 €"
 
 msgid ""
 "Since 2024, a facilitator (known as “stirring officer”) is in charge to take "
@@ -251,13 +245,11 @@ msgid ""
 "volunteers."
 msgstr ""
 
-#, fuzzy
-#| msgid "3. Boosting development"
 msgid "Phase 2. Boosting development"
-msgstr "3. Snerni taneflit"
+msgstr "Aswir wis 2. Snerni taneflit"
 
 msgid "31,000 €"
-msgstr ""
+msgstr "31,000 €"
 
 msgid ""
 "Know more on the main features we plan to develop this year and for which we "
@@ -294,7 +286,7 @@ msgid "10,000 €"
 msgstr ""
 
 msgid "5,000 €"
-msgstr ""
+msgstr "5,000 €"
 
 #, python-format
 msgid "50% funded by Code Lutin<br/> through Copie Publique"
@@ -309,7 +301,7 @@ msgid "2.4. Improve the backup and restore feature"
 msgstr ""
 
 msgid "20,000 €"
-msgstr ""
+msgstr "20,000 €"
 
 msgid ""
 "Integrate automatic backup features to YunoHost's core, including remote and "
@@ -320,7 +312,7 @@ msgid "2.5. Initiate implementation of self-hosting federation"
 msgstr ""
 
 msgid "6,000 €"
-msgstr ""
+msgstr "6.000 €"
 
 msgid ""
 "With the self-hosting federation concept, we plan to make it easier to "
@@ -386,7 +378,7 @@ msgid "The community"
 msgstr "Tamɣiwant"
 
 msgid "~10,000 instances in 77 countries"
-msgstr ""
+msgstr "~10,000 n tummanin deg 77 n tmura"
 
 msgid "~260 regular or occasional donors since January 1, 2026"
 msgstr ""
@@ -394,10 +386,8 @@ msgstr ""
 msgid "8,700+ accounts on the various project channels (forge, forum, chat)"
 msgstr ""
 
-#, fuzzy
-#| msgid "15+ languages supported"
 msgid "19+ languages supported by the user portal"
-msgstr "15+ n tutlayin yettusefraken"
+msgstr "19+ n tutlayin yettusefraken deg wewwur n useqdac"
 
 msgid "The software and its ecosystem"
 msgstr ""
@@ -870,7 +860,7 @@ msgid "Code repositories"
 msgstr "Ikufan n tengalt"
 
 msgid "They support us <3"
-msgstr ""
+msgstr "Ttaken-aɣ-d afus <3"
 
 msgid ""
 "We are thankful for our sponsors providing us with infrastructure and grants!"

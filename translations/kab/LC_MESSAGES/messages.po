@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2026-10-05 15:37+0000\n"
+"PO-Revision-Date: 2026-10-06 16:25+0000\n"
 "Last-Translator: ButterflyOfFire <butterflyoffire@protonmail.com>\n"
 "Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/kab/>\n"
@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 
 msgid "YunoHost: garden your own piece of the Internet!"
-msgstr ""
+msgstr "YunoHost : ẓẓut aḥric-nwen n Internet!"
 
 msgid "Accessibility menu"
 msgstr ""
@@ -64,7 +64,7 @@ msgid "Yunohost logo"
 msgstr "Alugu n YunoHost"
 
 msgid "Garden your own<br/>piece of the Internet!"
-msgstr ""
+msgstr "Ẓẓut aḥric-nwen<br/>deg Internet!"
 
 msgid ""
 "Help us make YunoHost sustainable, discover our roadmap and how we use your "
@@ -93,7 +93,7 @@ msgid "Community"
 msgstr "Tamɣiwant"
 
 msgid "Legal"
-msgstr ""
+msgstr "Usḍif"
 
 msgid "License"
 msgstr "Turagt"
@@ -102,7 +102,7 @@ msgid "Terms of services"
 msgstr "Tiwtilin n useqdec"
 
 msgid "Organization"
-msgstr ""
+msgstr "Tuddsa"
 
 msgid "Follow"
 msgstr "Ḍfeṛ-aɣ-d"
@@ -120,7 +120,7 @@ msgid "Use"
 msgstr "Seqdec"
 
 msgid "Apps store"
-msgstr ""
+msgstr "Akaram n yesnasen"
 
 msgid "Forum"
 msgstr ""
@@ -132,7 +132,7 @@ msgid "Services status"
 msgstr ""
 
 msgid "Changelog"
-msgstr ""
+msgstr "Aɣmis n ibeddilen"
 
 msgid "Contribute"
 msgstr "Ttekki"
@@ -183,10 +183,10 @@ msgid "I want to give to YunoHost:"
 msgstr "Bɣiɣ ad muddeɣ tawsa i YunoHost:"
 
 msgid "Amount"
-msgstr ""
+msgstr "Azal n lexlaṣ"
 
 msgid "Currency"
-msgstr ""
+msgstr "Tadrimt"
 
 msgid "Frequency"
 msgstr ""
@@ -283,7 +283,7 @@ msgid "2.3. Self-registration feature"
 msgstr ""
 
 msgid "10,000 €"
-msgstr ""
+msgstr "10.000 €"
 
 msgid "5,000 €"
 msgstr "5,000 €"
@@ -358,10 +358,10 @@ msgid "The project"
 msgstr "Asenfar"
 
 msgid "14 years of existence"
-msgstr ""
+msgstr "14 n yiseggasen n tudert"
 
 msgid "about 30 regular contributors"
-msgstr ""
+msgstr "azal n tlatin gar yimtekkiyen d temtekkiyin i yezgan ttekkin"
 
 msgid ""
 "Assuming a company with 4 full-time persons,\n"
@@ -403,7 +403,7 @@ msgid ""
 msgstr ""
 
 msgid "What are your donations used for?"
-msgstr ""
+msgstr "D acu i nxeddem s tukciwin-nwen?"
 
 msgid ""
 "Your donations guarantee our independence: they keep accounting for the "
@@ -565,10 +565,10 @@ msgid "Development"
 msgstr "Taneflit"
 
 msgid "Infrastructure"
-msgstr ""
+msgstr "Tanaddawt"
 
 msgid "Events"
-msgstr ""
+msgstr "Tidyanin"
 
 msgid "Others"
 msgstr "Ayen nniḍen"
@@ -681,7 +681,7 @@ msgid ""
 msgstr ""
 
 msgid "Carousel"
-msgstr ""
+msgstr "Amzizzel"
 
 msgid "Slide controls"
 msgstr ""
@@ -693,7 +693,7 @@ msgid "User portal: light mode with app description"
 msgstr ""
 
 msgid "Administration panel: homepage"
-msgstr ""
+msgstr "Agalis n tedbelt: asebter agejdan"
 
 msgid "Administration panel: app catalog"
 msgstr ""
@@ -726,6 +726,9 @@ msgid ""
 "when installing the Nextcloud application. The interface asks a few "
 "technical questions regarding settings for the installation."
 msgstr ""
+"Tuṭṭfa n ugdil n ugalis n tedbelt web i d-yeskanayen tafelwit n usbeddi mi "
+"ara yettusebded usnas Nextcloud. Agrudem-a deg-s kra n isteqsiyen "
+"itiknikanen ɣef yiɣewwaren n usbeddi."
 
 msgid "Previous slide"
 msgstr ""
@@ -749,13 +752,13 @@ msgid "synchronize your calendars and contacts"
 msgstr ""
 
 msgid "keep your passwords and notes safe"
-msgstr ""
+msgstr "ḥerzet awalen-nwen n uɛeddi d tezmilin-nwen s tɣellist"
 
 msgid "host mailboxes"
 msgstr ""
 
 msgid "organize your photos, videos and music"
-msgstr ""
+msgstr "suddset tiwlafin-nwen, tividyutin-nwen d uẓawan-nwen"
 
 msgid "join alternative social media"
 msgstr ""
@@ -764,13 +767,13 @@ msgid "For small organizations"
 msgstr "I tuddsiwin timecṭaḥ"
 
 msgid "host your own website"
-msgstr ""
+msgstr "sezdɣet asmel-nwen web"
 
 msgid "share files in common (e.g. with Nextcloud)"
-msgstr ""
+msgstr "bḍut ifuyla gar-awen (md. s Nextcloud)"
 
 msgid "edit multiple documents in real time"
-msgstr ""
+msgstr "ẓerget araten lwaḥid deg yiwet n teswiɛt"
 
 msgid "manage your accounting"
 msgstr ""
@@ -779,7 +782,7 @@ msgid "set up a team chat"
 msgstr ""
 
 msgid "Explore the app catalog"
-msgstr ""
+msgstr "Snirem akaram n yesnasen"
 
 msgid "How to get started"
 msgstr "Amek ara tebduḍ"
@@ -804,10 +807,10 @@ msgid "Old tower or portable (*ordinosaur*)"
 msgstr ""
 
 msgid "Online server (VPS)"
-msgstr ""
+msgstr "Aqeddac deg internet (VPS)"
 
 msgid "Compare"
-msgstr ""
+msgstr "Serwes"
 
 msgid "Install YunoHost"
 msgstr "Asebded n YunoHost"
@@ -827,7 +830,7 @@ msgid "Enjoy!"
 msgstr "Faṛeṣ!"
 
 msgid "Install applications<br>in just a few clicks"
-msgstr ""
+msgstr "Sbeddet isnasen<br>s kra kan n yisitiyen"
 
 msgid "Set up backups"
 msgstr ""
@@ -839,7 +842,7 @@ msgid "Guided tour"
 msgstr ""
 
 msgid "Previous articles"
-msgstr ""
+msgstr "Imagraden yezrin"
 
 msgid ""
 "**YunoHost** is a non-profit **technocritical** project, developed and "

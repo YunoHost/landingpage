@@ -72,7 +72,7 @@ msgstr "قوموا ببستنة <br/>رقعتكم الخاصة من الإنتر
 
 msgid ""
 "Help us make YunoHost sustainable, discover our roadmap and how we use your "
-"donations! <em>→ Checkout our donation campaign page</em>"
+"donations! <em>→ Checkout our 2026 donation campaign page</em>"
 msgstr ""
 
 msgid "Main menu"
@@ -308,8 +308,7 @@ msgstr ""
 msgid "5,000 €"
 msgstr ""
 
-#, python-format
-msgid "50% funded by Code Lutin<br/> through Copie Publique"
+msgid "50&percnt; funded by Code Lutin<br/> through Copie Publique"
 msgstr ""
 
 msgid ""

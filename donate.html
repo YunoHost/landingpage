@@ -8,6 +8,15 @@
 {% block assets %}
 {% if not dev %}
 <script src="https://js.stripe.com/v3/"></script>
+{% else %}
+<script>
+/* Fake Stripe for dev only */
+function Stripe(a){
+    var stripe = {};
+    stripe.redirectToCheckout = function(data) { return new Promise((resolve, reject) => {}); };
+    return stripe;
+};
+</script>
 {% endif %}
 <script src="assets/js/chart.js"></script>
 <link rel="stylesheet" href="assets/css/roadmap.css" />
@@ -48,7 +57,11 @@
       <div class="glow-light dark:glow-dark pt-3">
          <img class="ps-3 hidden md:inline-block" src="assets/img/nyancat.gif" style="transform: scaleX(-1);" aria-hidden="true" />
          <button id="submit" class="text-xl font-bold px-4 py-2 bg-pink-500 text-white hover:saturate-150" >
-           {{ _("Donate") }}
+           <span id="donate-text">{{ _('Donate') }}</span>
+           <span id="loading-text">
+               {{ _('Anti-bot detection...') }}
+               <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+               <span style="font-size:0.6em;">{{ _('Please wait the end of the progress bar') }}</span></span>
          </button>
          <img class="inline-block ps-3" src="assets/img/nyancat.gif" aria-hidden="true" />
       </div>
@@ -60,49 +73,7 @@
       </div>
     </div>
 
-    <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function() {
-        window.stripe = Stripe(document.getElementById('public_key').value);
-
-        // When the form is submitted...
-        var submitBtn = document.querySelector('#submit');
-        submitBtn.addEventListener('click', function (evt) {
-            var quantity = parseInt(document.getElementById('quantity').value);
-            var currency = document.getElementById('currency').value;
-            var frequency = document.getElementById('frequency').value;
-            //var csrf = document.getElementById('csrf').value;
-
-            // Create the checkout session.
-            fetch('https://donate.yunohost.org/create-checkout-session', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    // csrf: csrf,
-                    quantity: quantity,
-                    currency: currency,
-                    frequency: frequency
-                }),
-            }).then(function (result) {
-                return result.json();
-            }).then(function (data) {
-                // Redirect to Checkout. with the ID of the
-                // CheckoutSession created on the server.
-                stripe.redirectToCheckout({
-                    sessionId: data.sessionId,
-                })
-                    .then(function(result) {
-                        // If redirection fails, display an error to the customer.
-                        if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                        }
-                    });
-            });
-        });
-    });
-    </script>
+    <script type="text/javascript" src="https://donate.yunohost.org/index.js"></script>
 
 </section>
 

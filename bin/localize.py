@@ -112,6 +112,11 @@ def main() -> None:
             assert r.status_code == 200
         except Exception as e:
             j = json.loads(open("translate_stats.json").read())
+            if "results" not in j:
+                j = [
+                    {"code": lang, "translated_percent": 100}
+                    for lang in "en,fr,ar,ca,de,eo,es,eu,fa,gl,id,it,ja,nb_NO,nl,oc,pl,pt,ru,uk,zh_Hans,bn_BD,br,ckb,cs,da,el,fi,he,hi,hu,kab,ko,lt,mk,ne,pt_BR,sk,sl,sv,te,tr,nn,uz,ta".split(",")
+                }]
         else:
             open("translate_stats.json", "w").write(r.text)
             j = r.json()

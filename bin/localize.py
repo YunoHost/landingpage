@@ -108,7 +108,7 @@ def main() -> None:
     else:
         # Fetch weblate statistics to list locales translated abode a certain treshold
         try:
-            r = requests.get("https://translate.yunohost.org/api/components/yunohost/landingpage/statistics/", timeout=5)
+            r = requests.get("https://translate.yunohost.org/api/components/yunohost/landingpage/statistics.json", timeout=5)
             assert r.status_code == 200
         except Exception as e:
             j = json.loads(open("translate_stats.json").read())

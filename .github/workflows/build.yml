@@ -13,12 +13,12 @@ jobs:
     permissions:
       contents: read
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7
 
     - name: Setup Python
-      uses: actions/setup-python@v6.3.0
+      uses: actions/setup-python@v7
       with:
-        python-version: 3.12
+        python-version: 3.13
 
     - name: Cache
       uses: actions/cache@v5.1.0
@@ -34,8 +34,9 @@ jobs:
 
     - name: Setup venv
       run: |
-        python -m venv venv
-        venv/bin/pip install -r requirements.txt
+        python3 -m venv venv
+        source venv/bin/activate
+        pip install -r requirements.txt
 
     - name: Build
       run: |

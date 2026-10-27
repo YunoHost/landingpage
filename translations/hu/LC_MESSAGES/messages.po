@@ -8,87 +8,96 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-09-30 13:23+0000\n"
+"Last-Translator: Simon F <dauphindart@sans-nuage.fr>\n"
+"Language-Team: Hungarian <https://translate.yunohost.org/projects/yunohost/"
+"landingpage/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.14.3\n"
 "Generated-By: Babel 2.14.0\n"
 
+#, fuzzy
 msgid ""
 "**YunoHost** is a system that installs itself on a **server**  \n"
 "and allows you to install and maintain - **with very little technical "
 "knowledge** -  \n"
 "digital services (apps) **that you control**."
 msgstr ""
+"A **YunoHost** egy olyan **szerverre** telepített rendszer, amelynek "
+"segítségével akár - **nagyon kevés technikai tudással** - is futtathatsz "
+"digitális szolgáltatásokat (appokat)."
 
+#, fuzzy
 msgid "YunoHost: garden your own piece of the Internet!"
-msgstr ""
+msgstr "YunoHost: gondozd a saját Internet-kerted!"
 
+#, fuzzy
 msgid "Accessibility menu"
-msgstr ""
+msgstr "Hozzáférhetőségi menü"
 
 msgid "Go to content"
-msgstr ""
+msgstr "Tovább a tartalomhoz"
 
 msgid "Go to navigation"
-msgstr ""
+msgstr "Lépés a főmenühoz"
 
 msgid "Go to page settings"
-msgstr ""
+msgstr "Lépés az oldal beállításaihoz"
 
 msgid "Go to search"
-msgstr ""
+msgstr "Lépés a kereséshez"
 
 msgid "Page settings"
-msgstr ""
+msgstr "Oldalbeállítások"
 
 msgid "Switch to a different language"
-msgstr ""
+msgstr "Váltás egy másik nyelvre"
 
 msgid "Translate this page!"
-msgstr ""
+msgstr "Fordítsd le ezt az oldalt!"
 
 msgid "Switch to dark mode"
-msgstr ""
+msgstr "Váltás a sötét témára"
 
 msgid "Switch to light mode"
-msgstr ""
+msgstr "Váltás a világos témára"
 
 msgid "Yunohost logo"
-msgstr ""
+msgstr "YunoHost logó"
 
 msgid "Garden your own<br/>piece of the Internet!"
-msgstr ""
+msgstr "Gondozd a saját<br/>Internet-kerted!"
 
 msgid ""
 "Help us make YunoHost sustainable, discover our roadmap and how we use your "
-"donations! <em>→ Checkout our donation campaign page</em>"
+"donations! <em>→ Checkout our 2026 donation campaign page</em>"
 msgstr ""
 
 msgid "Main menu"
-msgstr ""
+msgstr "Főmenü"
 
+#, fuzzy
 msgid "Discover"
-msgstr ""
+msgstr "Felfedezés"
 
 msgid "Applications"
-msgstr ""
+msgstr "Alkalmazások"
 
 msgid "Install"
-msgstr ""
+msgstr "Telepítés"
 
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentáció"
 
 msgid "Latest news"
-msgstr ""
+msgstr "Legfrissebb hírek"
 
 msgid "Community"
-msgstr ""
+msgstr "Közösség"
 
 msgid "Legal"
 msgstr ""
@@ -286,8 +295,7 @@ msgstr ""
 msgid "5,000 €"
 msgstr ""
 
-#, python-format
-msgid "50% funded by Code Lutin<br/> through Copie Publique"
+msgid "50&percnt; funded by Code Lutin<br/> through Copie Publique"
 msgstr ""
 
 msgid ""

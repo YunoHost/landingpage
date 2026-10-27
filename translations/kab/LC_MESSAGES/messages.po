@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-03 07:20+0200\n"
-"PO-Revision-Date: 2026-01-09 04:10+0000\n"
+"PO-Revision-Date: 2026-10-27 20:55+0000\n"
 "Last-Translator: ButterflyOfFire <butterflyoffire@protonmail.com>\n"
 "Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost/"
 "landingpage/kab/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 msgid ""
@@ -26,12 +26,16 @@ msgid ""
 "knowledge** -  \n"
 "digital services (apps) **that you control**."
 msgstr ""
+"**YunoHost** d anagraw yettusbeddayen ɣef **uqeddac**  \n"
+"yerna ad ak-yeǧǧ ad tesbeddeḍ yernu ad tessefrekeḍ - **s cwiṭ kan n tmusni "
+"tatiknikant** -  \n"
+"imeẓla umḍinen (isnasen) **ideg ara tḥekkmeḍ s ufus-ik**."
 
 msgid "YunoHost: garden your own piece of the Internet!"
-msgstr ""
+msgstr "YunoHost : ẓẓut aḥric-nwen n Internet!"
 
 msgid "Accessibility menu"
-msgstr ""
+msgstr "Umuɣ n tuffart"
 
 msgid "Go to content"
 msgstr "Ddu ar ugbur"
@@ -55,21 +59,25 @@ msgid "Translate this page!"
 msgstr "Suqel asebter-a!"
 
 msgid "Switch to dark mode"
-msgstr ""
+msgstr "Uɣal ɣer uskar aberkan"
 
 msgid "Switch to light mode"
-msgstr ""
+msgstr "Uɣal ɣer uskar aceɛlal"
 
 msgid "Yunohost logo"
 msgstr "Alugu n YunoHost"
 
 msgid "Garden your own<br/>piece of the Internet!"
-msgstr ""
+msgstr "Ẓẓut aḥric-nwen<br/>deg Internet!"
 
+#, fuzzy
 msgid ""
 "Help us make YunoHost sustainable, discover our roadmap and how we use your "
-"donations! <em>→ Checkout our donation campaign page</em>"
+"donations! <em>→ Checkout our 2026 donation campaign page</em>"
 msgstr ""
+"Ɛiwen-aɣ iwakken ad nerr YunoHost ad yeqqim i lebda, issin aɣawas-nneɣ n "
+"ubrid d wamek i nesseqdac tiwsiwin-ik! <em>→ Wali asebter n umussu n "
+"twisiwin</em>"
 
 msgid "Main menu"
 msgstr "Umuɣ agejdan"
@@ -93,7 +101,7 @@ msgid "Community"
 msgstr "Tamɣiwant"
 
 msgid "Legal"
-msgstr ""
+msgstr "Usḍif"
 
 msgid "License"
 msgstr "Turagt"
@@ -102,7 +110,7 @@ msgid "Terms of services"
 msgstr "Tiwtilin n useqdec"
 
 msgid "Organization"
-msgstr ""
+msgstr "Tuddsa"
 
 msgid "Follow"
 msgstr "Ḍfeṛ-aɣ-d"
@@ -120,19 +128,19 @@ msgid "Use"
 msgstr "Seqdec"
 
 msgid "Apps store"
-msgstr ""
+msgstr "Akaram n yesnasen"
 
 msgid "Forum"
 msgstr ""
 
 msgid "Self-help chat"
-msgstr ""
+msgstr "Adiwenni n tallalt"
 
 msgid "Services status"
-msgstr ""
+msgstr "Addad n yimeẓla"
 
 msgid "Changelog"
-msgstr ""
+msgstr "Aɣmis n ibeddilen"
 
 msgid "Contribute"
 msgstr "Ttekki"
@@ -141,10 +149,11 @@ msgid "Donate"
 msgstr "Mudd tawsa"
 
 msgid "Issues tracker"
-msgstr ""
+msgstr "Aḍfar n wuguren"
 
+#, fuzzy
 msgid "Roadmap"
-msgstr ""
+msgstr "Aɣawas n ubrid"
 
 msgid "Security"
 msgstr "Taɣellist"
@@ -161,37 +170,47 @@ msgstr "Tasuqilt"
 msgid "Donate to YunoHost!"
 msgstr "Mudd tawsa i YunoHost!"
 
+#, fuzzy
 msgid ""
 "YunoHost has been around **since 2012** and is essentially developed **on a "
 "voluntary basis** and **outside the commercial sector**."
 msgstr ""
+"YunoHost yella-d **seg 2012** yerna yettwasnefli-d s wudem agejdan **s "
+"lebɣi** yerna **beṛṛa i taɣult tnezzut**."
 
+#, fuzzy
 msgid ""
 "YunoHost is a modest project in terms of the resources it mobilizes - yet an "
 "ambitious one, as much for its activism as for its technical and interface "
 "design, as well as for the required perseverance to package and maintain the "
 "hundreds of applications in our catalog."
 msgstr ""
+"YunoHost d asenfar amecṭuḥ ɣef leḥsab n tiɣbula i yesseqdac - maca meqqeṛ "
+"yiswi-s, ama ɣef tmennuɣt-is neɣ ɣef usufeɣ atiknik d ugrudem-is, akked "
+"teṣbeṛt i d-yettwasutren i usekmem d usefrek n timaḍin n yisnasen deg ukalag-"
+"nneɣ."
 
+#, fuzzy
 msgid ""
 "If, like us, you'd like to see the project **continue to function**, evolve "
 "to **meet its promises**, and allow us to **take care of the community**, "
 "this is where you can donate!"
 msgstr ""
+"Ma yella, am nekkni, tebɣiḍ ad twaliḍ asenfar-a **ikemmel iteddu**, yettali "
+"akken **ad yaweḍ ɣer leɛhud-is**, yerna ad aɣ-yeǧǧ **ad nḥader tamɣiwent**, "
+"dagi i tzemreḍ ad tmuddeḍ tawsa!"
 
-#, fuzzy
-#| msgid "Donate to YunoHost!"
 msgid "I want to give to YunoHost:"
-msgstr "Mudd tawsa i YunoHost!"
+msgstr "Bɣiɣ ad muddeɣ tawsa i YunoHost:"
 
 msgid "Amount"
-msgstr ""
+msgstr "Azal n lexlaṣ"
 
 msgid "Currency"
-msgstr ""
+msgstr "Tadrimt"
 
 msgid "Frequency"
-msgstr ""
+msgstr "Asnagar"
 
 msgid "/ month"
 msgstr "/ ayyur"
@@ -202,235 +221,307 @@ msgstr "tikkelt"
 msgid ""
 "If you are already donating, you can edit your donation by clicking here!"
 msgstr ""
+"Ma yella tettmudduḍ yakan tawsa, tzemreḍ ad tbeddleḍ azal-is s usiti da!"
+
+msgid "Why support YunoHost in 2026?"
+msgstr "Acuɣer ara nɛawen YunoHost deg 2026?"
 
 #, fuzzy
-#| msgid "YunoHost in 2024"
-msgid "Why support YunoHost in 2026?"
-msgstr "YunoHost deg 2024"
-
 msgid ""
 "YunoHost is a non-profit project that advocates a decentralized Internet, "
 "with open, interoperable and sober technologies that respect privacy and "
 "(re-)empower the greatest number of people and collectives."
 msgstr ""
+"YunoHost d asenfar ur nettnadi ara rrbeḥ, yettdef Internet ur nelli d "
+"alemmas, s titiknulujiyin tilelliyin, timeṣdiyin yerna d timsuṛaf i iḥerrzen "
+"tameddurt tusligt, akken ad d-yerr tazmert i umur ameqqran n yimdanen d "
+"tegrawin."
 
+#, fuzzy
 msgid "Phase 1. Preserving the basics"
-msgstr ""
+msgstr "Aḥric 1. Aḥraz n lsas"
 
+#, fuzzy
 msgid "1.1. Sustain its infrastructure and the team's work dynamics"
-msgstr ""
+msgstr "1.1. Aseḥbiber ɣef tseddast-is d umussu n umahil n terbaɛt"
 
 msgid "8,000 €"
-msgstr ""
+msgstr "8,000 €"
 
+#, fuzzy
 msgid ""
 "Donations are used to pay for the infrastructure costs (YunoHost services "
 "and task automation) and to allow the team to meet 2 to 3 times a year."
 msgstr ""
-
-msgid "1.2. Facilitate the collective and its projects"
-msgstr ""
+"Tiwsiwin ttwasseqdacent i uxelleṣ n tesreftin n tseddast (imeẓla n YunoHost "
+"d tawurmant n tmahilin) akken ad teǧǧ tarbaɛt ad temlil 2 neɣ 3 n tikkal deg "
+"useggas."
 
 #, fuzzy
-#| msgid "€12,000"
-msgid "12,000 €"
-msgstr "€12,000"
+msgid "1.2. Facilitate the collective and its projects"
+msgstr "1.2. Aseffses n tegrawt d yisenfaren-is"
 
+msgid "12,000 €"
+msgstr "12.000 €"
+
+#, fuzzy
 msgid ""
 "Since 2024, a facilitator (known as “stirring officer”) is in charge to take "
 "care of the collective both humanly and administratively, as well as in its "
 "external relations."
 msgstr ""
+"Seg 2024, amseffses (yettwassen s yisem n “stirring officer”) yettwekkel ad "
+"yeḥder tagrawt ama s wudem adamnan neɣ adeblan, akked wassaɣen-is iberren."
 
+#, fuzzy
 msgid "1.3. Maintain the codebase and provide support to the community"
-msgstr ""
+msgstr "1.3. Asefrek n tengalt d tukci n tallalt i tmɣiwent"
 
+#, fuzzy
 msgid ""
 "This budget will fund code and infrastructure maintenance, as well as time "
 "spent doing support or reviewing and integrating contributions from new "
 "volunteers."
 msgstr ""
+"Timsalt-a ad txelleṣ asefrek n tengalt d tseddast, akked wakud "
+"yettwaseqdecen deg tallalt neɣ deg usenqed d usekcem n uttekki n yimuranen "
+"imaynuten."
 
-#, fuzzy
-#| msgid "3. Boosting development"
 msgid "Phase 2. Boosting development"
-msgstr "3. Snerni taneflit"
+msgstr "Aswir wis 2. Snerni taneflit"
 
 msgid "31,000 €"
-msgstr ""
+msgstr "31,000 €"
 
 msgid ""
 "Know more on the main features we plan to develop this year and for which we "
 "are seeking funding"
 msgstr ""
+"Issin ugar ɣef tmahilin tigejdanin i neqsed ad nesnefli useggas-a, tid iwumi "
+"ma nufa-asent tadrimt"
 
 msgid "2.1. Packaging v3"
-msgstr ""
+msgstr "2.1. Packaging v3"
 
 msgid "Funded by NLNet*"
-msgstr ""
+msgstr "Yettwasellek sɣur NLNet*"
 
+#, fuzzy
 msgid ""
 "New iteration on the packaging features with more declarativeness, "
 "robustness and effectiveness."
 msgstr ""
+"Tannazt tamaynut n tmahilin n usekmem, s wudem amsenfal ugar, tiseddi d "
+"tammalt."
 
 msgid "* This development is funded by NLNet through NGI0."
-msgstr ""
+msgstr "* Asnefli-a yettwasellek sɣur NLNet s NGI0."
 
 msgid "2.2. Support OIDC"
-msgstr ""
+msgstr "2.2. Asefrek n OIDC"
 
+#, fuzzy
 msgid ""
 "Replace SSOWat Single-Sign On solution with Authelia and support the more "
 "standard OpenID Connect authentication protocol, thus broadening the apps' "
 "SSO integration potentiali."
 msgstr ""
+"Asemselsi n tefrat SSO n SSOWat s Authelia d usefrek n upṛutukul unṣib n "
+"uselken OpenID Connect, akken ad terna tezmert n useddu SSO deg yisnasen."
 
 msgid "2.3. Self-registration feature"
-msgstr ""
+msgstr "2.3. Tamahilt n ujerred awurman"
 
 msgid "10,000 €"
-msgstr ""
+msgstr "10.000 €"
 
 msgid "5,000 €"
-msgstr ""
+msgstr "5,000 €"
 
-#, python-format
-msgid "50% funded by Code Lutin<br/> through Copie Publique"
-msgstr ""
+#, fuzzy
+#| msgid "50% funded by Code Lutin<br/> through Copie Publique"
+msgid "50&percnt; funded by Code Lutin<br/> through Copie Publique"
+msgstr "50% yettwasellek sɣur Code Lutin<br/> s Copie Publique"
 
+#, fuzzy
 msgid ""
 "Make users able to autonomously register on the server through invite links "
 "or a public registering form with admin validation."
 msgstr ""
+"Aǧǧ iseqdacen ad jerden iman-nsen s timmad-nsen ɣef uqeddac s tinebbitin neɣ "
+"s tferkit tazayezt n ujerred s usentem n unedbal."
 
+#, fuzzy
 msgid "2.4. Improve the backup and restore feature"
-msgstr ""
+msgstr "2.4. Asnerni n tmahilt n uḥraz d tiririt"
 
 msgid "20,000 €"
-msgstr ""
+msgstr "20,000 €"
 
+#, fuzzy
 msgid ""
 "Integrate automatic backup features to YunoHost's core, including remote and "
 "encrypted deduplication as well as easy selective restore."
 msgstr ""
+"Asekcem n tmahilin n uḥraz awurman ɣer wul n YunoHost, gar-asent tukksa n "
+"wallus anmeggag yettwaffren akked tiririt tafrayt tafessast."
 
+#, fuzzy
 msgid "2.5. Initiate implementation of self-hosting federation"
-msgstr ""
+msgstr "2.5. Asebded n tiddukla n usnegbi s yiman"
 
 msgid "6,000 €"
-msgstr ""
+msgstr "6.000 €"
 
+#, fuzzy
 msgid ""
 "With the self-hosting federation concept, we plan to make it easier to "
 "connect to a friend instance in order to provide remote services each other."
 msgstr ""
+"S umenzay n tiddukla n usnegbi s yiman, nebɣa ad nesselkes tuqqna ɣer "
+"tummant n umdakel iwakken ad nemmudd imeẓla inmeggagen gar-aneɣ."
 
+#, fuzzy
 msgid "2026 Campaign progress"
-msgstr ""
+msgstr "Aseddu n umussu n 2026"
 
+#, fuzzy
 msgid ""
 "The main donation campaign is <span class='campaign-completion'></span>％ "
 "complete, for needs estimated at €<span class='campaign-objective'></span>"
 msgstr ""
+"Amussu agejdan n twisiwin yewweḍ ɣer <span class='campaign-completion'></"
+"span>％, i yiswiyen yettwaqeddren s €<span class='campaign-objective'></span>"
 
+#, fuzzy
 msgid ""
 "The features donation campaign is <span class='campaign-completion'></"
 "span>％ complete, for needs estimated at €<span class='campaign-objective'></"
 "span>"
 msgstr ""
+"Amussu n twisiwin n tmahilin yewweḍ ɣer <span class='campaign-completion'></"
+"span>％, i yiswiyen yettwaqeddren s €<span class='campaign-objective'></span>"
 
 msgid "Received donations:"
-msgstr ""
+msgstr "Tiwsiwin yettwaṭṭfen:"
 
 msgid "Expected donations:"
-msgstr ""
+msgstr "Tiwsiwin i nettraǧu:"
 
+#, fuzzy
 msgid "Ongoing grants:"
-msgstr ""
+msgstr "Tisleka iteddun:"
 
 msgid "YunoHost key metrics"
 msgstr ""
 
+#, fuzzy
 msgid "Claude, the YunoHost's mascot"
-msgstr ""
+msgstr "Claude, tamaskuṭṭ n YunoHost"
 
+#, fuzzy
 msgid ""
 "Image of Claude, the YunoHost's mascot. An humanoid oppossum who stands with "
 "purple hair and scarf, round glasses, beige pants with pockets and a blue "
 "crop top with the YunoHost logo."
 msgstr ""
+"Tugna n Claude, tamascut n YunoHost. D opossum am umdan yebded s ucebbub d "
+"tseffit d idimḍiyen, tismaqqalin timedwaranin, aserwal akli s tijuba d "
+"tkamizut wezzilen tazegzawt s tmattart n YunoHost."
 
 msgid "The project"
 msgstr "Asenfar"
 
 msgid "14 years of existence"
-msgstr ""
+msgstr "14 n yiseggasen n tudert"
 
 msgid "about 30 regular contributors"
-msgstr ""
+msgstr "azal n tlatin gar yimtekkiyen d temtekkiyin i yezgan ttekkin"
 
+#, fuzzy
 msgid ""
 "Assuming a company with 4 full-time persons,\n"
 "each with 3,000 € net / month,\n"
 "so around 5,200 € charged / month,\n"
 "5,200 € x 4 person x 12 months = 249,600 € / year"
 msgstr ""
+"Ma nwala takebbanit s 4 n yimdanen n wakud ummid,\n"
+"yal yiwen s 3,000 € uṣfi / ayyur,\n"
+"ihi azal n 5,200 € s tesreftin merra / ayyur,\n"
+"5,200 € x 4 n yimdanen x 12 n wayyuren = 249,600 € / aseggas"
 
+#, fuzzy
 msgid ""
 "volunteer work that could be valued at least 250,000 € a year if remunerated"
 msgstr ""
+"amahil s lebɣi izemren ad yettwaqader s 250,000 € ma drus deg useggas ma "
+"yella yettwaxelleṣ"
 
 msgid "The community"
 msgstr "Tamɣiwant"
 
 msgid "~10,000 instances in 77 countries"
-msgstr ""
-
-msgid "~260 regular or occasional donors since January 1, 2026"
-msgstr ""
-
-msgid "8,700+ accounts on the various project channels (forge, forum, chat)"
-msgstr ""
+msgstr "~10,000 n tummanin deg 77 n tmura"
 
 #, fuzzy
-#| msgid "15+ languages supported"
-msgid "19+ languages supported by the user portal"
-msgstr "15+ n tutlayin yettusefraken"
+msgid "~260 regular or occasional donors since January 1, 2026"
+msgstr "~260 n yimuddan imezgiyen neɣ n tikwal seg 1 Yennayer 2026"
 
-msgid "The software and its ecosystem"
+#, fuzzy
+msgid "8,700+ accounts on the various project channels (forge, forum, chat)"
 msgstr ""
+"ugar n 8,700 n yimiḍanen deg yiberdan yemgerraden n usenfar (afurnu, amslay, "
+"adiwenni)"
+
+msgid "19+ languages supported by the user portal"
+msgstr "19+ n tutlayin yettusefraken deg wewwur n useqdac"
+
+#, fuzzy
+msgid "The software and its ecosystem"
+msgstr "Aseɣzan d unagraw-is amezday"
 
 msgid ""
 "[630+ apps in the catalog](https://apps.yunohost.org/catalog) ([a brief "
 "history](https://apps.yunohost.org/charts))"
 msgstr ""
+"[ugar n 630 n yesnasen deg ukaram](https://apps.yunohost.org/catalog) "
+"([amezruy awezzlan](https://apps.yunohost.org/charts))"
 
+#, fuzzy
 msgid ""
 "1100+ Git code repositories ([core](https://github.com/orgs/YunoHost/"
 "repositories) + [apps](https://github.com/orgs/YunoHost-Apps/repositories))"
 msgstr ""
+"ugar n 1100 n yimḥazen n tengalt Git ([ul](https://github.com/orgs/YunoHost/"
+"repositories) + [isnasen](https://github.com/orgs/YunoHost-Apps/"
+"repositories))"
 
 msgid "What are your donations used for?"
-msgstr ""
+msgstr "D acu i nxeddem s tukciwin-nwen?"
 
+#, fuzzy
 msgid ""
 "Your donations guarantee our independence: they keep accounting for the "
 "biggest share of our income until now."
 msgstr ""
+"Tiwsiwin-ik ḍemnent tilelli-nneɣ: mazal-itent ṭṭfent amur ameqqran n tirmas-"
+"nneɣ ar tura."
 
 msgid "Expenses"
-msgstr ""
+msgstr "Aṣeṛṛef"
 
+#, fuzzy
 msgid ""
 "Our expected budget for 2026-2027 reaches 100 000 € and breaks down in 5 "
 "categories."
 msgstr ""
+"Timsalt i nettraǧu i 2026-2027 tewweḍ 100 000 € yerna tebḍa ɣef 5 n taggayin."
 
+#, fuzzy
 msgid "Project expenditure breaks down into the following categories:"
-msgstr ""
+msgstr "Tisreftin n usenfar bḍant ɣef taggayin-a:"
 
+#, fuzzy
 msgid ""
 "**Development**: one-off funding awarded to some of the most work-intensive "
 "features of [the roadmap](#roadmap) which require to ensure dedication over "
@@ -439,92 +530,142 @@ msgid ""
 "the contributors overall - YunoHost remains primarily a volunteer-based "
 "project."
 msgstr ""
+"**Anegmu**: asellek asuf yettwamudden i kra n tmahilin yesran amahil meqqren "
+"deg [uɣawas n ubrid](#roadmap) yesran aḍman n uttekki deg lweqt aɣezzfan n "
+"yimttekkiyen yesɛan tarmit. Ilaq ad d-nbder, ɣas akken, d akken azal-a drus "
+"mliḥ ɣer yidis n umahil s lebɣi i gan yimttekkiyen s umata - YunoHost yeqqim "
+"d asenfar yebnan s talɣa tamezwarut ɣef yimuranen."
 
+#, fuzzy
 msgid ""
 "**Infrastructure**: corresponds to the hosting of the tools used by the "
 "project, such as the website, documentation, forum, technical tools, etc. "
 "The amount of this expenditure should reduce in 2025 following a migration "
 "to a dedicated server from a friendly host provider."
 msgstr ""
+"**Taseddast**: teqqen ɣer usnegbi n yifecka yesseqdac usenfar, am usmel web, "
+"tasemlit, amslay, ifecka itiknikiyen, atg. Azal n tesreft-a ilaq ad yenqes "
+"deg 2025 s deffir unekcum ɣer uqeddac uzzig seg yimesdur amidaw."
 
+#, fuzzy
 msgid ""
 "**Events**: expenses to enable the team to attend public events (e.g. JdLL) "
 "and to meet in the same place at least twice a year to work together on "
 "feature design and development strategy."
 msgstr ""
+"**Tedyunin**: tisreftin iwakken tarbaɛt ad tezmer ad tettekki deg tedyunin "
+"tizayezin (amdya: JdLL) yernu ad temlil deg yiwen umkan ma drus snat n "
+"tikkal deg useggas iwakken ad xedmen ddukkli ɣef usufeɣ n tmahilin d "
+"tsedmirt n unegmu."
 
+#, fuzzy
 msgid ""
 "**Facilitation**: financial compensation allocated to administrative tasks, "
 "animation and coordination of the collective. This is a new type of expense "
 "introduced in 2025, decided by the collective given the need to have a "
 "person dedicated to these aspects (a.k.a “stirrer”)."
 msgstr ""
+"**Aseffses**: amxelleṣ n tedrimt yettwaheggan i tmahilin tideblanin, aselḥu "
+"d umyellel n tegrawt. D taggayt tamaynut n tesreft i d-yennulfan deg 2025, i "
+"teɣtes tegrawt imi tesra amdan uzzig i tisekkiwin-a (yettwassen s yisem n "
+"“stirrer”)."
 
+#, fuzzy
 msgid ""
 "**Fees and other expenses**: bank charges or donations made to other "
 "collectives that support the project in kind."
 msgstr ""
+"**Iqaḍiyen d tesreftin nniḍen**: iqaḍiyen n lbanka neɣ tiwsiwin yettwamudden "
+"i tegrawin nniḍen i yefkan tallalt s sselɛa i usenfar."
 
+#, fuzzy
 msgid "Revenues"
-msgstr ""
+msgstr "Tirmas"
 
+#, fuzzy
 msgid ""
 "YunoHost has been always able to rely on donations to fund its activity, "
 "together with occasional grants. Given the increased funding needs for this "
 "new season, the team has been looking for ways to lower the financial burden "
 "on the community by:"
 msgstr ""
+"YunoHost yezga yezmer ad yetkel ɣef twisiwin i usellem n urmud-is, akked "
+"tsleka n tikwal. Imi d-yella usuter meqqren n tedrimt i tallit-a tamaynut, "
+"tarbaɛt tettnadi iberdan i usenqes n taɛkemt n tedrimt ɣef tmɣiwent s:"
 
+#, fuzzy
 msgid "Applying for grants (with some success this year),"
-msgstr ""
+msgstr "Usuter n tsleka (s kra n umureḥ useggas-a),"
 
+#, fuzzy
 msgid ""
 "Trying to partner with civil society organizations through a dedicated "
 "project (with a lot of sweat but no financial success for now)."
 msgstr ""
+"Uɛraḍ n umyizan d tuddsiwin n tmetti taɣarimt s usenfar uzzig (s waṭas n "
+"tidi maca mebla umureḥ n tedrimt ar tura)."
 
+#, fuzzy
 msgid ""
 "Starting to develop [a professional activity](https://yunohost.pro) which "
 "aims at allowing some core contributors of the project's team to spend more "
 "time on the project (some of it being paid by customers)."
 msgstr ""
+"Asebded n usnegmu n [urmud azzulan](https://yunohost.pro) yeswan ad yeǧǧ kra "
+"n yimttekkiyen igejdanen deg terbaɛt n usenfar ad seddin ugar n wakud deg "
+"usenfar (kra seg-s yettwaxelleṣ sɣur yimsaɣen)."
 
+#, fuzzy
 msgid "Here are our expected source of revenues:"
-msgstr ""
+msgstr "Hatan iɣbula n tirmas i nettraǧu:"
 
+#, fuzzy
 msgid "**Recurring donations:** 2,500 €/month"
-msgstr ""
+msgstr "**Tiwsiwin d-yettuɣalen:** 2,500 €/ayyur"
 
+#, fuzzy
 msgid ""
 "**One-time donations:** ~72,000 € (~6,000 €/month) (grants included: ~42,000 "
 "€ (3,500 €/month))"
 msgstr ""
+"**Tiwsiwin n yiwet n tikelt:** ~72,000 € (~6,000 €/ayyur) (tisleka seddaw-"
+"asent: ~42,000 € (3,500 €/ayyur))"
 
+#, fuzzy
 msgid "NLNet through NGI0 (OIDC, Packaging v3): ~34,500 €"
-msgstr ""
+msgstr "NLNet seg NGI0 (OIDC, Packaging v3): ~34,500 €"
 
+#, fuzzy
 msgid ""
 "Code Lutin through Copie Publique (half of users self-registration): 5,000 €"
 msgstr ""
+"Code Lutin seg Copie Publique (azgen n ujerred awurman n yiseqdacen): 5,000 €"
 
+#, fuzzy
 msgid "Civil Society (in progress) : (~2,500 €)"
-msgstr ""
+msgstr "Tametti taɣarimt (iteddu) : (~2,500 €)"
 
 msgid "Yunohost.pro (in progress): ~ 500 €"
-msgstr ""
+msgstr "Yunohost.pro (iteddu): ~ 500 €"
 
+#, fuzzy
 msgid "**Total budget in 2026:** ~100,000 € (~8,500 €/month)"
-msgstr ""
+msgstr "**Asemday n temastalt deg 2026:** ~100,000 € (~8,500 €/ayyur)"
 
+#, fuzzy
 msgid ""
 "To this budget must also be added the also donations in-kind, in particular "
 "donations in the form of servers or bandwidth from other non-profit "
 "organizations (Globenet, Gitoyen and tetaneutral) as well as independent web "
 "companies (Octopuce)."
 msgstr ""
+"Ilaq daɣen ad nernu ɣer temastalt-a tiwsiwin n sselɛa, ladɣa tiwsiwin s "
+"talɣa n yiqeddacen neɣ n tehri n uzeṭṭa seg tuddsiwin nniḍen ur nettnadi ara "
+"rrbeḥ (Globenet, Gitoyen d tetaneutral) akked tkebbaniyin timziriyin n web "
+"(Octopuce)."
 
 msgid "Preserve the basics"
-msgstr ""
+msgstr "Aḥraz n lsas"
 
 msgid "Permanent facilitator"
 msgstr ""
@@ -533,218 +674,293 @@ msgid "Maintain the solution"
 msgstr ""
 
 msgid "Self-registration feature"
-msgstr ""
+msgstr "Tiferkit n ujerred"
 
 msgid "Backup and restore feature"
-msgstr ""
+msgstr "Tamahilt n uḥraz d tiririt"
 
 msgid "Self-hosting federation"
 msgstr ""
 
 msgid "OpenID Connect"
-msgstr ""
+msgstr "OpenID Connect"
 
 msgid "Packaging v3"
-msgstr ""
+msgstr "Packaging v3"
 
 msgid "Users self-registration"
-msgstr ""
+msgstr "Ajerred awurman n yiseqdacen"
 
 msgid "Automatic backup and restore"
-msgstr ""
+msgstr "Aḥraz d tiririt tawurmant"
 
 msgid "month"
 msgstr "ayyur"
 
 msgid "Previsional"
-msgstr ""
+msgstr "Yettwaqeddren"
 
 msgid "Donations"
-msgstr ""
+msgstr "Tiwsiwin"
 
+#, fuzzy
 msgid "Grants"
-msgstr ""
+msgstr "Tisleka"
 
 msgid "Direct contributor funding"
-msgstr ""
+msgstr "Asellek usrid n imttekkiyen"
 
 msgid "Animation"
-msgstr ""
+msgstr "Amray"
 
 msgid "Development"
 msgstr "Taneflit"
 
 msgid "Infrastructure"
-msgstr ""
+msgstr "Tanaddawt"
 
 msgid "Events"
-msgstr ""
+msgstr "Tidyanin"
 
 msgid "Others"
 msgstr "Ayen nniḍen"
 
+#, fuzzy
 msgid "Roadmap and dreammap"
-msgstr ""
+msgstr "Aɣawas n ubrid d uɣawas n tirga"
 
+#, fuzzy
 msgid ""
 "We're publishing a roadmap here to give a clearer idea of what we plan to "
 "develop. It does **NOT** constitutes a promise because it is *dependent on "
 "the availability and energies of volunteers*. It is therefore subject to "
 "change at any time."
 msgstr ""
+"Nessufeɣ-d aɣawas n ubrid dagi iwakken ad d-nefk tamuɣli taseddit ɣef wayen "
+"neqsed ad nessiweḍ. Aya **MAČČI** d leɛahed axaṭer **yettkel ɣef tillin d "
+"tezmert n yimuranen**. Ihi, yezmer ad ibeddel deg yal taswiɛt."
 
+#, fuzzy
 msgid "Timescale depend on grant / donations"
-msgstr ""
+msgstr "Akud yettkel ɣef tsleka / twisiwin"
 
+#, fuzzy
 msgid "Checkout the dedicated roadmap page"
-msgstr ""
+msgstr "Wali asebter uzzig n uɣawas n ubrid"
 
+#, fuzzy
 msgid "General questions about donations"
-msgstr ""
+msgstr "Isteqsiyen imatuten ɣef twisiwin"
 
+#, fuzzy
 msgid "Will my donation be tax deductible?"
-msgstr ""
+msgstr "Tawsa-iw ad tettwakkes seg tebzert?"
 
+#, fuzzy
 msgid ""
 "At this time, we do not provide tax-deductible donation receipts. We can, "
 "however, issue donation receipts for your accounting purposes."
 msgstr ""
+"Deg lweqt-a, ur nettak ara irrisiwen n twisiwin i yettwakkasen seg tebzert. "
+"Maca, nezmer ad d-nefk irrisiwen n twisiwin i tsiḍent-ik."
 
+#, fuzzy
 msgid ""
 "My donation is not sent to YunoHost but to the Support Self-Hosting "
 "association. Is this normal?"
 msgstr ""
+"Tawsa-iw ur tettwazen ara ɣer YunoHost maca ɣer tdukla Support Self-Hosting. "
+"D ayen yellan d amagnu?"
 
+#, fuzzy
 msgid ""
 "Yes, that's expected, Support Self-Hosting is the association that enables "
 "the YunoHost project to collect donations and pay expenses."
 msgstr ""
+"Ih, d ayen yetturǧan, Support Self-Hosting d tiddukla yettaǧǧan asenfar n "
+"YunoHost ad d-yessuddus tiwsiwin yernu ad ixelleṣ tisreftin."
 
 msgid "Can I become a member of the Support Self-Hosting association?"
-msgstr ""
+msgstr "Zemreɣ ad uɣaleɣ d aɛeggal n tiddukla Support Self-Hosting?"
 
+#, fuzzy
 msgid ""
 "No: this is an association whose members are chosen by co-option.<br>We "
 "don't think you need to be a member of Support Self-Hosting to contribute to "
 "the YunoHost project. Anyone can come and help on most of our projects, and "
 "we do our best to welcome volunteers."
 msgstr ""
+"Ala: tagi d tiddukla iwumi ttwafernen yiɛeggalen s uferru.<br>Ur nwala ara d "
+"akken tesriḍ ad tiliḍ d aɛeggal deg Support Self-Hosting iwakken ad "
+"tettekkaḍ deg usenfar n YunoHost. Yal amdan yezmer ad d-yas ad iɛiwen ɣef "
+"tuget n yisenfaren-nneɣ, yerna netteddu s tezmert-nneɣ iwakken ad nraḥeb s "
+"yimuranen."
 
+#, fuzzy
 msgid ""
 "I can't make a recurring donation, but I'd like to support YunoHost. What "
 "can I do?"
 msgstr ""
+"Ur zmireɣ ara ad muddeɣ tawsa yettuɣalen, maca bɣiɣ ad alleɣ YunoHost. D acu "
+"i zmireɣ ad t-geɣ?"
 
+#, fuzzy
 msgid ""
 "Thank you for your support and commitment.<br>You can make a one-off "
 "donation directly from the [donate.yunohost.org](https://donate.yunohost."
 "org) page."
 msgstr ""
+"Tanemmirt ɣef tallalt-ik d uttekki-ik.<br>Tzemreḍ ad tmuddeḍ tawsa n yiwet n "
+"tikelt srid seg usebter [donate.yunohost.org](https://donate.yunohost.org)."
 
+#, fuzzy
 msgid ""
 "I've made a monthly donation but I've made a mistake in the amount or I'd "
 "like to change it. How do I proceed?"
 msgstr ""
+"Fkiɣ tawsa n yal ayyur maca ɣelḍeɣ deg wazal neɣ bɣiɣ ad t-beddleɣ. Amek ara "
+"xedmeɣ?"
 
+#, fuzzy
 msgid ""
 "We cannot change the amount for future debits.<br>But you can cancel your "
 "previous donation and start a new one by using the “Manage your monthly "
 "donation” link on our [donate.yunohost.org](https://donate.yunohost.org) "
 "page."
 msgstr ""
+"Ur nezmir ara ad nbeddel azal i yixellaṣen d-itteddun.<br>Maca tzemreḍ ad "
+"tebṭleḍ tawsa-ik yezrin yernu ad tebduḍ tamaynut s useqdec n usefsay “Sefrek "
+"tawsa-ik n yal ayyur” deg usebter-nneɣ [donate.yunohost.org](https://donate."
+"yunohost.org)."
 
 msgid ""
 "I am currently making a recurring donation but my credit card has expired. "
 "What should I do?"
 msgstr ""
+"Tura ttmudduɣ tawsa d-yettuɣalen maca takarḍa-w n lbanka temmut. D acu ara "
+"xedmeɣ?"
 
+#, fuzzy
 msgid ""
 "Typically, your recurring donation is automatically interrupted once your "
 "card has been deactivated.<br>To update your bank details with Support Self-"
 "Hosting, please complete the form on the [donate.yunohost.org](https://"
 "donate.yunohost.org) page as if it were your first donation."
 msgstr ""
+"S umata, tawsa-ik yettuɣalen tettḥebbis s wudem awurman akken kan ara texsi "
+"tkarḍa-ik.<br>Iwakken ad tleqmeḍ talɣut-ik n lbanka ɣer Support Self-"
+"Hosting, ččar tferkit deg usebter [donate.yunohost.org](https://donate."
+"yunohost.org) am akken d tawsa-ik tamezwarut."
 
 msgid ""
 "My organization doesn't have a credit card, but would like to make a "
 "donation. How do I go about it?"
 msgstr ""
+"Tuddsa-nneɣ ur tesɛi ara takarḍa n lbanka, maca tebɣa ad tmudd tawsa. Amek "
+"ara nexdem?"
 
+#, fuzzy
 msgid ""
 "You can contact us so that we can provide you with an IBAN to make a bank "
 "transfer."
 msgstr ""
+"Tzemreḍ ad aɣ-d-tessiwleḍ iwakken ad ak-d-nefk IBAN i useddu n uṣerref n "
+"lbanka."
 
 msgid "I'd like to stop a recurring donation. What can I do?"
-msgstr ""
+msgstr "Bɣiɣ ad ḥebseɣ tawsa d-yettuɣalen. D acu ara xedmeɣ?"
 
+#, fuzzy
 msgid ""
 "You can cancel your donation by using the “Manage your monthly donation” "
 "link on our [donate.yunohost.org](https://donate.yunohost.org) page."
 msgstr ""
+"Tzemreḍ ad tebṭleḍ tawsa-ik s useqdec n usefsay “Sefrek tawsa-ik n yal "
+"ayyur” deg usebter-nneɣ [donate.yunohost.org](https://donate.yunohost.org)."
 
+#, fuzzy
 msgid ""
 "With **YunoHost**, easily manage %(a server|a cloud|a website|mailboxes|a "
 "wiki|a social network|a video library|a blog|surveys|an accounting board|a "
 "game server|a forum|a chat|an ERP)%  \n"
 "for your friends, your association, your company"
 msgstr ""
+"S **YunoHost**, sefrek s tefsas %(aqeddac|asigna|asmel web|tibankiwin n "
+"yimayl|awiki|aẓeṭṭa anemtti|takatut n tvidyutin|ablug|isestiyen|agalis n "
+"tsiḍent|aqeddac n wuraren|asarag|adiwenni|ERP)%  \n"
+"i yimeddukkal-ik, i tdukla-ik, i tkebbanit-ik"
 
 msgid "Carousel"
-msgstr ""
+msgstr "Amzizzel"
 
 msgid "Slide controls"
 msgstr ""
 
 msgid "User portal: dark mode"
-msgstr ""
+msgstr "Awwur n useqdac: askar aberkan"
 
 msgid "User portal: light mode with app description"
-msgstr ""
+msgstr "Awwur n useqdac: askar afessas s uglam n usnas"
 
 msgid "Administration panel: homepage"
-msgstr ""
+msgstr "Agalis n tedbelt: asebter agejdan"
 
 msgid "Administration panel: app catalog"
-msgstr ""
+msgstr "Agalis n tedbelt: akaram n yisnasen"
 
 msgid "Administration panel: app installation"
-msgstr ""
+msgstr "Agalis n tedbelt: asebded n usnas"
 
+#, fuzzy
 msgid ""
 "Screenshot of the user portal from which users can access the apps installed "
 "on the server, listing several applications installed."
 msgstr ""
+"Tuṭṭfa n ugdil n tewwurt n useqdac ansi i zemren yiseqdacen ad kecmen ɣer "
+"yisnasen yettwasbedden ɣef uqeddac, i d-yemmalen aṭas n yisnasen "
+"yettwasbedden."
 
+#, fuzzy
 msgid ""
 "Screenshot of the user portal from which users can access the apps installed "
 "on the server, light version with description of each app."
 msgstr ""
+"Tuṭṭfa n ugdil n tewwurt n useqdac ansi i zemren yiseqdacen ad kecmen ɣer "
+"yisnasen yettwasbedden ɣef uqeddac, lqem afessas s uglam n yal asnas."
 
+#, fuzzy
 msgid ""
 "Screenshot of the web administration panel displaying the following "
 "categories: users, domains, apps, upgrade, services, tools and backup"
 msgstr ""
+"Tuṭṭfa n ugdil n ugalis n tedbelt web i d-yeskanayen taggayin-a: iseqdacen, "
+"tiɣula, isnasen, aleqqem, imeẓla, ifecka d uḥraz"
 
+#, fuzzy
 msgid ""
 "Screenshot of the web administration panel displaying the app catalog for "
 "the \"publication\" category, listing some apps available in the catalog."
 msgstr ""
+"Tuṭṭfa n ugdil n ugalis n tedbelt web i d-yeskanayen akalag n yisnasen i "
+"taggayt n \"usuffeɣ\", i d-yemmalen kra n yisnasen yellan deg ukalag."
 
 msgid ""
 "Screenshot of the web administration panel displaying the app install form "
 "when installing the Nextcloud application. The interface asks a few "
 "technical questions regarding settings for the installation."
 msgstr ""
+"Tuṭṭfa n ugdil n ugalis n tedbelt web i d-yeskanayen tafelwit n usbeddi mi "
+"ara yettusebded usnas Nextcloud. Agrudem-a deg-s kra n isteqsiyen "
+"itiknikanen ɣef yiɣewwaren n usbeddi."
 
 msgid "Previous slide"
-msgstr ""
+msgstr "Tugna yezrin"
 
 msgid "Next slide"
-msgstr ""
+msgstr "Tugna tudfiṛt"
 
 msgid "Huh, but why <i class='fa fa-question fa-xs fa-width-auto'></i>"
-msgstr ""
+msgstr "Aha, ihi acimi <i class='fa fa-question fa-xs fa-width-auto'></i>"
 
 msgid "Try"
 msgstr "Ɛreḍ"
@@ -756,16 +972,16 @@ msgid "For you and your friends"
 msgstr "I kunwi·kunemti akk d yimeddukal-nwen·nkent"
 
 msgid "synchronize your calendars and contacts"
-msgstr ""
+msgstr "mtawi iwitayen d inermisen"
 
 msgid "keep your passwords and notes safe"
-msgstr ""
+msgstr "ḥerzet awalen-nwen n uɛeddi d tezmilin-nwen s tɣellist"
 
 msgid "host mailboxes"
-msgstr ""
+msgstr "sezdeɣ tinakatin n yimayl"
 
 msgid "organize your photos, videos and music"
-msgstr ""
+msgstr "suddset tiwlafin-nwen, tividyutin-nwen d uẓawan-nwen"
 
 msgid "join alternative social media"
 msgstr ""
@@ -774,26 +990,27 @@ msgid "For small organizations"
 msgstr "I tuddsiwin timecṭaḥ"
 
 msgid "host your own website"
-msgstr ""
+msgstr "sezdɣet asmel-nwen web"
 
 msgid "share files in common (e.g. with Nextcloud)"
-msgstr ""
+msgstr "bḍut ifuyla gar-awen (md. s Nextcloud)"
 
 msgid "edit multiple documents in real time"
-msgstr ""
+msgstr "ẓerget araten lwaḥid deg yiwet n teswiɛt"
 
 msgid "manage your accounting"
-msgstr ""
+msgstr "sefrek tasiḍent-ik"
 
 msgid "set up a team chat"
-msgstr ""
+msgstr "sebded adiwenni n terbaɛt"
 
 msgid "Explore the app catalog"
-msgstr ""
+msgstr "Snirem akaram n yesnasen"
 
 msgid "How to get started"
 msgstr "Amek ara tebduḍ"
 
+#, fuzzy
 msgid ""
 "If you're not sure yet on, we invite you to [try the demo](https://doc."
 "yunohost.org/try),  \n"
@@ -803,32 +1020,42 @@ msgid ""
 "Take the time to think about what applications, what type of hardware and "
 "what domain name you want for your server."
 msgstr ""
+"Ma yella ur tettḥeqqeḍ ara ar tura, neɛreḍ-ik-id ad [tɛerḍeḍ tameẓla]"
+"(https://doc.yunohost.org/try),  \n"
+"yernu ad twaliḍ [lfaida d lexsara](https://doc.yunohost.org/selfhosting) n "
+"usefrek n uqeddac s yiman-ik.\n"
+"\n"
+"Eddem akud iwakken ad txemmeḍ anwa isnasen, anwa anaw n wallal d wanwa isem "
+"n taɣult i tebɣiḍ i uqeddac-ik."
 
 msgid "Choosing a support"
-msgstr ""
+msgstr "Afran n wallal"
 
 msgid "ARM board / Raspberry Pi"
-msgstr ""
+msgstr "Takarḍa ARM / Raspberry Pi"
 
 msgid "Old tower or portable (*ordinosaur*)"
-msgstr ""
+msgstr "Tamra taqburt neɣ aselkim aziraz (*adinuẓuselkim*)"
 
 msgid "Online server (VPS)"
-msgstr ""
+msgstr "Aqeddac deg internet (VPS)"
 
 msgid "Compare"
-msgstr ""
+msgstr "Serwes"
 
 msgid "Install YunoHost"
 msgstr "Asebded n YunoHost"
 
+#, fuzzy
 msgid "Check the prerequisites<br>then flash or install the system"
-msgstr ""
+msgstr "Senqed tisuraf timzwura<br>syin sserɣ neɣ sebded anagraw"
 
 msgid ""
 "YunoHost will guide you through setting up the first admin, the domain name "
 "and your Internet router."
 msgstr ""
+"YunoHost ad yili ɣer tama-k deg usebded n unedbal amezwaru, isem n taɣult d "
+"umeglay-ik n Internet."
 
 msgid "Installation guide"
 msgstr "Amnir n usebded"
@@ -837,44 +1064,56 @@ msgid "Enjoy!"
 msgstr "Faṛeṣ!"
 
 msgid "Install applications<br>in just a few clicks"
-msgstr ""
+msgstr "Sbeddet isnasen<br>s kra kan n yisitiyen"
 
 msgid "Set up backups"
-msgstr ""
+msgstr "Sbedd iḥrazen"
 
 msgid "Take care of your server"
-msgstr ""
+msgstr "Ḥader aqeddac-ik"
 
+#, fuzzy
 msgid "Guided tour"
-msgstr ""
+msgstr "Tirza yettwanehlen"
 
 msgid "Previous articles"
-msgstr ""
+msgstr "Imagraden yezrin"
 
+#, fuzzy
 msgid ""
 "**YunoHost** is a non-profit **technocritical** project, developed and "
 "maintained by **volunteers**."
 msgstr ""
+"**YunoHost** d asenfar ur nettnadi ara rrbeḥ, **i yessenqaden "
+"titiknulujiyin**, yettwafli yerna yettwasefrek sɣur **yimuranen**."
 
+#, fuzzy
 msgid ""
 "We advocate a **decentralized** Internet, with **open**, **interoperable** "
 "technologies that **respect privacy** and **empowers people**."
 msgstr ""
+"Nennuɣ ɣef Internet **ur nelli d alemmas**, s titiknulujiyin **tilelliyin**, "
+"**timeṣdiyin** i **iḥerrzen tameddurt tusligt** yernu **yettaken tazmert i "
+"yimdanen**."
 
+#, fuzzy
 msgid ""
 "In addition, we aim to **give materiality back to the digital**, and "
 "encourage **sobriety** and **reuse**."
 msgstr ""
+"Rnu ɣer waya, neqsed ad **nerr tangawt i umḍin**, yerna nessebɣas **tuẓẓma** "
+"d **uɛawed n useqdec**."
 
 msgid "Code repositories"
 msgstr "Ikufan n tengalt"
 
 msgid "They support us <3"
-msgstr ""
+msgstr "Ttaken-aɣ-d afus <3"
 
+#, fuzzy
 msgid ""
 "We are thankful for our sponsors providing us with infrastructure and grants!"
-msgstr ""
+msgstr "Nesnemmer imḍebbren-nneɣ i aɣ-d-yettaken taseddast akked tsleka!"
 
 #~ msgid "€5,500"
 #~ msgstr "€5,500"

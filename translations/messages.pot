@@ -837,8 +837,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"In addition, we aim to **give materiality back to the digital**, and "
-"encourage **sobriety** and **reuse**."
+"In addition, we aim to make the digital **tangible** again, and encourage"
+" **responsible** and **sustainable** use."
 msgstr ""
 
 msgid "Code repositories"

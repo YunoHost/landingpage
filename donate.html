@@ -452,7 +452,8 @@ function Stripe(a){
               .join("; ");
             svg.setAttribute("style", posAttr);
 
-            const { ratio, percent } = bars[bars.length - 1];
+            // Display percent progress based on already received donations
+            const { ratio, percent } = bars[0];
             const text = container.querySelector("svg text");
             text.setAttribute("x", (chartArea.width * ratio) / 2);
             text.setAttribute("y", chartArea.height / 2);
@@ -561,7 +562,7 @@ function Stripe(a){
             `${amounts.one.toFixed(0)} € `; // (${(amount.one / 12).toFixed(0)} €/{{ _('month') }})
           // FIXME trad
           container.querySelector(".recurring-amount-text .amount").textContent =
-            `${amounts.rec.toFixed(0)} €/{{ _('month') }} on the next ${monthsToCome} months (${flatRec}€)`;
+            `${amounts.rec.toFixed(0)} €/{{ _('month') }} {{ _('extrapolated through the end of the year') }} (${flatRec}€)`;
           // container.querySelector(".grants-amount-text .amount").textContent = `${grants.toFixed(0)} € `;
         }, 100),
       );
